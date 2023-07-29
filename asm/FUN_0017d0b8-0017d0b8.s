@@ -1,0 +1,8 @@
+xdef FUN_0017d0b8
+FUN_0017d0b8:
+	.word 0x27BDFFF0 ; 0x0017d0b8
+	.word 0xFFBF0000 ; 0x0017d0bc
+	.word 0x8C840024 ; 0x0017d0c0
+	.word 0xDFBF0000 ; 0x0017d0c4
+	.word 0x0805F804 ; 0x0017d0c8
+	.word 0x27BD0010 ; 0x0017d0cc

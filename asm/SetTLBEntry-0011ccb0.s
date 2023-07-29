@@ -1,0 +1,6 @@
+xdef SetTLBEntry
+SetTLBEntry:
+	.word 0x24030056 ; 0x0011ccb0
+	.word 0x0000000C ; 0x0011ccb4
+	.word 0x03E00008 ; 0x0011ccb8
+	.word 0x00000000 ; 0x0011ccbc

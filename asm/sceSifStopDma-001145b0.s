@@ -1,0 +1,6 @@
+xdef sceSifStopDma
+sceSifStopDma:
+	.word 0x2403006B ; 0x001145b0
+	.word 0x0000000C ; 0x001145b4
+	.word 0x03E00008 ; 0x001145b8
+	.word 0x00000000 ; 0x001145bc

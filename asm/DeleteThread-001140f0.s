@@ -1,0 +1,6 @@
+xdef DeleteThread
+DeleteThread:
+	.word 0x24030021 ; 0x001140f0
+	.word 0x0000000C ; 0x001140f4
+	.word 0x03E00008 ; 0x001140f8
+	.word 0x00000000 ; 0x001140fc

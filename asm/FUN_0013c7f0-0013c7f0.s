@@ -1,0 +1,5 @@
+xdef FUN_0013c7f0
+FUN_0013c7f0:
+	.word 0x3C020020 ; 0x0013c7f0
+	.word 0x03E00008 ; 0x0013c7f4
+	.word 0xAC4444A4 ; 0x0013c7f8

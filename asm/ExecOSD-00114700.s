@@ -1,0 +1,6 @@
+xdef ExecOSD
+ExecOSD:
+	.word 0x2403007B ; 0x00114700
+	.word 0x0000000C ; 0x00114704
+	.word 0x03E00008 ; 0x00114708
+	.word 0x00000000 ; 0x0011470c

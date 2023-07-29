@@ -1,0 +1,6 @@
+xdef SetVSyncFlag
+SetVSyncFlag:
+	.word 0x24030073 ; 0x00114650
+	.word 0x0000000C ; 0x00114654
+	.word 0x03E00008 ; 0x00114658
+	.word 0x00000000 ; 0x0011465c

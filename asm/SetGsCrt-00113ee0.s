@@ -1,0 +1,6 @@
+xdef SetGsCrt
+SetGsCrt:
+	.word 0x24030002 ; 0x00113ee0
+	.word 0x0000000C ; 0x00113ee4
+	.word 0x03E00008 ; 0x00113ee8
+	.word 0x00000000 ; 0x00113eec

@@ -1,0 +1,7 @@
+xdef FUN_0018da40
+FUN_0018da40:
+	.word 0x0080282D ; 0x0018da40
+	.word 0x0000302D ; 0x0018da44
+	.word 0x3C040029 ; 0x0018da48
+	.word 0x08062638 ; 0x0018da4c
+	.word 0x248403E0 ; 0x0018da50

@@ -1,0 +1,6 @@
+xdef GetMemorySize
+GetMemorySize:
+	.word 0x2403007F ; 0x00114740
+	.word 0x0000000C ; 0x00114744
+	.word 0x03E00008 ; 0x00114748
+	.word 0x00000000 ; 0x0011474c

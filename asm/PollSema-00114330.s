@@ -1,0 +1,6 @@
+xdef PollSema
+PollSema:
+	.word 0x24030045 ; 0x00114330
+	.word 0x0000000C ; 0x00114334
+	.word 0x03E00008 ; 0x00114338
+	.word 0x00000000 ; 0x0011433c

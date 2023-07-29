@@ -1,0 +1,6 @@
+xdef FUN_001dac50
+FUN_001dac50:
+	.word 0x3C040024 ; 0x001dac50
+	.word 0x0000282D ; 0x001dac54
+	.word 0x08076BBC ; 0x001dac58
+	.word 0x24847958 ; 0x001dac5c

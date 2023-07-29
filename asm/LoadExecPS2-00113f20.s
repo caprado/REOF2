@@ -1,0 +1,6 @@
+xdef LoadExecPS2
+LoadExecPS2:
+	.word 0x24030006 ; 0x00113f20
+	.word 0x0000000C ; 0x00113f24
+	.word 0x03E00008 ; 0x00113f28
+	.word 0x00000000 ; 0x00113f2c

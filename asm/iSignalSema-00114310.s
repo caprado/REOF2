@@ -1,0 +1,6 @@
+xdef iSignalSema
+iSignalSema:
+	.word 0x2403FFBD ; 0x00114310
+	.word 0x0000000C ; 0x00114314
+	.word 0x03E00008 ; 0x00114318
+	.word 0x00000000 ; 0x0011431c

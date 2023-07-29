@@ -1,0 +1,6 @@
+xdef Deci2Call
+Deci2Call:
+	.word 0x2403007C ; 0x00114710
+	.word 0x0000000C ; 0x00114714
+	.word 0x03E00008 ; 0x00114718
+	.word 0x00000000 ; 0x0011471c

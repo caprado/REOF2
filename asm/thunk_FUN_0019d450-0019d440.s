@@ -1,0 +1,4 @@
+xdef thunk_FUN_0019d450
+thunk_FUN_0019d450:
+	.word 0x08067514 ; 0x0019d440
+	.word 0x00000000 ; 0x0019d444

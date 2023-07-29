@@ -1,0 +1,6 @@
+xdef _iDisableDmac
+_iDisableDmac:
+	.word 0x2403FFE3 ; 0x001140b0
+	.word 0x0000000C ; 0x001140b4
+	.word 0x03E00008 ; 0x001140b8
+	.word 0x00000000 ; 0x001140bc

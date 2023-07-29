@@ -1,0 +1,4 @@
+xdef FUN_0017cf40
+FUN_0017cf40:
+	.word 0x03E00008 ; 0x0017cf40
+	.word 0xAC850010 ; 0x0017cf44

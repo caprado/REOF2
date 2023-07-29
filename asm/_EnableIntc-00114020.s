@@ -1,0 +1,6 @@
+xdef _EnableIntc
+_EnableIntc:
+	.word 0x24030014 ; 0x00114020
+	.word 0x0000000C ; 0x00114024
+	.word 0x03E00008 ; 0x00114028
+	.word 0x00000000 ; 0x0011402c

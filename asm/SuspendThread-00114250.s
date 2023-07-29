@@ -1,0 +1,6 @@
+xdef SuspendThread
+SuspendThread:
+	.word 0x24030037 ; 0x00114250
+	.word 0x0000000C ; 0x00114254
+	.word 0x03E00008 ; 0x00114258
+	.word 0x00000000 ; 0x0011425c

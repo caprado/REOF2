@@ -1,0 +1,4 @@
+xdef FUN_001ce700
+FUN_001ce700:
+	.word 0x08041EAE ; 0x001ce700
+	.word 0x24060014 ; 0x001ce704

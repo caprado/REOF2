@@ -1,0 +1,6 @@
+xdef RFU091
+RFU091:
+	.word 0x2403005B ; 0x0011da98
+	.word 0x0000000C ; 0x0011da9c
+	.word 0x03E00008 ; 0x0011daa0
+	.word 0x00000000 ; 0x0011daa4

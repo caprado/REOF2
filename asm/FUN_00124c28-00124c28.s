@@ -1,0 +1,4 @@
+xdef FUN_00124c28
+FUN_00124c28:
+	.word 0x03E00008 ; 0x00124c28
+	.word 0x248200CC ; 0x00124c2c

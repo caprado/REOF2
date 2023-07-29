@@ -1,0 +1,6 @@
+xdef CreateThread
+CreateThread:
+	.word 0x24030020 ; 0x001140e0
+	.word 0x0000000C ; 0x001140e4
+	.word 0x03E00008 ; 0x001140e8
+	.word 0x00000000 ; 0x001140ec
