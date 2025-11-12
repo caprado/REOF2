@@ -1,3 +1,4 @@
+/** @category: system/sync @status: complete @author: caprado */
 void func_0011d390() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
