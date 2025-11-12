@@ -3,7 +3,8 @@
 ![Decompilation Progress](.github/data/badge.svg)
 
 ## Project Description
-This project is dedicated to the decompilation of the PlayStation 2 game "Resident Evil Outbreak File #2". Currently, the project involves organizing the raw assembly code extracted from the game and recompiling it back into readable and structured C code. This effort aims to facilitate a deeper understanding of the game's architecture and coding practices, and eventually contribute to the preservation and study of video game software.
+This project is dedicated to the decompilation and preservation of the PlayStation 2 game "Resident Evil Outbreak File #2". The game binary has been extracted into C code using custom automated decompilation tools. The project is now focused on analyzing, categorizing, and refactoring this raw code into readable, maintainable source code with proper function names, data structures, and documentation. The ultimate goal is to create a documented, buildable version that runs on modern platforms (Windows and Linux) while preserving the original game's behavior.
+
 
 ## Current Status
 The project has successfully decompiled the game binary into C code. Current focus:
