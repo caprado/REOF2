@@ -1,5 +1,0 @@
-xdef FUN_001b29f0
-FUN_001b29f0:
-	.word 0x3C010049 ; 0x001b29f0
-	.word 0x03E00008 ; 0x001b29f4
-	.word 0xA4200C1C ; 0x001b29f8

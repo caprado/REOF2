@@ -1,8 +1,0 @@
-xdef FUN_0016e7f0
-FUN_0016e7f0:
-	.word 0x248409A0 ; 0x0016e7f0
-	.word 0x8C8200AC ; 0x0016e7f4
-	.word 0xACE20000 ; 0x0016e7f8
-	.word 0x8C8300A8 ; 0x0016e7fc
-	.word 0x03E00008 ; 0x0016e800
-	.word 0xACC30000 ; 0x0016e804

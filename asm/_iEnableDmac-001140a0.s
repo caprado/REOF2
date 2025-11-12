@@ -1,6 +1,0 @@
-xdef _iEnableDmac
-_iEnableDmac:
-	.word 0x2403FFE4 ; 0x001140a0
-	.word 0x0000000C ; 0x001140a4
-	.word 0x03E00008 ; 0x001140a8
-	.word 0x00000000 ; 0x001140ac

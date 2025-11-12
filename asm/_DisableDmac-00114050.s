@@ -1,6 +1,0 @@
-xdef _DisableDmac
-_DisableDmac:
-	.word 0x24030017 ; 0x00114050
-	.word 0x0000000C ; 0x00114054
-	.word 0x03E00008 ; 0x00114058
-	.word 0x00000000 ; 0x0011405c

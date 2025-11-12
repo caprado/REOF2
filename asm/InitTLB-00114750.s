@@ -1,6 +1,0 @@
-xdef InitTLB
-InitTLB:
-	.word 0x24030082 ; 0x00114750
-	.word 0x0000000C ; 0x00114754
-	.word 0x03E00008 ; 0x00114758
-	.word 0x00000000 ; 0x0011475c

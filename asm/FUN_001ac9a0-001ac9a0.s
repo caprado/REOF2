@@ -1,7 +1,0 @@
-xdef FUN_001ac9a0
-FUN_001ac9a0:
-	.word 0x0006343C ; 0x001ac9a0
-	.word 0x30E700FF ; 0x001ac9a4
-	.word 0x0006343F ; 0x001ac9a8
-	.word 0x08069DC4 ; 0x001ac9ac
-	.word 0x310800FF ; 0x001ac9b0

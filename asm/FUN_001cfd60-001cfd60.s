@@ -1,6 +1,0 @@
-xdef FUN_001cfd60
-FUN_001cfd60:
-	.word 0xAC80000C ; 0x001cfd60
-	.word 0xAC800004 ; 0x001cfd64
-	.word 0x03E00008 ; 0x001cfd68
-	.word 0xA0800000 ; 0x001cfd6c

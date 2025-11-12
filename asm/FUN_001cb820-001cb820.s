@@ -1,7 +1,0 @@
-xdef FUN_001cb820
-FUN_001cb820:
-	.word 0x8C860000 ; 0x001cb820
-	.word 0x8CA30000 ; 0x001cb824
-	.word 0xAC830000 ; 0x001cb828
-	.word 0x03E00008 ; 0x001cb82c
-	.word 0xACA60000 ; 0x001cb830

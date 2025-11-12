@@ -1,8 +1,0 @@
-xdef FUN_0015fc30
-FUN_0015fc30:
-	.word 0x27BDFFF0 ; 0x0015fc30
-	.word 0xFFBF0000 ; 0x0015fc34
-	.word 0x8C840044 ; 0x0015fc38
-	.word 0xDFBF0000 ; 0x0015fc3c
-	.word 0x08059038 ; 0x0015fc40
-	.word 0x27BD0010 ; 0x0015fc44

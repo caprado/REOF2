@@ -1,6 +1,0 @@
-xdef _iEnableIntc
-_iEnableIntc:
-	.word 0x2403FFE6 ; 0x00114080
-	.word 0x0000000C ; 0x00114084
-	.word 0x03E00008 ; 0x00114088
-	.word 0x00000000 ; 0x0011408c

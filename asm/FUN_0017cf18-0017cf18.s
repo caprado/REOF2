@@ -1,5 +1,0 @@
-xdef FUN_0017cf18
-FUN_0017cf18:
-	.word 0xAC86000C ; 0x0017cf18
-	.word 0x03E00008 ; 0x0017cf1c
-	.word 0xAC850008 ; 0x0017cf20

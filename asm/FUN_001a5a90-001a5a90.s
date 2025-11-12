@@ -1,4 +1,0 @@
-xdef FUN_001a5a90
-FUN_001a5a90:
-	.word 0x03E00008 ; 0x001a5a90
-	.word 0xA3849BF8 ; 0x001a5a94

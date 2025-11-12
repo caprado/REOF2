@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Progress tracking temp files
+progress.json
+progress_report.txt
+badge.json
+badge.svg
+
+# Keep the committed versions in .github/data/
+!.github/data/progress.json
+!.github/data/progress_report.txt
+!.github/data/badge.svg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Build artifacts
+*.o
+*.obj
+*.exe
+*.out
+*.elf
+*.bin
+
+# Logs
+*.log
+
+# OS
+Thumbs.db

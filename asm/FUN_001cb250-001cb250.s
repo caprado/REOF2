@@ -1,4 +1,0 @@
-xdef FUN_001cb250
-FUN_001cb250:
-	.word 0x08072CA8 ; 0x001cb250
-	.word 0x24040040 ; 0x001cb254

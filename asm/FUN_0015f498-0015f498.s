@@ -1,8 +1,0 @@
-xdef FUN_0015f498
-FUN_0015f498:
-	.word 0x27BDFFF0 ; 0x0015f498
-	.word 0xFFBF0000 ; 0x0015f49c
-	.word 0x8C840040 ; 0x0015f4a0
-	.word 0xDFBF0000 ; 0x0015f4a4
-	.word 0x080597AA ; 0x0015f4a8
-	.word 0x27BD0010 ; 0x0015f4ac

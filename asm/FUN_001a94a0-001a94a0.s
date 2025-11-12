@@ -1,6 +1,0 @@
-xdef FUN_001a94a0
-FUN_001a94a0:
-	.word 0x8CA60020 ; 0x001a94a0
-	.word 0x8CA50008 ; 0x001a94a4
-	.word 0x0806A4B4 ; 0x001a94a8
-	.word 0x0000382D ; 0x001a94ac

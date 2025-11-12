@@ -1,0 +1,32 @@
+void func_0013d018() {
+    // MIPS register variables
+    int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
+    int32_t s0, s1, s2, s3, s4, s5, s6, s7;
+    uintptr_t sp, gp, fp, ra;                                   // Pointer registers (as integers for arithmetic)
+    int32_t at;                                                 // Assembler temporary register
+    int32_t hi, lo;                                             // Multiply/divide result registers
+    
+    sp = sp + -0x10;                                            // 0x0013d018: addiu $sp, $sp, -0x10
+    if (a0 != 0) goto label_0x13d040;                           // 0x0013d020: bnez $a0, 0x13d040
+    a0 = 0x22 << 16;                                            // 0x0013d028: lui $a0, 0x22
+    a0 = &str_00225be8;  // "E0011: Illigal parameter fname=%s\n" // 0x0013d030: addiu $a0, $a0, 0x5be8
+    return func_0013d248();  // Tail call                        // 0x0013d034: j 0x13d1b8
+    sp = sp + 0x10;                                             // 0x0013d038: addiu $sp, $sp, 0x10
+    /* nop */                                                   // 0x0013d03c: nop 
+label_0x13d040:
+    if (v1 < 0) goto label_0x13d05c;                            // 0x0013d040: bltzl $v1, 0x13d05c
+    a0 = 0x22 << 16;                                            // 0x0013d044: lui $a0, 0x22
+    v0 = g_00220018;  // Global at 0x00220018                   // 0x0013d048: lw $v0, 0x18($a0)
+    v0 = (v0 < v1) ? 1 : 0;                                     // 0x0013d04c: slt $v0, $v0, $v1
+    if (v0 == 0) goto label_0x13d070;                           // 0x0013d050: beqz $v0, 0x13d070
+    a0 = 0x22 << 16;                                            // 0x0013d058: lui $a0, 0x22
+label_0x13d05c:
+    a0 = &str_00225c80;  // "\nLSC/PS2EE Ver.2.14 Build:Jul 28 2003 17:50:11\n" // 0x0013d060: addiu $a0, $a0, 0x5c80
+    return func_0013d248();  // Tail call                        // 0x0013d064: j 0x13d1b8
+    sp = sp + 0x10;                                             // 0x0013d068: addiu $sp, $sp, 0x10
+    /* nop */                                                   // 0x0013d06c: nop 
+label_0x13d070:
+    g_00225c94 = v1;  // Global at 0x00225c94                   // 0x0013d070: sw $v1, 0x14($a0)
+    return;                                                     // 0x0013d074: jr $ra
+    sp = sp + 0x10;                                             // 0x0013d078: addiu $sp, $sp, 0x10
+}

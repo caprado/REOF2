@@ -1,6 +1,0 @@
-xdef _DisableIntc
-_DisableIntc:
-	.word 0x24030015 ; 0x00114030
-	.word 0x0000000C ; 0x00114034
-	.word 0x03E00008 ; 0x00114038
-	.word 0x00000000 ; 0x0011403c

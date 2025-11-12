@@ -1,6 +1,0 @@
-xdef SetSyscall
-SetSyscall:
-	.word 0x24030074 ; 0x0011d620
-	.word 0x0000000C ; 0x0011d624
-	.word 0x03E00008 ; 0x0011d628
-	.word 0x00000000 ; 0x0011d62c

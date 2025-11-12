@@ -1,5 +1,0 @@
-xdef FUN_0012de90
-FUN_0012de90:
-	.word 0xA4860006 ; 0x0012de90
-	.word 0x03E00008 ; 0x0012de94
-	.word 0xA4850004 ; 0x0012de98

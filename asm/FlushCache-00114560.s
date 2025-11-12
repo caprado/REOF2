@@ -1,6 +1,0 @@
-xdef FlushCache
-FlushCache:
-	.word 0x24030064 ; 0x00114560
-	.word 0x0000000C ; 0x00114564
-	.word 0x03E00008 ; 0x00114568
-	.word 0x00000000 ; 0x0011456c

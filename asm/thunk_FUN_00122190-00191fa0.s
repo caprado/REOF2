@@ -1,4 +1,0 @@
-xdef thunk_FUN_00122190
-thunk_FUN_00122190:
-	.word 0x08048864 ; 0x00191fa0
-	.word 0x00000000 ; 0x00191fa4

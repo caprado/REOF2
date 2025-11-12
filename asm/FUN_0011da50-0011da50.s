@@ -1,6 +1,0 @@
-xdef FUN_0011da50
-FUN_0011da50:
-	.word 0x2403005A ; 0x0011da50
-	.word 0x0000000C ; 0x0011da54
-	.word 0x03E00008 ; 0x0011da58
-	.word 0x00000000 ; 0x0011da5c

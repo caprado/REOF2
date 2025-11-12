@@ -1,7 +1,0 @@
-xdef FUN_00114a98
-FUN_00114a98:
-	.word 0x24022000 ; 0x00114a98
-	.word 0xFCA00048 ; 0x00114a9c
-	.word 0xACA20004 ; 0x00114aa0
-	.word 0x03E00008 ; 0x00114aa4
-	.word 0x0000102D ; 0x00114aa8

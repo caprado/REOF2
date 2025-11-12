@@ -1,6 +1,0 @@
-xdef sceSifDmaStat
-sceSifDmaStat:
-	.word 0x24030076 ; 0x00114680
-	.word 0x0000000C ; 0x00114684
-	.word 0x03E00008 ; 0x00114688
-	.word 0x00000000 ; 0x0011468c

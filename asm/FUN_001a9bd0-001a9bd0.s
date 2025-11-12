@@ -1,8 +1,0 @@
-xdef FUN_001a9bd0
-FUN_001a9bd0:
-	.word 0x0080102D ; 0x001a9bd0
-	.word 0x00A0302D ; 0x001a9bd4
-	.word 0x8F849C14 ; 0x001a9bd8
-	.word 0x0040282D ; 0x001a9bdc
-	.word 0x0806A598 ; 0x001a9be0
-	.word 0x0000382D ; 0x001a9be4

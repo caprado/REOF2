@@ -1,5 +1,0 @@
-xdef FUN_00106aa8
-FUN_00106aa8:
-	.word 0x3C020022 ; 0x00106aa8
-	.word 0x03E00008 ; 0x00106aac
-	.word 0x24420150 ; 0x00106ab0

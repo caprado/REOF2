@@ -1,6 +1,0 @@
-xdef WaitSema
-WaitSema:
-	.word 0x24030044 ; 0x00114320
-	.word 0x0000000C ; 0x00114324
-	.word 0x03E00008 ; 0x00114328
-	.word 0x00000000 ; 0x0011432c

@@ -1,6 +1,0 @@
-xdef FUN_0018da80
-FUN_0018da80:
-	.word 0x0080282D ; 0x0018da80
-	.word 0x3C040029 ; 0x0018da84
-	.word 0x08062658 ; 0x0018da88
-	.word 0x248403E0 ; 0x0018da8c

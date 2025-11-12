@@ -1,6 +1,0 @@
-xdef StartThread
-StartThread:
-	.word 0x24030022 ; 0x00114100
-	.word 0x0000000C ; 0x00114104
-	.word 0x03E00008 ; 0x00114108
-	.word 0x00000000 ; 0x0011410c

@@ -1,7 +1,0 @@
-xdef FUN_001b07e0
-FUN_001b07e0:
-	.word 0x90840003 ; 0x001b07e0
-	.word 0x27839C50 ; 0x001b07e4
-	.word 0x00641821 ; 0x001b07e8
-	.word 0x03E00008 ; 0x001b07ec
-	.word 0xA0650000 ; 0x001b07f0

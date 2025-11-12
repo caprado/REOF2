@@ -1,7 +1,0 @@
-xdef FUN_00161d98
-FUN_00161d98:
-	.word 0x27BDFFF0 ; 0x00161d98
-	.word 0xFFBF0000 ; 0x00161d9c
-	.word 0xDFBF0000 ; 0x00161da0
-	.word 0x0805875A ; 0x00161da4
-	.word 0x27BD0010 ; 0x00161da8

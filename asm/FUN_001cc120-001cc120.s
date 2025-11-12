@@ -1,5 +1,0 @@
-xdef FUN_001cc120
-FUN_001cc120:
-	.word 0x3C010032 ; 0x001cc120
-	.word 0x03E00008 ; 0x001cc124
-	.word 0xA0205920 ; 0x001cc128

@@ -1,6 +1,0 @@
-xdef SleepThread
-SleepThread:
-	.word 0x24030032 ; 0x00114200
-	.word 0x0000000C ; 0x00114204
-	.word 0x03E00008 ; 0x00114208
-	.word 0x00000000 ; 0x0011420c

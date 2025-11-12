@@ -1,7 +1,0 @@
-xdef FUN_0012ba38
-FUN_0012ba38:
-	.word 0x27BDFFF0 ; 0x0012ba38
-	.word 0xFFBF0000 ; 0x0012ba3c
-	.word 0xDFBF0000 ; 0x0012ba40
-	.word 0x080504E4 ; 0x0012ba44
-	.word 0x27BD0010 ; 0x0012ba48

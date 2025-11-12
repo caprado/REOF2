@@ -1,5 +1,0 @@
-xdef FUN_00139cf8
-FUN_00139cf8:
-	.word 0x3C020020 ; 0x00139cf8
-	.word 0x03E00008 ; 0x00139cfc
-	.word 0xAC443EE8 ; 0x00139d00

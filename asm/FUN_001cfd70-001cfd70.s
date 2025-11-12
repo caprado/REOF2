@@ -1,6 +1,0 @@
-xdef FUN_001cfd70
-FUN_001cfd70:
-	.word 0x8C83000C ; 0x001cfd70
-	.word 0x8C820004 ; 0x001cfd74
-	.word 0x03E00008 ; 0x001cfd78
-	.word 0x00621023 ; 0x001cfd7c

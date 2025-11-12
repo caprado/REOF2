@@ -1,4 +1,0 @@
-xdef FUN_001af180
-FUN_001af180:
-	.word 0x03E00008 ; 0x001af180
-	.word 0x00000000 ; 0x001af184

@@ -1,7 +1,0 @@
-xdef FUN_0015fc80
-FUN_0015fc80:
-	.word 0x10800002 ; 0x0015fc80
-	.word 0x0000102D ; 0x0015fc84
-	.word 0x8C820004 ; 0x0015fc88
-	.word 0x03E00008 ; 0x0015fc8c
-	.word 0x00000000 ; 0x0015fc90

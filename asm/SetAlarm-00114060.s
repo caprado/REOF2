@@ -1,6 +1,0 @@
-xdef SetAlarm
-SetAlarm:
-	.word 0x240300FC ; 0x00114060
-	.word 0x0000000C ; 0x00114064
-	.word 0x03E00008 ; 0x00114068
-	.word 0x00000000 ; 0x0011406c

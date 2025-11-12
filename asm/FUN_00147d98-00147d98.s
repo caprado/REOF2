@@ -1,5 +1,0 @@
-xdef FUN_00147d98
-FUN_00147d98:
-	.word 0x8C82000C ; 0x00147d98
-	.word 0x03E00008 ; 0x00147d9c
-	.word 0xAC820008 ; 0x00147da0

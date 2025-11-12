@@ -1,5 +1,0 @@
-xdef FUN_0017d4b0
-FUN_0017d4b0:
-	.word 0xAC800040 ; 0x0017d4b0
-	.word 0x03E00008 ; 0x0017d4b4
-	.word 0xAC80003C ; 0x0017d4b8

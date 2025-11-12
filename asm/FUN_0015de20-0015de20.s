@@ -1,5 +1,0 @@
-xdef FUN_0015de20
-FUN_0015de20:
-	.word 0x8C8200E0 ; 0x0015de20
-	.word 0x03E00008 ; 0x0015de24
-	.word 0x0002102B ; 0x0015de28

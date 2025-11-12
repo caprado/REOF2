@@ -1,5 +1,0 @@
-xdef FUN_0017ce28
-FUN_0017ce28:
-	.word 0x2882181F ; 0x0017ce28
-	.word 0x03E00008 ; 0x0017ce2c
-	.word 0x38420001 ; 0x0017ce30

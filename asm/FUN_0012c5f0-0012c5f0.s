@@ -1,8 +1,0 @@
-xdef FUN_0012c5f0
-FUN_0012c5f0:
-	.word 0x3C030020 ; 0x0012c5f0
-	.word 0x2463E380 ; 0x0012c5f4
-	.word 0x8C620000 ; 0x0012c5f8
-	.word 0x2442FFFF ; 0x0012c5fc
-	.word 0x03E00008 ; 0x0012c600
-	.word 0xAC620000 ; 0x0012c604

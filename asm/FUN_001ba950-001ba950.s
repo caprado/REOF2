@@ -1,4 +1,0 @@
-xdef FUN_001ba950
-FUN_001ba950:
-	.word 0x03E00008 ; 0x001ba950
-	.word 0x00000000 ; 0x001ba954

@@ -1,7 +1,0 @@
-xdef FUN_0013aba8
-FUN_0013aba8:
-	.word 0x27BDFFF0 ; 0x0013aba8
-	.word 0xFFBF0000 ; 0x0013abac
-	.word 0xDFBF0000 ; 0x0013abb0
-	.word 0x0804E008 ; 0x0013abb4
-	.word 0x27BD0010 ; 0x0013abb8

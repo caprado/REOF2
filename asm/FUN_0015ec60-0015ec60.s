@@ -1,8 +1,0 @@
-xdef FUN_0015ec60
-FUN_0015ec60:
-	.word 0x27BDFFF0 ; 0x0015ec60
-	.word 0xFFBF0000 ; 0x0015ec64
-	.word 0x8C840040 ; 0x0015ec68
-	.word 0xDFBF0000 ; 0x0015ec6c
-	.word 0x0805CEFA ; 0x0015ec70
-	.word 0x27BD0010 ; 0x0015ec74

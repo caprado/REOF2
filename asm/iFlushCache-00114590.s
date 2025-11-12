@@ -1,6 +1,0 @@
-xdef iFlushCache
-iFlushCache:
-	.word 0x2403FF98 ; 0x00114590
-	.word 0x0000000C ; 0x00114594
-	.word 0x03E00008 ; 0x00114598
-	.word 0x00000000 ; 0x0011459c

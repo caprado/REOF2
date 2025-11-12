@@ -1,6 +1,0 @@
-xdef GetThreadId
-GetThreadId:
-	.word 0x2403002F ; 0x001141d0
-	.word 0x0000000C ; 0x001141d4
-	.word 0x03E00008 ; 0x001141d8
-	.word 0x00000000 ; 0x001141dc

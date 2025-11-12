@@ -1,8 +1,0 @@
-xdef FUN_00129dc0
-FUN_00129dc0:
-	.word 0x27BDFFF0 ; 0x00129dc0
-	.word 0x00A0202D ; 0x00129dc4
-	.word 0xFFBF0000 ; 0x00129dc8
-	.word 0xDFBF0000 ; 0x00129dcc
-	.word 0x08049F64 ; 0x00129dd0
-	.word 0x27BD0010 ; 0x00129dd4

@@ -1,7 +1,0 @@
-xdef FUN_0016ad70
-FUN_0016ad70:
-	.word 0x8C831AEC ; 0x0016ad70
-	.word 0x8C620014 ; 0x0016ad74
-	.word 0x24420001 ; 0x0016ad78
-	.word 0x03E00008 ; 0x0016ad7c
-	.word 0xAC620014 ; 0x0016ad80

@@ -1,7 +1,0 @@
-xdef FUN_00195ea0
-FUN_00195ea0:
-	.word 0x24020002 ; 0x00195ea0
-	.word 0x3C010029 ; 0x00195ea4
-	.word 0xAC220370 ; 0x00195ea8
-	.word 0x03E00008 ; 0x00195eac
-	.word 0x24020001 ; 0x00195eb0

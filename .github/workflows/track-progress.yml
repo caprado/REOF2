@@ -1,0 +1,91 @@
+name: Track Decompilation Progress
+
+on:
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'extracted/**/*.c'
+      - 'src/**/*.c'
+  push:
+    branches: [ main ]
+    paths:
+      - 'extracted/**/*.c'
+      - 'src/**/*.c'
+  workflow_dispatch:  # Allow manual trigger
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  track-progress:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Full history for better tracking
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Run progress tracker
+      id: progress
+      run: |
+        python tools/track_progress.py \
+          --root . \
+          --json progress.json \
+          --badge badge.json \
+          --report progress_report.txt
+
+    - name: Display progress report
+      run: cat progress_report.txt
+
+    - name: Generate progress badge SVG
+      run: |
+        python tools/generate_badge.py \
+          --json progress.json \
+          --output .github/data/badge.svg
+
+    - name: Upload progress data as artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: progress-data
+        path: |
+          progress.json
+          progress_report.txt
+          badge.json
+          .github/data/badge.svg
+
+    - name: Comment PR with progress
+      if: github.event_name == 'pull_request'
+      uses: actions/github-script@v7
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        script: |
+          const fs = require('fs');
+          const report = fs.readFileSync('progress_report.txt', 'utf8');
+
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: '## 📊 Decompilation Progress Update\n\n```\n' + report + '\n```'
+          });
+
+    - name: Commit updated progress data
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+
+        mkdir -p .github/data
+        cp progress.json .github/data/progress.json
+        cp progress_report.txt .github/data/progress_report.txt
+
+        git add .github/data/progress.json .github/data/progress_report.txt .github/data/badge.svg
+        git diff --staged --quiet || git commit -m "Update decompilation progress data [skip ci]"
+        git push
