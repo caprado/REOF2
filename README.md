@@ -7,14 +7,15 @@ This project is dedicated to the decompilation and preservation of the PlayStati
 
 
 ## Current Status
-The project has successfully decompiled the game binary into C code. Current focus:
-- Organizing and categorizing the decompiled functions into logical modules
-- Refactoring and cleaning up the extracted C code for readability
-- Documenting function purposes and data structures
-- Creating a platform abstraction layer for cross-platform compatibility
-- **4073 functions total** to categorize and refactor from the extracted directory
+The game binary has been extracted into raw C code using decompilation tools. Current focus:
+- Analyzing and categorizing 4073 extracted functions by purpose
+- Identifying function roles (entry points, memory management, I/O, game logic, etc.)
+- Refactoring raw decompiler output into readable, maintainable code
+- Replacing generic names (`func_00100230`) with meaningful identifiers
+- Documenting data structures and system architecture
+- Creating a platform abstraction layer for Windows and Linux support
 
-All functions have been decompiled to C, including strings and text data sectors.
+**Progress:** 4073 functions extracted and ready for analysis. String and data sections included.
 
 ## Project Structure
 
@@ -58,7 +59,7 @@ src/
 
 ### Tracking Progress
 
-We use a JSDoc-style tagging system to track which functions have been categorized and refactored. See [docs/TAGGING_GUIDE.md](docs/TAGGING_GUIDE.md) for details.
+We use a JSDoc-style tagging system to track which functions have been categorized and refactored.
 
 **Quick example:**
 ```c
@@ -90,6 +91,3 @@ This project is for educational and preservation purposes only. It does not endo
 ## Acknowledgments
 - Capcom for creating "Resident Evil Outbreak File #2"
 - The emulation and reverse-engineering communities for providing the tools and knowledge necessary to undertake this project
-
-## License
-This project is released under the [MIT License](LICENSE).
