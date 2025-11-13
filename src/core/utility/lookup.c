@@ -1,7 +1,3 @@
-/**
- * Table lookup and utility functions
- */
-
 #include <stdint.h>
 
 // Table base address (original: 0x250000 - 0x3740 = 0x24C8C0)

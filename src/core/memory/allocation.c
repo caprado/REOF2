@@ -1,14 +1,3 @@
-/**
- * @category memory/allocation
- * @status complete
- * @author caprado
- * @original func_001a0c10
- * @address 0x001a0c10
- * @description Allocates a memory block from a managed heap by traversing a free list
- *              and finding a suitable block. Updates allocation statistics and block metadata.
- * @windows_compatibility high
- */
-
 #include <stdint.h>
 #include <stddef.h>
 
@@ -34,11 +23,20 @@ typedef struct MemoryContext {
     uint32_t field_0x18;         // offset 0x18: Alignment/size field
 } MemoryContext;
 
-// Forward declarations for helper functions
 extern void calculate_aligned_size(void);
 extern void update_allocation_stats(void);
 extern void handle_allocation_failure(void);
 
+/**
+ * @category memory/allocation
+ * @status complete
+ * @author caprado
+ * @original func_001a0c10
+ * @address 0x001a0c10
+ * @description Allocates a memory block from a managed heap by traversing a free list
+ *              and finding a suitable block. Updates allocation statistics and block metadata.
+ * @windows_compatibility high
+ */
 void* allocate_memory_block(
     MemoryContext* memContext,      // a0: Memory management context structure
     size_t requestedSize,           // a1: Size of memory to allocate

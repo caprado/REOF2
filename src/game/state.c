@@ -1,19 +1,13 @@
-/**
- * Game state machine for PS2 to Windows port
- * Handles main gameplay sequence states and transitions
- */
-
 #include <stdint.h>
 #include <stdbool.h>
 
-// Forward declarations for helper functions
-extern int func_001b07d0(void);     // Original: func_001b07d0 at 0x1b0720
-extern void func_001af2f0(uintptr_t addr);  // Original: func_001af2f0 at 0x1af280
-extern void func_001af3a0(uintptr_t addr);  // Original: func_001af3a0 at 0x1af2f0
-extern void func_001b7720(uintptr_t addr, int param);  // Original: func_001b7720 at 0x1b76c0
+extern int initializeGameBuffer(void);  // Original: func_001b07d0 at 0x1b0720
+extern void removeFromPointerArray(uintptr_t addr);  // Original: func_001af2f0 at 0x1af280
+extern void addToPointerArray(uintptr_t addr);       // Original: func_001af3a0 at 0x1af2f0
+extern void initializeResourceEntry(uintptr_t addr, int index);  // Original: func_001b7720 at 0x1b76c0
 extern void func_001bbab0(int param);  // Original: func_001bbab0 at 0x1bb9e0
-extern void func_001bbf70(void);    // Original: func_001bbf70 at 0x1bbf40
-extern void func_001bbfb0(void);    // Original: func_001bbfb0 at 0x1bbf70
+extern void clearGameBuffer(void);  // Original: func_001bbf70 at 0x1bbf40
+extern void updateGameLoop(void);  // Original: func_001bbfb0 at 0x1bbfb0
 extern int func_001bc960(void);     // Original: func_001bc960 at 0x1bc750
 extern void func_001bc1b0(void);    // Original: func_001bc1b0 at 0x1bc1a0
 extern void func_001bc200(void);    // Original: func_001bc200 at 0x1bc1b0
@@ -21,7 +15,7 @@ extern void func_001c2e20(void);    // Original: func_001c2e20 at 0x1c2a50
 extern int func_001c32d0(void);     // Original: func_001c32d0 at 0x1c2e20
 extern int func_001dbe10(void);     // Original: func_001dbe10 at 0x1dbdc0
 extern void func_001ba590(void);    // Original: func_001ba590 at 0x1ba3c0
-extern void func_001bbb80(void);    // Original: func_001bbb80 at 0x1bbab0
+extern void func_001bbb80(void);    // Original: func_001bbb80 at 0x1bbab0f
 extern void func_001b7970(void);    // Original: func_001b7970 at 0x1b7940
 extern void func_001b77f0(void);    // Original: func_001b77f0 at 0x1b7790
 extern int func_001b0d20(void);     // Original: func_001b0d20 at 0x1b0ce0
@@ -82,7 +76,7 @@ void processGameStateMachine(GameStateContext* context) {
     switch (state) {
         case STATE_INIT:  // State 0: Initialize
         {
-            int result = func_001b07d0();  // Original: func_001b07d0 at 0x1b0720
+            int result = initializeGameBuffer();  // Original: func_001b07d0 at 0x1b0720
 
             if (result == -1) {
                 // Error case - exit
@@ -93,17 +87,17 @@ void processGameStateMachine(GameStateContext* context) {
                 // Special case - go to exit state
                 context->currentState = STATE_EXIT;
                 context->timerCounter = 0;
-                func_001af2f0(0x1c1f70);  // Original: func_001af2f0 at 0x1af280
+                removeFromPointerArray(0x1c1f70);  // Original: func_001af2f0 at 0x1af280
                 goto state_exit;
             }
 
             // Normal path - advance to load state
-            func_001b7720(0x1b9e60, 0xe);  // Original: func_001b7720 at 0x1b76c0
+            initializeResourceEntry(0x1b9e60, 0xe);  // Original: func_001b7720 at 0x1b76c0
             context->currentState++;
-            func_001bbf70();  // Original: func_001bbf70 at 0x1bbf40
-            func_001bbfb0();  // Original: func_001bbfb0 at 0x1bbf70
-            func_001af2f0(0x1bbfb0);  // Original: func_001af2f0 at 0x1af280
-            func_001af2f0(0x1bae50);  // Original: func_001af2f0 at 0x1af280
+            clearGameBuffer();  // Original: func_001bbf70 at 0x1bbf40
+            updateGameLoop();  // Original: func_001bbfb0 at 0x1bbfb0
+            removeFromPointerArray(0x1bbfb0);  // Original: func_001af2f0 at 0x1af280
+            removeFromPointerArray(0x1bae50);  // Original: func_001af2f0 at 0x1af280
             break;
         }
 
@@ -236,8 +230,8 @@ void processGameStateMachine(GameStateContext* context) {
                 goto final_check;
             } else {
                 // Alternate exit path
-                func_001af3a0(0x1bbfb0);  // Original: func_001af3a0 at 0x1af2f0
-                func_001af3a0(0x1bae50);  // Original: func_001af3a0 at 0x1af2f0
+                addToPointerArray(0x1bbfb0);  // Original: func_001af3a0 at 0x1af2f0
+                addToPointerArray(0x1bae50);  // Original: func_001af3a0 at 0x1af2f0
                 func_001ba590();  // Original: func_001ba590 at 0x1ba3c0
                 func_001bbb80();  // Original: func_001bbb80 at 0x1bbab0
                 func_001b7970();  // Original: func_001b7970 at 0x1b7940
@@ -259,14 +253,14 @@ void processGameStateMachine(GameStateContext* context) {
                 // Check controller state for specific button (0x20)
                 if (g_controllerState & 0x20) {
                     // Button pressed - restart
-                    func_001b7720(0x1b9e60, 0xe);  // Original: func_001b7720 at 0x1b76c0
+                    initializeResourceEntry(0x1b9e60, 0xe);  // Original: func_001b7720 at 0x1b76c0
                     context->currentState = STATE_LOAD;
                     context->timerCounter = 0;
-                    func_001bbfb0();  // Original: func_001bbfb0 at 0x1bbf70
-                    func_001bbf70();  // Original: func_001bbf70 at 0x1bbf40
-                    func_001af3a0(0x1c1f70);  // Original: func_001af3a0 at 0x1af2f0
-                    func_001af2f0(0x1bbfb0);  // Original: func_001af2f0 at 0x1af280
-                    func_001af2f0(0x1bae50);  // Original: func_001af2f0 at 0x1af280
+                    updateGameLoop();  // Original: func_001bbfb0 at 0x1bbfb0
+                    clearGameBuffer();  // Original: func_001bbf70 at 0x1bbf40
+                    addToPointerArray(0x1c1f70);  // Original: func_001af3a0 at 0x1af2f0
+                    removeFromPointerArray(0x1bbfb0);  // Original: func_001af2f0 at 0x1af280
+                    removeFromPointerArray(0x1bae50);  // Original: func_001af2f0 at 0x1af280
                 } else {
                     // No button press - check again
                     int inputReady = func_001b0d20();  // Original: func_001b0d20 at 0x1b0ce0
