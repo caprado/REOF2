@@ -1,24 +1,47 @@
 {
   "total_files": 4073,
-  "categorized": 0,
+  "categorized": 44,
   "by_category": {
-    "uncategorized": 4073
+    "core/entry": 1,
+    "core/init": 4,
+    "uncategorized": 4029,
+    "system/thread": 2,
+    "system/timing": 1,
+    "utility/lookup": 1,
+    "system/sync": 3,
+    "game/rendering": 5,
+    "graphics/memory": 1,
+    "memory/allocation": 1,
+    "game/utility": 1,
+    "game/stub": 1,
+    "compression/lz77": 1,
+    "utility/array": 2,
+    "game/init": 3,
+    "memory/pool": 1,
+    "game/frame": 1,
+    "game/resource": 5,
+    "game/menu": 5,
+    "game/state": 2,
+    "game/update": 1,
+    "game/buffer": 1,
+    "game/loop": 1
   },
   "by_status": {
-    "uncategorized": 4073
+    "complete": 44,
+    "uncategorized": 4029
   },
   "files": [
     {
       "filename": "func_00100230.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "core/entry",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00100250.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "core/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001002b8.c",
@@ -94,9 +117,9 @@
     },
     {
       "filename": "func_00100e38.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "core/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00100ea8.c",
@@ -718,9 +741,9 @@
     },
     {
       "filename": "func_00107d30.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "system/thread",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00107db0.c",
@@ -1234,9 +1257,9 @@
     },
     {
       "filename": "func_00111678.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "core/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00111738.c",
@@ -1282,9 +1305,9 @@
     },
     {
       "filename": "func_00111f90.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "core/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00112048.c",
@@ -1306,9 +1329,9 @@
     },
     {
       "filename": "func_00112170.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "system/timing",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00112210.c",
@@ -2008,9 +2031,9 @@
     },
     {
       "filename": "func_00115408.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "system/thread",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00115430.c",
@@ -2164,9 +2187,9 @@
     },
     {
       "filename": "func_00116598.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "utility/lookup",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001165e0.c",
@@ -2314,9 +2337,9 @@
     },
     {
       "filename": "func_001178e0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "system/sync",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00117ae0.c",
@@ -2836,15 +2859,15 @@
     },
     {
       "filename": "func_0011d378.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "system/sync",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0011d390.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "system/sync",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0011d3e8.c",
@@ -16204,9 +16227,9 @@
     },
     {
       "filename": "func_0018dca0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/rendering",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0018e010.c",
@@ -16996,9 +17019,9 @@
     },
     {
       "filename": "func_00195ec0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/rendering",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00196050.c",
@@ -17050,9 +17073,9 @@
     },
     {
       "filename": "func_00198130.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/rendering",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001981f0.c",
@@ -17578,9 +17601,9 @@
     },
     {
       "filename": "func_0019f080.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/memory",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0019f130.c",
@@ -17650,9 +17673,9 @@
     },
     {
       "filename": "func_001a0970.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/rendering",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001a0980.c",
@@ -17674,9 +17697,9 @@
     },
     {
       "filename": "func_001a0c10.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "memory/allocation",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001a0f10.c",
@@ -18598,9 +18621,9 @@
     },
     {
       "filename": "func_001a8a60.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/utility",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001a8a90.c",
@@ -19174,9 +19197,9 @@
     },
     {
       "filename": "func_001ae910.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/rendering",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001ae950.c",
@@ -19228,15 +19251,15 @@
     },
     {
       "filename": "func_001aee10.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/stub",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001aee20.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "compression/lz77",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001aeef0.c",
@@ -19294,15 +19317,15 @@
     },
     {
       "filename": "func_001af2f0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "utility/array",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001af3a0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "utility/array",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001af400.c",
@@ -19504,9 +19527,9 @@
     },
     {
       "filename": "func_001b07d0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001b0800.c",
@@ -19744,9 +19767,9 @@
     },
     {
       "filename": "func_001b2080.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "memory/pool",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001b2110.c",
@@ -20332,15 +20355,15 @@
     },
     {
       "filename": "func_001b76c0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/frame",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001b7720.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/resource",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001b7790.c",
@@ -20656,39 +20679,39 @@
     },
     {
       "filename": "func_001b9e60.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/menu",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001b9ef0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/menu",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001ba010.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/menu",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001ba060.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/menu",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001ba0f0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/menu",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001ba1d0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/state",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001ba2a0.c",
@@ -20698,9 +20721,9 @@
     },
     {
       "filename": "func_001ba310.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/update",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001ba360.c",
@@ -20728,9 +20751,9 @@
     },
     {
       "filename": "func_001ba8b0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001ba8f0.c",
@@ -20746,9 +20769,9 @@
     },
     {
       "filename": "func_001ba960.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001ba9c0.c",
@@ -20872,15 +20895,15 @@
     },
     {
       "filename": "func_001bbf70.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/buffer",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001bbfb0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/loop",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001bc190.c",
@@ -20896,9 +20919,9 @@
     },
     {
       "filename": "func_001bc2a0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/state",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001bc6d0.c",
@@ -23416,9 +23439,9 @@
     },
     {
       "filename": "func_001d35a0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/resource",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001d3600.c",
@@ -23458,9 +23481,9 @@
     },
     {
       "filename": "func_001d3ae0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/resource",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001d3bb0.c",
@@ -23488,15 +23511,15 @@
     },
     {
       "filename": "func_001d3cb0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/resource",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001d3d20.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/resource",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001d3da0.c",
