@@ -10,10 +10,10 @@ void func_001418a0() {
     v0 = ((unsigned)s1 < (unsigned)6) ? 1 : 0;                  // 0x001418ac: sltiu $v0, $s1, 6
     if (v0 != 0) goto label_0x1418cc;                           // 0x001418b8: bnez $v0, 0x1418cc
     a0 = 0x22 << 16;                                            // 0x001418c0: lui $a0, 0x22
-    func_001415b8();  // 0x141568                                // 0x001418c4: jal 0x141568
+    func_00141568();  // 141568                                // 0x001418c4: jal 0x141568
     a0 = &str_002264a8;  // "1071201:SVM_SetCbSvrId:illegal id" // 0x001418c8: addiu $a0, $a0, 0x64a8
 label_0x1418cc:
-    func_001413a8();  // 0x141390                                // 0x001418cc: jal 0x141390
+    func_00141390();  // 141390                                // 0x001418cc: jal 0x141390
     /* nop */                                                   // 0x001418d0: nop 
     v0 = 0x25 << 16;                                            // 0x001418d4: lui $v0, 0x25
     v1 = s0 << 1;                                               // 0x001418d8: sll $v1, $s0, 1
@@ -33,7 +33,7 @@ label_0x1418cc:
     v0 = ((unsigned)s1 < (unsigned)6) ? 1 : 0;                  // 0x00141924: sltiu $v0, $s1, 6
     if (v0 != 0) goto label_0x141954;                           // 0x00141940: bnez $v0, 0x141954
     a0 = 0x22 << 16;                                            // 0x00141948: lui $a0, 0x22
-    func_001415b8();  // 0x141568                                // 0x0014194c: jal 0x141568
+    func_00141568();  // 141568                                // 0x0014194c: jal 0x141568
     a0 = &str_002264c8;  // "1071202:SVM_SetCbSvrId:illegal svtype" // 0x00141950: addiu $a0, $a0, 0x64c8
 label_0x141954:
     if (s0 < 0) goto label_0x141964;                            // 0x00141954: bltz $s0, 0x141964
@@ -42,10 +42,10 @@ label_0x141954:
     /* nop */                                                   // 0x00141960: nop 
 label_0x141964:
     a0 = 0x22 << 16;                                            // 0x00141964: lui $a0, 0x22
-    func_001415b8();  // 0x141568                                // 0x00141968: jal 0x141568
+    func_00141568();  // 141568                                // 0x00141968: jal 0x141568
     a0 = &str_002264f0;  // "2100801:SVM_SetCbSvrId:over write callback function." // 0x0014196c: addiu $a0, $a0, 0x64f0
 label_0x141970:
-    func_001413a8();  // 0x141390                                // 0x00141970: jal 0x141390
+    func_00141390();  // 141390                                // 0x00141970: jal 0x141390
     /* nop */                                                   // 0x00141974: nop 
     a0 = 0x22 << 16;                                            // 0x00141978: lui $a0, 0x22
     v0 = s0 << 1;                                               // 0x0014197c: sll $v0, $s0, 1
@@ -59,7 +59,7 @@ label_0x141970:
     v1 = g_00255fa0;  // Global at 0x00255fa0                   // 0x0014199c: lw $v1, 0($s0)
     if (v1 == 0) goto label_0x1419b0;                           // 0x001419a0: beqz $v1, 0x1419b0
     a0 = &str_00226518;  // "1071301:SVM_ExecSvrFuncId:illegal id" // 0x001419a4: addiu $a0, $a0, 0x6518
-    func_001415b8();  // 0x141568                                // 0x001419a8: jal 0x141568
+    func_00141568();  // 141568                                // 0x001419a8: jal 0x141568
     /* nop */                                                   // 0x001419ac: nop 
 label_0x1419b0:
     g_00255fa4 = s2;  // Global at 0x00255fa4                   // 0x001419b0: sw $s2, 4($s0)
@@ -68,7 +68,7 @@ label_0x1419b0:
     sp = sp + 0x30;                                             // 0x001419d0: addiu $sp, $sp, 0x30
     /* nop */                                                   // 0x001419d4: nop 
     sp = sp + -0x20;                                            // 0x001419d8: addiu $sp, $sp, -0x20
-    func_001413a8();  // 0x141390                                // 0x001419f4: jal 0x141390
+    func_00141390();  // 141390                                // 0x001419f4: jal 0x141390
     v0 = 0x25 << 16;                                            // 0x001419fc: lui $v0, 0x25
     s0 = s0 << 3;                                               // 0x00141a00: sll $s0, $s0, 3
     v0 = v0 + 0x6120;                                           // 0x00141a04: addiu $v0, $v0, 0x6120

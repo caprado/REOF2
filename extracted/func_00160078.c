@@ -7,23 +7,23 @@ void func_00160078() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x00160078: addiu $sp, $sp, -0x20
-    func_0015fcb0();  // 0x15fc80                                // 0x00160094: jal 0x15fc80
+    func_0015fc80();  // 15fc80                                // 0x00160094: jal 0x15fc80
     a0 = 0x22 << 16;                                            // 0x0016009c: lui $a0, 0x22
     a0 = &str_00227ee0;  // "E2006 mwSfdGetTime; can't get time" // 0x001600a4: addiu $a0, $a0, 0x7ee0
     if (v0 != 0) goto label_0x1600c0;                           // 0x001600a8: bnez $v0, 0x1600c0
-    func_001634a8();  // 0x163410                                // 0x001600b0: jal 0x163410
+    func_00163410();  // 163410                                // 0x001600b0: jal 0x163410
     /* nop */                                                   // 0x001600b4: nop 
     goto label_0x160100;                                        // 0x001600b8: b 0x160100
     v0 = 1;                                                     // 0x001600bc: addiu $v0, $zero, 1
 label_0x1600c0:
-    func_00175ed0();  // 0x175e58                                // 0x001600c0: jal 0x175e58
+    func_00175e58();  // 175e58                                // 0x001600c0: jal 0x175e58
     a0 = *(int32_t*)((s2) + 0x40);                              // 0x001600c4: lw $a0, 0x40($s2)
     if (v0 == 0) goto label_0x1600f0;                           // 0x001600c8: beqz $v0, 0x1600f0
     a0 = -0x135;                                                // 0x001600cc: addiu $a0, $zero, -0x135
-    func_0015e7e0();  // 0x15e7b0                                // 0x001600d0: jal 0x15e7b0
+    func_0015e7b0();  // 15e7b0                                // 0x001600d0: jal 0x15e7b0
     /* nop */                                                   // 0x001600d4: nop 
     a0 = 0x22 << 16;                                            // 0x001600d8: lui $a0, 0x22
-    func_001634a8();  // 0x163410                                // 0x001600dc: jal 0x163410
+    func_00163410();  // 163410                                // 0x001600dc: jal 0x163410
     a0 = &str_00227f10;  // "E1122605 mwSfdSetOutVol: handle is invalid." // 0x001600e0: addiu $a0, $a0, 0x7f10
     *(uint32_t*)(s0) = 0;                                       // 0x001600e4: sw $zero, 0($s0)
     v0 = 1;                                                     // 0x001600e8: addiu $v0, $zero, 1

@@ -11,13 +11,13 @@ void func_00191df0() {
     a2 = v0 | 0x3f40;                                           // 0x00191dfc: ori $a2, $v0, 0x3f40
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x00191e00: addu.qb $zero, $sp, $s1
     a0 = sp + 0x30;                                             // 0x00191e10: addiu $a0, $sp, 0x30
-    func_001910b0();  // 0x191030                                // 0x00191e14: jal 0x191030
+    func_00191030();  // 191030                                // 0x00191e14: jal 0x191030
     a1 = v0 | 0x3700;                                           // 0x00191e18: ori $a1, $v0, 0x3700
     a1 = 0x28 << 16;                                            // 0x00191e1c: lui $a1, 0x28
     a0 = sp + 0x30;                                             // 0x00191e20: addiu $a0, $sp, 0x30
-    func_00191190();  // 0x1910b0                                // 0x00191e24: jal 0x1910b0
+    func_001910b0();  // 1910b0                                // 0x00191e24: jal 0x1910b0
     a1 = a1 + 0x53a0;                                           // 0x00191e28: addiu $a1, $a1, 0x53a0
-    func_001918f0();  // 0x191860                                // 0x00191e34: jal 0x191860
+    func_00191860();  // 191860                                // 0x00191e34: jal 0x191860
     a2 = sp + 0x30;                                             // 0x00191e38: addiu $a2, $sp, 0x30
     /* FPU: aver_u.h $w0, $w0, $w17 */                          // 0x00191e40: aver_u.h $w0, $w0, $w17
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x00191e44: xori.b $w0, $w0, 0xb0

@@ -48,7 +48,7 @@ label_0x10a954:
     /* nop */                                                   // 0x0010a964: nop 
     /* bnezl $v0, 0x10a954 */                                   // 0x0010a968: bnezl $v0, 0x10a954
     a0 = a0 + 1;                                                // 0x0010a96c: addiu $a0, $a0, 1
-    func_0010ae00();  // 0x10ac68                                // 0x0010a970: jal 0x10ac68
+    func_0010ac68();  // 10ac68                                // 0x0010a970: jal 0x10ac68
     /* nop */                                                   // 0x0010a974: nop 
     /* FPU: aver_u.h $w0, $w0, $w31 */                          // 0x0010a97c: aver_u.h $w0, $w0, $w31
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x0010a980: xori.b $w0, $w0, 0xb0

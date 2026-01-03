@@ -19,14 +19,14 @@ void func_0012d570() {
     return func_00124c10();  // Tail call                        // 0x0012d5b0: j 0x124c08
     sp = sp + 0x10;                                             // 0x0012d5b4: addiu $sp, $sp, 0x10
     sp = sp + -0x10;                                            // 0x0012d5b8: addiu $sp, $sp, -0x10
-    func_00124c10();  // 0x124c08                                // 0x0012d5c8: jal 0x124c08
+    func_00124c08();  // 124c08                                // 0x0012d5c8: jal 0x124c08
     a0 = *(int32_t*)((s0) + 4);                                 // 0x0012d5cc: lw $a0, 4($s0)
     if (v0 <= 0) goto label_0x12d600;                           // 0x0012d5d0: blez $v0, 0x12d600
     v0 = *(uint8_t*)((s0) + 1);                                 // 0x0012d5d8: lbu $v0, 1($s0)
     v0 = v0 + -2;                                               // 0x0012d5dc: addiu $v0, $v0, -2
     v0 = ((unsigned)v0 < (unsigned)2) ? 1 : 0;                  // 0x0012d5e0: sltiu $v0, $v0, 2
     /* beqzl $v0, 0x12d600 */                                   // 0x0012d5e4: beqzl $v0, 0x12d600
-    func_00124c18();  // 0x124c10                                // 0x0012d5ec: jal 0x124c10
+    func_00124c10();  // 124c10                                // 0x0012d5ec: jal 0x124c10
     a0 = *(int32_t*)((s0) + 4);                                 // 0x0012d5f0: lw $a0, 4($s0)
     goto label_0x12d604;                                        // 0x0012d5f4: b 0x12d604
     /* nop */                                                   // 0x0012d5fc: nop 

@@ -10,7 +10,7 @@ void func_00146a98() {
     a3 = *(int32_t*)((s0) + 0x870);                             // 0x00146ab0: lw $a3, 0x870($s0)
     t0 = a3 + 0x20;                                             // 0x00146ab4: addiu $t0, $a3, 0x20
     a2 = a3 + 0x10;                                             // 0x00146ab8: addiu $a2, $a3, 0x10
-    func_00146a98();  // 0x146920                                // 0x00146abc: jal 0x146920
+    func_00146920();  // 146920                                // 0x00146abc: jal 0x146920
     a3 = a3 + 0x18;                                             // 0x00146ac0: addiu $a3, $a3, 0x18
     a3 = *(int32_t*)((s0) + 0x870);                             // 0x00146ac4: lw $a3, 0x870($s0)
     a2 = 0x21 << 16;                                            // 0x00146ac8: lui $a2, 0x21
@@ -35,7 +35,7 @@ void func_00146a98() {
     v1 = *(int32_t*)((s1) + 0x54);                              // 0x00146b30: lw $v1, 0x54($s1)
     *(uint32_t*)((s0) + 0xdc) = v1;                             // 0x00146b34: sw $v1, 0xdc($s0)
     v0 = *(int32_t*)((s1) + 0x58);                              // 0x00146b38: lw $v0, 0x58($s1)
-    func_00146668();  // 0x1465c8                                // 0x00146b3c: jal 0x1465c8
+    func_001465c8();  // 1465c8                                // 0x00146b3c: jal 0x1465c8
     *(uint32_t*)((s0) + 0xe0) = v0;                             // 0x00146b40: sw $v0, 0xe0($s0)
     if (v0 == 0) goto label_0x146b94;                           // 0x00146b44: beqz $v0, 0x146b94
     v0 = 1;                                                     // 0x00146b48: addiu $v0, $zero, 1
@@ -43,10 +43,10 @@ void func_00146a98() {
     if (v1 != v0) goto label_0x146b98;                          // 0x00146b50: bne $v1, $v0, 0x146b98
     v0 = *(int32_t*)((s0) + 0xc8);                              // 0x00146b58: lw $v0, 0xc8($s0)
     if (v0 == 0) goto label_0x146b74;                           // 0x00146b5c: beqz $v0, 0x146b74
-    func_001476e8();  // 0x147460                                // 0x00146b64: jal 0x147460
+    func_00147460();  // 147460                                // 0x00146b64: jal 0x147460
     goto label_0x146b80;                                        // 0x00146b6c: b 0x146b80
 label_0x146b74:
-    func_00146920();  // 0x146668                                // 0x00146b74: jal 0x146668
+    func_00146668();  // 146668                                // 0x00146b74: jal 0x146668
 label_0x146b80:
     return func_001468f8();  // Tail call                       // 0x00146b8c: j 0x1468f8
     sp = sp + 0x30;                                             // 0x00146b90: addiu $sp, $sp, 0x30

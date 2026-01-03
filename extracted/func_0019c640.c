@@ -12,7 +12,7 @@ void func_0019c640() {
     if (v0 != 0) goto label_0x19c664;                           // 0x0019c654: bnez $v0, 0x19c664
     goto label_0x19c6ec;                                        // 0x0019c65c: b 0x19c6ec
 label_0x19c664:
-    func_0019ebd0();  // 0x19eb90                                // 0x0019c664: jal 0x19eb90
+    func_0019eb90();  // 19eb90                                // 0x0019c664: jal 0x19eb90
     /* nop */                                                   // 0x0019c668: nop 
     v1 = s0 + 0xff;                                             // 0x0019c66c: addiu $v1, $s0, 0xff
     a0 = 0x29 << 16;                                            // 0x0019c670: lui $a0, 0x29

@@ -9,7 +9,7 @@ void func_001af640() {
     sp = sp + -0x50;                                            // 0x001af640: addiu $sp, $sp, -0x50
     /* FPU: dpa.w.ph $ac0, $sp, $s3 */                          // 0x001af648: dpa.w.ph $ac0, $sp, $s3
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001af654: addu.qb $zero, $sp, $s1
-    func_001afb80();  // 0x1afb40                                // 0x001af664: jal 0x1afb40
+    func_001afb40();  // 1afb40                                // 0x001af664: jal 0x1afb40
     v1 = 3;                                                     // 0x001af66c: addiu $v1, $zero, 3
     if (v0 == v1) goto label_0x1af6c4;                          // 0x001af670: beq $v0, $v1, 0x1af6c4
     v1 = 2;                                                     // 0x001af674: addiu $v1, $zero, 2

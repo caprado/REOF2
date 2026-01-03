@@ -15,7 +15,7 @@ void func_00176c28() {
     if (v1 != 0) goto label_0x176c50;                           // 0x00176c38: bnez $v1, 0x176c50
     v0 = 1;                                                     // 0x00176c3c: addiu $v0, $zero, 1
     t0 = *(int32_t*)((a3) + 0xb0);                              // 0x00176c40: lw $t0, 0xb0($a3)
-    func_00176f00();  // 0x176db0                                // 0x00176c44: jal 0x176db0
+    func_00176db0();  // 176db0                                // 0x00176c44: jal 0x176db0
     v0 = local_0;                                               // 0x00176c4c: lw $v0, 0($sp)
 label_0x176c50:
     return;                                                     // 0x00176c54: jr $ra

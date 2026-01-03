@@ -20,11 +20,11 @@ label_0x1dbcc4:
     v0 = v0 + v1;                                               // 0x001dbce0: addu $v0, $v0, $v1
     a0 = g_0021fc70;  // Global at 0x0021fc70                   // 0x001dbce8: lw $a0, 0($v0)
     v0 = 1 << 16;                                               // 0x001dbcec: lui $v0, 1
-    func_001d33e0();  // 0x1d3390                                // 0x001dbcf0: jal 0x1d3390
+    func_001d3390();  // 1d3390                                // 0x001dbcf0: jal 0x1d3390
     a2 = v0 | 1;                                                // 0x001dbcf4: ori $a2, $v0, 1
     if (v0 == 0) goto label_0x1dbd08;                           // 0x001dbcf8: beqz $v0, 0x1dbd08
     a0 = s1 + 0x4019;                                           // 0x001dbcfc: addiu $a0, $s1, 0x4019
-    func_001d36b0();  // 0x1d3600                                // 0x001dbd00: jal 0x1d3600
+    func_001d3600();  // 1d3600                                // 0x001dbd00: jal 0x1d3600
 label_0x1dbd08:
     s1 = s1 + 1;                                                // 0x001dbd08: addiu $s1, $s1, 1
     v1 = (s1 < 4) ? 1 : 0;                                      // 0x001dbd0c: slti $v1, $s1, 4

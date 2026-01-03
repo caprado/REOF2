@@ -11,7 +11,7 @@ void func_0015d8e8() {
     v0 = *(int32_t*)((a1) + 0x38);                              // 0x0015d90c: lw $v0, 0x38($a1)
     s4 = *(int32_t*)((a0) + 0xd4);                              // 0x0015d910: lw $s4, 0xd4($a0)
     s1 = *(int32_t*)((v0) + 4);                                 // 0x0015d914: lw $s1, 4($v0)
-    func_0015e610();  // 0x15e5f0                                // 0x0015d918: jal 0x15e5f0
+    func_0015e5f0();  // 15e5f0                                // 0x0015d918: jal 0x15e5f0
     s0 = *(int32_t*)(v0);                                       // 0x0015d91c: lw $s0, 0($v0)
     v1 = 1;                                                     // 0x0015d920: addiu $v1, $zero, 1
     if (v0 != v1) goto label_0x15d938;                          // 0x0015d924: bnel $v0, $v1, 0x15d938

@@ -9,14 +9,14 @@ void func_0015bc08() {
     sp = sp + -0x20;                                            // 0x0015bc08: addiu $sp, $sp, -0x20
     if (s1 != 0) goto label_0x15bc38;                           // 0x0015bc18: bnez $s1, 0x15bc38
     a0 = 0x22 << 16;                                            // 0x0015bc20: lui $a0, 0x22
-    func_001634a8();  // 0x163410                                // 0x0015bc24: jal 0x163410
+    func_00163410();  // 163410                                // 0x0015bc24: jal 0x163410
     a0 = &str_00226fc0;  // "E20010703B MWSFCRE_SetSupplySj: "  // 0x0015bc28: addiu $a0, $a0, 0x6fc0
     goto label_0x15bc50;                                        // 0x0015bc2c: b 0x15bc50
     /* nop */                                                   // 0x0015bc34: nop 
 label_0x15bc38:
-    func_0015bbb0();  // 0x15baf8                                // 0x0015bc38: jal 0x15baf8
+    func_0015baf8();  // 15baf8                                // 0x0015bc38: jal 0x15baf8
     /* nop */                                                   // 0x0015bc3c: nop 
-    func_0015bc08();  // 0x15bbb0                                // 0x0015bc44: jal 0x15bbb0
+    func_0015bbb0();  // 15bbb0                                // 0x0015bc44: jal 0x15bbb0
     v0 = s0 + v0;                                               // 0x0015bc4c: addu $v0, $s0, $v0
 label_0x15bc50:
     return;                                                     // 0x0015bc5c: jr $ra

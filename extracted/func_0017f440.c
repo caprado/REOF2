@@ -7,10 +7,10 @@ void func_0017f440() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x30;                                            // 0x0017f440: addiu $sp, $sp, -0x30
-    func_0017f250();  // 0x17f160                                // 0x0017f458: jal 0x17f160
+    func_0017f160();  // 17f160                                // 0x0017f458: jal 0x17f160
     FPU_F12 = *(float*)((s1) + 8);  // Load float               // 0x0017f45c: lwc1 $f12, 8($s1)
     FPU_F12 = *(float*)((s1) + 4);  // Load float               // 0x0017f460: lwc1 $f12, 4($s1)
-    func_0017f440();  // 0x17f348                                // 0x0017f468: jal 0x17f348
+    func_0017f348();  // 17f348                                // 0x0017f468: jal 0x17f348
     FPU_F12 = *(float*)(s1);  // Load float                     // 0x0017f474: lwc1 $f12, 0($s1)
     return func_0017f348();  // Tail call                        // 0x0017f488: j 0x17f250
     sp = sp + 0x30;                                             // 0x0017f48c: addiu $sp, $sp, 0x30
@@ -18,7 +18,7 @@ void func_0017f440() {
     *(float*)((sp) + 0x38) = FPU_F21;  // Store float           // 0x0017f4a0: swc1 $f21, 0x38($sp)
     *(float*)((sp) + 0x30) = FPU_F20;  // Store float           // 0x0017f4a8: swc1 $f20, 0x30($sp)
     /* FPU: mov.s $f21, $f12 */                                 // 0x0017f4ac: mov.s $f21, $f12
-    func_0011d378();  // 0x11d320                                // 0x0017f4b4: jal 0x11d320
+    func_0011d320();  // 11d320                                // 0x0017f4b4: jal 0x11d320
     /* FPU: mov.s $f20, $f13 */                                 // 0x0017f4b8: mov.s $f20, $f13
     /* move from FPU: $t0, $f21 */                              // 0x0017f4bc: mfc1 $t0, $f21
     /* move from FPU: $t1, $f20 */                              // 0x0017f4c0: mfc1 $t1, $f20

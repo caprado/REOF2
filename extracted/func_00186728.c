@@ -12,13 +12,13 @@ void func_00186728() {
     
     sp = sp + -0x2e0;                                           // 0x00186728: addiu $sp, $sp, -0x2e0
     s2 = a2 & 0xffff;                                           // 0x0018673c: andi $s2, $a2, 0xffff
-    func_00184048();  // 0x183fa0                                // 0x00186744: jal 0x183fa0
+    func_00183fa0();  // 183fa0                                // 0x00186744: jal 0x183fa0
     if (v0 != 0) goto label_0x18689c;                           // 0x0018674c: bnez $v0, 0x18689c
-    func_001840a8();  // 0x184048                                // 0x0018675c: jal 0x184048
+    func_00184048();  // 184048                                // 0x0018675c: jal 0x184048
     if (v0 != 0) goto label_0x18689c;                           // 0x00186764: bnez $v0, 0x18689c
     s0 = sp + 0x80;                                             // 0x0018676c: addiu $s0, $sp, 0x80
     a3 = sp + 0x290;                                            // 0x0018677c: addiu $a3, $sp, 0x290
-    func_00184770();  // 0x184320                                // 0x00186780: jal 0x184320
+    func_00184320();  // 184320                                // 0x00186780: jal 0x184320
     t0 = sp + 0x294;                                            // 0x00186784: addiu $t0, $sp, 0x294
     v1 = 0x8101 << 16;                                          // 0x00186788: lui $v1, 0x8101
     v1 = v1 | 0x11;                                             // 0x0018678c: ori $v1, $v1, 0x11
@@ -33,7 +33,7 @@ void func_00186728() {
     v1 = s2 & 0x180f;                                           // 0x001867b8: andi $v1, $s2, 0x180f
     a1 = sp + 0x280;                                            // 0x001867bc: addiu $a1, $sp, 0x280
     v0 = v0 | v1;                                               // 0x001867c0: or $v0, $v0, $v1
-    func_00187f80();  // 0x187e78                                // 0x001867c4: jal 0x187e78
+    func_00187e78();  // 187e78                                // 0x001867c4: jal 0x187e78
     local_80 = v0;                                              // 0x001867c8: sh $v0, 0x80($sp)
     a0 = local_287;                                             // 0x001867cc: lbu $a0, 0x287($sp)
     v1 = 0xa;                                                   // 0x001867d0: addiu $v1, $zero, 0xa
@@ -69,10 +69,10 @@ void func_00186728() {
     local_9c = t1;                                              // 0x00186864: sb $t1, 0x9c($sp)
     local_9b = t2;                                              // 0x00186868: sb $t2, 0x9b($sp)
     local_9a = t3;                                              // 0x0018686c: sb $t3, 0x9a($sp)
-    func_00184918();  // 0x184770                                // 0x00186870: jal 0x184770
+    func_00184770();  // 184770                                // 0x00186870: jal 0x184770
     local_99 = t0;                                              // 0x00186874: sb $t0, 0x99($sp)
     if (v0 != 0) goto label_0x18689c;                           // 0x00186878: bnez $v0, 0x18689c
-    func_00186eb8();  // 0x186e48                                // 0x00186880: jal 0x186e48
+    func_00186e48();  // 186e48                                // 0x00186880: jal 0x186e48
     v1 = 0x8101 << 16;                                          // 0x00186888: lui $v1, 0x8101
     v1 = v1 | 0x6f;                                             // 0x0018688c: ori $v1, $v1, 0x6f
     if (v0 != 0) v1 = 0;                                        // 0x00186890: movn $v1, $zero, $v0

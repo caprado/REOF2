@@ -14,11 +14,11 @@ void func_001ce640() {
     a0 = 0x32 << 16;                                            // 0x001ce65c: lui $a0, 0x32
     goto label_0x1ce68c;                                        // 0x001ce660: b 0x1ce68c
 label_0x1ce668:
-    func_001ce6d0();  // 0x1ce6c0                                // 0x001ce66c: jal 0x1ce6c0
+    func_001ce6c0();  // 1ce6c0                                // 0x001ce66c: jal 0x1ce6c0
     a0 = a0 + 0x3f30;                                           // 0x001ce670: addiu $a0, $a0, 0x3f30
     a0 = 0x32 << 16;                                            // 0x001ce674: lui $a0, 0x32
     s0 = s0 + v0;                                               // 0x001ce678: addu $s0, $s0, $v0
-    func_001ce6d0();  // 0x1ce6c0                                // 0x001ce67c: jal 0x1ce6c0
+    func_001ce6c0();  // 1ce6c0                                // 0x001ce67c: jal 0x1ce6c0
     a0 = a0 + 0x4f90;                                           // 0x001ce680: addiu $a0, $a0, 0x4f90
     s0 = s0 + v0;                                               // 0x001ce684: addu $s0, $s0, $v0
 label_0x1ce68c:

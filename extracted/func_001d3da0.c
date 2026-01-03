@@ -16,7 +16,7 @@ void func_001d3da0() {
     a2 = g_0032e190;  // Global at 0x0032e190                   // 0x001d3dd0: lw $a2, 0($v0)
     a1 = 0x24 << 16;                                            // 0x001d3dd4: lui $a1, 0x24
     a0 = a0 + -0x1e70;                                          // 0x001d3dd8: addiu $a0, $a0, -0x1e70
-    func_0010a570();  // 0x10a4d8                                // 0x001d3ddc: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001d3ddc: jal 0x10a4d8
     a1 = &str_00247230;  // "%s%s%03d"                          // 0x001d3de0: addiu $a1, $a1, 0x7230
     goto label_0x1d3e10;                                        // 0x001d3de4: b 0x1d3e10
     /* nop */                                                   // 0x001d3de8: nop 
@@ -28,14 +28,14 @@ label_0x1d3dec:
     a2 = g_0032e190;  // Global at 0x0032e190                   // 0x001d3dfc: lw $a2, 0($v0)
     a1 = 0x24 << 16;                                            // 0x001d3e00: lui $a1, 0x24
     a0 = a0 + -0x1e70;                                          // 0x001d3e04: addiu $a0, $a0, -0x1e70
-    func_0010a570();  // 0x10a4d8                                // 0x001d3e08: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001d3e08: jal 0x10a4d8
     a1 = &str_00247240;  // "%s%s%02d_%02d"                     // 0x001d3e0c: addiu $a1, $a1, 0x7240
 label_0x1d3e10:
     if (s0 != 0) goto label_0x1d3e28;                           // 0x001d3e10: bnez $s0, 0x1d3e28
     a0 = 0x33 << 16;                                            // 0x001d3e14: lui $a0, 0x33
     a1 = 0x24 << 16;                                            // 0x001d3e18: lui $a1, 0x24
     a0 = a0 + -0x1e70;                                          // 0x001d3e1c: addiu $a0, $a0, -0x1e70
-    func_0010a990();  // 0x10a860                                // 0x001d3e20: jal 0x10a860
+    func_0010a860();  // 10a860                                // 0x001d3e20: jal 0x10a860
     a1 = a1 + 0x7250;                                           // 0x001d3e24: addiu $a1, $a1, 0x7250
 label_0x1d3e28:
     v0 = 0x33 << 16;                                            // 0x001d3e2c: lui $v0, 0x33

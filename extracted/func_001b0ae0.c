@@ -68,7 +68,7 @@ void func_001b0ae0() {
     at = 0x31 << 16;                                            // 0x001b0bd0: lui $at, 0x31
     v0 = g_0031370a;  // Global at 0x0031370a                   // 0x001b0bd4: lh $v0, 0x370a($at)
     at = 0x31 << 16;                                            // 0x001b0bd8: lui $at, 0x31
-    func_001b0720();  // 0x1b06a0                                // 0x001b0bdc: jal 0x1b06a0
+    func_001b06a0();  // 1b06a0                                // 0x001b0bdc: jal 0x1b06a0
     g_0031361a = v0;  // Global at 0x0031361a                   // 0x001b0be0: sh $v0, 0x361a($at)
     at = 0x31 << 16;                                            // 0x001b0be4: lui $at, 0x31
     a2 = 0x22 << 16;                                            // 0x001b0be8: lui $a2, 0x22

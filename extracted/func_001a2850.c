@@ -10,17 +10,17 @@ void func_001a2850() {
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001a2858: addu.qb $zero, $sp, $s1
     v0 = *(int32_t*)((gp) + -0x6424);                           // 0x001a2864: lw $v0, -0x6424($gp)
     v0 = v0 + 1;                                                // 0x001a2868: addiu $v0, $v0, 1
-    func_001a29e0();  // 0x1a29b0                                // 0x001a286c: jal 0x1a29b0
+    func_001a29b0();  // 1a29b0                                // 0x001a286c: jal 0x1a29b0
     *(uint32_t*)((gp) + -0x6424) = v0;                          // 0x001a2870: sw $v0, -0x6424($gp)
     a1 = *(int32_t*)((v0) + 8);                                 // 0x001a2874: lw $a1, 8($v0)
     v1 = -1;                                                    // 0x001a2878: addiu $v1, $zero, -1
     if (a1 == v1) goto label_0x1a288c;                          // 0x001a287c: beq $a1, $v1, 0x1a288c
-    func_001a28c0();  // 0x1a2850                                // 0x001a2884: jal 0x1a2850
+    func_001a2850();  // 1a2850                                // 0x001a2884: jal 0x1a2850
 label_0x1a288c:
     a1 = *(int32_t*)((s0) + 0xc);                               // 0x001a288c: lw $a1, 0xc($s0)
     v1 = -1;                                                    // 0x001a2890: addiu $v1, $zero, -1
     if (a1 == v1) goto label_0x1a28a4;                          // 0x001a2894: beq $a1, $v1, 0x1a28a4
-    func_001a28c0();  // 0x1a2850                                // 0x001a289c: jal 0x1a2850
+    func_001a2850();  // 1a2850                                // 0x001a289c: jal 0x1a2850
     /* nop */                                                   // 0x001a28a0: nop 
 label_0x1a28a4:
     /* FPU: aver_u.h $w0, $w0, $w17 */                          // 0x001a28a8: aver_u.h $w0, $w0, $w17

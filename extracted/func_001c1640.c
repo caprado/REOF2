@@ -28,7 +28,7 @@ label_0x1c1680:
     a1 = 0x50;                                                  // 0x001c169c: addiu $a1, $zero, 0x50
     a3 = 1;                                                     // 0x001c16a0: addiu $a3, $zero, 1
     t0 = 0x18;                                                  // 0x001c16a4: addiu $t0, $zero, 0x18
-    func_001b4380();  // 0x1b42c0                                // 0x001c16a8: jal 0x1b42c0
+    func_001b42c0();  // 1b42c0                                // 0x001c16a8: jal 0x1b42c0
     t1 = s3 + v0;                                               // 0x001c16ac: addu $t1, $s3, $v0
     s1 = s1 + 1;                                                // 0x001c16b0: addiu $s1, $s1, 1
 label_0x1c16b4:

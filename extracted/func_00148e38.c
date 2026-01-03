@@ -8,7 +8,7 @@ void func_00148e38() {
     
     sp = sp + -0x10;                                            // 0x00148e38: addiu $sp, $sp, -0x10
     a0 = *(int32_t*)((a0) + 0x40);                              // 0x00148e40: lw $a0, 0x40($a0)
-    func_00113a28();  // 0x113940                                // 0x00148e44: jal 0x113940
+    func_00113940();  // 113940                                // 0x00148e44: jal 0x113940
     a0 = a0 + 0x68;                                             // 0x00148e48: addiu $a0, $a0, 0x68
     v0 = 1;                                                     // 0x00148e50: addiu $v0, $zero, 1
     return;                                                     // 0x00148e54: jr $ra

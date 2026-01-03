@@ -10,7 +10,7 @@ void func_001d34a0() {
     a0 = a0 & 0xffff;                                           // 0x001d34b0: andi $a0, $a0, 0xffff
     if (a0 == 0) goto label_0x1d34c8;                           // 0x001d34b4: beqz $a0, 0x1d34c8
     v1 = 0xffff << 16;                                          // 0x001d34b8: lui $v1, 0xffff
-    func_0019d2e0();  // 0x19d180                                // 0x001d34bc: jal 0x19d180
+    func_0019d180();  // 19d180                                // 0x001d34bc: jal 0x19d180
     /* nop */                                                   // 0x001d34c0: nop 
     v1 = 0xffff << 16;                                          // 0x001d34c4: lui $v1, 0xffff
 label_0x1d34c8:
@@ -18,7 +18,7 @@ label_0x1d34c8:
     a0 = (unsigned)v1 >> 0x10;                                  // 0x001d34cc: srl $a0, $v1, 0x10
     if (a0 == 0) goto label_0x1d34e0;                           // 0x001d34d0: beqz $a0, 0x1d34e0
     /* nop */                                                   // 0x001d34d4: nop 
-    thunk_func_0019d450();  // 0x19d2e0                          // 0x001d34d8: jal 0x19d2e0
+    thunk_func_0019d2e0();  // 19d2e0                          // 0x001d34d8: jal 0x19d2e0
     /* nop */                                                   // 0x001d34dc: nop 
 label_0x1d34e0:
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001d34e4: xori.b $w0, $w0, 0xb0

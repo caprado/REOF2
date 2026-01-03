@@ -22,15 +22,15 @@ void func_00163ba0() {
     g_00215558 = v1;  // Global at 0x00215558                   // 0x00163be4: sw $v1, 0($a1)
     g_0021555c = v0;  // Global at 0x0021555c                   // 0x00163be8: sw $v0, 0($a2)
     if (s1 != a0) goto label_0x163c2c;                          // 0x00163bec: bnel $s1, $a0, 0x163c2c
-    func_0015e348();  // 0x15e338                                // 0x00163bf4: jal 0x15e338
+    func_0015e338();  // 15e338                                // 0x00163bf4: jal 0x15e338
     /* nop */                                                   // 0x00163bf8: nop 
     s0 = v0 + 0x58;                                             // 0x00163bfc: addiu $s0, $v0, 0x58
-    func_00163410();  // 0x1633f8                                // 0x00163c00: jal 0x1633f8
+    func_001633f8();  // 1633f8                                // 0x00163c00: jal 0x1633f8
     /* beqzl $v0, 0x163c2c */                                   // 0x00163c08: beqzl $v0, 0x163c2c
     v0 = g_00214454;  // Global at 0x00214454                   // 0x00163c10: lw $v0, 0($s2)
     if (v0 != s1) goto label_0x163c28;                          // 0x00163c14: bnel $v0, $s1, 0x163c28
     *(uint32_t*)(s0) = 0;                                       // 0x00163c18: sw $zero, 0($s0)
-    func_00172160();  // 0x172140                                // 0x00163c1c: jal 0x172140
+    func_00172140();  // 172140                                // 0x00163c1c: jal 0x172140
     /* nop */                                                   // 0x00163c20: nop 
     *(uint32_t*)(s0) = 0;                                       // 0x00163c24: sw $zero, 0($s0)
 label_0x163c28:

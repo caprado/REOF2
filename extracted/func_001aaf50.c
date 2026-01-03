@@ -11,22 +11,22 @@ void func_001aaf50() {
     
     sp = sp + -0x40;                                            // 0x001aaf50: addiu $sp, $sp, -0x40
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001aaf5c: addu.qb $zero, $sp, $s1
-    func_00116ee0();  // 0x116d40                                // 0x001aaf60: jal 0x116d40
-    func_0011b570();  // 0x11b4e8                                // 0x001aaf68: jal 0x11b4e8
+    func_00116d40();  // 116d40                                // 0x001aaf60: jal 0x116d40
+    func_0011b4e8();  // 11b4e8                                // 0x001aaf68: jal 0x11b4e8
     /* nop */                                                   // 0x001aaf6c: nop 
-    func_001013a8();  // 0x1010c8                                // 0x001aaf70: jal 0x1010c8
-    func_00118730();  // 0x1186f8                                // 0x001aaf78: jal 0x1186f8
+    func_001010c8();  // 1010c8                                // 0x001aaf70: jal 0x1010c8
+    func_001186f8();  // 1186f8                                // 0x001aaf78: jal 0x1186f8
     /* nop */                                                   // 0x001aaf7c: nop 
 label_0x1aaf80:
     a0 = 0x24 << 16;                                            // 0x001aaf80: lui $a0, 0x24
-    func_0011ca78();  // 0x11c968                                // 0x001aaf84: jal 0x11c968
+    func_0011c968();  // 11c968                                // 0x001aaf84: jal 0x11c968
     a0 = &str_0023da80;  // "cdrom0:\\MODULES\\DRIVE.DAT;1"     // 0x001aaf88: addiu $a0, $a0, -0x2580
     v0 = ((unsigned)0 < (unsigned)v0) ? 1 : 0;                  // 0x001aaf8c: sltu $v0, $zero, $v0
     v0 = v0 ^ 1;                                                // 0x001aaf90: xori $v0, $v0, 1
     if (v0 != 0) goto label_0x1aaf80;                           // 0x001aaf94: bnez $v0, 0x1aaf80
     /* nop */                                                   // 0x001aaf98: nop 
 label_0x1aaf9c:
-    func_0011c968();  // 0x11c918                                // 0x001aaf9c: jal 0x11c918
+    func_0011c918();  // 11c918                                // 0x001aaf9c: jal 0x11c918
     /* nop */                                                   // 0x001aafa0: nop 
     v0 = ((unsigned)0 < (unsigned)v0) ? 1 : 0;                  // 0x001aafa4: sltu $v0, $zero, $v0
     v0 = v0 ^ 1;                                                // 0x001aafa8: xori $v0, $v0, 1
@@ -34,31 +34,31 @@ label_0x1aaf9c:
     /* nop */                                                   // 0x001aafb0: nop 
     if (v0 != 0) goto label_0x1aaf9c;                           // 0x001aafb4: bnez $v0, 0x1aaf9c
     /* nop */                                                   // 0x001aafb8: nop 
-    func_00116ee0();  // 0x116d40                                // 0x001aafbc: jal 0x116d40
-    func_0011bc00();  // 0x11bbc8                                // 0x001aafc4: jal 0x11bbc8
+    func_00116d40();  // 116d40                                // 0x001aafbc: jal 0x116d40
+    func_0011bbc8();  // 11bbc8                                // 0x001aafc4: jal 0x11bbc8
     /* nop */                                                   // 0x001aafc8: nop 
-    func_00118730();  // 0x1186f8                                // 0x001aafcc: jal 0x1186f8
+    func_001186f8();  // 1186f8                                // 0x001aafcc: jal 0x1186f8
     /* nop */                                                   // 0x001aafd0: nop 
-    func_0011b570();  // 0x11b4e8                                // 0x001aafd4: jal 0x11b4e8
+    func_0011b4e8();  // 11b4e8                                // 0x001aafd4: jal 0x11b4e8
     /* nop */                                                   // 0x001aafd8: nop 
-    func_001013a8();  // 0x1010c8                                // 0x001aafdc: jal 0x1010c8
-    func_00101d28();  // 0x101c58                                // 0x001aafe4: jal 0x101c58
+    func_001010c8();  // 1010c8                                // 0x001aafdc: jal 0x1010c8
+    func_00101c58();  // 101c58                                // 0x001aafe4: jal 0x101c58
     a0 = 2;                                                     // 0x001aafe8: addiu $a0, $zero, 2
 label_0x1aafec:
     a0 = 0x24 << 16;                                            // 0x001aafec: lui $a0, 0x24
     a1 = 1;                                                     // 0x001aaff0: addiu $a1, $zero, 1
-    func_001189b8();  // 0x118730                                // 0x001aaff4: jal 0x118730
+    func_00118730();  // 118730                                // 0x001aaff4: jal 0x118730
     a0 = &str_0023daa0;  // "cdrom0:\\MODULES\\USBD.IRX;1"      // 0x001aaff8: addiu $a0, $a0, -0x2560
     if (v0 < 0) goto label_0x1aafec;                            // 0x001ab000: bltz $v0, 0x1aafec
     /* nop */                                                   // 0x001ab004: nop 
-    func_00118d70();  // 0x118b38                                // 0x001ab010: jal 0x118b38
+    func_00118b38();  // 118b38                                // 0x001ab010: jal 0x118b38
     a2 = 2;                                                     // 0x001ab014: addiu $a2, $zero, 2
-    func_00118d70();  // 0x118b38                                // 0x001ab024: jal 0x118b38
+    func_00118b38();  // 118b38                                // 0x001ab024: jal 0x118b38
     a1 = 0x100 << 16;                                           // 0x001ab030: lui $a1, 0x100
-    func_00118fd0();  // 0x118d70                                // 0x001ab034: jal 0x118d70
-    func_00118b38();  // 0x1189b8                                // 0x001ab03c: jal 0x1189b8
+    func_00118d70();  // 118d70                                // 0x001ab034: jal 0x118d70
+    func_001189b8();  // 1189b8                                // 0x001ab03c: jal 0x1189b8
 label_0x1ab044:
-    func_0011b5e0();  // 0x11b570                                // 0x001ab044: jal 0x11b570
+    func_0011b570();  // 11b570                                // 0x001ab044: jal 0x11b570
     /* nop */                                                   // 0x001ab050: nop 
     /* nop */                                                   // 0x001ab054: nop 
     if (v0 == 0) goto label_0x1ab044;                           // 0x001ab058: beqz $v0, 0x1ab044
@@ -99,13 +99,13 @@ label_0x1ab0d4:
 label_0x1ab0e8:
     if (v1 != v0) goto label_0x1ab0f8;                          // 0x001ab0e8: bne $v1, $v0, 0x1ab0f8
     a0 = 1;                                                     // 0x001ab0ec: addiu $a0, $zero, 1
-    func_0012c1e0();  // 0x12c188                                // 0x001ab0f0: jal 0x12c188
+    func_0012c188();  // 12c188                                // 0x001ab0f0: jal 0x12c188
     a1 = 2;                                                     // 0x001ab0f4: addiu $a1, $zero, 2
 label_0x1ab0f8:
     a1 = g_0021bb10;  // Global at 0x0021bb10                   // 0x001ab0f8: lw $a1, 0($s1)
     a2 = g_0021bb14;  // Global at 0x0021bb14                   // 0x001ab0fc: lw $a2, 4($s1)
     a3 = g_0021bb18;  // Global at 0x0021bb18                   // 0x001ab100: lw $a3, 8($s1)
-    func_001aaf50();  // 0x1aaef0                                // 0x001ab104: jal 0x1aaef0
+    func_001aaef0();  // 1aaef0                                // 0x001ab104: jal 0x1aaef0
     a0 = 0x100 << 16;                                           // 0x001ab108: lui $a0, 0x100
     s1 = s1 + 0xc;                                              // 0x001ab10c: addiu $s1, $s1, 0xc
 label_0x1ab110:
@@ -113,18 +113,18 @@ label_0x1ab110:
     v0 = -1;                                                    // 0x001ab114: addiu $v0, $zero, -1
     if (v1 != v0) goto label_0x1ab0e8;                          // 0x001ab118: bne $v1, $v0, 0x1ab0e8
     v0 = 9;                                                     // 0x001ab11c: addiu $v0, $zero, 9
-    func_0011b6f8();  // 0x11b6d8                                // 0x001ab120: jal 0x11b6d8
-    func_001bca60();  // 0x1bc960                                // 0x001ab128: jal 0x1bc960
+    func_0011b6d8();  // 11b6d8                                // 0x001ab120: jal 0x11b6d8
+    func_001bc960();  // 1bc960                                // 0x001ab128: jal 0x1bc960
     /* nop */                                                   // 0x001ab12c: nop 
     a0 = 0x24 << 16;                                            // 0x001ab130: lui $a0, 0x24
     a0 = &str_0023dac0;  // "cdrom0:\\MODULES\\USBKB.IRX;1"     // 0x001ab138: addiu $a0, $a0, -0x2540
-    func_0018d680();  // 0x18d5d0                                // 0x001ab140: jal 0x18d5d0
+    func_0018d5d0();  // 18d5d0                                // 0x001ab140: jal 0x18d5d0
     a0 = 0x24 << 16;                                            // 0x001ab148: lui $a0, 0x24
     a2 = 0x24 << 16;                                            // 0x001ab14c: lui $a2, 0x24
     a0 = &str_0023dae0;  // "keybd=1"                           // 0x001ab150: addiu $a0, $a0, -0x2520
     a1 = 0x10;                                                  // 0x001ab154: addiu $a1, $zero, 0x10
     a2 = &str_0023db00;  // "SND DATA OVER!"                    // 0x001ab158: addiu $a2, $a2, -0x2500
-    func_0018d680();  // 0x18d5d0                                // 0x001ab15c: jal 0x18d5d0
+    func_0018d5d0();  // 18d5d0                                // 0x001ab15c: jal 0x18d5d0
     /* FPU: aver_u.h $w0, $w0, $w17 */                          // 0x001ab168: aver_u.h $w0, $w0, $w17
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001ab16c: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x001ab170: jr $ra

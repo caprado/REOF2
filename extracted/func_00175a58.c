@@ -18,7 +18,7 @@ void func_00175a58() {
 label_0x175a88:
     s0 = s0 + 4;                                                // 0x00175a88: addiu $s0, $s0, 4
     if (v0 == 0) goto label_0x175a9c;                           // 0x00175a8c: beqz $v0, 0x175a9c
-    func_00175b10();  // 0x175ac0                                // 0x00175a94: jal 0x175ac0
+    func_00175ac0();  // 175ac0                                // 0x00175a94: jal 0x175ac0
     /* nop */                                                   // 0x00175a98: nop 
 label_0x175a9c:
     s1 = s1 + -1;                                               // 0x00175a9c: addiu $s1, $s1, -1

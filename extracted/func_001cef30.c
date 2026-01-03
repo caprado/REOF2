@@ -31,15 +31,15 @@ label_0x1cef78:
 label_0x1cef8c:
     goto label_0x1cf068;                                        // 0x001cef8c: b 0x1cf068
 label_0x1cef94:
-    func_0011c140();  // 0x11c0a0                                // 0x001cef94: jal 0x11c0a0
+    func_0011c0a0();  // 11c0a0                                // 0x001cef94: jal 0x11c0a0
     a0 = &str_00243a10;  // "INET_LANEGG_driver"                // 0x001cef98: addiu $a0, $a0, 0x3a10
     at = (v0 < 0) ? 1 : 0;                                      // 0x001cef9c: slt $at, $v0, $zero
     if (at != 0) goto label_0x1cefb4;                           // 0x001cefa0: bnez $at, 0x1cefb4
     s0 = -1;                                                    // 0x001cefa4: addiu $s0, $zero, -1
-    func_001cea30();  // 0x1ce990                                // 0x001cefa8: jal 0x1ce990
+    func_001ce990();  // 1ce990                                // 0x001cefa8: jal 0x1ce990
     s0 = -1;                                                    // 0x001cefb0: addiu $s0, $zero, -1
 label_0x1cefb4:
-    func_001c8c80();  // 0x1c8c40                                // 0x001cefb4: jal 0x1c8c40
+    func_001c8c40();  // 1c8c40                                // 0x001cefb4: jal 0x1c8c40
     /* nop */                                                   // 0x001cefb8: nop 
     v1 = *(int32_t*)((gp) + -0x6260);                           // 0x001cefbc: lw $v1, -0x6260($gp)
     v0 = 5;                                                     // 0x001cefc0: addiu $v0, $zero, 5
@@ -52,29 +52,29 @@ label_0x1cefb4:
     goto label_0x1cf004;                                        // 0x001cefdc: b 0x1cf004
     at = (s0 < 0) ? 1 : 0;                                      // 0x001cefe0: slt $at, $s0, $zero
 label_0x1cefe4:
-    func_0011c140();  // 0x11c0a0                                // 0x001cefe4: jal 0x11c0a0
+    func_0011c0a0();  // 11c0a0                                // 0x001cefe4: jal 0x11c0a0
     a0 = &str_00243a30;  // "INET_SMAP_driver"                  // 0x001cefe8: addiu $a0, $a0, 0x3a30
     goto label_0x1cf000;                                        // 0x001cefec: b 0x1cf000
 label_0x1ceff4:
-    func_0011c140();  // 0x11c0a0                                // 0x001ceff4: jal 0x11c0a0
+    func_0011c0a0();  // 11c0a0                                // 0x001ceff4: jal 0x11c0a0
     a0 = a0 + 0x3a50;                                           // 0x001ceff8: addiu $a0, $a0, 0x3a50
 label_0x1cf000:
     at = (s0 < 0) ? 1 : 0;                                      // 0x001cf000: slt $at, $s0, $zero
 label_0x1cf004:
     if (at != 0) goto label_0x1cf014;                           // 0x001cf004: bnez $at, 0x1cf014
-    func_001cea30();  // 0x1ce990                                // 0x001cf00c: jal 0x1ce990
+    func_001ce990();  // 1ce990                                // 0x001cf00c: jal 0x1ce990
     /* nop */                                                   // 0x001cf010: nop 
 label_0x1cf014:
     a0 = *(int32_t*)((gp) + -0x6568);                           // 0x001cf014: lw $a0, -0x6568($gp)
-    func_001cebd0();  // 0x1cea30                                // 0x001cf024: jal 0x1cea30
+    func_001cea30();  // 1cea30                                // 0x001cf024: jal 0x1cea30
     a0 = 0x32 << 16;                                            // 0x001cf02c: lui $a0, 0x32
     v0 = 0x127 << 16;                                           // 0x001cf030: lui $v0, 0x127
     a0 = a0 + 0x59c0;                                           // 0x001cf034: addiu $a0, $a0, 0x59c0
-    func_001cf5f0();  // 0x1cf580                                // 0x001cf038: jal 0x1cf580
+    func_001cf580();  // 1cf580                                // 0x001cf038: jal 0x1cf580
     a1 = v0 | 0x10;                                             // 0x001cf03c: ori $a1, $v0, 0x10
-    func_001cef30();  // 0x1ceef0                                // 0x001cf040: jal 0x1ceef0
+    func_001ceef0();  // 1ceef0                                // 0x001cf040: jal 0x1ceef0
     *(uint32_t*)((gp) + -0x6260) = 0;                           // 0x001cf044: sw $zero, -0x6260($gp)
-    func_001cf580();  // 0x1cf420                                // 0x001cf048: jal 0x1cf420
+    func_001cf420();  // 1cf420                                // 0x001cf048: jal 0x1cf420
     /* nop */                                                   // 0x001cf04c: nop 
     goto label_0x1cf060;                                        // 0x001cf050: b 0x1cf060
     /* nop */                                                   // 0x001cf054: nop 

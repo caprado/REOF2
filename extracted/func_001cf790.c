@@ -7,12 +7,12 @@ void func_001cf790() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x001cf790: addiu $sp, $sp, -0x20
-    func_001cfd50();  // 0x1cfc90                                // 0x001cf79c: jal 0x1cfc90
-    func_001cfd50();  // 0x1cfc90                                // 0x001cf7a4: jal 0x1cfc90
+    func_001cfc90();  // 1cfc90                                // 0x001cf79c: jal 0x1cfc90
+    func_001cfc90();  // 1cfc90                                // 0x001cf7a4: jal 0x1cfc90
     *(float*)((s0) + 0x6c) = FPU_F0;  // Store float            // 0x001cf7a8: swc1 $f0, 0x6c($s0)
-    func_001cfd50();  // 0x1cfc90                                // 0x001cf7ac: jal 0x1cfc90
+    func_001cfc90();  // 1cfc90                                // 0x001cf7ac: jal 0x1cfc90
     *(float*)((s0) + 0x70) = FPU_F0;  // Store float            // 0x001cf7b0: swc1 $f0, 0x70($s0)
-    func_001d00f0();  // 0x1d0080                                // 0x001cf7b4: jal 0x1d0080
+    func_001d0080();  // 1d0080                                // 0x001cf7b4: jal 0x1d0080
     *(float*)((s0) + 0x74) = FPU_F0;  // Store float            // 0x001cf7b8: swc1 $f0, 0x74($s0)
     at = 0x33 << 16;                                            // 0x001cf7bc: lui $at, 0x33
     v0 = g_0032ce80;  // Global at 0x0032ce80                   // 0x001cf7c4: lb $v0, -0x3180($at)
@@ -35,7 +35,7 @@ label_0x1cf7e8:
     v0 = 1;                                                     // 0x001cf800: addiu $v0, $zero, 1
     v1 = g_0032ce81;  // Global at 0x0032ce81                   // 0x001cf804: lb $v1, -0x317f($at)
     if (v1 != 0) v0 = 0;                                        // 0x001cf808: movn $v0, $zero, $v1
-    func_001cfd50();  // 0x1cfc90                                // 0x001cf80c: jal 0x1cfc90
+    func_001cfc90();  // 1cfc90                                // 0x001cf80c: jal 0x1cfc90
     *(uint8_t*)((s0) + 0x44) = v0;                              // 0x001cf810: sb $v0, 0x44($s0)
     *(float*)((s0) + 0x6c) = FPU_F0;  // Store float            // 0x001cf814: swc1 $f0, 0x6c($s0)
     at = 0x33 << 16;                                            // 0x001cf818: lui $at, 0x33
@@ -44,9 +44,9 @@ label_0x1cf7e8:
     at = 0x33 << 16;                                            // 0x001cf824: lui $at, 0x33
     a2 = g_0032ce80;  // Global at 0x0032ce80                   // 0x001cf828: lb $a2, -0x3180($at)
     at = 0x33 << 16;                                            // 0x001cf82c: lui $at, 0x33
-    func_001cc370();  // 0x1cc140                                // 0x001cf830: jal 0x1cc140
+    func_001cc140();  // 1cc140                                // 0x001cf830: jal 0x1cc140
     a0 = g_0032be54;  // Global at 0x0032be54                   // 0x001cf834: lw $a0, -0x41ac($at)
-    func_001cc130();  // 0x1cc120                                // 0x001cf838: jal 0x1cc120
+    func_001cc120();  // 1cc120                                // 0x001cf838: jal 0x1cc120
     /* nop */                                                   // 0x001cf83c: nop 
     v1 = 3;                                                     // 0x001cf840: addiu $v1, $zero, 3
     *(uint32_t*)(s0) = v1;                                      // 0x001cf844: sw $v1, 0($s0)

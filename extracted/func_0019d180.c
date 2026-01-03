@@ -26,16 +26,16 @@ label_0x19d1c8:
     goto label_0x19d220;                                        // 0x0019d1d4: b 0x19d220
     /* nop */                                                   // 0x0019d1d8: nop 
 label_0x19d1dc:
-    func_0018d5c0();  // 0x18d530                                // 0x0019d1dc: jal 0x18d530
+    func_0018d530();  // 18d530                                // 0x0019d1dc: jal 0x18d530
     /* nop */                                                   // 0x0019d1e0: nop 
-    func_0019ec00();  // 0x19ebd0                                // 0x0019d1e4: jal 0x19ebd0
+    func_0019ebd0();  // 19ebd0                                // 0x0019d1e4: jal 0x19ebd0
     a0 = *(int32_t*)((s0) + 0x24);                              // 0x0019d1ec: lw $a0, 0x24($s0)
     if (a0 == 0) goto label_0x19d200;                           // 0x0019d1f0: beqz $a0, 0x19d200
     /* nop */                                                   // 0x0019d1f4: nop 
-    thunk_func_001a0a10();  // 0x18daf0                          // 0x0019d1f8: jal 0x18daf0
+    thunk_func_0018daf0();  // 18daf0                          // 0x0019d1f8: jal 0x18daf0
     /* nop */                                                   // 0x0019d1fc: nop 
 label_0x19d200:
-    func_0018da10();  // 0x18d9e0                                // 0x0019d208: jal 0x18d9e0
+    func_0018d9e0();  // 18d9e0                                // 0x0019d208: jal 0x18d9e0
     a2 = 0x38;                                                  // 0x0019d20c: addiu $a2, $zero, 0x38
     v1 = *(int32_t*)((gp) + -0x6444);                           // 0x0019d210: lw $v1, -0x6444($gp)
     v0 = 1;                                                     // 0x0019d214: addiu $v0, $zero, 1

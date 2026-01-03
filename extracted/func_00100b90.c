@@ -8,7 +8,7 @@ void func_00100b90() {
     
     sp = sp + -0x40;                                            // 0x00100b90: addiu $sp, $sp, -0x40
     s0 = 0x1f << 16;                                            // 0x00100ba4: lui $s0, 0x1f
-    func_00100668();  // 0x1005b0                                // 0x00100ba8: jal 0x1005b0
+    func_001005b0();  // 1005b0                                // 0x00100ba8: jal 0x1005b0
     a0 = g_001edf28;  // Global at 0x001edf28                   // 0x00100bb0: lw $a0, -0x20d8($s0)
     SetOsdConfigParam();  // 0x114330                           // 0x00100bb4: jal 0x114330
     /* nop */                                                   // 0x00100bb8: nop 
@@ -21,7 +21,7 @@ void func_00100b90() {
     a0 = 0x22 << 16;                                            // 0x00100bd4: lui $a0, 0x22
     a2 = g_001edf1c;  // Global at 0x001edf1c                   // 0x00100bd8: lw $a2, -0x20e4($v0)
     a0 = &str_0021fd98;  // "Libcdvd bind err N CMD\n"          // 0x00100bdc: addiu $a0, $a0, -0x268
-    func_00116598();  // 0x116508                                // 0x00100be0: jal 0x116508
+    func_00116508();  // 116508                                // 0x00100be0: jal 0x116508
     goto label_0x100ce8;                                        // 0x00100be8: b 0x100ce8
 label_0x100bf0:
     v0 = 0x25 << 16;                                            // 0x00100bf0: lui $v0, 0x25
@@ -31,7 +31,7 @@ label_0x100bf0:
     g_001edf1c = s1;  // Global at 0x001edf1c                   // 0x00100c00: sw $s1, -0x20e4($v1)
     iReferThreadStatus();  // 0x1141e0                          // 0x00100c04: jal 0x1141e0
     a1 = a1 + -0x48e0;                                          // 0x00100c08: addiu $a1, $a1, -0x48e0
-    func_00100e38();  // 0x100d98                                // 0x00100c0c: jal 0x100d98
+    func_00100d98();  // 100d98                                // 0x00100c0c: jal 0x100d98
     a0 = 1;                                                     // 0x00100c10: addiu $a0, $zero, 1
     if (v0 == 0) goto label_0x100c30;                           // 0x00100c14: beqz $v0, 0x100c30
     a0 = g_001edf28;  // Global at 0x001edf28                   // 0x00100c1c: lw $a0, -0x20d8($s0)
@@ -40,7 +40,7 @@ label_0x100bf0:
 label_0x100c28:
     goto label_0x100ce8;                                        // 0x00100c28: b 0x100ce8
 label_0x100c30:
-    func_00116ee0();  // 0x116d40                                // 0x00100c30: jal 0x116d40
+    func_00116d40();  // 116d40                                // 0x00100c30: jal 0x116d40
     s2 = 0x1f << 16;                                            // 0x00100c34: lui $s2, 0x1f
     v0 = g_001edf3c;  // Global at 0x001edf3c                   // 0x00100c38: lw $v0, -0x20c4($s2)
     if (v0 >= 0) goto label_0x100ce8;                           // 0x00100c3c: bgez $v0, 0x100ce8
@@ -64,7 +64,7 @@ label_0x100c74:
 label_0x100c78:
     a1 = 0x8000 << 16;                                          // 0x00100c78: lui $a1, 0x8000
     a1 = a1 | 0x595;                                            // 0x00100c80: ori $a1, $a1, 0x595
-    func_001176a8();  // 0x1174d8                                // 0x00100c84: jal 0x1174d8
+    func_001174d8();  // 1174d8                                // 0x00100c84: jal 0x1174d8
     if (v0 >= 0) goto label_0x100cdc;                           // 0x00100c8c: bgezl $v0, 0x100cdc
     v0 = g_001ef0f4;  // Global at 0x001ef0f4                   // 0x00100c90: lw $v0, 0x24($s0)
     v0 = 0x1f << 16;                                            // 0x00100c94: lui $v0, 0x1f
@@ -72,7 +72,7 @@ label_0x100c78:
     if (v1 <= 0) goto label_0x100cb4;                           // 0x00100c9c: blez $v1, 0x100cb4
     v0 = 0x10 << 16;                                            // 0x00100ca0: lui $v0, 0x10
     a0 = 0x22 << 16;                                            // 0x00100ca4: lui $a0, 0x22
-    func_00116598();  // 0x116508                                // 0x00100ca8: jal 0x116508
+    func_00116508();  // 116508                                // 0x00100ca8: jal 0x116508
     a0 = &str_0021fdc0;  // "N cmd wait\n"                      // 0x00100cac: addiu $a0, $a0, -0x240
     v0 = 0x10 << 16;                                            // 0x00100cb0: lui $v0, 0x10
 label_0x100cb4:

@@ -63,13 +63,13 @@ label_0x1a8f38:
     a0 = sp + 0x40;                                             // 0x001a8f4c: addiu $a0, $sp, 0x40
     s2 = g_00217740;  // Global at 0x00217740                   // 0x001a8f50: lw $s2, 0($v0)
     a1 = &str_0022a798;  // "ROMDATA_AFS"                       // 0x001a8f54: addiu $a1, $a1, -0x5868
-    func_0010a570();  // 0x10a4d8                                // 0x001a8f58: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001a8f58: jal 0x10a4d8
     a0 = sp + 0x40;                                             // 0x001a8f60: addiu $a0, $sp, 0x40
-    func_001a8e70();  // 0x1a8dd0                                // 0x001a8f64: jal 0x1a8dd0
+    func_001a8dd0();  // 1a8dd0                                // 0x001a8f64: jal 0x1a8dd0
     if (v0 == 0) goto label_0x1a8f9c;                           // 0x001a8f6c: beqz $v0, 0x1a8f9c
-    func_001a8dd0();  // 0x1a8d50                                // 0x001a8f74: jal 0x1a8d50
+    func_001a8d50();  // 1a8d50                                // 0x001a8f74: jal 0x1a8d50
     /* nop */                                                   // 0x001a8f78: nop 
-    func_001dd9a0();  // 0x1dd810                                // 0x001a8f80: jal 0x1dd810
+    func_001dd810();  // 1dd810                                // 0x001a8f80: jal 0x1dd810
     a0 = s1 + 1;                                                // 0x001a8f84: addiu $a0, $s1, 1
     if (s1 == 0) goto label_0x1a8f9c;                           // 0x001a8f88: beqz $s1, 0x1a8f9c
     v1 = 1;                                                     // 0x001a8f8c: addiu $v1, $zero, 1

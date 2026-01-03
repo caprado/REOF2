@@ -10,7 +10,7 @@ void func_001ae8d0() {
     v1 = *(int32_t*)((gp) + -0x6360);                           // 0x001ae8d8: lw $v1, -0x6360($gp)
     if (v1 != 0) goto label_0x1ae8f8;                           // 0x001ae8dc: bnez $v1, 0x1ae8f8
     /* nop */                                                   // 0x001ae8e0: nop 
-    func_00195ea0();  // 0x195e90                                // 0x001ae8e4: jal 0x195e90
+    func_00195e90();  // 195e90                                // 0x001ae8e4: jal 0x195e90
     /* nop */                                                   // 0x001ae8e8: nop 
     v1 = *(int32_t*)((gp) + -0x6360);                           // 0x001ae8ec: lw $v1, -0x6360($gp)
     v1 = v1 + 1;                                                // 0x001ae8f0: addiu $v1, $v1, 1

@@ -13,7 +13,7 @@ void func_001d00f0() {
     v0 = -1;                                                    // 0x001d0104: addiu $v0, $zero, -1
     goto label_0x1d012c;                                        // 0x001d0108: b 0x1d012c
 label_0x1d0110:
-    func_001d06b0();  // 0x1d0580                                // 0x001d0110: jal 0x1d0580
+    func_001d0580();  // 1d0580                                // 0x001d0110: jal 0x1d0580
     /* nop */                                                   // 0x001d0114: nop 
     at = 0x33 << 16;                                            // 0x001d0118: lui $at, 0x33
     g_0032b9f0 = v0;  // Global at 0x0032b9f0                   // 0x001d011c: sb $v0, -0x4610($at)

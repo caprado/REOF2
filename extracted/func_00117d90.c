@@ -13,10 +13,10 @@ void func_00117d90() {
     goto label_0x117db0;                                        // 0x00117d9c: b 0x117db0
     /* nop */                                                   // 0x00117da4: nop 
 label_0x117da8:
-    func_00117d90();  // 0x117bc8                                // 0x00117da8: jal 0x117bc8
+    func_00117bc8();  // 117bc8                                // 0x00117da8: jal 0x117bc8
     /* nop */                                                   // 0x00117dac: nop 
 label_0x117db0:
-    func_00117bc8();  // 0x117b70                                // 0x00117db0: jal 0x117b70
+    func_00117b70();  // 117b70                                // 0x00117db0: jal 0x117b70
     if (v0 != 0) goto label_0x117da8;                           // 0x00117db8: bnez $v0, 0x117da8
     WakeupThread();  // 0x114200                                // 0x00117dc0: jal 0x114200
     /* nop */                                                   // 0x00117dc4: nop 

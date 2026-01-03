@@ -12,7 +12,7 @@ void func_001ced80() {
     a3 = a3 + 0x5980;                                           // 0x001ced90: addiu $a3, $a3, 0x5980
     t0 = 0x40;                                                  // 0x001ced94: addiu $t0, $zero, 0x40
     a0 = a0 + 0x59c0;                                           // 0x001ceda0: addiu $a0, $a0, 0x59c0
-    func_001178a0();  // 0x1176a8                                // 0x001cedb0: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x001cedb0: jal 0x1176a8
     if (v0 >= 0) goto label_0x1cedc4;                           // 0x001cedb8: bgez $v0, 0x1cedc4
     /* nop */                                                   // 0x001cedbc: nop 
     v0 = -1;                                                    // 0x001cedc0: addiu $v0, $zero, -1

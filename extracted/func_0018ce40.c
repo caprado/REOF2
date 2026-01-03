@@ -22,7 +22,7 @@ label_0x18ce70:
     at = ((unsigned)v0 < (unsigned)v1) ? 1 : 0;                 // 0x0018ce8c: sltu $at, $v0, $v1
     if (at != 0) goto label_0x18cfc4;                           // 0x0018ce90: bnez $at, 0x18cfc4
     s1 = a0 + 0x14;                                             // 0x0018ce94: addiu $s1, $a0, 0x14
-    func_0018db10();  // 0x18db00                                // 0x0018ce98: jal 0x18db00
+    func_0018db00();  // 18db00                                // 0x0018ce98: jal 0x18db00
     a0 = *(int32_t*)((a0) + 0xc);                               // 0x0018ce9c: lw $a0, 0xc($a0)
     v1 = *(int32_t*)(s1);                                       // 0x0018cea0: lw $v1, 0($s1)
     a1 = s0 + s2;                                               // 0x0018cea4: addu $a1, $s0, $s2

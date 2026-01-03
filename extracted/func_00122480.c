@@ -24,7 +24,7 @@ void func_00122480() {
 label_0x1224e4:
     v1 = 0x10;                                                  // 0x001224e4: addiu $v1, $zero, 0x10
     if (s0 == v1) goto label_0x12258c;                          // 0x001224e8: beq $s0, $v1, 0x12258c
-    func_001261b8();  // 0x1261a0                                // 0x001224f0: jal 0x1261a0
+    func_001261a0();  // 1261a0                                // 0x001224f0: jal 0x1261a0
     /* nop */                                                   // 0x001224f4: nop 
     v0 = s0 << 1;                                               // 0x001224f8: sll $v0, $s0, 1
     v0 = v0 + s0;                                               // 0x001224fc: addu $v0, $v0, $s0
@@ -61,7 +61,7 @@ label_0x122554:
     *(uint8_t*)(s0) = v1;                                       // 0x00122574: sb $v1, 0($s0)
     *(uint8_t*)((s0) + 1) = 0;                                  // 0x00122578: sb $zero, 1($s0)
     *(uint32_t*)((s0) + 0x2c) = 0;                              // 0x0012257c: sw $zero, 0x2c($s0)
-    func_001261d0();  // 0x1261b8                                // 0x00122580: jal 0x1261b8
+    func_001261b8();  // 1261b8                                // 0x00122580: jal 0x1261b8
     *(float*)((s0) + 0x24) = FPU_F0;  // Store float            // 0x00122584: swc1 $f0, 0x24($s0)
 label_0x12258c:
     return;                                                     // 0x001225a4: jr $ra

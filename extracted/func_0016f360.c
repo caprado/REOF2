@@ -10,12 +10,12 @@ void func_0016f360() {
     uint32_t local_0, local_4, local_8, local_c;
     
     sp = sp + -0x50;                                            // 0x0016f360: addiu $sp, $sp, -0x50
-    func_00166d88();  // 0x166ca8                                // 0x0016f37c: jal 0x166ca8
+    func_00166ca8();  // 166ca8                                // 0x0016f37c: jal 0x166ca8
     a1 = *(int32_t*)((s1) + 0x1b38);                            // 0x0016f380: lw $a1, 0x1b38($s1)
     /* bnezl $v0, 0x16f428 */                                   // 0x0016f384: bnezl $v0, 0x16f428
     v0 = local_4;                                               // 0x0016f38c: lw $v0, 4($sp)
     if (v0 == 0) goto label_0x16f424;                           // 0x0016f390: beqz $v0, 0x16f424
-    func_0016cab0();  // 0x16c958                                // 0x0016f39c: jal 0x16c958
+    func_0016c958();  // 16c958                                // 0x0016f39c: jal 0x16c958
     a2 = sp + 0x20;                                             // 0x0016f3a0: addiu $a2, $sp, 0x20
     if (a0 != 0) goto label_0x16f3d0;                           // 0x0016f3a8: bnez $a0, 0x16f3d0
     v1 = local_0;                                               // 0x0016f3ac: lw $v1, 0($sp)
@@ -47,7 +47,7 @@ label_0x16f3f4:
     v0 = a0 - a2;                                               // 0x0016f414: subu $v0, $a0, $a2
     a1 = v0 + v1;                                               // 0x0016f418: addu $a1, $v0, $v1
 label_0x16f41c:
-    func_0016f458();  // 0x16f438                                // 0x0016f41c: jal 0x16f438
+    func_0016f438();  // 16f438                                // 0x0016f41c: jal 0x16f438
 label_0x16f424:
     return;                                                     // 0x0016f430: jr $ra
     sp = sp + 0x50;                                             // 0x0016f434: addiu $sp, $sp, 0x50

@@ -13,7 +13,7 @@ void func_00167208() {
     v0 = v0 + a1;                                               // 0x00167220: addu $v0, $v0, $a1
     v0 = v0 << 2;                                               // 0x00167228: sll $v0, $v0, 2
     v1 = a0 + v0;                                               // 0x00167230: addu $v1, $a0, $v0
-    func_00169ba0();  // 0x169b88                                // 0x00167238: jal 0x169b88
+    func_00169b88();  // 169b88                                // 0x00167238: jal 0x169b88
     s0 = v1 + 0x1150;                                           // 0x0016723c: addiu $s0, $v1, 0x1150
     s1 = *(int32_t*)((s0) + 0x20);                              // 0x00167240: lw $s1, 0x20($s0)
     if (s1 != 0) goto label_0x167270;                           // 0x00167244: bnez $s1, 0x167270
@@ -31,7 +31,7 @@ label_0x167270:
 label_0x167274:
     v1 = (s1 < 0) ? 1 : 0;                                      // 0x00167274: slti $v1, $s1, 0
     v0 = v0 | 0xffff;                                           // 0x00167278: ori $v0, $v0, 0xffff
-    func_00169bc8();  // 0x169ba0                                // 0x00167280: jal 0x169ba0
+    func_00169ba0();  // 169ba0                                // 0x00167280: jal 0x169ba0
     if (v1 != 0) s1 = v0;                                       // 0x00167284: movn $s1, $v0, $v1
     return;                                                     // 0x0016729c: jr $ra
     sp = sp + 0x30;                                             // 0x001672a0: addiu $sp, $sp, 0x30

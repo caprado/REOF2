@@ -20,7 +20,7 @@ label_0x19275c:
     a1 = v0 + at;                                               // 0x0019276c: addu $a1, $v0, $at
     a2 = 1;                                                     // 0x00192770: addiu $a2, $zero, 1
     v0 = v1 << 6;                                               // 0x00192774: sll $v0, $v1, 6
-    func_00189b20();  // 0x189ad0                                // 0x00192778: jal 0x189ad0
+    func_00189ad0();  // 189ad0                                // 0x00192778: jal 0x189ad0
     a0 = s3 + v0;                                               // 0x0019277c: addu $a0, $s3, $v0
     s0 = s0 + 2;                                                // 0x00192780: addiu $s0, $s0, 2
     s2 = s2 + 1;                                                // 0x00192784: addiu $s2, $s2, 1

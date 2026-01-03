@@ -47,11 +47,11 @@ label_0x1dc88c:
     a1 = 5;                                                     // 0x001dc8d0: addiu $a1, $zero, 5
     a2 = 1;                                                     // 0x001dc8d4: addiu $a2, $zero, 1
     t0 = 0x10;                                                  // 0x001dc8d8: addiu $t0, $zero, 0x10
-    func_001178a0();  // 0x1176a8                                // 0x001dc8dc: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x001dc8dc: jal 0x1176a8
     t2 = 0x10;                                                  // 0x001dc8e0: addiu $t2, $zero, 0x10
     if (v0 == 0) goto label_0x1dc900;                           // 0x001dc8e4: beqz $v0, 0x1dc900
     a0 = 0x25 << 16;                                            // 0x001dc8e8: lui $a0, 0x25
-    func_00116598();  // 0x116508                                // 0x001dc8f0: jal 0x116508
+    func_00116508();  // 116508                                // 0x001dc8f0: jal 0x116508
     a0 = &str_00248320;  // "Arrangement error!\n"              // 0x001dc8f4: addiu $a0, $a0, -0x7ce0
     goto label_0x1dc914;                                        // 0x001dc8f8: b 0x1dc914
     v0 = -2;                                                    // 0x001dc8fc: addiu $v0, $zero, -2

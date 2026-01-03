@@ -11,7 +11,7 @@ void func_001ae910() {
     v1 = *(int32_t*)((gp) + -0x6360);                           // 0x001ae918: lw $v1, -0x6360($gp)
     if (v1 == 0) goto label_0x1ae938;                           // 0x001ae91c: beqz $v1, 0x1ae938
     /* nop */                                                   // 0x001ae920: nop 
-    func_00195ec0();  // 0x195ea0                                // 0x001ae924: jal 0x195ea0
+    func_00195ea0();  // 195ea0                                // 0x001ae924: jal 0x195ea0
     /* nop */                                                   // 0x001ae928: nop 
     v1 = *(int32_t*)((gp) + -0x6360);                           // 0x001ae92c: lw $v1, -0x6360($gp)
     v1 = v1 + -1;                                               // 0x001ae930: addiu $v1, $v1, -1

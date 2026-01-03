@@ -43,16 +43,16 @@ label_0x12eb18:
     a2 = 1;                                                     // 0x0012eb18: addiu $a2, $zero, 1
     v0 = s0 >> 8;                                               // 0x0012eb20: sra $v0, $s0, 8
     s5 = s5 + 1;                                                // 0x0012eb24: addiu $s5, $s5, 1
-    func_0012ddd0();  // 0x12dc10                                // 0x0012eb28: jal 0x12dc10
+    func_0012dc10();  // 12dc10                                // 0x0012eb28: jal 0x12dc10
     local_0 = v0;                                               // 0x0012eb2c: sb $v0, 0($sp)
     a1 = 1;                                                     // 0x0012eb34: addiu $a1, $zero, 1
     a2 = 1;                                                     // 0x0012eb38: addiu $a2, $zero, 1
-    func_0012ddd0();  // 0x12dc10                                // 0x0012eb40: jal 0x12dc10
+    func_0012dc10();  // 12dc10                                // 0x0012eb40: jal 0x12dc10
     local_0 = s0;                                               // 0x0012eb44: sb $s0, 0($sp)
     s1 = s1 + 0x10;                                             // 0x0012eb4c: addiu $s1, $s1, 0x10
     a1 = 1;                                                     // 0x0012eb50: addiu $a1, $zero, 1
     a2 = 0x10;                                                  // 0x0012eb54: addiu $a2, $zero, 0x10
-    func_0012ddd0();  // 0x12dc10                                // 0x0012eb5c: jal 0x12dc10
+    func_0012dc10();  // 12dc10                                // 0x0012eb5c: jal 0x12dc10
     s6 = s6 + 0x12;                                             // 0x0012eb60: addiu $s6, $s6, 0x12
     v1 = *(int32_t*)((s2) + 0x58);                              // 0x0012eb64: lw $v1, 0x58($s2)
     v1 = (s5 < v1) ? 1 : 0;                                     // 0x0012eb68: slt $v1, $s5, $v1

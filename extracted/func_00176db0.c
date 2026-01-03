@@ -12,7 +12,7 @@ void func_00176db0() {
     sp = sp + -0x50;                                            // 0x00176db0: addiu $sp, $sp, -0x50
     v0 = 0x21 << 16;                                            // 0x00176db4: lui $v0, 0x21
     a2 = sp + 4;                                                // 0x00176dcc: addiu $a2, $sp, 4
-    func_00176060();  // 0x176010                                // 0x00176df0: jal 0x176010
+    func_00176010();  // 176010                                // 0x00176df0: jal 0x176010
     s5 = v0 + 0x5738;                                           // 0x00176df4: addiu $s5, $v0, 0x5738
     v0 = local_4;                                               // 0x00176df8: lw $v0, 4($sp)
     a2 = 1;                                                     // 0x00176dfc: addiu $a2, $zero, 1
@@ -27,7 +27,7 @@ void func_00176db0() {
     *(uint32_t*)(s1) = a2;                                      // 0x00176e28: sw $a2, 0($s1)
     /* nop */                                                   // 0x00176e2c: nop 
 label_0x176e30:
-    func_00176f78();  // 0x176f00                                // 0x00176e38: jal 0x176f00
+    func_00176f00();  // 176f00                                // 0x00176e38: jal 0x176f00
     goto label_0x176edc;                                        // 0x00176e40: b 0x176edc
 label_0x176e48:
     v1 = g_00215740;  // Global at 0x00215740                   // 0x00176e48: lw $v1, 8($s5)
@@ -57,7 +57,7 @@ label_0x176e48:
     /* FPU: div.s $f13, $f0, $f2 */                             // 0x00176ea8: div.s $f13, $f0, $f2
     if (a1 == a2) goto label_0x176ec8;                          // 0x00176eac: beq $a1, $a2, 0x176ec8
     local_0 = v0;                                               // 0x00176eb0: sw $v0, 0($sp)
-    func_00177068();  // 0x176f78                                // 0x00176eb8: jal 0x176f78
+    func_00176f78();  // 176f78                                // 0x00176eb8: jal 0x176f78
     goto label_0x176edc;                                        // 0x00176ec0: b 0x176edc
 label_0x176ec8:
     /* FPU: c.ole.s $f1, $f13 */                                // 0x00176ec8: c.ole.s $f1, $f13

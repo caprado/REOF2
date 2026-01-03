@@ -15,12 +15,12 @@ void func_0017ff10() {
     if (s0 == 0) goto label_0x17ff60;                           // 0x0017ff40: beqz $s0, 0x17ff60
     /* nop */                                                   // 0x0017ff44: nop 
     s2 = s2 + s3;                                               // 0x0017ff48: addu $s2, $s2, $s3
-    func_00107d30();  // 0x107c70                                // 0x0017ff54: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x0017ff54: jal 0x107c70
     /* nop */                                                   // 0x0017ff5c: nop 
 label_0x17ff60:
     a0 = *(int32_t*)((s1) + 0x18);                              // 0x0017ff60: lw $a0, 0x18($s1)
     a1 = *(int32_t*)((s1) + 0x1c);                              // 0x0017ff64: lw $a1, 0x1c($s1)
-    func_0017ff10();  // 0x17feb0                                // 0x0017ff6c: jal 0x17feb0
+    func_0017feb0();  // 17feb0                                // 0x0017ff6c: jal 0x17feb0
     /* FPU: ld.b $w0, -0x4e($zero) */                           // 0x0017ff7c: ld.b $w0, -0x4e($zero)
     /* FPU: aver_u.h $w0, $w0, $w17 */                          // 0x0017ff80: aver_u.h $w0, $w0, $w17
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x0017ff84: xori.b $w0, $w0, 0xb0

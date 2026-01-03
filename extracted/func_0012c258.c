@@ -11,7 +11,7 @@ void func_0012c258() {
     a0 = a1 << 2;                                               // 0x0012c264: sll $a0, $a1, 2
     v0 = v0 + a0;                                               // 0x0012c26c: addu $v0, $v0, $a0
     v1 = *(int32_t*)((v0) + 8);                                 // 0x0012c270: lw $v1, 8($v0)
-    func_00140ae0();  // 0x140a90                                // 0x0012c274: jal 0x140a90
+    func_00140a90();  // 140a90                                // 0x0012c274: jal 0x140a90
     a0 = *(int32_t*)((v1) + 4);                                 // 0x0012c278: lw $a0, 4($v1)
     v0 = (unsigned)v0 >> 1;                                     // 0x0012c280: srl $v0, $v0, 1
     return;                                                     // 0x0012c284: jr $ra

@@ -19,12 +19,12 @@ void func_00167344() {
     v1 = *(int32_t*)((a3) + 4);                                 // 0x00167388: lw $v1, 4($a3)
     if (v1 != 0) goto label_0x1673a8;                           // 0x0016738c: bnez $v1, 0x1673a8
     a1 = 0xff00 << 16;                                          // 0x00167394: lui $a1, 0xff00
-    func_00169940();  // 0x1698d0                                // 0x00167398: jal 0x1698d0
+    func_001698d0();  // 1698d0                                // 0x00167398: jal 0x1698d0
     a1 = a1 | 0x401;                                            // 0x0016739c: ori $a1, $a1, 0x401
     goto label_0x1674bc;                                        // 0x001673a0: b 0x1674bc
 label_0x1673a8:
     s0 = a3 + 0x10;                                             // 0x001673a8: addiu $s0, $a3, 0x10
-    func_00169ba0();  // 0x169b88                                // 0x001673ac: jal 0x169b88
+    func_00169b88();  // 169b88                                // 0x001673ac: jal 0x169b88
     v0 = *(int32_t*)((s0) + 8);                                 // 0x001673b4: lw $v0, 8($s0)
     local_4 = v0;                                               // 0x001673bc: sw $v0, 4($sp)
     a1 = *(int32_t*)((s0) + 0x18);                              // 0x001673c0: lw $a1, 0x18($s0)
@@ -36,7 +36,7 @@ label_0x1673a8:
     fp = *(int32_t*)((s0) + 0x14);                              // 0x001673d8: lw $fp, 0x14($s0)
     s6 = *(int32_t*)((s0) + 0x20);                              // 0x001673dc: lw $s6, 0x20($s0)
     /* FPU: addu.qb $zero, $sp, $a1 */                          // 0x001673e0: addu.qb $zero, $sp, $a1
-    func_00169bc8();  // 0x169ba0                                // 0x001673e4: jal 0x169ba0
+    func_00169ba0();  // 169ba0                                // 0x001673e4: jal 0x169ba0
     s0 = *(int32_t*)((s0) + 0x24);                              // 0x001673e8: lw $s0, 0x24($s0)
     v1 = local_4;                                               // 0x001673ec: lw $v1, 4($sp)
     v0 = s3 + s4;                                               // 0x001673f0: addu $v0, $s3, $s4

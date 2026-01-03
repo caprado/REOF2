@@ -13,7 +13,7 @@ void func_0015d768() {
     sp = sp + -0x80;                                            // 0x0015d768: addiu $sp, $sp, -0x80
     a0 = *(int32_t*)((s2) + 0x1c);                              // 0x0015d7a0: lw $a0, 0x1c($s2)
     s0 = *(int32_t*)((s6) + 0x40);                              // 0x0015d7a4: lw $s0, 0x40($s6)
-    func_0015da10();  // 0x15d9d0                                // 0x0015d7a8: jal 0x15d9d0
+    func_0015d9d0();  // 15d9d0                                // 0x0015d7a8: jal 0x15d9d0
     s7 = *(int32_t*)((s2) + 0x20);                              // 0x0015d7ac: lw $s7, 0x20($s2)
     local_4 = v0;                                               // 0x0015d7b0: sw $v0, 4($sp)
     v0 = *(int32_t*)(s2);                                       // 0x0015d7b4: lw $v0, 0($s2)
@@ -24,7 +24,7 @@ void func_0015d768() {
     a2 = *(int32_t*)((s2) + 8);                                 // 0x0015d7c8: lw $a2, 8($s2)
     local_10 = a2;                                              // 0x0015d7cc: sw $a2, 0x10($sp)
     a3 = *(int32_t*)((s2) + 0xc);                               // 0x0015d7d0: lw $a3, 0xc($s2)
-    func_0015da78();  // 0x15da10                                // 0x0015d7d4: jal 0x15da10
+    func_0015da10();  // 15da10                                // 0x0015d7d4: jal 0x15da10
     local_14 = a3;                                              // 0x0015d7d8: sw $a3, 0x14($sp)
     local_18 = v0;                                              // 0x0015d7dc: sw $v0, 0x18($sp)
     v0 = *(int32_t*)((s2) + 0x24);                              // 0x0015d7e8: lw $v0, 0x24($s2)
@@ -34,18 +34,18 @@ void func_0015d768() {
     fp = *(int32_t*)((s2) + 0x2c);                              // 0x0015d7f8: lw $fp, 0x2c($s2)
     local_1c = v0;                                              // 0x0015d7fc: sw $v0, 0x1c($sp)
     a2 = *(int32_t*)((s2) + 0x28);                              // 0x0015d800: lw $a2, 0x28($s2)
-    func_00176b60();  // 0x176ae8                                // 0x0015d804: jal 0x176ae8
+    func_00176ae8();  // 176ae8                                // 0x0015d804: jal 0x176ae8
     local_20 = a2;                                              // 0x0015d808: sw $a2, 0x20($sp)
     if (v0 == 0) goto label_0x15d824;                           // 0x0015d80c: beqz $v0, 0x15d824
     a1 = local_0;                                               // 0x0015d810: lw $a1, 0($sp)
     a0 = 0x22 << 16;                                            // 0x0015d814: lui $a0, 0x22
-    func_001634a8();  // 0x163410                                // 0x0015d818: jal 0x163410
+    func_00163410();  // 163410                                // 0x0015d818: jal 0x163410
     a0 = &str_00227500;  // "mwl_convPtypeFromSFD : Invalid Ptype" // 0x0015d81c: addiu $a0, $a0, 0x7500
     a1 = local_0;                                               // 0x0015d820: lw $a1, 0($sp)
 label_0x15d824:
-    func_0015d9d0();  // 0x15d980                                // 0x0015d828: jal 0x15d980
+    func_0015d980();  // 15d980                                // 0x0015d828: jal 0x15d980
     a1 = local_0;                                               // 0x0015d834: lw $a1, 0($sp)
-    func_0015d9d0();  // 0x15d980                                // 0x0015d83c: jal 0x15d980
+    func_0015d980();  // 15d980                                // 0x0015d83c: jal 0x15d980
     *(uint32_t*)(s1) = s7;                                      // 0x0015d844: sw $s7, 0($s1)
     a3 = local_4;                                               // 0x0015d850: lw $a3, 4($sp)
     v1 = local_0;                                               // 0x0015d854: lw $v1, 0($sp)
@@ -70,7 +70,7 @@ label_0x15d824:
     v0 = local_1c;                                              // 0x0015d8a4: lw $v0, 0x1c($sp)
     *(uint32_t*)((s1) + 0x38) = v0;                             // 0x0015d8a8: sw $v0, 0x38($s1)
     a3 = local_20;                                              // 0x0015d8ac: lw $a3, 0x20($sp)
-    func_0015d980();  // 0x15d8e8                                // 0x0015d8b0: jal 0x15d8e8
+    func_0015d8e8();  // 15d8e8                                // 0x0015d8b0: jal 0x15d8e8
     *(uint32_t*)((s1) + 0x3c) = a3;                             // 0x0015d8b4: sw $a3, 0x3c($s1)
     return;                                                     // 0x0015d8e0: jr $ra
     sp = sp + 0x80;                                             // 0x0015d8e4: addiu $sp, $sp, 0x80

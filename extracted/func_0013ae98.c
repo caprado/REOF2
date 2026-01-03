@@ -8,7 +8,7 @@ void func_0013ae98() {
     
     sp = sp + -0x30;                                            // 0x0013ae98: addiu $sp, $sp, -0x30
     s3 = 0x20 << 16;                                            // 0x0013aea0: lui $s3, 0x20
-    func_00141ee0();  // 0x141e50                                // 0x0013aeb4: jal 0x141e50
+    func_00141e50();  // 141e50                                // 0x0013aeb4: jal 0x141e50
     a0 = s3 + 0x4084;                                           // 0x0013aeb8: addiu $a0, $s3, 0x4084
     if (v0 == 0) goto label_0x13aef4;                           // 0x0013aebc: beqz $v0, 0x13aef4
     v0 = 0x20 << 16;                                            // 0x0013aec0: lui $v0, 0x20
@@ -19,7 +19,7 @@ label_0x13aed0:
     v0 = g_002040f0;  // Global at 0x002040f0                   // 0x0013aed0: lb $v0, 0($s0)
     if (v0 != s2) goto label_0x13aee8;                          // 0x0013aed4: bnel $v0, $s2, 0x13aee8
     s1 = s1 + -1;                                               // 0x0013aed8: addiu $s1, $s1, -1
-    func_0013ae98();  // 0x13add0                                // 0x0013aedc: jal 0x13add0
+    func_0013add0();  // 13add0                                // 0x0013aedc: jal 0x13add0
     s1 = s1 + -1;                                               // 0x0013aee4: addiu $s1, $s1, -1
 label_0x13aee8:
     if (s1 >= 0) goto label_0x13aed0;                           // 0x0013aee8: bgez $s1, 0x13aed0

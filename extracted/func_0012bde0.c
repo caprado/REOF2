@@ -11,18 +11,18 @@ void func_0012bde0() {
     sp = sp + 0x10;                                             // 0x0012bdf0: addiu $sp, $sp, 0x10
     /* nop */                                                   // 0x0012bdf4: nop 
     sp = sp + -0x10;                                            // 0x0012bdf8: addiu $sp, $sp, -0x10
-    func_0012ba50();  // 0x12ba38                                // 0x0012be04: jal 0x12ba38
+    func_0012ba38();  // 12ba38                                // 0x0012be04: jal 0x12ba38
     /* nop */                                                   // 0x0012be08: nop 
     v0 = 0x1f << 16;                                            // 0x0012be0c: lui $v0, 0x1f
     s0 = v0 + 0x6b58;                                           // 0x0012be10: addiu $s0, $v0, 0x6b58
     v1 = g_001f6b58;  // Global at 0x001f6b58                   // 0x0012be14: lw $v1, 0($s0)
     /* bnezl $v1, 0x12be50 */                                   // 0x0012be18: bnezl $v1, 0x12be50
     v0 = 1;                                                     // 0x0012be20: addiu $v0, $zero, 1
-    func_0012ba78();  // 0x12ba50                                // 0x0012be24: jal 0x12ba50
+    func_0012ba50();  // 12ba50                                // 0x0012be24: jal 0x12ba50
     g_001f6b58 = v0;  // Global at 0x001f6b58                   // 0x0012be28: sw $v0, 0($s0)
-    func_00132998();  // 0x1328c8                                // 0x0012be2c: jal 0x1328c8
+    func_001328c8();  // 1328c8                                // 0x0012be2c: jal 0x1328c8
     /* nop */                                                   // 0x0012be30: nop 
-    func_00129d80();  // 0x129ce0                                // 0x0012be34: jal 0x129ce0
+    func_00129ce0();  // 129ce0                                // 0x0012be34: jal 0x129ce0
     /* nop */                                                   // 0x0012be38: nop 
     g_001f6b58 = 0;  // Global at 0x001f6b58                    // 0x0012be3c: sw $zero, 0($s0)
     return;                                                     // 0x0012be48: jr $ra

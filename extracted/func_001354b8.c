@@ -11,7 +11,7 @@ void func_001354b8() {
     s1 = v0 + 0x37ec;                                           // 0x001354d0: addiu $s1, $v0, 0x37ec
 label_0x1354e8:
     s1 = s1 + 0x10;                                             // 0x001354e8: addiu $s1, $s1, 0x10
-    func_0010b2a0();  // 0x10b0e8                                // 0x001354f0: jal 0x10b0e8
+    func_0010b0e8();  // 10b0e8                                // 0x001354f0: jal 0x10b0e8
     if (v0 != 0) goto label_0x135508;                           // 0x001354f8: bnez $v0, 0x135508
     s0 = s0 + 1;                                                // 0x001354fc: addiu $s0, $s0, 1
     goto label_0x135518;                                        // 0x00135500: b 0x135518

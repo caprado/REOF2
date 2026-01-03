@@ -52,7 +52,7 @@ label_0x135058:
     s0 = 0x25 << 16;                                            // 0x00135074: lui $s0, 0x25
     s0 = s0 + 0x39e8;                                           // 0x0013507c: addiu $s0, $s0, 0x39e8
     a2 = 9;                                                     // 0x00135080: addiu $a2, $zero, 9
-    func_00107d30();  // 0x107c70                                // 0x00135084: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x00135084: jal 0x107c70
     g_002539e8 = 0;  // Global at 0x002539e8                    // 0x0013508c: sb $zero, 0($s0)
 label_0x135090:
     return;                                                     // 0x001350ac: jr $ra

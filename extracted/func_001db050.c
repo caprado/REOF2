@@ -9,7 +9,7 @@ void func_001db050() {
     sp = sp + -0xb0;                                            // 0x001db050: addiu $sp, $sp, -0xb0
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001db058: addu.qb $zero, $sp, $s1
     s1 = 0x31 << 16;                                            // 0x001db05c: lui $s1, 0x31
-    func_001afb40();  // 0x1afb10                                // 0x001db064: jal 0x1afb10
+    func_001afb10();  // 1afb10                                // 0x001db064: jal 0x1afb10
     s1 = s1 + 0x37a0;                                           // 0x001db068: addiu $s1, $s1, 0x37a0
     if (v0 == 0) goto label_0x1db0fc;                           // 0x001db06c: beqz $v0, 0x1db0fc
     at = 0x31 << 16;                                            // 0x001db070: lui $at, 0x31
@@ -22,21 +22,21 @@ void func_001db050() {
     a2 = 0x24 << 16;                                            // 0x001db08c: lui $a2, 0x24
     a0 = sp + 0x30;                                             // 0x001db090: addiu $a0, $sp, 0x30
     a1 = &str_00247a38;  // "data/rom/scene/single"             // 0x001db094: addiu $a1, $a1, 0x7a38
-    func_0010a570();  // 0x10a4d8                                // 0x001db098: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001db098: jal 0x10a4d8
     a2 = &str_00247a50;  // "r%03d.sgl"                         // 0x001db09c: addiu $a2, $a2, 0x7a50
     a0 = sp + 0x30;                                             // 0x001db0a0: addiu $a0, $sp, 0x30
     a2 = 1;                                                     // 0x001db0a8: addiu $a2, $zero, 1
-    func_001d33e0();  // 0x1d3390                                // 0x001db0ac: jal 0x1d3390
+    func_001d3390();  // 1d3390                                // 0x001db0ac: jal 0x1d3390
     goto label_0x1db0dc;                                        // 0x001db0b4: b 0x1db0dc
     /* nop */                                                   // 0x001db0b8: nop 
 label_0x1db0bc:
     a2 = g_003137ba;  // Global at 0x003137ba                   // 0x001db0bc: lhu $a2, 0x1a($s1)
     a1 = 0x24 << 16;                                            // 0x001db0c0: lui $a1, 0x24
     a0 = sp + 0x30;                                             // 0x001db0c4: addiu $a0, $sp, 0x30
-    func_0010a570();  // 0x10a4d8                                // 0x001db0c8: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001db0c8: jal 0x10a4d8
     a1 = &str_00247a68;  // "%s/r%03d.bin"                      // 0x001db0cc: addiu $a1, $a1, 0x7a68
     a0 = sp + 0x30;                                             // 0x001db0d0: addiu $a0, $sp, 0x30
-    func_001a9b80();  // 0x1a9b30                                // 0x001db0d4: jal 0x1a9b30
+    func_001a9b30();  // 1a9b30                                // 0x001db0d4: jal 0x1a9b30
 label_0x1db0dc:
     if (v0 > 0) goto label_0x1db0ec;                            // 0x001db0dc: bgtz $v0, 0x1db0ec
     /* nop */                                                   // 0x001db0e0: nop 

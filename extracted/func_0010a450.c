@@ -27,7 +27,7 @@ void func_0010a450() {
     *(float*)((sp) + 0x94) = FPU_F19;  // Store float           // 0x0010a4b0: swc1 $f19, 0x94($sp)
     local_c = t4;                                               // 0x0010a4b4: sh $t4, 0xc($sp)
     local_14 = v0;                                              // 0x0010a4b8: sw $v0, 0x14($sp)
-    func_0010ce88();  // 0x10ce10                                // 0x0010a4bc: jal 0x10ce10
+    func_0010ce10();  // 10ce10                                // 0x0010a4bc: jal 0x10ce10
     local_8 = v0;                                               // 0x0010a4c0: sw $v0, 8($sp)
     v1 = local_0;                                               // 0x0010a4c4: lw $v1, 0($sp)
     *(uint8_t*)(v1) = 0;                                        // 0x0010a4cc: sb $zero, 0($v1)

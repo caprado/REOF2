@@ -8,7 +8,7 @@ void func_001b1e30() {
     
     sp = sp + -0x20;                                            // 0x001b1e30: addiu $sp, $sp, -0x20
     a2 = 0x820;                                                 // 0x001b1e3c: addiu $a2, $zero, 0x820
-    func_00107d30();  // 0x107c70                                // 0x001b1e44: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001b1e44: jal 0x107c70
     v1 = 0 | 0xffff;                                            // 0x001b1e4c: ori $v1, $zero, 0xffff
     *(uint16_t*)((s0) + 0x810) = v1;                            // 0x001b1e50: sh $v1, 0x810($s0)
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001b1e58: xori.b $w0, $w0, 0xb0

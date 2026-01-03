@@ -14,14 +14,14 @@ label_0x1ba2bc:
     if (v0 == 0) goto label_0x1ba2cc;                           // 0x001ba2c0: beqz $v0, 0x1ba2cc
     *(uint32_t*)((gp) + -0x64d4) = 0;                           // 0x001ba2c8: sw $zero, -0x64d4($gp)
 label_0x1ba2cc:
-    func_0019f420();  // 0x19f390                                // 0x001ba2cc: jal 0x19f390
+    func_0019f390();  // 19f390                                // 0x001ba2cc: jal 0x19f390
     /* nop */                                                   // 0x001ba2d0: nop 
     s0 = s0 + 1;                                                // 0x001ba2d4: addiu $s0, $s0, 1
 label_0x1ba2d8:
     v0 = (s0 < s1) ? 1 : 0;                                     // 0x001ba2d8: slt $v0, $s0, $s1
     if (v0 != 0) goto label_0x1ba2bc;                           // 0x001ba2dc: bnez $v0, 0x1ba2bc
     at = 0x31 << 16;                                            // 0x001ba2e0: lui $at, 0x31
-    func_001ac020();  // 0x1ac000                                // 0x001ba2e4: jal 0x1ac000
+    func_001ac000();  // 1ac000                                // 0x001ba2e4: jal 0x1ac000
     /* nop */                                                   // 0x001ba2e8: nop 
     at = 0x31 << 16;                                            // 0x001ba2ec: lui $at, 0x31
     g_003137d4 = v0;  // Global at 0x003137d4                   // 0x001ba2f0: sw $v0, 0x37d4($at)

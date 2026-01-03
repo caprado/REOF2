@@ -25,7 +25,7 @@ label_0x108038:
     if (v0 != 0) goto label_0x108038;                           // 0x0010804c: bnez $v0, 0x108038
     a1 = a1 + 1;                                                // 0x00108050: addiu $a1, $a1, 1
 label_0x108054:
-    func_00107ea8();  // 0x107e00                                // 0x00108054: jal 0x107e00
+    func_00107e00();  // 107e00                                // 0x00108054: jal 0x107e00
     v1 = (s2 < 0xa) ? 1 : 0;                                    // 0x0010805c: slti $v1, $s2, 0xa
     v0 = 1;                                                     // 0x00108064: addiu $v0, $zero, 1
     *(uint32_t*)((a1) + 0x14) = s1;                             // 0x00108068: sw $s1, 0x14($a1)
@@ -37,7 +37,7 @@ label_0x108054:
     s0 = s0 + 1;                                                // 0x00108080: addiu $s0, $s0, 1
     a2 = 0xa;                                                   // 0x00108088: addiu $a2, $zero, 0xa
     a3 = a3 + -0x30;                                            // 0x0010808c: addiu $a3, $a3, -0x30
-    func_00107fe0();  // 0x107ed8                                // 0x00108090: jal 0x107ed8
+    func_00107ed8();  // 107ed8                                // 0x00108090: jal 0x107ed8
     s1 = s1 + 1;                                                // 0x00108094: addiu $s1, $s1, 1
     v0 = (s1 < s2) ? 1 : 0;                                     // 0x0010809c: slt $v0, $s1, $s2
     /* bnezl $v0, 0x108080 */                                   // 0x001080a0: bnezl $v0, 0x108080
@@ -56,7 +56,7 @@ label_0x1080c8:
     s0 = s0 + 1;                                                // 0x001080cc: addiu $s0, $s0, 1
     a2 = 0xa;                                                   // 0x001080d4: addiu $a2, $zero, 0xa
     a3 = a3 + -0x30;                                            // 0x001080d8: addiu $a3, $a3, -0x30
-    func_00107fe0();  // 0x107ed8                                // 0x001080dc: jal 0x107ed8
+    func_00107ed8();  // 107ed8                                // 0x001080dc: jal 0x107ed8
     s1 = s1 + -1;                                               // 0x001080e0: addiu $s1, $s1, -1
     if (s1 != 0) goto label_0x1080c8;                           // 0x001080e4: bnez $s1, 0x1080c8
     return;                                                     // 0x00108108: jr $ra

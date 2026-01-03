@@ -13,16 +13,16 @@ void func_00118360() {
     sp = sp + -0x60;                                            // 0x00118370: addiu $sp, $sp, -0x60
     a0 = 0x1b;                                                  // 0x0011838c: addiu $a0, $zero, 0x1b
     s0 = 0x25 << 16;                                            // 0x00118394: lui $s0, 0x25
-    func_00118360();  // 0x118330                                // 0x0011839c: jal 0x118330
+    func_00118330();  // 118330                                // 0x0011839c: jal 0x118330
     s4 = s0 + -0x6c0;                                           // 0x001183a0: addiu $s4, $s0, -0x6c0
     v0 = 0x1f << 16;                                            // 0x001183a4: lui $v0, 0x1f
     v1 = g_001f03dc;  // Global at 0x001f03dc                   // 0x001183a8: lw $v1, 0x3dc($v0)
     if (v1 != 0) goto label_0x1183bc;                           // 0x001183ac: bnez $v1, 0x1183bc
     /* nop */                                                   // 0x001183b0: nop 
-    func_00118668();  // 0x118460                                // 0x001183b4: jal 0x118460
+    func_00118460();  // 118460                                // 0x001183b4: jal 0x118460
     /* nop */                                                   // 0x001183b8: nop 
 label_0x1183bc:
-    func_0011d378();  // 0x11d320                                // 0x001183bc: jal 0x11d320
+    func_0011d320();  // 11d320                                // 0x001183bc: jal 0x11d320
     /* nop */                                                   // 0x001183c0: nop 
     s1 = g_0024f940;  // Global at 0x0024f940                   // 0x001183c4: lw $s1, -0x6c0($s0)
     v1 = 0x25 << 16;                                            // 0x001183c8: lui $v1, 0x25
@@ -31,10 +31,10 @@ label_0x1183bc:
     g_0024f980 = gp;  // Global at 0x0024f980                   // 0x001183d4: sw $gp, -0x680($v1)
     if (v0 == 0) goto label_0x1183e8;                           // 0x001183d8: beqz $v0, 0x1183e8
     /* nop */                                                   // 0x001183dc: nop 
-    func_0011d390();  // 0x11d378                                // 0x001183e0: jal 0x11d378
+    func_0011d378();  // 11d378                                // 0x001183e0: jal 0x11d378
     /* nop */                                                   // 0x001183e4: nop 
 label_0x1183e8:
-    func_00118418();  // 0x118360                                // 0x001183e8: jal 0x118360
+    func_00118360();  // 118360                                // 0x001183e8: jal 0x118360
     /* nop */                                                   // 0x001183ec: nop 
     return;                                                     // 0x0011840c: jr $ra
     sp = sp + 0x60;                                             // 0x00118410: addiu $sp, $sp, 0x60

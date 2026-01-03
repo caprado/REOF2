@@ -43,7 +43,7 @@ void func_00128380() {
     sp = sp + 0x10;                                             // 0x0012841c: addiu $sp, $sp, 0x10
 label_0x128420:
     sp = sp + -0x20;                                            // 0x00128430: addiu $sp, $sp, -0x20
-    func_00128720();  // 0x128520                                // 0x00128450: jal 0x128520
+    func_00128520();  // 128520                                // 0x00128450: jal 0x128520
     local_0 = 0;                                                // 0x00128454: sw $zero, 0($sp)
     return;                                                     // 0x0012845c: jr $ra
     sp = sp + 0x20;                                             // 0x00128460: addiu $sp, $sp, 0x20

@@ -32,7 +32,7 @@ label_0x17c438:
     goto label_0x17c470;                                        // 0x0017c44c: b 0x17c470
     /* nop */                                                   // 0x0017c454: nop 
 label_0x17c458:
-    func_0017a4d8();  // 0x17a490                                // 0x0017c458: jal 0x17a490
+    func_0017a490();  // 17a490                                // 0x0017c458: jal 0x17a490
     a0 = *(int32_t*)((a0) + 0x30);                              // 0x0017c45c: lw $a0, 0x30($a0)
     if (v0 == s0) goto label_0x17c470;                          // 0x0017c460: beq $v0, $s0, 0x17c470
 label_0x17c468:

@@ -9,7 +9,7 @@ void func_001321b8() {
     sp = sp + -0x10;                                            // 0x001321b8: addiu $sp, $sp, -0x10
     if (a0 != 0) goto label_0x1321d8;                           // 0x001321bc: bnez $a0, 0x1321d8
     a0 = 0x22 << 16;                                            // 0x001321c4: lui $a0, 0x22
-    func_00127de8();  // 0x127d90                                // 0x001321c8: jal 0x127d90
+    func_00127d90();  // 127d90                                // 0x001321c8: jal 0x127d90
     a0 = &str_00223848;  // "E02080820 ADXT_GetNumChan: parameter error" // 0x001321cc: addiu $a0, $a0, 0x3848
     goto label_0x1321f8;                                        // 0x001321d0: b 0x1321f8
     v0 = -1;                                                    // 0x001321d4: addiu $v0, $zero, -1

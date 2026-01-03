@@ -10,10 +10,10 @@ void func_0011be08() {
     uint32_t local_0;
     
     sp = sp + -0x90;                                            // 0x0011be08: addiu $sp, $sp, -0x90
-    func_0011bb38();  // 0x11ba38                                // 0x0011be38: jal 0x11ba38
+    func_0011ba38();  // 11ba38                                // 0x0011be38: jal 0x11ba38
     if (v0 < 0) goto label_0x11bfe8;                            // 0x0011be40: bltz $v0, 0x11bfe8
     v0 = 0xffff << 16;                                          // 0x0011be44: lui $v0, 0xffff
-    func_0011bbc8();  // 0x11bb38                                // 0x0011be48: jal 0x11bb38
+    func_0011bb38();  // 11bb38                                // 0x0011be48: jal 0x11bb38
     /* nop */                                                   // 0x0011be4c: nop 
     if (v0 == 0) goto label_0x11be64;                           // 0x0011be50: beqz $v0, 0x11be64
     s4 = 0x25 << 16;                                            // 0x0011be54: lui $s4, 0x25
@@ -60,7 +60,7 @@ label_0x11bf34:
     *(uint32_t*)((v1) + 4) = v0;                                // 0x0011bf80: sw $v0, 4($v1)
 label_0x11bf84:
     a0 = s2 + 0x104;                                            // 0x0011bf84: addiu $a0, $s2, 0x104
-    func_00107b68();  // 0x107ab8                                // 0x0011bf88: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x0011bf88: jal 0x107ab8
     goto label_0x11bf9c;                                        // 0x0011bf90: b 0x11bf9c
     g_0024fb84 = s1;  // Global at 0x0024fb84                   // 0x0011bf94: sw $s1, 4($s2)
 label_0x11bf98:
@@ -74,7 +74,7 @@ label_0x11bfa0:
     a1 = 7;                                                     // 0x0011bfac: addiu $a1, $zero, 7
     t0 = 0x200;                                                 // 0x0011bfb8: addiu $t0, $zero, 0x200
     t2 = 8;                                                     // 0x0011bfc0: addiu $t2, $zero, 8
-    func_001178a0();  // 0x1176a8                                // 0x0011bfc4: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x0011bfc4: jal 0x1176a8
     if (v0 >= 0) goto label_0x11bfe0;                           // 0x0011bfcc: bgezl $v0, 0x11bfe0
     v1 = *(int32_t*)((s0) + 4);                                 // 0x0011bfd0: lw $v1, 4($s0)
     v0 = 0xfffe << 16;                                          // 0x0011bfd4: lui $v0, 0xfffe

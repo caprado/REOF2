@@ -22,13 +22,13 @@ void func_001bc190() {
     at = 0x31 << 16;                                            // 0x001bc1c8: lui $at, 0x31
     a1 = g_00313894;  // Global at 0x00313894                   // 0x001bc1cc: lw $a1, 0x3894($at)
     at = 0x31 << 16;                                            // 0x001bc1d0: lui $at, 0x31
-    func_001f05b0();  // 0x1dd9c0                                // 0x001bc1d4: jal 0x1dd9c0
+    func_001dd9c0();  // 1dd9c0                                // 0x001bc1d4: jal 0x1dd9c0
     a2 = g_00313898;  // Global at 0x00313898                   // 0x001bc1d8: lw $a2, 0x3898($at)
     *(uint32_t*)((gp) + -0x6330) = v0;                          // 0x001bc1dc: sw $v0, -0x6330($gp)
     v1 = *(int32_t*)((gp) + -0x6330);                           // 0x001bc1e0: lw $v1, -0x6330($gp)
     if (v1 == 0) goto label_0x1bc1f4;                           // 0x001bc1e4: beqz $v1, 0x1bc1f4
     /* nop */                                                   // 0x001bc1e8: nop 
-    func_001c6a10();  // 0x1c69d0                                // 0x001bc1ec: jal 0x1c69d0
+    func_001c69d0();  // 1c69d0                                // 0x001bc1ec: jal 0x1c69d0
     /* nop */                                                   // 0x001bc1f0: nop 
 label_0x1bc1f4:
     return;                                                     // 0x001bc1f8: jr $ra

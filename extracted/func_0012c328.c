@@ -11,8 +11,8 @@ void func_0012c328() {
     sp = sp + 0x10;                                             // 0x0012c338: addiu $sp, $sp, 0x10
     /* nop */                                                   // 0x0012c33c: nop 
     sp = sp + -0x10;                                            // 0x0012c340: addiu $sp, $sp, -0x10
-    func_0013e918();  // 0x13e910                                // 0x0012c350: jal 0x13e910
-    func_0013e910();  // 0x13e898                                // 0x0012c35c: jal 0x13e898
+    func_0013e910();  // 13e910                                // 0x0012c350: jal 0x13e910
+    func_0013e898();  // 13e898                                // 0x0012c35c: jal 0x13e898
     return func_0013e780();  // Tail call                       // 0x0012c370: j 0x13e780
     sp = sp + 0x10;                                             // 0x0012c374: addiu $sp, $sp, 0x10
     sp = sp + -0x10;                                            // 0x0012c378: addiu $sp, $sp, -0x10
@@ -45,7 +45,7 @@ void func_0012c328() {
     /* nop */                                                   // 0x0012c41c: nop 
     a0 = 0x22 << 16;                                            // 0x0012c420: lui $a0, 0x22
     sp = sp + -0x10;                                            // 0x0012c424: addiu $sp, $sp, -0x10
-    func_00116598();  // 0x116508                                // 0x0012c42c: jal 0x116508
+    func_00116508();  // 116508                                // 0x0012c42c: jal 0x116508
     a0 = &str_002235a8;  // "E03010901 ADXB_DecodeHeader: "     // 0x0012c430: addiu $a0, $a0, 0x35a8
     /* nop */                                                   // 0x0012c434: nop 
 label_0x12c438:

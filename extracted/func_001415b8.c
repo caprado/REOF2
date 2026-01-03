@@ -10,8 +10,8 @@ void func_001415b8() {
     a2 = 0x7f;                                                  // 0x001415bc: addiu $a2, $zero, 0x7f
     s0 = 0x21 << 16;                                            // 0x001415c4: lui $s0, 0x21
     s0 = s0 + 0xc38;                                            // 0x001415c8: addiu $s0, $s0, 0xc38
-    func_0010b460();  // 0x10b2a0                                // 0x001415dc: jal 0x10b2a0
-    func_0010b0e8();  // 0x10af38                                // 0x001415ec: jal 0x10af38
+    func_0010b2a0();  // 10b2a0                                // 0x001415dc: jal 0x10b2a0
+    func_0010af38();  // 10af38                                // 0x001415ec: jal 0x10af38
     a2 = 0x7f;                                                  // 0x001415f0: addiu $a2, $zero, 0x7f
     v0 = 0x25 << 16;                                            // 0x001415f4: lui $v0, 0x25
     v0 = v0 + 0x6170;                                           // 0x001415f8: addiu $v0, $v0, 0x6170

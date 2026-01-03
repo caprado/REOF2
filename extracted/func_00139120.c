@@ -10,7 +10,7 @@ void func_00139120() {
     uint32_t local_0;
     
     sp = sp + -0x50;                                            // 0x00139120: addiu $sp, $sp, -0x50
-    func_001413a8();  // 0x141390                                // 0x00139150: jal 0x141390
+    func_00141390();  // 141390                                // 0x00139150: jal 0x141390
     if (s0 <= 0) goto label_0x139190;                           // 0x00139158: blez $s0, 0x139190
     a3 = 0x25 << 16;                                            // 0x00139160: lui $a3, 0x25
     t0 = a3 + 0x3b40;                                           // 0x00139164: addiu $t0, $a3, 0x3b40
@@ -36,7 +36,7 @@ label_0x139198:
     a3 = a3 + 0x3b40;                                           // 0x001391ac: addiu $a3, $a3, 0x3b40
     t0 = s0 << 2;                                               // 0x001391b0: sll $t0, $s0, 2
     t2 = s1 << 2;                                               // 0x001391b8: sll $t2, $s1, 2
-    func_001178a0();  // 0x1176a8                                // 0x001391c0: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x001391c0: jal 0x1176a8
     local_0 = 0;                                                // 0x001391c4: sw $zero, 0($sp)
     if (s1 <= 0) goto label_0x1391f8;                           // 0x001391c8: blez $s1, 0x1391f8
     /* nop */                                                   // 0x001391d4: nop 
@@ -50,7 +50,7 @@ label_0x1391d8:
     if (a1 != 0) goto label_0x1391d8;                           // 0x001391f0: bnez $a1, 0x1391d8
     *(uint32_t*)(v0) = a0;                                      // 0x001391f4: sw $a0, 0($v0)
 label_0x1391f8:
-    func_001413c0();  // 0x1413a8                                // 0x001391f8: jal 0x1413a8
+    func_001413a8();  // 1413a8                                // 0x001391f8: jal 0x1413a8
     /* nop */                                                   // 0x001391fc: nop 
     v0 = g_00253c40;  // Global at 0x00253c40                   // 0x00139200: lw $v0, 0x3c40($s5)
     return;                                                     // 0x00139220: jr $ra

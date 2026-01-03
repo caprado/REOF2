@@ -80,7 +80,7 @@ label_0x11371c:
     v0 = v0 | a0;                                               // 0x00113760: or $v0, $v0, $a0
 label_0x113764:
     a0 = 0x22 << 16;                                            // 0x00113764: lui $a0, 0x22
-    func_00116598();  // 0x116508                                // 0x00113768: jal 0x116508
+    func_00116508();  // 116508                                // 0x00113768: jal 0x116508
     a0 = &str_00221160;  // "## internel error in libkernl.a!\n" // 0x0011376c: addiu $a0, $a0, 0x1160
     goto label_0x1137a0;                                        // 0x00113770: b 0x1137a0
     v0 = -1;                                                    // 0x00113774: addiu $v0, $zero, -1

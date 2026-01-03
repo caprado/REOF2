@@ -45,7 +45,7 @@ label_0x1dd3e0:
 label_0x1dd3f8:
     a0 = *(int32_t*)((s3) + 8);                                 // 0x001dd3f8: lw $a0, 8($s3)
     a3 = *(uint16_t*)(v0);                                      // 0x001dd3fc: lhu $a3, 0($v0)
-    func_001dd5c8();  // 0x1dd470                                // 0x001dd408: jal 0x1dd470
+    func_001dd470();  // 1dd470                                // 0x001dd408: jal 0x1dd470
     s1 = s1 + 1;                                                // 0x001dd40c: addiu $s1, $s1, 1
     v1 = s0 + s5;                                               // 0x001dd410: addu $v1, $s0, $s5
     a0 = (s1 < s4) ? 1 : 0;                                     // 0x001dd414: slt $a0, $s1, $s4

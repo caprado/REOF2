@@ -14,7 +14,7 @@ void func_0016aae8() {
     v0 = *(int32_t*)((v1) + 0x18);                              // 0x0016ab08: lw $v0, 0x18($v1)
     /* call function at address in v0 */                        // 0x0016ab0c: jalr $v0
     a0 = local_0;                                               // 0x0016ab18: lw $a0, 0($sp)
-    func_00155db0();  // 0x155b20                                // 0x0016ab1c: jal 0x155b20
+    func_00155b20();  // 155b20                                // 0x0016ab1c: jal 0x155b20
     a2 = local_4;                                               // 0x0016ab20: lw $a2, 4($sp)
     v1 = *(int32_t*)(s0);                                       // 0x0016ab24: lw $v1, 0($s0)
     a1 = 1;                                                     // 0x0016ab2c: addiu $a1, $zero, 1

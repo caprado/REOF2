@@ -12,7 +12,7 @@ void func_001a4970() {
     if (v1 == v0) goto label_0x1a499c;                          // 0x001a4980: beq $v1, $v0, 0x1a499c
     /* nop */                                                   // 0x001a4984: nop 
     a0 = 0x23 << 16;                                            // 0x001a4988: lui $a0, 0x23
-    func_001a5720();  // 0x1a56b0                                // 0x001a498c: jal 0x1a56b0
+    func_001a56b0();  // 1a56b0                                // 0x001a498c: jal 0x1a56b0
     a0 = &str_0022a6b0;  // "Setup HOST file system.\n"         // 0x001a4990: addiu $a0, $a0, -0x5950
     goto label_0x1a49b0;                                        // 0x001a4994: b 0x1a49b0
 label_0x1a499c:

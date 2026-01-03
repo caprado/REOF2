@@ -25,11 +25,11 @@ label_0x188c1c:
     a1 = a1 | 0x1302;                                           // 0x00188c38: ori $a1, $a1, 0x1302
     t0 = 0x280;                                                 // 0x00188c44: addiu $t0, $zero, 0x280
     t2 = 0x280;                                                 // 0x00188c4c: addiu $t2, $zero, 0x280
-    func_001178a0();  // 0x1176a8                                // 0x00188c50: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x00188c50: jal 0x1176a8
     if (v0 >= 0) goto label_0x188c70;                           // 0x00188c58: bgezl $v0, 0x188c70
     v0 = g_002812c4;  // Global at 0x002812c4                   // 0x00188c5c: lw $v0, 4($s0)
     a0 = 0x23 << 16;                                            // 0x00188c60: lui $a0, 0x23
-    func_001896f0();  // 0x1896c8                                // 0x00188c64: jal 0x1896c8
+    func_001896c8();  // 1896c8                                // 0x00188c64: jal 0x1896c8
     a0 = &str_0022a108;  // "sceDbcGetDepNumber: rpc error\n"   // 0x00188c68: addiu $a0, $a0, -0x5ef8
 label_0x188c70:
     return;                                                     // 0x00188c78: jr $ra

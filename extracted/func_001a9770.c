@@ -13,14 +13,14 @@ void func_001a9770() {
 label_0x1a9788:
     s0 = *(int32_t*)((gp) + -0x63e8);                           // 0x001a9788: lw $s0, -0x63e8($gp)
 label_0x1a978c:
-    func_001a9660();  // 0x1a94b0                                // 0x001a9790: jal 0x1a94b0
+    func_001a94b0();  // 1a94b0                                // 0x001a9790: jal 0x1a94b0
     v1 = -1;                                                    // 0x001a9798: addiu $v1, $zero, -1
     if (v0 != v1) goto label_0x1a97ac;                          // 0x001a979c: bne $v0, $v1, 0x1a97ac
     /* nop */                                                   // 0x001a97a0: nop 
     goto label_0x1a97b8;                                        // 0x001a97a4: b 0x1a97b8
 label_0x1a97ac:
     a0 = *(int32_t*)((s0) + 0x20);                              // 0x001a97ac: lw $a0, 0x20($s0)
-    func_00128fa0();  // 0x128f00                                // 0x001a97b0: jal 0x128f00
+    func_00128f00();  // 128f00                                // 0x001a97b0: jal 0x128f00
 label_0x1a97b8:
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001a97bc: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x001a97c0: jr $ra

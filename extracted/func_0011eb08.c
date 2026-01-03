@@ -20,7 +20,7 @@ label_0x11eb34:
 label_0x11eb3c:
     v0 = v0 & 1;                                                // 0x0011eb3c: andi $v0, $v0, 1
     if (v0 == 0) goto label_0x11eb5c;                           // 0x0011eb40: beqz $v0, 0x11eb5c
-    func_0011e4b0();  // 0x11e460                                // 0x0011eb48: jal 0x11e460
+    func_0011e460();  // 11e460                                // 0x0011eb48: jal 0x11e460
     /* nop */                                                   // 0x0011eb4c: nop 
 label_0x11eb5c:
 label_0x11eb60:

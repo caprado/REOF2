@@ -62,7 +62,7 @@ label_0x17aaf0:
 label_0x17ab00:
 label_0x17ab04:
     a2 = &str_00229720;  // "E212172: SFX_CnvFrmMbARGB8888 : frmfmt is not support." // 0x0017ab04: addiu $a2, $a2, -0x68e0
-    func_0017cec8();  // 0x17ce88                                // 0x0017ab08: jal 0x17ce88
+    func_0017ce88();  // 17ce88                                // 0x0017ab08: jal 0x17ce88
 label_0x17ab10:
 label_0x17ab14:
     return;                                                     // 0x0017ab18: jr $ra

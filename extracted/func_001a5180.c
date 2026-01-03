@@ -8,11 +8,11 @@ void func_001a5180() {
     
     sp = sp + -0x30;                                            // 0x001a5180: addiu $sp, $sp, -0x30
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001a5188: addu.qb $zero, $sp, $s1
-    func_001a5460();  // 0x1a53c0                                // 0x001a5198: jal 0x1a53c0
+    func_001a53c0();  // 1a53c0                                // 0x001a5198: jal 0x1a53c0
     if (v0 != 0) goto label_0x1a51b0;                           // 0x001a51a0: bnez $v0, 0x1a51b0
     goto label_0x1a5380;                                        // 0x001a51a8: b 0x1a5380
 label_0x1a51b0:
-    func_001a56b0();  // 0x1a54d0                                // 0x001a51b0: jal 0x1a54d0
+    func_001a54d0();  // 1a54d0                                // 0x001a51b0: jal 0x1a54d0
     v1 = *(uint8_t*)((v0) + 0x11);                              // 0x001a51b8: lbu $v1, 0x11($v0)
     at = (v1 < 8) ? 1 : 0;                                      // 0x001a51bc: slti $at, $v1, 8
     if (at != 0) goto label_0x1a51d0;                           // 0x001a51c0: bnez $at, 0x1a51d0

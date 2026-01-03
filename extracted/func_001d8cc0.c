@@ -19,13 +19,13 @@ void func_001d8cc0() {
     v0 = *(uint8_t*)((a0) + 3);                                 // 0x001d8cec: lbu $v0, 3($a0)
     v1 = a1 & 0xff;                                             // 0x001d8cf0: andi $v1, $a1, 0xff
     v0 = v0 << 3;                                               // 0x001d8cf4: sll $v0, $v0, 3
-    func_001d4c80();  // 0x1d4ab0                                // 0x001d8cfc: jal 0x1d4ab0
+    func_001d4ab0();  // 1d4ab0                                // 0x001d8cfc: jal 0x1d4ab0
     a1 = v0 + 0x1100;                                           // 0x001d8d00: addiu $a1, $v0, 0x1100
     goto label_0x1d8d78;                                        // 0x001d8d04: b 0x1d8d78
 label_0x1d8d0c:
     v0 = *(uint8_t*)((a0) + 3);                                 // 0x001d8d0c: lbu $v0, 3($a0)
     v0 = v0 << 3;                                               // 0x001d8d10: sll $v0, $v0, 3
-    func_001d4c80();  // 0x1d4ab0                                // 0x001d8d18: jal 0x1d4ab0
+    func_001d4ab0();  // 1d4ab0                                // 0x001d8d18: jal 0x1d4ab0
     a1 = v0 + 0x1000;                                           // 0x001d8d1c: addiu $a1, $v0, 0x1000
     goto label_0x1d8d74;                                        // 0x001d8d20: b 0x1d8d74
     /* nop */                                                   // 0x001d8d24: nop 
@@ -37,7 +37,7 @@ label_0x1d8d28:
     v0 = *(uint8_t*)((a0) + 3);                                 // 0x001d8d38: lbu $v0, 3($a0)
     v1 = a1 & 0xff;                                             // 0x001d8d3c: andi $v1, $a1, 0xff
     v0 = v0 << 3;                                               // 0x001d8d40: sll $v0, $v0, 3
-    func_001d4c80();  // 0x1d4ab0                                // 0x001d8d48: jal 0x1d4ab0
+    func_001d4ab0();  // 1d4ab0                                // 0x001d8d48: jal 0x1d4ab0
     a1 = v0 + 0x1100;                                           // 0x001d8d4c: addiu $a1, $v0, 0x1100
     goto label_0x1d8d74;                                        // 0x001d8d50: b 0x1d8d74
     /* nop */                                                   // 0x001d8d54: nop 
@@ -47,7 +47,7 @@ label_0x1d8d58:
     v0 = *(uint8_t*)((a0) + 3);                                 // 0x001d8d60: lbu $v0, 3($a0)
     a0 = a1 | v1;                                               // 0x001d8d64: or $a0, $a1, $v1
     v0 = v0 << 3;                                               // 0x001d8d68: sll $v0, $v0, 3
-    func_001d4c80();  // 0x1d4ab0                                // 0x001d8d6c: jal 0x1d4ab0
+    func_001d4ab0();  // 1d4ab0                                // 0x001d8d6c: jal 0x1d4ab0
     a1 = v0 + 0x1000;                                           // 0x001d8d70: addiu $a1, $v0, 0x1000
 label_0x1d8d74:
 label_0x1d8d78:

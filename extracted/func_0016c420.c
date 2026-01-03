@@ -17,12 +17,12 @@ void func_0016c420() {
     sp = sp + -0x20;                                            // 0x0016c440: addiu $sp, $sp, -0x20
     /* nop */                                                   // 0x0016c454: nop 
 label_0x16c458:
-    func_0016c6c0();  // 0x16c4b0                                // 0x0016c45c: jal 0x16c4b0
+    func_0016c4b0();  // 16c4b0                                // 0x0016c45c: jal 0x16c4b0
     a2 = sp + 4;                                                // 0x0016c460: addiu $a2, $sp, 4
     if (v1 != 0) goto label_0x16c498;                           // 0x0016c46c: bnez $v1, 0x16c498
     a3 = sp + 8;                                                // 0x0016c470: addiu $a3, $sp, 8
     a1 = local_0;                                               // 0x0016c474: lw $a1, 0($sp)
-    func_0016ce70();  // 0x16cc18                                // 0x0016c478: jal 0x16cc18
+    func_0016cc18();  // 16cc18                                // 0x0016c478: jal 0x16cc18
     a2 = local_4;                                               // 0x0016c47c: lw $a2, 4($sp)
     /* bnezl $v1, 0x16c49c */                                   // 0x0016c484: bnezl $v1, 0x16c49c
     v0 = local_8;                                               // 0x0016c48c: lw $v0, 8($sp)

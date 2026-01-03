@@ -12,12 +12,12 @@ void func_001a62d0() {
     v0 = g_002a0f20;  // Global at 0x002a0f20                   // 0x001a62e0: lbu $v0, 0($v1)
     if (v0 == 0) goto label_0x1a62f4;                           // 0x001a62e4: beqz $v0, 0x1a62f4
     /* nop */                                                   // 0x001a62e8: nop 
-    func_00180198();  // 0x180140                                // 0x001a62ec: jal 0x180140
+    func_00180140();  // 180140                                // 0x001a62ec: jal 0x180140
     a0 = g_002a0f26;  // Global at 0x002a0f26                   // 0x001a62f0: lbu $a0, 6($v1)
 label_0x1a62f4:
-    func_00180038();  // 0x17ffd0                                // 0x001a62f4: jal 0x17ffd0
+    func_0017ffd0();  // 17ffd0                                // 0x001a62f4: jal 0x17ffd0
     /* nop */                                                   // 0x001a62f8: nop 
-    func_00188ab0();  // 0x188a68                                // 0x001a62fc: jal 0x188a68
+    func_00188a68();  // 188a68                                // 0x001a62fc: jal 0x188a68
     /* nop */                                                   // 0x001a6300: nop 
     return;                                                     // 0x001a6308: jr $ra
     sp = sp + 0x10;                                             // 0x001a630c: addiu $sp, $sp, 0x10

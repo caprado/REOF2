@@ -7,18 +7,18 @@ void func_00128c40() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x10;                                            // 0x00128c40: addiu $sp, $sp, -0x10
-    func_00128c40();  // 0x128be8                                // 0x00128c4c: jal 0x128be8
+    func_00128be8();  // 128be8                                // 0x00128c4c: jal 0x128be8
     /* nop */                                                   // 0x00128c50: nop 
     if (s0 == 0) goto label_0x128cbc;                           // 0x00128c5c: beqz $s0, 0x128cbc
     a1 = 0x100;                                                 // 0x00128c60: addiu $a1, $zero, 0x100
-    func_001300e0();  // 0x130098                                // 0x00128c64: jal 0x130098
+    func_00130098();  // 130098                                // 0x00128c64: jal 0x130098
     /* nop */                                                   // 0x00128c68: nop 
     v1 = 1;                                                     // 0x00128c6c: addiu $v1, $zero, 1
     a0 = 0x22 << 16;                                            // 0x00128c70: lui $a0, 0x22
     *(uint32_t*)((s0) + 4) = v0;                                // 0x00128c74: sw $v0, 4($s0)
     if (v0 != 0) goto label_0x128c90;                           // 0x00128c78: bnez $v0, 0x128c90
     a0 = &str_00222700;  // "E9081901:illigal parameter fname=null.(ADXF_Open)" // 0x00128c7c: addiu $a0, $a0, 0x2700
-    func_00127de8();  // 0x127d90                                // 0x00128c80: jal 0x127d90
+    func_00127d90();  // 127d90                                // 0x00128c80: jal 0x127d90
     /* nop */                                                   // 0x00128c84: nop 
     goto label_0x128cbc;                                        // 0x00128c88: b 0x128cbc
 label_0x128c90:

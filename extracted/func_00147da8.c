@@ -24,7 +24,7 @@ void func_00147da8() {
     a1 = 0x22 << 16;                                            // 0x00147dec: lui $a1, 0x22
     goto label_0x147e08;                                        // 0x00147df0: b 0x147e08
     g_00220008 = a0;  // Global at 0x00220008                   // 0x00147df4: sw $a0, 8($a1)
-    func_00148588();  // 0x148530                                // 0x00147dfc: jal 0x148530
+    func_00148530();  // 148530                                // 0x00147dfc: jal 0x148530
     a1 = &str_002268b8;  // "image buffer needs to be aligned to 64byte boundary(0x%08x)" // 0x00147e00: addiu $a1, $a1, 0x68b8
 label_0x147e08:
     return;                                                     // 0x00147e0c: jr $ra

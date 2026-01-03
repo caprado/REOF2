@@ -1,3 +1,4 @@
+/** @category ps2-kernel-not-needed @status complete @author caprado */
 void func_00114fe0() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
@@ -55,7 +56,7 @@ label_0x115098:
     goto label_0x115020;                                        // 0x001150a0: b 0x115020
     /* nop */                                                   // 0x001150a4: nop 
 label_0x1150a8:
-    func_00116508();  // 0x1164d0                                // 0x001150a8: jal 0x1164d0
+    func_001164d0();  // 1164d0                                // 0x001150a8: jal 0x1164d0
     /* nop */                                                   // 0x001150ac: nop 
     goto label_0x115020;                                        // 0x001150b0: b 0x115020
     /* nop */                                                   // 0x001150b4: nop 

@@ -30,7 +30,7 @@ label_0x135970:
     sp = sp + -0x10;                                            // 0x001359b8: addiu $sp, $sp, -0x10
     if (a0 != 0) goto label_0x1359e0;                           // 0x001359c0: bnez $a0, 0x1359e0
     a0 = 0x22 << 16;                                            // 0x001359c8: lui $a0, 0x22
-    func_00134fb0();  // 0x134ec0                                // 0x001359cc: jal 0x134ec0
+    func_00134ec0();  // 134ec0                                // 0x001359cc: jal 0x134ec0
     a0 = &str_00224210;  // "cvFsTell #2:vtbl error"            // 0x001359d0: addiu $a0, $a0, 0x4210
     goto label_0x135a10;                                        // 0x001359d4: b 0x135a10
     /* nop */                                                   // 0x001359dc: nop 
@@ -42,7 +42,7 @@ label_0x1359e0:
     /* call function at address in v0 */                        // 0x001359f0: jalr $v0
     a0 = g_00220004;  // Global at 0x00220004                   // 0x001359f4: lw $a0, 4($a0)
     goto label_0x135a0c;                                        // 0x001359f8: b 0x135a0c
-    func_00134fb0();  // 0x134ec0                                // 0x00135a04: jal 0x134ec0
+    func_00134ec0();  // 134ec0                                // 0x00135a04: jal 0x134ec0
     a0 = &str_00224230;  // "cvFsSeek #1:handle error"          // 0x00135a08: addiu $a0, $a0, 0x4230
 label_0x135a0c:
 label_0x135a10:

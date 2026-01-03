@@ -22,7 +22,7 @@ label_0x183120:
     v0 = v0 | 0xffff;                                           // 0x00183124: ori $v0, $v0, 0xffff
     a1 = a1 & v0;                                               // 0x00183128: and $a1, $a1, $v0
 label_0x18312c:
-    func_00182bd0();  // 0x182b88                                // 0x00183130: jal 0x182b88
+    func_00182b88();  // 182b88                                // 0x00183130: jal 0x182b88
     v1 = local_0;                                               // 0x00183138: lw $v1, 0($sp)
     if (v1 == 0) goto label_0x18314c;                           // 0x0018313c: beqz $v1, 0x18314c
     goto label_0x18316c;                                        // 0x00183144: b 0x18316c

@@ -45,7 +45,7 @@ label_0x112010:
     if (v0 == 0) goto label_0x112010;                           // 0x00112024: beqz $v0, 0x112010
     local_8 = a1;                                               // 0x0011202c: sw $a1, 8($sp)
 label_0x112034:
-    func_00111678();  // 0x1115a0                                // 0x00112034: jal 0x1115a0
+    func_001115a0();  // 1115a0                                // 0x00112034: jal 0x1115a0
 label_0x112040:
     return;                                                     // 0x00112040: jr $ra
     sp = sp + 0x30;                                             // 0x00112044: addiu $sp, $sp, 0x30

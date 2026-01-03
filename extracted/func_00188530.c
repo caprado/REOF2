@@ -11,7 +11,7 @@ void func_00188530() {
     v0 = 0x28 << 16;                                            // 0x0018853c: lui $v0, 0x28
     v0 = v0 + -0x2fb8;                                          // 0x00188544: addiu $v0, $v0, -0x2fb8
     v0 = v0 + a0;                                               // 0x00188548: addu $v0, $v0, $a0
-    func_00188ec0();  // 0x188dc8                                // 0x0018854c: jal 0x188dc8
+    func_00188dc8();  // 188dc8                                // 0x0018854c: jal 0x188dc8
     a0 = g_0027d04c;  // Global at 0x0027d04c                   // 0x00188550: lw $a0, 4($v0)
     v0 = v0 ^ 3;                                                // 0x00188554: xori $v0, $v0, 3
     v0 = ((unsigned)0 < (unsigned)v0) ? 1 : 0;                  // 0x0018855c: sltu $v0, $zero, $v0

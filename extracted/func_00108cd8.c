@@ -10,9 +10,9 @@ void func_00108cd8() {
     uint32_t local_0, local_4;
     
     sp = sp + -0x30;                                            // 0x00108cd8: addiu $sp, $sp, -0x30
-    func_00108b50();  // 0x1089b8                                // 0x00108cf4: jal 0x1089b8
+    func_001089b8();  // 1089b8                                // 0x00108cf4: jal 0x1089b8
     a1 = sp + 4;                                                // 0x00108cfc: addiu $a1, $sp, 4
-    func_00108b50();  // 0x1089b8                                // 0x00108d04: jal 0x1089b8
+    func_001089b8();  // 1089b8                                // 0x00108d04: jal 0x1089b8
     v1 = *(int32_t*)((s0) + 0x10);                              // 0x00108d0c: lw $v1, 0x10($s0)
     a2 = *(int32_t*)((s1) + 0x10);                              // 0x00108d14: lw $a2, 0x10($s1)
     a0 = local_4;                                               // 0x00108d1c: lw $a0, 4($sp)
@@ -35,7 +35,7 @@ label_0x108d68:
     t0 = t0 & v0;                                               // 0x00108d74: and $t0, $t0, $v0
     t0 = t0 | v1;                                               // 0x00108d78: or $t0, $t0, $v1
 label_0x108d7c:
-    func_00111e20();  // 0x111ce0                                // 0x00108d84: jal 0x111ce0
+    func_00111ce0();  // 111ce0                                // 0x00108d84: jal 0x111ce0
     /* nop */                                                   // 0x00108d88: nop 
     return;                                                     // 0x00108d9c: jr $ra
     sp = sp + 0x30;                                             // 0x00108da0: addiu $sp, $sp, 0x30

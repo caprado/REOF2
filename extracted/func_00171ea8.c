@@ -11,7 +11,7 @@ void func_00171ea8() {
     v1 = v1 + -3;                                               // 0x00171ec4: addiu $v1, $v1, -3
     v1 = ((unsigned)v1 < (unsigned)2) ? 1 : 0;                  // 0x00171ec8: sltiu $v1, $v1, 2
     if (v1 == 0) goto label_0x171ef8;                           // 0x00171ecc: beqz $v1, 0x171ef8
-    func_00176a28();  // 0x1769c8                                // 0x00171ed4: jal 0x1769c8
+    func_001769c8();  // 1769c8                                // 0x00171ed4: jal 0x1769c8
     /* nop */                                                   // 0x00171ed8: nop 
     return func_00171f38();  // Tail call                        // 0x00171ef0: j 0x171f10
     sp = sp + 0x20;                                             // 0x00171ef4: addiu $sp, $sp, 0x20

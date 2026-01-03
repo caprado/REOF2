@@ -14,17 +14,17 @@ void func_00165970() {
     v0 = 0x26 << 16;                                            // 0x0016599c: lui $v0, 0x26
     a3 = v0 + 0x1ed0;                                           // 0x001659a0: addiu $a3, $v0, 0x1ed0
     a0 = *(int32_t*)((v1) + 0x20);                              // 0x001659d4: lw $a0, 0x20($v1)
-    func_001738d0();  // 0x1738c0                                // 0x001659d8: jal 0x1738c0
+    func_001738c0();  // 1738c0                                // 0x001659d8: jal 0x1738c0
     g_00261ee8 = a0;  // Global at 0x00261ee8                   // 0x001659dc: sw $a0, 0x18($a3)
     v1 = 1;                                                     // 0x001659e0: addiu $v1, $zero, 1
     if (v0 == v1) goto label_0x165a00;                          // 0x001659e4: beq $v0, $v1, 0x165a00
-    func_00165a60();  // 0x165a40                                // 0x001659ec: jal 0x165a40
+    func_00165a40();  // 165a40                                // 0x001659ec: jal 0x165a40
     goto label_0x165a14;                                        // 0x001659f4: b 0x165a14
     /* nop */                                                   // 0x001659fc: nop 
 label_0x165a00:
-    func_00165ac0();  // 0x165a98                                // 0x00165a00: jal 0x165a98
+    func_00165a98();  // 165a98                                // 0x00165a00: jal 0x165a98
     /* nop */                                                   // 0x00165a04: nop 
-    func_00165a78();  // 0x165a60                                // 0x00165a08: jal 0x165a60
+    func_00165a60();  // 165a60                                // 0x00165a08: jal 0x165a60
 label_0x165a14:
     v1 = *(int32_t*)(s2);                                       // 0x00165a14: lw $v1, 0($s2)
     v0 = *(int32_t*)((v1) + 0xc);                               // 0x00165a18: lw $v0, 0xc($v1)

@@ -21,7 +21,7 @@ label_0x140bf0:
     /* nop */                                                   // 0x00140c08: nop 
     /* nop */                                                   // 0x00140c0c: nop 
 label_0x140c10:
-    func_0013ef30();  // 0x13ef18                                // 0x00140c10: jal 0x13ef18
+    func_0013ef18();  // 13ef18                                // 0x00140c10: jal 0x13ef18
     s1 = *(int32_t*)(s0);                                       // 0x00140c14: lw $s1, 0($s0)
     if (s1 <= 0) goto label_0x140c64;                           // 0x00140c18: blezl $s1, 0x140c64
     /* nop */                                                   // 0x00140c24: nop 
@@ -45,7 +45,7 @@ label_0x140c64:
     /* nop */                                                   // 0x00140c74: nop 
     sp = sp + -0x60;                                            // 0x00140c78: addiu $sp, $sp, -0x60
     s7 = 1;                                                     // 0x00140ca0: addiu $s7, $zero, 1
-    func_0013ef30();  // 0x13ef18                                // 0x00140cb0: jal 0x13ef18
+    func_0013ef18();  // 13ef18                                // 0x00140cb0: jal 0x13ef18
     s5 = s6 + 0x10;                                             // 0x00140cb4: addiu $s5, $s6, 0x10
     v0 = 0x21 << 16;                                            // 0x00140cb8: lui $v0, 0x21
     s1 = v0 + 0x90;                                             // 0x00140cbc: addiu $s1, $v0, 0x90
@@ -84,7 +84,7 @@ label_0x140d44:
     if (v0 != 0) goto label_0x140cc0;                           // 0x00140d48: bnez $v0, 0x140cc0
     s1 = s1 + 0x14;                                             // 0x00140d4c: addiu $s1, $s1, 0x14
 label_0x140d50:
-    func_0013ef80();  // 0x13ef30                                // 0x00140d50: jal 0x13ef30
+    func_0013ef30();  // 13ef30                                // 0x00140d50: jal 0x13ef30
     /* nop */                                                   // 0x00140d54: nop 
     *(uint32_t*)(s6) = s2;                                      // 0x00140d58: sw $s2, 0($s6)
     return;                                                     // 0x00140d80: jr $ra

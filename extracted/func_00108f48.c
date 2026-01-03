@@ -452,7 +452,7 @@ label_0x1098ac:
     /* beqzl $s4, 0x1098d0 */                                   // 0x001098c8: beqzl $s4, 0x1098d0
     /* break (trap) */                                          // 0x001098cc: break 0, 7
     /* mflo $a1 */                                              // 0x001098d0
-    func_00109950();  // 0x108f48                                // 0x001098d4: jal 0x108f48
+    func_00108f48();  // 108f48                                // 0x001098d4: jal 0x108f48
     /* nop */                                                   // 0x001098d8: nop 
     v0 = ((unsigned)s4 < (unsigned)a1) ? 1 : 0;                 // 0x001098e0: sltu $v0, $s4, $a1
     if (v0 == 0) goto label_0x109908;                           // 0x001098e4: beqz $v0, 0x109908

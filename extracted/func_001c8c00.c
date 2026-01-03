@@ -14,7 +14,7 @@ void func_001c8c00() {
     at = 0x31 << 16;                                            // 0x001c8c18: lui $at, 0x31
     g_00316a90 = 0;  // Global at 0x00316a90                    // 0x001c8c1c: sw $zero, 0x6a90($at)
     at = 0x31 << 16;                                            // 0x001c8c20: lui $at, 0x31
-    func_001c7580();  // 0x1c74b0                                // 0x001c8c24: jal 0x1c74b0
+    func_001c74b0();  // 1c74b0                                // 0x001c8c24: jal 0x1c74b0
     g_00316a98 = 0;  // Global at 0x00316a98                    // 0x001c8c28: sw $zero, 0x6a98($at)
     return;                                                     // 0x001c8c34: jr $ra
     sp = sp + 0x10;                                             // 0x001c8c38: addiu $sp, $sp, 0x10

@@ -18,7 +18,7 @@ label_0x16d1f8:
     v1 = *(int32_t*)(s0);                                       // 0x0016d1f8: lw $v1, 0($s0)
     v0 = *(int32_t*)((v1) + 0x20);                              // 0x0016d200: lw $v0, 0x20($v1)
     /* call function at address in v0 */                        // 0x0016d204: jalr $v0
-    func_0016d2a8();  // 0x16d288                                // 0x0016d210: jal 0x16d288
+    func_0016d288();  // 16d288                                // 0x0016d210: jal 0x16d288
     a1 = 4;                                                     // 0x0016d214: addiu $a1, $zero, 4
 label_0x16d218:
     v0 = *(int32_t*)(s0);                                       // 0x0016d218: lw $v0, 0($s0)
@@ -29,7 +29,7 @@ label_0x16d218:
     v0 = local_4;                                               // 0x0016d234: lw $v0, 4($sp)
     if (v0 != s3) goto label_0x16d254;                          // 0x0016d238: bnel $v0, $s3, 0x16d254
     v1 = *(int32_t*)(s0);                                       // 0x0016d23c: lw $v1, 0($s0)
-    func_00158310();  // 0x158278                                // 0x0016d240: jal 0x158278
+    func_00158278();  // 158278                                // 0x0016d240: jal 0x158278
     a0 = local_0;                                               // 0x0016d244: lw $a0, 0($sp)
     if (v0 == s2) goto label_0x16d1f8;                          // 0x0016d248: beq $v0, $s2, 0x16d1f8
     v1 = *(int32_t*)(s0);                                       // 0x0016d250: lw $v1, 0($s0)

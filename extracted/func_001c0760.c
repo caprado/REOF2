@@ -11,7 +11,7 @@ void func_001c0760() {
     if (v0 == 0) goto label_0x1c0780;                           // 0x001c0770: beqz $v0, 0x1c0780
     goto label_0x1c07b8;                                        // 0x001c0778: b 0x1c07b8
 label_0x1c0780:
-    func_001bf7e0();  // 0x1bf730                                // 0x001c0780: jal 0x1bf730
+    func_001bf730();  // 1bf730                                // 0x001c0780: jal 0x1bf730
     /* nop */                                                   // 0x001c0784: nop 
     v1 = 1;                                                     // 0x001c0788: addiu $v1, $zero, 1
     if (v0 == v1) goto label_0x1c07ac;                          // 0x001c078c: beq $v0, $v1, 0x1c07ac
@@ -28,7 +28,7 @@ label_0x1c07ac:
     *(uint32_t*)((s0) + 0x24) = v0;                             // 0x001c07b0: sw $v0, 0x24($s0)
 label_0x1c07b4:
 label_0x1c07b8:
-    func_001bfc20();  // 0x1bfbf0                                // 0x001c07b8: jal 0x1bfbf0
+    func_001bfbf0();  // 1bfbf0                                // 0x001c07b8: jal 0x1bfbf0
     /* nop */                                                   // 0x001c07bc: nop 
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001c07c4: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x001c07c8: jr $ra

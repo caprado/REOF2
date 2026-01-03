@@ -18,12 +18,12 @@ void func_001d3fe0() {
     t1 = v0 & 0xff;                                             // 0x001d4014: andi $t1, $v0, 0xff
     a0 = a0 + -0x1e70;                                          // 0x001d4018: addiu $a0, $a0, -0x1e70
     a1 = &str_002472a0;  // "%sEFFECT\\ef%02d"                  // 0x001d401c: addiu $a1, $a1, 0x72a0
-    func_0010a570();  // 0x10a4d8                                // 0x001d4020: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001d4020: jal 0x10a4d8
     if (s0 != 0) goto label_0x1d4040;                           // 0x001d4028: bnez $s0, 0x1d4040
     a0 = 0x33 << 16;                                            // 0x001d402c: lui $a0, 0x33
     a1 = 0x24 << 16;                                            // 0x001d4030: lui $a1, 0x24
     a0 = a0 + -0x1e70;                                          // 0x001d4034: addiu $a0, $a0, -0x1e70
-    func_0010a990();  // 0x10a860                                // 0x001d4038: jal 0x10a860
+    func_0010a860();  // 10a860                                // 0x001d4038: jal 0x10a860
     a1 = a1 + 0x7250;                                           // 0x001d403c: addiu $a1, $a1, 0x7250
 label_0x1d4040:
     v0 = 0x33 << 16;                                            // 0x001d4044: lui $v0, 0x33

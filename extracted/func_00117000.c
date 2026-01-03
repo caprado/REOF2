@@ -13,7 +13,7 @@ void func_00117000() {
     /* bnezl $v0, 0x11702c */                                   // 0x00117014: bnezl $v0, 0x11702c
     v1 = *(int32_t*)((a0) + 0x1c);                              // 0x00117018: lw $v1, 0x1c($a0)
 label_0x11701c:
-    func_00117000();  // 0x116fd0                                // 0x0011701c: jal 0x116fd0
+    func_00116fd0();  // 116fd0                                // 0x0011701c: jal 0x116fd0
     /* nop */                                                   // 0x00117020: nop 
     goto label_0x117038;                                        // 0x00117024: b 0x117038
     v0 = a1 << 6;                                               // 0x0011702c: sll $v0, $a1, 6

@@ -21,7 +21,7 @@ void func_0013e258() {
     s1 = 1;                                                     // 0x0013e2c0: addiu $s1, $zero, 1
     if (v0 == s1) goto label_0x13e2e8;                          // 0x0013e2c4: beq $v0, $s1, 0x13e2e8
     a0 = 0xe;                                                   // 0x0013e2cc: addiu $a0, $zero, 0xe
-    func_00139228();  // 0x139120                                // 0x0013e2dc: jal 0x139120
+    func_00139120();  // 139120                                // 0x0013e2dc: jal 0x139120
     g_00207a68 = s1;  // Global at 0x00207a68                   // 0x0013e2e4: sw $s1, 0($s0)
 label_0x13e2e8:
     return;                                                     // 0x0013e2f4: jr $ra

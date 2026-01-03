@@ -7,7 +7,7 @@ void func_00132118() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x00132118: addiu $sp, $sp, -0x20
-    func_00132118();  // 0x131e20                                // 0x00132124: jal 0x131e20
+    func_00131e20();  // 131e20                                // 0x00132124: jal 0x131e20
     a2 = sp + 4;                                                // 0x00132128: addiu $a2, $sp, 4
     FPU_F1 = *(float*)(sp);  // Load float                      // 0x0013212c: lwc1 $f1, 0($sp)
     /* FPU: cvt.s.w $f1, $f1 */                                 // 0x00132130: cvt.s.w $f1, $f1

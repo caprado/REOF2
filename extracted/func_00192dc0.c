@@ -21,7 +21,7 @@ label_0x192ddc:
     a0 = *(int32_t*)((s0) + 0xd4);                              // 0x00192df8: lw $a0, 0xd4($s0)
     if (a0 == 0) goto label_0x192e2c;                           // 0x00192dfc: beqz $a0, 0x192e2c
     /* nop */                                                   // 0x00192e00: nop 
-    func_00192230();  // 0x192200                                // 0x00192e04: jal 0x192200
+    func_00192200();  // 192200                                // 0x00192e04: jal 0x192200
     /* nop */                                                   // 0x00192e08: nop 
     v1 = *(int32_t*)((s0) + 0xd8);                              // 0x00192e0c: lw $v1, 0xd8($s0)
     a1 = s0 + 0xdc;                                             // 0x00192e10: addiu $a1, $s0, 0xdc
@@ -29,22 +29,22 @@ label_0x192ddc:
     a2 = s0 + 0x104;                                            // 0x00192e18: addiu $a2, $s0, 0x104
     /* FPU: mov.s $f12, $f20 */                                 // 0x00192e1c: mov.s $f12, $f20
     a3 = s0 + 0x15c;                                            // 0x00192e20: addiu $a3, $s0, 0x15c
-    func_00193e90();  // 0x193d00                                // 0x00192e24: jal 0x193d00
+    func_00193d00();  // 193d00                                // 0x00192e24: jal 0x193d00
     a0 = v1 + v0;                                               // 0x00192e28: addu $a0, $v1, $v0
 label_0x192e2c:
     a0 = s0 + 0x40;                                             // 0x00192e2c: addiu $a0, $s0, 0x40
-    func_00193a80();  // 0x193a20                                // 0x00192e30: jal 0x193a20
+    func_00193a20();  // 193a20                                // 0x00192e30: jal 0x193a20
     a1 = s0 + 0x104;                                            // 0x00192e34: addiu $a1, $s0, 0x104
     a0 = *(int32_t*)((s0) + 0xd0);                              // 0x00192e38: lw $a0, 0xd0($s0)
     if (a0 == 0) goto label_0x192e4c;                           // 0x00192e3c: beqz $a0, 0x192e4c
     /* FPU: mov.s $f12, $f20 */                                 // 0x00192e40: mov.s $f12, $f20
-    func_00192e80();  // 0x192dc0                                // 0x00192e44: jal 0x192dc0
+    func_00192dc0();  // 192dc0                                // 0x00192e44: jal 0x192dc0
     /* nop */                                                   // 0x00192e48: nop 
 label_0x192e4c:
     a0 = *(int32_t*)((s0) + 0xcc);                              // 0x00192e4c: lw $a0, 0xcc($s0)
     if (a0 == 0) goto label_0x192e60;                           // 0x00192e50: beqz $a0, 0x192e60
     /* FPU: mov.s $f12, $f20 */                                 // 0x00192e54: mov.s $f12, $f20
-    func_00192e80();  // 0x192dc0                                // 0x00192e58: jal 0x192dc0
+    func_00192dc0();  // 192dc0                                // 0x00192e58: jal 0x192dc0
     /* nop */                                                   // 0x00192e5c: nop 
 label_0x192e60:
     FPU_F20 = *(float*)(sp);  // Load float                     // 0x00192e64: lwc1 $f20, 0($sp)

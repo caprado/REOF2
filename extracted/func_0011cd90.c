@@ -18,7 +18,7 @@ void func_0011cd90() {
     t1 = a3 + t1;                                               // 0x0011cdc8: addu $t1, $a3, $t1
     a1 = a1 + -1;                                               // 0x0011cdd0: addiu $a1, $a1, -1
     t1 = t1 + -1;                                               // 0x0011cdd4: addiu $t1, $t1, -1
-    func_00116508();  // 0x1164d0                                // 0x0011cdd8: jal 0x1164d0
+    func_001164d0();  // 1164d0                                // 0x0011cdd8: jal 0x1164d0
     a3 = a3 + -1;                                               // 0x0011cddc: addiu $a3, $a3, -1
     COP0_REG6 = 0;  // Write system control register            // 0x0011cde0: mtc0 $zero, $6, 0
     /* memory sync */                                           // 0x0011cde4: sync 0x10
@@ -26,9 +26,9 @@ void func_0011cd90() {
     v0 = (s1 < 0x31) ? 1 : 0;                                   // 0x0011cdec: slti $v0, $s1, 0x31
     if (v0 != 0) goto label_0x11ce0c;                           // 0x0011cdf0: bnez $v0, 0x11ce0c
     a0 = 0x22 << 16;                                            // 0x0011cdf8: lui $a0, 0x22
-    func_00116508();  // 0x1164d0                                // 0x0011cdfc: jal 0x1164d0
+    func_001164d0();  // 1164d0                                // 0x0011cdfc: jal 0x1164d0
     a0 = &str_00221488;  // "# TLB over flow (2)"               // 0x0011ce00: addiu $a0, $a0, 0x1488
-    func_0011d9f0();  // 0x11d9c8                                // 0x0011ce04: jal 0x11d9c8
+    func_0011d9c8();  // 11d9c8                                // 0x0011ce04: jal 0x11d9c8
     a0 = 1;                                                     // 0x0011ce08: addiu $a0, $zero, 1
 label_0x11ce0c:
     v0 = (t9 < s1) ? 1 : 0;                                     // 0x0011ce0c: slt $v0, $t9, $s1
@@ -39,7 +39,7 @@ label_0x11ce0c:
     a2 = g_001f0a3c;  // Global at 0x001f0a3c                   // 0x0011ce24: lw $a2, 4($s0)
     a3 = g_001f0a40;  // Global at 0x001f0a40                   // 0x0011ce28: lw $a3, 8($s0)
     t0 = g_001f0a44;  // Global at 0x001f0a44                   // 0x0011ce2c: lw $t0, 0xc($s0)
-    func_0011ccc0();  // 0x11ccb0                                // 0x0011ce30: jal 0x11ccb0
+    func_0011ccb0();  // 11ccb0                                // 0x0011ce30: jal 0x11ccb0
     s0 = s0 + 0x10;                                             // 0x0011ce34: addiu $s0, $s0, 0x10
     t9 = t9 + 1;                                                // 0x0011ce38: addiu $t9, $t9, 1
     v0 = (t9 < s1) ? 1 : 0;                                     // 0x0011ce3c: slt $v0, $t9, $s1
@@ -53,9 +53,9 @@ label_0x11ce48:
     if (v1 != 0) goto label_0x11ce78;                           // 0x0011ce58: bnez $v1, 0x11ce78
     v0 = (t9 < s1) ? 1 : 0;                                     // 0x0011ce5c: slt $v0, $t9, $s1
     a0 = 0x22 << 16;                                            // 0x0011ce60: lui $a0, 0x22
-    func_00116508();  // 0x1164d0                                // 0x0011ce64: jal 0x1164d0
+    func_001164d0();  // 1164d0                                // 0x0011ce64: jal 0x1164d0
     a0 = &str_002214a0;  // "# TLB over flow (3)"               // 0x0011ce68: addiu $a0, $a0, 0x14a0
-    func_0011d9f0();  // 0x11d9c8                                // 0x0011ce6c: jal 0x11d9c8
+    func_0011d9c8();  // 11d9c8                                // 0x0011ce6c: jal 0x11d9c8
     a0 = 1;                                                     // 0x0011ce70: addiu $a0, $zero, 1
     v0 = (t9 < s1) ? 1 : 0;                                     // 0x0011ce74: slt $v0, $t9, $s1
 label_0x11ce78:
@@ -66,7 +66,7 @@ label_0x11ce78:
     a2 = g_001f0a3c;  // Global at 0x001f0a3c                   // 0x0011ce8c: lw $a2, 4($s0)
     a3 = g_001f0a40;  // Global at 0x001f0a40                   // 0x0011ce90: lw $a3, 8($s0)
     t0 = g_001f0a44;  // Global at 0x001f0a44                   // 0x0011ce94: lw $t0, 0xc($s0)
-    func_0011ccc0();  // 0x11ccb0                                // 0x0011ce98: jal 0x11ccb0
+    func_0011ccb0();  // 11ccb0                                // 0x0011ce98: jal 0x11ccb0
     s0 = s0 + 0x10;                                             // 0x0011ce9c: addiu $s0, $s0, 0x10
     t9 = t9 + 1;                                                // 0x0011cea0: addiu $t9, $t9, 1
     v0 = (t9 < s1) ? 1 : 0;                                     // 0x0011cea4: slt $v0, $t9, $s1
@@ -84,9 +84,9 @@ label_0x11ceb0:
     if (v0 != 0) goto label_0x11cef4;                           // 0x0011ced4: bnez $v0, 0x11cef4
     v0 = (t9 < s1) ? 1 : 0;                                     // 0x0011ced8: slt $v0, $t9, $s1
     a0 = 0x22 << 16;                                            // 0x0011cedc: lui $a0, 0x22
-    func_00116508();  // 0x1164d0                                // 0x0011cee0: jal 0x1164d0
+    func_001164d0();  // 1164d0                                // 0x0011cee0: jal 0x1164d0
     a0 = &str_002214b8;  // "\nSKG/PS2EE Ver.0.64 Build:Jul 28 2003 17:49:54\n" // 0x0011cee4: addiu $a0, $a0, 0x14b8
-    func_0011d9f0();  // 0x11d9c8                                // 0x0011cee8: jal 0x11d9c8
+    func_0011d9c8();  // 11d9c8                                // 0x0011cee8: jal 0x11d9c8
     a0 = 1;                                                     // 0x0011ceec: addiu $a0, $zero, 1
     v0 = (t9 < s1) ? 1 : 0;                                     // 0x0011cef0: slt $v0, $t9, $s1
 label_0x11cef4:
@@ -96,7 +96,7 @@ label_0x11cef4:
     a2 = g_001f0a3c;  // Global at 0x001f0a3c                   // 0x0011cf04: lw $a2, 4($s0)
     a3 = g_001f0a40;  // Global at 0x001f0a40                   // 0x0011cf08: lw $a3, 8($s0)
     t0 = g_001f0a44;  // Global at 0x001f0a44                   // 0x0011cf0c: lw $t0, 0xc($s0)
-    func_0011ccc0();  // 0x11ccb0                                // 0x0011cf10: jal 0x11ccb0
+    func_0011ccb0();  // 11ccb0                                // 0x0011cf10: jal 0x11ccb0
     s0 = s0 + 0x10;                                             // 0x0011cf14: addiu $s0, $s0, 0x10
     t9 = t9 + 1;                                                // 0x0011cf18: addiu $t9, $t9, 1
     v0 = (t9 < s1) ? 1 : 0;                                     // 0x0011cf1c: slt $v0, $t9, $s1
@@ -110,7 +110,7 @@ label_0x11cf2c:
     v0 = 0xe000 << 16;                                          // 0x0011cf38: lui $v0, 0xe000
     s1 = t9 + v0;                                               // 0x0011cf3c: addu $s1, $t9, $v0
 label_0x11cf40:
-    func_0011ccc0();  // 0x11ccb0                                // 0x0011cf54: jal 0x11ccb0
+    func_0011ccb0();  // 11ccb0                                // 0x0011cf54: jal 0x11ccb0
     s0 = s0 + 1;                                                // 0x0011cf58: addiu $s0, $s0, 1
     v0 = (s0 < 0x30) ? 1 : 0;                                   // 0x0011cf5c: slti $v0, $s0, 0x30
     if (v0 != 0) goto label_0x11cf40;                           // 0x0011cf60: bnez $v0, 0x11cf40

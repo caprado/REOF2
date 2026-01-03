@@ -12,12 +12,12 @@ void func_00160860() {
     /* nop */                                                   // 0x00160874: nop 
 label_0x160878:
     sp = sp + -0x20;                                            // 0x00160878: addiu $sp, $sp, -0x20
-    func_00160950();  // 0x1608f0                                // 0x00160898: jal 0x1608f0
+    func_001608f0();  // 1608f0                                // 0x00160898: jal 0x1608f0
     a0 = *(int32_t*)((s0) + 4);                                 // 0x0016089c: lw $a0, 4($s0)
     *(uint32_t*)(s1) = v0;                                      // 0x001608a4: sw $v0, 0($s1)
-    func_00160a08();  // 0x160950                                // 0x001608a8: jal 0x160950
-    func_00160a18();  // 0x160a08                                // 0x001608b4: jal 0x160a08
-    func_00160a70();  // 0x160a28                                // 0x001608c4: jal 0x160a28
+    func_00160950();  // 160950                                // 0x001608a8: jal 0x160950
+    func_00160a08();  // 160a08                                // 0x001608b4: jal 0x160a08
+    func_00160a28();  // 160a28                                // 0x001608c4: jal 0x160a28
     return func_00160ae8();  // Tail call                        // 0x001608e4: j 0x160a70
     sp = sp + 0x20;                                             // 0x001608e8: addiu $sp, $sp, 0x20
     /* nop */                                                   // 0x001608ec: nop 
@@ -36,7 +36,7 @@ label_0x160878:
 label_0x160924:
     if (a0 == v0) goto label_0x160940;                          // 0x00160924: beq $a0, $v0, 0x160940
     a0 = 0x23 << 16;                                            // 0x0016092c: lui $a0, 0x23
-    func_001634a8();  // 0x163410                                // 0x00160930: jal 0x163410
+    func_00163410();  // 163410                                // 0x00160930: jal 0x163410
     a0 = &str_00228128;  // "E301272 : picture_structure is invalid." // 0x00160934: addiu $a0, $a0, -0x7ed8
     v1 = 3;                                                     // 0x00160938: addiu $v1, $zero, 3
 label_0x16093c:

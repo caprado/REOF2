@@ -11,7 +11,7 @@ void func_0013fa18() {
     if (v0 <= 0) goto label_0x13fb98;                           // 0x0013fa38: blez $v0, 0x13fb98
     v0 = *(int32_t*)(s1);                                       // 0x0013fa40: lw $v0, 0($s1)
     /* beqzl $v0, 0x13fb9c */                                   // 0x0013fa44: beqzl $v0, 0x13fb9c
-    func_0013ef30();  // 0x13ef18                                // 0x0013fa4c: jal 0x13ef18
+    func_0013ef18();  // 13ef18                                // 0x0013fa4c: jal 0x13ef18
     /* nop */                                                   // 0x0013fa50: nop 
     if (s2 != 0) goto label_0x13fae0;                           // 0x0013fa54: bnez $s2, 0x13fae0
     v0 = 1;                                                     // 0x0013fa58: addiu $v0, $zero, 1

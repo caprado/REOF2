@@ -8,12 +8,12 @@ void func_001c8980() {
     
     sp = sp + -0x40;                                            // 0x001c8980: addiu $sp, $sp, -0x40
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001c898c: addu.qb $zero, $sp, $s1
-    func_001c7780();  // 0x1c7770                                // 0x001c8998: jal 0x1c7770
+    func_001c7770();  // 1c7770                                // 0x001c8998: jal 0x1c7770
     s0 = 0x31 << 16;                                            // 0x001c89a0: lui $s0, 0x31
     a1 = 0x28;                                                  // 0x001c89a4: addiu $a1, $zero, 0x28
     s0 = s0 + 0x669c;                                           // 0x001c89a8: addiu $s0, $s0, 0x669c
     a0 = 0x3f;                                                  // 0x001c89ac: addiu $a0, $zero, 0x3f
-    func_001c7670();  // 0x1c75b0                                // 0x001c89b4: jal 0x1c75b0
+    func_001c75b0();  // 1c75b0                                // 0x001c89b4: jal 0x1c75b0
     g_0031669c = s1;  // Global at 0x0031669c                   // 0x001c89b8: sh $s1, 0($s0)
     at = (s1 < 0) ? 1 : 0;                                      // 0x001c89c4: slt $at, $s1, $zero
     if (at != 0) goto label_0x1c89d8;                           // 0x001c89c8: bnez $at, 0x1c89d8
@@ -21,7 +21,7 @@ void func_001c8980() {
     v0 = g_003166a0;  // Global at 0x003166a0                   // 0x001c89d0: lw $v0, 4($s0)
     *(uint32_t*)(s2) = v0;                                      // 0x001c89d4: sw $v0, 0($s2)
 label_0x1c89d8:
-    func_001c7790();  // 0x1c7780                                // 0x001c89d8: jal 0x1c7780
+    func_001c7780();  // 1c7780                                // 0x001c89d8: jal 0x1c7780
     /* nop */                                                   // 0x001c89dc: nop 
     /* FPU: ld.b $w0, -0x4e($zero) */                           // 0x001c89e8: ld.b $w0, -0x4e($zero)
     /* FPU: aver_u.h $w0, $w0, $w17 */                          // 0x001c89ec: aver_u.h $w0, $w0, $w17

@@ -24,13 +24,13 @@ label_0x129268:
     a0 = 0x22 << 16;                                            // 0x00129270: lui $a0, 0x22
     a0 = &str_002227c8;  // "E9040816:'adxf' is NULL.(ADXF_ReadNw32)" // 0x00129274: addiu $a0, $a0, 0x27c8
 label_0x129278:
-    func_00127de8();  // 0x127d90                                // 0x00129278: jal 0x127d90
+    func_00127d90();  // 127d90                                // 0x00129278: jal 0x127d90
     /* nop */                                                   // 0x0012927c: nop 
     goto label_0x1292a4;                                        // 0x00129280: b 0x1292a4
     v0 = -3;                                                    // 0x00129284: addiu $v0, $zero, -3
     v1 = 2;                                                     // 0x00129288: addiu $v1, $zero, 2
     if (a3 == v1) goto label_0x1292a4;                          // 0x0012928c: beq $a3, $v1, 0x1292a4
-    func_00129228();  // 0x129128                                // 0x00129294: jal 0x129128
+    func_00129128();  // 129128                                // 0x00129294: jal 0x129128
     /* nop */                                                   // 0x00129298: nop 
     v1 = 1;                                                     // 0x0012929c: addiu $v1, $zero, 1
     *(uint8_t*)((s0) + 2) = v1;                                 // 0x001292a0: sb $v1, 2($s0)

@@ -14,7 +14,7 @@ void func_0016a968() {
     v0 = 1;                                                     // 0x0016a9a4: addiu $v0, $zero, 1
     v1 = *(int32_t*)((s5) + 0x1b00);                            // 0x0016a9a8: lw $v1, 0x1b00($s5)
     if (v1 == t0) goto label_0x16aa1c;                          // 0x0016a9ac: beq $v1, $t0, 0x16aa1c
-    func_00166c90();  // 0x166c20                                // 0x0016a9b4: jal 0x166c20
+    func_00166c20();  // 166c20                                // 0x0016a9b4: jal 0x166c20
     /* nop */                                                   // 0x0016a9b8: nop 
     v1 = local_0;                                               // 0x0016a9c0: lw $v1, 0($sp)
     s2 = local_4;                                               // 0x0016a9c8: lw $s2, 4($sp)
@@ -22,7 +22,7 @@ void func_0016a968() {
     s3 = local_8;                                               // 0x0016a9d4: lw $s3, 8($sp)
     if (v1 == 0) goto label_0x16aa1c;                           // 0x0016a9d8: beqz $v1, 0x16aa1c
     s4 = local_c;                                               // 0x0016a9dc: lw $s4, 0xc($sp)
-    func_0016aae8();  // 0x16aa40                                // 0x0016a9e0: jal 0x16aa40
+    func_0016aa40();  // 16aa40                                // 0x0016a9e0: jal 0x16aa40
     /* nop */                                                   // 0x0016a9e4: nop 
     v0 = 1;                                                     // 0x0016a9ec: addiu $v0, $zero, 1
     if (s1 != v0) goto label_0x16aa1c;                          // 0x0016a9f0: bnel $s1, $v0, 0x16aa1c

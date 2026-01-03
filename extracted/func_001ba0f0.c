@@ -39,14 +39,14 @@ void func_001ba0f0() {
     v1 = g_00307fa0;  // Global at 0x00307fa0                   // 0x001ba174: lw $v1, 0x10($s0)
     v0 = v0 << 3;                                               // 0x001ba178: sll $v0, $v0, 3
     v0 = v0 + v1;                                               // 0x001ba17c: addu $v0, $v0, $v1
-    func_001ba0f0();  // 0x1ba070                                // 0x001ba180: jal 0x1ba070
+    func_001ba070();  // 1ba070                                // 0x001ba180: jal 0x1ba070
     a1 = *(int32_t*)((v0) + 4);                                 // 0x001ba184: lw $a1, 4($v0)
     v1 = g_00307f9e;  // Global at 0x00307f9e                   // 0x001ba188: lh $v1, 0xe($s0)
     v1 = v1 + 1;                                                // 0x001ba18c: addiu $v1, $v1, 1
     g_00307f9e = v1;  // Global at 0x00307f9e                   // 0x001ba190: sh $v1, 0xe($s0)
     goto label_0x1ba1a8;                                        // 0x001ba194: b 0x1ba1a8
 label_0x1ba19c:
-    func_001ba060();  // 0x1ba010                                // 0x001ba19c: jal 0x1ba010
+    func_001ba010();  // 1ba010                                // 0x001ba19c: jal 0x1ba010
     /* nop */                                                   // 0x001ba1a0: nop 
 label_0x1ba1a4:
 label_0x1ba1a8:

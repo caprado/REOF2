@@ -17,7 +17,7 @@ void func_0010f638() {
     /* nop */                                                   // 0x0010f664: nop 
     /* bnezl $v0, 0x10f67c */                                   // 0x0010f668: bnezl $v0, 0x10f67c
     a0 = *(uint16_t*)((s0) + 0xc);                              // 0x0010f66c: lhu $a0, 0xc($s0)
-    func_001055a8();  // 0x105518                                // 0x0010f670: jal 0x105518
+    func_00105518();  // 105518                                // 0x0010f670: jal 0x105518
     a0 = *(uint16_t*)((s0) + 0xc);                              // 0x0010f678: lhu $a0, 0xc($s0)
     v0 = a0 & 8;                                                // 0x0010f67c: andi $v0, $a0, 8
     /* bnezl $v0, 0x10f6e8 */                                   // 0x0010f680: bnezl $v0, 0x10f6e8
@@ -33,7 +33,7 @@ void func_0010f638() {
     v0 = s0 + 0x40;                                             // 0x0010f6a8: addiu $v0, $s0, 0x40
     if (a1 == v0) goto label_0x10f6c4;                          // 0x0010f6ac: beql $a1, $v0, 0x10f6c4
     *(uint32_t*)((s0) + 0x30) = 0;                              // 0x0010f6b0: sw $zero, 0x30($s0)
-    func_00105bd8();  // 0x1058e0                                // 0x0010f6b4: jal 0x1058e0
+    func_001058e0();  // 1058e0                                // 0x0010f6b4: jal 0x1058e0
     a0 = *(int32_t*)((s0) + 0x54);                              // 0x0010f6b8: lw $a0, 0x54($s0)
     a0 = *(uint16_t*)((s0) + 0xc);                              // 0x0010f6bc: lhu $a0, 0xc($s0)
     *(uint32_t*)((s0) + 0x30) = 0;                              // 0x0010f6c0: sw $zero, 0x30($s0)
@@ -48,7 +48,7 @@ label_0x10f6c4:
     *(uint16_t*)((s0) + 0xc) = v0;                              // 0x0010f6e4: sh $v0, 0xc($s0)
     /* bnezl $a1, 0x10f6fc */                                   // 0x0010f6e8: bnezl $a1, 0x10f6fc
     v1 = *(uint16_t*)((s0) + 0xc);                              // 0x0010f6ec: lhu $v1, 0xc($s0)
-    func_00106cb8();  // 0x106b60                                // 0x0010f6f0: jal 0x106b60
+    func_00106b60();  // 106b60                                // 0x0010f6f0: jal 0x106b60
     v1 = *(uint16_t*)((s0) + 0xc);                              // 0x0010f6f8: lhu $v1, 0xc($s0)
     v0 = v1 & 1;                                                // 0x0010f6fc: andi $v0, $v1, 1
     if (v0 == 0) goto label_0x10f720;                           // 0x0010f700: beqz $v0, 0x10f720

@@ -32,10 +32,10 @@ label_0x1006a8:
     a0 = g_001edf30;  // Global at 0x001edf30                   // 0x001006c4: lw $a0, -0x20d0($v1)
     SignalSema();  // 0x1142f0                                  // 0x001006c8: jal 0x1142f0
     a0 = g_001edf20;  // Global at 0x001edf20                   // 0x001006cc: lw $a0, -0x20e0($s0)
-    func_0011d378();  // 0x11d320                                // 0x001006d0: jal 0x11d320
+    func_0011d320();  // 11d320                                // 0x001006d0: jal 0x11d320
     /* nop */                                                   // 0x001006d4: nop 
     a0 = 0x8000 << 16;                                          // 0x001006d8: lui $a0, 0x8000
-    func_00116990();  // 0x116940                                // 0x001006e0: jal 0x116940
+    func_00116940();  // 116940                                // 0x001006e0: jal 0x116940
     a0 = a0 | 0x12;                                             // 0x001006e4: ori $a0, $a0, 0x12
     if (s0 == 0) goto label_0x1006fc;                           // 0x001006e8: beqz $s0, 0x1006fc
     return func_0011d390();  // Tail call                        // 0x001006f4: j 0x11d378

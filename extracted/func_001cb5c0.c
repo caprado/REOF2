@@ -8,11 +8,11 @@ void func_001cb5c0() {
     
     sp = sp + -0x420;                                           // 0x001cb5c0: addiu $sp, $sp, -0x420
     a0 = sp + 0x20;                                             // 0x001cb5d0: addiu $a0, $sp, 0x20
-    func_001cb640();  // 0x1cb610                                // 0x001cb5d4: jal 0x1cb610
+    func_001cb610();  // 1cb610                                // 0x001cb5d4: jal 0x1cb610
     a1 = *(uint8_t*)((s0) + 8);                                 // 0x001cb5dc: lbu $a1, 8($s0)
-    func_001cb700();  // 0x1cb6d0                                // 0x001cb5e0: jal 0x1cb6d0
+    func_001cb6d0();  // 1cb6d0                                // 0x001cb5e0: jal 0x1cb6d0
     a0 = sp + 0x20;                                             // 0x001cb5e4: addiu $a0, $sp, 0x20
-    func_001cb6d0();  // 0x1cb640                                // 0x001cb5ec: jal 0x1cb640
+    func_001cb640();  // 1cb640                                // 0x001cb5ec: jal 0x1cb640
     a1 = sp + 0x20;                                             // 0x001cb5f0: addiu $a1, $sp, 0x20
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001cb5f8: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x001cb5fc: jr $ra

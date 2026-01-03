@@ -18,8 +18,8 @@ void func_0016f9f8() {
     a1 = 0x26 << 16;                                            // 0x0016fa74: lui $a1, 0x26
     t0 = v1 + 0x7810;                                           // 0x0016fa78: addiu $t0, $v1, 0x7810
     a2 = a1 + 0x7818;                                           // 0x0016fa8c: addiu $a2, $a1, 0x7818
-    func_00171738();  // 0x1716b0                                // 0x0016fb0c: jal 0x1716b0
-    func_0016fba0();  // 0x16fb68                                // 0x0016fb14: jal 0x16fb68
+    func_001716b0();  // 1716b0                                // 0x0016fb0c: jal 0x1716b0
+    func_0016fb68();  // 16fb68                                // 0x0016fb14: jal 0x16fb68
     a1 = 0xff00 << 16;                                          // 0x0016fb1c: lui $a1, 0xff00
     if (v0 == 0) goto label_0x16fb48;                           // 0x0016fb20: beqz $v0, 0x16fb48
     a1 = a1 | 0xf0c;                                            // 0x0016fb2c: ori $a1, $a1, 0xf0c

@@ -16,10 +16,10 @@ label_0x133264:
     return func_00127de8();  // Tail call                        // 0x00133278: j 0x127d90
     sp = sp + 0x20;                                             // 0x0013327c: addiu $sp, $sp, 0x20
 label_0x133280:
-    func_00131bb8();  // 0x131af8                                // 0x00133280: jal 0x131af8
+    func_00131af8();  // 131af8                                // 0x00133280: jal 0x131af8
     /* nop */                                                   // 0x00133284: nop 
     a0 = *(int32_t*)((s0) + 0xb0);                              // 0x00133288: lw $a0, 0xb0($s0)
-    func_0010ae00();  // 0x10ac68                                // 0x0013328c: jal 0x10ac68
+    func_0010ac68();  // 10ac68                                // 0x0013328c: jal 0x10ac68
     v1 = *(int32_t*)((s0) + 0xb0);                              // 0x00133294: lw $v1, 0xb0($s0)
     v0 = 0xf << 16;                                             // 0x00133298: lui $v0, 0xf
     a0 = 1;                                                     // 0x0013329c: addiu $a0, $zero, 1

@@ -14,7 +14,7 @@ void func_0018ccc0() {
 label_0x18ccf0:
     v0 = s1 << 2;                                               // 0x0018ccf0: sll $v0, $s1, 2
     s4 = s3 + v0;                                               // 0x0018ccf8: addu $s4, $s3, $v0
-    thunk_func_001a0a20();  // 0x18dab0                          // 0x0018ccfc: jal 0x18dab0
+    thunk_func_0018dab0();  // 18dab0                          // 0x0018ccfc: jal 0x18dab0
     a1 = 1;                                                     // 0x0018cd00: addiu $a1, $zero, 1
     *(uint32_t*)((s4) + 0xc) = v0;                              // 0x0018cd04: sw $v0, 0xc($s4)
     s1 = s1 + 1;                                                // 0x0018cd08: addiu $s1, $s1, 1
@@ -27,7 +27,7 @@ label_0x18ccf0:
     AddDmacHandler();  // 0x113ff0                              // 0x0018cd28: jal 0x113ff0
     *(uint32_t*)((s3) + 8) = v0;                                // 0x0018cd30: sw $v0, 8($s3)
     *(uint32_t*)((s3) + 0x30) = 0;                              // 0x0018cd34: sw $zero, 0x30($s3)
-    func_00114f60();  // 0x114ef8                                // 0x0018cd38: jal 0x114ef8
+    func_00114ef8();  // 114ef8                                // 0x0018cd38: jal 0x114ef8
     a0 = *(int32_t*)(s3);                                       // 0x0018cd3c: lw $a0, 0($s3)
     a1 = 0x19 << 16;                                            // 0x0018cd40: lui $a1, 0x19
     a1 = a1 + -0x33f0;                                          // 0x0018cd48: addiu $a1, $a1, -0x33f0

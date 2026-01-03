@@ -23,7 +23,7 @@ void func_0017b6e0() {
     v0 = v0 >> 1;                                               // 0x0017b74c: sra $v0, $v0, 1
     func_0017d1d8();  // 0x17d1d8                               // 0x0017b754: jal 0x17d1d8
     *(uint32_t*)((s0) + 0x48) = v0;                             // 0x0017b758: sw $v0, 0x48($s0)
-    func_0017b8e8();  // 0x17b830                                // 0x0017b764: jal 0x17b830
+    func_0017b830();  // 17b830                                // 0x0017b764: jal 0x17b830
     func_0017d1d8();  // 0x17d1d8                               // 0x0017b770: jal 0x17d1d8
     func_0017d150();  // 0x17d150                               // 0x0017b77c: jal 0x17d150
     return;                                                     // 0x0017b79c: jr $ra

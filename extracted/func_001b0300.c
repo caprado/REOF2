@@ -8,7 +8,7 @@ void func_001b0300() {
     
     sp = sp + -0x20;                                            // 0x001b0300: addiu $sp, $sp, -0x20
     s0 = 0x31 << 16;                                            // 0x001b030c: lui $s0, 0x31
-    func_001b0300();  // 0x1b0290                                // 0x001b0310: jal 0x1b0290
+    func_001b0290();  // 1b0290                                // 0x001b0310: jal 0x1b0290
     s0 = s0 + 0x1d30;                                           // 0x001b0314: addiu $s0, $s0, 0x1d30
     v1 = t2 << 2;                                               // 0x001b031c: sll $v1, $t2, 2
 label_0x1b0320:
@@ -20,7 +20,7 @@ label_0x1b0320:
     goto label_0x1b034c;                                        // 0x001b0338: b 0x1b034c
     t0 = v1 + 0x140c;                                           // 0x001b033c: addiu $t0, $v1, 0x140c
 label_0x1b0340:
-    func_001aff00();  // 0x1afed0                                // 0x001b0340: jal 0x1afed0
+    func_001afed0();  // 1afed0                                // 0x001b0340: jal 0x1afed0
     t1 = t1 + 1;                                                // 0x001b0348: addiu $t1, $t1, 1
 label_0x1b034c:
     v1 = *(uint8_t*)(a3);                                       // 0x001b034c: lbu $v1, 0($a3)

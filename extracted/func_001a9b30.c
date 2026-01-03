@@ -10,9 +10,9 @@ void func_001a9b30() {
     at = 0x31 << 16;                                            // 0x001a9b34: lui $at, 0x31
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001a9b3c: addu.qb $zero, $sp, $s1
     a0 = g_003137ba;  // Global at 0x003137ba                   // 0x001a9b48: lhu $a0, 0x37ba($at)
-    func_001a9b20();  // 0x1a9960                                // 0x001a9b4c: jal 0x1a9960
+    func_001a9960();  // 1a9960                                // 0x001a9b4c: jal 0x1a9960
     a0 = *(int32_t*)((gp) + -0x63e8);                           // 0x001a9b54: lw $a0, -0x63e8($gp)
-    func_001a9770();  // 0x1a9660                                // 0x001a9b60: jal 0x1a9660
+    func_001a9660();  // 1a9660                                // 0x001a9b60: jal 0x1a9660
     /* FPU: aver_u.h $w0, $w0, $w17 */                          // 0x001a9b6c: aver_u.h $w0, $w0, $w17
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001a9b70: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x001a9b74: jr $ra

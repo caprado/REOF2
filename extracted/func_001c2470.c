@@ -28,7 +28,7 @@ label_0x1c2498:
     v1 = v0 + v1;                                               // 0x001c24c4: addu $v1, $v0, $v1
     v1 = *(int32_t*)(v1);                                       // 0x001c24c8: lw $v1, 0($v1)
     v0 = 0x8000 << 16;                                          // 0x001c24cc: lui $v0, 0x8000
-    func_001b5060();  // 0x1b5050                                // 0x001c24d0: jal 0x1b5050
+    func_001b5050();  // 1b5050                                // 0x001c24d0: jal 0x1b5050
     a0 = v1 | v0;                                               // 0x001c24d4: or $a0, $v1, $v0
 label_0x1c24d8:
 label_0x1c24dc:

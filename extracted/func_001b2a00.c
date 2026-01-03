@@ -20,7 +20,7 @@ void func_001b2a00() {
     /* nop */                                                   // 0x001b2a30: nop 
     if (a1 == 0) goto label_0x1b2a44;                           // 0x001b2a34: beqz $a1, 0x1b2a44
     /* nop */                                                   // 0x001b2a38: nop 
-    func_001b1bd0();  // 0x1b1b10                                // 0x001b2a3c: jal 0x1b1b10
+    func_001b1b10();  // 1b1b10                                // 0x001b2a3c: jal 0x1b1b10
     /* nop */                                                   // 0x001b2a40: nop 
 label_0x1b2a44:
     at = 0x31 << 16;                                            // 0x001b2a44: lui $at, 0x31
@@ -32,7 +32,7 @@ label_0x1b2a44:
     v1 = v0 + v1;                                               // 0x001b2a5c: addu $v1, $v0, $v1
     v0 = g_00490810;  // Global at 0x00490810                   // 0x001b2a60: lhu $v0, 0($v1)
     g_00490c1c = v0;  // Global at 0x00490c1c                   // 0x001b2a64: sh $v0, 0xc1c($at)
-    func_001d89c0();  // 0x1d8950                                // 0x001b2a68: jal 0x1d8950
+    func_001d8950();  // 1d8950                                // 0x001b2a68: jal 0x1d8950
     a0 = g_00490810;  // Global at 0x00490810                   // 0x001b2a6c: lhu $a0, 0($v1)
 label_0x1b2a70:
     return;                                                     // 0x001b2a74: jr $ra

@@ -13,7 +13,7 @@ void func_001b83f0() {
     a2 = *(uint8_t*)((a0) + 3);                                 // 0x001b8404: lbu $a2, 3($a0)
     a3 = a0 + 0x38;                                             // 0x001b8408: addiu $a3, $a0, 0x38
     t0 = 1;                                                     // 0x001b840c: addiu $t0, $zero, 1
-    func_001b8c20();  // 0x1b8b40                                // 0x001b8418: jal 0x1b8b40
+    func_001b8b40();  // 1b8b40                                // 0x001b8418: jal 0x1b8b40
     a0 = a2 + 4;                                                // 0x001b841c: addiu $a0, $a2, 4
 label_0x1b8420:
     return;                                                     // 0x001b8424: jr $ra

@@ -12,10 +12,10 @@ void func_001ad120() {
     v0 = g_002a5404;  // Global at 0x002a5404                   // 0x001ad130: lw $v0, 0x5404($at)
     if (v0 == 0) goto label_0x1ad144;                           // 0x001ad134: beqz $v0, 0x1ad144
     v1 = v1 + 0x5240;                                           // 0x001ad138: addiu $v1, $v1, 0x5240
-    func_001290c8();  // 0x129010                                // 0x001ad13c: jal 0x129010
+    func_00129010();  // 129010                                // 0x001ad13c: jal 0x129010
     a0 = g_002a5404;  // Global at 0x002a5404                   // 0x001ad140: lw $a0, 0x1c4($v1)
 label_0x1ad144:
-    func_001ad030();  // 0x1acfe0                                // 0x001ad144: jal 0x1acfe0
+    func_001acfe0();  // 1acfe0                                // 0x001ad144: jal 0x1acfe0
     /* nop */                                                   // 0x001ad148: nop 
     return;                                                     // 0x001ad150: jr $ra
     sp = sp + 0x10;                                             // 0x001ad154: addiu $sp, $sp, 0x10

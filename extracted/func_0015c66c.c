@@ -35,11 +35,11 @@ label_0x15c6d4:
     return func_0015c6e0();  // Tail call                        // 0x0015c6d8: j 0x15c580
     sp = sp + 0x10;                                             // 0x0015c6dc: addiu $sp, $sp, 0x10
     sp = sp + -0x10;                                            // 0x0015c6e0: addiu $sp, $sp, -0x10
-    func_00173708();  // 0x173668                                // 0x0015c6e8: jal 0x173668
+    func_00173668();  // 173668                                // 0x0015c6e8: jal 0x173668
     /* nop */                                                   // 0x0015c6ec: nop 
     if (v0 == 0) goto label_0x15c718;                           // 0x0015c6f0: beqz $v0, 0x15c718
     a0 = -0x132;                                                // 0x0015c6f4: addiu $a0, $zero, -0x132
-    func_0015e7e0();  // 0x15e7b0                                // 0x0015c6f8: jal 0x15e7b0
+    func_0015e7b0();  // 15e7b0                                // 0x0015c6f8: jal 0x15e7b0
     /* nop */                                                   // 0x0015c6fc: nop 
     a0 = 0x22 << 16;                                            // 0x0015c700: lui $a0, 0x22
     a0 = &str_00227140;  // "E0203261: MWSFCRE_ResetSfdHn: SFD_Stop() failed." // 0x0015c708: addiu $a0, $a0, 0x7140

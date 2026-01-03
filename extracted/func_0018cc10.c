@@ -16,7 +16,7 @@ void func_0018cc10() {
     at = 0x1000 << 16;                                          // 0x0018cc38: lui $at, 0x1000
     g_10003c00 = v1;  // Global at 0x10003c00                   // 0x0018cc3c: sw $v1, 0x3c00($at)
     at = 0x1200 << 16;                                          // 0x0018cc40: lui $at, 0x1200
-    func_00114fa0();  // 0x114f80                                // 0x0018cc44: jal 0x114f80
+    func_00114f80();  // 114f80                                // 0x0018cc44: jal 0x114f80
     a3 = *(uint8_t*)(s0);                                       // 0x0018cc4c: lbu $a3, 0($s0)
     a1 = -0x41;                                                 // 0x0018cc50: addiu $a1, $zero, -0x41
     v0 = 0 & 1;                                                 // 0x0018cc54: andi $v0, $zero, 1
@@ -31,7 +31,7 @@ void func_0018cc10() {
     *(uint8_t*)(s0) = v0;                                       // 0x0018cc7c: sb $v0, 0($s0)
     a2 = *(int32_t*)((gp) + -0x64ec);                           // 0x0018cc80: lw $a2, -0x64ec($gp)
     a1 = *(int32_t*)((gp) + -0x64f0);                           // 0x0018cc84: lw $a1, -0x64f0($gp)
-    func_001035d0();  // 0x103550                                // 0x0018cc88: jal 0x103550
+    func_00103550();  // 103550                                // 0x0018cc88: jal 0x103550
     *(uint32_t*)((gp) + -0x64f0) = 0;                           // 0x0018cc90: sw $zero, -0x64f0($gp)
     *(uint32_t*)((gp) + -0x64ec) = 0;                           // 0x0018cc94: sw $zero, -0x64ec($gp)
 label_0x18cc98:

@@ -107,7 +107,7 @@ label_0x18710c:
     goto label_0x18721c;                                        // 0x00187118: b 0x18721c
     v0 = 1;                                                     // 0x0018711c: addiu $v0, $zero, 1
 label_0x187120:
-    func_00186eb8();  // 0x186e48                                // 0x00187120: jal 0x186e48
+    func_00186e48();  // 186e48                                // 0x00187120: jal 0x186e48
     v1 = 0x2010;                                                // 0x00187128: addiu $v1, $zero, 0x2010
     a0 = s4 + -0x7800;                                          // 0x0018712c: addiu $a0, $s4, -0x7800
     /* multiply: s3 * v1 -> hi:lo */                            // 0x00187130: mult $ac3, $s3, $v1

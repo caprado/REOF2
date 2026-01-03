@@ -11,13 +11,13 @@ void func_0016feb8() {
     
     sp = sp + -0x30;                                            // 0x0016feb8: addiu $sp, $sp, -0x30
     s0 = *(int32_t*)((s1) + 0x1b30);                            // 0x0016fed0: lw $s0, 0x1b30($s1)
-    func_00170018();  // 0x16ff28                                // 0x0016fed4: jal 0x16ff28
+    func_0016ff28();  // 16ff28                                // 0x0016fed4: jal 0x16ff28
     /* bnezl $v0, 0x16ff18 */                                   // 0x0016fedc: bnezl $v0, 0x16ff18
     v0 = 2;                                                     // 0x0016fee4: addiu $v0, $zero, 2
     *(uint32_t*)((s0) + 0x74) = v0;                             // 0x0016fee8: sw $v0, 0x74($s0)
     v1 = local_0;                                               // 0x0016feec: lw $v1, 0($sp)
     if (v1 == 0) goto label_0x16ff08;                           // 0x0016fef0: beqz $v1, 0x16ff08
-    func_001752f8();  // 0x1752e8                                // 0x0016fef8: jal 0x1752e8
+    func_001752e8();  // 1752e8                                // 0x0016fef8: jal 0x1752e8
     a1 = 0x30;                                                  // 0x0016fefc: addiu $a1, $zero, 0x30
     /* bnezl $v0, 0x16ff0c */                                   // 0x0016ff00: bnezl $v0, 0x16ff0c
     v0 = 0xc8;                                                  // 0x0016ff04: addiu $v0, $zero, 0xc8

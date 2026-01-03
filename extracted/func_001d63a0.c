@@ -23,11 +23,11 @@ label_0x1d63c4:
     if (v1 != a0) goto label_0x1d6414;                          // 0x001d63e0: bne $v1, $a0, 0x1d6414
     /* nop */                                                   // 0x001d63e4: nop 
     v0 = g_0032ea94;  // Global at 0x0032ea94                   // 0x001d63e8: lw $v0, 4($s0)
-    func_001b18f0();  // 0x1b18e0                                // 0x001d63ec: jal 0x1b18e0
+    func_001b18e0();  // 1b18e0                                // 0x001d63ec: jal 0x1b18e0
     a0 = v0 + 4;                                                // 0x001d63f0: addiu $a0, $v0, 4
     v0 = g_0032ea94;  // Global at 0x0032ea94                   // 0x001d63f4: lw $v0, 4($s0)
     a2 = 0xc80;                                                 // 0x001d63fc: addiu $a2, $zero, 0xc80
-    func_00107d30();  // 0x107c70                                // 0x001d6400: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001d6400: jal 0x107c70
     a0 = v0 + 4;                                                // 0x001d6404: addiu $a0, $v0, 4
     g_0032ea90 = 0;  // Global at 0x0032ea90                    // 0x001d6408: sb $zero, 0($s0)
     goto label_0x1d6428;                                        // 0x001d640c: b 0x1d6428

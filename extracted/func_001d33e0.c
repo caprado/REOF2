@@ -9,7 +9,7 @@ void func_001d33e0() {
     sp = sp + -0x10;                                            // 0x001d33e0: addiu $sp, $sp, -0x10
     a0 = 0x33 << 16;                                            // 0x001d33e4: lui $a0, 0x33
     a0 = a0 + -0x1330;                                          // 0x001d33ec: addiu $a0, $a0, -0x1330
-    func_00107d30();  // 0x107c70                                // 0x001d33f4: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001d33f4: jal 0x107c70
     a2 = 0x1000;                                                // 0x001d33f8: addiu $a2, $zero, 0x1000
     at = 0x31 << 16;                                            // 0x001d33fc: lui $at, 0x31
     v1 = -1;                                                    // 0x001d3400: addiu $v1, $zero, -1

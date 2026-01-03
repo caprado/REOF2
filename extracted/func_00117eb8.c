@@ -7,7 +7,7 @@ void func_00117eb8() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x30;                                            // 0x00117eb8: addiu $sp, $sp, -0x30
-    func_00117e30();  // 0x117dd0                                // 0x00117ecc: jal 0x117dd0
+    func_00117dd0();  // 117dd0                                // 0x00117ecc: jal 0x117dd0
     s1 = 0x1f << 16;                                            // 0x00117ed0: lui $s1, 0x1f
     PollSema();  // 0x114320                                    // 0x00117ed4: jal 0x114320
     a0 = g_001f03e8;  // Global at 0x001f03e8                   // 0x00117ed8: lw $a0, 0x3e8($s1)

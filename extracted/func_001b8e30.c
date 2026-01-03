@@ -87,7 +87,7 @@ label_0x1b8f58:
     a3 = g_00396603;  // Global at 0x00396603                   // 0x001b8f5c: lbu $a3, 0x6603($at)
     at = 0x39 << 16;                                            // 0x001b8f60: lui $at, 0x39
     t0 = g_00396608;  // Global at 0x00396608                   // 0x001b8f64: lbu $t0, 0x6608($at)
-    thunk_func_001ad1b0();  // 0x1ac9a0                          // 0x001b8f68: jal 0x1ac9a0
+    thunk_func_001ac9a0();  // 1ac9a0                          // 0x001b8f68: jal 0x1ac9a0
     a1 = 4;                                                     // 0x001b8f6c: addiu $a1, $zero, 4
     return;                                                     // 0x001b8f78: jr $ra
     sp = sp + 0x10;                                             // 0x001b8f7c: addiu $sp, $sp, 0x10

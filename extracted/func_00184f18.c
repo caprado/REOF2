@@ -10,12 +10,12 @@ void func_00184f18() {
     uint32_t local_19, local_1a, local_1b, local_1c, local_1d, local_1e, local_210, local_214;
     
     sp = sp + -0x430;                                           // 0x00184f18: addiu $sp, $sp, -0x430
-    func_001830f0();  // 0x182f70                                // 0x00184f38: jal 0x182f70
+    func_00182f70();  // 182f70                                // 0x00184f38: jal 0x182f70
     a1 = sp + 0x200;                                            // 0x00184f3c: addiu $a1, $sp, 0x200
     if (v0 != 0) goto label_0x185034;                           // 0x00184f40: bnez $v0, 0x185034
     a1 = 0x23 << 16;                                            // 0x00184f48: lui $a1, 0x23
     a0 = sp + 0x240;                                            // 0x00184f4c: addiu $a0, $sp, 0x240
-    func_0010ac68();  // 0x10ab20                                // 0x00184f50: jal 0x10ab20
+    func_0010ab20();  // 10ab20                                // 0x00184f50: jal 0x10ab20
     a1 = a1 + -0x60a0;                                          // 0x00184f54: addiu $a1, $a1, -0x60a0
     if (v0 == 0) goto label_0x184f6c;                           // 0x00184f58: beqz $v0, 0x184f6c
     a2 = local_210;                                             // 0x00184f5c: lw $a2, 0x210($sp)
@@ -24,7 +24,7 @@ void func_00184f18() {
     v0 = v0 | 0x9002;                                           // 0x00184f68: ori $v0, $v0, 0x9002
 label_0x184f6c:
     a3 = local_214;                                             // 0x00184f70: lw $a3, 0x214($sp)
-    func_001830f0();  // 0x182f70                                // 0x00184f74: jal 0x182f70
+    func_00182f70();  // 182f70                                // 0x00184f74: jal 0x182f70
     if (v0 != 0) goto label_0x185034;                           // 0x00184f7c: bnez $v0, 0x185034
     a1 = *(uint8_t*)((s0) + 7);                                 // 0x00184f84: lbu $a1, 7($s0)
     v1 = 0xa;                                                   // 0x00184f88: addiu $v1, $zero, 0xa
@@ -60,7 +60,7 @@ label_0x184f6c:
     local_1c = t2;                                              // 0x0018501c: sb $t2, 0x1c($sp)
     local_1b = t3;                                              // 0x00185020: sb $t3, 0x1b($sp)
     local_1a = t0;                                              // 0x00185024: sb $t0, 0x1a($sp)
-    func_00184918();  // 0x184770                                // 0x00185028: jal 0x184770
+    func_00184770();  // 184770                                // 0x00185028: jal 0x184770
     local_19 = t6;                                              // 0x0018502c: sb $t6, 0x19($sp)
 label_0x185030:
 label_0x185034:

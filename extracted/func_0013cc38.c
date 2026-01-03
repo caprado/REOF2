@@ -23,13 +23,13 @@ label_0x13cc68:
     v0 = 1;                                                     // 0x0013cc84: addiu $v0, $zero, 1
     if (v1 != v0) goto label_0x13cca0;                          // 0x0013cc88: bnel $v1, $v0, 0x13cca0
     *(uint32_t*)((s0) + 0x2c) = 0;                              // 0x0013cc8c: sw $zero, 0x2c($s0)
-    func_00130458();  // 0x130408                                // 0x0013cc90: jal 0x130408
+    func_00130408();  // 130408                                // 0x0013cc90: jal 0x130408
     /* nop */                                                   // 0x0013cc94: nop 
     *(uint8_t*)((s0) + 2) = 0;                                  // 0x0013cc98: sb $zero, 2($s0)
 label_0x13cc9c:
     *(uint32_t*)((s0) + 0x2c) = 0;                              // 0x0013cc9c: sw $zero, 0x2c($s0)
 label_0x13cca0:
-    func_0013cbd0();  // 0x13cb90                                // 0x0013cca0: jal 0x13cb90
+    func_0013cb90();  // 13cb90                                // 0x0013cca0: jal 0x13cb90
     *(uint32_t*)((s0) + 0x34) = 0;                              // 0x0013cca8: sw $zero, 0x34($s0)
     return;                                                     // 0x0013ccb4: jr $ra
     sp = sp + 0x10;                                             // 0x0013ccb8: addiu $sp, $sp, 0x10

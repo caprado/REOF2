@@ -10,7 +10,7 @@ void func_001730b8() {
     uint32_t local_0, local_4, local_8;
     
     sp = sp + -0x30;                                            // 0x001730b8: addiu $sp, $sp, -0x30
-    func_00169ba0();  // 0x169b88                                // 0x001730c4: jal 0x169b88
+    func_00169b88();  // 169b88                                // 0x001730c4: jal 0x169b88
     a0 = sp + 0x10;                                             // 0x001730c8: addiu $a0, $sp, 0x10
     local_0 = 0;                                                // 0x001730cc: sw $zero, 0($sp)
     v0 = 0x21 << 16;                                            // 0x001730d0: lui $v0, 0x21
@@ -50,7 +50,7 @@ label_0x17312c:
 label_0x173150:
     v0 = 0x21 << 16;                                            // 0x00173150: lui $v0, 0x21
     a0 = sp + 0x10;                                             // 0x00173154: addiu $a0, $sp, 0x10
-    func_00169bc8();  // 0x169ba0                                // 0x00173158: jal 0x169ba0
+    func_00169ba0();  // 169ba0                                // 0x00173158: jal 0x169ba0
     g_00215720 = s0;  // Global at 0x00215720                   // 0x0017315c: sw $s0, 0x5720($v0)
     return;                                                     // 0x0017316c: jr $ra
     sp = sp + 0x30;                                             // 0x00173170: addiu $sp, $sp, 0x30

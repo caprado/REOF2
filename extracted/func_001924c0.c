@@ -30,7 +30,7 @@ label_0x1924f8:
     *(float*)((s3) + 0x108) = FPU_F0;  // Store float           // 0x0019253c: swc1 $f0, 0x108($s3)
     FPU_F1 = *(float*)((s3) + 0x10c);  // Load float            // 0x00192540: lwc1 $f1, 0x10c($s3)
     FPU_F0 = *(float*)((s2) + 0x10c);  // Load float            // 0x00192544: lwc1 $f0, 0x10c($s2)
-    func_00191780();  // 0x1916b0                                // 0x00192550: jal 0x1916b0
+    func_001916b0();  // 1916b0                                // 0x00192550: jal 0x1916b0
     *(float*)((s3) + 0x10c) = FPU_F0;  // Store float           // 0x00192554: swc1 $f0, 0x10c($s3)
     v0 = *(int32_t*)((s3) + 0xd0);                              // 0x00192558: lw $v0, 0xd0($s3)
     if (v0 == 0) goto label_0x192570;                           // 0x0019255c: beqz $v0, 0x192570

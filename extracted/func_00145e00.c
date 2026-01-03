@@ -10,10 +10,10 @@ void func_00145e00() {
     goto label_0x145e20;                                        // 0x00145e0c: b 0x145e20
     /* nop */                                                   // 0x00145e14: nop 
 label_0x145e18:
-    func_001456a8();  // 0x145598                                // 0x00145e18: jal 0x145598
+    func_00145598();  // 145598                                // 0x00145e18: jal 0x145598
     /* nop */                                                   // 0x00145e1c: nop 
 label_0x145e20:
-    func_00145818();  // 0x1456a8                                // 0x00145e24: jal 0x1456a8
+    func_001456a8();  // 1456a8                                // 0x00145e24: jal 0x1456a8
     a1 = 1;                                                     // 0x00145e28: addiu $a1, $zero, 1
     if (v0 != 0) goto label_0x145e18;                           // 0x00145e30: bnez $v0, 0x145e18
     a1 = 8;                                                     // 0x00145e34: addiu $a1, $zero, 8

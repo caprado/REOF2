@@ -12,10 +12,10 @@ void func_001b2780() {
     v0 = g_003137b3;  // Global at 0x003137b3                   // 0x001b279c: lbu $v0, 0x37b3($at)
     if (v0 != 0) goto label_0x1b27b4;                           // 0x001b27a0: bnez $v0, 0x1b27b4
     a0 = 0x24 << 16;                                            // 0x001b27a8: lui $a0, 0x24
-    func_001b3430();  // 0x1b3400                                // 0x001b27ac: jal 0x1b3400
+    func_001b3400();  // 1b3400                                // 0x001b27ac: jal 0x1b3400
     a0 = &str_0023db90;  // "PULL MODEL_WORK FAIL"              // 0x001b27b0: addiu $a0, $a0, -0x2470
 label_0x1b27b4:
-    func_001b2780();  // 0x1b26f0                                // 0x001b27b8: jal 0x1b26f0
+    func_001b26f0();  // 1b26f0                                // 0x001b27b8: jal 0x1b26f0
     if (v0 == 0) goto label_0x1b27d0;                           // 0x001b27c0: beqz $v0, 0x1b27d0
     at = 0x2b << 16;                                            // 0x001b27c4: lui $at, 0x2b
     goto label_0x1b2880;                                        // 0x001b27c8: b 0x1b2880
@@ -26,7 +26,7 @@ label_0x1b27d0:
     if (v1 != v0) goto label_0x1b27f0;                          // 0x001b27dc: bne $v1, $v0, 0x1b27f0
     s0 = s0 + -0x5700;                                          // 0x001b27e0: addiu $s0, $s0, -0x5700
     a0 = 0x24 << 16;                                            // 0x001b27e4: lui $a0, 0x24
-    func_001b3430();  // 0x1b3400                                // 0x001b27e8: jal 0x1b3400
+    func_001b3400();  // 1b3400                                // 0x001b27e8: jal 0x1b3400
     a0 = &str_0023dbb0;  // "DATA\\ROM\\FONT\\SCE20I22.GF"      // 0x001b27ec: addiu $a0, $a0, -0x2450
 label_0x1b27f0:
     v1 = g_002aa908;  // Global at 0x002aa908                   // 0x001b27f0: lh $v1, 8($s0)
@@ -35,7 +35,7 @@ label_0x1b27f0:
     at = (v0 < s2) ? 1 : 0;                                     // 0x001b27fc: slt $at, $v0, $s2
     if (at == 0) goto label_0x1b2810;                           // 0x001b2800: beqz $at, 0x1b2810
     a0 = 0x24 << 16;                                            // 0x001b2804: lui $a0, 0x24
-    func_001b3430();  // 0x1b3400                                // 0x001b2808: jal 0x1b3400
+    func_001b3400();  // 1b3400                                // 0x001b2808: jal 0x1b3400
     a0 = &str_0023dbb0;  // "DATA\\ROM\\FONT\\SCE20I22.GF"      // 0x001b280c: addiu $a0, $a0, -0x2450
 label_0x1b2810:
     a3 = g_002aa90a;  // Global at 0x002aa90a                   // 0x001b2810: lh $a3, 0xa($s0)

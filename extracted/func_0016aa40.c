@@ -12,13 +12,13 @@ void func_0016aa40() {
     /* call function at address in v0 */                        // 0x0016aa68: jalr $v0
     v1 = (v0 < s0) ? 1 : 0;                                     // 0x0016aa74: slt $v1, $v0, $s0
     if (v1 != 0) goto label_0x16aad0;                           // 0x0016aa80: bnez $v1, 0x16aad0
-    func_0016ab60();  // 0x16aae8                                // 0x0016aa88: jal 0x16aae8
+    func_0016aae8();  // 16aae8                                // 0x0016aa88: jal 0x16aae8
     /* nop */                                                   // 0x0016aa8c: nop 
     if (v1 == 0) goto label_0x16aad0;                           // 0x0016aa94: beqz $v1, 0x16aad0
     s0 = s0 - v1;                                               // 0x0016aa98: subu $s0, $s0, $v1
     if (s0 <= 0) goto label_0x16aacc;                           // 0x0016aa9c: blez $s0, 0x16aacc
     s1 = s1 + v1;                                               // 0x0016aaa0: addu $s1, $s1, $v1
-    func_0016ab60();  // 0x16aae8                                // 0x0016aaac: jal 0x16aae8
+    func_0016aae8();  // 16aae8                                // 0x0016aaac: jal 0x16aae8
     v1 = 0x21 << 16;                                            // 0x0016aab4: lui $v1, 0x21
     if (v0 == s0) goto label_0x16aacc;                          // 0x0016aab8: beq $v0, $s0, 0x16aacc
     v1 = v1 + 0x57b0;                                           // 0x0016aabc: addiu $v1, $v1, 0x57b0

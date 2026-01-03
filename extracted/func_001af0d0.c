@@ -34,7 +34,7 @@ label_0x1af11c:
     goto label_0x1af11c;                                        // 0x001af130: b 0x1af11c
     /* nop */                                                   // 0x001af134: nop 
 label_0x1af138:
-    func_0018da90();  // 0x18da80                                // 0x001af138: jal 0x18da80
+    func_0018da80();  // 18da80                                // 0x001af138: jal 0x18da80
     /* nop */                                                   // 0x001af13c: nop 
     goto label_0x1af15c;                                        // 0x001af140: b 0x1af15c
     v1 = (s1 < 8) ? 1 : 0;                                      // 0x001af144: slti $v1, $s1, 8

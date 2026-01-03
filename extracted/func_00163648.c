@@ -18,9 +18,9 @@ label_0x163668:
 label_0x163670:
     sp = sp + -0x20;                                            // 0x00163670: addiu $sp, $sp, -0x20
     s2 = s1 + 0x1ec;                                            // 0x00163684: addiu $s2, $s1, 0x1ec
-    func_00174ff8();  // 0x174fb8                                // 0x0016368c: jal 0x174fb8
+    func_00174fb8();  // 174fb8                                // 0x0016368c: jal 0x174fb8
     a0 = *(int32_t*)((s1) + 0x40);                              // 0x00163690: lw $a0, 0x40($s1)
-    func_00162cc8();  // 0x162c60                                // 0x00163698: jal 0x162c60
+    func_00162c60();  // 162c60                                // 0x00163698: jal 0x162c60
     v0 = 3;                                                     // 0x001636a4: addiu $v0, $zero, 3
     if (s0 != v0) goto label_0x163750;                          // 0x001636a8: bnel $s0, $v0, 0x163750
     v0 = 2;                                                     // 0x001636b0: addiu $v0, $zero, 2
@@ -33,21 +33,21 @@ label_0x163670:
     a1 = 1;                                                     // 0x001636cc: addiu $a1, $zero, 1
     if (v0 != 0) goto label_0x163750;                           // 0x001636d0: bnez $v0, 0x163750
 label_0x1636d8:
-    func_0015eb88();  // 0x15eb48                                // 0x001636d8: jal 0x15eb48
+    func_0015eb48();  // 15eb48                                // 0x001636d8: jal 0x15eb48
     v1 = *(int8_t*)((s1) + 0x72);                               // 0x001636e0: lb $v1, 0x72($s1)
     /* bnezl $v1, 0x1636fc */                                   // 0x001636e4: bnezl $v1, 0x1636fc
     v1 = *(int8_t*)((s1) + 0x70);                               // 0x001636e8: lb $v1, 0x70($s1)
-    func_0015f1d0();  // 0x15f0b0                                // 0x001636f0: jal 0x15f0b0
+    func_0015f0b0();  // 15f0b0                                // 0x001636f0: jal 0x15f0b0
     v1 = *(int8_t*)((s1) + 0x70);                               // 0x001636f8: lb $v1, 0x70($s1)
     v0 = 1;                                                     // 0x001636fc: addiu $v0, $zero, 1
     if (v1 != v0) goto label_0x163728;                          // 0x00163700: bnel $v1, $v0, 0x163728
     v0 = *(int8_t*)((s1) + 0x72);                               // 0x00163704: lb $v0, 0x72($s1)
-    func_00167a90();  // 0x167a30                                // 0x00163708: jal 0x167a30
+    func_00167a30();  // 167a30                                // 0x00163708: jal 0x167a30
     a0 = *(int32_t*)((s1) + 0x40);                              // 0x0016370c: lw $a0, 0x40($s1)
     /* beqzl $v0, 0x163728 */                                   // 0x00163710: beqzl $v0, 0x163728
     v0 = *(int8_t*)((s1) + 0x72);                               // 0x00163714: lb $v0, 0x72($s1)
     a0 = 0x23 << 16;                                            // 0x00163718: lui $a0, 0x23
-    func_001634a8();  // 0x163410                                // 0x0016371c: jal 0x163410
+    func_00163410();  // 163410                                // 0x0016371c: jal 0x163410
     a0 = &str_00228d20;  // "E211141 MWSTM_ReqStart: can't start '%s'" // 0x00163720: addiu $a0, $a0, -0x72e0
     v0 = *(int8_t*)((s1) + 0x72);                               // 0x00163724: lb $v0, 0x72($s1)
 label_0x163728:

@@ -14,7 +14,7 @@ void func_00141df8() {
     g_00210bec = v1;  // Global at 0x00210bec                   // 0x00141e10: sw $v1, 0($v0)
     a0 = g_00210bec;  // Global at 0x00210bec                   // 0x00141e14: lw $a0, 0($v0)
     if (a0 != 0) goto label_0x141e48;                           // 0x00141e18: bnez $a0, 0x141e48
-    func_00141db8();  // 0x141d38                                // 0x00141e20: jal 0x141d38
+    func_00141d38();  // 141d38                                // 0x00141e20: jal 0x141d38
     /* nop */                                                   // 0x00141e24: nop 
     a0 = 0x25 << 16;                                            // 0x00141e28: lui $a0, 0x25
     a0 = a0 + 0x6170;                                           // 0x00141e30: addiu $a0, $a0, 0x6170

@@ -13,19 +13,19 @@ void func_001282e0() {
 label_0x128300:
     sp = sp + -0x20;                                            // 0x00128300: addiu $sp, $sp, -0x20
     s1 = 4;                                                     // 0x00128310: addiu $s1, $zero, 4
-    func_001283a8();  // 0x128380                                // 0x0012831c: jal 0x128380
+    func_00128380();  // 128380                                // 0x0012831c: jal 0x128380
     s2 = 3;                                                     // 0x00128320: addiu $s2, $zero, 3
     if (v0 >= 0) goto label_0x128348;                           // 0x00128324: bgez $v0, 0x128348
     /* nop */                                                   // 0x00128328: nop 
     goto label_0x128368;                                        // 0x0012832c: b 0x128368
     /* nop */                                                   // 0x00128334: nop 
 label_0x128338:
-    func_0012bbd0();  // 0x12bbb8                                // 0x00128338: jal 0x12bbb8
+    func_0012bbb8();  // 12bbb8                                // 0x00128338: jal 0x12bbb8
     /* nop */                                                   // 0x0012833c: nop 
-    func_00128298();  // 0x128268                                // 0x00128340: jal 0x128268
+    func_00128268();  // 128268                                // 0x00128340: jal 0x128268
     /* nop */                                                   // 0x00128344: nop 
 label_0x128348:
-    func_00128be8();  // 0x1287d8                                // 0x00128348: jal 0x1287d8
+    func_001287d8();  // 1287d8                                // 0x00128348: jal 0x1287d8
     if (v0 == s2) goto label_0x128360;                          // 0x00128350: beq $v0, $s2, 0x128360
     if (v0 != s1) goto label_0x128338;                          // 0x00128358: bne $v0, $s1, 0x128338
     v1 = -1;                                                    // 0x0012835c: addiu $v1, $zero, -1

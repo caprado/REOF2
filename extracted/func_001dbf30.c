@@ -15,12 +15,12 @@ void func_001dbf30() {
     *(uint8_t*)(s0) = 0;                                        // 0x001dbf58: sb $zero, 0($s0)
     goto label_0x1dbfdc;                                        // 0x001dbf5c: b 0x1dbfdc
 label_0x1dbf64:
-    func_001dc978();  // 0x1dc930                                // 0x001dbf6c: jal 0x1dc930
-    func_001dc9c8();  // 0x1dc978                                // 0x001dbf7c: jal 0x1dc978
+    func_001dc930();  // 1dc930                                // 0x001dbf6c: jal 0x1dc930
+    func_001dc978();  // 1dc978                                // 0x001dbf7c: jal 0x1dc978
     a1 = 1;                                                     // 0x001dbf84: addiu $a1, $zero, 1
     *(uint32_t*)((gp) + -0x620c) = a1;                          // 0x001dbf8c: sw $a1, -0x620c($gp)
-    func_001dca18();  // 0x1dc9c8                                // 0x001dbf90: jal 0x1dc9c8
-    func_001dd6a8();  // 0x1dd638                                // 0x001dbfa4: jal 0x1dd638
+    func_001dc9c8();  // 1dc9c8                                // 0x001dbf90: jal 0x1dc9c8
+    func_001dd638();  // 1dd638                                // 0x001dbfa4: jal 0x1dd638
     *(uint32_t*)((gp) + -0x6210) = 0;                           // 0x001dbfa8: sw $zero, -0x6210($gp)
     if (s3 != 0) goto label_0x1dbfd8;                           // 0x001dbfac: bnez $s3, 0x1dbfd8
     /* nop */                                                   // 0x001dbfb0: nop 

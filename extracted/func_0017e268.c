@@ -16,7 +16,7 @@ label_0x17e27c:
 label_0x17e288:
     a0 = a0 + 0x12;                                             // 0x0017e288: addiu $a0, $a0, 0x12
     a1 = a1 + -0x6250;                                          // 0x0017e28c: addiu $a1, $a1, -0x6250
-    func_0010b2a0();  // 0x10b0e8                                // 0x0017e290: jal 0x10b0e8
+    func_0010b0e8();  // 10b0e8                                // 0x0017e290: jal 0x10b0e8
     a2 = 1;                                                     // 0x0017e294: addiu $a2, $zero, 1
     v0 = ((unsigned)v0 < (unsigned)1) ? 1 : 0;                  // 0x0017e298: sltiu $v0, $v0, 1
 label_0x17e29c:

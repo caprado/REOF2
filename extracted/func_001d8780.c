@@ -23,7 +23,7 @@ void func_001d8780() {
     /* nop */                                                   // 0x001d87cc: nop 
     sp = sp + -0x20;                                            // 0x001d87d0: addiu $sp, $sp, -0x20
     a3 = 0x1f4;                                                 // 0x001d87d4: addiu $a3, $zero, 0x1f4
-    func_001d87d0();  // 0x1d87a0                                // 0x001d87e4: jal 0x1d87a0
+    func_001d87a0();  // 1d87a0                                // 0x001d87e4: jal 0x1d87a0
     v1 = 2;                                                     // 0x001d87ec: addiu $v1, $zero, 2
     *(uint8_t*)((s0) + 2) = v1;                                 // 0x001d87f0: sb $v1, 2($s0)
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001d87f8: xori.b $w0, $w0, 0xb0

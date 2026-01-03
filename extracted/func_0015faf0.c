@@ -10,16 +10,16 @@ void func_0015faf0() {
     uint32_t local_28;
     
     sp = sp + -0x50;                                            // 0x0015faf0: addiu $sp, $sp, -0x50
-    func_0015fcb0();  // 0x15fc80                                // 0x0015fafc: jal 0x15fc80
+    func_0015fc80();  // 15fc80                                // 0x0015fafc: jal 0x15fc80
     if (v0 != 0) goto label_0x15fb28;                           // 0x0015fb08: bnez $v0, 0x15fb28
     a0 = 0x22 << 16;                                            // 0x0015fb10: lui $a0, 0x22
-    func_001634a8();  // 0x163410                                // 0x0015fb14: jal 0x163410
+    func_00163410();  // 163410                                // 0x0015fb14: jal 0x163410
     a0 = &str_00227d38;  // "E1122625: mwPlySetLimitTime: handle is invalid." // 0x0015fb18: addiu $a0, $a0, 0x7d38
     goto label_0x15fb34;                                        // 0x0015fb1c: b 0x15fb34
     v0 = -1;                                                    // 0x0015fb20: addiu $v0, $zero, -1
     /* nop */                                                   // 0x0015fb24: nop 
 label_0x15fb28:
-    func_0015fb78();  // 0x15fb60                                // 0x0015fb28: jal 0x15fb60
+    func_0015fb60();  // 15fb60                                // 0x0015fb28: jal 0x15fb60
     /* nop */                                                   // 0x0015fb2c: nop 
     v0 = local_28;                                              // 0x0015fb30: lw $v0, 0x28($sp)
 label_0x15fb34:

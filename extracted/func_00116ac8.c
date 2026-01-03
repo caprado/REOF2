@@ -7,7 +7,7 @@ void func_00116ac8() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x10;                                            // 0x00116ad4: addiu $sp, $sp, -0x10
-    func_00116ac8();  // 0x116990                                // 0x00116af0: jal 0x116990
+    func_00116990();  // 116990                                // 0x00116af0: jal 0x116990
     return;                                                     // 0x00116afc: jr $ra
     sp = sp + 0x10;                                             // 0x00116b00: addiu $sp, $sp, 0x10
 }

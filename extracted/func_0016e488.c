@@ -15,7 +15,7 @@ void func_0016e488() {
     a0 = *(int32_t*)(s1);                                       // 0x0016e4b0: lw $a0, 0($s1)
     if (v0 == 0) goto label_0x16e4f0;                           // 0x0016e4b4: beqz $v0, 0x16e4f0
     s0 = *(int32_t*)((s1) + 0x74);                              // 0x0016e4b8: lw $s0, 0x74($s1)
-    func_00159178();  // 0x159100                                // 0x0016e4c0: jal 0x159100
+    func_00159100();  // 159100                                // 0x0016e4c0: jal 0x159100
     a2 = sp + 4;                                                // 0x0016e4c4: addiu $a2, $sp, 4
     a0 = local_0;                                               // 0x0016e4c8: lw $a0, 0($sp)
     if (a0 != 0) goto label_0x16e4e8;                           // 0x0016e4cc: bnez $a0, 0x16e4e8

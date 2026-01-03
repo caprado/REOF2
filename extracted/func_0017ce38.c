@@ -10,9 +10,9 @@ void func_0017ce38() {
     if (v0 == 0) goto label_0x17ce78;                           // 0x0017ce44: beqz $v0, 0x17ce78
     a0 = *(int32_t*)((v0) + 0x24);                              // 0x0017ce4c: lw $a0, 0x24($v0)
     s0 = *(int32_t*)((v0) + 0x30);                              // 0x0017ce50: lw $s0, 0x30($v0)
-    func_0017d4e8();  // 0x17d4c0                                // 0x0017ce54: jal 0x17d4c0
+    func_0017d4c0();  // 17d4c0                                // 0x0017ce54: jal 0x17d4c0
     *(uint32_t*)(v0) = 0;                                       // 0x0017ce58: sw $zero, 0($v0)
-    func_0017a438();  // 0x17a410                                // 0x0017ce5c: jal 0x17a410
+    func_0017a410();  // 17a410                                // 0x0017ce5c: jal 0x17a410
     v1 = 0x21 << 16;                                            // 0x0017ce64: lui $v1, 0x21
     v1 = v1 + 0x58a0;                                           // 0x0017ce68: addiu $v1, $v1, 0x58a0
     v0 = g_002158a0;  // Global at 0x002158a0                   // 0x0017ce6c: lw $v0, 0($v1)

@@ -22,7 +22,7 @@ void func_0010a570() {
     *(float*)((sp) + 0x88) = FPU_F18;  // Store float           // 0x0010a5bc: swc1 $f18, 0x88($sp)
     *(float*)((sp) + 0x8c) = FPU_F19;  // Store float           // 0x0010a5c0: swc1 $f19, 0x8c($sp)
     local_10 = v0;                                              // 0x0010a5c4: sw $v0, 0x10($sp)
-    func_0010af38();  // 0x10ae00                                // 0x0010a5c8: jal 0x10ae00
+    func_0010ae00();  // 10ae00                                // 0x0010a5c8: jal 0x10ae00
     local_0 = v0;                                               // 0x0010a5cc: sw $v0, 0($sp)
     a0 = 0x1f << 16;                                            // 0x0010a5d0: lui $a0, 0x1f
     v1 = 0x11 << 16;                                            // 0x0010a5d4: lui $v1, 0x11
@@ -34,7 +34,7 @@ void func_0010a570() {
     local_54 = a3;                                              // 0x0010a5f4: sw $a3, 0x54($sp)
     local_4 = v0;                                               // 0x0010a5f8: sw $v0, 4($sp)
     local_30 = 0;                                               // 0x0010a5fc: sw $zero, 0x30($sp)
-    func_0010f428();  // 0x10e798                                // 0x0010a600: jal 0x10e798
+    func_0010e798();  // 10e798                                // 0x0010a600: jal 0x10e798
     local_44 = 0;                                               // 0x0010a604: sw $zero, 0x44($sp)
     return;                                                     // 0x0010a610: jr $ra
     sp = sp + 0xc0;                                             // 0x0010a614: addiu $sp, $sp, 0xc0

@@ -121,7 +121,7 @@ label_0x18c9a8:
 label_0x18c9c0:
 label_0x18c9c4:
     a1 = 6;                                                     // 0x0018c9c4: addiu $a1, $zero, 6
-    func_0018c4c0();  // 0x18c490                                // 0x0018c9cc: jal 0x18c490
+    func_0018c490();  // 18c490                                // 0x0018c9cc: jal 0x18c490
     v1 = 0x1300 << 16;                                          // 0x0018c9d4: lui $v1, 0x1300
     v0 = 0x5100 << 16;                                          // 0x0018c9d8: lui $v0, 0x5100
     *(uint32_t*)((s4) + 8) = v1;                                // 0x0018c9dc: sw $v1, 8($s4)
@@ -152,7 +152,7 @@ label_0x18c9c4:
     a0 = local_f0;                                              // 0x0018ca98: lw $a0, 0xf0($sp)
     a1 = local_a0;                                              // 0x0018ca9c: lw $a1, 0xa0($sp)
     a3 = local_cc;                                              // 0x0018caa8: lw $a3, 0xcc($sp)
-    func_0018c5d0();  // 0x18c580                                // 0x0018caac: jal 0x18c580
+    func_0018c580();  // 18c580                                // 0x0018caac: jal 0x18c580
     *(uint32_t*)((s4) + 0x78) = 0;                              // 0x0018cab4: sw $zero, 0x78($s4)
     v1 = 0x5100 << 16;                                          // 0x0018cab8: lui $v1, 0x5100
     v0 = local_a0;                                              // 0x0018cabc: lw $v0, 0xa0($sp)
@@ -165,7 +165,7 @@ label_0x18cacc:
     a0 = s4 + 0x70;                                             // 0x0018cad8: addiu $a0, $s4, 0x70
     v0 = v0 | v1;                                               // 0x0018cadc: or $v0, $v0, $v1
     a1 = 0x7000;                                                // 0x0018cae0: addiu $a1, $zero, 0x7000
-    func_0018c580();  // 0x18c520                                // 0x0018caf4: jal 0x18c520
+    func_0018c520();  // 18c520                                // 0x0018caf4: jal 0x18c520
     v0 = 0x5100 << 16;                                          // 0x0018cafc: lui $v0, 0x5100
     *(uint32_t*)((s4) + 0x78) = 0;                              // 0x0018cb04: sw $zero, 0x78($s4)
     v0 = v0 | 0x7000;                                           // 0x0018cb08: ori $v0, $v0, 0x7000

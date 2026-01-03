@@ -11,7 +11,7 @@ void func_00164e80() {
     
     sp = sp + -0x50;                                            // 0x00164e80: addiu $sp, $sp, -0x50
     *(uint32_t*)(s5) = 0;                                       // 0x00164eb0: sw $zero, 0($s5)
-    func_00169678();  // 0x169640                                // 0x00164eb4: jal 0x169640
+    func_00169640();  // 169640                                // 0x00164eb4: jal 0x169640
     s3 = *(int32_t*)((s4) + 0x1b74);                            // 0x00164eb8: lw $s3, 0x1b74($s4)
     v0 = (v0 < 0x6c) ? 1 : 0;                                   // 0x00164ebc: slti $v0, $v0, 0x6c
     if (v0 != 0) goto label_0x164ed8;                           // 0x00164ec0: bnez $v0, 0x164ed8
@@ -30,7 +30,7 @@ label_0x164ee4:
     *(uint32_t*)(s5) = s1;                                      // 0x00164eec: sw $s1, 0($s5)
     a1 = 0x23 << 16;                                            // 0x00164ef0: lui $a1, 0x23
     a1 = a1 + -0x71a0;                                          // 0x00164ef8: addiu $a1, $a1, -0x71a0
-    func_00107ab8();  // 0x107a20                                // 0x00164efc: jal 0x107a20
+    func_00107a20();  // 107a20                                // 0x00164efc: jal 0x107a20
     a2 = 0x12;                                                  // 0x00164f00: addiu $a2, $zero, 0x12
     if (v0 == 0) goto label_0x164ee0;                           // 0x00164f04: beqz $v0, 0x164ee0
     s0 = s0 + 0x12;                                             // 0x00164f08: addiu $s0, $s0, 0x12
@@ -38,7 +38,7 @@ label_0x164ee4:
     v0 = v0 + 0x4ca8;                                           // 0x00164f10: addiu $v0, $v0, 0x4ca8
     *(uint32_t*)((s3) + 0x3c) = v0;                             // 0x00164f14: sw $v0, 0x3c($s3)
     *(uint32_t*)(s5) = s1;                                      // 0x00164f18: sw $s1, 0($s5)
-    func_00164fd8();  // 0x164f88                                // 0x00164f24: jal 0x164f88
+    func_00164f88();  // 164f88                                // 0x00164f24: jal 0x164f88
     a2 = sp + 4;                                                // 0x00164f28: addiu $a2, $sp, 4
     if (v0 != 0) goto label_0x164f68;                           // 0x00164f2c: bnez $v0, 0x164f68
     v1 = local_0;                                               // 0x00164f34: lw $v1, 0($sp)

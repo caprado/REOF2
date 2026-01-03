@@ -10,15 +10,15 @@ void func_001a8cd0() {
     if (a0 <= 0) goto label_0x1a8cec;                           // 0x001a8cd4: blez $a0, 0x1a8cec
     a1 = *(int32_t*)(a1);                                       // 0x001a8cdc: lw $a1, 0($a1)
     a0 = 0x2a << 16;                                            // 0x001a8ce0: lui $a0, 0x2a
-    func_0010ae00();  // 0x10ac68                                // 0x001a8ce4: jal 0x10ac68
+    func_0010ac68();  // 10ac68                                // 0x001a8ce4: jal 0x10ac68
     a0 = a0 + 0x5110;                                           // 0x001a8ce8: addiu $a0, $a0, 0x5110
 label_0x1a8cec:
-    func_001a8cd0();  // 0x1a8aa0                                // 0x001a8cec: jal 0x1a8aa0
+    func_001a8aa0();  // 1a8aa0                                // 0x001a8cec: jal 0x1a8aa0
     /* nop */                                                   // 0x001a8cf0: nop 
 label_0x1a8cf4:
-    func_001ba2a0();  // 0x1ba1d0                                // 0x001a8cf4: jal 0x1ba1d0
+    func_001ba1d0();  // 1ba1d0                                // 0x001a8cf4: jal 0x1ba1d0
     /* nop */                                                   // 0x001a8cf8: nop 
-    func_001c8d10();  // 0x1c8cd0                                // 0x001a8cfc: jal 0x1c8cd0
+    func_001c8cd0();  // 1c8cd0                                // 0x001a8cfc: jal 0x1c8cd0
     /* nop */                                                   // 0x001a8d00: nop 
     v0 = ((unsigned)0 < (unsigned)v0) ? 1 : 0;                  // 0x001a8d04: sltu $v0, $zero, $v0
     v0 = v0 ^ 1;                                                // 0x001a8d08: xori $v0, $v0, 1
@@ -32,7 +32,7 @@ label_0x1a8cf4:
     v0 = *(int8_t*)((gp) + -0x627c);                            // 0x001a8d28: lb $v0, -0x627c($gp)
     a0 = *(int32_t*)(v1);                                       // 0x001a8d2c: lw $a0, 0($v1)
     v0 = v0 ^ 1;                                                // 0x001a8d30: xori $v0, $v0, 1
-    func_001c8e50();  // 0x1c8d10                                // 0x001a8d34: jal 0x1c8d10
+    func_001c8d10();  // 1c8d10                                // 0x001a8d34: jal 0x1c8d10
     a1 = ((unsigned)v0 < (unsigned)1) ? 1 : 0;                  // 0x001a8d38: sltiu $a1, $v0, 1
     goto label_0x1a8cf4;                                        // 0x001a8d3c: b 0x1a8cf4
     /* nop */                                                   // 0x001a8d40: nop 
@@ -53,8 +53,8 @@ label_0x1a8d84:
     if (s1 > 0) goto label_0x1a8da0;                            // 0x001a8d90: bgtz $s1, 0x1a8da0
     goto label_0x1a8db8;                                        // 0x001a8d98: b 0x1a8db8
 label_0x1a8da0:
-    func_00107b68();  // 0x107ab8                                // 0x001a8da0: jal 0x107ab8
-    func_0017ff90();  // 0x17ff10                                // 0x001a8dac: jal 0x17ff10
+    func_00107ab8();  // 107ab8                                // 0x001a8da0: jal 0x107ab8
+    func_0017ff10();  // 17ff10                                // 0x001a8dac: jal 0x17ff10
     v0 = 1;                                                     // 0x001a8db4: addiu $v0, $zero, 1
 label_0x1a8db8:
     /* FPU: aver_u.h $w0, $w0, $w17 */                          // 0x001a8dbc: aver_u.h $w0, $w0, $w17

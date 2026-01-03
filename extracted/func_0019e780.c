@@ -15,7 +15,7 @@ label_0x19e79c:
     v1 = s0 << 3;                                               // 0x0019e7a0: sll $v1, $s0, 3
     v0 = v0 + -0x3b80;                                          // 0x0019e7a4: addiu $v0, $v0, -0x3b80
     a0 = v0 + v1;                                               // 0x0019e7ac: addu $a0, $v0, $v1
-    func_0018da10();  // 0x18d9e0                                // 0x0019e7b0: jal 0x18d9e0
+    func_0018d9e0();  // 18d9e0                                // 0x0019e7b0: jal 0x18d9e0
     a2 = 8;                                                     // 0x0019e7b4: addiu $a2, $zero, 8
     s0 = s0 + 1;                                                // 0x0019e7b8: addiu $s0, $s0, 1
     v0 = (s0 < 6) ? 1 : 0;                                      // 0x0019e7bc: slti $v0, $s0, 6
@@ -30,7 +30,7 @@ label_0x19e7d8:
     v0 = v0 + -0x3b50;                                          // 0x0019e7e0: addiu $v0, $v0, -0x3b50
     v1 = v1 << 2;                                               // 0x0019e7e4: sll $v1, $v1, 2
     a2 = 0x1c;                                                  // 0x0019e7ec: addiu $a2, $zero, 0x1c
-    func_0018da10();  // 0x18d9e0                                // 0x0019e7f0: jal 0x18d9e0
+    func_0018d9e0();  // 18d9e0                                // 0x0019e7f0: jal 0x18d9e0
     a0 = v0 + v1;                                               // 0x0019e7f4: addu $a0, $v0, $v1
     s0 = s0 + 1;                                                // 0x0019e7f8: addiu $s0, $s0, 1
     v1 = (s0 < 0x200) ? 1 : 0;                                  // 0x0019e7fc: slti $v1, $s0, 0x200

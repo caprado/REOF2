@@ -9,7 +9,7 @@ void func_00136f70() {
     sp = sp + -0x10;                                            // 0x00136f70: addiu $sp, $sp, -0x10
     if (a0 != 0) goto label_0x136f98;                           // 0x00136f78: bnez $a0, 0x136f98
     a0 = 0x22 << 16;                                            // 0x00136f80: lui $a0, 0x22
-    func_00134fb0();  // 0x134ec0                                // 0x00136f84: jal 0x134ec0
+    func_00134ec0();  // 134ec0                                // 0x00136f84: jal 0x134ec0
     a0 = &str_00224c80;  // "\nSRD/PS2EE Ver.2.18a Build:Jul 28 2003 17:50:12\n" // 0x00136f88: addiu $a0, $a0, 0x4c80
     goto label_0x136fc0;                                        // 0x00136f8c: b 0x136fc0
     /* nop */                                                   // 0x00136f94: nop 

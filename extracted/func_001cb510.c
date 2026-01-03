@@ -22,7 +22,7 @@ label_0x1cb53c:
 label_0x1cb550:
     v0 = *(uint8_t*)((s0) + 0xb);                               // 0x001cb550: lbu $v0, 0xb($s0)
     if (v0 == 0) goto label_0x1cb568;                           // 0x001cb554: beqz $v0, 0x1cb568
-    func_001cb610();  // 0x1cb5c0                                // 0x001cb55c: jal 0x1cb5c0
+    func_001cb5c0();  // 1cb5c0                                // 0x001cb55c: jal 0x1cb5c0
     /* nop */                                                   // 0x001cb560: nop 
     *(uint8_t*)((s0) + 0xb) = 0;                                // 0x001cb564: sb $zero, 0xb($s0)
 label_0x1cb568:

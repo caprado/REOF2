@@ -9,7 +9,7 @@ void func_00132668() {
     sp = sp + -0x10;                                            // 0x00132668: addiu $sp, $sp, -0x10
     if (a0 != 0) goto label_0x132688;                           // 0x0013266c: bnez $a0, 0x132688
     a0 = 0x22 << 16;                                            // 0x00132674: lui $a0, 0x22
-    func_00127de8();  // 0x127d90                                // 0x00132678: jal 0x127d90
+    func_00127d90();  // 127d90                                // 0x00132678: jal 0x127d90
     a0 = &str_00223ae8;  // "E02080837 ADXT_GetNumSmplObuf: parameter error" // 0x0013267c: addiu $a0, $a0, 0x3ae8
     goto label_0x1326bc;                                        // 0x00132680: b 0x1326bc
     v0 = -1;                                                    // 0x00132684: addiu $v0, $zero, -1

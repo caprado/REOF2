@@ -25,7 +25,7 @@ label_0x18b2e0:
     v0 = a3 << 2;                                               // 0x0018b2ec: sll $v0, $a3, 2
     v0 = s7 + v0;                                               // 0x0018b2f0: addu $v0, $s7, $v0
     v0 = g_00216340;  // Global at 0x00216340                   // 0x0018b2f4: lw $v0, 0($v0)
-    func_0018b970();  // 0x18b370                                // 0x0018b2f8: jal 0x18b370
+    func_0018b370();  // 18b370                                // 0x0018b2f8: jal 0x18b370
     a0 = s0 + v0;                                               // 0x0018b2fc: addu $a0, $s0, $v0
     s4 = s4 + s1;                                               // 0x0018b300: addu $s4, $s4, $s1
     s2 = s2 + 1;                                                // 0x0018b304: addiu $s2, $s2, 1
@@ -34,7 +34,7 @@ label_0x18b308:
     if (v0 != 0) goto label_0x18b2e0;                           // 0x0018b30c: bnez $v0, 0x18b2e0
     v0 = s3 + s2;                                               // 0x0018b310: addu $v0, $s3, $s2
     a1 = 1;                                                     // 0x0018b314: addiu $a1, $zero, 1
-    func_0018c690();  // 0x18c660                                // 0x0018b320: jal 0x18c660
+    func_0018c660();  // 18c660                                // 0x0018b320: jal 0x18c660
     *(uint32_t*)((s4) + 8) = 0;                                 // 0x0018b328: sw $zero, 8($s4)
     *(uint32_t*)((s4) + 0xc) = 0;                               // 0x0018b32c: sw $zero, 0xc($s4)
     *(uint32_t*)((s4) + 0x10) = 0;                              // 0x0018b330: sw $zero, 0x10($s4)

@@ -29,7 +29,7 @@ label_0x1b1998:
     v0 = a1 << 1;                                               // 0x001b19a4: sll $v0, $a1, 1
     a2 = *(uint16_t*)((a0) + 0x1f44);                           // 0x001b19a8: lhu $a2, 0x1f44($a0)
     a1 = 5;                                                     // 0x001b19ac: addiu $a1, $zero, 5
-    func_001b18e0();  // 0x1b1870                                // 0x001b19b0: jal 0x1b1870
+    func_001b1870();  // 1b1870                                // 0x001b19b0: jal 0x1b1870
     a0 = a0 + 4;                                                // 0x001b19b4: addiu $a0, $a0, 4
     goto label_0x1b1a0c;                                        // 0x001b19b8: b 0x1b1a0c
 label_0x1b19c0:
@@ -50,7 +50,7 @@ label_0x1b19e4:
     a2 = *(uint16_t*)((a0) + 0x1f46);                           // 0x001b19f4: lhu $a2, 0x1f46($a0)
     v0 = 0x7d0;                                                 // 0x001b19f8: addiu $v0, $zero, 0x7d0
     a1 = v0 - a2;                                               // 0x001b19fc: subu $a1, $v0, $a2
-    func_001b18e0();  // 0x1b1870                                // 0x001b1a00: jal 0x1b1870
+    func_001b1870();  // 1b1870                                // 0x001b1a00: jal 0x1b1870
     a0 = a0 + 4;                                                // 0x001b1a04: addiu $a0, $a0, 4
 label_0x1b1a0c:
     return;                                                     // 0x001b1a0c: jr $ra

@@ -21,7 +21,7 @@ label_0x168978:
     v0 = v0 & 0xf8;                                             // 0x00168988: andi $v0, $v0, 0xf8
     if (v0 != s5) goto label_0x1689c8;                          // 0x0016898c: bnel $v0, $s5, 0x1689c8
     s2 = s2 + -1;                                               // 0x00168990: addiu $s2, $s2, -1
-    func_00168a80();  // 0x168a00                                // 0x00168998: jal 0x168a00
+    func_00168a00();  // 168a00                                // 0x00168998: jal 0x168a00
     v0 = *(uint8_t*)(s1);                                       // 0x001689a0: lbu $v0, 0($s1)
     /* beqzl $v0, 0x1689c8 */                                   // 0x001689a4: beqzl $v0, 0x1689c8
     s2 = s2 + -1;                                               // 0x001689a8: addiu $s2, $s2, -1

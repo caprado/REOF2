@@ -30,7 +30,7 @@ label_0x1d5c7c:
     if (v1 != 0) goto label_0x1d5cb0;                           // 0x001d5c90: bnez $v1, 0x1d5cb0
     /* nop */                                                   // 0x001d5c94: nop 
     v0 = 1;                                                     // 0x001d5c98: addiu $v0, $zero, 1
-    func_001d5b00();  // 0x1d5ab0                                // 0x001d5ca0: jal 0x1d5ab0
+    func_001d5ab0();  // 1d5ab0                                // 0x001d5ca0: jal 0x1d5ab0
     g_0032ead0 = v0;  // Global at 0x0032ead0                   // 0x001d5ca4: sb $v0, 0($s2)
     goto label_0x1d5cd0;                                        // 0x001d5ca8: b 0x1d5cd0
     s1 = s1 + 1;                                                // 0x001d5cac: addiu $s1, $s1, 1

@@ -7,7 +7,7 @@ void func_0012f3e0() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x10;                                            // 0x0012f3e0: addiu $sp, $sp, -0x10
-    func_0012d7a0();  // 0x12d780                                // 0x0012f3e8: jal 0x12d780
+    func_0012d780();  // 12d780                                // 0x0012f3e8: jal 0x12d780
     /* nop */                                                   // 0x0012f3ec: nop 
     a0 = 0x20 << 16;                                            // 0x0012f3f4: lui $a0, 0x20
     a0 = a0 + -0x12a0;                                          // 0x0012f3f8: addiu $a0, $a0, -0x12a0
@@ -16,7 +16,7 @@ void func_0012f3e0() {
     sp = sp + 0x10;                                             // 0x0012f408: addiu $sp, $sp, 0x10
     /* nop */                                                   // 0x0012f40c: nop 
     sp = sp + -0x10;                                            // 0x0012f410: addiu $sp, $sp, -0x10
-    func_0012d7c0();  // 0x12d7a0                                // 0x0012f418: jal 0x12d7a0
+    func_0012d7a0();  // 12d7a0                                // 0x0012f418: jal 0x12d7a0
     /* nop */                                                   // 0x0012f41c: nop 
     a0 = 0x20 << 16;                                            // 0x0012f424: lui $a0, 0x20
     a0 = a0 + -0x12a0;                                          // 0x0012f428: addiu $a0, $a0, -0x12a0
@@ -71,7 +71,7 @@ label_0x12f4f8:
     *(uint32_t*)((s1) + 0x2c) = 0;                              // 0x0012f510: sw $zero, 0x2c($s1)
     a3 = 4;                                                     // 0x0012f514: addiu $a3, $zero, 4
     *(uint32_t*)((s1) + 0x30) = 0;                              // 0x0012f518: sw $zero, 0x30($s1)
-    func_00126e18();  // 0x126c40                                // 0x0012f520: jal 0x126c40
+    func_00126c40();  // 126c40                                // 0x0012f520: jal 0x126c40
     *(uint32_t*)((s1) + 0x34) = s0;                             // 0x0012f524: sw $s0, 0x34($s1)
     v1 = 4;                                                     // 0x0012f528: addiu $v1, $zero, 4
     a1 = 0x80;                                                  // 0x0012f52c: addiu $a1, $zero, 0x80
@@ -103,10 +103,10 @@ label_0x12f4f8:
     *(uint32_t*)((s1) + 0x3c) = 0;                              // 0x0012f594: sw $zero, 0x3c($s1)
     /* mflo $a1 */                                              // 0x0012f598
     *(uint32_t*)((s1) + 0x44) = a1;                             // 0x0012f59c: sw $a1, 0x44($s1)
-    func_0012dfe0();  // 0x12df40                                // 0x0012f5a0: jal 0x12df40
+    func_0012df40();  // 12df40                                // 0x0012f5a0: jal 0x12df40
     *(uint32_t*)((s1) + 0x40) = s0;                             // 0x0012f5a4: sw $s0, 0x40($s1)
     a0 = *(int32_t*)((s1) + 0x44);                              // 0x0012f5a8: lw $a0, 0x44($s1)
-    func_0012dfe0();  // 0x12df40                                // 0x0012f5ac: jal 0x12df40
+    func_0012df40();  // 12df40                                // 0x0012f5ac: jal 0x12df40
     *(uint32_t*)((s1) + 0x80) = v0;                             // 0x0012f5b0: sw $v0, 0x80($s1)
     *(uint16_t*)((s1) + 0x2cc) = 0;                             // 0x0012f5b4: sh $zero, 0x2cc($s1)
     v1 = -0x80;                                                 // 0x0012f5b8: addiu $v1, $zero, -0x80
@@ -119,7 +119,7 @@ label_0x12f4f8:
     *(uint16_t*)((s1) + 0x2ce) = 0;                             // 0x0012f5d8: sh $zero, 0x2ce($s1)
     *(uint16_t*)((s1) + 0x2ca) = 0;                             // 0x0012f5dc: sh $zero, 0x2ca($s1)
     *(uint8_t*)((s1) + 0x2d6) = 0;                              // 0x0012f5e0: sb $zero, 0x2d6($s1)
-    func_00107d30();  // 0x107c70                                // 0x0012f5e4: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x0012f5e4: jal 0x107c70
     *(uint16_t*)((s1) + 0x2e8) = 0;                             // 0x0012f5e8: sh $zero, 0x2e8($s1)
     v1 = 1;                                                     // 0x0012f5ec: addiu $v1, $zero, 1
     *(uint8_t*)(s1) = v1;                                       // 0x0012f5f0: sb $v1, 0($s1)

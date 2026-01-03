@@ -7,7 +7,7 @@ void func_001c9f00() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x10;                                            // 0x001c9f00: addiu $sp, $sp, -0x10
-    func_001c84a0();  // 0x1c8460                                // 0x001c9f08: jal 0x1c8460
+    func_001c8460();  // 1c8460                                // 0x001c9f08: jal 0x1c8460
     /* nop */                                                   // 0x001c9f0c: nop 
     v1 = 5;                                                     // 0x001c9f10: addiu $v1, $zero, 5
     at = 0x31 << 16;                                            // 0x001c9f14: lui $at, 0x31

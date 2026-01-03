@@ -9,16 +9,16 @@ void func_001c7b50() {
     sp = sp + -0x60;                                            // 0x001c7b50: addiu $sp, $sp, -0x60
     /* FPU: dpa.w.ph $ac0, $sp, $s3 */                          // 0x001c7b5c: dpa.w.ph $ac0, $sp, $s3
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001c7b6c: addu.qb $zero, $sp, $s1
-    func_001c7780();  // 0x1c7770                                // 0x001c7b78: jal 0x1c7770
+    func_001c7770();  // 1c7770                                // 0x001c7b78: jal 0x1c7770
     s0 = 0x31 << 16;                                            // 0x001c7b80: lui $s0, 0x31
     a1 = 0x2a;                                                  // 0x001c7b84: addiu $a1, $zero, 0x2a
     s0 = s0 + 0x669c;                                           // 0x001c7b88: addiu $s0, $s0, 0x669c
     a0 = 0xf;                                                   // 0x001c7b8c: addiu $a0, $zero, 0xf
-    func_001c7670();  // 0x1c75b0                                // 0x001c7b94: jal 0x1c75b0
+    func_001c75b0();  // 1c75b0                                // 0x001c7b94: jal 0x1c75b0
     g_0031669c = s1;  // Global at 0x0031669c                   // 0x001c7b98: sh $s1, 0($s0)
     if (s1 >= 0) goto label_0x1c7bc0;                           // 0x001c7ba4: bgez $s1, 0x1c7bc0
     /* nop */                                                   // 0x001c7ba8: nop 
-    func_001c7790();  // 0x1c7780                                // 0x001c7bac: jal 0x1c7780
+    func_001c7780();  // 1c7780                                // 0x001c7bac: jal 0x1c7780
     /* nop */                                                   // 0x001c7bb0: nop 
     goto label_0x1c7be0;                                        // 0x001c7bb4: b 0x1c7be0
     /* nop */                                                   // 0x001c7bbc: nop 
@@ -28,7 +28,7 @@ label_0x1c7bc0:
     v0 = g_003166a2;  // Global at 0x003166a2                   // 0x001c7bc8: lhu $v0, 6($s0)
     *(uint16_t*)(s3) = v0;                                      // 0x001c7bcc: sh $v0, 0($s3)
     v0 = g_003166a4;  // Global at 0x003166a4                   // 0x001c7bd0: lhu $v0, 8($s0)
-    func_001c7790();  // 0x1c7780                                // 0x001c7bd4: jal 0x1c7780
+    func_001c7780();  // 1c7780                                // 0x001c7bd4: jal 0x1c7780
     *(uint16_t*)(s2) = v0;                                      // 0x001c7bd8: sh $v0, 0($s2)
 label_0x1c7be0:
     /* FPU: xori.b $w1, $w0, 0xb4 */                            // 0x001c7be4: xori.b $w1, $w0, 0xb4

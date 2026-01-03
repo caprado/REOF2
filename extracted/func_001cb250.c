@@ -15,7 +15,7 @@ void func_001cb250() {
     /* nop */                                                   // 0x001cb268: nop 
     /* nop */                                                   // 0x001cb26c: nop 
     sp = sp + -0x10;                                            // 0x001cb270: addiu $sp, $sp, -0x10
-    func_00115228();  // 0x115190                                // 0x001cb278: jal 0x115190
+    func_00115190();  // 115190                                // 0x001cb278: jal 0x115190
     a0 = *(int32_t*)(a2);                                       // 0x001cb27c: lw $a0, 0($a2)
     /* memory sync */                                           // 0x001cb280: sync 
     return;                                                     // 0x001cb28c: jr $ra

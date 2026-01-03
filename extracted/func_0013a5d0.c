@@ -18,7 +18,7 @@ label_0x13a618:
     v0 = v1 + s0;                                               // 0x0013a62c: addu $v0, $v1, $s0
     s0 = s0 + 1;                                                // 0x0013a630: addiu $s0, $s0, 1
     a1 = a1 + v0;                                               // 0x0013a634: addu $a1, $a1, $v0
-    func_0013a0d8();  // 0x13a040                                // 0x0013a638: jal 0x13a040
+    func_0013a040();  // 13a040                                // 0x0013a638: jal 0x13a040
     a1 = s2 + a1;                                               // 0x0013a63c: addu $a1, $s2, $a1
     if (v0 != 0) goto label_0x13a660;                           // 0x0013a640: bnez $v0, 0x13a660
     v1 = (s0 < s4) ? 1 : 0;                                     // 0x0013a644: slt $v1, $s0, $s4

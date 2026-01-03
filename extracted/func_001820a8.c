@@ -10,11 +10,11 @@ void func_001820a8() {
     uint32_t local_0;
     
     sp = sp + -0x20;                                            // 0x001820a8: addiu $sp, $sp, -0x20
-    func_00181618();  // 0x1814e8                                // 0x001820b0: jal 0x1814e8
+    func_001814e8();  // 1814e8                                // 0x001820b0: jal 0x1814e8
     /* nop */                                                   // 0x001820b4: nop 
     if (v1 != 0) goto label_0x1820d8;                           // 0x001820bc: bnez $v1, 0x1820d8
     local_0 = v0;                                               // 0x001820c0: sw $v0, 0($sp)
-    func_00181dd8();  // 0x181d30                                // 0x001820cc: jal 0x181d30
+    func_00181d30();  // 181d30                                // 0x001820cc: jal 0x181d30
     v0 = local_0;                                               // 0x001820d4: lw $v0, 0($sp)
 label_0x1820d8:
     return;                                                     // 0x001820dc: jr $ra

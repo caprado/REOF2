@@ -8,11 +8,11 @@ void func_00193a20() {
     
     sp = sp + -0x30;                                            // 0x00193a20: addiu $sp, $sp, -0x30
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x00193a28: addu.qb $zero, $sp, $s1
-    func_0018fbd0();  // 0x18fba0                                // 0x00193a34: jal 0x18fba0
+    func_0018fba0();  // 18fba0                                // 0x00193a34: jal 0x18fba0
     FPU_F12 = *(float*)((s0) + 0xc);  // Load float             // 0x00193a3c: lwc1 $f12, 0xc($s0)
     FPU_F13 = *(float*)((s0) + 0x10);  // Load float            // 0x00193a40: lwc1 $f13, 0x10($s0)
     FPU_F14 = *(float*)((s0) + 0x14);  // Load float            // 0x00193a44: lwc1 $f14, 0x14($s0)
-    func_00190950();  // 0x1907c0                                // 0x00193a48: jal 0x1907c0
+    func_001907c0();  // 1907c0                                // 0x00193a48: jal 0x1907c0
     FPU_F0 = *(float*)((s0) + 0x18);  // Load float             // 0x00193a50: lwc1 $f0, 0x18($s0)
     v0 = 1;                                                     // 0x00193a54: addiu $v0, $zero, 1
     *(float*)((s1) + 0x30) = FPU_F0;  // Store float            // 0x00193a58: swc1 $f0, 0x30($s1)

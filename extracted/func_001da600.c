@@ -20,7 +20,7 @@ void func_001da600() {
     if (s0 == 0) goto label_0x1da678;                           // 0x001da638: beqz $s0, 0x1da678
     goto label_0x1da65c;                                        // 0x001da640: b 0x1da65c
 label_0x1da648:
-    func_001b1000();  // 0x1b0fc0                                // 0x001da648: jal 0x1b0fc0
+    func_001b0fc0();  // 1b0fc0                                // 0x001da648: jal 0x1b0fc0
     /* nop */                                                   // 0x001da64c: nop 
     *(uint32_t*)(s0) = v0;                                      // 0x001da650: sw $v0, 0($s0)
     s1 = s1 + 1;                                                // 0x001da654: addiu $s1, $s1, 1
@@ -31,7 +31,7 @@ label_0x1da65c:
     if (v0 != 0) goto label_0x1da648;                           // 0x001da664: bnez $v0, 0x1da648
     /* nop */                                                   // 0x001da668: nop 
     a1 = *(int32_t*)((s2) + 0x80c);                             // 0x001da66c: lw $a1, 0x80c($s2)
-    func_00193750();  // 0x193600                                // 0x001da670: jal 0x193600
+    func_00193600();  // 193600                                // 0x001da670: jal 0x193600
     a0 = *(int32_t*)((s2) + 4);                                 // 0x001da674: lw $a0, 4($s2)
 label_0x1da678:
     /* FPU: ld.b $w0, -0x4e($zero) */                           // 0x001da67c: ld.b $w0, -0x4e($zero)

@@ -16,11 +16,11 @@ void func_00172ed0() {
     v0 = 1;                                                     // 0x00172f00: addiu $v0, $zero, 1
     a1 = 6;                                                     // 0x00172f04: addiu $a1, $zero, 6
 label_0x172f08:
-    func_00177950();  // 0x177938                                // 0x00172f08: jal 0x177938
+    func_00177938();  // 177938                                // 0x00172f08: jal 0x177938
     a1 = 7;                                                     // 0x00172f14: addiu $a1, $zero, 7
-    func_00177950();  // 0x177938                                // 0x00172f18: jal 0x177938
+    func_00177938();  // 177938                                // 0x00172f18: jal 0x177938
     a1 = 0x19;                                                  // 0x00172f24: addiu $a1, $zero, 0x19
-    func_001752f8();  // 0x1752e8                                // 0x00172f28: jal 0x1752e8
+    func_001752e8();  // 1752e8                                // 0x00172f28: jal 0x1752e8
     v0 = 1;                                                     // 0x00172f34: addiu $v0, $zero, 1
     if (v1 == v0) goto label_0x172f68;                          // 0x00172f38: beq $v1, $v0, 0x172f68
     /* beqzl $v1, 0x172f7c */                                   // 0x00172f40: beqzl $v1, 0x172f7c

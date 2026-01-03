@@ -7,7 +7,7 @@ void func_00170420() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x60;                                            // 0x00170420: addiu $sp, $sp, -0x60
-    func_00169ba0();  // 0x169b88                                // 0x00170458: jal 0x169b88
+    func_00169b88();  // 169b88                                // 0x00170458: jal 0x169b88
     s3 = *(int32_t*)((s0) + 0x1b30);                            // 0x00170460: lw $s3, 0x1b30($s0)
     v0 = *(int32_t*)((s3) + 0x138);                             // 0x00170464: lw $v0, 0x138($s3)
     s0 = s3 + 0x13c;                                            // 0x00170468: addiu $s0, $s3, 0x13c
@@ -21,7 +21,7 @@ label_0x170480:
     if (v0 != s5) goto label_0x1704ac;                          // 0x0017048c: bnel $v0, $s5, 0x1704ac
     s1 = s1 + -1;                                               // 0x00170490: addiu $s1, $s1, -1
 label_0x170498:
-    func_00170660();  // 0x170640                                // 0x00170498: jal 0x170640
+    func_00170640();  // 170640                                // 0x00170498: jal 0x170640
     s4 = s4 + 1;                                                // 0x001704a0: addiu $s4, $s4, 1
     if (v0 != 0) s2 = s0;                                       // 0x001704a4: movn $s2, $s0, $v0
     s1 = s1 + -1;                                               // 0x001704a8: addiu $s1, $s1, -1
@@ -36,7 +36,7 @@ label_0x1704b4:
     /* bnezl $v0, 0x1704cc */                                   // 0x001704c4: bnezl $v0, 0x1704cc
     *(uint32_t*)(s7) = s4;                                      // 0x001704c8: sw $s4, 0($s7)
 label_0x1704cc:
-    func_00169bc8();  // 0x169ba0                                // 0x001704cc: jal 0x169ba0
+    func_00169ba0();  // 169ba0                                // 0x001704cc: jal 0x169ba0
     return;                                                     // 0x001704fc: jr $ra
     sp = sp + 0x60;                                             // 0x00170500: addiu $sp, $sp, 0x60
 }

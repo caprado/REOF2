@@ -41,7 +41,7 @@ label_0x122668:
     v0 = *(int32_t*)((v1) + 0x18);                              // 0x001226a4: lw $v0, 0x18($v1)
     /* call function at address in v0 */                        // 0x001226ac: jalr $v0
     a0 = local_0;                                               // 0x001226b8: lw $a0, 0($sp)
-    func_00107d30();  // 0x107c70                                // 0x001226bc: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001226bc: jal 0x107c70
     a2 = local_4;                                               // 0x001226c0: lw $a2, 4($sp)
     v1 = *(int32_t*)(s0);                                       // 0x001226c4: lw $v1, 0($s0)
     v0 = *(int32_t*)((v1) + 0x1c);                              // 0x001226d0: lw $v0, 0x1c($v1)
@@ -67,7 +67,7 @@ label_0x1226f0:
     v0 = *(int32_t*)((v1) + 0x18);                              // 0x00122738: lw $v0, 0x18($v1)
     /* call function at address in v0 */                        // 0x00122740: jalr $v0
     a0 = local_0;                                               // 0x0012274c: lw $a0, 0($sp)
-    func_00107d30();  // 0x107c70                                // 0x00122750: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x00122750: jal 0x107c70
     a2 = local_4;                                               // 0x00122754: lw $a2, 4($sp)
     a2 = *(int32_t*)(s0);                                       // 0x00122758: lw $a2, 0($s0)
     v1 = *(int32_t*)((a2) + 0x1c);                              // 0x00122764: lw $v1, 0x1c($a2)

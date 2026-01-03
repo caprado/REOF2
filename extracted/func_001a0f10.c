@@ -13,18 +13,18 @@ void func_001a0f10() {
     v1 = v1 + -1;                                               // 0x001a0f2c: addiu $v1, $v1, -1
     v0 = v0 + -1;                                               // 0x001a0f30: addiu $v0, $v0, -1
     v1 = ~v1;                                                   // 0x001a0f34: not $v1, $v1
-    func_001a12a0();  // 0x1a1250                                // 0x001a0f38: jal 0x1a1250
+    func_001a1250();  // 1a1250                                // 0x001a0f38: jal 0x1a1250
     s0 = v1 & v0;                                               // 0x001a0f3c: and $s0, $v1, $v0
     at = ((unsigned)v0 < (unsigned)s0) ? 1 : 0;                 // 0x001a0f40: sltu $at, $v0, $s0
     if (at == 0) goto label_0x1a0f88;                           // 0x001a0f44: beqz $at, 0x1a0f88
-    func_001a1250();  // 0x1a1090                                // 0x001a0f4c: jal 0x1a1090
+    func_001a1090();  // 1a1090                                // 0x001a0f4c: jal 0x1a1090
     /* nop */                                                   // 0x001a0f50: nop 
     v0 = *(int32_t*)((s1) + 0x18);                              // 0x001a0f54: lw $v0, 0x18($s1)
     v1 = v0 + -1;                                               // 0x001a0f5c: addiu $v1, $v0, -1
     v0 = s0 + v0;                                               // 0x001a0f60: addu $v0, $s0, $v0
     v1 = ~v1;                                                   // 0x001a0f64: not $v1, $v1
     v0 = v0 + -1;                                               // 0x001a0f68: addiu $v0, $v0, -1
-    func_001a12a0();  // 0x1a1250                                // 0x001a0f6c: jal 0x1a1250
+    func_001a1250();  // 1a1250                                // 0x001a0f6c: jal 0x1a1250
     s0 = v1 & v0;                                               // 0x001a0f70: and $s0, $v1, $v0
     at = ((unsigned)v0 < (unsigned)s0) ? 1 : 0;                 // 0x001a0f74: sltu $at, $v0, $s0
     if (at == 0) goto label_0x1a0f88;                           // 0x001a0f78: beqz $at, 0x1a0f88

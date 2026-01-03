@@ -16,10 +16,10 @@ label_0x162950:
     s1 = *(int32_t*)((a0) + 0x40);                              // 0x0016297c: lw $s1, 0x40($a0)
     a1 = *(int32_t*)((s0) + 0x10);                              // 0x00162980: lw $a1, 0x10($s0)
     s2 = *(int32_t*)((s0) + 0xc);                               // 0x00162984: lw $s2, 0xc($s0)
-    func_00169d60();  // 0x169cb0                                // 0x0016298c: jal 0x169cb0
+    func_00169cb0();  // 169cb0                                // 0x0016298c: jal 0x169cb0
     a1 = a1 + 0xc0;                                             // 0x00162990: addiu $a1, $a1, 0xc0
     a1 = s3 + 0xc0;                                             // 0x00162998: addiu $a1, $s3, 0xc0
-    func_00169d60();  // 0x169cb0                                // 0x001629a4: jal 0x169cb0
+    func_00169cb0();  // 169cb0                                // 0x001629a4: jal 0x169cb0
     *(uint32_t*)((s0) + 0x10) = s3;                             // 0x001629ac: sw $s3, 0x10($s0)
     return;                                                     // 0x001629c4: jr $ra
     sp = sp + 0x30;                                             // 0x001629c8: addiu $sp, $sp, 0x30

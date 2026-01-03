@@ -73,7 +73,7 @@ label_0x12dd18:
 label_0x12dd50:
     if (s1 != v0) goto label_0x12dd70;                          // 0x0012dd50: bne $s1, $v0, 0x12dd70
     a0 = local_0;                                               // 0x0012dd54: lw $a0, 0($sp)
-    func_00107b68();  // 0x107ab8                                // 0x0012dd5c: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x0012dd5c: jal 0x107ab8
     a2 = s2 & 0xffff;                                           // 0x0012dd60: andi $a2, $s2, 0xffff
     goto label_0x12dd94;                                        // 0x0012dd64: b 0x12dd94
     v1 = *(int32_t*)(s4);                                       // 0x0012dd68: lw $v1, 0($s4)

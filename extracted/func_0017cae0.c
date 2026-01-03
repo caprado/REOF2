@@ -11,17 +11,17 @@ void func_0017cae0() {
     s0 = v0 + 0x5898;                                           // 0x0017caec: addiu $s0, $v0, 0x5898
     v1 = g_00215898;  // Global at 0x00215898                   // 0x0017caf0: lw $v1, 0($s0)
     if (v1 > 0) goto label_0x17cb40;                            // 0x0017caf4: bgtz $v1, 0x17cb40
-    func_0017cb60();  // 0x17cb50                                // 0x0017cafc: jal 0x17cb50
+    func_0017cb50();  // 17cb50                                // 0x0017cafc: jal 0x17cb50
     /* nop */                                                   // 0x0017cb00: nop 
     v1 = 0x26 << 16;                                            // 0x0017cb04: lui $v1, 0x26
     v1 = v1 + 0x78c8;                                           // 0x0017cb08: addiu $v1, $v1, 0x78c8
-    func_0017cc20();  // 0x17cb60                                // 0x0017cb0c: jal 0x17cb60
+    func_0017cb60();  // 17cb60                                // 0x0017cb0c: jal 0x17cb60
     g_002678c8 = v0;  // Global at 0x002678c8                   // 0x0017cb10: sw $v0, 0($v1)
-    func_0017d310();  // 0x17d2f8                                // 0x0017cb14: jal 0x17d2f8
+    func_0017d2f8();  // 17d2f8                                // 0x0017cb14: jal 0x17d2f8
     /* nop */                                                   // 0x0017cb18: nop 
-    func_0017d400();  // 0x17d3a8                                // 0x0017cb1c: jal 0x17d3a8
+    func_0017d3a8();  // 17d3a8                                // 0x0017cb1c: jal 0x17d3a8
     /* nop */                                                   // 0x0017cb20: nop 
-    func_0017a338();  // 0x17a2e0                                // 0x0017cb24: jal 0x17a2e0
+    func_0017a2e0();  // 17a2e0                                // 0x0017cb24: jal 0x17a2e0
     /* nop */                                                   // 0x0017cb28: nop 
     v0 = g_00215898;  // Global at 0x00215898                   // 0x0017cb2c: lw $v0, 0($s0)
     v1 = 0x21 << 16;                                            // 0x0017cb30: lui $v1, 0x21

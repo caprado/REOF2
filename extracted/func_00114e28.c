@@ -12,13 +12,13 @@ void func_00114e28() {
     s0 = s0 & v0;                                               // 0x00114e44: and $s0, $s0, $v0
     if (s0 == 0) goto label_0x114e58;                           // 0x00114e48: beqz $s0, 0x114e58
     /* nop */                                                   // 0x00114e4c: nop 
-    func_0011d378();  // 0x11d320                                // 0x00114e50: jal 0x11d320
+    func_0011d320();  // 11d320                                // 0x00114e50: jal 0x11d320
     /* nop */                                                   // 0x00114e54: nop 
 label_0x114e58:
     _DisableIntc();  // 0x114020                                // 0x00114e58: jal 0x114020
     /* memory sync */                                           // 0x00114e64: sync 
     if (s0 == 0) goto label_0x114e7c;                           // 0x00114e68: beqz $s0, 0x114e7c
-    func_0011d390();  // 0x11d378                                // 0x00114e70: jal 0x11d378
+    func_0011d378();  // 11d378                                // 0x00114e70: jal 0x11d378
     /* nop */                                                   // 0x00114e74: nop 
 label_0x114e7c:
     return;                                                     // 0x00114e88: jr $ra

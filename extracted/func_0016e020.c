@@ -7,7 +7,7 @@ void func_0016e020() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x30;                                            // 0x0016e020: addiu $sp, $sp, -0x30
-    func_00170048();  // 0x170018                                // 0x0016e040: jal 0x170018
+    func_00170018();  // 170018                                // 0x0016e040: jal 0x170018
     /* beqzl $s0, 0x16e11c */                                   // 0x0016e04c: beqzl $s0, 0x16e11c
     v0 = *(int32_t*)(s0);                                       // 0x0016e054: lw $v0, 0($s0)
     /* bnezl $v0, 0x16e11c */                                   // 0x0016e058: bnezl $v0, 0x16e11c
@@ -18,7 +18,7 @@ void func_0016e020() {
     v0 = (a2 < 0x201) ? 1 : 0;                                  // 0x0016e070: slti $v0, $a2, 0x201
     if (v0 == 0) a2 = a3;                                       // 0x0016e078: movz $a2, $a3, $v0
     s2 = s3 + 0xcc0;                                            // 0x0016e07c: addiu $s2, $s3, 0xcc0
-    func_00155db0();  // 0x155b20                                // 0x0016e080: jal 0x155b20
+    func_00155b20();  // 155b20                                // 0x0016e080: jal 0x155b20
     *(uint32_t*)((v1) + 0x200) = a2;                            // 0x0016e084: sw $a2, 0x200($v1)
     v1 = s1 << 1;                                               // 0x0016e088: sll $v1, $s1, 1
     v0 = 3 << 16;                                               // 0x0016e08c: lui $v0, 3

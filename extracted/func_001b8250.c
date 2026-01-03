@@ -9,11 +9,11 @@ void func_001b8250() {
     sp = sp + -0x10;                                            // 0x001b8250: addiu $sp, $sp, -0x10
     if (a3 != 0) goto label_0x1b8274;                           // 0x001b8258: bnez $a3, 0x1b8274
     a0 = 1;                                                     // 0x001b8260: addiu $a0, $zero, 1
-    func_001b8b40();  // 0x1b8b20                                // 0x001b8264: jal 0x1b8b20
+    func_001b8b20();  // 1b8b20                                // 0x001b8264: jal 0x1b8b20
     goto label_0x1b8290;                                        // 0x001b826c: b 0x1b8290
 label_0x1b8274:
     a0 = 1;                                                     // 0x001b8274: addiu $a0, $zero, 1
-    func_001b8c20();  // 0x1b8b40                                // 0x001b8284: jal 0x1b8b40
+    func_001b8b40();  // 1b8b40                                // 0x001b8284: jal 0x1b8b40
 label_0x1b8290:
     return;                                                     // 0x001b8290: jr $ra
     sp = sp + 0x10;                                             // 0x001b8294: addiu $sp, $sp, 0x10

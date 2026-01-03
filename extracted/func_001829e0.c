@@ -19,7 +19,7 @@ void func_001829e0() {
     v1 = 0x898;                                                 // 0x00182a1c: addiu $v1, $zero, 0x898
     a1 = a1 + 0x400;                                            // 0x00182a20: addiu $a1, $a1, 0x400
     a1 = a3 + a1;                                               // 0x00182a28: addu $a1, $a3, $a1
-    func_00186e48();  // 0x186e08                                // 0x00182a2c: jal 0x186e08
+    func_00186e08();  // 186e08                                // 0x00182a2c: jal 0x186e08
     a3 = 1;                                                     // 0x00182a30: addiu $a3, $zero, 1
     if (v0 != 0) goto label_0x182a48;                           // 0x00182a34: bnez $v0, 0x182a48
     v1 = 0x898;                                                 // 0x00182a38: addiu $v1, $zero, 0x898

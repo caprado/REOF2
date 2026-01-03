@@ -66,7 +66,7 @@ label_0x103b5c:
     t1 = t1 + -4;                                               // 0x00103b78: addiu $t1, $t1, -4
     *(uint32_t*)((s4) + 0x10) = s0;                             // 0x00103b7c: sw $s0, 0x10($s4)
 label_0x103b80:
-    func_00108758();  // 0x1086f0                                // 0x00103b84: jal 0x1086f0
+    func_001086f0();  // 1086f0                                // 0x00103b84: jal 0x1086f0
     if (v0 < 0) goto label_0x103c50;                            // 0x00103b8c: bltz $v0, 0x103c50
     s2 = s5 + 1;                                                // 0x00103b94: addiu $s2, $s5, 1
     /* nop */                                                   // 0x00103ba4: nop 

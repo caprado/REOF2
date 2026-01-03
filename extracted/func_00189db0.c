@@ -9,9 +9,9 @@ void func_00189db0() {
     sp = sp + -0x40;                                            // 0x00189db0: addiu $sp, $sp, -0x40
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x00189dbc: addu.qb $zero, $sp, $s1
     a0 = *(int32_t*)((a0) + 0x14);                              // 0x00189dc4: lw $a0, 0x14($a0)
-    func_0018db10();  // 0x18db00                                // 0x00189dc8: jal 0x18db00
+    func_0018db00();  // 18db00                                // 0x00189dc8: jal 0x18db00
     a2 = 0x24;                                                  // 0x00189ddc: addiu $a2, $zero, 0x24
-    func_0018da60();  // 0x18da10                                // 0x00189de4: jal 0x18da10
+    func_0018da10();  // 18da10                                // 0x00189de4: jal 0x18da10
     s0 = s0 + 0x30;                                             // 0x00189de8: addiu $s0, $s0, 0x30
     *(uint32_t*)((s2) + 8) = s0;                                // 0x00189dec: sw $s0, 8($s2)
     v1 = -0x10;                                                 // 0x00189df0: addiu $v1, $zero, -0x10

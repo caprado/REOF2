@@ -7,12 +7,12 @@ void func_001b13c0() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x001b13c0: addiu $sp, $sp, -0x20
-    func_001b13c0();  // 0x1b12b0                                // 0x001b13cc: jal 0x1b12b0
+    func_001b12b0();  // 1b12b0                                // 0x001b13cc: jal 0x1b12b0
     v1 = 1;                                                     // 0x001b13d4: addiu $v1, $zero, 1
     if (v0 == v1) goto label_0x1b13ec;                          // 0x001b13d8: beq $v0, $v1, 0x1b13ec
-    func_001b1870();  // 0x1b17c0                                // 0x001b13e0: jal 0x1b17c0
+    func_001b17c0();  // 1b17c0                                // 0x001b13e0: jal 0x1b17c0
 label_0x1b13ec:
-    func_001b17c0();  // 0x1b1700                                // 0x001b13ec: jal 0x1b1700
+    func_001b1700();  // 1b1700                                // 0x001b13ec: jal 0x1b1700
     /* nop */                                                   // 0x001b13f0: nop 
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001b13f8: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x001b13fc: jr $ra

@@ -7,7 +7,7 @@ void func_001886f0() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x40;                                            // 0x001886f0: addiu $sp, $sp, -0x40
-    func_001886f0();  // 0x1886c0                                // 0x00188704: jal 0x1886c0
+    func_001886c0();  // 1886c0                                // 0x00188704: jal 0x1886c0
     if (v0 != 0) goto label_0x18871c;                           // 0x0018870c: bnez $v0, 0x18871c
     s1 = 0x24;                                                  // 0x00188710: addiu $s1, $zero, 0x24
     goto label_0x188740;                                        // 0x00188714: b 0x188740
@@ -15,7 +15,7 @@ label_0x18871c:
     s0 = 0x28 << 16;                                            // 0x0018871c: lui $s0, 0x28
     s0 = s0 + -0x2fb8;                                          // 0x00188724: addiu $s0, $s0, -0x2fb8
     v0 = s0 + s1;                                               // 0x00188728: addu $v0, $s0, $s1
-    func_00188c80();  // 0x188bf8                                // 0x0018872c: jal 0x188bf8
+    func_00188bf8();  // 188bf8                                // 0x0018872c: jal 0x188bf8
     a0 = *(int32_t*)((v0) + 4);                                 // 0x00188730: lw $a0, 4($v0)
     s1 = s1 + s0;                                               // 0x00188734: addu $s1, $s1, $s0
     v0 = 1;                                                     // 0x00188738: addiu $v0, $zero, 1

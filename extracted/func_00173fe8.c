@@ -25,7 +25,7 @@ void func_00173fe8() {
     v0 = a3 + t0;                                               // 0x00174038: addu $v0, $a3, $t0
     a1 = t1 - t0;                                               // 0x0017403c: subu $a1, $t1, $t0
     v0 = ((unsigned)t1 < (unsigned)v0) ? 1 : 0;                 // 0x00174040: sltu $v0, $t1, $v0
-    func_00174108();  // 0x174060                                // 0x00174044: jal 0x174060
+    func_00174060();  // 174060                                // 0x00174044: jal 0x174060
     if (v0 != 0) a1 = t1;                                       // 0x00174048: movn $a1, $t1, $v0
 label_0x174050:
     return;                                                     // 0x00174054: jr $ra

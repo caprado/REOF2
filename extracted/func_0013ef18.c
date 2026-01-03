@@ -32,7 +32,7 @@ label_0x13ef48:
     if (v0 != 0) goto label_0x13efb4;                           // 0x0013ef94: bnez $v0, 0x13efb4
     a0 = 0x21 << 16;                                            // 0x0013ef9c: lui $a0, 0x21
     a0 = a0 + -0x5260;                                          // 0x0013efa4: addiu $a0, $a0, -0x5260
-    func_00107d30();  // 0x107c70                                // 0x0013efa8: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x0013efa8: jal 0x107c70
     a2 = 0x480;                                                 // 0x0013efac: addiu $a2, $zero, 0x480
     v0 = g_0020ad98;  // Global at 0x0020ad98                   // 0x0013efb0: lw $v0, 0($s0)
 label_0x13efb4:

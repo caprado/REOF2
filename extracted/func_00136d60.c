@@ -9,7 +9,7 @@ void func_00136d60() {
     sp = sp + -0x20;                                            // 0x00136d60: addiu $sp, $sp, -0x20
     if (s1 != 0) goto label_0x136d90;                           // 0x00136d74: bnez $s1, 0x136d90
     a0 = 0x22 << 16;                                            // 0x00136d7c: lui $a0, 0x22
-    func_00134fb0();  // 0x134ec0                                // 0x00136d80: jal 0x134ec0
+    func_00134ec0();  // 134ec0                                // 0x00136d80: jal 0x134ec0
     a0 = &str_00224c60;  // "cvFsGetFsys64Info #1:handle error" // 0x00136d84: addiu $a0, $a0, 0x4c60
     goto label_0x136de4;                                        // 0x00136d88: b 0x136de4
 label_0x136d90:

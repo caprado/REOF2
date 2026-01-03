@@ -22,14 +22,14 @@ label_0x1b38d8:
     v0 = g_003137cb;  // Global at 0x003137cb                   // 0x001b38dc: lbu $v0, 0x37cb($at)
     if (v0 != 0) goto label_0x1b3904;                           // 0x001b38e0: bnez $v0, 0x1b3904
     a0 = 2;                                                     // 0x001b38e4: addiu $a0, $zero, 2
-    func_001b4570();  // 0x1b4550                                // 0x001b38e8: jal 0x1b4550
+    func_001b4550();  // 1b4550                                // 0x001b38e8: jal 0x1b4550
     /* nop */                                                   // 0x001b38ec: nop 
     a0 = 0x1b << 16;                                            // 0x001b38f0: lui $a0, 0x1b
-    func_001af3a0();  // 0x1af2f0                                // 0x001b38f4: jal 0x1af2f0
+    func_001af2f0();  // 1af2f0                                // 0x001b38f4: jal 0x1af2f0
     a0 = a0 + 0x3fa0;                                           // 0x001b38f8: addiu $a0, $a0, 0x3fa0
     goto label_0x1b3a28;                                        // 0x001b38fc: b 0x1b3a28
 label_0x1b3904:
-    func_001a9030();  // 0x1a8fc0                                // 0x001b3904: jal 0x1a8fc0
+    func_001a8fc0();  // 1a8fc0                                // 0x001b3904: jal 0x1a8fc0
     s2 = 0x30 << 16;                                            // 0x001b390c: lui $s2, 0x30
     s2 = s2 + 0x6c10;                                           // 0x001b3914: addiu $s2, $s2, 0x6c10
 label_0x1b391c:

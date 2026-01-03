@@ -22,7 +22,7 @@ label_0x1cec18:
     /* nop */                                                   // 0x001cec2c: nop 
     /* nop */                                                   // 0x001cec30: nop 
 label_0x1cec38:
-    func_0011c458();  // 0x11c438                                // 0x001cec3c: jal 0x11c438
+    func_0011c438();  // 11c438                                // 0x001cec3c: jal 0x11c438
     if (v0 < 0) goto label_0x1cec18;                            // 0x001cec44: bltz $v0, 0x1cec18
     /* nop */                                                   // 0x001cec48: nop 
     goto label_0x1ced58;                                        // 0x001cec4c: b 0x1ced58
@@ -31,7 +31,7 @@ label_0x1cec54:
     goto label_0x1ceca0;                                        // 0x001cec54: b 0x1ceca0
     v1 = (s3 < s4) ? 1 : 0;                                     // 0x001cec58: slt $v1, $s3, $s4
 label_0x1cec5c:
-    func_0011c458();  // 0x11c438                                // 0x001cec60: jal 0x11c438
+    func_0011c438();  // 11c438                                // 0x001cec60: jal 0x11c438
     at = (v0 < 0) ? 1 : 0;                                      // 0x001cec68: slt $at, $v0, $zero
     if (at != 0) goto label_0x1cec7c;                           // 0x001cec6c: bnez $at, 0x1cec7c
     /* nop */                                                   // 0x001cec70: nop 
@@ -62,7 +62,7 @@ label_0x1cecc0:
     /* nop */                                                   // 0x001cecd4: nop 
     /* nop */                                                   // 0x001cecd8: nop 
 label_0x1cece0:
-    func_0011c478();  // 0x11c458                                // 0x001cece8: jal 0x11c458
+    func_0011c458();  // 11c458                                // 0x001cece8: jal 0x11c458
     if (v0 < 0) goto label_0x1cecc0;                            // 0x001cecf0: bltz $v0, 0x1cecc0
     /* nop */                                                   // 0x001cecf4: nop 
     goto label_0x1ced58;                                        // 0x001cecf8: b 0x1ced58
@@ -71,7 +71,7 @@ label_0x1ced00:
     goto label_0x1ced50;                                        // 0x001ced00: b 0x1ced50
     v1 = (s3 < s4) ? 1 : 0;                                     // 0x001ced04: slt $v1, $s3, $s4
 label_0x1ced08:
-    func_0011c478();  // 0x11c458                                // 0x001ced10: jal 0x11c458
+    func_0011c458();  // 11c458                                // 0x001ced10: jal 0x11c458
     at = (v0 < 0) ? 1 : 0;                                      // 0x001ced18: slt $at, $v0, $zero
     if (at != 0) goto label_0x1ced2c;                           // 0x001ced1c: bnez $at, 0x1ced2c
     /* nop */                                                   // 0x001ced20: nop 

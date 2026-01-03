@@ -10,7 +10,7 @@ void func_001684e0() {
     v0 = (s1 < 4) ? 1 : 0;                                      // 0x001684ec: slti $v0, $s1, 4
     if (v0 != 0) goto label_0x16852c;                           // 0x00168500: bnez $v0, 0x16852c
 label_0x168508:
-    func_00157a00();  // 0x1579e8                                // 0x00168508: jal 0x1579e8
+    func_001579e8();  // 1579e8                                // 0x00168508: jal 0x1579e8
     if (v0 != s2) goto label_0x168520;                          // 0x00168510: bne $v0, $s2, 0x168520
     s1 = s1 + -1;                                               // 0x00168514: addiu $s1, $s1, -1
     goto label_0x168530;                                        // 0x00168518: b 0x168530

@@ -27,7 +27,7 @@ label_0x11dc5c:
     s3 = 0x25 << 16;                                            // 0x0011dc5c: lui $s3, 0x25
     s0 = s3 + 0x1080;                                           // 0x0011dc64: addiu $s0, $s3, 0x1080
     g_001f19f8 = 0;  // Global at 0x001f19f8                    // 0x0011dc68: sw $zero, 0x10($s1)
-    func_00107d30();  // 0x107c70                                // 0x0011dc74: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x0011dc74: jal 0x107c70
     a2 = 0x2000;                                                // 0x0011dc78: addiu $a2, $zero, 0x2000
     g_001f19fc = s0;  // Global at 0x001f19fc                   // 0x0011dc7c: sw $s0, 0x14($s1)
     v1 = s0 + 0x2000;                                           // 0x0011dc80: addiu $v1, $s0, 0x2000
@@ -43,7 +43,7 @@ label_0x11dc90:
     if (v0 >= 0) goto label_0x11dc90;                           // 0x0011dca4: bgez $v0, 0x11dc90
     /* nop */                                                   // 0x0011dca8: nop 
     v0 = s3 + 0x1080;                                           // 0x0011dcac: addiu $v0, $s3, 0x1080
-    func_0011ef38();  // 0x11eee8                                // 0x0011dcb0: jal 0x11eee8
+    func_0011eee8();  // 11eee8                                // 0x0011dcb0: jal 0x11eee8
     g_00253040 = 0;  // Global at 0x00253040                    // 0x0011dcb4: sw $zero, 0x1fc0($v0)
     a1 = 0x12 << 16;                                            // 0x0011dcb8: lui $a1, 0x12
     a0 = 0xb;                                                   // 0x0011dcbc: addiu $a0, $zero, 0xb
@@ -55,7 +55,7 @@ label_0x11dc90:
     goto label_0x11dd54;                                        // 0x0011dce0: b 0x11dd54
     v0 = v0 | 0x9021;                                           // 0x0011dce4: ori $v0, $v0, 0x9021
 label_0x11dce8:
-    func_0011d378();  // 0x11d320                                // 0x0011dce8: jal 0x11d320
+    func_0011d320();  // 11d320                                // 0x0011dce8: jal 0x11d320
     g_80000008 = v1;  // Global at 0x80000008                   // 0x0011dcec: sw $v1, 8($v0)
     v1 = 0x1000 << 16;                                          // 0x0011dcf0: lui $v1, 0x1000
     v1 = v1 | 0x1010;                                           // 0x0011dcf8: ori $v1, $v1, 0x1010
@@ -67,16 +67,16 @@ label_0x11dce8:
     s0 = s0 | 0x300;                                            // 0x0011dd10: ori $s0, $s0, 0x300
     v0 = s0 & 0x80;                                             // 0x0011dd14: andi $v0, $s0, 0x80
     if (v0 != 0) goto label_0x11dd30;                           // 0x0011dd18: bnez $v0, 0x11dd30
-    func_0011dc00();  // 0x11dbf0                                // 0x0011dd20: jal 0x11dbf0
+    func_0011dbf0();  // 11dbf0                                // 0x0011dd20: jal 0x11dbf0
     s0 = s0 | 0xc80;                                            // 0x0011dd24: ori $s0, $s0, 0xc80
-    func_0011dc20();  // 0x11dc10                                // 0x0011dd28: jal 0x11dc10
+    func_0011dc10();  // 11dc10                                // 0x0011dd28: jal 0x11dc10
     a0 = 0 | 0xffff;                                            // 0x0011dd2c: ori $a0, $zero, 0xffff
 label_0x11dd30:
-    func_0011dc10();  // 0x11dc00                                // 0x0011dd30: jal 0x11dc00
-    func_00114e90();  // 0x114e28                                // 0x0011dd38: jal 0x114e28
+    func_0011dc00();  // 11dc00                                // 0x0011dd30: jal 0x11dc00
+    func_00114e28();  // 114e28                                // 0x0011dd38: jal 0x114e28
     a0 = 0xb;                                                   // 0x0011dd3c: addiu $a0, $zero, 0xb
     if (s1 == 0) goto label_0x11dd54;                           // 0x0011dd40: beqz $s1, 0x11dd54
-    func_0011d390();  // 0x11d378                                // 0x0011dd48: jal 0x11d378
+    func_0011d378();  // 11d378                                // 0x0011dd48: jal 0x11d378
     /* nop */                                                   // 0x0011dd4c: nop 
 label_0x11dd54:
     return;                                                     // 0x0011dd6c: jr $ra

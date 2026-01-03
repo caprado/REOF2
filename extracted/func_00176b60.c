@@ -8,7 +8,7 @@ void func_00176b60() {
     
     sp = sp + -0x20;                                            // 0x00176b60: addiu $sp, $sp, -0x20
     v0 = -1;                                                    // 0x00176b64: addiu $v0, $zero, -1
-    func_00169b10();  // 0x169af0                                // 0x00176b7c: jal 0x169af0
+    func_00169af0();  // 169af0                                // 0x00176b7c: jal 0x169af0
     *(uint32_t*)(s1) = v0;                                      // 0x00176b80: sw $v0, 0($s1)
     a1 = 0xff00 << 16;                                          // 0x00176b84: lui $a1, 0xff00
     if (v0 == 0) goto label_0x176ba8;                           // 0x00176b88: beqz $v0, 0x176ba8
@@ -24,7 +24,7 @@ label_0x176ba8:
     a0 = 0x23 << 16;                                            // 0x00176bbc: lui $a0, 0x23
     a0 = a0 + v0;                                               // 0x00176bc0: addu $a0, $a0, $v0
     a0 = g_00229370;  // Global at 0x00229370                   // 0x00176bc4: lw $a0, -0x6c90($a0)
-    func_0015b7b0();  // 0x15b740                                // 0x00176bc8: jal 0x15b740
+    func_0015b740();  // 15b740                                // 0x00176bc8: jal 0x15b740
     a2 = 0x3e8;                                                 // 0x00176bcc: addiu $a2, $zero, 0x3e8
     *(uint32_t*)(s1) = v0;                                      // 0x00176bd0: sw $v0, 0($s1)
 label_0x176bd8:

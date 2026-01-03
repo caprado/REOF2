@@ -23,7 +23,7 @@ void func_00191f20() {
     /* nop */                                                   // 0x00191f58: nop 
     /* nop */                                                   // 0x00191f5c: nop 
     sp = sp + -0x20;                                            // 0x00191f60: addiu $sp, $sp, -0x20
-    func_0018f4c0();  // 0x18f3a0                                // 0x00191f70: jal 0x18f3a0
+    func_0018f3a0();  // 18f3a0                                // 0x00191f70: jal 0x18f3a0
     a0 = sp + 0x10;                                             // 0x00191f74: addiu $a0, $sp, 0x10
     FPU_F0 = *(float*)((sp) + 0x10);  // Load float             // 0x00191f78: lwc1 $f0, 0x10($sp)
     *(float*)(t1) = FPU_F0;  // Store float                     // 0x00191f7c: swc1 $f0, 0($t1)

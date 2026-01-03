@@ -29,7 +29,7 @@ void func_0012da50() {
     v0 = v0 >> 5;                                               // 0x0012dae4: sra $v0, $v0, 5
     /* multiply: v0 * s2 -> hi:lo */                            // 0x0012dae8: mult $ac2, $v0, $s2
     s0 = v0 << 3;                                               // 0x0012daec: sll $s0, $v0, 3
-    func_00126e18();  // 0x126c40                                // 0x0012daf0: jal 0x126c40
+    func_00126c40();  // 126c40                                // 0x0012daf0: jal 0x126c40
     s0 = s0 + v0;                                               // 0x0012daf4: addu $s0, $s0, $v0
     s0 = s0 << 1;                                               // 0x0012daf8: sll $s0, $s0, 1
     a2 = 0x800;                                                 // 0x0012dafc: addiu $a2, $zero, 0x800
@@ -51,12 +51,12 @@ void func_0012da50() {
     v0 = v0 + v1;                                               // 0x0012db48: addu $v0, $v0, $v1
     *(uint32_t*)(s4) = v0;                                      // 0x0012db4c: sw $v0, 0($s4)
     a2 = *(int32_t*)(s3);                                       // 0x0012db54: lw $a2, 0($s3)
-    func_0012da50();  // 0x12da20                                // 0x0012db58: jal 0x12da20
+    func_0012da20();  // 12da20                                // 0x0012db58: jal 0x12da20
     a2 = s1 + a2;                                               // 0x0012db5c: addu $a2, $s1, $a2
     *(uint32_t*)(s5) = v0;                                      // 0x0012db64: sw $v0, 0($s5)
     a2 = *(int32_t*)(s3);                                       // 0x0012db68: lw $a2, 0($s3)
     a1 = *(int32_t*)(s4);                                       // 0x0012db6c: lw $a1, 0($s4)
-    func_0012da50();  // 0x12da20                                // 0x0012db70: jal 0x12da20
+    func_0012da20();  // 12da20                                // 0x0012db70: jal 0x12da20
     a2 = s7 + a2;                                               // 0x0012db74: addu $a2, $s7, $a2
     *(uint32_t*)(s6) = v0;                                      // 0x0012db78: sw $v0, 0($s6)
     return;                                                     // 0x0012dba0: jr $ra

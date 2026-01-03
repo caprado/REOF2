@@ -42,7 +42,7 @@ void func_00144f18() {
     /* nop */                                                   // 0x00144fc4: nop 
 label_0x144fc8:
     if (v0 == 0) goto label_0x145024;                           // 0x00144fc8: beqz $v0, 0x145024
-    func_0011d378();  // 0x11d320                                // 0x00144fd0: jal 0x11d320
+    func_0011d320();  // 11d320                                // 0x00144fd0: jal 0x11d320
     /* nop */                                                   // 0x00144fd4: nop 
     v1 = g_10000000;  // Global at 0x10000000                   // 0x00144fd8: lw $v1, 0($s1)
     a0 = 1 << 16;                                               // 0x00144fdc: lui $a0, 1
@@ -54,7 +54,7 @@ label_0x144fc8:
     v1 = v1 & s6;                                               // 0x00144ff4: and $v1, $v1, $s6
     if (v0 == 0) goto label_0x145008;                           // 0x00144ff8: beqz $v0, 0x145008
     g_10000000 = v1;  // Global at 0x10000000                   // 0x00144ffc: sw $v1, 0($s3)
-    func_0011d390();  // 0x11d378                                // 0x00145000: jal 0x11d378
+    func_0011d378();  // 11d378                                // 0x00145000: jal 0x11d378
     /* nop */                                                   // 0x00145004: nop 
 label_0x145008:
     g_10000000 = 0;  // Global at 0x10000000                    // 0x00145008: sw $zero, 0($fp)
@@ -67,7 +67,7 @@ label_0x145024:
     v0 = (v0 < 0x1389) ? 1 : 0;                                 // 0x00145024: slti $v0, $v0, 0x1389
     if (v0 != 0) goto label_0x14503c;                           // 0x00145028: bnez $v0, 0x14503c
     a0 = a0 + 1;                                                // 0x0014502c: addiu $a0, $a0, 1
-    func_00147d70();  // 0x147ca0                                // 0x00145030: jal 0x147ca0
+    func_00147ca0();  // 147ca0                                // 0x00145030: jal 0x147ca0
     a0 = *(int32_t*)((s7) + 0x870);                             // 0x00145034: lw $a0, 0x870($s7)
 label_0x14503c:
     v0 = g_10000000;  // Global at 0x10000000                   // 0x0014503c: lw $v0, 0($s2)

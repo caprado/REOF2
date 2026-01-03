@@ -37,7 +37,7 @@ void func_00122350() {
     if (v0 != 0) goto label_0x122414;                           // 0x001223f4: bnez $v0, 0x122414
     a0 = 0x1f << 16;                                            // 0x001223fc: lui $a0, 0x1f
     a0 = a0 + 0x1a18;                                           // 0x00122404: addiu $a0, $a0, 0x1a18
-    func_00107d30();  // 0x107c70                                // 0x00122408: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x00122408: jal 0x107c70
     a2 = 0x300;                                                 // 0x0012240c: addiu $a2, $zero, 0x300
     v0 = g_001f1a10;  // Global at 0x001f1a10                   // 0x00122410: lw $v0, 0($s0)
 label_0x122414:

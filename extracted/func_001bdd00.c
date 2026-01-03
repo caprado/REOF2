@@ -10,9 +10,9 @@ void func_001bdd00() {
     a1 = 0x24 << 16;                                            // 0x001bdd04: lui $a1, 0x24
     a0 = sp + 0x10;                                             // 0x001bdd0c: addiu $a0, $sp, 0x10
     a1 = &str_0023dfd0;  // "%s,,%s,PFS"                        // 0x001bdd10: addiu $a1, $a1, -0x2030
-    func_001bdf00();  // 0x1bdde0                                // 0x001bdd14: jal 0x1bdde0
+    func_001bdde0();  // 1bdde0                                // 0x001bdd14: jal 0x1bdde0
     a2 = 0x1234;                                                // 0x001bdd18: addiu $a2, $zero, 0x1234
-    func_001199b0();  // 0x119990                                // 0x001bdd1c: jal 0x119990
+    func_00119990();  // 119990                                // 0x001bdd1c: jal 0x119990
     a0 = sp + 0x10;                                             // 0x001bdd20: addiu $a0, $sp, 0x10
     return;                                                     // 0x001bdd28: jr $ra
     sp = sp + 0x110;                                            // 0x001bdd2c: addiu $sp, $sp, 0x110

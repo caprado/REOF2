@@ -11,7 +11,7 @@ void func_001afb80() {
     if (v0 == 0) goto label_0x1afba0;                           // 0x001afb90: beqz $v0, 0x1afba0
     goto label_0x1afbe4;                                        // 0x001afb98: b 0x1afbe4
 label_0x1afba0:
-    func_001afb40();  // 0x1afb10                                // 0x001afba0: jal 0x1afb10
+    func_001afb10();  // 1afb10                                // 0x001afba0: jal 0x1afb10
     /* nop */                                                   // 0x001afba4: nop 
     a0 = 1;                                                     // 0x001afba8: addiu $a0, $zero, 1
     if (v0 != a0) goto label_0x1afbc8;                          // 0x001afbac: bne $v0, $a0, 0x1afbc8

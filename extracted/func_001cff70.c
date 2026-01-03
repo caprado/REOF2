@@ -10,7 +10,7 @@ void func_001cff70() {
     a2 = 4;                                                     // 0x001cff74: addiu $a2, $zero, 4
     a1 = sp + 0x1c;                                             // 0x001cff7c: addiu $a1, $sp, 0x1c
     *(float*)((sp) + 0x1c) = FPU_F12;  // Store float           // 0x001cff80: swc1 $f12, 0x1c($sp)
-    func_001cfdf0();  // 0x1cfd80                                // 0x001cff84: jal 0x1cfd80
+    func_001cfd80();  // 1cfd80                                // 0x001cff84: jal 0x1cfd80
     *(float*)((sp) + 0x1c) = FPU_F12;  // Store float           // 0x001cff88: swc1 $f12, 0x1c($sp)
     return;                                                     // 0x001cff90: jr $ra
     sp = sp + 0x20;                                             // 0x001cff94: addiu $sp, $sp, 0x20

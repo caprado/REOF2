@@ -10,9 +10,9 @@ void func_001c9280() {
     v1 = *(int32_t*)(a0);                                       // 0x001c9290: lw $v1, 0($a0)
     at = (v1 < 0) ? 1 : 0;                                      // 0x001c9294: slt $at, $v1, $zero
     if (at != 0) goto label_0x1c92c8;                           // 0x001c9298: bnez $at, 0x1c92c8
-    func_001c7b00();  // 0x1c7ab0                                // 0x001c92a4: jal 0x1c7ab0
+    func_001c7ab0();  // 1c7ab0                                // 0x001c92a4: jal 0x1c7ab0
     v0 = -1;                                                    // 0x001c92b0: addiu $v0, $zero, -1
-    func_001c8c90();  // 0x1c8c80                                // 0x001c92b8: jal 0x1c8c80
+    func_001c8c80();  // 1c8c80                                // 0x001c92b8: jal 0x1c8c80
     *(uint32_t*)(s0) = v0;                                      // 0x001c92bc: sw $v0, 0($s0)
     goto label_0x1c92d0;                                        // 0x001c92c0: b 0x1c92d0
     /* nop */                                                   // 0x001c92c4: nop 

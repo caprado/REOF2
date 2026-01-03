@@ -14,7 +14,7 @@ void func_001b4550() {
     /* nop */                                                   // 0x001b4568: nop 
     /* nop */                                                   // 0x001b456c: nop 
     sp = sp + -0x10;                                            // 0x001b4570: addiu $sp, $sp, -0x10
-    func_0019c700();  // 0x19c640                                // 0x001b4578: jal 0x19c640
+    func_0019c640();  // 19c640                                // 0x001b4578: jal 0x19c640
     a0 = 0x2000;                                                // 0x001b457c: addiu $a0, $zero, 0x2000
     at = 0x31 << 16;                                            // 0x001b4580: lui $at, 0x31
     g_00313804 = v0;  // Global at 0x00313804                   // 0x001b4584: sh $v0, 0x3804($at)

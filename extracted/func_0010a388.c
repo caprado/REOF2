@@ -52,7 +52,7 @@ label_0x10a428:
     at = at | 0x425f;                                           // 0x0010a42c: ori $at, $at, 0x425f
     /* move to FPU: $at, $f20 */                                // 0x0010a430: mtc1 $at, $f20
 label_0x10a434:
-    func_0010a388();  // 0x10a2b8                                // 0x0010a434: jal 0x10a2b8
+    func_0010a2b8();  // 10a2b8                                // 0x0010a434: jal 0x10a2b8
     /* FPU: mov.s $f12, $f20 */                                 // 0x0010a438: mov.s $f12, $f20
     /* FPU: mul.s $f0, $f0, $f20 */                             // 0x0010a43c: mul.s $f0, $f0, $f20
 label_0x10a440:

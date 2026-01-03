@@ -49,7 +49,7 @@ label_0x1bdfa8:
     goto label_0x1be038;                                        // 0x001bdfa8: b 0x1be038
     g_003138a0 = v0;  // Global at 0x003138a0                   // 0x001bdfac: sb $v0, 0($s0)
 label_0x1bdfb0:
-    func_001adc60();  // 0x1adbe0                                // 0x001bdfb0: jal 0x1adbe0
+    func_001adbe0();  // 1adbe0                                // 0x001bdfb0: jal 0x1adbe0
     /* nop */                                                   // 0x001bdfb4: nop 
     func_0034d560();  // 0x34d560                               // 0x001bdfb8: jal 0x34d560
     /* nop */                                                   // 0x001bdfbc: nop 
@@ -65,7 +65,7 @@ label_0x1bdfd8:
     if (v0 != 0) goto label_0x1be038;                           // 0x001bdfe0: bnez $v0, 0x1be038
     g_003138a4 = v0;  // Global at 0x003138a4                   // 0x001bdfe4: sw $v0, 4($s0)
     at = 0x31 << 16;                                            // 0x001bdfe8: lui $at, 0x31
-    func_001bdd00();  // 0x1bdc10                                // 0x001bdfec: jal 0x1bdc10
+    func_001bdc10();  // 1bdc10                                // 0x001bdfec: jal 0x1bdc10
     a0 = g_003138a8;  // Global at 0x003138a8                   // 0x001bdff0: lw $a0, 0x38a8($at)
     at = 0x31 << 16;                                            // 0x001bdff4: lui $at, 0x31
     v1 = *(int32_t*)((gp) + -0x6328);                           // 0x001bdff8: lw $v1, -0x6328($gp)

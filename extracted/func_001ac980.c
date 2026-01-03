@@ -43,7 +43,7 @@ label_0x1aca0c:
     a2 = 0x600;                                                 // 0x001aca34: addiu $a2, $zero, 0x600
     v0 = a0 + a3;                                               // 0x001aca3c: addu $v0, $a0, $a3
     s3 = v0 + 0x10;                                             // 0x001aca40: addiu $s3, $v0, 0x10
-    func_00107d30();  // 0x107c70                                // 0x001aca44: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001aca44: jal 0x107c70
     v1 = *(int32_t*)((s4) + 0x24);                              // 0x001aca4c: lw $v1, 0x24($s4)
     goto label_0x1acabc;                                        // 0x001aca54: b 0x1acabc
     s6 = (unsigned)v1 >> 4;                                     // 0x001aca58: srl $s6, $v1, 4
@@ -91,17 +91,17 @@ label_0x1acae0:
     t2 = *(int32_t*)((s4) + 0x1c);                              // 0x001acaf8: lw $t2, 0x1c($s4)
     a1 = s5 + a1;                                               // 0x001acafc: addu $a1, $s5, $a1
     a3 = s5 + v1;                                               // 0x001acb00: addu $a3, $s5, $v1
-    func_001a7520();  // 0x1a73d0                                // 0x001acb04: jal 0x1a73d0
+    func_001a73d0();  // 1a73d0                                // 0x001acb04: jal 0x1a73d0
     t1 = s5 + v0;                                               // 0x001acb08: addu $t1, $s5, $v0
     if (s0 >= 0) goto label_0x1acb30;                           // 0x001acb10: bgez $s0, 0x1acb30
     a1 = 0xff;                                                  // 0x001acb1c: addiu $a1, $zero, 0xff
-    func_00107d30();  // 0x107c70                                // 0x001acb20: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001acb20: jal 0x107c70
     a2 = 0x600;                                                 // 0x001acb24: addiu $a2, $zero, 0x600
     goto label_0x1acb44;                                        // 0x001acb28: b 0x1acb44
 label_0x1acb30:
     iFlushCache();  // 0x114560                                 // 0x001acb30: jal 0x114560
     /* nop */                                                   // 0x001acb34: nop 
-    func_001a7910();  // 0x1a77d0                                // 0x001acb38: jal 0x1a77d0
+    func_001a77d0();  // 1a77d0                                // 0x001acb38: jal 0x1a77d0
     a0 = 1;                                                     // 0x001acb3c: addiu $a0, $zero, 1
 label_0x1acb44:
 label_0x1acb48:

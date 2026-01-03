@@ -11,13 +11,13 @@ void func_00114928() {
     s0 = 0x1f << 16;                                            // 0x00114948: lui $s0, 0x1f
     v0 = g_001f0330;  // Global at 0x001f0330                   // 0x0011494c: lw $v0, 0x330($s0)
     if (v0 != 0) goto label_0x114970;                           // 0x00114950: bnez $v0, 0x114970
-    func_00115bb0();  // 0x115af0                                // 0x00114958: jal 0x115af0
+    func_00115af0();  // 115af0                                // 0x00114958: jal 0x115af0
     /* nop */                                                   // 0x0011495c: nop 
     if (v0 == 0) goto label_0x114980;                           // 0x00114960: beqz $v0, 0x114980
     v0 = 1;                                                     // 0x00114964: addiu $v0, $zero, 1
     g_001f0330 = v0;  // Global at 0x001f0330                   // 0x00114968: sw $v0, 0x330($s0)
 label_0x114970:
-    func_00115af0();  // 0x115a20                                // 0x00114970: jal 0x115a20
+    func_00115a20();  // 115a20                                // 0x00114970: jal 0x115a20
     goto label_0x114988;                                        // 0x00114978: b 0x114988
 label_0x114980:
     v0 = -1;                                                    // 0x00114980: addiu $v0, $zero, -1

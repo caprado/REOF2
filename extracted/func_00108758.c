@@ -7,9 +7,9 @@ void func_00108758() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x30;                                            // 0x00108758: addiu $sp, $sp, -0x30
-    func_00108758();  // 0x1086f0                                // 0x00108780: jal 0x1086f0
+    func_001086f0();  // 1086f0                                // 0x00108780: jal 0x1086f0
     if (s0 != 0) goto label_0x1087b0;                           // 0x0010878c: bnez $s0, 0x1087b0
-    func_00107ea8();  // 0x107e00                                // 0x00108794: jal 0x107e00
+    func_00107e00();  // 107e00                                // 0x00108794: jal 0x107e00
     v1 = 1;                                                     // 0x0010879c: addiu $v1, $zero, 1
     *(uint32_t*)((t3) + 0x10) = v1;                             // 0x001087a4: sw $v1, 0x10($t3)
     goto label_0x1088cc;                                        // 0x001087a8: b 0x1088cc
@@ -19,7 +19,7 @@ label_0x1087b0:
     s0 = 1;                                                     // 0x001087c0: addiu $s0, $zero, 1
 label_0x1087c8:
     a1 = *(int32_t*)((s1) + 4);                                 // 0x001087c8: lw $a1, 4($s1)
-    func_00107ea8();  // 0x107e00                                // 0x001087cc: jal 0x107e00
+    func_00107e00();  // 107e00                                // 0x001087cc: jal 0x107e00
     t0 = s1 + 0x14;                                             // 0x001087d4: addiu $t0, $s1, 0x14
     t1 = s2 + 0x14;                                             // 0x001087dc: addiu $t1, $s2, 0x14
     *(uint32_t*)((t3) + 0xc) = s0;                              // 0x001087e0: sw $s0, 0xc($t3)

@@ -7,7 +7,7 @@ void func_00130be0() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x00130be0: addiu $sp, $sp, -0x20
-    func_001261b8();  // 0x1261a0                                // 0x00130bfc: jal 0x1261a0
+    func_001261a0();  // 1261a0                                // 0x00130bfc: jal 0x1261a0
     *(uint32_t*)((s2) + 4) = s0;                                // 0x00130c00: sw $s0, 4($s2)
     v1 = *(int32_t*)(s0);                                       // 0x00130c04: lw $v1, 0($s0)
     v0 = *(int32_t*)((v1) + 0x24);                              // 0x00130c0c: lw $v0, 0x24($v1)
@@ -17,7 +17,7 @@ void func_00130be0() {
     /* call function at address in v0 */                        // 0x00130c28: jalr $v0
     a1 = 1;                                                     // 0x00130c2c: addiu $a1, $zero, 1
     s1 = s1 + v0;                                               // 0x00130c30: addu $s1, $s1, $v0
-    func_001261d0();  // 0x1261b8                                // 0x00130c34: jal 0x1261b8
+    func_001261b8();  // 1261b8                                // 0x00130c34: jal 0x1261b8
     *(uint32_t*)((s2) + 0x3c) = s1;                             // 0x00130c38: sw $s1, 0x3c($s2)
     v0 = *(int32_t*)((s2) + 0x3c);                              // 0x00130c3c: lw $v0, 0x3c($s2)
     *(uint32_t*)((s2) + 0x18) = v0;                             // 0x00130c44: sw $v0, 0x18($s2)

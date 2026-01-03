@@ -11,7 +11,7 @@ void func_0017b1f0() {
     if (v0 != 0) goto label_0x17b234;                           // 0x0017b21c: bnez $v0, 0x17b234
     s0 = *(int32_t*)(s2);                                       // 0x0017b220: lw $s0, 0($s2)
     a1 = 0x23 << 16;                                            // 0x0017b224: lui $a1, 0x23
-    func_0017cae0();  // 0x17cad8                                // 0x0017b228: jal 0x17cad8
+    func_0017cad8();  // 17cad8                                // 0x0017b228: jal 0x17cad8
     a1 = &str_002296b0;  // "E201181: SFX_CnvFrmArgb8888 : frmfmt is not support." // 0x0017b22c: addiu $a1, $a1, -0x6950
     *(uint32_t*)((s1) + 4) = v0;                                // 0x0017b230: sw $v0, 4($s1)
 label_0x17b234:
@@ -64,39 +64,39 @@ label_0x17b340:
     goto label_0x17b49c;                                        // 0x0017b35c: b 0x17b49c
     /* nop */                                                   // 0x0017b364: nop 
 label_0x17b368:
-    func_0017d200();  // 0x17d128                                // 0x0017b368: jal 0x17d128
+    func_0017d128();  // 17d128                                // 0x0017b368: jal 0x17d128
     /* nop */                                                   // 0x0017b36c: nop 
     v1 = 1;                                                     // 0x0017b370: addiu $v1, $zero, 1
     if (v0 == v1) goto label_0x17b3a0;                          // 0x0017b374: beq $v0, $v1, 0x17b3a0
     return func_0017b620();  // Tail call                        // 0x0017b398: j 0x17b548
     sp = sp + 0x20;                                             // 0x0017b39c: addiu $sp, $sp, 0x20
 label_0x17b3a0:
-    func_0017c3c8();  // 0x17c250                                // 0x0017b3a4: jal 0x17c250
+    func_0017c250();  // 17c250                                // 0x0017b3a4: jal 0x17c250
     a2 = 0x15;                                                  // 0x0017b3a8: addiu $a2, $zero, 0x15
     a3 = 1;                                                     // 0x0017b3c4: addiu $a3, $zero, 1
     return func_0017b620();  // Tail call                        // 0x0017b3cc: j 0x17b548
     sp = sp + 0x20;                                             // 0x0017b3d0: addiu $sp, $sp, 0x20
     /* nop */                                                   // 0x0017b3d4: nop 
 label_0x17b3d8:
-    func_0017c3c8();  // 0x17c250                                // 0x0017b3d8: jal 0x17c250
+    func_0017c250();  // 17c250                                // 0x0017b3d8: jal 0x17c250
     a2 = 0x15;                                                  // 0x0017b3dc: addiu $a2, $zero, 0x15
     a3 = 1;                                                     // 0x0017b3f8: addiu $a3, $zero, 1
     return func_0017b620();  // Tail call                        // 0x0017b400: j 0x17b548
     sp = sp + 0x20;                                             // 0x0017b404: addiu $sp, $sp, 0x20
 label_0x17b408:
-    func_0017c3c8();  // 0x17c250                                // 0x0017b408: jal 0x17c250
+    func_0017c250();  // 17c250                                // 0x0017b408: jal 0x17c250
     a2 = 2;                                                     // 0x0017b40c: addiu $a2, $zero, 2
     a3 = 1;                                                     // 0x0017b428: addiu $a3, $zero, 1
     return func_0017b620();  // Tail call                        // 0x0017b430: j 0x17b548
     sp = sp + 0x20;                                             // 0x0017b434: addiu $sp, $sp, 0x20
 label_0x17b438:
-    func_0017c3c8();  // 0x17c250                                // 0x0017b438: jal 0x17c250
+    func_0017c250();  // 17c250                                // 0x0017b438: jal 0x17c250
     a2 = 3;                                                     // 0x0017b43c: addiu $a2, $zero, 3
     a3 = 1;                                                     // 0x0017b458: addiu $a3, $zero, 1
     return func_0017b620();  // Tail call                        // 0x0017b460: j 0x17b548
     sp = sp + 0x20;                                             // 0x0017b464: addiu $sp, $sp, 0x20
 label_0x17b468:
-    func_0017c3c8();  // 0x17c250                                // 0x0017b468: jal 0x17c250
+    func_0017c250();  // 17c250                                // 0x0017b468: jal 0x17c250
     a2 = 1;                                                     // 0x0017b46c: addiu $a2, $zero, 1
     return func_0017b6e0();  // Tail call                        // 0x0017b48c: j 0x17b620
     sp = sp + 0x20;                                             // 0x0017b490: addiu $sp, $sp, 0x20

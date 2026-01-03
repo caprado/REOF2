@@ -26,7 +26,7 @@ label_0x15b740:
     if (a0 != 0) v0 = v1;                                       // 0x0015b788: movn $v0, $v1, $a0
     /* nop */                                                   // 0x0015b78c: nop 
 label_0x15b790:
-    func_0010fe58();  // 0x10f7c0                                // 0x0015b790: jal 0x10f7c0
+    func_0010f7c0();  // 10f7c0                                // 0x0015b790: jal 0x10f7c0
 label_0x15b7a0:
     return;                                                     // 0x0015b7a4: jr $ra
     sp = sp + 0x10;                                             // 0x0015b7a8: addiu $sp, $sp, 0x10

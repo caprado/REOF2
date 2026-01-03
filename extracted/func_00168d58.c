@@ -10,14 +10,14 @@ void func_00168d58() {
     uint32_t local_0;
     
     sp = sp + -0x20;                                            // 0x00168d58: addiu $sp, $sp, -0x20
-    func_00178e78();  // 0x178db0                                // 0x00168d64: jal 0x178db0
+    func_00178db0();  // 178db0                                // 0x00168d64: jal 0x178db0
     /* nop */                                                   // 0x00168d68: nop 
     if (s0 == 0) goto label_0x168d9c;                           // 0x00168d74: beqz $s0, 0x168d9c
-    func_001790b8();  // 0x178fc8                                // 0x00168d7c: jal 0x178fc8
+    func_00178fc8();  // 178fc8                                // 0x00168d7c: jal 0x178fc8
     /* nop */                                                   // 0x00168d80: nop 
     v1 = local_0;                                               // 0x00168d88: lw $v1, 0($sp)
     if (v0 == 0) v1 = 0;                                        // 0x00168d8c: movz $v1, $zero, $v0
-    func_00178ec8();  // 0x178e78                                // 0x00168d90: jal 0x178e78
+    func_00178e78();  // 178e78                                // 0x00168d90: jal 0x178e78
     local_0 = v1;                                               // 0x00168d94: sw $v1, 0($sp)
     v0 = local_0;                                               // 0x00168d98: lw $v0, 0($sp)
 label_0x168d9c:

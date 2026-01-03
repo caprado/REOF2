@@ -7,7 +7,7 @@ void func_0013f748() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x30;                                            // 0x0013f748: addiu $sp, $sp, -0x30
-    func_0013ef30();  // 0x13ef18                                // 0x0013f76c: jal 0x13ef18
+    func_0013ef18();  // 13ef18                                // 0x0013f76c: jal 0x13ef18
     if (s2 != 0) goto label_0x13f7f8;                           // 0x0013f774: bnez $s2, 0x13f7f8
     v0 = 1;                                                     // 0x0013f778: addiu $v0, $zero, 1
     v1 = *(int32_t*)((s0) + 0x14);                              // 0x0013f77c: lw $v1, 0x14($s0)
@@ -92,7 +92,7 @@ label_0x13f898:
     if (v0 <= 0) goto label_0x13fa00;                           // 0x0013f8d8: blez $v0, 0x13fa00
     v0 = *(int32_t*)(s1);                                       // 0x0013f8e0: lw $v0, 0($s1)
     /* beqzl $v0, 0x13fa04 */                                   // 0x0013f8e4: beqzl $v0, 0x13fa04
-    func_0013ef30();  // 0x13ef18                                // 0x0013f8ec: jal 0x13ef18
+    func_0013ef18();  // 13ef18                                // 0x0013f8ec: jal 0x13ef18
     /* nop */                                                   // 0x0013f8f0: nop 
     v0 = 1;                                                     // 0x0013f8f4: addiu $v0, $zero, 1
     if (s2 != v0) goto label_0x13f9a0;                          // 0x0013f8f8: bne $s2, $v0, 0x13f9a0
@@ -113,7 +113,7 @@ label_0x13f898:
     v0 = (v1 < a2) ? 1 : 0;                                     // 0x0013f934: slt $v0, $v1, $a2
     a0 = a0 + a3;                                               // 0x0013f938: addu $a0, $a0, $a3
     if (v0 != 0) a2 = v1;                                       // 0x0013f93c: movn $a2, $v1, $v0
-    func_00107b68();  // 0x107ab8                                // 0x0013f940: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x0013f940: jal 0x107ab8
     a0 = t1 + a0;                                               // 0x0013f944: addu $a0, $t1, $a0
     a1 = *(int32_t*)(s1);                                       // 0x0013f948: lw $a1, 0($s1)
     t1 = *(int32_t*)((s0) + 0x1c);                              // 0x0013f94c: lw $t1, 0x1c($s0)
@@ -129,7 +129,7 @@ label_0x13f950:
     v0 = (t0 < a2) ? 1 : 0;                                     // 0x0013f974: slt $v0, $t0, $a2
     if (v0 != 0) a2 = t0;                                       // 0x0013f978: movn $a2, $t0, $v0
     a1 = a3 - a2;                                               // 0x0013f97c: subu $a1, $a3, $a2
-    func_00107b68();  // 0x107ab8                                // 0x0013f980: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x0013f980: jal 0x107ab8
     a1 = a0 + a1;                                               // 0x0013f984: addu $a1, $a0, $a1
     t0 = *(int32_t*)((s1) + 4);                                 // 0x0013f988: lw $t0, 4($s1)
     v0 = *(int32_t*)((s0) + 0x34);                              // 0x0013f98c: lw $v0, 0x34($s0)

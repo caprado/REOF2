@@ -37,7 +37,7 @@ label_0x1af074:
     goto label_0x1af074;                                        // 0x001af088: b 0x1af074
     /* nop */                                                   // 0x001af08c: nop 
 label_0x1af090:
-    func_0018da80();  // 0x18da60                                // 0x001af090: jal 0x18da60
+    func_0018da60();  // 18da60                                // 0x001af090: jal 0x18da60
     /* nop */                                                   // 0x001af094: nop 
     v1 = *(int32_t*)((gp) + -0x63c8);                           // 0x001af098: lw $v1, -0x63c8($gp)
     at = (v1 < s1) ? 1 : 0;                                     // 0x001af09c: slt $at, $v1, $s1

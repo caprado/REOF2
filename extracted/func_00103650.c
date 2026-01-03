@@ -14,7 +14,7 @@ void func_00103650() {
     goto label_0x10367c;                                        // 0x00103668: b 0x10367c
     v0 = v0 & 1;                                                // 0x0010366c: andi $v0, $v0, 1
 label_0x103670:
-    func_00102f98();  // 0x102f28                                // 0x00103670: jal 0x102f28
+    func_00102f28();  // 102f28                                // 0x00103670: jal 0x102f28
     /* nop */                                                   // 0x00103674: nop 
 label_0x10367c:
     return;                                                     // 0x00103680: jr $ra

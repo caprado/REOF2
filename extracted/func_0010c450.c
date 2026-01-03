@@ -13,9 +13,9 @@ void func_0010c450() {
     sp = sp + 0x10;                                             // 0x0010c470: addiu $sp, $sp, 0x10
     /* nop */                                                   // 0x0010c474: nop 
     sp = sp + -0x10;                                            // 0x0010c478: addiu $sp, $sp, -0x10
-    func_0010c4a0();  // 0x10c450                                // 0x0010c480: jal 0x10c450
+    func_0010c450();  // 10c450                                // 0x0010c480: jal 0x10c450
     /* nop */                                                   // 0x0010c484: nop 
-    func_00112170();  // 0x112118                                // 0x0010c48c: jal 0x112118
+    func_00112118();  // 112118                                // 0x0010c48c: jal 0x112118
     /* nop */                                                   // 0x0010c490: nop 
     return;                                                     // 0x0010c498: jr $ra
     sp = sp + 0x10;                                             // 0x0010c49c: addiu $sp, $sp, 0x10

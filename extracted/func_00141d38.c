@@ -9,15 +9,15 @@ void func_00141d38() {
     a0 = 0x21 << 16;                                            // 0x00141d38: lui $a0, 0x21
     sp = sp + -0x10;                                            // 0x00141d3c: addiu $sp, $sp, -0x10
     a0 = a0 + 0xc18;                                            // 0x00141d44: addiu $a0, $a0, 0xc18
-    func_00107d30();  // 0x107c70                                // 0x00141d4c: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x00141d4c: jal 0x107c70
     a2 = 0x20;                                                  // 0x00141d50: addiu $a2, $zero, 0x20
     a0 = 0x25 << 16;                                            // 0x00141d54: lui $a0, 0x25
     a0 = a0 + 0x6160;                                           // 0x00141d58: addiu $a0, $a0, 0x6160
-    func_00107d30();  // 0x107c70                                // 0x00141d60: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x00141d60: jal 0x107c70
     a2 = 8;                                                     // 0x00141d64: addiu $a2, $zero, 8
     a0 = 0x25 << 16;                                            // 0x00141d68: lui $a0, 0x25
     a0 = a0 + 0x6168;                                           // 0x00141d6c: addiu $a0, $a0, 0x6168
-    func_00107d30();  // 0x107c70                                // 0x00141d74: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x00141d74: jal 0x107c70
     a2 = 8;                                                     // 0x00141d78: addiu $a2, $zero, 8
     v1 = 0x21 << 16;                                            // 0x00141d7c: lui $v1, 0x21
     v1 = v1 + 0xbf8;                                            // 0x00141d80: addiu $v1, $v1, 0xbf8

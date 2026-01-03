@@ -34,7 +34,7 @@ label_0x127cd8:
     a0 = 0x1f << 16;                                            // 0x00127cf8: lui $a0, 0x1f
     sp = sp + -0x10;                                            // 0x00127cfc: addiu $sp, $sp, -0x10
     a0 = a0 + 0x2db8;                                           // 0x00127d04: addiu $a0, $a0, 0x2db8
-    func_00107d30();  // 0x107c70                                // 0x00127d0c: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x00127d0c: jal 0x107c70
     a2 = 0x100;                                                 // 0x00127d10: addiu $a2, $zero, 0x100
     v1 = 0x1f << 16;                                            // 0x00127d14: lui $v1, 0x1f
     v0 = 0x1f << 16;                                            // 0x00127d1c: lui $v0, 0x1f

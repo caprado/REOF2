@@ -45,7 +45,7 @@ label_0x1ad0a0:
     v0 = g_002a5243;  // Global at 0x002a5243                   // 0x001ad0bc: lbu $v0, 3($s1)
     v0 = v0 << 4;                                               // 0x001ad0c4: sll $v0, $v0, 4
     v0 = s1 + v0;                                               // 0x001ad0c8: addu $v0, $s1, $v0
-    func_00107b68();  // 0x107ab8                                // 0x001ad0cc: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x001ad0cc: jal 0x107ab8
     a0 = v0 + 0x24;                                             // 0x001ad0d0: addiu $a0, $v0, 0x24
     v0 = g_002a5243;  // Global at 0x002a5243                   // 0x001ad0d4: lbu $v0, 3($s1)
     v0 = v0 << 4;                                               // 0x001ad0d8: sll $v0, $v0, 4

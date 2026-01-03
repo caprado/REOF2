@@ -27,7 +27,7 @@ void func_001626b8() {
     return func_0013d018();  // Tail call                        // 0x00162728: j 0x13cf80
     sp = sp + 0x10;                                             // 0x0016272c: addiu $sp, $sp, 0x10
     sp = sp + -0x10;                                            // 0x00162730: addiu $sp, $sp, -0x10
-    func_0013cd90();  // 0x13cd60                                // 0x00162738: jal 0x13cd60
+    func_0013cd60();  // 13cd60                                // 0x00162738: jal 0x13cd60
     /* nop */                                                   // 0x0016273c: nop 
     v0 = v0 ^ 3;                                                // 0x00162740: xori $v0, $v0, 3
     v0 = ((unsigned)v0 < (unsigned)1) ? 1 : 0;                  // 0x00162748: sltiu $v0, $v0, 1

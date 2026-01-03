@@ -18,7 +18,7 @@ void func_00177068() {
     s1 = *(int32_t*)((v1) + 0x238);                             // 0x00177090: lw $s1, 0x238($v1)
     v1 = -5;                                                    // 0x00177094: addiu $v1, $zero, -5
     if (s1 == v1) goto label_0x1770ec;                          // 0x00177098: beq $s1, $v1, 0x1770ec
-    func_00176060();  // 0x176010                                // 0x001770a4: jal 0x176010
+    func_00176010();  // 176010                                // 0x001770a4: jal 0x176010
     a2 = sp + 4;                                                // 0x001770a8: addiu $a2, $sp, 4
     v1 = 0 | 0xea24;                                            // 0x001770ac: ori $v1, $zero, 0xea24
     a0 = s0 << 5;                                               // 0x001770b0: sll $a0, $s0, 5
@@ -32,7 +32,7 @@ void func_00177068() {
     a0 = a0 << 4;                                               // 0x001770d4: sll $a0, $a0, 4
     /* divide: a0 / v1 -> hi:lo */                              // 0x001770d8: div $zero, $a0, $v1
     /* mflo $a0 */                                              // 0x001770dc
-    func_0014fef0();  // 0x14fea8                                // 0x001770e0: jal 0x14fea8
+    func_0014fea8();  // 14fea8                                // 0x001770e0: jal 0x14fea8
     a0 = s1 + a0;                                               // 0x001770e4: addu $a0, $s1, $a0
     v0 = ((unsigned)0 < (unsigned)v0) ? 1 : 0;                  // 0x001770e8: sltu $v0, $zero, $v0
 label_0x1770ec:

@@ -27,7 +27,7 @@ void func_001bfb20() {
     a0 = a0 + 0x6010;                                           // 0x001bfb68: addiu $a0, $a0, 0x6010
     /* nop */                                                   // 0x001bfb6c: nop 
     sp = sp + -0x10;                                            // 0x001bfb70: addiu $sp, $sp, -0x10
-    func_001ab1d0();  // 0x1ab180                                // 0x001bfb78: jal 0x1ab180
+    func_001ab180();  // 1ab180                                // 0x001bfb78: jal 0x1ab180
     /* nop */                                                   // 0x001bfb7c: nop 
     at = 0x31 << 16;                                            // 0x001bfb80: lui $at, 0x31
     v0 = 0x22 << 16;                                            // 0x001bfb84: lui $v0, 0x22
@@ -39,7 +39,7 @@ void func_001bfb20() {
     v0 = g_0021cf30;  // Global at 0x0021cf30                   // 0x001bfb9c: lw $v0, 0($v0)
     /* call function at address in v0 */                        // 0x001bfba0: jalr $v0
     a0 = a0 + 0x5fc0;                                           // 0x001bfba4: addiu $a0, $a0, 0x5fc0
-    func_001ab230();  // 0x1ab1d0                                // 0x001bfba8: jal 0x1ab1d0
+    func_001ab1d0();  // 1ab1d0                                // 0x001bfba8: jal 0x1ab1d0
     /* nop */                                                   // 0x001bfbac: nop 
     return;                                                     // 0x001bfbb4: jr $ra
     sp = sp + 0x10;                                             // 0x001bfbb8: addiu $sp, $sp, 0x10

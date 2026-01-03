@@ -12,10 +12,10 @@ void func_00111a58() {
     
     sp = sp + -0xb0;                                            // 0x00111a58: addiu $sp, $sp, -0xb0
     a0 = sp + 0x60;                                             // 0x00111a60: addiu $a0, $sp, 0x60
-    func_00111738();  // 0x111678                                // 0x00111a88: jal 0x111678
+    func_00111678();  // 111678                                // 0x00111a88: jal 0x111678
     s0 = sp + 0x20;                                             // 0x00111a90: addiu $s0, $sp, 0x20
     a0 = sp + 0x68;                                             // 0x00111a94: addiu $a0, $sp, 0x68
-    func_00111738();  // 0x111678                                // 0x00111a98: jal 0x111678
+    func_00111678();  // 111678                                // 0x00111a98: jal 0x111678
     a0 = local_0;                                               // 0x00111aa0: lw $a0, 0($sp)
     v0 = ((unsigned)a0 < (unsigned)2) ? 1 : 0;                  // 0x00111aa4: sltiu $v0, $a0, 2
     if (v0 != 0) goto label_0x111b0c;                           // 0x00111aa8: bnez $v0, 0x111b0c
@@ -66,10 +66,10 @@ label_0x111b50:
     s5 = 0xffff << 16;                                          // 0x00111b50: lui $s5, 0xffff
     s0 = s3 & s5;                                               // 0x00111b5c: and $s0, $s3, $s5
     s6 = s2 & s5;                                               // 0x00111b64: and $s6, $s2, $s5
-    func_0010f7c0();  // 0x10f748                                // 0x00111b70: jal 0x10f748
-    func_0010f7c0();  // 0x10f748                                // 0x00111b80: jal 0x10f748
-    func_0010f7c0();  // 0x10f748                                // 0x00111b90: jal 0x10f748
-    func_0010f7c0();  // 0x10f748                                // 0x00111ba4: jal 0x10f748
+    func_0010f748();  // 10f748                                // 0x00111b70: jal 0x10f748
+    func_0010f748();  // 10f748                                // 0x00111b80: jal 0x10f748
+    func_0010f748();  // 10f748                                // 0x00111b90: jal 0x10f748
+    func_0010f748();  // 10f748                                // 0x00111ba4: jal 0x10f748
     s1 = ((unsigned)s0 < (unsigned)s1) ? 1 : 0;                 // 0x00111bac: sltu $s1, $s0, $s1
     s0 = s0 & s5;                                               // 0x00111bbc: and $s0, $s0, $s5
     v0 = local_4;                                               // 0x00111bc8: lw $v0, 4($sp)
@@ -120,7 +120,7 @@ label_0x111ca0:
     local_40 = v0;                                              // 0x00111ca4: sw $v0, 0x40($sp)
     a0 = sp + 0x40;                                             // 0x00111ca8: addiu $a0, $sp, 0x40
 label_0x111cac:
-    func_00111678();  // 0x1115a0                                // 0x00111cac: jal 0x1115a0
+    func_001115a0();  // 1115a0                                // 0x00111cac: jal 0x1115a0
     /* nop */                                                   // 0x00111cb0: nop 
     return;                                                     // 0x00111cd4: jr $ra
     sp = sp + 0xb0;                                             // 0x00111cd8: addiu $sp, $sp, 0xb0

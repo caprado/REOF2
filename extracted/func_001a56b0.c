@@ -24,7 +24,7 @@ label_0x1a56f8:
     v0 = sp + 0x60;                                             // 0x001a56fc: addiu $v0, $sp, 0x60
     a0 = 0x2a << 16;                                            // 0x001a5700: lui $a0, 0x2a
     a2 = v0 - v1;                                               // 0x001a5704: subu $a2, $v0, $v1
-    func_0010f580();  // 0x10f528                                // 0x001a5708: jal 0x10f528
+    func_0010f528();  // 10f528                                // 0x001a5708: jal 0x10f528
     a0 = a0 + 0x520;                                            // 0x001a570c: addiu $a0, $a0, 0x520
     v0 = 1;                                                     // 0x001a5714: addiu $v0, $zero, 1
     return;                                                     // 0x001a5718: jr $ra

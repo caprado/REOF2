@@ -52,7 +52,7 @@ label_0x14f558:
     a3 = local_0;                                               // 0x0014f560: lw $a3, 0($sp)
     a2 = s1 + a2;                                               // 0x0014f568: addu $a2, $s1, $a2
     s1 = s1 + s3;                                               // 0x0014f56c: addu $s1, $s1, $s3
-    func_0014f370();  // 0x14cc78                                // 0x0014f570: jal 0x14cc78
+    func_0014cc78();  // 14cc78                                // 0x0014f570: jal 0x14cc78
     s0 = s0 + -1;                                               // 0x0014f574: addiu $s0, $s0, -1
     if (s0 != 0) goto label_0x14f558;                           // 0x0014f578: bnez $s0, 0x14f558
     s2 = s2 + 0x180;                                            // 0x0014f57c: addiu $s2, $s2, 0x180

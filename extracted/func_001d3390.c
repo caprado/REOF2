@@ -10,7 +10,7 @@ void func_001d3390() {
     sp = sp + -0x10;                                            // 0x001d3394: addiu $sp, $sp, -0x10
     v0 = a2 & v0;                                               // 0x001d3398: and $v0, $a2, $v0
     if (v0 == 0) goto label_0x1d33b4;                           // 0x001d339c: beqz $v0, 0x1d33b4
-    func_001a9b80();  // 0x1a9b30                                // 0x001d33a4: jal 0x1a9b30
+    func_001a9b30();  // 1a9b30                                // 0x001d33a4: jal 0x1a9b30
     /* nop */                                                   // 0x001d33a8: nop 
     goto label_0x1d33d4;                                        // 0x001d33ac: b 0x1d33d4
 label_0x1d33b4:
@@ -19,7 +19,7 @@ label_0x1d33b4:
     goto label_0x1d33d0;                                        // 0x001d33c0: b 0x1d33d0
     /* nop */                                                   // 0x001d33c4: nop 
 label_0x1d33c8:
-    func_001a9bf0();  // 0x1a9bd0                                // 0x001d33c8: jal 0x1a9bd0
+    func_001a9bd0();  // 1a9bd0                                // 0x001d33c8: jal 0x1a9bd0
     /* nop */                                                   // 0x001d33cc: nop 
 label_0x1d33d0:
 label_0x1d33d4:

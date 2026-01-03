@@ -9,19 +9,19 @@ void func_001b1a60() {
     sp = sp + -0x20;                                            // 0x001b1a60: addiu $sp, $sp, -0x20
     a0 = 0x4c << 16;                                            // 0x001b1a64: lui $a0, 0x4c
     a0 = a0 + 0xde0;                                            // 0x001b1a6c: addiu $a0, $a0, 0xde0
-    func_001b1950();  // 0x1b18f0                                // 0x001b1a70: jal 0x1b18f0
+    func_001b18f0();  // 1b18f0                                // 0x001b1a70: jal 0x1b18f0
     a0 = 0x4c << 16;                                            // 0x001b1a78: lui $a0, 0x4c
-    func_001b1950();  // 0x1b18f0                                // 0x001b1a7c: jal 0x1b18f0
+    func_001b18f0();  // 1b18f0                                // 0x001b1a7c: jal 0x1b18f0
     a0 = a0 + -0x1170;                                          // 0x001b1a80: addiu $a0, $a0, -0x1170
     a0 = 0x4c << 16;                                            // 0x001b1a84: lui $a0, 0x4c
-    func_001b1950();  // 0x1b18f0                                // 0x001b1a88: jal 0x1b18f0
+    func_001b18f0();  // 1b18f0                                // 0x001b1a88: jal 0x1b18f0
     a0 = a0 + -0x30c0;                                          // 0x001b1a8c: addiu $a0, $a0, -0x30c0
     v1 = 0x1f48;                                                // 0x001b1a94: addiu $v1, $zero, 0x1f48
 label_0x1b1a98:
     v0 = 0x4b << 16;                                            // 0x001b1a98: lui $v0, 0x4b
     /* multiply: s0 * v1 -> hi:lo */                            // 0x001b1a9c: mult $ac3, $s0, $v1
     v0 = v0 + -0x2b00;                                          // 0x001b1aa0: addiu $v0, $v0, -0x2b00
-    func_001b1950();  // 0x1b18f0                                // 0x001b1aa4: jal 0x1b18f0
+    func_001b18f0();  // 1b18f0                                // 0x001b1aa4: jal 0x1b18f0
     a0 = v0 + v1;                                               // 0x001b1aa8: addu $a0, $v0, $v1
     s0 = s0 + 1;                                                // 0x001b1aac: addiu $s0, $s0, 1
     v1 = (s0 < 8) ? 1 : 0;                                      // 0x001b1ab0: slti $v1, $s0, 8

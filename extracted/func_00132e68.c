@@ -28,7 +28,7 @@ void func_00132e68() {
     t2 = sp + 0x15;                                             // 0x00132ec0: addiu $t2, $sp, 0x15
     t3 = sp + 0x20;                                             // 0x00132ec4: addiu $t3, $sp, 0x20
     local_0 = v0;                                               // 0x00132ec8: sw $v0, 0($sp)
-    func_00126558();  // 0x126458                                // 0x00132ecc: jal 0x126458
+    func_00126458();  // 126458                                // 0x00132ecc: jal 0x126458
     local_8 = v1;                                               // 0x00132ed0: sw $v1, 8($sp)
     if (v0 >= 0) goto label_0x132ee8;                           // 0x00132ed4: bgez $v0, 0x132ee8
     v1 = local_10;                                              // 0x00132ed8: lh $v1, 0x10($sp)

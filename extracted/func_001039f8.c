@@ -9,7 +9,7 @@ void func_001039f8() {
     sp = sp + -0x20;                                            // 0x001039f8: addiu $sp, $sp, -0x20
     v0 = 0x34 << 16;                                            // 0x001039fc: lui $v0, 0x34
     s1 = v0 + 0x1cc0;                                           // 0x00103a0c: addiu $s1, $v0, 0x1cc0
-    func_001149d8();  // 0x1149c8                                // 0x00103a18: jal 0x1149c8
+    func_001149c8();  // 1149c8                                // 0x00103a18: jal 0x1149c8
     g_00341cc0 = 0;  // Global at 0x00341cc0                    // 0x00103a1c: sw $zero, 0($s1)
     v1 = -1;                                                    // 0x00103a24: addiu $v1, $zero, -1
     if (a0 != v1) goto label_0x103a40;                          // 0x00103a28: bnel $a0, $v1, 0x103a40

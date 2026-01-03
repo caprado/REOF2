@@ -17,7 +17,7 @@ void func_0011daa8() {
     s0 = v0 + 0x19a8;                                           // 0x0011dadc: addiu $s0, $v0, 0x19a8
     a0 = g_001f19a8;  // Global at 0x001f19a8                   // 0x0011dae0: lw $a0, 0x19a8($v0)
     a1 = g_001f19ac;  // Global at 0x001f19ac                   // 0x0011dae4: lw $a1, 4($s0)
-    func_0011da50();  // 0x11da40                                // 0x0011dae8: jal 0x11da40
+    func_0011da40();  // 11da40                                // 0x0011dae8: jal 0x11da40
     s1 = s0 + 0x10;                                             // 0x0011daec: addiu $s1, $s0, 0x10
     a1 = 0x1f << 16;                                            // 0x0011daf0: lui $a1, 0x1f
     a0 = 0x8007 << 16;                                          // 0x0011daf4: lui $a0, 0x8007
@@ -35,13 +35,13 @@ void func_0011daa8() {
     iFlushCache();  // 0x114560                                 // 0x0011db28: jal 0x114560
     a0 = 2;                                                     // 0x0011db2c: addiu $a0, $zero, 2
     a0 = g_001f19b0;  // Global at 0x001f19b0                   // 0x0011db30: lw $a0, 8($s0)
-    func_0011da50();  // 0x11da40                                // 0x0011db34: jal 0x11da40
+    func_0011da40();  // 11da40                                // 0x0011db34: jal 0x11da40
     a1 = g_001f19b4;  // Global at 0x001f19b4                   // 0x0011db38: lw $a1, 0xc($s0)
     a0 = g_001f19b8;  // Global at 0x001f19b8                   // 0x0011db3c: lw $a0, 0($s1)
-    func_0011daa8();  // 0x11da98                                // 0x0011db40: jal 0x11da98
+    func_0011da98();  // 11da98                                // 0x0011db40: jal 0x11da98
     s2 = s2 + 1;                                                // 0x0011db44: addiu $s2, $s2, 1
     a0 = g_001f19b8;  // Global at 0x001f19b8                   // 0x0011db48: lw $a0, 0($s1)
-    func_0011da50();  // 0x11da40                                // 0x0011db50: jal 0x11da40
+    func_0011da40();  // 11da40                                // 0x0011db50: jal 0x11da40
     s1 = s1 + 8;                                                // 0x0011db54: addiu $s1, $s1, 8
     v0 = ((unsigned)s2 < (unsigned)8) ? 1 : 0;                  // 0x0011db58: sltiu $v0, $s2, 8
     /* bnezl $v0, 0x11db40 */                                   // 0x0011db5c: bnezl $v0, 0x11db40

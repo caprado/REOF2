@@ -9,7 +9,7 @@ void func_00161740() {
     sp = sp + -0x10;                                            // 0x00161740: addiu $sp, $sp, -0x10
     v0 = *(int32_t*)((s0) + 0xe8);                              // 0x00161750: lw $v0, 0xe8($s0)
     /* beqzl $v0, 0x161778 */                                   // 0x00161754: beqzl $v0, 0x161778
-    func_001618d8();  // 0x161788                                // 0x0016175c: jal 0x161788
+    func_00161788();  // 161788                                // 0x0016175c: jal 0x161788
     /* nop */                                                   // 0x00161760: nop 
     return func_001619e0();  // Tail call                        // 0x00161770: j 0x161938
     sp = sp + 0x10;                                             // 0x00161774: addiu $sp, $sp, 0x10

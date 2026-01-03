@@ -19,7 +19,7 @@ label_0x1b4120:
     v0 = g_00306c14;  // Global at 0x00306c14                   // 0x001b412c: lh $v0, 4($s1)
     if (v0 != s3) goto label_0x1b4150;                          // 0x001b4130: bne $v0, $s3, 0x1b4150
     a0 = s1 + 0xc;                                              // 0x001b4134: addiu $a0, $s1, 0xc
-    func_0010ac68();  // 0x10ab20                                // 0x001b4138: jal 0x10ab20
+    func_0010ab20();  // 10ab20                                // 0x001b4138: jal 0x10ab20
     if (v0 != 0) goto label_0x1b4150;                           // 0x001b4140: bnez $v0, 0x1b4150
     /* nop */                                                   // 0x001b4144: nop 
     goto label_0x1b4164;                                        // 0x001b4148: b 0x1b4164

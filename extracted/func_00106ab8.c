@@ -21,7 +21,7 @@ void func_00106ab8() {
     sp = sp + -0x20;                                            // 0x00106b00: addiu $sp, $sp, -0x20
     v0 = 0x34 << 16;                                            // 0x00106b04: lui $v0, 0x34
     s1 = v0 + 0x1cc0;                                           // 0x00106b14: addiu $s1, $v0, 0x1cc0
-    func_001149e0();  // 0x1149d8                                // 0x00106b28: jal 0x1149d8
+    func_001149d8();  // 1149d8                                // 0x00106b28: jal 0x1149d8
     g_00341cc0 = 0;  // Global at 0x00341cc0                    // 0x00106b2c: sw $zero, 0($s1)
     v1 = -1;                                                    // 0x00106b34: addiu $v1, $zero, -1
     if (a0 != v1) goto label_0x106b50;                          // 0x00106b38: bnel $a0, $v1, 0x106b50

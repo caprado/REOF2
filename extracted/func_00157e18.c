@@ -18,13 +18,13 @@ label_0x157e50:
     v0 = *(int32_t*)(s0);                                       // 0x00157e50: lw $v0, 0($s0)
     if (v0 == s2) goto label_0x157e68;                          // 0x00157e54: beql $v0, $s2, 0x157e68
     s1 = s1 + -1;                                               // 0x00157e58: addiu $s1, $s1, -1
-    func_00158278();  // 0x158228                                // 0x00157e5c: jal 0x158228
+    func_00158228();  // 158228                                // 0x00157e5c: jal 0x158228
     s1 = s1 + -1;                                               // 0x00157e64: addiu $s1, $s1, -1
 label_0x157e68:
     if (s1 != 0) goto label_0x157e50;                           // 0x00157e68: bnez $s1, 0x157e50
     s0 = s0 + 0xc0;                                             // 0x00157e6c: addiu $s0, $s0, 0xc0
 label_0x157e70:
-    func_00156068();  // 0x156060                                // 0x00157e70: jal 0x156060
+    func_00156060();  // 156060                                // 0x00157e70: jal 0x156060
     /* nop */                                                   // 0x00157e74: nop 
     return func_00157a88();  // Tail call                       // 0x00157e88: j 0x157a88
     sp = sp + 0x20;                                             // 0x00157e8c: addiu $sp, $sp, 0x20

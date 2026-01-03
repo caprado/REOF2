@@ -7,7 +7,7 @@ void func_00114770() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x10;                                            // 0x00114770: addiu $sp, $sp, -0x10
-    func_0011d378();  // 0x11d320                                // 0x00114778: jal 0x11d320
+    func_0011d320();  // 11d320                                // 0x00114778: jal 0x11d320
     /* nop */                                                   // 0x0011477c: nop 
     v1 = 0x1000 << 16;                                          // 0x00114780: lui $v1, 0x1000
     a0 = 4;                                                     // 0x00114784: addiu $a0, $zero, 4
@@ -16,7 +16,7 @@ void func_00114770() {
     /* memory sync */                                           // 0x00114790: sync 
     if (v0 == 0) goto label_0x1147a8;                           // 0x00114794: beqz $v0, 0x1147a8
     v1 = 0x1000 << 16;                                          // 0x00114798: lui $v1, 0x1000
-    func_0011d390();  // 0x11d378                                // 0x0011479c: jal 0x11d378
+    func_0011d378();  // 11d378                                // 0x0011479c: jal 0x11d378
     /* nop */                                                   // 0x001147a0: nop 
     v1 = 0x1000 << 16;                                          // 0x001147a4: lui $v1, 0x1000
 label_0x1147a8:
@@ -30,7 +30,7 @@ label_0x1147b0:
     /* nop */                                                   // 0x001147c0: nop 
     if (v0 == 0) goto label_0x1147b0;                           // 0x001147c4: beqz $v0, 0x1147b0
     /* nop */                                                   // 0x001147c8: nop 
-    func_0011d378();  // 0x11d320                                // 0x001147cc: jal 0x11d320
+    func_0011d320();  // 11d320                                // 0x001147cc: jal 0x11d320
     /* nop */                                                   // 0x001147d0: nop 
     v1 = 0x1000 << 16;                                          // 0x001147d4: lui $v1, 0x1000
     a0 = 4;                                                     // 0x001147d8: addiu $a0, $zero, 4

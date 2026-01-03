@@ -8,21 +8,21 @@ void func_00168150() {
     
     sp = sp + -0x40;                                            // 0x00168150: addiu $sp, $sp, -0x40
     a2 = 1 << 16;                                               // 0x00168160: lui $a2, 1
-    func_00168548();  // 0x1684e0                                // 0x00168184: jal 0x1684e0
+    func_001684e0();  // 1684e0                                // 0x00168184: jal 0x1684e0
     *(uint32_t*)(s6) = 0;                                       // 0x00168188: sw $zero, 0($s6)
     a2 = 1 << 16;                                               // 0x0016818c: lui $a2, 1
     s2 = s1 - s3;                                               // 0x00168194: subu $s2, $s1, $s3
     a0 = s1 + 1;                                                // 0x00168198: addiu $a0, $s1, 1
     if (s1 == 0) goto label_0x168210;                           // 0x0016819c: beqz $s1, 0x168210
     s5 = s4 - s2;                                               // 0x001681a0: subu $s5, $s4, $s2
-    func_00168548();  // 0x1684e0                                // 0x001681a4: jal 0x1684e0
+    func_001684e0();  // 1684e0                                // 0x001681a4: jal 0x1684e0
     a1 = s5 + -1;                                               // 0x001681a8: addiu $a1, $s5, -1
     a2 = 1 << 16;                                               // 0x001681ac: lui $a2, 1
     v1 = s0 - s3;                                               // 0x001681b4: subu $v1, $s0, $s3
     a0 = s0 + 1;                                                // 0x001681b8: addiu $a0, $s0, 1
     if (s0 == 0) goto label_0x168210;                           // 0x001681bc: beqz $s0, 0x168210
     a1 = s4 - v1;                                               // 0x001681c0: subu $a1, $s4, $v1
-    func_00168548();  // 0x1684e0                                // 0x001681c4: jal 0x1684e0
+    func_001684e0();  // 1684e0                                // 0x001681c4: jal 0x1684e0
     a1 = a1 + -1;                                               // 0x001681c8: addiu $a1, $a1, -1
     if (v1 == 0) goto label_0x168210;                           // 0x001681d0: beqz $v1, 0x168210
     a0 = v1 - s0;                                               // 0x001681d4: subu $a0, $v1, $s0
@@ -34,7 +34,7 @@ void func_00168150() {
     /* break (trap) */                                          // 0x001681ec: break 0, 7
     /* mfhi $v1 */                                              // 0x001681f0
     /* bnezl $v1, 0x168214 */                                   // 0x001681f4: bnezl $v1, 0x168214
-    func_001682d0();  // 0x168238                                // 0x00168204: jal 0x168238
+    func_00168238();  // 168238                                // 0x00168204: jal 0x168238
 label_0x168210:
     return;                                                     // 0x00168230: jr $ra
     sp = sp + 0x40;                                             // 0x00168234: addiu $sp, $sp, 0x40

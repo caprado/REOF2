@@ -9,7 +9,7 @@ void func_00168fa0() {
     sp = sp + -0x10;                                            // 0x00168fa0: addiu $sp, $sp, -0x10
     v1 = *(int32_t*)((s0) + 0x2ab0);                            // 0x00168fb0: lw $v1, 0x2ab0($s0)
     if (v1 == 0) goto label_0x168fdc;                           // 0x00168fb4: beqz $v1, 0x168fdc
-    func_0016b8b8();  // 0x16b8a8                                // 0x00168fbc: jal 0x16b8a8
+    func_0016b8a8();  // 16b8a8                                // 0x00168fbc: jal 0x16b8a8
     /* nop */                                                   // 0x00168fc0: nop 
     if (v0 <= 0) goto label_0x168fd8;                           // 0x00168fc4: blezl $v0, 0x168fd8
     v0 = *(int32_t*)((s0) + 0x2ab0);                            // 0x00168fc8: lw $v0, 0x2ab0($s0)

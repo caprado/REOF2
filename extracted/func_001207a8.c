@@ -96,7 +96,7 @@ label_0x1208f0:
     v0 = (v0 < s0) ? 1 : 0;                                     // 0x001208f4: slt $v0, $v0, $s0
     /* bnezl $v0, 0x120a80 */                                   // 0x001208f8: bnezl $v0, 0x120a80
     v0 = s0 >> 0x17;                                            // 0x001208fc: sra $v0, $s0, 0x17
-    func_00122190();  // 0x122168                                // 0x00120900: jal 0x122168
+    func_00122168();  // 122168                                // 0x00120900: jal 0x122168
     /* nop */                                                   // 0x00120904: nop 
     at = 0x3f00 << 16;                                          // 0x00120908: lui $at, 0x3f00
     /* move to FPU: $at, $f2 */                                 // 0x0012090c: mtc1 $at, $f2
@@ -230,7 +230,7 @@ label_0x120aa0:
     a3 = a3 + -1;                                               // 0x00120b00: addiu $a3, $a3, -1
     t1 = 0x22 << 16;                                            // 0x00120b04: lui $t1, 0x22
     t1 = t1 + 0x1668;                                           // 0x00120b0c: addiu $t1, $t1, 0x1668
-    func_001215e0();  // 0x120d78                                // 0x00120b14: jal 0x120d78
+    func_00120d78();  // 120d78                                // 0x00120b14: jal 0x120d78
     t0 = 2;                                                     // 0x00120b18: addiu $t0, $zero, 2
     if (s2 >= 0) goto label_0x120b40;                           // 0x00120b1c: bgez $s2, 0x120b40
     FPU_F1 = *(float*)(s1);  // Load float                      // 0x00120b24: lwc1 $f1, 0($s1)

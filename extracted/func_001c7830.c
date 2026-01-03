@@ -8,7 +8,7 @@ void func_001c7830() {
     
     sp = sp + -0x40;                                            // 0x001c7830: addiu $sp, $sp, -0x40
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001c783c: addu.qb $zero, $sp, $s1
-    func_001c7780();  // 0x1c7770                                // 0x001c784c: jal 0x1c7770
+    func_001c7770();  // 1c7770                                // 0x001c784c: jal 0x1c7770
     v0 = 0x31 << 16;                                            // 0x001c7854: lui $v0, 0x31
     a0 = 1;                                                     // 0x001c7858: addiu $a0, $zero, 1
     v0 = v0 + 0x669c;                                           // 0x001c785c: addiu $v0, $v0, 0x669c
@@ -16,9 +16,9 @@ void func_001c7830() {
     g_0031669c = s2;  // Global at 0x0031669c                   // 0x001c7864: sw $s2, 0($v0)
     a2 = 0x20;                                                  // 0x001c7868: addiu $a2, $zero, 0x20
     g_003166a0 = s1;  // Global at 0x003166a0                   // 0x001c786c: sw $s1, 4($v0)
-    func_001c7670();  // 0x1c75b0                                // 0x001c7870: jal 0x1c75b0
+    func_001c75b0();  // 1c75b0                                // 0x001c7870: jal 0x1c75b0
     g_003166a4 = s0;  // Global at 0x003166a4                   // 0x001c7874: sw $s0, 8($v0)
-    func_001c7790();  // 0x1c7780                                // 0x001c787c: jal 0x1c7780
+    func_001c7780();  // 1c7780                                // 0x001c787c: jal 0x1c7780
     /* FPU: ld.b $w0, -0x4e($zero) */                           // 0x001c788c: ld.b $w0, -0x4e($zero)
     /* FPU: aver_u.h $w0, $w0, $w17 */                          // 0x001c7890: aver_u.h $w0, $w0, $w17
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001c7894: xori.b $w0, $w0, 0xb0

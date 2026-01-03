@@ -8,13 +8,13 @@ void func_0015de68() {
     
     sp = sp + -0x50;                                            // 0x0015de68: addiu $sp, $sp, -0x50
     a0 = *(int32_t*)((s0) + 4);                                 // 0x0015de98: lw $a0, 4($s0)
-    func_0015df70();  // 0x15df30                                // 0x0015de9c: jal 0x15df30
+    func_0015df30();  // 15df30                                // 0x0015de9c: jal 0x15df30
     s7 = *(int32_t*)(s0);                                       // 0x0015dea0: lw $s7, 0($s0)
     s6 = *(int32_t*)((s0) + 8);                                 // 0x0015dea4: lw $s6, 8($s0)
     a0 = *(int32_t*)((s0) + 0x18);                              // 0x0015dea8: lw $a0, 0x18($s0)
     s2 = *(int32_t*)((s0) + 0xc);                               // 0x0015deb0: lw $s2, 0xc($s0)
     s3 = *(int32_t*)((s0) + 0x10);                              // 0x0015deb4: lw $s3, 0x10($s0)
-    func_0015dfd8();  // 0x15df70                                // 0x0015deb8: jal 0x15df70
+    func_0015df70();  // 15df70                                // 0x0015deb8: jal 0x15df70
     s4 = *(int32_t*)((s0) + 0x14);                              // 0x0015debc: lw $s4, 0x14($s0)
     v1 = *(int32_t*)((s0) + 0x2c);                              // 0x0015dec0: lw $v1, 0x2c($s0)
     a0 = *(int32_t*)((s0) + 0x24);                              // 0x0015dec4: lw $a0, 0x24($s0)

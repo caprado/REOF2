@@ -55,7 +55,7 @@ label_0x1a08a0:
     v0 = v1 << 4;                                               // 0x001a092c: sll $v0, $v1, 4
     at = 0x21 << 16;                                            // 0x001a0930: lui $at, 0x21
     v0 = a1 | v0;                                               // 0x001a0938: or $v0, $a1, $v0
-    func_00193f40();  // 0x193e90                                // 0x001a093c: jal 0x193e90
+    func_00193e90();  // 193e90                                // 0x001a093c: jal 0x193e90
 label_0x1a094c:
     return;                                                     // 0x001a094c: jr $ra
     sp = sp + 0x10;                                             // 0x001a0950: addiu $sp, $sp, 0x10

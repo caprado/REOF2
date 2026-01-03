@@ -26,7 +26,7 @@ label_0x1b89b0:
     s1 = *(uint8_t*)((s4) + 3);                                 // 0x001b89b0: lbu $s1, 3($s4)
     if (a2 != a0) goto label_0x1b89e0;                          // 0x001b89b4: bne $a2, $a0, 0x1b89e0
     s2 = s1 + 8;                                                // 0x001b89b8: addiu $s2, $s1, 8
-    func_001ae690();  // 0x1ae5c0                                // 0x001b89bc: jal 0x1ae5c0
+    func_001ae5c0();  // 1ae5c0                                // 0x001b89bc: jal 0x1ae5c0
     /* nop */                                                   // 0x001b89c0: nop 
     v0 = v0 & 0xffff;                                           // 0x001b89c4: andi $v0, $v0, 0xffff
     v0 = v0 & 1;                                                // 0x001b89c8: andi $v0, $v0, 1
@@ -40,7 +40,7 @@ label_0x1b89e0:
 label_0x1b89e4:
     a3 = s4 + 0x38;                                             // 0x001b89ec: addiu $a3, $s4, 0x38
     t0 = 1;                                                     // 0x001b89f4: addiu $t0, $zero, 1
-    func_001b8c20();  // 0x1b8b40                                // 0x001b89f8: jal 0x1b8b40
+    func_001b8b40();  // 1b8b40                                // 0x001b89f8: jal 0x1b8b40
 label_0x1b8a00:
     /* FPU: xori.b $w1, $w0, 0xb4 */                            // 0x001b8a04: xori.b $w1, $w0, 0xb4
     /* FPU: ld.b $w0, -0x4e($zero) */                           // 0x001b8a0c: ld.b $w0, -0x4e($zero)

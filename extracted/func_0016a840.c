@@ -11,14 +11,14 @@ void func_0016a840() {
     
     sp = sp + -0x30;                                            // 0x0016a840: addiu $sp, $sp, -0x30
     a1 = 0x3b;                                                  // 0x0016a84c: addiu $a1, $zero, 0x3b
-    func_001752f8();  // 0x1752e8                                // 0x0016a85c: jal 0x1752e8
+    func_001752e8();  // 1752e8                                // 0x0016a85c: jal 0x1752e8
     v1 = 1;                                                     // 0x0016a86c: addiu $v1, $zero, 1
     if (s0 == v1) goto label_0x16a8ac;                          // 0x0016a870: beq $s0, $v1, 0x16a8ac
     a0 = (s0 < 2) ? 1 : 0;                                      // 0x0016a874: slti $a0, $s0, 2
     /* bnezl $a0, 0x16a8b0 */                                   // 0x0016a878: bnezl $a0, 0x16a8b0
     v0 = 2;                                                     // 0x0016a880: addiu $v0, $zero, 2
     if (s0 != v0) goto label_0x16a8ac;                          // 0x0016a884: bnel $s0, $v0, 0x16a8ac
-    func_0016b2a8();  // 0x16b1f8                                // 0x0016a894: jal 0x16b1f8
+    func_0016b1f8();  // 16b1f8                                // 0x0016a894: jal 0x16b1f8
     a2 = sp + 4;                                                // 0x0016a898: addiu $a2, $sp, 4
     v1 = local_4;                                               // 0x0016a8a0: lw $v1, 4($sp)
     v1 = (v1 < 2) ? 1 : 0;                                      // 0x0016a8a4: slti $v1, $v1, 2

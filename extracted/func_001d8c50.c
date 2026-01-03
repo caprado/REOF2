@@ -11,16 +11,16 @@ void func_001d8c50() {
     s0 = g_003137fc;  // Global at 0x003137fc                   // 0x001d8c68: lw $s0, 0x37fc($at)
     a1 = 0x24 << 16;                                            // 0x001d8c6c: lui $a1, 0x24
     a0 = sp + 0x20;                                             // 0x001d8c70: addiu $a0, $sp, 0x20
-    func_0010a570();  // 0x10a4d8                                // 0x001d8c74: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001d8c74: jal 0x10a4d8
     a1 = &str_002477e0;  // "data\\rom\\scene\\pit_tex\\demo_com.tex" // 0x001d8c78: addiu $a1, $a1, 0x77e0
     a0 = sp + 0x20;                                             // 0x001d8c7c: addiu $a0, $sp, 0x20
     a2 = 1;                                                     // 0x001d8c84: addiu $a2, $zero, 1
-    func_001d33e0();  // 0x1d3390                                // 0x001d8c88: jal 0x1d3390
+    func_001d3390();  // 1d3390                                // 0x001d8c88: jal 0x1d3390
     if (a2 <= 0) goto label_0x1d8cb0;                           // 0x001d8c94: blez $a2, 0x1d8cb0
     a1 = 0x49 << 16;                                            // 0x001d8c98: lui $a1, 0x49
     a1 = a1 + 0x13d0;                                           // 0x001d8ca0: addiu $a1, $a1, 0x13d0
     a3 = 0xc8;                                                  // 0x001d8ca4: addiu $a3, $zero, 0xc8
-    func_001d87d0();  // 0x1d87a0                                // 0x001d8ca8: jal 0x1d87a0
+    func_001d87a0();  // 1d87a0                                // 0x001d8ca8: jal 0x1d87a0
 label_0x1d8cb0:
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001d8cb4: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x001d8cb8: jr $ra

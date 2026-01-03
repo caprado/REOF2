@@ -9,7 +9,7 @@ void func_001c6e20() {
     sp = sp + -0x10;                                            // 0x001c6e20: addiu $sp, $sp, -0x10
     a2 = *(int32_t*)((a0) + 0x20);                              // 0x001c6e28: lw $a2, 0x20($a0)
     a0 = *(int32_t*)((a0) + 0xec);                              // 0x001c6e2c: lw $a0, 0xec($a0)
-    func_001c7310();  // 0x1c7230                                // 0x001c6e30: jal 0x1c7230
+    func_001c7230();  // 1c7230                                // 0x001c6e30: jal 0x1c7230
     a1 = 0 | 0x84d0;                                            // 0x001c6e34: ori $a1, $zero, 0x84d0
     v0 = (v0 < 0) ? 1 : 0;                                      // 0x001c6e3c: slt $v0, $v0, $zero
     v0 = -v0;                                                   // 0x001c6e40: negu $v0, $v0

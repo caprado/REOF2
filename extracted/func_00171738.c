@@ -23,7 +23,7 @@ void func_00171738() {
     return func_00155be0();  // Tail call                       // 0x00171780: j 0x155be0
     sp = sp + 0x10;                                             // 0x00171784: addiu $sp, $sp, 0x10
     sp = sp + -0x20;                                            // 0x00171788: addiu $sp, $sp, -0x20
-    func_00171200();  // 0x1711f0                                // 0x001717a4: jal 0x1711f0
+    func_001711f0();  // 1711f0                                // 0x001717a4: jal 0x1711f0
     if (v0 != 0) return;  // Branch to 0x1717d8                 // 0x001717b0: bnez $v0, 0x1717d8
     return;                                                     // 0x001717cc: jr $ra
     sp = sp + 0x20;                                             // 0x001717d0: addiu $sp, $sp, 0x20

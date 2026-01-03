@@ -21,7 +21,7 @@ label_0x1d3b14:
     v1 = g_0032ecd4;  // Global at 0x0032ecd4                   // 0x001d3b20: lw $v1, 4($a0)
     if (v1 != a1) goto label_0x1d3b3c;                          // 0x001d3b24: bne $v1, $a1, 0x1d3b3c
     /* nop */                                                   // 0x001d3b28: nop 
-    func_001d35a0();  // 0x1d3540                                // 0x001d3b2c: jal 0x1d3540
+    func_001d3540();  // 1d3540                                // 0x001d3b2c: jal 0x1d3540
     /* nop */                                                   // 0x001d3b30: nop 
     goto label_0x1d3b54;                                        // 0x001d3b34: b 0x1d3b54
     s0 = s0 + 1;                                                // 0x001d3b38: addiu $s0, $s0, 1

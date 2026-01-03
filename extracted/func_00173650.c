@@ -11,7 +11,7 @@ void func_00173650() {
     return func_001778a0();  // Tail call                        // 0x00173660: j 0x177808
     sp = sp + 0x10;                                             // 0x00173664: addiu $sp, $sp, 0x10
     sp = sp + -0x10;                                            // 0x00173668: addiu $sp, $sp, -0x10
-    func_00169b10();  // 0x169af0                                // 0x00173674: jal 0x169af0
+    func_00169af0();  // 169af0                                // 0x00173674: jal 0x169af0
     if (v0 == 0) goto label_0x1736a0;                           // 0x0017367c: beqz $v0, 0x1736a0
     a1 = 0xff00 << 16;                                          // 0x00173684: lui $a1, 0xff00
     a1 = a1 | 0x131;                                            // 0x00173690: ori $a1, $a1, 0x131
@@ -19,11 +19,11 @@ void func_00173650() {
     sp = sp + 0x10;                                             // 0x00173698: addiu $sp, $sp, 0x10
     /* nop */                                                   // 0x0017369c: nop 
 label_0x1736a0:
-    func_001738b0();  // 0x173840                                // 0x001736a0: jal 0x173840
-    func_00168c48();  // 0x168c38                                // 0x001736a8: jal 0x168c38
+    func_00173840();  // 173840                                // 0x001736a0: jal 0x173840
+    func_00168c38();  // 168c38                                // 0x001736a8: jal 0x168c38
     a0 = s0 + 0x78;                                             // 0x001736ac: addiu $a0, $s0, 0x78
-    func_001666e0();  // 0x1666a0                                // 0x001736b0: jal 0x1666a0
-    func_00173730();  // 0x173708                                // 0x001736b8: jal 0x173708
+    func_001666a0();  // 1666a0                                // 0x001736b0: jal 0x1666a0
+    func_00173708();  // 173708                                // 0x001736b8: jal 0x173708
     a0 = 7;                                                     // 0x001736c0: addiu $a0, $zero, 7
     v0 = 0x21 << 16;                                            // 0x001736c8: lui $v0, 0x21
     v1 = v0 + 0x578c;                                           // 0x001736cc: addiu $v1, $v0, 0x578c

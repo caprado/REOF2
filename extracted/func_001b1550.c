@@ -25,11 +25,11 @@ label_0x1b1578:
     /* nop */                                                   // 0x001b15a0: nop 
     if (a0 == 0) goto label_0x1b15d0;                           // 0x001b15a4: beqz $a0, 0x1b15d0
     /* nop */                                                   // 0x001b15a8: nop 
-    func_0018c490();  // 0x18c350                                // 0x001b15ac: jal 0x18c350
+    func_0018c350();  // 18c350                                // 0x001b15ac: jal 0x18c350
     /* nop */                                                   // 0x001b15b0: nop 
     v0 = *(int32_t*)((s2) + 0x808);                             // 0x001b15b4: lw $v0, 0x808($s2)
     v0 = v0 + s0;                                               // 0x001b15b8: addu $v0, $v0, $s0
-    func_001b0df0();  // 0x1b0db0                                // 0x001b15bc: jal 0x1b0db0
+    func_001b0db0();  // 1b0db0                                // 0x001b15bc: jal 0x1b0db0
     a0 = *(int32_t*)(v0);                                       // 0x001b15c0: lw $a0, 0($v0)
     v0 = *(int32_t*)((s2) + 0x808);                             // 0x001b15c4: lw $v0, 0x808($s2)
     v0 = v0 + s0;                                               // 0x001b15c8: addu $v0, $v0, $s0
@@ -40,9 +40,9 @@ label_0x1b15d4:
     v0 = *(uint16_t*)((s2) + 0x812);                            // 0x001b15d4: lhu $v0, 0x812($s2)
     v0 = (s1 < v0) ? 1 : 0;                                     // 0x001b15d8: slt $v0, $s1, $v0
     if (v0 != 0) goto label_0x1b1578;                           // 0x001b15dc: bnez $v0, 0x1b1578
-    func_001b1870();  // 0x1b17c0                                // 0x001b15e4: jal 0x1b17c0
+    func_001b17c0();  // 1b17c0                                // 0x001b15e4: jal 0x1b17c0
     /* nop */                                                   // 0x001b15e8: nop 
-    func_001b29e0();  // 0x1b28a0                                // 0x001b15ec: jal 0x1b28a0
+    func_001b28a0();  // 1b28a0                                // 0x001b15ec: jal 0x1b28a0
     a0 = *(int32_t*)((s2) + 0x808);                             // 0x001b15f0: lw $a0, 0x808($s2)
     *(uint32_t*)((s2) + 0x808) = 0;                             // 0x001b15f4: sw $zero, 0x808($s2)
     *(uint16_t*)((s2) + 0x812) = 0;                             // 0x001b15f8: sh $zero, 0x812($s2)

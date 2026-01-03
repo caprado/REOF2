@@ -22,14 +22,14 @@ label_0x17e310:
     v1 = *(int8_t*)((s0) + 0x11);                               // 0x0017e31c: lb $v1, 0x11($s0)
     local_0 = v0;                                               // 0x0017e320: sb $v0, 0($sp)
     local_1 = v1;                                               // 0x0017e324: sb $v1, 1($sp)
-    func_0010b2a0();  // 0x10b0e8                                // 0x0017e328: jal 0x10b0e8
+    func_0010b0e8();  // 10b0e8                                // 0x0017e328: jal 0x10b0e8
     a2 = 2;                                                     // 0x0017e32c: addiu $a2, $zero, 2
     a1 = 0x23 << 16;                                            // 0x0017e330: lui $a1, 0x23
     a0 = s0 + 0x14;                                             // 0x0017e334: addiu $a0, $s0, 0x14
     a1 = a1 + -0x6220;                                          // 0x0017e338: addiu $a1, $a1, -0x6220
     if (v0 == 0) goto label_0x17e350;                           // 0x0017e33c: beqz $v0, 0x17e350
     a2 = 1;                                                     // 0x0017e340: addiu $a2, $zero, 1
-    func_0010b2a0();  // 0x10b0e8                                // 0x0017e344: jal 0x10b0e8
+    func_0010b0e8();  // 10b0e8                                // 0x0017e344: jal 0x10b0e8
     /* nop */                                                   // 0x0017e348: nop 
     v0 = ((unsigned)v0 < (unsigned)1) ? 1 : 0;                  // 0x0017e34c: sltiu $v0, $v0, 1
 label_0x17e350:

@@ -42,7 +42,7 @@ label_0x14f428:
     s1 = s1 + 0x180;                                            // 0x0014f428: addiu $s1, $s1, 0x180
     s2 = s2 + 0x400;                                            // 0x0014f430: addiu $s2, $s2, 0x400
     s0 = s0 + -1;                                               // 0x0014f434: addiu $s0, $s0, -1
-    func_0014cc78();  // 0x14a510                                // 0x0014f438: jal 0x14a510
+    func_0014a510();  // 14a510                                // 0x0014f438: jal 0x14a510
     if (s0 != 0) goto label_0x14f428;                           // 0x0014f440: bnez $s0, 0x14f428
 label_0x14f448:
     s4 = s4 + 1;                                                // 0x0014f448: addiu $s4, $s4, 1

@@ -17,7 +17,7 @@ void func_0015db68() {
     *(uint32_t*)(v1) = a0;                                      // 0x0015db90: sw $a0, 0($v1)
     *(uint32_t*)((v1) + 4) = 0;                                 // 0x0015db98: sw $zero, 4($v1)
     a2 = sp + 4;                                                // 0x0015db9c: addiu $a2, $sp, 4
-    func_001756f8();  // 0x175660                                // 0x0015dba0: jal 0x175660
+    func_00175660();  // 175660                                // 0x0015dba0: jal 0x175660
     a0 = *(int32_t*)((s1) + 0x40);                              // 0x0015dba4: lw $a0, 0x40($s1)
     /* bnezl $v0, 0x15dbf8 */                                   // 0x0015dba8: bnezl $v0, 0x15dbf8
     a1 = local_4;                                               // 0x0015dbb0: lw $a1, 4($sp)
@@ -25,12 +25,12 @@ void func_0015db68() {
     /* bnezl $v0, 0x15dbf8 */                                   // 0x0015dbb8: bnezl $v0, 0x15dbf8
     a0 = local_0;                                               // 0x0015dbc0: lw $a0, 0($sp)
     /* beqzl $a0, 0x15dbf8 */                                   // 0x0015dbc4: beqzl $a0, 0x15dbf8
-    func_00178e78();  // 0x178db0                                // 0x0015dbcc: jal 0x178db0
+    func_00178db0();  // 178db0                                // 0x0015dbcc: jal 0x178db0
     /* nop */                                                   // 0x0015dbd0: nop 
     if (s0 == 0) goto label_0x15dbf4;                           // 0x0015dbdc: beqz $s0, 0x15dbf4
-    func_0015dce0();  // 0x15dc08                                // 0x0015dbe4: jal 0x15dc08
+    func_0015dc08();  // 15dc08                                // 0x0015dbe4: jal 0x15dc08
     /* nop */                                                   // 0x0015dbe8: nop 
-    func_00178ec8();  // 0x178e78                                // 0x0015dbec: jal 0x178e78
+    func_00178e78();  // 178e78                                // 0x0015dbec: jal 0x178e78
 label_0x15dbf4:
 label_0x15dbf8:
     return;                                                     // 0x0015dc00: jr $ra

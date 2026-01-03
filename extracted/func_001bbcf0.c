@@ -12,7 +12,7 @@ void func_001bbcf0() {
     sp = sp + -0x30;                                            // 0x001bbcf0: addiu $sp, $sp, -0x30
     a0 = 0x58;                                                  // 0x001bbcf4: addiu $a0, $zero, 0x58
     s0 = 0x30 << 16;                                            // 0x001bbd00: lui $s0, 0x30
-    func_001b7a80();  // 0x1b7a70                                // 0x001bbd04: jal 0x1b7a70
+    func_001b7a70();  // 1b7a70                                // 0x001bbd04: jal 0x1b7a70
     s0 = s0 + 0x7fc0;                                           // 0x001bbd08: addiu $s0, $s0, 0x7fc0
     if (v0 != 0) goto label_0x1bbd5c;                           // 0x001bbd0c: bnez $v0, 0x1bbd5c
     /* nop */                                                   // 0x001bbd10: nop 
@@ -30,7 +30,7 @@ void func_001bbcf0() {
     v0 = g_00307fd0;  // Global at 0x00307fd0                   // 0x001bbd40: lbu $v0, 0x10($s0)
     v0 = v0 << 0x18;                                            // 0x001bbd4c: sll $v0, $v0, 0x18
     v0 = v1 | v0;                                               // 0x001bbd50: or $v0, $v1, $v0
-    func_001ab7c0();  // 0x1ab530                                // 0x001bbd54: jal 0x1ab530
+    func_001ab530();  // 1ab530                                // 0x001bbd54: jal 0x1ab530
     local_28 = v0;                                              // 0x001bbd58: sw $v0, 0x28($sp)
 label_0x1bbd5c:
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001bbd60: xori.b $w0, $w0, 0xb0

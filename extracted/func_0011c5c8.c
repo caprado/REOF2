@@ -10,7 +10,7 @@ void func_0011c5c8() {
     uint32_t local_0;
     
     sp = sp + -0x60;                                            // 0x0011c5c8: addiu $sp, $sp, -0x60
-    func_0011bb38();  // 0x11ba38                                // 0x0011c5e8: jal 0x11ba38
+    func_0011ba38();  // 11ba38                                // 0x0011c5e8: jal 0x11ba38
     if (v0 >= 0) goto label_0x11c600;                           // 0x0011c5f0: bgez $v0, 0x11c600
     v0 = ((unsigned)s0 < (unsigned)3) ? 1 : 0;                  // 0x0011c5f4: sltiu $v0, $s0, 3
     goto label_0x11c698;                                        // 0x0011c5f8: b 0x11c698
@@ -27,7 +27,7 @@ label_0x11c600:
     local_0 = 0;                                                // 0x0011c624: sw $zero, 0($sp)
     t0 = 0x20;                                                  // 0x0011c62c: addiu $t0, $zero, 0x20
     t2 = 0x20;                                                  // 0x0011c634: addiu $t2, $zero, 0x20
-    func_001178a0();  // 0x1176a8                                // 0x0011c638: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x0011c638: jal 0x1176a8
     if (v0 >= 0) goto label_0x11c654;                           // 0x0011c640: bgez $v0, 0x11c654
     /* nop */                                                   // 0x0011c644: nop 
     v0 = 0xfffe << 16;                                          // 0x0011c648: lui $v0, 0xfffe

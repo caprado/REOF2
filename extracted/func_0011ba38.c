@@ -18,7 +18,7 @@ void func_0011ba38() {
 label_0x11ba60:
     a1 = 0x8000 << 16;                                          // 0x0011ba60: lui $a1, 0x8000
     a1 = a1 | 6;                                                // 0x0011ba68: ori $a1, $a1, 6
-    func_001176a8();  // 0x1174d8                                // 0x0011ba6c: jal 0x1174d8
+    func_001174d8();  // 1174d8                                // 0x0011ba6c: jal 0x1174d8
     if (v0 >= 0) goto label_0x11ba84;                           // 0x0011ba74: bgezl $v0, 0x11ba84
     v0 = g_0024fda4;  // Global at 0x0024fda4                   // 0x0011ba78: lw $v0, 0x24($s0)
     goto label_0x11bb20;                                        // 0x0011ba7c: b 0x11bb20
@@ -31,7 +31,7 @@ label_0x11ba84:
     a1 = 0xff;                                                  // 0x0011ba98: addiu $a1, $zero, 0xff
     t1 = s1 + -0x480;                                           // 0x0011baa8: addiu $t1, $s1, -0x480
     t2 = 4;                                                     // 0x0011baac: addiu $t2, $zero, 4
-    func_001178a0();  // 0x1176a8                                // 0x0011bab0: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x0011bab0: jal 0x1176a8
     if (v0 >= 0) goto label_0x11bacc;                           // 0x0011bab8: bgez $v0, 0x11bacc
     v1 = 0x25 << 16;                                            // 0x0011babc: lui $v1, 0x25
     v0 = 0xfffe << 16;                                          // 0x0011bac0: lui $v0, 0xfffe

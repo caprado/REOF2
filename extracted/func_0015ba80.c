@@ -18,7 +18,7 @@ void func_0015ba80() {
     if (a0 == v0) goto label_0x15bac0;                          // 0x0015baa8: beq $a0, $v0, 0x15bac0
     v1 = 3;                                                     // 0x0015baac: addiu $v1, $zero, 3
     a0 = 0x22 << 16;                                            // 0x0015bab0: lui $a0, 0x22
-    func_001634a8();  // 0x163410                                // 0x0015bab4: jal 0x163410
+    func_00163410();  // 163410                                // 0x0015bab4: jal 0x163410
     a0 = &str_00226f60;  // "E301091: Internal Error: sfd_hnctrl_work is short." // 0x0015bab8: addiu $a0, $a0, 0x6f60
     v1 = 3;                                                     // 0x0015babc: addiu $v1, $zero, 3
 label_0x15bac0:

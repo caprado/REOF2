@@ -23,9 +23,9 @@ void func_001a4c60() {
     FPU_F0 = *(float*)((a2) + 4);  // Load float                // 0x001a4cac: lwc1 $f0, 4($a2)
     *(float*)((sp) + 0x64) = FPU_F0;  // Store float            // 0x001a4cb0: swc1 $f0, 0x64($sp)
     FPU_F0 = *(float*)((a2) + 8);  // Load float                // 0x001a4cb4: lwc1 $f0, 8($a2)
-    func_001a4e30();  // 0x1a4dc0                                // 0x001a4cb8: jal 0x1a4dc0
+    func_001a4dc0();  // 1a4dc0                                // 0x001a4cb8: jal 0x1a4dc0
     *(float*)((sp) + 0x68) = FPU_F0;  // Store float            // 0x001a4cbc: swc1 $f0, 0x68($sp)
-    func_001a4e30();  // 0x1a4dc0                                // 0x001a4cc0: jal 0x1a4dc0
+    func_001a4dc0();  // 1a4dc0                                // 0x001a4cc0: jal 0x1a4dc0
     a0 = sp + 0x60;                                             // 0x001a4cc4: addiu $a0, $sp, 0x60
     FPU_F0 = *(float*)((sp) + 0x70);  // Load float             // 0x001a4cc8: lwc1 $f0, 0x70($sp)
     s1 = sp + 0xa4;                                             // 0x001a4ccc: addiu $s1, $sp, 0xa4
@@ -37,13 +37,13 @@ void func_001a4c60() {
     FPU_F0 = *(float*)(s3);  // Load float                      // 0x001a4ce4: lwc1 $f0, 0($s3)
     *(float*)(s1) = FPU_F0;  // Store float                     // 0x001a4ce8: swc1 $f0, 0($s1)
     FPU_F0 = *(float*)(s2);  // Load float                      // 0x001a4cec: lwc1 $f0, 0($s2)
-    func_001a4e90();  // 0x1a4e30                                // 0x001a4cf0: jal 0x1a4e30
+    func_001a4e30();  // 1a4e30                                // 0x001a4cf0: jal 0x1a4e30
     *(float*)(s0) = FPU_F0;  // Store float                     // 0x001a4cf4: swc1 $f0, 0($s0)
-    func_001a4e30();  // 0x1a4dc0                                // 0x001a4cf8: jal 0x1a4dc0
+    func_001a4dc0();  // 1a4dc0                                // 0x001a4cf8: jal 0x1a4dc0
     a0 = sp + 0x80;                                             // 0x001a4cfc: addiu $a0, $sp, 0x80
     a0 = sp + 0x90;                                             // 0x001a4d00: addiu $a0, $sp, 0x90
     a1 = sp + 0x80;                                             // 0x001a4d04: addiu $a1, $sp, 0x80
-    func_001a4e90();  // 0x1a4e30                                // 0x001a4d08: jal 0x1a4e30
+    func_001a4e30();  // 1a4e30                                // 0x001a4d08: jal 0x1a4e30
     a2 = sp + 0xa0;                                             // 0x001a4d0c: addiu $a2, $sp, 0xa0
     *(uint32_t*)((s4) + 0xc) = 0;                               // 0x001a4d10: sw $zero, 0xc($s4)
     v1 = 0x3f80 << 16;                                          // 0x001a4d14: lui $v1, 0x3f80

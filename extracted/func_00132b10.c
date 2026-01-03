@@ -9,7 +9,7 @@ void func_00132b10() {
     sp = sp + -0x30;                                            // 0x00132b10: addiu $sp, $sp, -0x30
     if (s2 != 0) goto label_0x132b48;                           // 0x00132b28: bnez $s2, 0x132b48
     a0 = 0x22 << 16;                                            // 0x00132b30: lui $a0, 0x22
-    func_00127de8();  // 0x127d90                                // 0x00132b34: jal 0x127d90
+    func_00127d90();  // 127d90                                // 0x00132b34: jal 0x127d90
     a0 = &str_00223d40;  // "E02080847 ADXT_GetStatPause: parameter error" // 0x00132b38: addiu $a0, $a0, 0x3d40
     goto label_0x132c28;                                        // 0x00132b3c: b 0x132c28
     /* nop */                                                   // 0x00132b44: nop 
@@ -17,7 +17,7 @@ label_0x132b48:
     v0 = *(int8_t*)((s2) + 0x72);                               // 0x00132b48: lb $v0, 0x72($s2)
     if (s0 == v0) goto label_0x132c24;                          // 0x00132b4c: beq $s0, $v0, 0x132c24
     s1 = *(int8_t*)((s2) + 1);                                  // 0x00132b50: lb $s1, 1($s2)
-    func_001261b8();  // 0x1261a0                                // 0x00132b54: jal 0x1261a0
+    func_001261a0();  // 1261a0                                // 0x00132b54: jal 0x1261a0
     /* nop */                                                   // 0x00132b58: nop 
     v0 = s1 + -3;                                               // 0x00132b5c: addiu $v0, $s1, -3
     v0 = ((unsigned)v0 < (unsigned)2) ? 1 : 0;                  // 0x00132b60: sltiu $v0, $v0, 2
@@ -26,11 +26,11 @@ label_0x132b48:
     v0 = 1;                                                     // 0x00132b6c: addiu $v0, $zero, 1
     if (s0 != v0) goto label_0x132b88;                          // 0x00132b70: bne $s0, $v0, 0x132b88
     a0 = *(int32_t*)((s2) + 0xc);                               // 0x00132b74: lw $a0, 0xc($s2)
-    func_0012c3d8();  // 0x12c3c0                                // 0x00132b78: jal 0x12c3c0
+    func_0012c3c0();  // 12c3c0                                // 0x00132b78: jal 0x12c3c0
     goto label_0x132ba0;                                        // 0x00132b80: b 0x132ba0
     s0 = 0x20 << 16;                                            // 0x00132b84: lui $s0, 0x20
 label_0x132b88:
-    func_0012c3d8();  // 0x12c3c0                                // 0x00132b88: jal 0x12c3c0
+    func_0012c3c0();  // 12c3c0                                // 0x00132b88: jal 0x12c3c0
     a1 = 1;                                                     // 0x00132b8c: addiu $a1, $zero, 1
     v0 = 0x1f << 16;                                            // 0x00132b90: lui $v0, 0x1f
     v1 = g_001f59c4;  // Global at 0x001f59c4                   // 0x00132b94: lw $v1, 0x59c4($v0)
@@ -40,7 +40,7 @@ label_0x132ba0:
     s0 = s0 + 0x1d50;                                           // 0x00132ba4: addiu $s0, $s0, 0x1d50
     s1 = g_00201d50;  // Global at 0x00201d50                   // 0x00132bac: lw $s1, 0($s0)
     a2 = sp + 4;                                                // 0x00132bb0: addiu $a2, $sp, 4
-    func_00132118();  // 0x131e20                                // 0x00132bb4: jal 0x131e20
+    func_00131e20();  // 131e20                                // 0x00132bb4: jal 0x131e20
     g_00201d50 = 0;  // Global at 0x00201d50                    // 0x00132bb8: sw $zero, 0($s0)
     v0 = 0x20 << 16;                                            // 0x00132bbc: lui $v0, 0x20
     FPU_F0 = *(float*)(sp);  // Load float                      // 0x00132bc0: lwc1 $f0, 0($sp)
@@ -67,7 +67,7 @@ label_0x132ba0:
     v1 = v1 | v0;                                               // 0x00132c14: or $v1, $v1, $v0
     *(uint32_t*)((s2) + 0x9c) = v1;                             // 0x00132c18: sw $v1, 0x9c($s2)
 label_0x132c1c:
-    func_001261d0();  // 0x1261b8                                // 0x00132c1c: jal 0x1261b8
+    func_001261b8();  // 1261b8                                // 0x00132c1c: jal 0x1261b8
     /* nop */                                                   // 0x00132c20: nop 
 label_0x132c24:
 label_0x132c28:

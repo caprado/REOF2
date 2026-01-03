@@ -200,7 +200,7 @@ label_0x1c9a80:
     v0 = 4;                                                     // 0x001c9a80: addiu $v0, $zero, 4
     local_37 = v0;                                              // 0x001c9a84: sb $v0, 0x37($sp)
 label_0x1c9a88:
-    func_001c8130();  // 0x1c8020                                // 0x001c9a88: jal 0x1c8020
+    func_001c8020();  // 1c8020                                // 0x001c9a88: jal 0x1c8020
     a0 = sp + 0x10;                                             // 0x001c9a8c: addiu $a0, $sp, 0x10
     v1 = 2;                                                     // 0x001c9a90: addiu $v1, $zero, 2
     at = 0x31 << 16;                                            // 0x001c9a94: lui $at, 0x31

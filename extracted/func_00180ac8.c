@@ -27,7 +27,7 @@ label_0x180b0c:
     goto label_0x180b48;                                        // 0x00180b10: b 0x180b48
     v0 = v0 | 0x16;                                             // 0x00180b14: ori $v0, $v0, 0x16
 label_0x180b18:
-    func_001886c0();  // 0x1885a0                                // 0x00180b18: jal 0x1885a0
+    func_001885a0();  // 1885a0                                // 0x00180b18: jal 0x1885a0
     /* nop */                                                   // 0x00180b1c: nop 
     if (s0 >= 0) goto label_0x180b38;                           // 0x00180b24: bgez $s0, 0x180b38
     /* nop */                                                   // 0x00180b28: nop 
@@ -35,8 +35,8 @@ label_0x180b18:
     goto label_0x180b48;                                        // 0x00180b30: b 0x180b48
     v0 = v0 | 0x17;                                             // 0x00180b34: ori $v0, $v0, 0x17
 label_0x180b38:
-    func_001828c0();  // 0x182858                                // 0x00180b38: jal 0x182858
-    func_001887d0();  // 0x1887a0                                // 0x00180b40: jal 0x1887a0
+    func_00182858();  // 182858                                // 0x00180b38: jal 0x182858
+    func_001887a0();  // 1887a0                                // 0x00180b40: jal 0x1887a0
 label_0x180b48:
     return;                                                     // 0x00180b50: jr $ra
     sp = sp + 0x20;                                             // 0x00180b54: addiu $sp, $sp, 0x20

@@ -21,12 +21,12 @@ void func_001d3f60() {
     t1 = g_003137bc;  // Global at 0x003137bc                   // 0x001d3f9c: lhu $t1, 0x37bc($at)
     at = 0x31 << 16;                                            // 0x001d3fa0: lui $at, 0x31
     t2 = g_003137be;  // Global at 0x003137be                   // 0x001d3fa4: lhu $t2, 0x37be($at)
-    func_0010a570();  // 0x10a4d8                                // 0x001d3fa8: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001d3fa8: jal 0x10a4d8
     if (s0 != 0) goto label_0x1d3fc8;                           // 0x001d3fb0: bnez $s0, 0x1d3fc8
     a0 = 0x33 << 16;                                            // 0x001d3fb4: lui $a0, 0x33
     a1 = 0x24 << 16;                                            // 0x001d3fb8: lui $a1, 0x24
     a0 = a0 + -0x1e70;                                          // 0x001d3fbc: addiu $a0, $a0, -0x1e70
-    func_0010a990();  // 0x10a860                                // 0x001d3fc0: jal 0x10a860
+    func_0010a860();  // 10a860                                // 0x001d3fc0: jal 0x10a860
     a1 = a1 + 0x7250;                                           // 0x001d3fc4: addiu $a1, $a1, 0x7250
 label_0x1d3fc8:
     v0 = 0x33 << 16;                                            // 0x001d3fcc: lui $v0, 0x33

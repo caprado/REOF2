@@ -9,7 +9,7 @@ void func_00132c40() {
     sp = sp + -0x10;                                            // 0x00132c40: addiu $sp, $sp, -0x10
     if (a0 != 0) goto label_0x132c60;                           // 0x00132c44: bnez $a0, 0x132c60
     a0 = 0x22 << 16;                                            // 0x00132c4c: lui $a0, 0x22
-    func_00127de8();  // 0x127d90                                // 0x00132c50: jal 0x127d90
+    func_00127d90();  // 127d90                                // 0x00132c50: jal 0x127d90
     a0 = &str_00223d68;  // "E02080818 ADXT_GetDecNumSmpl: parameter error" // 0x00132c54: addiu $a0, $a0, 0x3d68
     goto label_0x132c64;                                        // 0x00132c58: b 0x132c64
 label_0x132c60:

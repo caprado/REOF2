@@ -7,7 +7,7 @@ void func_0015fcb0() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x0015fcb0: addiu $sp, $sp, -0x20
-    func_0015fcb0();  // 0x15fc80                                // 0x0015fcc4: jal 0x15fc80
+    func_0015fc80();  // 15fc80                                // 0x0015fcc4: jal 0x15fc80
     v1 = s0 << 5;                                               // 0x0015fccc: sll $v1, $s0, 5
     a0 = 0x22 << 16;                                            // 0x0015fcd0: lui $a0, 0x22
     v1 = v1 - s0;                                               // 0x0015fcd4: subu $v1, $v1, $s0
@@ -24,21 +24,21 @@ label_0x15fd00:
     return func_0015fbd8();  // Tail call                        // 0x0015fd18: j 0x15fb78
     sp = sp + 0x20;                                             // 0x0015fd1c: addiu $sp, $sp, 0x20
     sp = sp + -0x10;                                            // 0x0015fd20: addiu $sp, $sp, -0x10
-    func_0015fcb0();  // 0x15fc80                                // 0x0015fd2c: jal 0x15fc80
+    func_0015fc80();  // 15fc80                                // 0x0015fd2c: jal 0x15fc80
     a0 = -0xc;                                                  // 0x0015fd34: addiu $a0, $zero, -0xc
     if (v0 != 0) goto label_0x15fd60;                           // 0x0015fd38: bnez $v0, 0x15fd60
     v1 = 2;                                                     // 0x0015fd3c: addiu $v1, $zero, 2
-    func_0015e7e0();  // 0x15e7b0                                // 0x0015fd40: jal 0x15e7b0
+    func_0015e7b0();  // 15e7b0                                // 0x0015fd40: jal 0x15e7b0
     /* nop */                                                   // 0x0015fd44: nop 
     a0 = 0x22 << 16;                                            // 0x0015fd48: lui $a0, 0x22
-    func_001634a8();  // 0x163410                                // 0x0015fd4c: jal 0x163410
+    func_00163410();  // 163410                                // 0x0015fd4c: jal 0x163410
     a0 = &str_00227d98;  // "E1122626: mwPlySetSyncMode: handle is invalid." // 0x0015fd50: addiu $a0, $a0, 0x7d98
     goto label_0x15fd98;                                        // 0x0015fd54: b 0x15fd98
     /* nop */                                                   // 0x0015fd5c: nop 
 label_0x15fd60:
     v0 = *(int32_t*)((s0) + 8);                                 // 0x0015fd60: lw $v0, 8($s0)
     if (v0 != v1) goto label_0x15fd9c;                          // 0x0015fd64: bnel $v0, $v1, 0x15fd9c
-    func_00174ff8();  // 0x174fb8                                // 0x0015fd6c: jal 0x174fb8
+    func_00174fb8();  // 174fb8                                // 0x0015fd6c: jal 0x174fb8
     a0 = *(int32_t*)((s0) + 0x40);                              // 0x0015fd70: lw $a0, 0x40($s0)
     a2 = 6;                                                     // 0x0015fd74: addiu $a2, $zero, 6
     a1 = 4;                                                     // 0x0015fd7c: addiu $a1, $zero, 4

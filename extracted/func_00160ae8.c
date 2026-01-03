@@ -26,7 +26,7 @@ label_0x160b30:
     goto label_0x160b40;                                        // 0x00160b30: b 0x160b40
     s0 = 2;                                                     // 0x00160b34: addiu $s0, $zero, 2
 label_0x160b38:
-    func_001634a8();  // 0x163410                                // 0x00160b38: jal 0x163410
+    func_00163410();  // 163410                                // 0x00160b38: jal 0x163410
     a0 = &str_00228150;  // "E301273 : chroma_format is invalid." // 0x00160b3c: addiu $a0, $a0, -0x7eb0
 label_0x160b40:
 label_0x160b44:

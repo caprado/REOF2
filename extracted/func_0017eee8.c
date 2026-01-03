@@ -7,7 +7,7 @@ void func_0017eee8() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x30;                                            // 0x0017eee8: addiu $sp, $sp, -0x30
-    func_0011d378();  // 0x11d320                                // 0x0017eefc: jal 0x11d320
+    func_0011d320();  // 11d320                                // 0x0017eefc: jal 0x11d320
     /* FPU: nori.b $w0, $w0, 6 */                               // 0x0017ef04: nori.b $w0, $w0, 6
     /* FPU: ave_s.b $w0, $w0, $w7 */                            // 0x0017ef08: ave_s.b $w0, $w0, $w7
     /* FPU: ld.b $w0, -0x1f8($zero) */                          // 0x0017ef0c: ld.b $w0, -0x1f8($zero)

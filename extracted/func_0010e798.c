@@ -39,7 +39,7 @@ label_0x10e7e4:
 label_0x10e838:
     if (v0 > 0) goto label_0x10e858;                            // 0x0010e838: bgtzl $v0, 0x10e858
     a0 = *(int32_t*)(s2);                                       // 0x0010e83c: lw $a0, 0($s2)
-    func_0010a1d8();  // 0x10a058                                // 0x0010e844: jal 0x10a058
+    func_0010a058();  // 10a058                                // 0x0010e844: jal 0x10a058
     /* FPU: addq.ph $zero, $sp, $t0 */                          // 0x0010e848: addq.ph $zero, $sp, $t0
     if (v0 != 0) goto label_0x10f3f0;                           // 0x0010e84c: bnez $v0, 0x10f3f0
     /* FPU: aver_u.h $w10, $w0, $w8 */                          // 0x0010e850: aver_u.h $w10, $w0, $w8
@@ -75,7 +75,7 @@ label_0x10e8c0:
     v0 = *(int32_t*)((s2) + 4);                                 // 0x0010e8c0: lw $v0, 4($s2)
     if (v0 > 0) goto label_0x10e8e4;                            // 0x0010e8c4: bgtzl $v0, 0x10e8e4
     a0 = *(int32_t*)(s2);                                       // 0x0010e8c8: lw $a0, 0($s2)
-    func_0010a1d8();  // 0x10a058                                // 0x0010e8d0: jal 0x10a058
+    func_0010a058();  // 10a058                                // 0x0010e8d0: jal 0x10a058
     /* FPU: addq.ph $zero, $sp, $t0 */                          // 0x0010e8d4: addq.ph $zero, $sp, $t0
     if (v0 != 0) goto label_0x10f3e0;                           // 0x0010e8d8: bnez $v0, 0x10f3e0
     /* FPU: aver_u.h $w10, $w0, $w8 */                          // 0x0010e8dc: aver_u.h $w10, $w0, $w8
@@ -144,7 +144,7 @@ label_0x10e9b4:
     s0 = 4;                                                     // 0x0010e9d4: addiu $s0, $zero, 4
     goto label_0x10eac0;                                        // 0x0010e9d8: b 0x10eac0
     s0 = 2;                                                     // 0x0010e9dc: addiu $s0, $zero, 2
-    func_0010f528();  // 0x10f428                                // 0x0010e9e8: jal 0x10f428
+    func_0010f428();  // 10f428                                // 0x0010e9e8: jal 0x10f428
     /* FPU: addq.ph $zero, $sp, $t0 */                          // 0x0010e9ec: addq.ph $zero, $sp, $t0
     s1 = s1 | 0x20;                                             // 0x0010e9f4: ori $s1, $s1, 0x20
     s0 = 1;                                                     // 0x0010e9f8: addiu $s0, $zero, 1
@@ -200,7 +200,7 @@ label_0x10eac0:
     v0 = *(int32_t*)((s2) + 4);                                 // 0x0010eac0: lw $v0, 4($s2)
     if (v0 > 0) goto label_0x10eae4;                            // 0x0010eac4: bgtzl $v0, 0x10eae4
     v0 = s1 & 0x20;                                             // 0x0010eac8: andi $v0, $s1, 0x20
-    func_0010a1d8();  // 0x10a058                                // 0x0010ead0: jal 0x10a058
+    func_0010a058();  // 10a058                                // 0x0010ead0: jal 0x10a058
     /* FPU: addq.ph $zero, $sp, $t0 */                          // 0x0010ead4: addq.ph $zero, $sp, $t0
     if (v0 != 0) goto label_0x10f3e0;                           // 0x0010ead8: bnez $v0, 0x10f3e0
     /* FPU: aver_u.h $w10, $w0, $w8 */                          // 0x0010eadc: aver_u.h $w10, $w0, $w8
@@ -220,7 +220,7 @@ label_0x10eae4:
     *(uint32_t*)(s2) = v0;                                      // 0x0010eb10: sw $v0, 0($s2)
     /* nop */                                                   // 0x0010eb14: nop 
 label_0x10eb18:
-    func_0010a1d8();  // 0x10a058                                // 0x0010eb1c: jal 0x10a058
+    func_0010a058();  // 10a058                                // 0x0010eb1c: jal 0x10a058
     /* FPU: addq.ph $zero, $sp, $t0 */                          // 0x0010eb20: addq.ph $zero, $sp, $t0
     if (v0 != 0) goto label_0x10f3e0;                           // 0x0010eb24: bnez $v0, 0x10f3e0
     /* FPU: aver_u.h $w10, $w0, $w8 */                          // 0x0010eb28: aver_u.h $w10, $w0, $w8
@@ -259,7 +259,7 @@ label_0x10eb88:
     s1 = s1 + s0;                                               // 0x0010eba4: addu $s1, $s1, $s0
     v0 = v0 + s0;                                               // 0x0010eba8: addu $v0, $v0, $s0
     s4 = s4 - s0;                                               // 0x0010ebac: subu $s4, $s4, $s0
-    func_0010a1d8();  // 0x10a058                                // 0x0010ebb0: jal 0x10a058
+    func_0010a058();  // 10a058                                // 0x0010ebb0: jal 0x10a058
     *(uint32_t*)(s2) = v0;                                      // 0x0010ebb4: sw $v0, 0($s2)
     if (v0 == 0) goto label_0x10eb88;                           // 0x0010ebb8: beqz $v0, 0x10eb88
     /* FPU: aver_u.h $w10, $w0, $w8 */                          // 0x0010ebbc: aver_u.h $w10, $w0, $w8
@@ -279,7 +279,7 @@ label_0x10ebf0:
     s7 = s7 + 8;                                                // 0x0010ebf4: addiu $s7, $s7, 8
     a0 = g_00220000;  // Global at 0x00220000                   // 0x0010ebf8: lw $a0, 0($v0)
     a1 = 1;                                                     // 0x0010ec00: addiu $a1, $zero, 1
-    func_001058e0();  // 0x1057c0                                // 0x0010ec08: jal 0x1057c0
+    func_001057c0();  // 1057c0                                // 0x0010ec08: jal 0x1057c0
     /* FPU: addq.ph $zero, $sp, $t0 */                          // 0x0010ec0c: addq.ph $zero, $sp, $t0
     if (v0 == 0) goto label_0x10f3e0;                           // 0x0010ec10: beqz $v0, 0x10f3e0
     /* FPU: aver_u.h $w10, $w0, $w8 */                          // 0x0010ec14: aver_u.h $w10, $w0, $w8
@@ -311,7 +311,7 @@ label_0x10ec4c:
     *(uint32_t*)((s2) + 4) = v1;                                // 0x0010ec78: sw $v1, 4($s2)
     if (v1 > 0) goto label_0x10ec4c;                            // 0x0010ec7c: bgtzl $v1, 0x10ec4c
     a1 = *(int32_t*)(s2);                                       // 0x0010ec80: lw $a1, 0($s2)
-    func_0010a1d8();  // 0x10a058                                // 0x0010ec88: jal 0x10a058
+    func_0010a058();  // 10a058                                // 0x0010ec88: jal 0x10a058
     /* FPU: addq.ph $zero, $sp, $t0 */                          // 0x0010ec8c: addq.ph $zero, $sp, $t0
     if (v0 == 0) goto label_0x10ec48;                           // 0x0010ec90: beqz $v0, 0x10ec48
     /* FPU: aver_u.h $w10, $w0, $w8 */                          // 0x0010ec94: aver_u.h $w10, $w0, $w8
@@ -345,7 +345,7 @@ label_0x10ecc4:
     v0 = *(int32_t*)((s2) + 4);                                 // 0x0010ecfc: lw $v0, 4($s2)
     if (v0 > 0) goto label_0x10ecc4;                            // 0x0010ed00: bgtzl $v0, 0x10ecc4
     a1 = *(int32_t*)(s2);                                       // 0x0010ed04: lw $a1, 0($s2)
-    func_0010a1d8();  // 0x10a058                                // 0x0010ed0c: jal 0x10a058
+    func_0010a058();  // 10a058                                // 0x0010ed0c: jal 0x10a058
     /* FPU: addq.ph $zero, $sp, $t0 */                          // 0x0010ed10: addq.ph $zero, $sp, $t0
     if (v0 == 0) goto label_0x10ecc0;                           // 0x0010ed14: beqz $v0, 0x10ecc0
     /* FPU: aver_u.h $w10, $w0, $w8 */                          // 0x0010ed18: aver_u.h $w10, $w0, $w8
@@ -386,7 +386,7 @@ label_0x10ed64:
     *(uint32_t*)((s2) + 4) = v1;                                // 0x0010ed9c: sw $v1, 4($s2)
     if (v1 > 0) goto label_0x10ed64;                            // 0x0010eda0: bgtzl $v1, 0x10ed64
     a0 = *(int32_t*)(s2);                                       // 0x0010eda4: lw $a0, 0($s2)
-    func_0010a1d8();  // 0x10a058                                // 0x0010edac: jal 0x10a058
+    func_0010a058();  // 10a058                                // 0x0010edac: jal 0x10a058
     /* FPU: addq.ph $zero, $sp, $t0 */                          // 0x0010edb0: addq.ph $zero, $sp, $t0
     if (v0 == 0) goto label_0x10ed60;                           // 0x0010edb4: beqz $v0, 0x10ed60
     /* FPU: aver_u.h $w10, $w0, $w8 */                          // 0x0010edb8: aver_u.h $w10, $w0, $w8
@@ -420,7 +420,7 @@ label_0x10eddc:
     v0 = *(int32_t*)((s2) + 4);                                 // 0x0010ee20: lw $v0, 4($s2)
     if (v0 > 0) goto label_0x10eddc;                            // 0x0010ee24: bgtzl $v0, 0x10eddc
     a1 = *(int32_t*)(s2);                                       // 0x0010ee28: lw $a1, 0($s2)
-    func_0010a1d8();  // 0x10a058                                // 0x0010ee30: jal 0x10a058
+    func_0010a058();  // 10a058                                // 0x0010ee30: jal 0x10a058
     /* FPU: addq.ph $zero, $sp, $t0 */                          // 0x0010ee34: addq.ph $zero, $sp, $t0
     if (v0 == 0) goto label_0x10edd8;                           // 0x0010ee38: beqz $v0, 0x10edd8
     /* FPU: aver_u.h $w10, $w0, $w8 */                          // 0x0010ee3c: aver_u.h $w10, $w0, $w8
@@ -516,7 +516,7 @@ label_0x10ef78:
     goto label_0x10efb4;                                        // 0x0010ef98: b 0x10efb4
     *(uint32_t*)(s2) = v0;                                      // 0x0010ef9c: sw $v0, 0($s2)
 label_0x10efa0:
-    func_0010a1d8();  // 0x10a058                                // 0x0010efa4: jal 0x10a058
+    func_0010a058();  // 10a058                                // 0x0010efa4: jal 0x10a058
     /* FPU: addq.ph $zero, $sp, $t0 */                          // 0x0010efa8: addq.ph $zero, $sp, $t0
     if (v0 != 0) goto label_0x10efc0;                           // 0x0010efac: bnez $v0, 0x10efc0
     /* FPU: aver_u.h $w10, $w0, $w8 */                          // 0x0010efb0: aver_u.h $w10, $w0, $w8
@@ -534,7 +534,7 @@ label_0x10efc4:
     /* beqzl $v0, 0x10f3f4 */                                   // 0x0010efd4: beqzl $v0, 0x10f3f4
     v0 = local_260;                                             // 0x0010efd8: lw $v0, 0x260($sp)
     a0 = *(int8_t*)((s3) + -1);                                 // 0x0010efdc: lb $a0, -1($s3)
-    func_0010cd10();  // 0x10cb88                                // 0x0010efe0: jal 0x10cb88
+    func_0010cb88();  // 10cb88                                // 0x0010efe0: jal 0x10cb88
     goto label_0x10f3f4;                                        // 0x0010efe8: b 0x10f3f4
     v0 = local_260;                                             // 0x0010efec: lw $v0, 0x260($sp)
     v0 = 0x78;                                                  // 0x0010eff0: addiu $v0, $zero, 0x78
@@ -543,7 +543,7 @@ label_0x10efc4:
     if (s0 != v0) goto label_0x10f020;                          // 0x0010effc: bne $s0, $v0, 0x10f020
     v0 = s1 & 8;                                                // 0x0010f000: andi $v0, $s1, 8
 label_0x10f004:
-    func_0010cd10();  // 0x10cb88                                // 0x0010f00c: jal 0x10cb88
+    func_0010cb88();  // 10cb88                                // 0x0010f00c: jal 0x10cb88
     /* FPU: addq.ph $zero, $sp, $t0 */                          // 0x0010f010: addq.ph $zero, $sp, $t0
     /* FPU: aver_u.h $w10, $w0, $w8 */                          // 0x0010f014: aver_u.h $w10, $w0, $w8
     s3 = s3 + -1;                                               // 0x0010f018: addiu $s3, $s3, -1
@@ -663,7 +663,7 @@ label_0x10f1ec:
     goto label_0x10f22c;                                        // 0x0010f208: b 0x10f22c
     *(uint32_t*)(s2) = v0;                                      // 0x0010f20c: sw $v0, 0($s2)
 label_0x10f210:
-    func_0010a1d8();  // 0x10a058                                // 0x0010f218: jal 0x10a058
+    func_0010a058();  // 10a058                                // 0x0010f218: jal 0x10a058
     /* FPU: addq.ph $zero, $sp, $t0 */                          // 0x0010f21c: addq.ph $zero, $sp, $t0
     /* FPU: xori.b $w10, $w0, 0xa7 */                           // 0x0010f220: xori.b $w10, $w0, 0xa7
     if (v0 != 0) goto label_0x10f234;                           // 0x0010f224: bnez $v0, 0x10f234
@@ -688,7 +688,7 @@ label_0x10f244:
     v0 = local_260;                                             // 0x0010f260: lw $v0, 0x260($sp)
     s3 = s3 + -1;                                               // 0x0010f264: addiu $s3, $s3, -1
 label_0x10f268:
-    func_0010cd10();  // 0x10cb88                                // 0x0010f26c: jal 0x10cb88
+    func_0010cb88();  // 10cb88                                // 0x0010f26c: jal 0x10cb88
     a0 = *(int8_t*)(s3);                                        // 0x0010f270: lb $a0, 0($s3)
     a0 = sp + 0x100;                                            // 0x0010f274: addiu $a0, $sp, 0x100
     v1 = ((unsigned)a0 < (unsigned)s3) ? 1 : 0;                 // 0x0010f278: sltu $v1, $a0, $s3
@@ -704,14 +704,14 @@ label_0x10f268:
     v0 = 0x45;                                                  // 0x0010f2a0: addiu $v0, $zero, 0x45
     if (s0 == v0) goto label_0x10f2d0;                          // 0x0010f2a4: beq $s0, $v0, 0x10f2d0
     s3 = s3 + -1;                                               // 0x0010f2b4: addiu $s3, $s3, -1
-    func_0010cd10();  // 0x10cb88                                // 0x0010f2b8: jal 0x10cb88
+    func_0010cb88();  // 10cb88                                // 0x0010f2b8: jal 0x10cb88
     /* FPU: addq.ph $zero, $sp, $t0 */                          // 0x0010f2bc: addq.ph $zero, $sp, $t0
     /* FPU: aver_u.h $w10, $w0, $w8 */                          // 0x0010f2c0: aver_u.h $w10, $w0, $w8
     s0 = *(int8_t*)(s3);                                        // 0x0010f2c4: lb $s0, 0($s3)
     /* FPU: xori.b $w10, $w0, 0xa7 */                           // 0x0010f2c8: xori.b $w10, $w0, 0xa7
     t0 = t0 + -1;                                               // 0x0010f2cc: addiu $t0, $t0, -1
 label_0x10f2d0:
-    func_0010cd10();  // 0x10cb88                                // 0x0010f2dc: jal 0x10cb88
+    func_0010cb88();  // 10cb88                                // 0x0010f2dc: jal 0x10cb88
     /* FPU: addq.ph $zero, $sp, $t0 */                          // 0x0010f2e0: addq.ph $zero, $sp, $t0
     /* FPU: aver_u.h $w10, $w0, $w8 */                          // 0x0010f2e4: aver_u.h $w10, $w0, $w8
     /* FPU: xori.b $w10, $w0, 0xa7 */                           // 0x0010f2e8: xori.b $w10, $w0, 0xa7
@@ -730,7 +730,7 @@ label_0x10f320:
     if (a3 == 0) goto label_0x10f374;                           // 0x0010f320: beqz $a3, 0x10f374
     v1 = local_270;                                             // 0x0010f324: lw $v1, 0x270($sp)
     a0 = v1 + 1;                                                // 0x0010f32c: addiu $a0, $v1, 1
-    func_001038d8();  // 0x1037b0                                // 0x0010f330: jal 0x1037b0
+    func_001037b0();  // 1037b0                                // 0x0010f330: jal 0x1037b0
     /* FPU: addq.ph $zero, $sp, $t0 */                          // 0x0010f334: addq.ph $zero, $sp, $t0
     /* FPU: xori.b $w10, $w0, 0xa7 */                           // 0x0010f338: xori.b $w10, $w0, 0xa7
     /* FPU: aver_u.h $w10, $w0, $w8 */                          // 0x0010f33c: aver_u.h $w10, $w0, $w8
@@ -744,13 +744,13 @@ label_0x10f344:
     a1 = a1 + 0x5d8;                                            // 0x0010f35c: addiu $a1, $a1, 0x5d8
     if (v0 == 0) a0 = v1;                                       // 0x0010f360: movz $a0, $v1, $v0
     /* FPU: addq.ph $zero, $sp, $t0 */                          // 0x0010f364: addq.ph $zero, $sp, $t0
-    func_0010a570();  // 0x10a4d8                                // 0x0010f368: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x0010f368: jal 0x10a4d8
     local_270 = a0;                                             // 0x0010f36c: sw $a0, 0x270($sp)
     /* FPU: aver_u.h $w10, $w0, $w8 */                          // 0x0010f370: aver_u.h $w10, $w0, $w8
 label_0x10f374:
     v0 = sp + 0x100;                                            // 0x0010f374: addiu $v0, $sp, 0x100
     /* FPU: addq.ph $zero, $sp, $t0 */                          // 0x0010f378: addq.ph $zero, $sp, $t0
-    func_00103788();  // 0x103770                                // 0x0010f37c: jal 0x103770
+    func_00103770();  // 103770                                // 0x0010f37c: jal 0x103770
     v0 = s1 & 1;                                                // 0x0010f388: andi $v0, $s1, 1
     if (v0 != 0) goto label_0x10f3a0;                           // 0x0010f38c: bnez $v0, 0x10f3a0
     /* FPU: aver_u.h $w10, $w0, $w8 */                          // 0x0010f390: aver_u.h $w10, $w0, $w8
@@ -763,7 +763,7 @@ label_0x10f3a0:
     /* nop */                                                   // 0x0010f3b4: nop 
     s7 = s7 + 8;                                                // 0x0010f3b8: addiu $s7, $s7, 8
     s0 = g_0021ffff;  // Global at 0x0021ffff                   // 0x0010f3bc: lw $s0, 0($v0)
-    func_00112170();  // 0x112118                                // 0x0010f3c0: jal 0x112118
+    func_00112118();  // 112118                                // 0x0010f3c0: jal 0x112118
     /* FPU: addq.ph $zero, $sp, $t0 */                          // 0x0010f3c4: addq.ph $zero, $sp, $t0
     *(float*)(s0) = FPU_F0;  // Store float                     // 0x0010f3c8: swc1 $f0, 0($s0)
     /* FPU: aver_u.h $w10, $w0, $w8 */                          // 0x0010f3cc: aver_u.h $w10, $w0, $w8

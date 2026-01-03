@@ -35,7 +35,7 @@ void func_0012ae78() {
     if (v1 == 0) goto label_0x12af00;                           // 0x0012aee4: beqz $v1, 0x12af00
     v0 = 0x1f << 16;                                            // 0x0012aee8: lui $v0, 0x1f
     a0 = g_001f6ad8;  // Global at 0x001f6ad8                   // 0x0012aeec: lw $a0, 0($s0)
-    func_0012ae78();  // 0x12ae18                                // 0x0012aef0: jal 0x12ae18
+    func_0012ae18();  // 12ae18                                // 0x0012aef0: jal 0x12ae18
     /* nop */                                                   // 0x0012aef4: nop 
     v1 = g_001f6ad8;  // Global at 0x001f6ad8                   // 0x0012aef8: lw $v1, 0($s0)
     v0 = 0x1f << 16;                                            // 0x0012aefc: lui $v0, 0x1f

@@ -12,7 +12,7 @@ void func_001aefd0() {
     /* nop */                                                   // 0x001aefd8: nop 
     /* nop */                                                   // 0x001aefdc: nop 
     sp = sp + -0x20;                                            // 0x001aefe0: addiu $sp, $sp, -0x20
-    func_001a0990();  // 0x1a0980                                // 0x001aefec: jal 0x1a0980
+    func_001a0980();  // 1a0980                                // 0x001aefec: jal 0x1a0980
     at = 0x31 << 16;                                            // 0x001aeff4: lui $at, 0x31
     g_003137ac = s0;  // Global at 0x003137ac                   // 0x001aeff8: sb $s0, 0x37ac($at)
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001af000: xori.b $w0, $w0, 0xb0

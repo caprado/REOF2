@@ -14,7 +14,7 @@ void func_001353f0() {
     sp = sp + 0x20;                                             // 0x00135420: addiu $sp, $sp, 0x20
     /* nop */                                                   // 0x00135424: nop 
 label_0x135428:
-    func_0010af38();  // 0x10ae00                                // 0x00135428: jal 0x10ae00
+    func_0010ae00();  // 10ae00                                // 0x00135428: jal 0x10ae00
     /* nop */                                                   // 0x0013542c: nop 
     if (s1 != 0) return;  // Branch to 0x135458                 // 0x00135434: bnez $s1, 0x135458
     v0 = 0x25 << 16;                                            // 0x00135440: lui $v0, 0x25

@@ -7,19 +7,19 @@ void func_00163030() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x00163030: addiu $sp, $sp, -0x20
-    func_00163140();  // 0x163100                                // 0x00163044: jal 0x163100
+    func_00163100();  // 163100                                // 0x00163044: jal 0x163100
     v1 = 1;                                                     // 0x0016304c: addiu $v1, $zero, 1
     if (v0 != v1) goto label_0x1630bc;                          // 0x00163050: bnel $v0, $v1, 0x1630bc
-    func_00163100();  // 0x1630e0                                // 0x00163058: jal 0x1630e0
+    func_001630e0();  // 1630e0                                // 0x00163058: jal 0x1630e0
     /* nop */                                                   // 0x0016305c: nop 
     s0 = *(int32_t*)((s1) + 0x14);                              // 0x00163060: lw $s0, 0x14($s1)
     if (s0 == 0) goto label_0x1630b8;                           // 0x00163064: beqz $s0, 0x1630b8
     s2 = *(int32_t*)((s1) + 0xc);                               // 0x00163068: lw $s2, 0xc($s1)
-    func_001634c0();  // 0x1634a8                                // 0x0016306c: jal 0x1634a8
+    func_001634a8();  // 1634a8                                // 0x0016306c: jal 0x1634a8
     /* nop */                                                   // 0x00163070: nop 
-    func_00162c60();  // 0x162c08                                // 0x00163074: jal 0x162c08
+    func_00162c08();  // 162c08                                // 0x00163074: jal 0x162c08
     *(uint32_t*)(s1) = 0;                                       // 0x0016307c: sw $zero, 0($s1)
-    func_00162bb0();  // 0x162b68                                // 0x00163080: jal 0x162b68
+    func_00162b68();  // 162b68                                // 0x00163080: jal 0x162b68
     v1 = *(int32_t*)(s2);                                       // 0x00163088: lw $v1, 0($s2)
     v0 = *(int32_t*)((v1) + 0xc);                               // 0x0016308c: lw $v0, 0xc($v1)
     /* call function at address in v0 */                        // 0x00163090: jalr $v0

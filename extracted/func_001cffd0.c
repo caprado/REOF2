@@ -11,9 +11,9 @@ void func_001cffd0() {
     
     sp = sp + -0x20;                                            // 0x001cffd0: addiu $sp, $sp, -0x20
     a2 = 2;                                                     // 0x001cffd4: addiu $a2, $zero, 2
-    func_001cfe70();  // 0x1cfdf0                                // 0x001cffdc: jal 0x1cfdf0
+    func_001cfdf0();  // 1cfdf0                                // 0x001cffdc: jal 0x1cfdf0
     a1 = sp + 0x1e;                                             // 0x001cffe0: addiu $a1, $sp, 0x1e
-    func_001d0080();  // 0x1d0050                                // 0x001cffe4: jal 0x1d0050
+    func_001d0050();  // 1d0050                                // 0x001cffe4: jal 0x1d0050
     a0 = local_1e;                                              // 0x001cffe8: lhu $a0, 0x1e($sp)
     local_1e = v0;                                              // 0x001cffec: sh $v0, 0x1e($sp)
     v0 = local_1e;                                              // 0x001cfff0: lhu $v0, 0x1e($sp)

@@ -7,7 +7,7 @@ void func_001610f8() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x001610f8: addiu $sp, $sp, -0x20
-    func_0015fcb0();  // 0x15fc80                                // 0x0016110c: jal 0x15fc80
+    func_0015fc80();  // 15fc80                                // 0x0016110c: jal 0x15fc80
     a0 = 0x23 << 16;                                            // 0x00161114: lui $a0, 0x23
     if (v0 != 0) goto label_0x161138;                           // 0x00161118: bnez $v0, 0x161138
     a0 = &str_002284a0;  // "E204011: mwPlyFxSetCompoMode: COMPO_Z needs setting in MWPLY Creation." // 0x0016111c: addiu $a0, $a0, -0x7b60
@@ -35,15 +35,15 @@ label_0x161190:
     sp = sp + 0x20;                                             // 0x001611a4: addiu $sp, $sp, 0x20
 label_0x1611a8:
     sp = sp + -0x10;                                            // 0x001611a8: addiu $sp, $sp, -0x10
-    func_00160860();  // 0x160850                                // 0x001611b4: jal 0x160850
+    func_00160850();  // 160850                                // 0x001611b4: jal 0x160850
     return func_0017cf10();  // Tail call                        // 0x001611cc: j 0x17cf08
     sp = sp + 0x10;                                             // 0x001611d0: addiu $sp, $sp, 0x10
     /* nop */                                                   // 0x001611d4: nop 
     sp = sp + -0x10;                                            // 0x001611d8: addiu $sp, $sp, -0x10
-    func_0015fcb0();  // 0x15fc80                                // 0x001611e4: jal 0x15fc80
+    func_0015fc80();  // 15fc80                                // 0x001611e4: jal 0x15fc80
     if (v0 != 0) return;  // Branch to 0x161218                 // 0x001611ec: bnez $v0, 0x161218
     a0 = 0x23 << 16;                                            // 0x001611f4: lui $a0, 0x23
-    func_001634a8();  // 0x163410                                // 0x001611f8: jal 0x163410
+    func_00163410();  // 163410                                // 0x001611f8: jal 0x163410
     a0 = &str_00228570;  // "E307092: mwPlyFxGetOutBufPitchHeight: handle is invalid." // 0x001611fc: addiu $a0, $a0, -0x7a90
     return;                                                     // 0x0016120c: jr $ra
     sp = sp + 0x10;                                             // 0x00161210: addiu $sp, $sp, 0x10

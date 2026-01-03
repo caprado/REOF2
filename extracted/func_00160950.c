@@ -19,22 +19,22 @@ void func_00160950() {
     if (v0 == v1) goto label_0x1609a8;                          // 0x0016098c: beq $v0, $v1, 0x1609a8
     *(uint32_t*)((s0) + 0x48) = s1;                             // 0x00160990: sw $s1, 0x48($s0)
     a1 = *(int32_t*)(t0);                                       // 0x00160994: lw $a1, 0($t0)
-    func_00160a28();  // 0x160a18                                // 0x00160998: jal 0x160a18
+    func_00160a18();  // 160a18                                // 0x00160998: jal 0x160a18
     goto label_0x1609f4;                                        // 0x001609a0: b 0x1609f4
 label_0x1609a8:
     a0 = *(int32_t*)(t0);                                       // 0x001609a8: lw $a0, 0($t0)
-    func_0015de68();  // 0x15de30                                // 0x001609ac: jal 0x15de30
+    func_0015de30();  // 15de30                                // 0x001609ac: jal 0x15de30
     a0 = s0 + 4;                                                // 0x001609b4: addiu $a0, $s0, 4
     a1 = local_0;                                               // 0x001609b8: lw $a1, 0($sp)
-    func_00160a28();  // 0x160a18                                // 0x001609c0: jal 0x160a18
+    func_00160a18();  // 160a18                                // 0x001609c0: jal 0x160a18
     a2 = local_c;                                               // 0x001609c4: lw $a2, 0xc($sp)
     a0 = s0 + 0x14;                                             // 0x001609c8: addiu $a0, $s0, 0x14
     a1 = local_4;                                               // 0x001609cc: lw $a1, 4($sp)
-    func_00160a28();  // 0x160a18                                // 0x001609d4: jal 0x160a18
+    func_00160a18();  // 160a18                                // 0x001609d4: jal 0x160a18
     a2 = local_10;                                              // 0x001609d8: lw $a2, 0x10($sp)
     a0 = s0 + 0x24;                                             // 0x001609dc: addiu $a0, $s0, 0x24
     a1 = local_8;                                               // 0x001609e0: lw $a1, 8($sp)
-    func_00160a28();  // 0x160a18                                // 0x001609e8: jal 0x160a18
+    func_00160a18();  // 160a18                                // 0x001609e8: jal 0x160a18
     a2 = local_14;                                              // 0x001609ec: lw $a2, 0x14($sp)
 label_0x1609f4:
     return;                                                     // 0x001609fc: jr $ra

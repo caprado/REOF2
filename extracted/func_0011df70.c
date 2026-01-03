@@ -16,7 +16,7 @@ void func_0011df70() {
     v0 = v0 | 0x1010;                                           // 0x0011dfa0: ori $v0, $v0, 0x1010
     s2 = g_10000000;  // Global at 0x10000000                   // 0x0011dfa4: lw $s2, 0($v0)
     /* bnezl $a2, 0x11dfdc */                                   // 0x0011dfa8: bnezl $a2, 0x11dfdc
-    func_0011dc20();  // 0x11dc10                                // 0x0011dfb0: jal 0x11dc10
+    func_0011dc10();  // 11dc10                                // 0x0011dfb0: jal 0x11dc10
     a0 = 0xffff << 16;                                          // 0x0011dfb8: lui $a0, 0xffff
     a0 = a0 | 0xf7ff;                                           // 0x0011dfc0: ori $a0, $a0, 0xf7ff
     a0 = s2 & a0;                                               // 0x0011dfc8: and $a0, $s2, $a0
@@ -44,7 +44,7 @@ label_0x11e058:
     v0 = v0 | 0x1000;                                           // 0x0011e06c: ori $v0, $v0, 0x1000
     a0 = 0x7333;                                                // 0x0011e070: addiu $a0, $zero, 0x7333
     v1 = g_10000000;  // Global at 0x10000000                   // 0x0011e078: lw $v1, 0($v0)
-    func_0011dc20();  // 0x11dc10                                // 0x0011e084: jal 0x11dc10
+    func_0011dc10();  // 11dc10                                // 0x0011e084: jal 0x11dc10
     a0 = v1 + a0;                                               // 0x0011e088: addu $a0, $v1, $a0
     a0 = 0xffff << 16;                                          // 0x0011e08c: lui $a0, 0xffff
     a0 = a0 | 0xf7ff;                                           // 0x0011e094: ori $a0, $a0, 0xf7ff
@@ -54,7 +54,7 @@ label_0x11e058:
 label_0x11e0b0:
     a0 = 0xffff << 16;                                          // 0x0011e0b0: lui $a0, 0xffff
     a0 = a0 | 0xf7ff;                                           // 0x0011e0b4: ori $a0, $a0, 0xf7ff
-    func_0011dc10();  // 0x11dc00                                // 0x0011e0b8: jal 0x11dc00
+    func_0011dc00();  // 11dc00                                // 0x0011e0b8: jal 0x11dc00
     a0 = s2 & a0;                                               // 0x0011e0bc: and $a0, $s2, $a0
     a0 = s1 << 2;                                               // 0x0011e0c0: sll $a0, $s1, 2
     return func_0011dc20();  // Tail call                        // 0x0011e0e0: j 0x11dc10

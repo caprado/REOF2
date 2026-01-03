@@ -15,7 +15,7 @@ void func_00187d40() {
     s1 = v1 + -0x2fb8;                                          // 0x00187d58: addiu $s1, $v1, -0x2fb8
     v0 = s1 + 4;                                                // 0x00187d64: addiu $v0, $s1, 4
     s2 = s0 + v0;                                               // 0x00187d70: addu $s2, $s0, $v0
-    func_00188ec0();  // 0x188dc8                                // 0x00187d74: jal 0x188dc8
+    func_00188dc8();  // 188dc8                                // 0x00187d74: jal 0x188dc8
     a0 = *(int32_t*)(s2);                                       // 0x00187d78: lw $a0, 0($s2)
     v1 = 3;                                                     // 0x00187d7c: addiu $v1, $zero, 3
     if (v0 != v1) goto label_0x187d90;                          // 0x00187d80: bne $v0, $v1, 0x187d90
@@ -30,7 +30,7 @@ label_0x187d90:
     a1 = s1 + s0;                                               // 0x00187da4: addu $a1, $s1, $s0
     a0 = 0x23 << 16;                                            // 0x00187da8: lui $a0, 0x23
 label_0x187dac:
-    func_00116598();  // 0x116508                                // 0x00187dac: jal 0x116508
+    func_00116508();  // 116508                                // 0x00187dac: jal 0x116508
     a0 = &str_00229ff0;  // "libmc2: Invalid data length (over 8192)\n" // 0x00187db0: addiu $a0, $a0, -0x6010
     goto label_0x187e58;                                        // 0x00187db4: b 0x187e58
 label_0x187dbc:
@@ -53,7 +53,7 @@ label_0x187dbc:
     g_0027d0d0 = a3;  // Global at 0x0027d0d0                   // 0x00187e10: sw $a3, 0x10($v0)
     g_0027d0d4 = t0;  // Global at 0x0027d0d4                   // 0x00187e14: sw $t0, 0x14($v0)
     g_0027d0d8 = t1;  // Global at 0x0027d0d8                   // 0x00187e18: sw $t1, 0x18($v0)
-    func_00107d30();  // 0x107c70                                // 0x00187e1c: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x00187e1c: jal 0x107c70
     local_0 = t2;                                               // 0x00187e20: sw $t2, 0($sp)
     v1 = 6;                                                     // 0x00187e24: addiu $v1, $zero, 6
     g_00216324 = v1;  // Global at 0x00216324                   // 0x00187e28: sw $v1, 0x6324($s0)
@@ -61,11 +61,11 @@ label_0x187dbc:
 label_0x187e30:
     a1 = g_00216324;  // Global at 0x00216324                   // 0x00187e34: lw $a1, 0x6324($s0)
     a3 = s3 + -0x2f40;                                          // 0x00187e38: addiu $a3, $s3, -0x2f40
-    func_001895d8();  // 0x189470                                // 0x00187e3c: jal 0x189470
+    func_00189470();  // 189470                                // 0x00187e3c: jal 0x189470
     t0 = s4 + 0x7700;                                           // 0x00187e40: addiu $t0, $s4, 0x7700
     if (v0 != s2) goto label_0x187e30;                          // 0x00187e44: bnel $v0, $s2, 0x187e30
     a0 = g_0027d048;  // Global at 0x0027d048                   // 0x00187e48: lw $a0, 0($s1)
-    func_001876a8();  // 0x1875d8                                // 0x00187e4c: jal 0x1875d8
+    func_001875d8();  // 1875d8                                // 0x00187e4c: jal 0x1875d8
     /* nop */                                                   // 0x00187e50: nop 
     v0 = g_0027d0c8;  // Global at 0x0027d0c8                   // 0x00187e54: lw $v0, 8($v0)
 label_0x187e58:

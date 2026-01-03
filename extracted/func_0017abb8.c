@@ -11,7 +11,7 @@ void func_0017abb8() {
     uint32_t local_8, local_c;
     
     sp = sp + -0x60;                                            // 0x0017abb8: addiu $sp, $sp, -0x60
-    func_0017aa18();  // 0x17a928                                // 0x0017abd8: jal 0x17a928
+    func_0017a928();  // 17a928                                // 0x0017abd8: jal 0x17a928
     v0 = s0 + 4;                                                // 0x0017abe0: addiu $v0, $s0, 4
     a0 = *(int32_t*)((s0) + 0x48);                              // 0x0017abe4: lw $a0, 0x48($s0)
     t2 = *(int32_t*)((v0) + 4);                                 // 0x0017abe8: lw $t2, 4($v0)
@@ -55,17 +55,17 @@ void func_0017abb8() {
 label_0x17ac80:
     local_2c = t4;                                              // 0x0017ac80: sw $t4, 0x2c($sp)
 label_0x17ac84:
-    func_0017cf08();  // 0x17ced8                                // 0x0017ac84: jal 0x17ced8
+    func_0017ced8();  // 17ced8                                // 0x0017ac84: jal 0x17ced8
     /* nop */                                                   // 0x0017ac88: nop 
     v1 = 1;                                                     // 0x0017ac8c: addiu $v1, $zero, 1
     if (v0 != v1) goto label_0x17acb0;                          // 0x0017ac90: bne $v0, $v1, 0x17acb0
     a2 = *(int32_t*)((s2) + 0x3c);                              // 0x0017ac98: lw $a2, 0x3c($s2)
-    func_00148f80();  // 0x148f78                                // 0x0017ac9c: jal 0x148f78
+    func_00148f78();  // 148f78                                // 0x0017ac9c: jal 0x148f78
     a1 = sp + 0x20;                                             // 0x0017aca0: addiu $a1, $sp, 0x20
     goto label_0x17acbc;                                        // 0x0017aca4: b 0x17acbc
     /* nop */                                                   // 0x0017acac: nop 
 label_0x17acb0:
-    func_00148f78();  // 0x148f70                                // 0x0017acb0: jal 0x148f70
+    func_00148f70();  // 148f70                                // 0x0017acb0: jal 0x148f70
     a1 = sp + 0x20;                                             // 0x0017acb4: addiu $a1, $sp, 0x20
 label_0x17acbc:
     return;                                                     // 0x0017acc8: jr $ra

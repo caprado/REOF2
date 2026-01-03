@@ -19,7 +19,7 @@ void func_00186e48() {
     a1 = v1 + 0x10;                                             // 0x00186e84: addiu $a1, $v1, 0x10
     s0 = a3 + s0;                                               // 0x00186e88: addu $s0, $a3, $s0
     a1 = a3 + a1;                                               // 0x00186e8c: addu $a1, $a3, $a1
-    func_00186e48();  // 0x186e08                                // 0x00186e90: jal 0x186e08
+    func_00186e08();  // 186e08                                // 0x00186e90: jal 0x186e08
     a3 = g_0027880c;  // Global at 0x0027880c                   // 0x00186e94: lw $a3, 0($s0)
     *(uint32_t*)(s1) = s2;                                      // 0x00186e98: sw $s2, 0($s1)
     g_0027880c = 0;  // Global at 0x0027880c                    // 0x00186e9c: sw $zero, 0($s0)

@@ -27,7 +27,7 @@ label_0x18d504:
     at = 0x29 << 16;                                            // 0x0018d504: lui $at, 0x29
     a1 = 1;                                                     // 0x0018d508: addiu $a1, $zero, 1
     a0 = g_00290338;  // Global at 0x00290338                   // 0x0018d50c: lw $a0, 0x338($at)
-    func_00103688();  // 0x103650                                // 0x0018d510: jal 0x103650
+    func_00103650();  // 103650                                // 0x0018d510: jal 0x103650
     if (v0 != 0) goto label_0x18d504;                           // 0x0018d518: bnez $v0, 0x18d504
     /* nop */                                                   // 0x0018d51c: nop 
     v0 = 1;                                                     // 0x0018d524: addiu $v0, $zero, 1

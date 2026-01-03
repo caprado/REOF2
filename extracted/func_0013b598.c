@@ -9,7 +9,7 @@ void func_0013b598() {
     sp = sp + -0x10;                                            // 0x0013b598: addiu $sp, $sp, -0x10
     if (v0 != 0) goto label_0x13b5c0;                           // 0x0013b5a0: bnez $v0, 0x13b5c0
     a1 = 0x22 << 16;                                            // 0x0013b5a8: lui $a1, 0x22
-    func_0013acb8();  // 0x13ac88                                // 0x0013b5ac: jal 0x13ac88
+    func_0013ac88();  // 13ac88                                // 0x0013b5ac: jal 0x13ac88
     a1 = &str_00225930;  // "E0092713:nsct < 0.(htCiReqRd)"     // 0x0013b5b0: addiu $a1, $a1, 0x5930
     goto label_0x13b5c4;                                        // 0x0013b5b4: b 0x13b5c4
     /* nop */                                                   // 0x0013b5bc: nop 

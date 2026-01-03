@@ -8,9 +8,9 @@ void func_0015bbb0() {
     
     sp = sp + -0x20;                                            // 0x0015bbb0: addiu $sp, $sp, -0x20
     a1 = *(int32_t*)((s0) + 0xc);                               // 0x0015bbc4: lw $a1, 0xc($s0)
-    func_00160820();  // 0x160818                                // 0x0015bbc8: jal 0x160818
+    func_00160818();  // 160818                                // 0x0015bbc8: jal 0x160818
     a0 = *(int32_t*)((s0) + 8);                                 // 0x0015bbcc: lw $a0, 8($s0)
-    func_001615a8();  // 0x161580                                // 0x0015bbd4: jal 0x161580
+    func_00161580();  // 161580                                // 0x0015bbd4: jal 0x161580
     v1 = 1;                                                     // 0x0015bbdc: addiu $v1, $zero, 1
     a0 = 2 << 16;                                               // 0x0015bbe0: lui $a0, 2
     a0 = a0 + s1;                                               // 0x0015bbe4: addu $a0, $a0, $s1

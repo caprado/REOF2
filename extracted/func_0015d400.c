@@ -13,7 +13,7 @@ label_0x15d420:
     a1 = *(int32_t*)(s0);                                       // 0x0015d420: lw $a1, 0($s0)
     /* beqzl $a1, 0x15d43c */                                   // 0x0015d424: beqzl $a1, 0x15d43c
     s2 = s2 + -1;                                               // 0x0015d428: addiu $s2, $s2, -1
-    func_0015d3c0();  // 0x15d370                                // 0x0015d42c: jal 0x15d370
+    func_0015d370();  // 15d370                                // 0x0015d42c: jal 0x15d370
     *(uint32_t*)(s0) = 0;                                       // 0x0015d434: sw $zero, 0($s0)
     s2 = s2 + -1;                                               // 0x0015d438: addiu $s2, $s2, -1
     if (s2 >= 0) goto label_0x15d420;                           // 0x0015d43c: bgez $s2, 0x15d420

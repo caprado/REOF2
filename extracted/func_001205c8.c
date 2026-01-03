@@ -78,9 +78,9 @@ label_0x1206d8:
     /* nop */                                                   // 0x001206d8: nop 
     /* nop */                                                   // 0x001206dc: nop 
     /* FPU: div.s $f12, $f1, $f13 */                            // 0x001206e0: div.s $f12, $f1, $f13
-    func_00122190();  // 0x122168                                // 0x001206e4: jal 0x122168
+    func_00122168();  // 122168                                // 0x001206e4: jal 0x122168
     /* nop */                                                   // 0x001206e8: nop 
-    func_00122090();  // 0x121e00                                // 0x001206ec: jal 0x121e00
+    func_00121e00();  // 121e00                                // 0x001206ec: jal 0x121e00
     /* FPU: mov.s $f12, $f0 */                                  // 0x001206f0: mov.s $f12, $f0
     /* FPU: mov.s $f2, $f0 */                                   // 0x001206f4: mov.s $f2, $f0
     v0 = 1;                                                     // 0x001206f8: addiu $v0, $zero, 1

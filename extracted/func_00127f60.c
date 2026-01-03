@@ -7,15 +7,15 @@ void func_00127f60() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x00127f60: addiu $sp, $sp, -0x20
-    func_00127f60();  // 0x127e58                                // 0x00127f84: jal 0x127e58
-    func_0010af38();  // 0x10ae00                                // 0x00127f8c: jal 0x10ae00
+    func_00127e58();  // 127e58                                // 0x00127f84: jal 0x127e58
+    func_0010ae00();  // 10ae00                                // 0x00127f8c: jal 0x10ae00
     a1 = 0x22 << 16;                                            // 0x00127f94: lui $a1, 0x22
     s1 = s1 - v0;                                               // 0x00127f98: subu $s1, $s1, $v0
     a1 = a1 + 0x24a8;                                           // 0x00127f9c: addiu $a1, $a1, 0x24a8
     a2 = s1 + -1;                                               // 0x00127fa0: addiu $a2, $s1, -1
-    func_0010b0e8();  // 0x10af38                                // 0x00127fa4: jal 0x10af38
-    func_0010af38();  // 0x10ae00                                // 0x00127fac: jal 0x10ae00
-    func_0010af38();  // 0x10ae00                                // 0x00127fb8: jal 0x10ae00
+    func_0010af38();  // 10af38                                // 0x00127fa4: jal 0x10af38
+    func_0010ae00();  // 10ae00                                // 0x00127fac: jal 0x10ae00
+    func_0010ae00();  // 10ae00                                // 0x00127fb8: jal 0x10ae00
     s0 = s0 + v0;                                               // 0x00127fbc: addu $s0, $s0, $v0
     a2 = 4;                                                     // 0x00127fd0: addiu $a2, $zero, 4
     a2 = a2 - v0;                                               // 0x00127fdc: subu $a2, $a2, $v0
@@ -38,20 +38,20 @@ void func_00127f60() {
     v0 = a0 + 1;                                                // 0x00128030: addiu $v0, $a0, 1
     a0 = 0x1f << 16;                                            // 0x00128034: lui $a0, 0x1f
     a0 = a0 + 0x2ec0;                                           // 0x0012803c: addiu $a0, $a0, 0x2ec0
-    func_00107d30();  // 0x107c70                                // 0x00128040: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x00128040: jal 0x107c70
     a2 = 0x440;                                                 // 0x00128044: addiu $a2, $zero, 0x440
     a0 = 0x1f << 16;                                            // 0x00128048: lui $a0, 0x1f
     a0 = a0 + 0x3300;                                           // 0x0012804c: addiu $a0, $a0, 0x3300
-    func_00107d30();  // 0x107c70                                // 0x00128054: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x00128054: jal 0x107c70
     a2 = 0x400;                                                 // 0x00128058: addiu $a2, $zero, 0x400
     a0 = 0x1f << 16;                                            // 0x0012805c: lui $a0, 0x1f
     a0 = a0 + 0x3708;                                           // 0x00128060: addiu $a0, $a0, 0x3708
     a1 = 0xff;                                                  // 0x00128064: addiu $a1, $zero, 0xff
-    func_00107d30();  // 0x107c70                                // 0x00128068: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x00128068: jal 0x107c70
     a2 = 0x100;                                                 // 0x0012806c: addiu $a2, $zero, 0x100
     a0 = 0x1f << 16;                                            // 0x00128070: lui $a0, 0x1f
     a0 = a0 + 0x3808;                                           // 0x00128074: addiu $a0, $a0, 0x3808
-    func_00107d30();  // 0x107c70                                // 0x0012807c: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x0012807c: jal 0x107c70
     a2 = 0x20;                                                  // 0x00128080: addiu $a2, $zero, 0x20
     a0 = 0x1f << 16;                                            // 0x00128084: lui $a0, 0x1f
     a1 = 0x1f << 16;                                            // 0x00128088: lui $a1, 0x1f

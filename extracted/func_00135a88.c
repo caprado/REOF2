@@ -9,7 +9,7 @@ void func_00135a88() {
     sp = sp + -0x10;                                            // 0x00135a88: addiu $sp, $sp, -0x10
     if (a0 != 0) goto label_0x135ab0;                           // 0x00135a90: bnez $a0, 0x135ab0
     a0 = 0x22 << 16;                                            // 0x00135a98: lui $a0, 0x22
-    func_00134fb0();  // 0x134ec0                                // 0x00135a9c: jal 0x134ec0
+    func_00134ec0();  // 134ec0                                // 0x00135a9c: jal 0x134ec0
     a0 = &str_00224280;  // "cvFsReqRd #2:vtbl error"           // 0x00135aa0: addiu $a0, $a0, 0x4280
     goto label_0x135ae0;                                        // 0x00135aa4: b 0x135ae0
     /* nop */                                                   // 0x00135aac: nop 
@@ -21,7 +21,7 @@ label_0x135ab0:
     /* call function at address in v0 */                        // 0x00135ac0: jalr $v0
     a0 = g_00220004;  // Global at 0x00220004                   // 0x00135ac4: lw $a0, 4($a0)
     goto label_0x135adc;                                        // 0x00135ac8: b 0x135adc
-    func_00134fb0();  // 0x134ec0                                // 0x00135ad4: jal 0x134ec0
+    func_00134ec0();  // 134ec0                                // 0x00135ad4: jal 0x134ec0
     a0 = &str_002242a0;  // "cvFsReqWr #1:handle error"         // 0x00135ad8: addiu $a0, $a0, 0x42a0
 label_0x135adc:
 label_0x135ae0:

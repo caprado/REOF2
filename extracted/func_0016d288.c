@@ -17,7 +17,7 @@ void func_0016d288() {
     if (a2 == v1) goto label_0x16d2e0;                          // 0x0016d2b8: beq $a2, $v1, 0x16d2e0
     v0 = 1;                                                     // 0x0016d2bc: addiu $v0, $zero, 1
     /* beqzl $a1, 0x16d2e0 */                                   // 0x0016d2c0: beqzl $a1, 0x16d2e0
-    func_0016d308();  // 0x16d2f0                                // 0x0016d2c8: jal 0x16d2f0
+    func_0016d2f0();  // 16d2f0                                // 0x0016d2c8: jal 0x16d2f0
     /* nop */                                                   // 0x0016d2cc: nop 
     v1 = 1;                                                     // 0x0016d2d0: addiu $v1, $zero, 1
     if (v0 == v1) goto label_0x16d2e4;                          // 0x0016d2d4: beq $v0, $v1, 0x16d2e4

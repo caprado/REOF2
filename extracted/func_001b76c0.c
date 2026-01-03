@@ -14,7 +14,7 @@ void func_001b76c0() {
     v1 = v1 << 5;                                               // 0x001b76e0: sll $v1, $v1, 5
     s0 = v0 + v1;                                               // 0x001b76e8: addu $s0, $v0, $v1
     a2 = 0x20;                                                  // 0x001b76f0: addiu $a2, $zero, 0x20
-    func_00107d30();  // 0x107c70                                // 0x001b76f4: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001b76f4: jal 0x107c70
     v1 = 0xc;                                                   // 0x001b76fc: addiu $v1, $zero, 0xc
     *(uint16_t*)(s0) = v1;                                      // 0x001b7700: sh $v1, 0($s0)
     *(uint32_t*)((s0) + 4) = s1;                                // 0x001b7704: sw $s1, 4($s0)

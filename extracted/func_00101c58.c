@@ -12,12 +12,12 @@ void func_00101c58() {
     sp = sp + -0x50;                                            // 0x00101c58: addiu $sp, $sp, -0x50
     s1 = 0x1f << 16;                                            // 0x00101c64: lui $s1, 0x1f
     s2 = s1 + -0xac0;                                           // 0x00101c74: addiu $s2, $s1, -0xac0
-    func_001010c8();  // 0x100ea8                                // 0x00101c78: jal 0x100ea8
+    func_00100ea8();  // 100ea8                                // 0x00101c78: jal 0x100ea8
     a0 = 0x22;                                                  // 0x00101c7c: addiu $a0, $zero, 0x22
     /* bnezl $v0, 0x101c90 */                                   // 0x00101c80: bnezl $v0, 0x101c90
     g_001ef540 = s0;  // Global at 0x001ef540                   // 0x00101c84: sw $s0, -0xac0($s1)
     goto label_0x101d10;                                        // 0x00101c88: b 0x101d10
-    func_00116d40();  // 0x116c90                                // 0x00101c94: jal 0x116c90
+    func_00116c90();  // 116c90                                // 0x00101c94: jal 0x116c90
     a1 = 4;                                                     // 0x00101c98: addiu $a1, $zero, 4
     a0 = 0x1f << 16;                                            // 0x00101c9c: lui $a0, 0x1f
     a2 = 0x1f << 16;                                            // 0x00101ca0: lui $a2, 0x1f
@@ -30,7 +30,7 @@ void func_00101c58() {
     a1 = g_001efaa8;  // Global at 0x001efaa8                   // 0x00101cbc: lw $a1, -0x558($v1)
     a0 = a0 + -0x580;                                           // 0x00101cc0: addiu $a0, $a0, -0x580
     local_0 = 0;                                                // 0x00101cc8: sw $zero, 0($sp)
-    func_001178a0();  // 0x1176a8                                // 0x00101cd4: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x00101cd4: jal 0x1176a8
     if (v0 >= 0) goto label_0x101cf8;                           // 0x00101cdc: bgez $v0, 0x101cf8
     v1 = 0x1f << 16;                                            // 0x00101ce0: lui $v1, 0x1f
     v0 = 0x1f << 16;                                            // 0x00101ce4: lui $v0, 0x1f

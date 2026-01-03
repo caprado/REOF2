@@ -17,7 +17,7 @@ void func_001a6250() {
     local_48 = s1;                                              // 0x001a627c: sw $s1, 0x48($sp)
     local_40 = v0;                                              // 0x001a6280: sw $v0, 0x40($sp)
     a1 = *(int32_t*)((a2) + 8);                                 // 0x001a6284: lw $a1, 8($a2)
-    func_00180140();  // 0x180038                                // 0x001a6288: jal 0x180038
+    func_00180038();  // 180038                                // 0x001a6288: jal 0x180038
     a0 = sp + 0x40;                                             // 0x001a628c: addiu $a0, $sp, 0x40
     v1 = v0 & 0xff;                                             // 0x001a6290: andi $v1, $v0, 0xff
     if (v1 < 0) goto label_0x1a62b0;                            // 0x001a6294: bltz $v1, 0x1a62b0

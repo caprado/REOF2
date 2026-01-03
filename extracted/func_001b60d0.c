@@ -29,7 +29,7 @@ label_0x1b6118:
     a1 = 0x3f;                                                  // 0x001b6120: addiu $a1, $zero, 0x3f
     goto label_0x1b6134;                                        // 0x001b6124: b 0x1b6134
 label_0x1b612c:
-    func_001b6140();  // 0x1b60d0                                // 0x001b612c: jal 0x1b60d0
+    func_001b60d0();  // 1b60d0                                // 0x001b612c: jal 0x1b60d0
     /* nop */                                                   // 0x001b6130: nop 
 label_0x1b6134:
     return;                                                     // 0x001b6138: jr $ra

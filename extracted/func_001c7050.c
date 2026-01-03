@@ -11,12 +11,12 @@ void func_001c7050() {
     /* FPU: dpa.w.ph $ac0, $sp, $s3 */                          // 0x001c705c: dpa.w.ph $ac0, $sp, $s3
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001c7064: addu.qb $zero, $sp, $s1
     if (a2 != v0) goto label_0x1c708c;                          // 0x001c7074: bne $a2, $v0, 0x1c708c
-    func_001c7050();  // 0x1c6f90                                // 0x001c707c: jal 0x1c6f90
+    func_001c6f90();  // 1c6f90                                // 0x001c707c: jal 0x1c6f90
     /* nop */                                                   // 0x001c7080: nop 
     goto label_0x1c7154;                                        // 0x001c7084: b 0x1c7154
 label_0x1c708c:
 label_0x1c7090:
-    func_001ae690();  // 0x1ae5c0                                // 0x001c7090: jal 0x1ae5c0
+    func_001ae5c0();  // 1ae5c0                                // 0x001c7090: jal 0x1ae5c0
     a0 = 1;                                                     // 0x001c7094: addiu $a0, $zero, 1
     v1 = v0 & 0xffff;                                           // 0x001c7098: andi $v1, $v0, 0xffff
     s3 = s3 + 1;                                                // 0x001c709c: addiu $s3, $s3, 1

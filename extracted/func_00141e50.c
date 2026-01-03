@@ -15,13 +15,13 @@ void func_00141e50() {
     goto label_0x141ea0;                                        // 0x00141e74: b 0x141ea0
     /* nop */                                                   // 0x00141e7c: nop 
 label_0x141e80:
-    func_001413a8();  // 0x141390                                // 0x00141e80: jal 0x141390
+    func_00141390();  // 141390                                // 0x00141e80: jal 0x141390
     /* nop */                                                   // 0x00141e84: nop 
     v1 = 1;                                                     // 0x00141e88: addiu $v1, $zero, 1
     v0 = *(int32_t*)(s0);                                       // 0x00141e8c: lw $v0, 0($s0)
     *(uint32_t*)(s0) = v1;                                      // 0x00141e90: sw $v1, 0($s0)
     v0 = v0 ^ 1;                                                // 0x00141e94: xori $v0, $v0, 1
-    func_001413c0();  // 0x1413a8                                // 0x00141e98: jal 0x1413a8
+    func_001413a8();  // 1413a8                                // 0x00141e98: jal 0x1413a8
     s0 = ((unsigned)0 < (unsigned)v0) ? 1 : 0;                  // 0x00141e9c: sltu $s0, $zero, $v0
 label_0x141ea0:
     return;                                                     // 0x00141eac: jr $ra

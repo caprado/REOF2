@@ -21,7 +21,7 @@ label_0x11b878:
     a1 = 6;                                                     // 0x0011b888: addiu $a1, $zero, 6
     t1 = s0 + -0x600;                                           // 0x0011b898: addiu $t1, $s0, -0x600
     t2 = 4;                                                     // 0x0011b89c: addiu $t2, $zero, 4
-    func_001178a0();  // 0x1176a8                                // 0x0011b8a0: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x0011b8a0: jal 0x1176a8
     if (v0 >= 0) goto label_0x11b8b8;                           // 0x0011b8a8: bgezl $v0, 0x11b8b8
     v0 = g_0024fa00;  // Global at 0x0024fa00                   // 0x0011b8ac: lw $v0, -0x600($s0)
     v0 = 0xffff << 16;                                          // 0x0011b8b0: lui $v0, 0xffff

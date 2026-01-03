@@ -18,9 +18,9 @@ void func_00130ca8() {
     s2 = 1;                                                     // 0x00130ce8: addiu $s2, $zero, 1
     /* nop */                                                   // 0x00130cec: nop 
 label_0x130cf0:
-    func_00141ee0();  // 0x141e50                                // 0x00130cf0: jal 0x141e50
+    func_00141e50();  // 141e50                                // 0x00130cf0: jal 0x141e50
     if (v0 != s2) goto label_0x130d0c;                          // 0x00130cf8: bne $v0, $s2, 0x130d0c
-    func_00130a08();  // 0x130838                                // 0x00130d00: jal 0x130838
+    func_00130838();  // 130838                                // 0x00130d00: jal 0x130838
     /* nop */                                                   // 0x00130d04: nop 
     g_00200eb0 = 0;  // Global at 0x00200eb0                    // 0x00130d08: sw $zero, 0($s1)
 label_0x130d0c:

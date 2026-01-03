@@ -11,21 +11,21 @@ void func_001c7310() {
     s1 = 0x24 << 16;                                            // 0x001c7324: lui $s1, 0x24
     s1 = &str_00243850;  // "send \\"                           // 0x001c732c: addiu $s1, $s1, 0x3850
 label_0x1c7330:
-    func_00128e28();  // 0x128d88                                // 0x001c7334: jal 0x128d88
+    func_00128d88();  // 128d88                                // 0x001c7334: jal 0x128d88
     /* nop */                                                   // 0x001c7340: nop 
     if (v0 == 0) goto label_0x1c7330;                           // 0x001c7344: beqz $v0, 0x1c7330
     /* nop */                                                   // 0x001c7348: nop 
-    func_00129968();  // 0x1298c8                                // 0x001c734c: jal 0x1298c8
-    func_001294a0();  // 0x129460                                // 0x001c735c: jal 0x129460
+    func_001298c8();  // 1298c8                                // 0x001c734c: jal 0x1298c8
+    func_00129460();  // 129460                                // 0x001c735c: jal 0x129460
 label_0x1c7364:
-    func_00129a38();  // 0x129a08                                // 0x001c7364: jal 0x129a08
+    func_00129a08();  // 129a08                                // 0x001c7364: jal 0x129a08
     v1 = 3;                                                     // 0x001c736c: addiu $v1, $zero, 3
     /* nop */                                                   // 0x001c7370: nop 
     /* nop */                                                   // 0x001c7374: nop 
     if (v0 != v1) goto label_0x1c7364;                          // 0x001c7378: bne $v0, $v1, 0x1c7364
     /* nop */                                                   // 0x001c737c: nop 
-    func_001290c8();  // 0x129010                                // 0x001c7380: jal 0x129010
-    func_001c0d00();  // 0x1c0c00                                // 0x001c7388: jal 0x1c0c00
+    func_00129010();  // 129010                                // 0x001c7380: jal 0x129010
+    func_001c0c00();  // 1c0c00                                // 0x001c7388: jal 0x1c0c00
     /* FPU: ld.b $w0, -0x4e($zero) */                           // 0x001c7394: ld.b $w0, -0x4e($zero)
     /* FPU: aver_u.h $w0, $w0, $w17 */                          // 0x001c7398: aver_u.h $w0, $w0, $w17
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001c739c: xori.b $w0, $w0, 0xb0

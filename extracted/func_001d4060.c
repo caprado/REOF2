@@ -14,13 +14,13 @@ void func_001d4060() {
     a0 = 0x33 << 16;                                            // 0x001d4084: lui $a0, 0x33
     a1 = 0x24 << 16;                                            // 0x001d4088: lui $a1, 0x24
     a0 = a0 + -0x1e70;                                          // 0x001d408c: addiu $a0, $a0, -0x1e70
-    func_0010a570();  // 0x10a4d8                                // 0x001d4090: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001d4090: jal 0x10a4d8
     a1 = &str_002472c0;  // "%sEFFECT\\def%02d"                 // 0x001d4094: addiu $a1, $a1, 0x72c0
     if (s0 != 0) goto label_0x1d40b0;                           // 0x001d4098: bnez $s0, 0x1d40b0
     a0 = 0x33 << 16;                                            // 0x001d409c: lui $a0, 0x33
     a1 = 0x24 << 16;                                            // 0x001d40a0: lui $a1, 0x24
     a0 = a0 + -0x1e70;                                          // 0x001d40a4: addiu $a0, $a0, -0x1e70
-    func_0010a990();  // 0x10a860                                // 0x001d40a8: jal 0x10a860
+    func_0010a860();  // 10a860                                // 0x001d40a8: jal 0x10a860
     a1 = a1 + 0x7250;                                           // 0x001d40ac: addiu $a1, $a1, 0x7250
 label_0x1d40b0:
     v0 = 0x33 << 16;                                            // 0x001d40b4: lui $v0, 0x33

@@ -7,10 +7,10 @@ void func_00135148() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x00135148: addiu $sp, $sp, -0x20
-    func_00135318();  // 0x1352b8                                // 0x00135160: jal 0x1352b8
+    func_001352b8();  // 1352b8                                // 0x00135160: jal 0x1352b8
     /* call function at address in s0 */                        // 0x00135168: jalr $s0
     /* nop */                                                   // 0x0013516c: nop 
-    func_001352b8();  // 0x135220                                // 0x00135178: jal 0x135220
+    func_00135220();  // 135220                                // 0x00135178: jal 0x135220
     if (v0 != 0) goto label_0x135204;                           // 0x00135180: bnez $v0, 0x135204
     a0 = 0x25 << 16;                                            // 0x00135188: lui $a0, 0x25
     v1 = a0 + 0x37e8;                                           // 0x0013518c: addiu $v1, $a0, 0x37e8
@@ -35,9 +35,9 @@ label_0x1351c4:
     v1 = v0 + 4;                                                // 0x001351dc: addiu $v1, $v0, 4
     v0 = s0 + v0;                                               // 0x001351e0: addu $v0, $s0, $v0
     s0 = s0 + v1;                                               // 0x001351e4: addu $s0, $s0, $v1
-    func_0010af38();  // 0x10ae00                                // 0x001351e8: jal 0x10ae00
+    func_0010ae00();  // 10ae00                                // 0x001351e8: jal 0x10ae00
     g_002537e8 = s2;  // Global at 0x002537e8                   // 0x001351ec: sw $s2, 0($v0)
-    func_00107b68();  // 0x107ab8                                // 0x001351f8: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x001351f8: jal 0x107ab8
     a2 = v0 + 1;                                                // 0x001351fc: addiu $a2, $v0, 1
 label_0x135204:
     return;                                                     // 0x00135214: jr $ra

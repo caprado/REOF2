@@ -34,7 +34,7 @@ label_0x1003dc:
     if (v0 <= 0) goto label_0x1003f0;                           // 0x001003dc: blez $v0, 0x1003f0
     a0 = &str_0021fd00;  // "Libcdvd bind err CdSearchFile\n"   // 0x001003e0: addiu $a0, $s6, -0x300
     a1 = g_0024b700;  // Global at 0x0024b700                   // 0x001003e4: lw $a1, -0x4900($s2)
-    func_00116598();  // 0x116508                                // 0x001003e8: jal 0x116508
+    func_00116508();  // 116508                                // 0x001003e8: jal 0x116508
     a2 = g_001edf5c;  // Global at 0x001edf5c                   // 0x001003ec: lw $a2, -0x20a4($s1)
 label_0x1003f0:
     v1 = g_0024b700;  // Global at 0x0024b700                   // 0x001003f0: lw $v1, -0x4900($s2)

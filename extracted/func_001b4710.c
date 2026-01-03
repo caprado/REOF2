@@ -10,7 +10,7 @@ void func_001b4710() {
     a0 = *(int32_t*)((gp) + -0x63a8);                           // 0x001b4718: lw $a0, -0x63a8($gp)
     if (a0 == 0) goto label_0x1b4738;                           // 0x001b471c: beqz $a0, 0x1b4738
     /* nop */                                                   // 0x001b4720: nop 
-    thunk_func_001a0a10();  // 0x18daf0                          // 0x001b4724: jal 0x18daf0
+    thunk_func_0018daf0();  // 18daf0                          // 0x001b4724: jal 0x18daf0
     /* nop */                                                   // 0x001b4728: nop 
     at = 0x31 << 16;                                            // 0x001b472c: lui $at, 0x31
     *(uint32_t*)((gp) + -0x63a8) = 0;                           // 0x001b4730: sw $zero, -0x63a8($gp)

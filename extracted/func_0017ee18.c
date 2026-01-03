@@ -7,7 +7,7 @@ void func_0017ee18() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x40;                                            // 0x0017ee18: addiu $sp, $sp, -0x40
-    func_0011d378();  // 0x11d320                                // 0x0017ee34: jal 0x11d320
+    func_0011d320();  // 11d320                                // 0x0017ee34: jal 0x11d320
     VPU_VF4 = *(vec128_t*)((s0) + 0);  // Load 128-bit vector   // 0x0017ee3c: ldc2 $4, 0($s0)
     VPU_VF5 = *(vec128_t*)((s1) + 0x30);  // Load 128-bit vector // 0x0017ee40: ldc2 $5, 0x30($s1)
     /* FPU: nori.b $w0, $w0, 0x27 */                            // 0x0017ee44: nori.b $w0, $w0, 0x27

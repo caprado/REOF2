@@ -31,7 +31,7 @@ label_0x134d68:
     t1 = *(int16_t*)((s0) + 0x32);                              // 0x00134d94: lh $t1, 0x32($s0)
     t3 = *(int16_t*)((s0) + 0x36);                              // 0x00134d98: lh $t3, 0x36($s0)
     v0 = *(int16_t*)((s0) + 0x38);                              // 0x00134d9c: lh $v0, 0x38($s0)
-    func_00127c88();  // 0x127398                                // 0x00134da0: jal 0x127398
+    func_00127398();  // 127398                                // 0x00134da0: jal 0x127398
     local_0 = v0;                                               // 0x00134da4: sw $v0, 0($sp)
     goto label_0x134e10;                                        // 0x00134da8: b 0x134e10
     *(uint32_t*)((s0) + 0x10) = v0;                             // 0x00134dac: sw $v0, 0x10($s0)
@@ -48,7 +48,7 @@ label_0x134db0:
     v0 = *(int16_t*)((s0) + 0x38);                              // 0x00134dd4: lh $v0, 0x38($s0)
     local_8 = v1;                                               // 0x00134dd8: sw $v1, 8($sp)
     local_0 = t4;                                               // 0x00134ddc: sw $t4, 0($sp)
-    func_00127cf8();  // 0x127c88                                // 0x00134de0: jal 0x127c88
+    func_00127c88();  // 127c88                                // 0x00134de0: jal 0x127c88
     local_10 = v0;                                              // 0x00134de4: sw $v0, 0x10($sp)
     v1 = (unsigned)v0 >> 0x1f;                                  // 0x00134de8: srl $v1, $v0, 0x1f
     *(uint32_t*)((s0) + 0x10) = v0;                             // 0x00134dec: sw $v0, 0x10($s0)
@@ -58,7 +58,7 @@ label_0x134db0:
     v0 = v0 - v1;                                               // 0x00134dfc: subu $v0, $v0, $v1
     if (v0 != s1) goto label_0x134e14;                          // 0x00134e00: bne $v0, $s1, 0x134e14
     v0 = 3;                                                     // 0x00134e04: addiu $v0, $zero, 3
-    func_00134d38();  // 0x134d28                                // 0x00134e08: jal 0x134d28
+    func_00134d28();  // 134d28                                // 0x00134e08: jal 0x134d28
     /* nop */                                                   // 0x00134e0c: nop 
 label_0x134e10:
     v0 = 3;                                                     // 0x00134e10: addiu $v0, $zero, 3

@@ -10,7 +10,7 @@ void func_001a8580() {
     at = 0x2a << 16;                                            // 0x001a8584: lui $at, 0x2a
     v1 = g_002a1530;  // Global at 0x002a1530                   // 0x001a858c: lb $v1, 0x1530($at)
     if (v1 == 0) goto label_0x1a85a8;                           // 0x001a8590: beqz $v1, 0x1a85a8
-    func_00131138();  // 0x1310e8                                // 0x001a8598: jal 0x1310e8
+    func_001310e8();  // 1310e8                                // 0x001a8598: jal 0x1310e8
     /* nop */                                                   // 0x001a859c: nop 
     at = 0x2a << 16;                                            // 0x001a85a0: lui $at, 0x2a
     g_002a1530 = 0;  // Global at 0x002a1530                    // 0x001a85a4: sb $zero, 0x1530($at)

@@ -36,7 +36,7 @@ void func_001aea70() {
     g_003137f2 = a0;  // Global at 0x003137f2                   // 0x001aeae0: sb $a0, 0x37f2($at)
     v0 = v0 + v1;                                               // 0x001aeae4: addu $v0, $v0, $v1
     a1 = g_0021bf40;  // Global at 0x0021bf40                   // 0x001aeae8: lw $a1, 0($v0)
-    func_001aefe0();  // 0x1aefd0                                // 0x001aeaec: jal 0x1aefd0
+    func_001aefd0();  // 1aefd0                                // 0x001aeaec: jal 0x1aefd0
     a0 = 0x63;                                                  // 0x001aeaf0: addiu $a0, $zero, 0x63
 label_0x1aeaf4:
     return;                                                     // 0x001aeaf8: jr $ra

@@ -12,22 +12,22 @@ void func_001b0150() {
     a0 = a0 + -0x4020;                                          // 0x001b0164: addiu $a0, $a0, -0x4020
     a1 = t4 + 0x4094;                                           // 0x001b0168: addiu $a1, $t4, 0x4094
     a2 = 0x1f;                                                  // 0x001b016c: addiu $a2, $zero, 0x1f
-    func_001afea0();  // 0x1afe50                                // 0x001b0170: jal 0x1afe50
+    func_001afe50();  // 1afe50                                // 0x001b0170: jal 0x1afe50
     t3 = t3 + 0x1d30;                                           // 0x001b0174: addiu $t3, $t3, 0x1d30
     a0 = 0x22 << 16;                                            // 0x001b0178: lui $a0, 0x22
     a2 = 0x3e;                                                  // 0x001b017c: addiu $a2, $zero, 0x3e
-    func_001afea0();  // 0x1afe50                                // 0x001b0180: jal 0x1afe50
+    func_001afe50();  // 1afe50                                // 0x001b0180: jal 0x1afe50
     a0 = a0 + -0x3fe0;                                          // 0x001b0184: addiu $a0, $a0, -0x3fe0
     a0 = 0x22 << 16;                                            // 0x001b0188: lui $a0, 0x22
     a2 = 0x3b;                                                  // 0x001b018c: addiu $a2, $zero, 0x3b
-    func_001afea0();  // 0x1afe50                                // 0x001b0190: jal 0x1afe50
+    func_001afe50();  // 1afe50                                // 0x001b0190: jal 0x1afe50
     a0 = a0 + -0x3fa0;                                          // 0x001b0194: addiu $a0, $a0, -0x3fa0
     a0 = 0x22 << 16;                                            // 0x001b0198: lui $a0, 0x22
     a2 = 0x10;                                                  // 0x001b019c: addiu $a2, $zero, 0x10
-    func_001afea0();  // 0x1afe50                                // 0x001b01a0: jal 0x1afe50
+    func_001afe50();  // 1afe50                                // 0x001b01a0: jal 0x1afe50
     a0 = a0 + -0x3f60;                                          // 0x001b01a4: addiu $a0, $a0, -0x3f60
     a0 = gp + -0x7d10;                                          // 0x001b01a8: addiu $a0, $gp, -0x7d10
-    func_001afea0();  // 0x1afe50                                // 0x001b01ac: jal 0x1afe50
+    func_001afe50();  // 1afe50                                // 0x001b01ac: jal 0x1afe50
     a2 = 4;                                                     // 0x001b01b0: addiu $a2, $zero, 4
     a3 = gp + -0x7d08;                                          // 0x001b01b8: addiu $a3, $gp, -0x7d08
 label_0x1b01bc:
@@ -66,14 +66,14 @@ label_0x1b0238:
     v0 = v0 + -0x4000;                                          // 0x001b023c: addiu $v0, $v0, -0x4000
     v0 = v0 + a3;                                               // 0x001b0240: addu $v0, $v0, $a3
     a1 = g_0021c000;  // Global at 0x0021c000                   // 0x001b0244: lbu $a1, 0($v0)
-    func_001afed0();  // 0x1afea0                                // 0x001b0248: jal 0x1afea0
+    func_001afea0();  // 1afea0                                // 0x001b0248: jal 0x1afea0
     a0 = t3 + 0x1420;                                           // 0x001b024c: addiu $a0, $t3, 0x1420
     if (v0 == 0) goto label_0x1b026c;                           // 0x001b0250: beqz $v0, 0x1b026c
     v1 = 0x22 << 16;                                            // 0x001b0254: lui $v1, 0x22
     v1 = v1 + -0x4020;                                          // 0x001b0258: addiu $v1, $v1, -0x4020
     v1 = v1 + a3;                                               // 0x001b025c: addu $v1, $v1, $a3
     a1 = g_0021bfe0;  // Global at 0x0021bfe0                   // 0x001b0260: lbu $a1, 0($v1)
-    func_001aff00();  // 0x1afed0                                // 0x001b0264: jal 0x1afed0
+    func_001afed0();  // 1afed0                                // 0x001b0264: jal 0x1afed0
     a0 = t4 + 0x40f4;                                           // 0x001b0268: addiu $a0, $t4, 0x40f4
 label_0x1b026c:
     a3 = a3 + 1;                                                // 0x001b026c: addiu $a3, $a3, 1

@@ -9,18 +9,18 @@ void func_001c7970() {
     sp = sp + -0x60;                                            // 0x001c7970: addiu $sp, $sp, -0x60
     /* FPU: dpa.w.ph $ac0, $sp, $s3 */                          // 0x001c797c: dpa.w.ph $ac0, $sp, $s3
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001c798c: addu.qb $zero, $sp, $s1
-    func_001c7780();  // 0x1c7770                                // 0x001c7998: jal 0x1c7770
+    func_001c7770();  // 1c7770                                // 0x001c7998: jal 0x1c7770
     s0 = 0x31 << 16;                                            // 0x001c79a0: lui $s0, 0x31
     a1 = 0x126;                                                 // 0x001c79a4: addiu $a1, $zero, 0x126
     s0 = s0 + 0x669c;                                           // 0x001c79a8: addiu $s0, $s0, 0x669c
     a0 = 4;                                                     // 0x001c79ac: addiu $a0, $zero, 4
     g_0031669c = s4;  // Global at 0x0031669c                   // 0x001c79b0: sh $s4, 0($s0)
     g_0031669e = s1;  // Global at 0x0031669e                   // 0x001c79b8: sh $s1, 2($s0)
-    func_001c7670();  // 0x1c75b0                                // 0x001c79bc: jal 0x1c75b0
+    func_001c75b0();  // 1c75b0                                // 0x001c79bc: jal 0x1c75b0
     g_003166a0 = s3;  // Global at 0x003166a0                   // 0x001c79c0: sh $s3, 4($s0)
     if (s1 >= 0) goto label_0x1c79e8;                           // 0x001c79cc: bgez $s1, 0x1c79e8
     /* nop */                                                   // 0x001c79d0: nop 
-    func_001c7790();  // 0x1c7780                                // 0x001c79d4: jal 0x1c7780
+    func_001c7780();  // 1c7780                                // 0x001c79d4: jal 0x1c7780
     /* nop */                                                   // 0x001c79d8: nop 
     goto label_0x1c7a18;                                        // 0x001c79dc: b 0x1c7a18
     /* nop */                                                   // 0x001c79e4: nop 
@@ -28,9 +28,9 @@ label_0x1c79e8:
     at = (v0 < s1) ? 1 : 0;                                     // 0x001c79f0: slt $at, $v0, $s1
     if (at != 0) goto label_0x1c7a08;                           // 0x001c79f4: bnez $at, 0x1c7a08
     a1 = s0 + 6;                                                // 0x001c79fc: addiu $a1, $s0, 6
-    func_00107b68();  // 0x107ab8                                // 0x001c7a00: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x001c7a00: jal 0x107ab8
 label_0x1c7a08:
-    func_001c7790();  // 0x1c7780                                // 0x001c7a08: jal 0x1c7780
+    func_001c7780();  // 1c7780                                // 0x001c7a08: jal 0x1c7780
     /* nop */                                                   // 0x001c7a0c: nop 
     /* nop */                                                   // 0x001c7a14: nop 
 label_0x1c7a18:

@@ -9,7 +9,7 @@ void func_0011c5a4() {
     sp = sp + -0x10;                                            // 0x0011c5a4: addiu $sp, $sp, -0x10
     a1 = 0x22 << 16;                                            // 0x0011c5a8: lui $a1, 0x22
     a1 = a1 + 0x1418;                                           // 0x0011c5b0: addiu $a1, $a1, 0x1418
-    func_0011c580();  // 0x11c478                                // 0x0011c5b4: jal 0x11c478
+    func_0011c478();  // 11c478                                // 0x0011c5b4: jal 0x11c478
     a3 = 1;                                                     // 0x0011c5b8: addiu $a3, $zero, 1
     return;                                                     // 0x0011c5c0: jr $ra
     sp = sp + 0x10;                                             // 0x0011c5c4: addiu $sp, $sp, 0x10

@@ -7,7 +7,7 @@ void func_0015f780() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x0015f780: addiu $sp, $sp, -0x20
-    func_0015fcb0();  // 0x15fc80                                // 0x0015f794: jal 0x15fc80
+    func_0015fc80();  // 15fc80                                // 0x0015f794: jal 0x15fc80
     a0 = 0x22 << 16;                                            // 0x0015f79c: lui $a0, 0x22
     a0 = &str_00227b28;  // "E1122640: mwPlyGetSfdHn: handle is invalid." // 0x0015f7a4: addiu $a0, $a0, 0x7b28
     if (v0 != 0) goto label_0x15f7c8;                           // 0x0015f7a8: bnez $v0, 0x15f7c8
@@ -20,11 +20,11 @@ label_0x15f7c8:
     return func_001750b0();  // Tail call                        // 0x0015f7d8: j 0x174ff8
     sp = sp + 0x20;                                             // 0x0015f7dc: addiu $sp, $sp, 0x20
     sp = sp + -0x10;                                            // 0x0015f7e0: addiu $sp, $sp, -0x10
-    func_0015fcb0();  // 0x15fc80                                // 0x0015f7ec: jal 0x15fc80
+    func_0015fc80();  // 15fc80                                // 0x0015f7ec: jal 0x15fc80
     /* bnezl $v0, 0x15f80c */                                   // 0x0015f7f4: bnezl $v0, 0x15f80c
     v0 = *(int32_t*)((s0) + 0x40);                              // 0x0015f7f8: lw $v0, 0x40($s0)
     a0 = 0x22 << 16;                                            // 0x0015f7fc: lui $a0, 0x22
-    func_001634a8();  // 0x163410                                // 0x0015f800: jal 0x163410
+    func_00163410();  // 163410                                // 0x0015f800: jal 0x163410
     a0 = &str_00227b58;  // "E1122639: mwPlyGetAdxtHn: handle is invalid." // 0x0015f804: addiu $a0, $a0, 0x7b58
     return;                                                     // 0x0015f814: jr $ra
     sp = sp + 0x10;                                             // 0x0015f818: addiu $sp, $sp, 0x10

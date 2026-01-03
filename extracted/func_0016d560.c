@@ -17,16 +17,16 @@ void func_0016d560() {
     *(uint32_t*)(s4) = v0;                                      // 0x0016d5a4: sw $v0, 0($s4)
     a0 = *(int32_t*)(v1);                                       // 0x0016d5a8: lw $a0, 0($v1)
     a1 = *(int32_t*)((v1) + 4);                                 // 0x0016d5ac: lw $a1, 4($v1)
-    func_00158518();  // 0x158410                                // 0x0016d5b0: jal 0x158410
+    func_00158410();  // 158410                                // 0x0016d5b0: jal 0x158410
     s0 = *(int32_t*)((a3) + 0x10);                              // 0x0016d5b4: lw $s0, 0x10($a3)
     if (v0 == 0) goto label_0x16d5fc;                           // 0x0016d5c4: beqz $v0, 0x16d5fc
-    func_00174060();  // 0x173fe8                                // 0x0016d5cc: jal 0x173fe8
+    func_00173fe8();  // 173fe8                                // 0x0016d5cc: jal 0x173fe8
     /* nop */                                                   // 0x0016d5d0: nop 
     a0 = s1 + 0xcc0;                                            // 0x0016d5d4: addiu $a0, $s1, 0xcc0
     v0 = local_0;                                               // 0x0016d5d8: lw $v0, 0($sp)
     a1 = s5 + 0xec;                                             // 0x0016d5e0: addiu $a1, $s5, 0xec
     if (v0 < 0) goto label_0x16d5fc;                            // 0x0016d5e8: bltz $v0, 0x16d5fc
-    func_0016d7c0();  // 0x16d648                                // 0x0016d5f0: jal 0x16d648
+    func_0016d648();  // 16d648                                // 0x0016d5f0: jal 0x16d648
     /* nop */                                                   // 0x0016d5f4: nop 
     *(uint32_t*)(s4) = v0;                                      // 0x0016d5f8: sw $v0, 0($s4)
 label_0x16d5fc:

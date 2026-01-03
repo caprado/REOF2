@@ -7,11 +7,11 @@ void func_00130318() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x10;                                            // 0x00130318: addiu $sp, $sp, -0x10
-    func_001261b8();  // 0x1261a0                                // 0x00130324: jal 0x1261a0
-    func_00130318();  // 0x1302e0                                // 0x0013032c: jal 0x1302e0
+    func_001261a0();  // 1261a0                                // 0x00130324: jal 0x1261a0
+    func_001302e0();  // 1302e0                                // 0x0013032c: jal 0x1302e0
     v0 = 0xf << 16;                                             // 0x00130334: lui $v0, 0xf
     v0 = v0 | 0xffff;                                           // 0x00130338: ori $v0, $v0, 0xffff
-    func_001261d0();  // 0x1261b8                                // 0x0013033c: jal 0x1261b8
+    func_001261b8();  // 1261b8                                // 0x0013033c: jal 0x1261b8
     *(uint32_t*)((s0) + 0x58) = v0;                             // 0x00130340: sw $v0, 0x58($s0)
     v0 = 1;                                                     // 0x00130344: addiu $v0, $zero, 1
     return;                                                     // 0x00130350: jr $ra

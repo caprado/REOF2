@@ -25,19 +25,19 @@ label_0x1b3390:
     v0 = sp + 0x90;                                             // 0x001b3394: addiu $v0, $sp, 0x90
     a0 = 0x2b << 16;                                            // 0x001b3398: lui $a0, 0x2b
     a2 = v0 - v1;                                               // 0x001b339c: subu $a2, $v0, $v1
-    func_0010f580();  // 0x10f528                                // 0x001b33a0: jal 0x10f528
+    func_0010f528();  // 10f528                                // 0x001b33a0: jal 0x10f528
     a0 = a0 + -0x43c0;                                          // 0x001b33a4: addiu $a0, $a0, -0x43c0
-    func_001b34f0();  // 0x1b3490                                // 0x001b33a8: jal 0x1b3490
+    func_001b3490();  // 1b3490                                // 0x001b33a8: jal 0x1b3490
     a0 = -1;                                                    // 0x001b33ac: addiu $a0, $zero, -1
     a0 = 8;                                                     // 0x001b33b0: addiu $a0, $zero, 8
-    func_001b3710();  // 0x1b36e0                                // 0x001b33b4: jal 0x1b36e0
+    func_001b36e0();  // 1b36e0                                // 0x001b33b4: jal 0x1b36e0
     a1 = 0xc;                                                   // 0x001b33b8: addiu $a1, $zero, 0xc
-    func_001b3490();  // 0x1b3460                                // 0x001b33c0: jal 0x1b3460
+    func_001b3460();  // 1b3460                                // 0x001b33c0: jal 0x1b3460
     a0 = 0x2b << 16;                                            // 0x001b33c8: lui $a0, 0x2b
-    func_001b3580();  // 0x1b34f0                                // 0x001b33cc: jal 0x1b34f0
+    func_001b34f0();  // 1b34f0                                // 0x001b33cc: jal 0x1b34f0
     a0 = a0 + -0x43c0;                                          // 0x001b33d0: addiu $a0, $a0, -0x43c0
     a0 = 8;                                                     // 0x001b33d4: addiu $a0, $zero, 8
-    func_001b3710();  // 0x1b36e0                                // 0x001b33d8: jal 0x1b36e0
+    func_001b36e0();  // 1b36e0                                // 0x001b33d8: jal 0x1b36e0
     /* FPU: aver_u.h $w0, $w0, $w17 */                          // 0x001b33e4: aver_u.h $w0, $w0, $w17
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001b33e8: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x001b33ec: jr $ra

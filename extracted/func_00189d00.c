@@ -8,21 +8,21 @@ void func_00189d00() {
     
     sp = sp + -0x30;                                            // 0x00189d00: addiu $sp, $sp, -0x30
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x00189d08: addu.qb $zero, $sp, $s1
-    func_001991c0();  // 0x198ac0                                // 0x00189d14: jal 0x198ac0
+    func_00198ac0();  // 198ac0                                // 0x00189d14: jal 0x198ac0
     v1 = *(int32_t*)((s1) + 0x48);                              // 0x00189d1c: lw $v1, 0x48($s1)
     v0 = -1;                                                    // 0x00189d20: addiu $v0, $zero, -1
     if (v1 == v0) goto label_0x189d84;                          // 0x00189d24: beq $v1, $v0, 0x189d84
-    func_0018a140();  // 0x189e20                                // 0x00189d34: jal 0x189e20
-    func_0018b190();  // 0x18a140                                // 0x00189d40: jal 0x18a140
-    func_0018bec0();  // 0x18be00                                // 0x00189d4c: jal 0x18be00
-    func_0018db10();  // 0x18db00                                // 0x00189d54: jal 0x18db00
+    func_00189e20();  // 189e20                                // 0x00189d34: jal 0x189e20
+    func_0018a140();  // 18a140                                // 0x00189d40: jal 0x18a140
+    func_0018be00();  // 18be00                                // 0x00189d4c: jal 0x18be00
+    func_0018db00();  // 18db00                                // 0x00189d54: jal 0x18db00
     a0 = *(int32_t*)((s1) + 0x1c);                              // 0x00189d58: lw $a0, 0x1c($s1)
     a2 = *(int32_t*)((s1) + 0x24);                              // 0x00189d5c: lw $a2, 0x24($s1)
     v1 = *(int32_t*)((s1) + 0x4c);                              // 0x00189d64: lw $v1, 0x4c($s1)
     a1 = *(int32_t*)((s1) + 0x34);                              // 0x00189d68: lw $a1, 0x34($s1)
     a3 = a2 + v0;                                               // 0x00189d6c: addu $a3, $a2, $v0
     a2 = *(int32_t*)((v1) + 0x14);                              // 0x00189d70: lw $a2, 0x14($v1)
-    func_0018b370();  // 0x18b280                                // 0x00189d74: jal 0x18b280
+    func_0018b280();  // 18b280                                // 0x00189d74: jal 0x18b280
     t0 = s1 + 0x60;                                             // 0x00189d78: addiu $t0, $s1, 0x60
     goto label_0x189d8c;                                        // 0x00189d7c: b 0x189d8c
     v1 = *(int32_t*)((gp) + -0x64c4);                           // 0x00189d80: lw $v1, -0x64c4($gp)

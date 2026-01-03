@@ -7,7 +7,7 @@ void func_0015f938() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x0015f938: addiu $sp, $sp, -0x20
-    func_0015fcb0();  // 0x15fc80                                // 0x0015f94c: jal 0x15fc80
+    func_0015fc80();  // 15fc80                                // 0x0015f94c: jal 0x15fc80
     s0 = s0 ^ 1;                                                // 0x0015f954: xori $s0, $s0, 1
     a0 = 0x22 << 16;                                            // 0x0015f958: lui $a0, 0x22
     a0 = &str_00227c20;  // "E1122616 mwPlySetAudioCh: handle is invalid." // 0x0015f95c: addiu $a0, $a0, 0x7c20
@@ -21,14 +21,14 @@ label_0x15f980:
     return func_001750b0();  // Tail call                        // 0x0015f990: j 0x174ff8
     sp = sp + 0x20;                                             // 0x0015f994: addiu $sp, $sp, 0x20
     sp = sp + -0x20;                                            // 0x0015f998: addiu $sp, $sp, -0x20
-    func_0015fcb0();  // 0x15fc80                                // 0x0015f9ac: jal 0x15fc80
+    func_0015fc80();  // 15fc80                                // 0x0015f9ac: jal 0x15fc80
     a0 = 0x22 << 16;                                            // 0x0015f9b4: lui $a0, 0x22
     if (v0 != 0) goto label_0x15f9d8;                           // 0x0015f9bc: bnez $v0, 0x15f9d8
     a0 = &str_00227c50;  // "E10911A mwPlySetAudioCh: Invalid ch no." // 0x0015f9c0: addiu $a0, $a0, 0x7c50
     return func_001634a8();  // Tail call                        // 0x0015f9d0: j 0x163410
     sp = sp + 0x20;                                             // 0x0015f9d4: addiu $sp, $sp, 0x20
 label_0x15f9d8:
-    func_00172070();  // 0x172000                                // 0x0015f9d8: jal 0x172000
+    func_00172000();  // 172000                                // 0x0015f9d8: jal 0x172000
     a0 = *(int32_t*)((s1) + 0x40);                              // 0x0015f9dc: lw $a0, 0x40($s1)
     a0 = 0x22 << 16;                                            // 0x0015f9e0: lui $a0, 0x22
     if (v0 == 0) goto label_0x15fa00;                           // 0x0015f9e4: beqz $v0, 0x15fa00

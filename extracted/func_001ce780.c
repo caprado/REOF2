@@ -7,7 +7,7 @@ void func_001ce780() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x001ce780: addiu $sp, $sp, -0x20
-    func_001cfd70();  // 0x1cfd60                                // 0x001ce78c: jal 0x1cfd60
+    func_001cfd60();  // 1cfd60                                // 0x001ce78c: jal 0x1cfd60
     *(uint32_t*)((s0) + 0x14) = 0;                              // 0x001ce794: sw $zero, 0x14($s0)
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001ce79c: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x001ce7a0: jr $ra

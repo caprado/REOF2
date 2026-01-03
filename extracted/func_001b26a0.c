@@ -11,11 +11,11 @@ void func_001b26a0() {
     v1 = g_003137b3;  // Global at 0x003137b3                   // 0x001b26ac: lbu $v1, 0x37b3($at)
     if (v1 == 0) goto label_0x1b26dc;                           // 0x001b26b0: beqz $v1, 0x1b26dc
     a0 = 0x2b << 16;                                            // 0x001b26b4: lui $a0, 0x2b
-    func_001af180();  // 0x1af0d0                                // 0x001b26b8: jal 0x1af0d0
+    func_001af0d0();  // 1af0d0                                // 0x001b26b8: jal 0x1af0d0
     a0 = a0 + -0x5700;                                          // 0x001b26bc: addiu $a0, $a0, -0x5700
     a0 = 0x2b << 16;                                            // 0x001b26c0: lui $a0, 0x2b
     a0 = a0 + -0x5700;                                          // 0x001b26c8: addiu $a0, $a0, -0x5700
-    func_00107d30();  // 0x107c70                                // 0x001b26cc: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001b26cc: jal 0x107c70
     a2 = 0x33c;                                                 // 0x001b26d0: addiu $a2, $zero, 0x33c
     at = 0x31 << 16;                                            // 0x001b26d4: lui $at, 0x31
     g_003137b3 = 0;  // Global at 0x003137b3                    // 0x001b26d8: sb $zero, 0x37b3($at)

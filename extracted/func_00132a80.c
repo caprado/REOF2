@@ -9,7 +9,7 @@ void func_00132a80() {
     sp = sp + -0x10;                                            // 0x00132a80: addiu $sp, $sp, -0x10
     if (a0 != 0) goto label_0x132aa0;                           // 0x00132a84: bnez $a0, 0x132aa0
     a0 = 0x22 << 16;                                            // 0x00132a8c: lui $a0, 0x22
-    func_00127de8();  // 0x127d90                                // 0x00132a90: jal 0x127d90
+    func_00127d90();  // 127d90                                // 0x00132a90: jal 0x127d90
     a0 = &str_00223ca0;  // "E02080830 ADXT_SetWaitPlayStart: parameter error" // 0x00132a94: addiu $a0, $a0, 0x3ca0
     goto label_0x132aa4;                                        // 0x00132a98: b 0x132aa4
 label_0x132aa0:

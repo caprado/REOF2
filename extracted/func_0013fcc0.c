@@ -19,7 +19,7 @@ void func_0013fcc0() {
     if (v0 != 0) goto label_0x13fd14;                           // 0x0013fcf4: bnez $v0, 0x13fd14
     a0 = 0x21 << 16;                                            // 0x0013fcfc: lui $a0, 0x21
     a0 = a0 + -0xd68;                                           // 0x0013fd04: addiu $a0, $a0, -0xd68
-    func_00107d30();  // 0x107c70                                // 0x0013fd08: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x0013fd08: jal 0x107c70
     a2 = 0xc00;                                                 // 0x0013fd0c: addiu $a2, $zero, 0xc00
     v0 = g_0020f290;  // Global at 0x0020f290                   // 0x0013fd10: lw $v0, 0($s0)
 label_0x13fd14:

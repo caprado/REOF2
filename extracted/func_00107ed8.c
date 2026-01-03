@@ -33,15 +33,15 @@ label_0x107f10:
     if (v0 != 0) goto label_0x107fac;                           // 0x00107f64: bnez $v0, 0x107fac
     v0 = s2 << 2;                                               // 0x00107f68: sll $v0, $s2, 2
     a1 = *(int32_t*)((s1) + 4);                                 // 0x00107f6c: lw $a1, 4($s1)
-    func_00107ea8();  // 0x107e00                                // 0x00107f74: jal 0x107e00
+    func_00107e00();  // 107e00                                // 0x00107f74: jal 0x107e00
     a1 = a1 + 1;                                                // 0x00107f78: addiu $a1, $a1, 1
     a2 = *(int32_t*)((s1) + 0x10);                              // 0x00107f7c: lw $a2, 0x10($s1)
     a1 = s1 + 0xc;                                              // 0x00107f84: addiu $a1, $s1, 0xc
     a2 = a2 << 2;                                               // 0x00107f88: sll $a2, $a2, 2
     a0 = s0 + 0xc;                                              // 0x00107f8c: addiu $a0, $s0, 0xc
-    func_00107b68();  // 0x107ab8                                // 0x00107f90: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x00107f90: jal 0x107ab8
     a2 = a2 + 8;                                                // 0x00107f94: addiu $a2, $a2, 8
-    func_00107ed8();  // 0x107ea8                                // 0x00107fa0: jal 0x107ea8
+    func_00107ea8();  // 107ea8                                // 0x00107fa0: jal 0x107ea8
     v0 = s2 << 2;                                               // 0x00107fa8: sll $v0, $s2, 2
 label_0x107fac:
     s2 = s2 + 1;                                                // 0x00107fac: addiu $s2, $s2, 1

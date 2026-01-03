@@ -12,9 +12,9 @@ void func_001bddd0() {
     sp = sp + -0x30;                                            // 0x001bdde0: addiu $sp, $sp, -0x30
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001bdde8: addu.qb $zero, $sp, $s1
     a1 = 0x24 << 16;                                            // 0x001bddfc: lui $a1, 0x24
-    func_0010a570();  // 0x10a4d8                                // 0x001bde00: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001bde00: jal 0x10a4d8
     a1 = &str_0023e048;  // "icon.sys"                          // 0x001bde04: addiu $a1, $a1, -0x1fb8
-    func_0010af38();  // 0x10ae00                                // 0x001bde08: jal 0x10ae00
+    func_0010ae00();  // 10ae00                                // 0x001bde08: jal 0x10ae00
     a3 = s1 + v0;                                               // 0x001bde10: addu $a3, $s1, $v0
     a2 = s0 & 0xffff;                                           // 0x001bde14: andi $a2, $s0, 0xffff
     goto label_0x1bdeac;                                        // 0x001bde1c: b 0x1bdeac

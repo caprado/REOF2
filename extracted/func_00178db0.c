@@ -20,10 +20,10 @@ label_0x178e08:
     v0 = s0 << 4;                                               // 0x00178e10: sll $v0, $s0, 4
     s0 = s0 + 1;                                                // 0x00178e14: addiu $s0, $s0, 1
     s2 = s3 + v0;                                               // 0x00178e18: addu $s2, $s3, $v0
-    func_00178f58();  // 0x178f48                                // 0x00178e1c: jal 0x178f48
+    func_00178f48();  // 178f48                                // 0x00178e1c: jal 0x178f48
     if (v0 == 0) goto label_0x178e08;                           // 0x00178e24: beqz $v0, 0x178e08
     v0 = (s0 < s1) ? 1 : 0;                                     // 0x00178e28: slt $v0, $s0, $s1
-    func_00178ef8();  // 0x178ee0                                // 0x00178e34: jal 0x178ee0
+    func_00178ee0();  // 178ee0                                // 0x00178e34: jal 0x178ee0
     a0 = s6 + 0x78b8;                                           // 0x00178e3c: addiu $a0, $s6, 0x78b8
     v1 = g_002678bc;  // Global at 0x002678bc                   // 0x00178e40: lw $v1, 4($a0)
     v1 = v1 + 1;                                                // 0x00178e48: addiu $v1, $v1, 1

@@ -9,7 +9,7 @@ void func_0013ce50() {
     sp = sp + -0x10;                                            // 0x0013ce50: addiu $sp, $sp, -0x10
     if (a0 != 0) goto label_0x13ce70;                           // 0x0013ce54: bnez $a0, 0x13ce70
     a0 = 0x22 << 16;                                            // 0x0013ce5c: lui $a0, 0x22
-    func_0013d248();  // 0x13d1b8                                // 0x0013ce60: jal 0x13d1b8
+    func_0013d1b8();  // 13d1b8                                // 0x0013ce60: jal 0x13d1b8
     a0 = &str_00225be8;  // "E0011: Illigal parameter fname=%s\n" // 0x0013ce64: addiu $a0, $a0, 0x5be8
     goto label_0x13ced8;                                        // 0x0013ce68: b 0x13ced8
 label_0x13ce70:
@@ -33,7 +33,7 @@ label_0x13ceac:
     if (v1 != v0) goto label_0x13ced0;                          // 0x0013ceb0: bnel $v1, $v0, 0x13ced0
     v1 = v1 << 5;                                               // 0x0013ceb4: sll $v1, $v1, 5
     a0 = 0x22 << 16;                                            // 0x0013ceb8: lui $a0, 0x22
-    func_0013d248();  // 0x13d1b8                                // 0x0013cebc: jal 0x13d1b8
+    func_0013d1b8();  // 13d1b8                                // 0x0013cebc: jal 0x13d1b8
     a0 = &str_00225c58;  // "E0010: Illigal parameter min=%d\n" // 0x0013cec0: addiu $a0, $a0, 0x5c58
     goto label_0x13ced8;                                        // 0x0013cec4: b 0x13ced8
     /* nop */                                                   // 0x0013cecc: nop 

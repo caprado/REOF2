@@ -9,7 +9,7 @@ void func_00136068() {
     sp = sp + -0x10;                                            // 0x00136068: addiu $sp, $sp, -0x10
     if (a0 != 0) goto label_0x136090;                           // 0x00136074: bnez $a0, 0x136090
     a0 = 0x22 << 16;                                            // 0x0013607c: lui $a0, 0x22
-    func_00134fb0();  // 0x134ec0                                // 0x00136080: jal 0x134ec0
+    func_00134ec0();  // 134ec0                                // 0x00136080: jal 0x134ec0
     a0 = &str_002245a0;  // "cvFsGetNumTr #2:vtbl error"        // 0x00136084: addiu $a0, $a0, 0x45a0
     goto label_0x1360bc;                                        // 0x00136088: b 0x1360bc
 label_0x136090:
@@ -20,7 +20,7 @@ label_0x136090:
     /* call function at address in v0 */                        // 0x001360a0: jalr $v0
     a0 = g_00220004;  // Global at 0x00220004                   // 0x001360a4: lw $a0, 4($a0)
     goto label_0x1360b8;                                        // 0x001360a8: b 0x1360b8
-    func_00134fb0();  // 0x134ec0                                // 0x001360b0: jal 0x134ec0
+    func_00134ec0();  // 134ec0                                // 0x001360b0: jal 0x134ec0
     a0 = &str_002245c0;  // "cvFsChangeDir #1:illegal directory name" // 0x001360b4: addiu $a0, $a0, 0x45c0
 label_0x1360b8:
 label_0x1360bc:

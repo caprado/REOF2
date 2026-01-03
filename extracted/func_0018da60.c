@@ -23,12 +23,12 @@ void func_0018da60() {
     /* nop */                                                   // 0x0018daa8: nop 
     /* nop */                                                   // 0x0018daac: nop 
     sp = sp + -0x20;                                            // 0x0018dab0: addiu $sp, $sp, -0x20
-    func_001a09f0();  // 0x1a09e0                                // 0x0018dabc: jal 0x1a09e0
+    func_001a09e0();  // 1a09e0                                // 0x0018dabc: jal 0x1a09e0
     if (v0 != 0) goto label_0x18dadc;                           // 0x0018dac4: bnez $v0, 0x18dadc
     /* nop */                                                   // 0x0018dac8: nop 
-    func_0018db40();  // 0x18db10                                // 0x0018dacc: jal 0x18db10
+    func_0018db10();  // 18db10                                // 0x0018dacc: jal 0x18db10
     /* nop */                                                   // 0x0018dad0: nop 
-    func_001a0a00();  // 0x1a09f0                                // 0x0018dad4: jal 0x1a09f0
+    func_001a09f0();  // 1a09f0                                // 0x0018dad4: jal 0x1a09f0
 label_0x18dadc:
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x0018dae0: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x0018dae4: jr $ra

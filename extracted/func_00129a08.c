@@ -9,7 +9,7 @@ void func_00129a08() {
     sp = sp + -0x10;                                            // 0x00129a08: addiu $sp, $sp, -0x10
     if (a0 != 0) goto label_0x129a28;                           // 0x00129a0c: bnez $a0, 0x129a28
     a0 = 0x22 << 16;                                            // 0x00129a14: lui $a0, 0x22
-    func_00127de8();  // 0x127d90                                // 0x00129a18: jal 0x127d90
+    func_00127d90();  // 127d90                                // 0x00129a18: jal 0x127d90
     a0 = &str_00222a90;  // "E9040828:'ptid' is range outside." // 0x00129a1c: addiu $a0, $a0, 0x2a90
     goto label_0x129a2c;                                        // 0x00129a20: b 0x129a2c
     v0 = -3;                                                    // 0x00129a24: addiu $v0, $zero, -3

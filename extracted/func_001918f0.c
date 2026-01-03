@@ -15,7 +15,7 @@ void func_001918f0() {
     *(float*)(v0) = FPU_F2;  // Store float                     // 0x00191914: swc1 $f2, 0($v0)
     a0 = sp + 0x3c;                                             // 0x00191918: addiu $a0, $sp, 0x3c
     *(float*)((v0) + 4) = FPU_F1;  // Store float               // 0x0019191c: swc1 $f1, 4($v0)
-    thunk_func_00122190();  // 0x191f60                          // 0x00191920: jal 0x191f60
+    thunk_func_00191f60();  // 191f60                          // 0x00191920: jal 0x191f60
     *(float*)((v0) + 8) = FPU_F0;  // Store float               // 0x00191924: swc1 $f0, 8($v0)
     FPU_F2 = *(float*)((sp) + 0x2c);  // Load float             // 0x00191928: lwc1 $f2, 0x2c($sp)
     FPU_F1 = *(float*)((sp) + 0x38);  // Load float             // 0x0019192c: lwc1 $f1, 0x38($sp)

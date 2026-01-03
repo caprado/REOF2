@@ -22,10 +22,10 @@ void func_00122268() {
     if (v1 != 0) goto label_0x1222b0;                           // 0x00122294: bnez $v1, 0x1222b0
     /* nop */                                                   // 0x00122298: nop 
     /* move to FPU: $zero, $f13 */                              // 0x0012229c: mtc1 $zero, $f13
-    func_001216e8();  // 0x1215e0                                // 0x001222a0: jal 0x1215e0
+    func_001215e0();  // 1215e0                                // 0x001222a0: jal 0x1215e0
     goto label_0x122348;                                        // 0x001222a8: b 0x122348
 label_0x1222b0:
-    func_00120b58();  // 0x1207a8                                // 0x001222b0: jal 0x1207a8
+    func_001207a8();  // 1207a8                                // 0x001222b0: jal 0x1207a8
     v1 = 1;                                                     // 0x001222b8: addiu $v1, $zero, 1
     a0 = v0 & 3;                                                // 0x001222bc: andi $a0, $v0, 3
     if (a0 == v1) goto label_0x122308;                          // 0x001222c0: beq $a0, $v1, 0x122308
@@ -42,25 +42,25 @@ label_0x1222b0:
     /* nop */                                                   // 0x001222ec: nop 
 label_0x1222f0:
     a0 = 1;                                                     // 0x001222f0: addiu $a0, $zero, 1
-    func_001216e8();  // 0x1215e0                                // 0x001222f4: jal 0x1215e0
+    func_001215e0();  // 1215e0                                // 0x001222f4: jal 0x1215e0
     FPU_F13 = *(float*)((sp) + 4);  // Load float               // 0x001222f8: lwc1 $f13, 4($sp)
     goto label_0x122348;                                        // 0x001222fc: b 0x122348
     /* nop */                                                   // 0x00122304: nop 
 label_0x122308:
     FPU_F12 = *(float*)(sp);  // Load float                     // 0x00122308: lwc1 $f12, 0($sp)
-    func_00120d78();  // 0x120c28                                // 0x0012230c: jal 0x120c28
+    func_00120c28();  // 120c28                                // 0x0012230c: jal 0x120c28
     FPU_F13 = *(float*)((sp) + 4);  // Load float               // 0x00122310: lwc1 $f13, 4($sp)
     goto label_0x122348;                                        // 0x00122314: b 0x122348
     /* nop */                                                   // 0x0012231c: nop 
 label_0x122320:
     a0 = 1;                                                     // 0x00122320: addiu $a0, $zero, 1
-    func_001216e8();  // 0x1215e0                                // 0x00122324: jal 0x1215e0
+    func_001215e0();  // 1215e0                                // 0x00122324: jal 0x1215e0
     FPU_F13 = *(float*)((sp) + 4);  // Load float               // 0x00122328: lwc1 $f13, 4($sp)
     goto label_0x122344;                                        // 0x0012232c: b 0x122344
     /* FPU: neg.s $f0, $f0 */                                   // 0x00122330: neg.s $f0, $f0
     /* nop */                                                   // 0x00122334: nop 
 label_0x122338:
-    func_00120d78();  // 0x120c28                                // 0x00122338: jal 0x120c28
+    func_00120c28();  // 120c28                                // 0x00122338: jal 0x120c28
     FPU_F13 = *(float*)((sp) + 4);  // Load float               // 0x0012233c: lwc1 $f13, 4($sp)
     /* FPU: neg.s $f0, $f0 */                                   // 0x00122340: neg.s $f0, $f0
 label_0x122344:

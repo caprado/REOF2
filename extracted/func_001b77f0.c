@@ -32,7 +32,7 @@ label_0x1b7844:
     /* nop */                                                   // 0x001b7854: nop 
 label_0x1b7858:
 label_0x1b785c:
-    func_00107d30();  // 0x107c70                                // 0x001b7860: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001b7860: jal 0x107c70
     a2 = 0x20;                                                  // 0x001b7864: addiu $a2, $zero, 0x20
 label_0x1b7868:
     s1 = s1 + 1;                                                // 0x001b7868: addiu $s1, $s1, 1

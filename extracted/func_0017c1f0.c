@@ -22,7 +22,7 @@ void func_0017c1f0() {
     a2 = 0x23 << 16;                                            // 0x0017c228: lui $a2, 0x23
 label_0x17c22c:
     a2 = &str_00229940;  // "E201311: sfxcnv_MakeTable : compo is not support." // 0x0017c230: addiu $a2, $a2, -0x66c0
-    func_0017cec8();  // 0x17ce88                                // 0x0017c234: jal 0x17ce88
+    func_0017ce88();  // 17ce88                                // 0x0017c234: jal 0x17ce88
 label_0x17c240:
     return;                                                     // 0x0017c248: jr $ra
     sp = sp + 0x10;                                             // 0x0017c24c: addiu $sp, $sp, 0x10

@@ -16,8 +16,8 @@ label_0x1d3bd0:
     v1 = g_0032ece0;  // Global at 0x0032ece0                   // 0x001d3bd0: lw $v1, 0($s0)
     if (v1 != a0) goto label_0x1d3bfc;                          // 0x001d3bd4: bne $v1, $a0, 0x1d3bfc
     /* nop */                                                   // 0x001d3bd8: nop 
-    func_001d34f0();  // 0x1d34a0                                // 0x001d3bdc: jal 0x1d34a0
-    func_00107d30();  // 0x107c70                                // 0x001d3bec: jal 0x107c70
+    func_001d34a0();  // 1d34a0                                // 0x001d3bdc: jal 0x1d34a0
+    func_00107c70();  // 107c70                                // 0x001d3bec: jal 0x107c70
     a2 = 0x10;                                                  // 0x001d3bf0: addiu $a2, $zero, 0x10
     goto label_0x1d3c14;                                        // 0x001d3bf4: b 0x1d3c14
 label_0x1d3bfc:

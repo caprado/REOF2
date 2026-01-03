@@ -10,10 +10,10 @@ void func_0011c140() {
     uint32_t local_0;
     
     sp = sp + -0x40;                                            // 0x0011c140: addiu $sp, $sp, -0x40
-    func_0011bb38();  // 0x11ba38                                // 0x0011c150: jal 0x11ba38
+    func_0011ba38();  // 11ba38                                // 0x0011c150: jal 0x11ba38
     if (v0 < 0) goto label_0x11c1bc;                            // 0x0011c158: bltz $v0, 0x11c1bc
     v0 = 0xffff << 16;                                          // 0x0011c15c: lui $v0, 0xffff
-    func_0011bbc8();  // 0x11bb38                                // 0x0011c160: jal 0x11bb38
+    func_0011bb38();  // 11bb38                                // 0x0011c160: jal 0x11bb38
     /* nop */                                                   // 0x0011c164: nop 
     if (v0 == 0) goto label_0x11c17c;                           // 0x0011c168: beqz $v0, 0x11c17c
     s0 = 0x25 << 16;                                            // 0x0011c16c: lui $s0, 0x25
@@ -29,7 +29,7 @@ label_0x11c17c:
     a1 = 0xa;                                                   // 0x0011c190: addiu $a1, $zero, 0xa
     t0 = 4;                                                     // 0x0011c198: addiu $t0, $zero, 4
     t2 = 4;                                                     // 0x0011c1a0: addiu $t2, $zero, 4
-    func_001178a0();  // 0x1176a8                                // 0x0011c1a4: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x0011c1a4: jal 0x1176a8
     if (v0 >= 0) goto label_0x11c1bc;                           // 0x0011c1ac: bgezl $v0, 0x11c1bc
     v0 = g_0024fb80;  // Global at 0x0024fb80                   // 0x0011c1b0: lw $v0, -0x480($s0)
     v0 = 0xfffe << 16;                                          // 0x0011c1b4: lui $v0, 0xfffe

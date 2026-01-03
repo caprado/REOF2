@@ -1,3 +1,4 @@
+/** @category graphics/memory @status complete @author caprado */
 void func_0019f2e0() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
@@ -39,9 +40,9 @@ void func_0019f2e0() {
     g_0028ffc0 = v0;  // Global at 0x0028ffc0                   // 0x0019f35c: sw $v0, -0x40($at)
     at = 0x29 << 16;                                            // 0x0019f360: lui $at, 0x29
     a0 = g_0028ffc0;  // Global at 0x0028ffc0                   // 0x0019f364: lw $a0, -0x40($at)
-    func_001a05c0();  // 0x1a0010                                // 0x0019f368: jal 0x1a0010
+    func_001a0010();  // 1a0010                                // 0x0019f368: jal 0x1a0010
 label_0x19f370:
-    func_001a8960();  // 0x1a8930                                // 0x0019f370: jal 0x1a8930
+    func_001a8930();  // 1a8930                                // 0x0019f370: jal 0x1a8930
     /* nop */                                                   // 0x0019f374: nop 
     /* memory sync */                                           // 0x0019f378: sync 
     return;                                                     // 0x0019f384: jr $ra

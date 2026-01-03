@@ -17,7 +17,7 @@ void func_001678f4() {
     if (v1 != 0) goto label_0x167940;                           // 0x00167928: bnez $v1, 0x167940
     a2 = 0xc;                                                   // 0x0016792c: addiu $a2, $zero, 0xc
     a1 = *(int32_t*)((t0) + 0x4c);                              // 0x00167930: lw $a1, 0x4c($t0)
-    func_00177908();  // 0x1778a0                                // 0x00167934: jal 0x1778a0
+    func_001778a0();  // 1778a0                                // 0x00167934: jal 0x1778a0
 label_0x167940:
     v1 = 1;                                                     // 0x00167940: addiu $v1, $zero, 1
     *(uint32_t*)((s0) + 0x44) = v1;                             // 0x00167948: sw $v1, 0x44($s0)

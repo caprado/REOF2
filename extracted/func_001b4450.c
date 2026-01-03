@@ -14,7 +14,7 @@ label_0x1b4474:
     v1 = g_00306c10;  // Global at 0x00306c10                   // 0x001b4474: lh $v1, 0($s1)
     if (v1 == 0) goto label_0x1b4494;                           // 0x001b4478: beqz $v1, 0x1b4494
     a0 = s1 + 0xc;                                              // 0x001b447c: addiu $a0, $s1, 0xc
-    func_0010ac68();  // 0x10ab20                                // 0x001b4480: jal 0x10ab20
+    func_0010ab20();  // 10ab20                                // 0x001b4480: jal 0x10ab20
     if (v0 != 0) goto label_0x1b4494;                           // 0x001b4488: bnez $v0, 0x1b4494
     /* nop */                                                   // 0x001b448c: nop 
     g_00306c10 = 0;  // Global at 0x00306c10                    // 0x001b4490: sh $zero, 0($s1)

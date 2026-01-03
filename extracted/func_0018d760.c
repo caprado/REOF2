@@ -10,32 +10,32 @@ void func_0018d760() {
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x0018d76c: addu.qb $zero, $sp, $s1
     a1 = 0x23 << 16;                                            // 0x0018d778: lui $a1, 0x23
     a0 = sp + 0x40;                                             // 0x0018d784: addiu $a0, $sp, 0x40
-    func_0010ae00();  // 0x10ac68                                // 0x0018d788: jal 0x10ac68
+    func_0010ac68();  // 10ac68                                // 0x0018d788: jal 0x10ac68
     a1 = &str_0022a428;  // "Not supported width...%d @flPS2GetTextureInfoFromContext" // 0x0018d78c: addiu $a1, $a1, -0x5bd8
-    func_0010af38();  // 0x10ae00                                // 0x0018d790: jal 0x10ae00
+    func_0010ae00();  // 10ae00                                // 0x0018d790: jal 0x10ae00
     a0 = sp + 0x40;                                             // 0x0018d794: addiu $a0, $sp, 0x40
     v0 = v0 + sp;                                               // 0x0018d798: addu $v0, $v0, $sp
     s0 = v0 + 0x40;                                             // 0x0018d7a0: addiu $s0, $v0, 0x40
-    func_0010a990();  // 0x10a860                                // 0x0018d7a4: jal 0x10a860
+    func_0010a860();  // 10a860                                // 0x0018d7a4: jal 0x10a860
     a0 = sp + 0x40;                                             // 0x0018d7a8: addiu $a0, $sp, 0x40
-    func_0010caa0();  // 0x10ca50                                // 0x0018d7ac: jal 0x10ca50
+    func_0010ca50();  // 10ca50                                // 0x0018d7ac: jal 0x10ca50
     a1 = 0x23 << 16;                                            // 0x0018d7b4: lui $a1, 0x23
     a0 = sp + 0x40;                                             // 0x0018d7b8: addiu $a0, $sp, 0x40
-    func_0010a990();  // 0x10a860                                // 0x0018d7bc: jal 0x10a860
+    func_0010a860();  // 10a860                                // 0x0018d7bc: jal 0x10a860
     a1 = a1 + -0x5bd0;                                          // 0x0018d7c0: addiu $a1, $a1, -0x5bd0
-    func_001ab1d0();  // 0x1ab180                                // 0x0018d7c4: jal 0x1ab180
+    func_001ab180();  // 1ab180                                // 0x0018d7c4: jal 0x1ab180
     /* nop */                                                   // 0x0018d7c8: nop 
     a0 = sp + 0x40;                                             // 0x0018d7cc: addiu $a0, $sp, 0x40
-    func_001189b8();  // 0x118730                                // 0x0018d7d0: jal 0x118730
+    func_00118730();  // 118730                                // 0x0018d7d0: jal 0x118730
     a1 = 0x602;                                                 // 0x0018d7d4: addiu $a1, $zero, 0x602
     if (v0 >= 0) goto label_0x18d7f0;                           // 0x0018d7d8: bgez $v0, 0x18d7f0
-    func_001ab230();  // 0x1ab1d0                                // 0x0018d7e0: jal 0x1ab1d0
+    func_001ab1d0();  // 1ab1d0                                // 0x0018d7e0: jal 0x1ab1d0
     /* nop */                                                   // 0x0018d7e4: nop 
     goto label_0x18d814;                                        // 0x0018d7e8: b 0x18d814
 label_0x18d7f0:
-    func_00119290();  // 0x118fd0                                // 0x0018d7f8: jal 0x118fd0
-    func_00118b38();  // 0x1189b8                                // 0x0018d800: jal 0x1189b8
-    func_001ab230();  // 0x1ab1d0                                // 0x0018d808: jal 0x1ab1d0
+    func_00118fd0();  // 118fd0                                // 0x0018d7f8: jal 0x118fd0
+    func_001189b8();  // 1189b8                                // 0x0018d800: jal 0x1189b8
+    func_001ab1d0();  // 1ab1d0                                // 0x0018d808: jal 0x1ab1d0
     /* nop */                                                   // 0x0018d80c: nop 
     v0 = 1;                                                     // 0x0018d810: addiu $v0, $zero, 1
 label_0x18d814:

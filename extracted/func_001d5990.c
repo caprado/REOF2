@@ -8,7 +8,7 @@ void func_001d5990() {
     
     sp = sp + -0x20;                                            // 0x001d5990: addiu $sp, $sp, -0x20
     a0 = a1 & 0xff;                                             // 0x001d59a0: andi $a0, $a1, 0xff
-    func_001d5b70();  // 0x1d5b00                                // 0x001d59a4: jal 0x1d5b00
+    func_001d5b00();  // 1d5b00                                // 0x001d59a4: jal 0x1d5b00
     a1 = a2 & 0xffff;                                           // 0x001d59a8: andi $a1, $a2, 0xffff
     if (a0 == 0) goto label_0x1d5a48;                           // 0x001d59b0: beqz $a0, 0x1d5a48
     v1 = 1;                                                     // 0x001d59b4: addiu $v1, $zero, 1
@@ -49,7 +49,7 @@ label_0x1d59fc:
     *(uint8_t*)((a0) + 3) = v1;                                 // 0x001d5a38: sb $v1, 3($a0)
 label_0x1d5a3c:
     v0 = 1;                                                     // 0x001d5a3c: addiu $v0, $zero, 1
-    func_001d5b00();  // 0x1d5ab0                                // 0x001d5a40: jal 0x1d5ab0
+    func_001d5ab0();  // 1d5ab0                                // 0x001d5a40: jal 0x1d5ab0
     *(uint8_t*)(a0) = v0;                                       // 0x001d5a44: sb $v0, 0($a0)
 label_0x1d5a48:
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001d5a4c: xori.b $w0, $w0, 0xb0

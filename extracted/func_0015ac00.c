@@ -32,13 +32,13 @@ label_0x15ac64:
     s2 = 4;                                                     // 0x0015ac70: addiu $s2, $zero, 4
     /* nop */                                                   // 0x0015ac74: nop 
 label_0x15ac78:
-    func_0015ac00();  // 0x15aaa8                                // 0x0015ac78: jal 0x15aaa8
+    func_0015aaa8();  // 15aaa8                                // 0x0015ac78: jal 0x15aaa8
     a1 = 1;                                                     // 0x0015ac84: addiu $a1, $zero, 1
     a2 = 4;                                                     // 0x0015ac88: addiu $a2, $zero, 4
     if (v0 == 0) goto label_0x15acac;                           // 0x0015ac8c: beqz $v0, 0x15acac
     v1 = v0 & s3;                                               // 0x0015ac90: and $v1, $v0, $s3
     /* bnezl $v1, 0x15acac */                                   // 0x0015ac94: bnezl $v1, 0x15acac
-    func_0015ad38();  // 0x15acd0                                // 0x0015ac9c: jal 0x15acd0
+    func_0015acd0();  // 15acd0                                // 0x0015ac9c: jal 0x15acd0
     /* nop */                                                   // 0x0015aca0: nop 
     if (v0 == s2) goto label_0x15ac78;                          // 0x0015aca4: beq $v0, $s2, 0x15ac78
     /* nop */                                                   // 0x0015aca8: nop 

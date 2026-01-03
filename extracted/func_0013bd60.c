@@ -61,7 +61,7 @@ label_0x13be44:
     v0 = local_0;                                               // 0x0013be54: lw $v0, 0($sp)
     s0 = v1 + s0;                                               // 0x0013be58: addu $s0, $v1, $s0
     s0 = v0 + s0;                                               // 0x0013be5c: addu $s0, $v0, $s0
-    func_00107b68();  // 0x107ab8                                // 0x0013be60: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x0013be60: jal 0x107ab8
     a2 = s0 + s1;                                               // 0x0013be68: addu $a2, $s0, $s1
     v0 = *(int8_t*)((a2) + -1);                                 // 0x0013be6c: lb $v0, -1($a2)
     /* bnezl $v0, 0x13be78 */                                   // 0x0013be70: bnezl $v0, 0x13be78

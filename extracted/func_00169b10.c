@@ -15,7 +15,7 @@ void func_00169b10() {
     sp = sp + 0x10;                                             // 0x00169b38: addiu $sp, $sp, 0x10
     /* nop */                                                   // 0x00169b3c: nop 
     sp = sp + -0x10;                                            // 0x00169b40: addiu $sp, $sp, -0x10
-    func_00172140();  // 0x1720e0                                // 0x00169b48: jal 0x1720e0
+    func_001720e0();  // 1720e0                                // 0x00169b48: jal 0x1720e0
     /* nop */                                                   // 0x00169b4c: nop 
     return func_00168be8();  // Tail call                       // 0x00169b54: j 0x168be8
     sp = sp + 0x10;                                             // 0x00169b58: addiu $sp, $sp, 0x10

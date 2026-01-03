@@ -42,7 +42,7 @@ void func_00138310() {
     if (v1 == 0) goto label_0x1383e8;                           // 0x001383b0: beqz $v1, 0x1383e8
     *(uint32_t*)((s2) + 0x3c) = v0;                             // 0x001383b4: sw $v0, 0x3c($s2)
     a0 = 0x22 << 16;                                            // 0x001383b8: lui $a0, 0x22
-    func_00116598();  // 0x116508                                // 0x001383bc: jal 0x116508
+    func_00116508();  // 116508                                // 0x001383bc: jal 0x116508
     a0 = &str_00225070;  // "DTR_ExecHndl: Internal Error len\n" // 0x001383c0: addiu $a0, $a0, 0x5070
     /* nop */                                                   // 0x001383c4: nop 
 label_0x1383c8:
@@ -81,14 +81,14 @@ label_0x1383ec:
     if (v1 != 0) s1 = t0;                                       // 0x00138460: movn $s1, $t0, $v1
     /* divide: s1 / a1 -> hi:lo */                              // 0x00138464: div $zero, $s1, $a1
     /* mflo $v0 */                                              // 0x00138468
-    func_00140598();  // 0x1404a0                                // 0x00138470: jal 0x1404a0
+    func_001404a0();  // 1404a0                                // 0x00138470: jal 0x1404a0
     a0 = *(int32_t*)((s2) + 4);                                 // 0x00138478: lw $a0, 4($s2)
     v1 = str_00225070;  // "DTR_ExecHndl: Internal Error len\n" // 0x00138480: lw $v1, 0($a0)
     v0 = *(int32_t*)((v1) + 0x1c);                              // 0x00138484: lw $v0, 0x1c($v1)
     /* call function at address in v0 */                        // 0x00138488: jalr $v0
     a1 = 1;                                                     // 0x0013848c: addiu $a1, $zero, 1
     s0 = sp + 0x30;                                             // 0x00138494: addiu $s0, $sp, 0x30
-    func_00140598();  // 0x1404a0                                // 0x001384a0: jal 0x1404a0
+    func_001404a0();  // 1404a0                                // 0x001384a0: jal 0x1404a0
     a0 = *(int32_t*)((s2) + 8);                                 // 0x001384a8: lw $a0, 8($s2)
     v1 = str_00225070;  // "DTR_ExecHndl: Internal Error len\n" // 0x001384b0: lw $v1, 0($a0)
     v0 = *(int32_t*)((v1) + 0x1c);                              // 0x001384b4: lw $v0, 0x1c($v1)
@@ -98,13 +98,13 @@ label_0x1383ec:
     v0 = v1 & 0x3f;                                             // 0x001384cc: andi $v0, $v1, 0x3f
     if (v0 == 0) goto label_0x138518;                           // 0x001384d0: beqz $v0, 0x138518
     a0 = 0x22 << 16;                                            // 0x001384d4: lui $a0, 0x22
-    func_00116598();  // 0x116508                                // 0x001384d8: jal 0x116508
+    func_00116508();  // 116508                                // 0x001384d8: jal 0x116508
     a0 = &str_00225090;  // "cks.data=%08x, ckd.data=%08x, cks.len=%d\n" // 0x001384dc: addiu $a0, $a0, 0x5090
     a0 = 0x22 << 16;                                            // 0x001384e0: lui $a0, 0x22
     a1 = local_0;                                               // 0x001384e4: lw $a1, 0($sp)
     a0 = &str_002250b8;  // "DTR_ExecHndl: Internal Error cks.data\n" // 0x001384e8: addiu $a0, $a0, 0x50b8
     a2 = local_20;                                              // 0x001384ec: lw $a2, 0x20($sp)
-    func_00116598();  // 0x116508                                // 0x001384f0: jal 0x116508
+    func_00116508();  // 116508                                // 0x001384f0: jal 0x116508
     a3 = local_4;                                               // 0x001384f4: lw $a3, 4($sp)
 label_0x1384f8:
     /* nop */                                                   // 0x001384f8: nop 
@@ -121,13 +121,13 @@ label_0x138518:
     /* beqzl $v0, 0x138570 */                                   // 0x00138520: beqzl $v0, 0x138570
     v0 = local_20;                                              // 0x00138524: lw $v0, 0x20($sp)
     a0 = 0x22 << 16;                                            // 0x00138528: lui $a0, 0x22
-    func_00116598();  // 0x116508                                // 0x0013852c: jal 0x116508
+    func_00116508();  // 116508                                // 0x0013852c: jal 0x116508
     a0 = &str_002250e8;  // "DTR_ExecHndl: Internal Error ckd.data\n" // 0x00138530: addiu $a0, $a0, 0x50e8
     a0 = 0x22 << 16;                                            // 0x00138534: lui $a0, 0x22
     a1 = local_0;                                               // 0x00138538: lw $a1, 0($sp)
     a0 = &str_002250b8;  // "DTR_ExecHndl: Internal Error cks.data\n" // 0x0013853c: addiu $a0, $a0, 0x50b8
     a2 = local_20;                                              // 0x00138540: lw $a2, 0x20($sp)
-    func_00116598();  // 0x116508                                // 0x00138544: jal 0x116508
+    func_00116508();  // 116508                                // 0x00138544: jal 0x116508
     a3 = local_4;                                               // 0x00138548: lw $a3, 4($sp)
     /* nop */                                                   // 0x0013854c: nop 
 label_0x138550:
@@ -143,13 +143,13 @@ label_0x138550:
     if (v0 == 0) goto label_0x1385c0;                           // 0x00138574: beqz $v0, 0x1385c0
     a1 = a0 + v1;                                               // 0x00138578: addu $a1, $a0, $v1
     a0 = 0x22 << 16;                                            // 0x0013857c: lui $a0, 0x22
-    func_00116598();  // 0x116508                                // 0x00138580: jal 0x116508
+    func_00116508();  // 116508                                // 0x00138580: jal 0x116508
     a0 = &str_00225110;  // "E0101701 DTR_ExecHndl: can't use DMA\n" // 0x00138584: addiu $a0, $a0, 0x5110
     a0 = 0x22 << 16;                                            // 0x00138588: lui $a0, 0x22
     a1 = local_0;                                               // 0x0013858c: lw $a1, 0($sp)
     a0 = &str_002250b8;  // "DTR_ExecHndl: Internal Error cks.data\n" // 0x00138590: addiu $a0, $a0, 0x50b8
     a2 = local_20;                                              // 0x00138594: lw $a2, 0x20($sp)
-    func_00116598();  // 0x116508                                // 0x00138598: jal 0x116508
+    func_00116508();  // 116508                                // 0x00138598: jal 0x116508
     a3 = local_4;                                               // 0x0013859c: lw $a3, 4($sp)
 label_0x1385a0:
     /* nop */                                                   // 0x001385a0: nop 
@@ -161,7 +161,7 @@ label_0x1385a0:
     /* nop */                                                   // 0x001385b8: nop 
     /* nop */                                                   // 0x001385bc: nop 
 label_0x1385c0:
-    func_00114c70();  // 0x114bd8                                // 0x001385c0: jal 0x114bd8
+    func_00114bd8();  // 114bd8                                // 0x001385c0: jal 0x114bd8
     a1 = a1 + -1;                                               // 0x001385c4: addiu $a1, $a1, -1
     v0 = 0xfff << 16;                                           // 0x001385c8: lui $v0, 0xfff
     v1 = local_0;                                               // 0x001385cc: lw $v1, 0($sp)
@@ -179,7 +179,7 @@ label_0x1385c0:
     if (v0 != 0) goto label_0x138648;                           // 0x001385fc: bnez $v0, 0x138648
     *(uint32_t*)((s2) + 0x2c) = v0;                             // 0x00138600: sw $v0, 0x2c($s2)
     a0 = 0x22 << 16;                                            // 0x00138604: lui $a0, 0x22
-    func_00116598();  // 0x116508                                // 0x00138608: jal 0x116508
+    func_00116508();  // 116508                                // 0x00138608: jal 0x116508
     a0 = &str_00225138;  // "DTR_Init: in (%d)\n"               // 0x0013860c: addiu $a0, $a0, 0x5138
     a0 = *(int32_t*)((s2) + 4);                                 // 0x00138610: lw $a0, 4($s2)
     a1 = 1;                                                     // 0x00138614: addiu $a1, $zero, 1

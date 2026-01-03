@@ -10,7 +10,7 @@ void func_0016ff28() {
     uint32_t local_0, local_4;
     
     sp = sp + -0x40;                                            // 0x0016ff28: addiu $sp, $sp, -0x40
-    func_00170048();  // 0x170018                                // 0x0016ff48: jal 0x170018
+    func_00170018();  // 170018                                // 0x0016ff48: jal 0x170018
     *(uint32_t*)(s2) = 0;                                       // 0x0016ff4c: sw $zero, 0($s2)
     /* beqzl $a0, 0x170004 */                                   // 0x0016ff54: beqzl $a0, 0x170004
     v1 = *(int32_t*)(a0);                                       // 0x0016ff5c: lw $v1, 0($a0)
@@ -20,12 +20,12 @@ void func_0016ff28() {
     v0 = *(int32_t*)((v1) + 0x200);                             // 0x0016ffc4: lw $v0, 0x200($v1)
     a2 = sp + 0x10;                                             // 0x0016ffc8: addiu $a2, $sp, 0x10
     local_0 = v1;                                               // 0x0016ffcc: sw $v1, 0($sp)
-    func_001594e0();  // 0x159440                                // 0x0016ffd0: jal 0x159440
+    func_00159440();  // 159440                                // 0x0016ffd0: jal 0x159440
     local_4 = v0;                                               // 0x0016ffd4: sw $v0, 4($sp)
     a1 = 0xff00 << 16;                                          // 0x0016ffd8: lui $a1, 0xff00
     if (v0 == 0) goto label_0x16fff8;                           // 0x0016ffe0: beqz $v0, 0x16fff8
     a1 = a1 | 0xf1b;                                            // 0x0016ffe4: ori $a1, $a1, 0xf1b
-    func_00169940();  // 0x1698d0                                // 0x0016ffe8: jal 0x1698d0
+    func_001698d0();  // 1698d0                                // 0x0016ffe8: jal 0x1698d0
     /* nop */                                                   // 0x0016ffec: nop 
     goto label_0x170004;                                        // 0x0016fff0: b 0x170004
 label_0x16fff8:

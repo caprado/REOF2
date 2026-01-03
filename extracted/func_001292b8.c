@@ -12,7 +12,7 @@ void func_001292b8() {
     /* nop */                                                   // 0x001292cc: nop 
     sp = sp + -0x30;                                            // 0x001292d0: addiu $sp, $sp, -0x30
     a0 = 4;                                                     // 0x001292ec: addiu $a0, $zero, 4
-    func_00128268();  // 0x1281b8                                // 0x00129308: jal 0x1281b8
+    func_001281b8();  // 1281b8                                // 0x00129308: jal 0x1281b8
     if (s0 != 0) goto label_0x129320;                           // 0x00129310: bnez $s0, 0x129320
     a0 = 0x22 << 16;                                            // 0x00129314: lui $a0, 0x22
     goto label_0x129340;                                        // 0x00129318: b 0x129340
@@ -28,7 +28,7 @@ label_0x129330:
     a0 = 0x22 << 16;                                            // 0x00129338: lui $a0, 0x22
     a0 = &str_00222848;  // "E9040821:'sj' must be NULL.(ADXF_ReadNw32)" // 0x0012933c: addiu $a0, $a0, 0x2848
 label_0x129340:
-    func_00127de8();  // 0x127d90                                // 0x00129340: jal 0x127d90
+    func_00127d90();  // 127d90                                // 0x00129340: jal 0x127d90
     /* nop */                                                   // 0x00129344: nop 
     goto label_0x12943c;                                        // 0x00129348: b 0x12943c
     v0 = -3;                                                    // 0x0012934c: addiu $v0, $zero, -3
@@ -37,16 +37,16 @@ label_0x129340:
     v0 = *(int32_t*)((s0) + 8);                                 // 0x0012935c: lw $v0, 8($s0)
     if (v0 == 0) goto label_0x129378;                           // 0x00129360: beqz $v0, 0x129378
     a0 = 0x22 << 16;                                            // 0x00129364: lui $a0, 0x22
-    func_00127de8();  // 0x127d90                                // 0x00129368: jal 0x127d90
+    func_00127d90();  // 127d90                                // 0x00129368: jal 0x127d90
     a0 = &str_00222870;  // "E0120401:'buf' isn't 64byte alignment.(ADXF_ReadNw)" // 0x0012936c: addiu $a0, $a0, 0x2870
     goto label_0x12943c;                                        // 0x00129370: b 0x12943c
     v0 = -1;                                                    // 0x00129374: addiu $v0, $zero, -1
 label_0x129378:
     s2 = s4 << 0xb;                                             // 0x00129378: sll $s2, $s4, 0xb
-    func_0013f658();  // 0x13f568                                // 0x00129384: jal 0x13f568
+    func_0013f568();  // 13f568                                // 0x00129384: jal 0x13f568
     if (s1 == 0) goto label_0x12943c;                           // 0x00129390: beqz $s1, 0x12943c
     v0 = -2;                                                    // 0x00129394: addiu $v0, $zero, -2
-    func_001261b8();  // 0x1261a0                                // 0x00129398: jal 0x1261a0
+    func_001261a0();  // 1261a0                                // 0x00129398: jal 0x1261a0
     /* nop */                                                   // 0x0012939c: nop 
     *(uint32_t*)((s0) + 0x24) = s3;                             // 0x001293a0: sw $s3, 0x24($s0)
     *(uint32_t*)((s0) + 8) = s1;                                // 0x001293a4: sw $s1, 8($s0)
@@ -55,15 +55,15 @@ label_0x129378:
     v1 = 1;                                                     // 0x001293b0: addiu $v1, $zero, 1
     v0 = g_001f3700;  // Global at 0x001f3700                   // 0x001293b4: lw $v0, 0x3700($a0)
     if (v0 != v1) goto label_0x1293c8;                          // 0x001293b8: bne $v0, $v1, 0x1293c8
-    func_00128008();  // 0x127fe8                                // 0x001293c0: jal 0x127fe8
+    func_00127fe8();  // 127fe8                                // 0x001293c0: jal 0x127fe8
 label_0x1293c8:
-    func_001261d0();  // 0x1261b8                                // 0x001293c8: jal 0x1261b8
+    func_001261b8();  // 1261b8                                // 0x001293c8: jal 0x1261b8
     /* nop */                                                   // 0x001293cc: nop 
     a2 = *(int32_t*)((s0) + 8);                                 // 0x001293d4: lw $a2, 8($s0)
-    func_00129228();  // 0x129128                                // 0x001293d8: jal 0x129128
+    func_00129128();  // 129128                                // 0x001293d8: jal 0x129128
     if (s1 > 0) goto label_0x129420;                            // 0x001293e4: bgtzl $s1, 0x129420
     *(uint8_t*)((s0) + 2) = 0;                                  // 0x001293e8: sb $zero, 2($s0)
-    func_001261b8();  // 0x1261a0                                // 0x001293ec: jal 0x1261a0
+    func_001261a0();  // 1261a0                                // 0x001293ec: jal 0x1261a0
     /* nop */                                                   // 0x001293f0: nop 
     a0 = *(int32_t*)((s0) + 8);                                 // 0x001293f4: lw $a0, 8($s0)
     if (a0 == 0) goto label_0x129414;                           // 0x001293f8: beqz $a0, 0x129414
@@ -74,12 +74,12 @@ label_0x1293c8:
     /* nop */                                                   // 0x0012940c: nop 
     *(uint32_t*)((s0) + 8) = 0;                                 // 0x00129410: sw $zero, 8($s0)
 label_0x129414:
-    func_001261d0();  // 0x1261b8                                // 0x00129414: jal 0x1261b8
+    func_001261b8();  // 1261b8                                // 0x00129414: jal 0x1261b8
     /* nop */                                                   // 0x00129418: nop 
     *(uint8_t*)((s0) + 2) = 0;                                  // 0x0012941c: sb $zero, 2($s0)
 label_0x129420:
     a0 = 4;                                                     // 0x0012942c: addiu $a0, $zero, 4
-    func_00128268();  // 0x1281b8                                // 0x00129430: jal 0x1281b8
+    func_001281b8();  // 1281b8                                // 0x00129430: jal 0x1281b8
     a1 = 1;                                                     // 0x00129434: addiu $a1, $zero, 1
 label_0x12943c:
     return;                                                     // 0x00129454: jr $ra

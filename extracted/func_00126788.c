@@ -12,7 +12,7 @@ void func_00126788() {
     sp = sp + -0x60;                                            // 0x00126788: addiu $sp, $sp, -0x60
     a3 = sp + 1;                                                // 0x001267d0: addiu $a3, $sp, 1
     *(uint16_t*)(s2) = 0;                                       // 0x001267d4: sh $zero, 0($s2)
-    func_00126650();  // 0x1265d8                                // 0x001267d8: jal 0x1265d8
+    func_001265d8();  // 1265d8                                // 0x001267d8: jal 0x1265d8
     /* bnezl $v0, 0x1269c0 */                                   // 0x001267e0: bnezl $v0, 0x1269c0
     v1 = local_0;                                               // 0x001267e8: lbu $v1, 0($sp)
     a2 = 0x30;                                                  // 0x001267ec: addiu $a2, $zero, 0x30

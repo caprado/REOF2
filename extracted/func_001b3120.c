@@ -17,7 +17,7 @@ label_0x1b3148:
     /* move to FPU: $v0, $f12 */                                // 0x001b3150: mtc1 $v0, $f12
     a0 = s0 << 2;                                               // 0x001b3154: sll $a0, $s0, 2
     v0 = v1 + a0;                                               // 0x001b3158: addu $v0, $v1, $a0
-    func_001b3120();  // 0x1b2f90                                // 0x001b315c: jal 0x1b2f90
+    func_001b2f90();  // 1b2f90                                // 0x001b315c: jal 0x1b2f90
     a0 = g_41a00820;  // Global at 0x41a00820                   // 0x001b3160: lw $a0, 0x820($v0)
     s0 = s0 + 1;                                                // 0x001b3164: addiu $s0, $s0, 1
 label_0x1b3168:

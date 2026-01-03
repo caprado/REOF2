@@ -13,7 +13,7 @@ void func_001cfa60() {
     goto label_0x1cfa94;                                        // 0x001cfa78: b 0x1cfa94
 label_0x1cfa80:
     a1 = *(int32_t*)((a2) + 0xc);                               // 0x001cfa80: lw $a1, 0xc($a2)
-    func_001ccd50();  // 0x1ccc00                                // 0x001cfa84: jal 0x1ccc00
+    func_001ccc00();  // 1ccc00                                // 0x001cfa84: jal 0x1ccc00
     a0 = *(int32_t*)((a2) + 8);                                 // 0x001cfa88: lw $a0, 8($a2)
     v0 = 1;                                                     // 0x001cfa8c: addiu $v0, $zero, 1
 label_0x1cfa94:

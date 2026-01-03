@@ -7,7 +7,7 @@ void func_00130138() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x30;                                            // 0x00130138: addiu $sp, $sp, -0x30
-    func_001413a8();  // 0x141390                                // 0x00130164: jal 0x141390
+    func_00141390();  // 141390                                // 0x00130164: jal 0x141390
     s1 = s1 << 0xb;                                             // 0x0013016c: sll $s1, $s1, 0xb
     v0 = 1;                                                     // 0x00130170: addiu $v0, $zero, 1
     *(uint32_t*)((s0) + 0xc) = s2;                              // 0x00130174: sw $s2, 0xc($s0)
@@ -18,10 +18,10 @@ void func_00130138() {
     return func_001413c0();  // Tail call                        // 0x001301a0: j 0x1413a8
     sp = sp + 0x30;                                             // 0x001301a4: addiu $sp, $sp, 0x30
     sp = sp + -0x10;                                            // 0x001301a8: addiu $sp, $sp, -0x10
-    func_001301a8();  // 0x130138                                // 0x001301b4: jal 0x130138
+    func_00130138();  // 130138                                // 0x001301b4: jal 0x130138
     /* nop */                                                   // 0x001301bc: nop 
 label_0x1301c0:
-    func_00129d80();  // 0x129ce0                                // 0x001301c0: jal 0x129ce0
+    func_00129ce0();  // 129ce0                                // 0x001301c0: jal 0x129ce0
     /* nop */                                                   // 0x001301c4: nop 
     v0 = *(int8_t*)((s0) + 0x41);                               // 0x001301c8: lb $v0, 0x41($s0)
     if (v0 != 0) goto label_0x1301c0;                           // 0x001301cc: bnez $v0, 0x1301c0

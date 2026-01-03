@@ -7,14 +7,14 @@ void func_0015fa70() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x0015fa70: addiu $sp, $sp, -0x20
-    func_0015fcb0();  // 0x15fc80                                // 0x0015fa84: jal 0x15fc80
+    func_0015fc80();  // 15fc80                                // 0x0015fa84: jal 0x15fc80
     a0 = 0x22 << 16;                                            // 0x0015fa8c: lui $a0, 0x22
     if (v0 != 0) goto label_0x15fab0;                           // 0x0015fa94: bnez $v0, 0x15fab0
     a0 = &str_00227cd8;  // "E2080602 mwPlySetVideoCh: Invalid ch no." // 0x0015fa98: addiu $a0, $a0, 0x7cd8
     return func_001634a8();  // Tail call                        // 0x0015faa8: j 0x163410
     sp = sp + 0x20;                                             // 0x0015faac: addiu $sp, $sp, 0x20
 label_0x15fab0:
-    func_001720e0();  // 0x172070                                // 0x0015fab0: jal 0x172070
+    func_00172070();  // 172070                                // 0x0015fab0: jal 0x172070
     a0 = *(int32_t*)((s1) + 0x40);                              // 0x0015fab4: lw $a0, 0x40($s1)
     a0 = 0x22 << 16;                                            // 0x0015fab8: lui $a0, 0x22
     if (v0 == 0) goto label_0x15fad8;                           // 0x0015fabc: beqz $v0, 0x15fad8

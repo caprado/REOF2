@@ -12,12 +12,12 @@ void func_0017b7a8() {
     
     sp = sp + -0x30;                                            // 0x0017b7a8: addiu $sp, $sp, -0x30
     *(uint32_t*)((s0) + 0x44) = t1;                             // 0x0017b7d4: sw $t1, 0x44($s0)
-    func_0017d288();  // 0x17d200                                // 0x0017b7dc: jal 0x17d200
+    func_0017d200();  // 17d200                                // 0x0017b7dc: jal 0x17d200
     *(uint32_t*)((s0) + 0x48) = t2;                             // 0x0017b7e0: sw $t2, 0x48($s0)
-    func_0017cf18();  // 0x17cf10                                // 0x0017b7e4: jal 0x17cf10
+    func_0017cf10();  // 17cf10                                // 0x0017b7e4: jal 0x17cf10
     a1 = 0x11;                                                  // 0x0017b7f0: addiu $a1, $zero, 0x11
-    func_0017cf10();  // 0x17cf08                                // 0x0017b7f4: jal 0x17cf08
-    func_0017b8e8();  // 0x17b830                                // 0x0017b804: jal 0x17b830
+    func_0017cf08();  // 17cf08                                // 0x0017b7f4: jal 0x17cf08
+    func_0017b830();  // 17b830                                // 0x0017b804: jal 0x17b830
     return func_0017cf10();  // Tail call                        // 0x0017b828: j 0x17cf08
     sp = sp + 0x30;                                             // 0x0017b82c: addiu $sp, $sp, 0x30
     sp = sp + -0x30;                                            // 0x0017b830: addiu $sp, $sp, -0x30
@@ -25,7 +25,7 @@ void func_0017b7a8() {
     if (v0 != 0) goto label_0x17b874;                           // 0x0017b85c: bnez $v0, 0x17b874
     s0 = *(int32_t*)(s2);                                       // 0x0017b860: lw $s0, 0($s2)
     a1 = 0x23 << 16;                                            // 0x0017b864: lui $a1, 0x23
-    func_0017cae0();  // 0x17cad8                                // 0x0017b868: jal 0x17cad8
+    func_0017cad8();  // 17cad8                                // 0x0017b868: jal 0x17cad8
     a1 = &str_002296b0;  // "E201181: SFX_CnvFrmArgb8888 : frmfmt is not support." // 0x0017b86c: addiu $a1, $a1, -0x6950
     *(uint32_t*)((s1) + 4) = v0;                                // 0x0017b870: sw $v0, 4($s1)
 label_0x17b874:
@@ -69,14 +69,14 @@ label_0x17b948:
     goto label_0x17ba34;                                        // 0x0017b964: b 0x17ba34
     /* nop */                                                   // 0x0017b96c: nop 
 label_0x17b970:
-    func_0017d200();  // 0x17d128                                // 0x0017b970: jal 0x17d128
+    func_0017d128();  // 17d128                                // 0x0017b970: jal 0x17d128
     /* nop */                                                   // 0x0017b974: nop 
     v1 = 1;                                                     // 0x0017b978: addiu $v1, $zero, 1
     if (v0 == v1) goto label_0x17b9a8;                          // 0x0017b97c: beq $v0, $v1, 0x17b9a8
     goto label_0x17ba58;                                        // 0x0017b9a0: j 0x17ba58
     sp = sp + 0x20;                                             // 0x0017b9a4: addiu $sp, $sp, 0x20
 label_0x17b9a8:
-    func_0017c3c8();  // 0x17c250                                // 0x0017b9ac: jal 0x17c250
+    func_0017c250();  // 17c250                                // 0x0017b9ac: jal 0x17c250
     a2 = 0x16;                                                  // 0x0017b9b0: addiu $a2, $zero, 0x16
     a3 = 1;                                                     // 0x0017b9cc: addiu $a3, $zero, 1
     goto label_0x17ba58;                                        // 0x0017b9d4: j 0x17ba58
@@ -87,7 +87,7 @@ label_0x17b9e0:
     sp = sp + 0x20;                                             // 0x0017b9f8: addiu $sp, $sp, 0x20
     /* nop */                                                   // 0x0017b9fc: nop 
 label_0x17ba00:
-    func_0017c3c8();  // 0x17c250                                // 0x0017ba00: jal 0x17c250
+    func_0017c250();  // 17c250                                // 0x0017ba00: jal 0x17c250
     a2 = 0x15;                                                  // 0x0017ba04: addiu $a2, $zero, 0x15
     a3 = 1;                                                     // 0x0017ba20: addiu $a3, $zero, 1
     goto label_0x17ba58;                                        // 0x0017ba28: j 0x17ba58
@@ -117,7 +117,7 @@ label_0x17ba58:
     local_8 = a2;                                               // 0x0017bab4: sw $a2, 8($sp)
     local_c = v0;                                               // 0x0017bab8: sw $v0, 0xc($sp)
     local_10 = t0;                                              // 0x0017babc: sw $t0, 0x10($sp)
-    func_0017ab20();  // 0x17aa68                                // 0x0017bac0: jal 0x17aa68
+    func_0017aa68();  // 17aa68                                // 0x0017bac0: jal 0x17aa68
     local_14 = t1;                                              // 0x0017bac4: sw $t1, 0x14($sp)
     v1 = 1;                                                     // 0x0017bac8: addiu $v1, $zero, 1
     if (v0 != v1) goto label_0x17bae0;                          // 0x0017bacc: bne $v0, $v1, 0x17bae0
@@ -139,7 +139,7 @@ label_0x17bae0:
     if (s3 != v0) goto label_0x17bb14;                          // 0x0017bb08: bne $s3, $v0, 0x17bb14
     t0 = *(int32_t*)((s2) + 0x3c);                              // 0x0017bb10: lw $t0, 0x3c($s2)
 label_0x17bb14:
-    func_0017bb98();  // 0x17bb48                                // 0x0017bb20: jal 0x17bb48
+    func_0017bb48();  // 17bb48                                // 0x0017bb20: jal 0x17bb48
     a3 = sp + 0x20;                                             // 0x0017bb24: addiu $a3, $sp, 0x20
     return;                                                     // 0x0017bb3c: jr $ra
     sp = sp + 0x70;                                             // 0x0017bb40: addiu $sp, $sp, 0x70

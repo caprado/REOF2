@@ -11,7 +11,7 @@ void func_00101d28() {
     
     sp = sp + -0x60;                                            // 0x00101d28: addiu $sp, $sp, -0x60
     a0 = 0xf;                                                   // 0x00101d3c: addiu $a0, $zero, 0xf
-    func_001010c8();  // 0x100ea8                                // 0x00101d44: jal 0x100ea8
+    func_00100ea8();  // 100ea8                                // 0x00101d44: jal 0x100ea8
     if (v0 != 0) goto label_0x101d5c;                           // 0x00101d4c: bnez $v0, 0x101d5c
     s3 = 0x1f << 16;                                            // 0x00101d50: lui $s3, 0x1f
     goto label_0x101e04;                                        // 0x00101d54: b 0x101e04
@@ -19,7 +19,7 @@ label_0x101d5c:
     v0 = g_001edf10;  // Global at 0x001edf10                   // 0x00101d5c: lw $v0, -0x20f0($s3)
     if (v0 <= 0) goto label_0x101d70;                           // 0x00101d60: blez $v0, 0x101d70
     a0 = 0x22 << 16;                                            // 0x00101d64: lui $a0, 0x22
-    func_00116598();  // 0x116508                                // 0x00101d68: jal 0x116508
+    func_00116508();  // 116508                                // 0x00101d68: jal 0x116508
     a0 = &str_0021fef8;  // "Libcdvd call Clock read 2\n"       // 0x00101d6c: addiu $a0, $a0, -0x108
 label_0x101d70:
     v0 = 0x1f << 16;                                            // 0x00101d70: lui $v0, 0x1f
@@ -29,7 +29,7 @@ label_0x101d70:
     local_0 = 0;                                                // 0x00101d80: sw $zero, 0($sp)
     a1 = 1;                                                     // 0x00101d84: addiu $a1, $zero, 1
     t2 = 0x10;                                                  // 0x00101d98: addiu $t2, $zero, 0x10
-    func_001178a0();  // 0x1176a8                                // 0x00101d9c: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x00101d9c: jal 0x1176a8
     if (v0 >= 0) goto label_0x101dc0;                           // 0x00101da4: bgezl $v0, 0x101dc0
     v0 = s0 + 4;                                                // 0x00101da8: addiu $v0, $s0, 4
     v0 = 0x1f << 16;                                            // 0x00101dac: lui $v0, 0x1f
@@ -42,7 +42,7 @@ label_0x101dc0:
     v1 = g_001edf10;  // Global at 0x001edf10                   // 0x00101dd8: lw $v1, -0x20f0($s3)
     if (v1 <= 0) goto label_0x101dec;                           // 0x00101ddc: blez $v1, 0x101dec
     a0 = 0x22 << 16;                                            // 0x00101de0: lui $a0, 0x22
-    func_00116598();  // 0x116508                                // 0x00101de4: jal 0x116508
+    func_00116508();  // 116508                                // 0x00101de4: jal 0x116508
     a0 = &str_0021ff18;  // "libdma: sync timeout\n"            // 0x00101de8: addiu $a0, $a0, -0xe8
 label_0x101dec:
     v0 = 0x1f << 16;                                            // 0x00101dec: lui $v0, 0x1f

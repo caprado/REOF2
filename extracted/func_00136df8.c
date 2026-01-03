@@ -8,8 +8,8 @@ void func_00136df8() {
     
     sp = sp + -0x290;                                           // 0x00136df8: addiu $sp, $sp, -0x290
     s3 = sp + 0x130;                                            // 0x00136e08: addiu $s3, $sp, 0x130
-    func_001358d8();  // 0x135790                                // 0x00136e24: jal 0x135790
-    func_001355f0();  // 0x135548                                // 0x00136e34: jal 0x135548
+    func_00135790();  // 135790                                // 0x00136e24: jal 0x135790
+    func_00135548();  // 135548                                // 0x00136e34: jal 0x135548
     a1 = 0xca;                                                  // 0x00136e44: addiu $a1, $zero, 0xca
     v0 = *(int32_t*)((s2) + 0x60);                              // 0x00136e48: lw $v0, 0x60($s2)
     if (v0 == 0) goto label_0x136e8c;                           // 0x00136e50: beqz $v0, 0x136e8c

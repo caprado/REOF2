@@ -14,7 +14,7 @@ void func_0016b1f8() {
     s4 = *(int32_t*)(s3);                                       // 0x0016b234: lw $s4, 0($s3)
 label_0x16b238:
     s0 = s0 + 1;                                                // 0x0016b23c: addiu $s0, $s0, 1
-    func_00157bb0();  // 0x157b00                                // 0x0016b244: jal 0x157b00
+    func_00157b00();  // 157b00                                // 0x0016b244: jal 0x157b00
     a2 = (s0 < 3) ? 1 : 0;                                      // 0x0016b24c: slti $a2, $s0, 3
     a0 = local_8;                                               // 0x0016b250: lw $a0, 8($sp)
     a1 = local_c;                                               // 0x0016b254: lw $a1, 0xc($sp)

@@ -9,7 +9,7 @@ void func_0015aa00() {
     sp = sp + -0x30;                                            // 0x0015aa00: addiu $sp, $sp, -0x30
     a2 = -1;                                                    // 0x0015aa24: addiu $a2, $zero, -1
     a0 = *(int32_t*)(s2);                                       // 0x0015aa28: lw $a0, 0($s2)
-    func_00158518();  // 0x158410                                // 0x0015aa2c: jal 0x158410
+    func_00158410();  // 158410                                // 0x0015aa2c: jal 0x158410
     a1 = *(int32_t*)(s1);                                       // 0x0015aa30: lw $a1, 0($s1)
     if (s0 != 0) goto label_0x15aa58;                           // 0x0015aa3c: bnez $s0, 0x15aa58
     a1 = *(int32_t*)(s1);                                       // 0x0015aa44: lw $a1, 0($s1)
@@ -17,7 +17,7 @@ void func_0015aa00() {
     goto label_0x15aa6c;                                        // 0x0015aa4c: b 0x15aa6c
     /* nop */                                                   // 0x0015aa54: nop 
 label_0x15aa58:
-    func_00158310();  // 0x158278                                // 0x0015aa58: jal 0x158278
+    func_00158278();  // 158278                                // 0x0015aa58: jal 0x158278
     /* nop */                                                   // 0x0015aa5c: nop 
     a0 = *(int32_t*)(s2);                                       // 0x0015aa60: lw $a0, 0($s2)
     v1 = *(int32_t*)(s1);                                       // 0x0015aa64: lw $v1, 0($s1)

@@ -46,11 +46,11 @@ label_0x189280:
     a1 = a1 | 0x1319;                                           // 0x0018928c: ori $a1, $a1, 0x1319
     t0 = 0x280;                                                 // 0x00189294: addiu $t0, $zero, 0x280
     t2 = 0x280;                                                 // 0x0018929c: addiu $t2, $zero, 0x280
-    func_001178a0();  // 0x1176a8                                // 0x001892a0: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x001892a0: jal 0x1176a8
     if (v0 >= 0) goto label_0x1892cc;                           // 0x001892a8: bgezl $v0, 0x1892cc
     v0 = g_002814cc;  // Global at 0x002814cc                   // 0x001892ac: lw $v0, 0x20c($s2)
     a0 = 0x23 << 16;                                            // 0x001892b0: lui $a0, 0x23
-    func_001896f0();  // 0x1896c8                                // 0x001892b4: jal 0x1896c8
+    func_001896c8();  // 1896c8                                // 0x001892b4: jal 0x1896c8
     a0 = &str_0022a1d0;  // "libdbc: SendData2 data length too long [%d]\n" // 0x001892b8: addiu $a0, $a0, -0x5e30
     iSignalSema();  // 0x114300                                 // 0x001892bc: jal 0x114300
     a0 = g_00284800;  // Global at 0x00284800                   // 0x001892c0: lw $a0, 0x4800($s5)

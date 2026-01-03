@@ -9,21 +9,21 @@ void func_0015e4d8() {
     a1 = 0x16 << 16;                                            // 0x0015e4d8: lui $a1, 0x16
     sp = sp + -0x10;                                            // 0x0015e4dc: addiu $sp, $sp, -0x10
     a0 = 2;                                                     // 0x0015e4e4: addiu $a0, $zero, 2
-    func_00163258();  // 0x163218                                // 0x0015e4ec: jal 0x163218
+    func_00163218();  // 163218                                // 0x0015e4ec: jal 0x163218
     a1 = a1 + 0x3a18;                                           // 0x0015e4f0: addiu $a1, $a1, 0x3a18
     a0 = 0x16 << 16;                                            // 0x0015e4f4: lui $a0, 0x16
     a0 = a0 + 0x3a60;                                           // 0x0015e4f8: addiu $a0, $a0, 0x3a60
-    func_001632f8();  // 0x1632c8                                // 0x0015e4fc: jal 0x1632c8
+    func_001632c8();  // 1632c8                                // 0x0015e4fc: jal 0x1632c8
     a0 = 0x16 << 16;                                            // 0x0015e504: lui $a0, 0x16
     a0 = a0 + 0x3ae0;                                           // 0x0015e50c: addiu $a0, $a0, 0x3ae0
     return func_00163278();  // Tail call                       // 0x0015e514: j 0x163278
     sp = sp + 0x10;                                             // 0x0015e518: addiu $sp, $sp, 0x10
     /* nop */                                                   // 0x0015e51c: nop 
     sp = sp + -0x20;                                            // 0x0015e520: addiu $sp, $sp, -0x20
-    func_0015e348();  // 0x15e338                                // 0x0015e530: jal 0x15e338
-    func_00107d30();  // 0x107c70                                // 0x0015e544: jal 0x107c70
+    func_0015e338();  // 15e338                                // 0x0015e530: jal 0x15e338
+    func_00107c70();  // 107c70                                // 0x0015e544: jal 0x107c70
     a2 = 0x10e8;                                                // 0x0015e548: addiu $a2, $zero, 0x10e8
-    func_00163f58();  // 0x163f30                                // 0x0015e54c: jal 0x163f30
+    func_00163f30();  // 163f30                                // 0x0015e54c: jal 0x163f30
     a0 = 1;                                                     // 0x0015e554: addiu $a0, $zero, 1
     v0 = 1;                                                     // 0x0015e558: addiu $v0, $zero, 1
     *(uint32_t*)((s1) + 0x58) = 0;                              // 0x0015e55c: sw $zero, 0x58($s1)

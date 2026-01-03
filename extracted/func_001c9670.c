@@ -34,7 +34,7 @@ label_0x1c96d8:
     a0 = 0x31 << 16;                                            // 0x001c96d8: lui $a0, 0x31
     a1 = 0x22 << 16;                                            // 0x001c96dc: lui $a1, 0x22
     a0 = a0 + 0x6bc0;                                           // 0x001c96e0: addiu $a0, $a0, 0x6bc0
-    func_0010a990();  // 0x10a860                                // 0x001c96e4: jal 0x10a860
+    func_0010a860();  // 10a860                                // 0x001c96e4: jal 0x10a860
     a1 = &str_0021f0d0;  // "send \\"                           // 0x001c96e8: addiu $a1, $a1, -0xf30
     goto label_0x1c9730;                                        // 0x001c96ec: b 0x1c9730
     /* nop */                                                   // 0x001c96f0: nop 
@@ -43,7 +43,7 @@ label_0x1c96f8:
     a0 = 0x31 << 16;                                            // 0x001c96f8: lui $a0, 0x31
     a1 = 0x22 << 16;                                            // 0x001c96fc: lui $a1, 0x22
     a0 = a0 + 0x6bc0;                                           // 0x001c9700: addiu $a0, $a0, 0x6bc0
-    func_0010a990();  // 0x10a860                                // 0x001c9704: jal 0x10a860
+    func_0010a860();  // 10a860                                // 0x001c9704: jal 0x10a860
     a1 = &str_0021f1d0;  // "PsIIlibusbkb2800"                  // 0x001c9708: addiu $a1, $a1, -0xe30
     goto label_0x1c9730;                                        // 0x001c970c: b 0x1c9730
     /* nop */                                                   // 0x001c9710: nop 
@@ -52,7 +52,7 @@ label_0x1c9718:
     a0 = 0x31 << 16;                                            // 0x001c9718: lui $a0, 0x31
     a1 = 0x24 << 16;                                            // 0x001c971c: lui $a1, 0x24
     a0 = a0 + 0x6bc0;                                           // 0x001c9720: addiu $a0, $a0, 0x6bc0
-    func_0010a570();  // 0x10a4d8                                // 0x001c9724: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001c9724: jal 0x10a4d8
     a1 = &str_00243890;  // "DROP CHECK.%d.%d. [%d==%d] "       // 0x001c9728: addiu $a1, $a1, 0x3890
     /* nop */                                                   // 0x001c972c: nop 
 label_0x1c9730:

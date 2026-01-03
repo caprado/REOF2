@@ -16,7 +16,7 @@ void func_0013a698() {
     sp = sp + -0x20;                                            // 0x0013a6c0: addiu $sp, $sp, -0x20
     a0 = 0x22 << 16;                                            // 0x0013a6cc: lui $a0, 0x22
     a0 = &str_00225580;  // "DVCI: CD/DVD-ROM Image opened%c\n" // 0x0013a6d4: addiu $a0, $a0, 0x5580
-    func_0010ac68();  // 0x10ab20                                // 0x0013a6e0: jal 0x10ab20
+    func_0010ab20();  // 10ab20                                // 0x0013a6e0: jal 0x10ab20
     v1 = 0x20 << 16;                                            // 0x0013a6e8: lui $v1, 0x20
     v1 = v1 + 0x3ed0;                                           // 0x0013a6ec: addiu $v1, $v1, 0x3ed0
     if (v0 != 0) goto label_0x13a730;                           // 0x0013a6f0: bnez $v0, 0x13a730
@@ -30,7 +30,7 @@ void func_0013a698() {
     v0 = 1;                                                     // 0x0013a710: addiu $v0, $zero, 1
     a0 = 0x22 << 16;                                            // 0x0013a714: lui $a0, 0x22
     a1 = 0x2e;                                                  // 0x0013a718: addiu $a1, $zero, 0x2e
-    func_00116598();  // 0x116508                                // 0x0013a71c: jal 0x116508
+    func_00116508();  // 116508                                // 0x0013a71c: jal 0x116508
     a0 = &str_00225588;  // "DVCI: Invalidate filelist buffer pointer.\r\n" // 0x0013a720: addiu $a0, $a0, 0x5588
     goto label_0x13a758;                                        // 0x0013a724: b 0x13a758
     v0 = 1;                                                     // 0x0013a728: addiu $v0, $zero, 1
@@ -41,7 +41,7 @@ label_0x13a730:
     v0 = g_00203ed0;  // Global at 0x00203ed0                   // 0x0013a738: lw $v0, 0($v1)
     if (v0 == 0) goto label_0x13a754;                           // 0x0013a73c: beqz $v0, 0x13a754
     a3 = g_00203ed4;  // Global at 0x00203ed4                   // 0x0013a744: lw $a3, 4($v1)
-    func_0013a698();  // 0x13a5d0                                // 0x0013a74c: jal 0x13a5d0
+    func_0013a5d0();  // 13a5d0                                // 0x0013a74c: jal 0x13a5d0
 label_0x13a754:
 label_0x13a758:
     return;                                                     // 0x0013a764: jr $ra

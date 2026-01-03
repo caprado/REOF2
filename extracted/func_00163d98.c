@@ -14,7 +14,7 @@ void func_00163d98() {
     if (s1 != 0) goto label_0x163de0;                           // 0x00163dc0: bnez $s1, 0x163de0
     /* nop */                                                   // 0x00163dc4: nop 
     a0 = 0x23 << 16;                                            // 0x00163dc8: lui $a0, 0x23
-    func_001634a8();  // 0x163410                                // 0x00163dcc: jal 0x163410
+    func_00163410();  // 163410                                // 0x00163dcc: jal 0x163410
     a0 = &str_00228dc8;  // "E2011101: MWSFSVR_IsSvrBdrHndl: handle is invalid." // 0x00163dd0: addiu $a0, $a0, -0x7238
 label_0x163dd4:
     goto label_0x163e20;                                        // 0x00163dd4: b 0x163e20
@@ -22,10 +22,10 @@ label_0x163dd4:
 label_0x163de0:
     s0 = *(int32_t*)((s1) + 4);                                 // 0x00163de0: lw $s0, 4($s1)
     if (s0 != a1) goto label_0x163e20;                          // 0x00163de4: bne $s0, $a1, 0x163e20
-    func_00163f88();  // 0x163f80                                // 0x00163dec: jal 0x163f80
+    func_00163f80();  // 163f80                                // 0x00163dec: jal 0x163f80
     /* nop */                                                   // 0x00163df0: nop 
     if (v0 == s0) goto label_0x163e20;                          // 0x00163df4: beql $v0, $s0, 0x163e20
-    func_00164048();  // 0x164028                                // 0x00163dfc: jal 0x164028
+    func_00164028();  // 164028                                // 0x00163dfc: jal 0x164028
     /* nop */                                                   // 0x00163e00: nop 
     if (v0 == s0) goto label_0x163dd4;                          // 0x00163e04: beq $v0, $s0, 0x163dd4
     return func_00163ef8();  // Tail call                        // 0x00163e18: j 0x163e38

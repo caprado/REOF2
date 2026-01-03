@@ -17,7 +17,7 @@ void func_00160120() {
     return func_0016bc40();  // Tail call                        // 0x00160158: j 0x16bb88
     sp = sp + 0x10;                                             // 0x0016015c: addiu $sp, $sp, 0x10
     sp = sp + -0x20;                                            // 0x00160160: addiu $sp, $sp, -0x20
-    func_0015fcb0();  // 0x15fc80                                // 0x00160174: jal 0x15fc80
+    func_0015fc80();  // 15fc80                                // 0x00160174: jal 0x15fc80
     a0 = 0x22 << 16;                                            // 0x0016017c: lui $a0, 0x22
     if (v0 != 0) goto label_0x1601a0;                           // 0x00160184: bnez $v0, 0x1601a0
     a0 = &str_00227f38;  // "E1122606 mwSfdGetOutVol: handle is invalid." // 0x00160188: addiu $a0, $a0, 0x7f38
@@ -27,10 +27,10 @@ label_0x1601a0:
     return func_0015f468();  // Tail call                        // 0x001601b0: j 0x15f450
     sp = sp + 0x20;                                             // 0x001601b4: addiu $sp, $sp, 0x20
     sp = sp + -0x10;                                            // 0x001601b8: addiu $sp, $sp, -0x10
-    func_0015fcb0();  // 0x15fc80                                // 0x001601c4: jal 0x15fc80
+    func_0015fc80();  // 15fc80                                // 0x001601c4: jal 0x15fc80
     if (v0 != 0) return;  // Branch to 0x1601f8                 // 0x001601cc: bnez $v0, 0x1601f8
     a0 = 0x22 << 16;                                            // 0x001601d4: lui $a0, 0x22
-    func_001634a8();  // 0x163410                                // 0x001601d8: jal 0x163410
+    func_00163410();  // 163410                                // 0x001601d8: jal 0x163410
     a0 = &str_00227f68;  // "E1122607 mwSfdSetOutPan: handle is invalid." // 0x001601dc: addiu $a0, $a0, 0x7f68
     return;                                                     // 0x001601ec: jr $ra
     sp = sp + 0x10;                                             // 0x001601f0: addiu $sp, $sp, 0x10

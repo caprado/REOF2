@@ -19,18 +19,18 @@ void func_00112da0() {
     s5 = t0 >> 0x10;                                            // 0x00112dd4: sra $s5, $t0, 0x10
     s7 = t2 >> 0x10;                                            // 0x00112de4: sra $s7, $t2, 0x10
     s1 = a2 << 0x10;                                            // 0x00112dec: sll $s1, $a2, 0x10
-    func_001123b0();  // 0x1123a0                                // 0x00112df4: jal 0x1123a0
+    func_001123a0();  // 1123a0                                // 0x00112df4: jal 0x1123a0
     fp = a3 << 0x10;                                            // 0x00112df8: sll $fp, $a3, 0x10
     s3 = s1 >> 0x10;                                            // 0x00112dfc: sra $s3, $s1, 0x10
     s4 = fp >> 0x10;                                            // 0x00112e00: sra $s4, $fp, 0x10
     local_20 = v0;                                              // 0x00112e04: sw $v0, 0x20($sp)
-    func_00112840();  // 0x1124c8                                // 0x00112e1c: jal 0x1124c8
+    func_001124c8();  // 1124c8                                // 0x00112e1c: jal 0x1124c8
     a0 = s2 + 0x28;                                             // 0x00112e24: addiu $a0, $s2, 0x28
-    func_00112840();  // 0x1124c8                                // 0x00112e38: jal 0x1124c8
+    func_001124c8();  // 1124c8                                // 0x00112e38: jal 0x1124c8
     a0 = s2 + 0x60;                                             // 0x00112e40: addiu $a0, $s2, 0x60
-    func_00112bb0();  // 0x1129c8                                // 0x00112e54: jal 0x1129c8
+    func_001129c8();  // 1129c8                                // 0x00112e54: jal 0x1129c8
     a0 = s2 + 0x150;                                            // 0x00112e60: addiu $a0, $s2, 0x150
-    func_00112bb0();  // 0x1129c8                                // 0x00112e70: jal 0x1129c8
+    func_001129c8();  // 1129c8                                // 0x00112e70: jal 0x1129c8
     if (s7 == 0) goto label_0x112ef0;                           // 0x00112e78: beqz $s7, 0x112ef0
     v0 = s1 >> 0x11;                                            // 0x00112e7c: sra $v0, $s1, 0x11
     s0 = 0x800;                                                 // 0x00112e80: addiu $s0, $zero, 0x800
@@ -41,12 +41,12 @@ void func_00112da0() {
     s0 = s0 - v0;                                               // 0x00112e94: subu $s0, $s0, $v0
     a0 = s2 + 0xe0;                                             // 0x00112e98: addiu $a0, $s2, 0xe0
     local_10 = 0;                                               // 0x00112e9c: sw $zero, 0x10($sp)
-    func_00112cb8();  // 0x112bb0                                // 0x00112eb8: jal 0x112bb0
+    func_00112bb0();  // 112bb0                                // 0x00112eb8: jal 0x112bb0
     local_0 = 0;                                                // 0x00112ecc: sw $zero, 0($sp)
     local_8 = 0;                                                // 0x00112ed0: sw $zero, 8($sp)
     a0 = s2 + 0x1d0;                                            // 0x00112ed4: addiu $a0, $s2, 0x1d0
     local_10 = 0;                                               // 0x00112ed8: sw $zero, 0x10($sp)
-    func_00112cb8();  // 0x112bb0                                // 0x00112ee8: jal 0x112bb0
+    func_00112bb0();  // 112bb0                                // 0x00112ee8: jal 0x112bb0
 label_0x112ef0:
     t1 = 0xe;                                                   // 0x00112ef4: addiu $t1, $zero, 0xe
     /* FPU: subu.qb $zero, $s2, $v0 */                          // 0x00112ef8: subu.qb $zero, $s2, $v0
@@ -73,7 +73,7 @@ label_0x112ef0:
     a0 = a0 | v0;                                               // 0x00112f68: or $a0, $a0, $v0
     t0 = t0 | t1;                                               // 0x00112f6c: or $t0, $t0, $t1
     a3 = a3 | t1;                                               // 0x00112f70: or $a3, $a3, $t1
-    func_001129c8();  // 0x112900                                // 0x00112f8c: jal 0x112900
+    func_00112900();  // 112900                                // 0x00112f8c: jal 0x112900
     v1 = local_20;                                              // 0x00112f94: lw $v1, 0x20($sp)
     a0 = 1;                                                     // 0x00112f9c: addiu $a0, $zero, 1
     a0 = a0 | 1;                                                // 0x00112fa4: ori $a0, $a0, 1

@@ -1,9 +1,9 @@
 #include <stdint.h>
 #include <stdbool.h>
+#include "../graphics/graphics_buffer.h"  // For selectGraphicsBuffer
+#include "../graphics/frame_sync.h"       // For updateGraphicsFrameSync
 
 // Unclassified graphics functions
-extern int32_t func_0019f2e0(void);  // Check if graphics ready
-extern void func_0018dba0(void);  // Graphics initialization
 extern void func_0019f4e0(void);  // Graphics subsystem init
 extern void func_001a0010(int32_t param1, int32_t param2, int32_t param3);  // Graphics setup
 extern void func_001a05c0(int32_t param);  // Graphics config
@@ -31,7 +31,7 @@ static uint32_t* g_scratchpadVar2 = (uint32_t*)0x10000810;  // Scratchpad memory
  */
 int32_t checkGraphicsMemoryReady(int32_t width, int32_t height) {
     // Check if graphics subsystem is ready
-    int32_t isReady = func_0019f2e0();  // Original: func_0019f2e0 at 0x19f230
+    int32_t isReady = updateGraphicsFrameSync();  // Original: func_0019f2e0 at 0x0019f2e0
 
     if (isReady == 0) {
         // Not ready - return 0 (caller will retry)
@@ -39,7 +39,7 @@ int32_t checkGraphicsMemoryReady(int32_t width, int32_t height) {
     }
 
     // Graphics ready - initialize subsystems
-    func_0018dba0();  // Original: func_0018dba0 at 0x18db40
+    selectGraphicsBuffer();  // Original: func_0018dba0 at 0x18dba0
 
     // Clear graphics variables
     *g_graphicsVar2 = 0;  // 0x0028ffc4

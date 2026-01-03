@@ -8,7 +8,7 @@ void func_001a5b10() {
     
     sp = sp + -0x30;                                            // 0x001a5b10: addiu $sp, $sp, -0x30
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001a5b1c: addu.qb $zero, $sp, $s1
-    func_001a6030();  // 0x1a5cf0                                // 0x001a5b20: jal 0x1a5cf0
+    func_001a5cf0();  // 1a5cf0                                // 0x001a5b20: jal 0x1a5cf0
     if (v0 == 0) goto label_0x1a5bb8;                           // 0x001a5b28: beqz $v0, 0x1a5bb8
     at = 0x2a << 16;                                            // 0x001a5b2c: lui $at, 0x2a
     s1 = 0x2a << 16;                                            // 0x001a5b30: lui $s1, 0x2a
@@ -26,15 +26,15 @@ void func_001a5b10() {
     v0 = v0 | v1;                                               // 0x001a5b60: or $v0, $v0, $v1
     g_002a0f48 = v0;  // Global at 0x002a0f48                   // 0x001a5b64: sw $v0, 8($s1)
     a1 = *(int16_t*)((s0) + 2);                                 // 0x001a5b68: lh $a1, 2($s0)
-    func_001a6180();  // 0x1a6030                                // 0x001a5b6c: jal 0x1a6030
+    func_001a6030();  // 1a6030                                // 0x001a5b6c: jal 0x1a6030
     a0 = s1 + 0xc;                                              // 0x001a5b70: addiu $a0, $s1, 0xc
     a1 = *(int16_t*)((s0) + 4);                                 // 0x001a5b74: lh $a1, 4($s0)
-    func_001a6180();  // 0x1a6030                                // 0x001a5b78: jal 0x1a6030
+    func_001a6030();  // 1a6030                                // 0x001a5b78: jal 0x1a6030
     a0 = s1 + 0x18;                                             // 0x001a5b7c: addiu $a0, $s1, 0x18
-    func_001a6210();  // 0x1a6180                                // 0x001a5b80: jal 0x1a6180
+    func_001a6180();  // 1a6180                                // 0x001a5b80: jal 0x1a6180
     a0 = s1 + 0xc;                                              // 0x001a5b84: addiu $a0, $s1, 0xc
     s0 = v0 & 0xff;                                             // 0x001a5b88: andi $s0, $v0, 0xff
-    func_001a6210();  // 0x1a6180                                // 0x001a5b8c: jal 0x1a6180
+    func_001a6180();  // 1a6180                                // 0x001a5b8c: jal 0x1a6180
     a0 = s1 + 0x18;                                             // 0x001a5b90: addiu $a0, $s1, 0x18
     v1 = v0 & 0xff;                                             // 0x001a5b94: andi $v1, $v0, 0xff
     a1 = s0 << 0x10;                                            // 0x001a5b98: sll $a1, $s0, 0x10

@@ -8,7 +8,7 @@ void func_001994e0() {
     
     sp = sp + -0x80;                                            // 0x001994e0: addiu $sp, $sp, -0x80
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001994ec: addu.qb $zero, $sp, $s1
-    func_001912b0();  // 0x1911e0                                // 0x00199504: jal 0x1911e0
+    func_001911e0();  // 1911e0                                // 0x00199504: jal 0x1911e0
     a0 = sp + 0x40;                                             // 0x00199508: addiu $a0, $sp, 0x40
     v1 = sp + 0x40;                                             // 0x0019950c: addiu $v1, $sp, 0x40
     VPU_VF4 = *(vec128_t*)((s0) + 0);  // Load 128-bit vector   // 0x00199510: ldc2 $4, 0($s0)

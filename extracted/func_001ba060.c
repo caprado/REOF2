@@ -38,7 +38,7 @@ void func_001ba060() {
     v0 = v1 | v0;                                               // 0x001ba0d0: or $v0, $v1, $v0
     local_1c = v0;                                              // 0x001ba0d4: sh $v0, 0x1c($sp)
     a0 = *(uint8_t*)((t1) + 6);                                 // 0x001ba0d8: lbu $a0, 6($t1)
-    func_00189860();  // 0x189770                                // 0x001ba0dc: jal 0x189770
+    func_00189770();  // 189770                                // 0x001ba0dc: jal 0x189770
     t0 = sp + 0x1c;                                             // 0x001ba0e0: addiu $t0, $sp, 0x1c
 label_0x1ba0e4:
     return;                                                     // 0x001ba0e8: jr $ra

@@ -16,7 +16,7 @@ void func_001ca170() {
     goto label_0x1ca1d0;                                        // 0x001ca198: b 0x1ca1d0
     *(uint32_t*)(s0) = v1;                                      // 0x001ca19c: sw $v1, 0($s0)
 label_0x1ca1a0:
-    func_001c8a70();  // 0x1c8a00                                // 0x001ca1a0: jal 0x1c8a00
+    func_001c8a00();  // 1c8a00                                // 0x001ca1a0: jal 0x1c8a00
     /* nop */                                                   // 0x001ca1a4: nop 
     if (v0 == 0) goto label_0x1ca1d0;                           // 0x001ca1b0: beqz $v0, 0x1ca1d0
     v1 = 1;                                                     // 0x001ca1b4: addiu $v1, $zero, 1

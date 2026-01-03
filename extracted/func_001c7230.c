@@ -9,7 +9,7 @@ void func_001c7230() {
     sp = sp + -0x10;                                            // 0x001c7230: addiu $sp, $sp, -0x10
     v0 = 5;                                                     // 0x001c7234: addiu $v0, $zero, 5
     if (a2 != v0) goto label_0x1c7254;                          // 0x001c723c: bne $a2, $v0, 0x1c7254
-    func_001c7230();  // 0x1c7170                                // 0x001c7244: jal 0x1c7170
+    func_001c7170();  // 1c7170                                // 0x001c7244: jal 0x1c7170
     /* nop */                                                   // 0x001c7248: nop 
     goto label_0x1c7300;                                        // 0x001c724c: b 0x1c7300
 label_0x1c7254:

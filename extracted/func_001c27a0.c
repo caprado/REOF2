@@ -24,7 +24,7 @@ void func_001c27a0() {
     v1 = a0 << 2;                                               // 0x001c27ec: sll $v1, $a0, 2
     v0 = v0 + v1;                                               // 0x001c27f0: addu $v0, $v0, $v1
     a0 = *(int32_t*)(v0);                                       // 0x001c27f4: lw $a0, 0($v0)
-    func_001c1640();  // 0x1c15a0                                // 0x001c27f8: jal 0x1c15a0
+    func_001c15a0();  // 1c15a0                                // 0x001c27f8: jal 0x1c15a0
     a1 = s1 + 0x18;                                             // 0x001c27fc: addiu $a1, $s1, 0x18
     s0 = s0 + 1;                                                // 0x001c2800: addiu $s0, $s0, 1
 label_0x1c2804:
@@ -37,7 +37,7 @@ label_0x1c2804:
     v1 = a0 << 2;                                               // 0x001c281c: sll $v1, $a0, 2
     v0 = v0 + v1;                                               // 0x001c2820: addu $v0, $v0, $v1
     a0 = *(int32_t*)(v0);                                       // 0x001c2824: lw $a0, 0($v0)
-    func_001c1640();  // 0x1c15a0                                // 0x001c2828: jal 0x1c15a0
+    func_001c15a0();  // 1c15a0                                // 0x001c2828: jal 0x1c15a0
     a1 = s1 + 0x118;                                            // 0x001c282c: addiu $a1, $s1, 0x118
     s0 = s0 + 1;                                                // 0x001c2830: addiu $s0, $s0, 1
 label_0x1c2834:

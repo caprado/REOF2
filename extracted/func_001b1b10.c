@@ -19,8 +19,8 @@ void func_001b1b10() {
     /* nop */                                                   // 0x001b1b38: nop 
     /* nop */                                                   // 0x001b1b3c: nop 
     sp = sp + -0x20;                                            // 0x001b1b40: addiu $sp, $sp, -0x20
-    func_001b1b10();  // 0x1b1ae0                                // 0x001b1b48: jal 0x1b1ae0
-    func_001b1bd0();  // 0x1b1b10                                // 0x001b1b50: jal 0x1b1b10
+    func_001b1ae0();  // 1b1ae0                                // 0x001b1b48: jal 0x1b1ae0
+    func_001b1b10();  // 1b1b10                                // 0x001b1b50: jal 0x1b1b10
     /* nop */                                                   // 0x001b1b54: nop 
     at = 0x4c << 16;                                            // 0x001b1b58: lui $at, 0x4c
     v1 = 0 & 0xffff;                                            // 0x001b1b5c: andi $v1, $zero, 0xffff

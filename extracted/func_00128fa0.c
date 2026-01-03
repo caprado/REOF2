@@ -17,7 +17,7 @@ void func_00128fa0() {
     if (v1 != a0) goto label_0x128ff0;                          // 0x00128fd4: bnel $v1, $a0, 0x128ff0
     v1 = *(int32_t*)(a1);                                       // 0x00128fd8: lw $v1, 0($a1)
     a1 = *(int32_t*)((s0) + 0x28);                              // 0x00128fdc: lw $a1, 0x28($s0)
-    func_00128008();  // 0x127fe8                                // 0x00128fe0: jal 0x127fe8
+    func_00127fe8();  // 127fe8                                // 0x00128fe0: jal 0x127fe8
     a0 = *(int32_t*)((s0) + 0x24);                              // 0x00128fe4: lw $a0, 0x24($s0)
     a1 = *(int32_t*)((s0) + 8);                                 // 0x00128fe8: lw $a1, 8($s0)
     v1 = *(int32_t*)(a1);                                       // 0x00128fec: lw $v1, 0($a1)

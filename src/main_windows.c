@@ -129,7 +129,7 @@ bool mainMenuLoop(void) {
     }
 
     // TODO classify these and implement properly:
-    // func_001b9e60() - Main entry point - True main entry to the ELF
+    // processMenuController(); // func_001b9e60() - Main entry point - True main entry to the ELF
     // Uncomment when stubs are properly implemented
     // updateDemoLoop();
     // processDemoStateMachine(&g_demoContext);

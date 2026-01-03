@@ -9,7 +9,7 @@ void func_0018db40() {
     sp = sp + -0x20;                                            // 0x0018db40: addiu $sp, $sp, -0x20
     a0 = 8 << 16;                                               // 0x0018db50: lui $a0, 8
 label_0x18db54:
-    thunk_func_001a0a20();  // 0x18dab0                          // 0x0018db54: jal 0x18dab0
+    thunk_func_0018dab0();  // 18dab0                          // 0x0018db54: jal 0x18dab0
     a1 = 1;                                                     // 0x0018db58: addiu $a1, $zero, 1
     v1 = 0x29 << 16;                                            // 0x0018db5c: lui $v1, 0x29
     a0 = s0 << 2;                                               // 0x0018db60: sll $a0, $s0, 2
@@ -20,7 +20,7 @@ label_0x18db54:
     v0 = (s0 < 2) ? 1 : 0;                                      // 0x0018db74: slti $v0, $s0, 2
     if (v0 != 0) goto label_0x18db54;                           // 0x0018db78: bnez $v0, 0x18db54
     a0 = 8 << 16;                                               // 0x0018db7c: lui $a0, 8
-    func_0018dc30();  // 0x18dba0                                // 0x0018db80: jal 0x18dba0
+    func_0018dba0();  // 18dba0                                // 0x0018db80: jal 0x18dba0
     /* nop */                                                   // 0x0018db84: nop 
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x0018db8c: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x0018db90: jr $ra

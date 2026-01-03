@@ -19,7 +19,7 @@ void func_00172ff0() {
     if (v0 == v1) goto label_0x173070;                          // 0x00173018: beq $v0, $v1, 0x173070
     v0 = *(int32_t*)((a1) + 0x18);                              // 0x00173020: lw $v0, 0x18($a1)
     if (v0 == v1) goto label_0x17303c;                          // 0x00173024: beq $v0, $v1, 0x17303c
-    func_00175f80();  // 0x175ed0                                // 0x0017302c: jal 0x175ed0
+    func_00175ed0();  // 175ed0                                // 0x0017302c: jal 0x175ed0
     a2 = sp + 4;                                                // 0x00173030: addiu $a2, $sp, 4
     if (v0 == 0) goto label_0x173048;                           // 0x00173034: beqz $v0, 0x173048
     v1 = local_0;                                               // 0x00173038: lw $v1, 0($sp)
@@ -28,11 +28,11 @@ label_0x17303c:
     /* nop */                                                   // 0x00173044: nop 
 label_0x173048:
     if (v1 < 0) goto label_0x173070;                            // 0x00173048: bltz $v1, 0x173070
-    func_001752f8();  // 0x1752e8                                // 0x00173050: jal 0x1752e8
+    func_001752e8();  // 1752e8                                // 0x00173050: jal 0x1752e8
     a1 = 0x36;                                                  // 0x00173054: addiu $a1, $zero, 0x36
     a1 = 0x3e8;                                                 // 0x00173058: addiu $a1, $zero, 0x3e8
     a2 = local_0;                                               // 0x0017305c: lw $a2, 0($sp)
-    func_001764c8();  // 0x176438                                // 0x00173064: jal 0x176438
+    func_00176438();  // 176438                                // 0x00173064: jal 0x176438
     a3 = local_4;                                               // 0x00173068: lw $a3, 4($sp)
     v0 = ((unsigned)0 < (unsigned)v0) ? 1 : 0;                  // 0x0017306c: sltu $v0, $zero, $v0
 label_0x173070:

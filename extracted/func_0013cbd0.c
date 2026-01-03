@@ -17,7 +17,7 @@ label_0x13cc00:
     v0 = *(int8_t*)((s0) + 1);                                  // 0x0013cc00: lb $v0, 1($s0)
     /* beqzl $v0, 0x13cc18 */                                   // 0x0013cc04: beqzl $v0, 0x13cc18
     v0 = *(int32_t*)((s0) + 0x24);                              // 0x0013cc08: lw $v0, 0x24($s0)
-    func_0013ccc0();  // 0x13cc38                                // 0x0013cc0c: jal 0x13cc38
+    func_0013cc38();  // 13cc38                                // 0x0013cc0c: jal 0x13cc38
     /* nop */                                                   // 0x0013cc10: nop 
     v0 = *(int32_t*)((s0) + 0x24);                              // 0x0013cc14: lw $v0, 0x24($s0)
     if (v0 <= 0) goto label_0x13cc24;                           // 0x0013cc18: blezl $v0, 0x13cc24

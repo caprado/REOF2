@@ -11,12 +11,12 @@ void func_0019ea90() {
     if (s1 != 0) goto label_0x19eae8;                           // 0x0019eaa4: bnez $s1, 0x19eae8
     a0 = 0x29 << 16;                                            // 0x0019eaac: lui $a0, 0x29
     a1 = 0x200;                                                 // 0x0019eab0: addiu $a1, $zero, 0x200
-    func_0019e880();  // 0x19e820                                // 0x0019eab4: jal 0x19e820
+    func_0019e820();  // 19e820                                // 0x0019eab4: jal 0x19e820
     a0 = a0 + -0x3b50;                                          // 0x0019eab8: addiu $a0, $a0, -0x3b50
     if (v0 != 0) goto label_0x19eacc;                           // 0x0019eabc: bnez $v0, 0x19eacc
     goto label_0x19eb7c;                                        // 0x0019eac4: b 0x19eb7c
 label_0x19eacc:
-    func_0019e950();  // 0x19e900                                // 0x0019ead0: jal 0x19e900
+    func_0019e900();  // 19e900                                // 0x0019ead0: jal 0x19e900
     at = 0x29 << 16;                                            // 0x0019ead8: lui $at, 0x29
     v0 = g_0028ffb8;  // Global at 0x0028ffb8                   // 0x0019eadc: lw $v0, -0x48($at)
     goto label_0x19eb2c;                                        // 0x0019eae0: b 0x19eb2c
@@ -28,7 +28,7 @@ label_0x19eae8:
     goto label_0x19eb14;                                        // 0x0019eaf4: b 0x19eb14
     a1 = g_0028c4c4;  // Global at 0x0028c4c4                   // 0x0019eaf8: lh $a1, 0x14($a0)
 label_0x19eafc:
-    func_0019e900();  // 0x19e880                                // 0x0019eafc: jal 0x19e880
+    func_0019e880();  // 19e880                                // 0x0019eafc: jal 0x19e880
     /* nop */                                                   // 0x0019eb00: nop 
     a0 = *(int32_t*)((s1) + 4);                                 // 0x0019eb04: lw $a0, 4($s1)
     if (a0 == 0) goto label_0x19eb2c;                           // 0x0019eb08: beqz $a0, 0x19eb2c

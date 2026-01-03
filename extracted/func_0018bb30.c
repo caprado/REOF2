@@ -11,7 +11,7 @@ void func_0018bb30() {
     /* FPU: dpa.w.ph $ac0, $sp, $s3 */                          // 0x0018bb44: dpa.w.ph $ac0, $sp, $s3
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x0018bb54: addu.qb $zero, $sp, $s1
     if (a0 == 0) goto label_0x18bba8;                           // 0x0018bb64: beqz $a0, 0x18bba8
-    func_00198870();  // 0x198330                                // 0x0018bb6c: jal 0x198330
+    func_00198330();  // 198330                                // 0x0018bb6c: jal 0x198330
     t3 = *(int32_t*)((gp) + -0x645c);                           // 0x0018bb70: lw $t3, -0x645c($gp)
     a0 = 0x3b;                                                  // 0x0018bb74: addiu $a0, $zero, 0x3b
     v1 = 0x14;                                                  // 0x0018bb78: addiu $v1, $zero, 0x14

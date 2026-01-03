@@ -29,14 +29,14 @@ label_0x13d864:
     s2 = 0x20 << 16;                                            // 0x0013d878: lui $s2, 0x20
     s1 = s2 + 0x7a3c;                                           // 0x0013d87c: addiu $s1, $s2, 0x7a3c
     a0 = g_00207a3c;  // Global at 0x00207a3c                   // 0x0013d880: lw $a0, 0($s1)
-    func_0011b5e0();  // 0x11b570                                // 0x0013d884: jal 0x11b570
+    func_0011b570();  // 11b570                                // 0x0013d884: jal 0x11b570
     a0 = a0 + 0x40;                                             // 0x0013d888: addiu $a0, $a0, 0x40
     if (v0 != 0) goto label_0x13d8c8;                           // 0x0013d88c: bnez $v0, 0x13d8c8
     g_00200000 = v0;  // Global at 0x00200000                   // 0x0013d890: sw $v0, 0($s0)
     a1 = g_00207a3c;  // Global at 0x00207a3c                   // 0x0013d894: lw $a1, 0($s1)
     a0 = 0x22 << 16;                                            // 0x0013d898: lui $a0, 0x22
     a0 = &str_00225e00;  // "PS2RNA: sceSifAllocIopHeap(%d) ret=0x%08x\n" // 0x0013d89c: addiu $a0, $a0, 0x5e00
-    func_00116598();  // 0x116508                                // 0x0013d8a0: jal 0x116508
+    func_00116508();  // 116508                                // 0x0013d8a0: jal 0x116508
     a1 = a1 + 0x40;                                             // 0x0013d8a4: addiu $a1, $a1, 0x40
 label_0x13d8a8:
     /* nop */                                                   // 0x0013d8a8: nop 
@@ -53,7 +53,7 @@ label_0x13d8c8:
     a2 = g_00207a44;  // Global at 0x00207a44                   // 0x0013d8d0: lw $a2, 0($s0)
     a0 = 0x22 << 16;                                            // 0x0013d8d4: lui $a0, 0x22
     a0 = &str_00225e48;  // "E0110101: ps2rna_init_psj wk size error\n" // 0x0013d8d8: addiu $a0, $a0, 0x5e48
-    func_00116598();  // 0x116508                                // 0x0013d8dc: jal 0x116508
+    func_00116508();  // 116508                                // 0x0013d8dc: jal 0x116508
     a1 = a1 + 0x40;                                             // 0x0013d8e0: addiu $a1, $a1, 0x40
     v1 = g_00207a44;  // Global at 0x00207a44                   // 0x0013d8e4: lw $v1, 0($s0)
     a1 = -0x40;                                                 // 0x0013d8e8: addiu $a1, $zero, -0x40
@@ -66,7 +66,7 @@ label_0x13d8c8:
     g_00207a48 = v1;  // Global at 0x00207a48                   // 0x0013d904: sw $v1, 0x7a48($s0)
     s4 = 0x20 << 16;                                            // 0x0013d908: lui $s4, 0x20
     a0 = s4 + 0x7a80;                                           // 0x0013d910: addiu $a0, $s4, 0x7a80
-    func_00107d30();  // 0x107c70                                // 0x0013d914: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x0013d914: jal 0x107c70
     a2 = 0x300;                                                 // 0x0013d918: addiu $a2, $zero, 0x300
     s1 = g_00207a48;  // Global at 0x00207a48                   // 0x0013d91c: lw $s1, 0x7a48($s0)
     v0 = g_00207a38;  // Global at 0x00207a38                   // 0x0013d920: lw $v0, 0x7a38($s5)
@@ -82,7 +82,7 @@ label_0x13d940:
     if (v1 == 0) goto label_0x13d980;                           // 0x0013d94c: beqz $v1, 0x13d980
     g_00200000 = 0;  // Global at 0x00200000                    // 0x0013d950: sb $zero, 0($s0)
     v0 = 0x22 << 16;                                            // 0x0013d954: lui $v0, 0x22
-    func_00116598();  // 0x116508                                // 0x0013d958: jal 0x116508
+    func_00116508();  // 116508                                // 0x0013d958: jal 0x116508
     a0 = &str_00225e78;  // "E0110102: ps2rna_init_psj: can't creat SJUNI_CreaetRmt\n" // 0x0013d95c: addiu $a0, $v0, 0x5e78
 label_0x13d960:
     /* nop */                                                   // 0x0013d960: nop 
@@ -96,7 +96,7 @@ label_0x13d960:
 label_0x13d980:
     s1 = s1 + 0x100;                                            // 0x0013d984: addiu $s1, $s1, 0x100
     a0 = 1;                                                     // 0x0013d988: addiu $a0, $zero, 1
-    func_001408b0();  // 0x140858                                // 0x0013d98c: jal 0x140858
+    func_00140858();  // 140858                                // 0x0013d98c: jal 0x140858
     a2 = 0x100;                                                 // 0x0013d990: addiu $a2, $zero, 0x100
     v1 = s2 << 8;                                               // 0x0013d994: sll $v1, $s2, 8
     a1 = s6 + 0x7d80;                                           // 0x0013d998: addiu $a1, $s6, 0x7d80
@@ -108,7 +108,7 @@ label_0x13d980:
     if (v0 != 0) goto label_0x13d9e8;                           // 0x0013d9b0: bnez $v0, 0x13d9e8
     g_00200004 = v0;  // Global at 0x00200004                   // 0x0013d9b4: sw $v0, 4($s0)
     v0 = 0x22 << 16;                                            // 0x0013d9b8: lui $v0, 0x22
-    func_00116598();  // 0x116508                                // 0x0013d9bc: jal 0x116508
+    func_00116508();  // 116508                                // 0x0013d9bc: jal 0x116508
     a0 = &str_00225ea8;  // "E0110103: ps2rna_init_psj: wk size error\n" // 0x0013d9c0: addiu $a0, $v0, 0x5ea8
     /* nop */                                                   // 0x0013d9c4: nop 
 label_0x13d9c8:
@@ -123,7 +123,7 @@ label_0x13d9c8:
 label_0x13d9e8:
     if (v1 == 0) goto label_0x13da18;                           // 0x0013d9e8: beqz $v1, 0x13da18
     v0 = 0x22 << 16;                                            // 0x0013d9ec: lui $v0, 0x22
-    func_00116598();  // 0x116508                                // 0x0013d9f0: jal 0x116508
+    func_00116508();  // 116508                                // 0x0013d9f0: jal 0x116508
     a0 = &str_00225ee0;  // "E0110104: ps2rna_init_psj: can't creat SJUNI_Creaet\n" // 0x0013d9f4: addiu $a0, $v0, 0x5ee0
 label_0x13d9f8:
     /* nop */                                                   // 0x0013d9f8: nop 
@@ -135,13 +135,13 @@ label_0x13d9f8:
     /* nop */                                                   // 0x0013da10: nop 
     /* nop */                                                   // 0x0013da14: nop 
 label_0x13da18:
-    func_0013fe68();  // 0x13fd80                                // 0x0013da18: jal 0x13fd80
+    func_0013fd80();  // 13fd80                                // 0x0013da18: jal 0x13fd80
     /* nop */                                                   // 0x0013da1c: nop 
     v1 = 0x4000;                                                // 0x0013da20: addiu $v1, $zero, 0x4000
     g_00200008 = v0;  // Global at 0x00200008                   // 0x0013da24: sw $v0, 8($s0)
     if (v0 != 0) goto label_0x13da60;                           // 0x0013da2c: bnez $v0, 0x13da60
     a2 = s0 + 0x10;                                             // 0x0013da30: addiu $a2, $s0, 0x10
-    func_00116598();  // 0x116508                                // 0x0013da34: jal 0x116508
+    func_00116508();  // 116508                                // 0x0013da34: jal 0x116508
     a0 = &str_00225f10;  // "E0110105: ps2rna_init_psj: can't creat SJX_Create\n" // 0x0013da38: addiu $a0, $fp, 0x5f10
     /* nop */                                                   // 0x0013da3c: nop 
 label_0x13da40:
@@ -163,11 +163,11 @@ label_0x13da60:
     s1 = s1 + 0x4000;                                           // 0x0013da78: addiu $s1, $s1, 0x4000
     a0 = g_00200008;  // Global at 0x00200008                   // 0x0013da7c: lw $a0, 8($s0)
     a1 = g_00200004;  // Global at 0x00200004                   // 0x0013da80: lw $a1, 4($s0)
-    func_00141248();  // 0x141150                                // 0x0013da84: jal 0x141150
+    func_00141150();  // 141150                                // 0x0013da84: jal 0x141150
     a2 = 1;                                                     // 0x0013da88: addiu $a2, $zero, 1
     if (v0 != 0) goto label_0x13dac0;                           // 0x0013da8c: bnez $v0, 0x13dac0
     g_0020000c = v0;  // Global at 0x0020000c                   // 0x0013da90: sw $v0, 0xc($s0)
-    func_00116598();  // 0x116508                                // 0x0013da94: jal 0x116508
+    func_00116508();  // 116508                                // 0x0013da94: jal 0x116508
     a0 = &str_00225f48;  // "PS2RNA: E01112902: Failed, sceSifAllocIopHeap(%d) in PS2RNA_Init." // 0x0013da98: addiu $a0, $s7, 0x5f48
     /* nop */                                                   // 0x0013da9c: nop 
 label_0x13daa0:

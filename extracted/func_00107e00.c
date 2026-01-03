@@ -10,7 +10,7 @@ void func_00107e00() {
     v1 = *(int32_t*)((s0) + 0x4c);                              // 0x00107e18: lw $v1, 0x4c($s0)
     if (v1 != 0) goto label_0x107e38;                           // 0x00107e1c: bnez $v1, 0x107e38
     a1 = 4;                                                     // 0x00107e20: addiu $a1, $zero, 4
-    func_001039f8();  // 0x103940                                // 0x00107e24: jal 0x103940
+    func_00103940();  // 103940                                // 0x00107e24: jal 0x103940
     a2 = 0x10;                                                  // 0x00107e28: addiu $a2, $zero, 0x10
     if (v1 == 0) goto label_0x107e90;                           // 0x00107e30: beqz $v1, 0x107e90
     *(uint32_t*)((s0) + 0x4c) = v1;                             // 0x00107e34: sw $v1, 0x4c($s0)
@@ -27,7 +27,7 @@ label_0x107e58:
     s0 = v0 << s1;                                              // 0x00107e5c: sllv $s0, $v0, $s1
     a1 = 1;                                                     // 0x00107e60: addiu $a1, $zero, 1
     a2 = s0 << 2;                                               // 0x00107e64: sll $a2, $s0, 2
-    func_001039f8();  // 0x103940                                // 0x00107e68: jal 0x103940
+    func_00103940();  // 103940                                // 0x00107e68: jal 0x103940
     a2 = a2 + 0x14;                                             // 0x00107e6c: addiu $a2, $a2, 0x14
     /* beqzl $v1, 0x107e94 */                                   // 0x00107e74: beqzl $v1, 0x107e94
     *(uint32_t*)((v1) + 4) = s1;                                // 0x00107e7c: sw $s1, 4($v1)

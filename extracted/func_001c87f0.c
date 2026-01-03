@@ -9,11 +9,11 @@ void func_001c87f0() {
     sp = sp + -0x50;                                            // 0x001c87f0: addiu $sp, $sp, -0x50
     /* FPU: dpa.w.ph $ac0, $sp, $s3 */                          // 0x001c87f8: dpa.w.ph $ac0, $sp, $s3
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001c8804: addu.qb $zero, $sp, $s1
-    func_001c7780();  // 0x1c7770                                // 0x001c8810: jal 0x1c7770
+    func_001c7770();  // 1c7770                                // 0x001c8810: jal 0x1c7770
     s0 = 0x31 << 16;                                            // 0x001c8818: lui $s0, 0x31
     if (s3 == 0) goto label_0x1c8838;                           // 0x001c881c: beqz $s3, 0x1c8838
     s0 = s0 + 0x669c;                                           // 0x001c8820: addiu $s0, $s0, 0x669c
-    func_0010ae00();  // 0x10ac68                                // 0x001c8828: jal 0x10ac68
+    func_0010ac68();  // 10ac68                                // 0x001c8828: jal 0x10ac68
     goto label_0x1c8840;                                        // 0x001c8830: b 0x1c8840
     /* nop */                                                   // 0x001c8834: nop 
 label_0x1c8838:
@@ -24,9 +24,9 @@ label_0x1c8840:
     a0 = 0x3b;                                                  // 0x001c8844: addiu $a0, $zero, 0x3b
     a1 = 0x128;                                                 // 0x001c8848: addiu $a1, $zero, 0x128
     a2 = 0x20;                                                  // 0x001c884c: addiu $a2, $zero, 0x20
-    func_001c7670();  // 0x1c75b0                                // 0x001c8850: jal 0x1c75b0
+    func_001c75b0();  // 1c75b0                                // 0x001c8850: jal 0x1c75b0
     g_003167a0 = s1;  // Global at 0x003167a0                   // 0x001c8854: sw $s1, 0x104($s0)
-    func_001c7790();  // 0x1c7780                                // 0x001c885c: jal 0x1c7780
+    func_001c7780();  // 1c7780                                // 0x001c885c: jal 0x1c7780
     /* FPU: ld.b $w0, -0x4e($zero) */                           // 0x001c8870: ld.b $w0, -0x4e($zero)
     /* FPU: aver_u.h $w0, $w0, $w17 */                          // 0x001c8874: aver_u.h $w0, $w0, $w17
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001c8878: xori.b $w0, $w0, 0xb0

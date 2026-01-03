@@ -8,7 +8,7 @@ void func_00167bc8() {
     
     sp = sp + -0x40;                                            // 0x00167bc8: addiu $sp, $sp, -0x40
     s0 = s1 + 0xcc0;                                            // 0x00167bd8: addiu $s0, $s1, 0xcc0
-    func_00169ba0();  // 0x169b88                                // 0x00167bf8: jal 0x169b88
+    func_00169b88();  // 169b88                                // 0x00167bf8: jal 0x169b88
     a3 = *(int32_t*)((s0) + 0x1b0);                             // 0x00167c00: lw $a3, 0x1b0($s0)
     v1 = *(int32_t*)((s0) + 0x1b4);                             // 0x00167c04: lw $v1, 0x1b4($s0)
     a2 = a3 + 0x1f;                                             // 0x00167c0c: addiu $a2, $a3, 0x1f
@@ -29,7 +29,7 @@ void func_00167bc8() {
     v1 = v1 + 1;                                                // 0x00167c4c: addiu $v1, $v1, 1
     *(uint32_t*)((s0) + 0x1b0) = v1;                            // 0x00167c50: sw $v1, 0x1b0($s0)
 label_0x167c54:
-    func_00169bc8();  // 0x169ba0                                // 0x00167c54: jal 0x169ba0
+    func_00169ba0();  // 169ba0                                // 0x00167c54: jal 0x169ba0
     /* nop */                                                   // 0x00167c58: nop 
     return;                                                     // 0x00167c78: jr $ra
     sp = sp + 0x40;                                             // 0x00167c7c: addiu $sp, $sp, 0x40

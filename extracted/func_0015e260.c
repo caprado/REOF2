@@ -24,23 +24,23 @@ label_0x15e2a4:
     s1 = s1 + 1;                                                // 0x0015e2b0: addiu $s1, $s1, 1
     a0 = a0 + -0x800;                                           // 0x0015e2b4: addiu $a0, $a0, -0x800
     a1 = s3 - a0;                                               // 0x0015e2b8: subu $a1, $s3, $a0
-    func_00178e78();  // 0x178db0                                // 0x0015e2bc: jal 0x178db0
+    func_00178db0();  // 178db0                                // 0x0015e2bc: jal 0x178db0
     a0 = s2 + a0;                                               // 0x0015e2c0: addu $a0, $s2, $a0
     if (s0 == 0) goto label_0x15e2a0;                           // 0x0015e2cc: beqz $s0, 0x15e2a0
-    func_001790b8();  // 0x178fc8                                // 0x0015e2d4: jal 0x178fc8
+    func_00178fc8();  // 178fc8                                // 0x0015e2d4: jal 0x178fc8
     /* nop */                                                   // 0x0015e2d8: nop 
     if (v0 == 0) goto label_0x15e2ec;                           // 0x0015e2dc: beqz $v0, 0x15e2ec
     v0 = local_0;                                               // 0x0015e2e0: lw $v0, 0($sp)
     if (v0 != 0) goto label_0x15e300;                           // 0x0015e2e4: bnez $v0, 0x15e300
     /* nop */                                                   // 0x0015e2e8: nop 
 label_0x15e2ec:
-    func_00178ec8();  // 0x178e78                                // 0x0015e2ec: jal 0x178e78
+    func_00178e78();  // 178e78                                // 0x0015e2ec: jal 0x178e78
     goto label_0x15e2a4;                                        // 0x0015e2f4: b 0x15e2a4
     v0 = (s1 < 4) ? 1 : 0;                                      // 0x0015e2f8: slti $v0, $s1, 4
     /* nop */                                                   // 0x0015e2fc: nop 
 label_0x15e300:
-    func_0015e260();  // 0x15e230                                // 0x0015e300: jal 0x15e230
-    func_00178ec8();  // 0x178e78                                // 0x0015e30c: jal 0x178e78
+    func_0015e230();  // 15e230                                // 0x0015e300: jal 0x15e230
+    func_00178e78();  // 178e78                                // 0x0015e30c: jal 0x178e78
     *(uint32_t*)((s4) + 0x1c) = v0;                             // 0x0015e310: sw $v0, 0x1c($s4)
 label_0x15e314:
 label_0x15e318:

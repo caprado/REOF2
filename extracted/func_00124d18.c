@@ -7,7 +7,7 @@ void func_00124d18() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x10;                                            // 0x00124d18: addiu $sp, $sp, -0x10
-    func_0010af38();  // 0x10ae00                                // 0x00124d24: jal 0x10ae00
+    func_0010ae00();  // 10ae00                                // 0x00124d24: jal 0x10ae00
     a2 = 0x1f << 16;                                            // 0x00124d34: lui $a2, 0x1f
     a3 = 0x1f << 16;                                            // 0x00124d38: lui $a3, 0x1f
     t0 = 0x1f << 16;                                            // 0x00124d3c: lui $t0, 0x1f
@@ -27,9 +27,9 @@ void func_00124d18() {
     v0 = ((unsigned)a2 < (unsigned)8) ? 1 : 0;                  // 0x00124d9c: sltiu $v0, $a2, 8
     a1 = 0x22 << 16;                                            // 0x00124da0: lui $a1, 0x22
     a1 = a1 + 0x2430;                                           // 0x00124da8: addiu $a1, $a1, 0x2430
-    func_0010a570();  // 0x10a4d8                                // 0x00124dac: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x00124dac: jal 0x10a4d8
     a1 = 8;                                                     // 0x00124db4: addiu $a1, $zero, 8
-    func_001243d0();  // 0x124218                                // 0x00124dc4: jal 0x124218
+    func_00124218();  // 124218                                // 0x00124dc4: jal 0x124218
     goto label_0x124e48;                                        // 0x00124dcc: b 0x124e48
     /* nop */                                                   // 0x00124dd4: nop 
     /* bnezl $v0, 0x124e3c */                                   // 0x00124dd8: bnezl $v0, 0x124e3c

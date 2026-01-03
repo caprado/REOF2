@@ -17,7 +17,7 @@ void func_00184918() {
     s6 = s6 | 0xffff;                                           // 0x00184974: ori $s6, $s6, 0xffff
     s5 = s5 | 0xffff;                                           // 0x00184978: ori $s5, $s5, 0xffff
 label_0x184980:
-    func_001873b0();  // 0x187390                                // 0x00184988: jal 0x187390
+    func_00187390();  // 187390                                // 0x00184988: jal 0x187390
     a3 = 1;                                                     // 0x0018498c: addiu $a3, $zero, 1
     if (v0 != 0) goto label_0x1849a4;                           // 0x00184990: bnez $v0, 0x1849a4
     *(uint32_t*)(s3) = s7;                                      // 0x00184998: sw $s7, 0($s3)
@@ -35,7 +35,7 @@ label_0x1849a8:
     v0 = (a1 < 2) ? 1 : 0;                                      // 0x001849c4: slti $v0, $a1, 2
     if (v0 != 0) goto label_0x1849a8;                           // 0x001849c8: bnez $v0, 0x1849a8
     a0 = a0 + 0x200;                                            // 0x001849cc: addiu $a0, $a0, 0x200
-    func_00182bd0();  // 0x182b88                                // 0x001849d8: jal 0x182b88
+    func_00182b88();  // 182b88                                // 0x001849d8: jal 0x182b88
     v1 = *(int32_t*)(s3);                                       // 0x001849e0: lw $v1, 0($s3)
     if (v1 == 0) goto label_0x1849f4;                           // 0x001849e4: beqz $v1, 0x1849f4
     goto label_0x184a14;                                        // 0x001849ec: b 0x184a14

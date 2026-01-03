@@ -18,7 +18,7 @@ void func_001b7790() {
     /* call function at address in v0 */                        // 0x001b77c4: jalr $v0
     /* nop */                                                   // 0x001b77c8: nop 
 label_0x1b77cc:
-    func_00107d30();  // 0x107c70                                // 0x001b77d4: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001b77d4: jal 0x107c70
     a2 = 0x20;                                                  // 0x001b77d8: addiu $a2, $zero, 0x20
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001b77e0: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x001b77e4: jr $ra

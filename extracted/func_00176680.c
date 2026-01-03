@@ -22,7 +22,7 @@ void func_00176680() {
     at = at + v1;                                               // 0x001766d4: addu $at, $at, $v1
     v1 = g_00229398;  // Global at 0x00229398                   // 0x001766d8: lw $v1, -0x6c68($at)
     if (v1 != 0) goto label_0x176700;                           // 0x001766dc: bnez $v1, 0x176700
-    func_00169940();  // 0x1698d0                                // 0x001766e4: jal 0x1698d0
+    func_001698d0();  // 1698d0                                // 0x001766e4: jal 0x1698d0
     /* nop */                                                   // 0x001766e8: nop 
     v1 = 1;                                                     // 0x001766ec: addiu $v1, $zero, 1
     *(uint32_t*)(s1) = 0;                                       // 0x001766f0: sw $zero, 0($s1)

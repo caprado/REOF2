@@ -9,7 +9,7 @@ void func_001366b8() {
     sp = sp + -0x10;                                            // 0x001366b8: addiu $sp, $sp, -0x10
     if (a0 != 0) goto label_0x1366d8;                           // 0x001366bc: bnez $a0, 0x1366d8
     a0 = 0x22 << 16;                                            // 0x001366c4: lui $a0, 0x22
-    func_00134fb0();  // 0x134ec0                                // 0x001366c8: jal 0x134ec0
+    func_00134ec0();  // 134ec0                                // 0x001366c8: jal 0x134ec0
     a0 = &str_00224920;  // "cvFsOptFn1 #1:handle error"        // 0x001366cc: addiu $a0, $a0, 0x4920
     goto label_0x136730;                                        // 0x001366d0: b 0x136730
 label_0x1366d8:

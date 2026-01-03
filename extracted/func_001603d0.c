@@ -10,15 +10,15 @@ void func_001603d0() {
     uint32_t local_10;
     
     sp = sp + -0x50;                                            // 0x001603d0: addiu $sp, $sp, -0x50
-    func_0015fcb0();  // 0x15fc80                                // 0x001603dc: jal 0x15fc80
+    func_0015fc80();  // 15fc80                                // 0x001603dc: jal 0x15fc80
     if (v0 != 0) goto label_0x160408;                           // 0x001603e8: bnez $v0, 0x160408
     a0 = 0x22 << 16;                                            // 0x001603f0: lui $a0, 0x22
-    func_001634a8();  // 0x163410                                // 0x001603f4: jal 0x163410
+    func_00163410();  // 163410                                // 0x001603f4: jal 0x163410
     a0 = &str_00227ff8;  // "E1122627: mwPlySetEmptyBpicSkip: handle is invalid." // 0x001603f8: addiu $a0, $a0, 0x7ff8
     goto label_0x160414;                                        // 0x001603fc: b 0x160414
     /* nop */                                                   // 0x00160404: nop 
 label_0x160408:
-    func_0015fb60();  // 0x15fb48                                // 0x00160408: jal 0x15fb48
+    func_0015fb48();  // 15fb48                                // 0x00160408: jal 0x15fb48
     /* nop */                                                   // 0x0016040c: nop 
     v0 = local_10;                                              // 0x00160410: lw $v0, 0x10($sp)
 label_0x160414:

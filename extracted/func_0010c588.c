@@ -62,8 +62,8 @@ label_0x10c670:
     v0 = -1;                                                    // 0x0010c670: addiu $v0, $zero, -1
     s4 = 0 | 0x8000;                                            // 0x0010c678: ori $s4, $zero, 0x8000
     if (s7 == 0) s4 = v0;                                       // 0x0010c680: movz $s4, $v0, $s7
-    func_00110fd0();  // 0x110a68                                // 0x0010c68c: jal 0x110a68
-    func_00110a68();  // 0x1104e8                                // 0x0010c6a0: jal 0x1104e8
+    func_00110a68();  // 110a68                                // 0x0010c68c: jal 0x110a68
+    func_001104e8();  // 1104e8                                // 0x0010c6a0: jal 0x1104e8
     goto label_0x10c708;                                        // 0x0010c6b0: b 0x10c708
 label_0x10c6b8:
     v0 = (s1 < s3) ? 1 : 0;                                     // 0x0010c6b8: slt $v0, $s1, $s3
@@ -81,7 +81,7 @@ label_0x10c6e8:
     goto label_0x10c700;                                        // 0x0010c6e8: b 0x10c700
     a2 = -1;                                                    // 0x0010c6ec: addiu $a2, $zero, -1
 label_0x10c6f0:
-    func_0010f7c0();  // 0x10f748                                // 0x0010c6f0: jal 0x10f748
+    func_0010f748();  // 10f748                                // 0x0010c6f0: jal 0x10f748
     a2 = 1;                                                     // 0x0010c6f8: addiu $a2, $zero, 1
 label_0x10c700:
     s1 = *(int8_t*)(s2);                                        // 0x0010c700: lb $s1, 0($s2)

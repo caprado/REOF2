@@ -11,7 +11,7 @@ void func_00186ca8() {
     a2 = 0x800;                                                 // 0x00186cb4: addiu $a2, $zero, 0x800
     s2 = 0x28 << 16;                                            // 0x00186cbc: lui $s2, 0x28
     s0 = s2 + -0x37c0;                                          // 0x00186cc8: addiu $s0, $s2, -0x37c0
-    func_00107d30();  // 0x107c70                                // 0x00186cd0: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x00186cd0: jal 0x107c70
     a0 = 0x184;                                                 // 0x00186cd8: addiu $a0, $zero, 0x184
     v1 = 0x21 << 16;                                            // 0x00186cdc: lui $v1, 0x21
     v1 = v1 + 0x6018;                                           // 0x00186ce4: addiu $v1, $v1, 0x6018
@@ -38,7 +38,7 @@ label_0x186d8c:
     t0 = g_00216058;  // Global at 0x00216058                   // 0x00186d8c: lw $t0, 0($v1)
     a1 = s2 + -0x37c0;                                          // 0x00186d94: addiu $a1, $s2, -0x37c0
     g_0027c880 = t0;  // Global at 0x0027c880                   // 0x00186d98: sw $t0, 0($s0)
-    func_001882c8();  // 0x188138                                // 0x00186da0: jal 0x188138
+    func_00188138();  // 188138                                // 0x00186da0: jal 0x188138
     a3 = 1;                                                     // 0x00186da4: addiu $a3, $zero, 1
     v0 = ((unsigned)0 < (unsigned)v0) ? 1 : 0;                  // 0x00186dac: sltu $v0, $zero, $v0
     return;                                                     // 0x00186dbc: jr $ra

@@ -8,20 +8,20 @@ void func_0012c8d0() {
     
     sp = sp + -0x20;                                            // 0x0012c8d0: addiu $sp, $sp, -0x20
     *(uint32_t*)((s0) + 0x38) = s1;                             // 0x0012c8e8: sw $s1, 0x38($s0)
-    func_00122d48();  // 0x122ce0                                // 0x0012c8ec: jal 0x122ce0
+    func_00122ce0();  // 122ce0                                // 0x0012c8ec: jal 0x122ce0
     a0 = *(int32_t*)((s0) + 4);                                 // 0x0012c8f0: lw $a0, 4($s0)
     a0 = *(int32_t*)((s0) + 4);                                 // 0x0012c8f4: lw $a0, 4($s0)
     return func_00122b30();  // Tail call                       // 0x0012c908: j 0x122b30
     sp = sp + 0x20;                                             // 0x0012c90c: addiu $sp, $sp, 0x20
     sp = sp + -0x10;                                            // 0x0012c910: addiu $sp, $sp, -0x10
-    func_00122da0();  // 0x122d70                                // 0x0012c920: jal 0x122d70
+    func_00122d70();  // 122d70                                // 0x0012c920: jal 0x122d70
     a0 = *(int32_t*)((s0) + 4);                                 // 0x0012c924: lw $a0, 4($s0)
     a0 = *(int32_t*)((s0) + 4);                                 // 0x0012c928: lw $a0, 4($s0)
     return func_00122b80();  // Tail call                        // 0x0012c934: j 0x122b50
     sp = sp + 0x10;                                             // 0x0012c938: addiu $sp, $sp, 0x10
     /* nop */                                                   // 0x0012c93c: nop 
     sp = sp + -0x10;                                            // 0x0012c940: addiu $sp, $sp, -0x10
-    func_0012c698();  // 0x12c660                                // 0x0012c94c: jal 0x12c660
+    func_0012c660();  // 12c660                                // 0x0012c94c: jal 0x12c660
     v0 = 1;                                                     // 0x0012c954: addiu $v0, $zero, 1
     *(uint8_t*)((s0) + 1) = v0;                                 // 0x0012c95c: sb $v0, 1($s0)
     return;                                                     // 0x0012c964: jr $ra

@@ -41,7 +41,7 @@ label_0x17d568:
     a1 = &str_00229cc8;  // "SFXINFE"                           // 0x0017d580: addiu $a1, $a1, -0x6338
     local_0 = t0;                                               // 0x0017d588: sw $t0, 0($sp)
     s1 = 1;                                                     // 0x0017d58c: addiu $s1, $zero, 1
-    func_001407b0();  // 0x1406e0                                // 0x0017d590: jal 0x1406e0
+    func_001406e0();  // 1406e0                                // 0x0017d590: jal 0x1406e0
     local_4 = v0;                                               // 0x0017d594: sw $v0, 4($sp)
     v1 = local_10;                                              // 0x0017d598: lw $v1, 0x10($sp)
     a1 = 0x23 << 16;                                            // 0x0017d59c: lui $a1, 0x23
@@ -50,7 +50,7 @@ label_0x17d568:
     *(uint32_t*)((s3) + 4) = v1;                                // 0x0017d5a8: sw $v1, 4($s3)
     *(uint32_t*)((s3) + 8) = v0;                                // 0x0017d5b0: sw $v0, 8($s3)
     *(uint32_t*)(s3) = s1;                                      // 0x0017d5b8: sw $s1, 0($s3)
-    func_001407b0();  // 0x1406e0                                // 0x0017d5bc: jal 0x1406e0
+    func_001406e0();  // 1406e0                                // 0x0017d5bc: jal 0x1406e0
     *(uint32_t*)(s4) = s1;                                      // 0x0017d5c4: sw $s1, 0($s4)
     v0 = local_10;                                              // 0x0017d5c8: lw $v0, 0x10($sp)
     v1 = local_14;                                              // 0x0017d5cc: lw $v1, 0x14($sp)

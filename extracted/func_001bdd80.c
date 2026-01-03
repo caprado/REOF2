@@ -13,8 +13,8 @@ void func_001bdd80() {
     sp = sp + -0x20;                                            // 0x001bdd90: addiu $sp, $sp, -0x20
     a1 = 0x24 << 16;                                            // 0x001bdd9c: lui $a1, 0x24
     a1 = &str_0023e030;  // "pfs0:%s"                           // 0x001bdda4: addiu $a1, $a1, -0x1fd0
-    func_0010a570();  // 0x10a4d8                                // 0x001bdda8: jal 0x10a4d8
-    func_0010caa0();  // 0x10ca50                                // 0x001bddb0: jal 0x10ca50
+    func_0010a4d8();  // 10a4d8                                // 0x001bdda8: jal 0x10a4d8
+    func_0010ca50();  // 10ca50                                // 0x001bddb0: jal 0x10ca50
     a0 = s0 + 8;                                                // 0x001bddb4: addiu $a0, $s0, 8
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001bddbc: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x001bddc0: jr $ra

@@ -17,22 +17,22 @@ void func_0012bba0() {
     sp = sp + -0x10;                                            // 0x0012bbd0: addiu $sp, $sp, -0x10
     v0 = 0x1f << 16;                                            // 0x0012bbd4: lui $v0, 0x1f
     s0 = v0 + 0x6aec;                                           // 0x0012bbdc: addiu $s0, $v0, 0x6aec
-    func_0012ae18();  // 0x12adb0                                // 0x0012bbe4: jal 0x12adb0
+    func_0012adb0();  // 12adb0                                // 0x0012bbe4: jal 0x12adb0
     a0 = g_001f6aec;  // Global at 0x001f6aec                   // 0x0012bbe8: lw $a0, 0($s0)
     v1 = g_001f6aec;  // Global at 0x001f6aec                   // 0x0012bbec: lw $v1, 0($s0)
     if (v0 != v1) goto label_0x12bc00;                          // 0x0012bbf0: bne $v0, $v1, 0x12bc00
     /* nop */                                                   // 0x0012bbf4: nop 
-    func_0012ad98();  // 0x12ad48                                // 0x0012bbf8: jal 0x12ad48
+    func_0012ad48();  // 12ad48                                // 0x0012bbf8: jal 0x12ad48
     a0 = g_001f6aec;  // Global at 0x001f6aec                   // 0x0012bbfc: lw $a0, 0($s0)
 label_0x12bc00:
-    func_0012b200();  // 0x12b1f0                                // 0x0012bc00: jal 0x12b1f0
+    func_0012b1f0();  // 12b1f0                                // 0x0012bc00: jal 0x12b1f0
     /* nop */                                                   // 0x0012bc04: nop 
     v1 = 0x1f << 16;                                            // 0x0012bc08: lui $v1, 0x1f
     a0 = 1;                                                     // 0x0012bc0c: addiu $a0, $zero, 1
     if (v0 != a0) goto label_0x12bc48;                          // 0x0012bc10: bne $v0, $a0, 0x12bc48
     s0 = v1 + 0x6af0;                                           // 0x0012bc14: addiu $s0, $v1, 0x6af0
     a0 = g_001f6af0;  // Global at 0x001f6af0                   // 0x0012bc18: lw $a0, 0($s0)
-    func_0012ae18();  // 0x12adb0                                // 0x0012bc1c: jal 0x12adb0
+    func_0012adb0();  // 12adb0                                // 0x0012bc1c: jal 0x12adb0
     /* nop */                                                   // 0x0012bc20: nop 
     v1 = g_001f6af0;  // Global at 0x001f6af0                   // 0x0012bc24: lw $v1, 0($s0)
     if (v0 != v1) goto label_0x12bc4c;                          // 0x0012bc28: bnel $v0, $v1, 0x12bc4c

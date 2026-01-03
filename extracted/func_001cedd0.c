@@ -70,7 +70,7 @@ label_0x1ceec0:
     t1 = t1 + 1;                                                // 0x001ceec4: addiu $t1, $t1, 1
 label_0x1ceec8:
     a1 = 0xff;                                                  // 0x001ceec8: addiu $a1, $zero, 0xff
-    func_00107d30();  // 0x107c70                                // 0x001ceecc: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001ceecc: jal 0x107c70
     a2 = 0x1c;                                                  // 0x001ceed0: addiu $a2, $zero, 0x1c
     v0 = -1;                                                    // 0x001ceed4: addiu $v0, $zero, -1
 label_0x1ceed8:

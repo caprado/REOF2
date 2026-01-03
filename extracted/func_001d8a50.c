@@ -33,15 +33,15 @@ label_0x1d8a94:
     a1 = 0x24 << 16;                                            // 0x001d8ab0: lui $a1, 0x24
     s0 = g_003137fc;  // Global at 0x003137fc                   // 0x001d8ab4: lw $s0, 0x37fc($at)
     a0 = sp + 0x20;                                             // 0x001d8ab8: addiu $a0, $sp, 0x20
-    func_0010a570();  // 0x10a4d8                                // 0x001d8abc: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001d8abc: jal 0x10a4d8
     a1 = &str_00247720;  // "data\\rom\\motion\\demo\\r%03d\\d%02d.bin" // 0x001d8ac0: addiu $a1, $a1, 0x7720
     v0 = 2 << 16;                                               // 0x001d8ac4: lui $v0, 2
     a0 = sp + 0x20;                                             // 0x001d8ac8: addiu $a0, $sp, 0x20
-    func_001d33e0();  // 0x1d3390                                // 0x001d8ad4: jal 0x1d3390
+    func_001d3390();  // 1d3390                                // 0x001d8ad4: jal 0x1d3390
     a2 = v0 | 1;                                                // 0x001d8ad8: ori $a2, $v0, 1
     a1 = 0x4a << 16;                                            // 0x001d8adc: lui $a1, 0x4a
     a1 = a1 + -0x63d0;                                          // 0x001d8ae4: addiu $a1, $a1, -0x63d0
-    func_001d87a0();  // 0x1d8780                                // 0x001d8aec: jal 0x1d8780
+    func_001d8780();  // 1d8780                                // 0x001d8aec: jal 0x1d8780
 label_0x1d8af4:
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001d8af8: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x001d8afc: jr $ra

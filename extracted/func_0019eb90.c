@@ -9,7 +9,7 @@ void func_0019eb90() {
     sp = sp + -0x10;                                            // 0x0019eb90: addiu $sp, $sp, -0x10
     goto label_0x19eba4;                                        // 0x0019eb94: b 0x19eba4
 label_0x19eb9c:
-    func_0019e900();  // 0x19e880                                // 0x0019eb9c: jal 0x19e880
+    func_0019e880();  // 19e880                                // 0x0019eb9c: jal 0x19e880
     /* nop */                                                   // 0x0019eba0: nop 
 label_0x19eba4:
     a0 = *(int32_t*)((gp) + -0x647c);                           // 0x0019eba4: lw $a0, -0x647c($gp)

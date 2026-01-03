@@ -44,7 +44,7 @@ void func_00193270() {
     *(float*)((sp) + 0x54) = FPU_F0;  // Store float            // 0x0019334c: swc1 $f0, 0x54($sp)
     FPU_F1 = *(float*)((s1) + 0x58);  // Load float             // 0x00193350: lwc1 $f1, 0x58($s1)
     FPU_F0 = *(float*)((s1) + 0x158);  // Load float            // 0x00193354: lwc1 $f0, 0x158($s1)
-    func_001916b0();  // 0x191330                                // 0x00193360: jal 0x191330
+    func_00191330();  // 191330                                // 0x00193360: jal 0x191330
     *(float*)((sp) + 0x58) = FPU_F0;  // Store float            // 0x00193364: swc1 $f0, 0x58($sp)
     FPU_F1 = *(float*)((s1) + 0x70);  // Load float             // 0x00193368: lwc1 $f1, 0x70($s1)
     FPU_F0 = *(float*)((s1) + 0x144);  // Load float            // 0x0019336c: lwc1 $f0, 0x144($s1)
@@ -58,13 +58,13 @@ void func_00193270() {
     a0 = *(int32_t*)((s1) + 0xd0);                              // 0x001933a4: lw $a0, 0xd0($s1)
     if (a0 == 0) goto label_0x1933bc;                           // 0x001933a8: beqz $a0, 0x1933bc
     /* FPU: mov.s $f12, $f21 */                                 // 0x001933ac: mov.s $f12, $f21
-    func_00193400();  // 0x193270                                // 0x001933b4: jal 0x193270
+    func_00193270();  // 193270                                // 0x001933b4: jal 0x193270
     /* FPU: mov.s $f13, $f20 */                                 // 0x001933b8: mov.s $f13, $f20
 label_0x1933bc:
     a0 = *(int32_t*)((s1) + 0xcc);                              // 0x001933bc: lw $a0, 0xcc($s1)
     if (a0 == 0) goto label_0x1933d4;                           // 0x001933c0: beqz $a0, 0x1933d4
     /* FPU: mov.s $f12, $f21 */                                 // 0x001933c4: mov.s $f12, $f21
-    func_00193400();  // 0x193270                                // 0x001933cc: jal 0x193270
+    func_00193270();  // 193270                                // 0x001933cc: jal 0x193270
     /* FPU: mov.s $f13, $f20 */                                 // 0x001933d0: mov.s $f13, $f20
 label_0x1933d4:
     FPU_F21 = *(float*)((sp) + 4);  // Load float               // 0x001933d8: lwc1 $f21, 4($sp)

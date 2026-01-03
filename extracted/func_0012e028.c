@@ -13,13 +13,13 @@ void func_0012e028() {
     v0 = a1 << 0x10;                                            // 0x0012e02c: sll $v0, $a1, 0x10
     a3 = sp + 2;                                                // 0x0012e038: addiu $a3, $sp, 2
     a0 = v0 >> 0x10;                                            // 0x0012e040: sra $a0, $v0, 0x10
-    func_00126330();  // 0x1261d0                                // 0x0012e048: jal 0x1261d0
+    func_001261d0();  // 1261d0                                // 0x0012e048: jal 0x1261d0
     a1 = local_0;                                               // 0x0012e050: lh $a1, 0($sp)
-    func_0012e028();  // 0x12e018                                // 0x0012e058: jal 0x12e018
+    func_0012e018();  // 12e018                                // 0x0012e058: jal 0x12e018
     a2 = local_2;                                               // 0x0012e05c: lh $a2, 2($sp)
     a0 = *(int32_t*)((s0) + 0x88);                              // 0x0012e060: lw $a0, 0x88($s0)
     a1 = local_0;                                               // 0x0012e064: lh $a1, 0($sp)
-    func_0012dea0();  // 0x12de90                                // 0x0012e068: jal 0x12de90
+    func_0012de90();  // 12de90                                // 0x0012e068: jal 0x12de90
     a2 = local_2;                                               // 0x0012e06c: lh $a2, 2($sp)
     return;                                                     // 0x0012e078: jr $ra
     sp = sp + 0x20;                                             // 0x0012e07c: addiu $sp, $sp, 0x20

@@ -40,7 +40,7 @@ label_0x12f710:
     /* nop */                                                   // 0x0012f728: nop 
     /* nop */                                                   // 0x0012f72c: nop 
 label_0x12f730:
-    func_00107d30();  // 0x107c70                                // 0x0012f730: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x0012f730: jal 0x107c70
     a0 = local_0;                                               // 0x0012f734: lw $a0, 0($sp)
     v1 = s3 + s4;                                               // 0x0012f738: addu $v1, $s3, $s4
     a0 = *(int32_t*)(v1);                                       // 0x0012f73c: lw $a0, 0($v1)

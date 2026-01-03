@@ -12,7 +12,7 @@ void func_001a4890() {
     if (v1 == v0) goto label_0x1a48bc;                          // 0x001a48a0: beq $v1, $v0, 0x1a48bc
     /* nop */                                                   // 0x001a48a4: nop 
     a0 = 0x23 << 16;                                            // 0x001a48a8: lui $a0, 0x23
-    func_001a5720();  // 0x1a56b0                                // 0x001a48ac: jal 0x1a56b0
+    func_001a56b0();  // 1a56b0                                // 0x001a48ac: jal 0x1a56b0
     a0 = &str_0022a630;  // "Not support except 24bit. @plCreateContextFromBMPImage" // 0x001a48b0: addiu $a0, $a0, -0x59d0
     goto label_0x1a4960;                                        // 0x001a48b4: b 0x1a4960
 label_0x1a48bc:
@@ -31,7 +31,7 @@ label_0x1a48bc:
     if (v1 == v0) goto label_0x1a4908;                          // 0x001a48ec: beq $v1, $v0, 0x1a4908
     v0 = 3;                                                     // 0x001a48f0: addiu $v0, $zero, 3
     a0 = 0x23 << 16;                                            // 0x001a48f4: lui $a0, 0x23
-    func_001a5720();  // 0x1a56b0                                // 0x001a48f8: jal 0x1a56b0
+    func_001a56b0();  // 1a56b0                                // 0x001a48f8: jal 0x1a56b0
     a0 = &str_0022a670;  // "This is not BMP image. @plCreateContextFromBMPImage" // 0x001a48fc: addiu $a0, $a0, -0x5990
     goto label_0x1a4960;                                        // 0x001a4900: b 0x1a4960
 label_0x1a4908:

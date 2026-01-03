@@ -15,14 +15,14 @@ void func_0016c0f8() {
     v0 = s1 + 0x1b28;                                           // 0x0016c128: addiu $v0, $s1, 0x1b28
     s2 = *(int32_t*)((v0) + 0x14);                              // 0x0016c134: lw $s2, 0x14($v0)
     s0 = *(int32_t*)((v0) + 0x10);                              // 0x0016c138: lw $s0, 0x10($v0)
-    func_001679a0();  // 0x167980                                // 0x0016c13c: jal 0x167980
+    func_00167980();  // 167980                                // 0x0016c13c: jal 0x167980
     if (v0 == s3) goto label_0x16c1a0;                          // 0x0016c148: beq $v0, $s3, 0x16c1a0
-    func_001679a0();  // 0x167980                                // 0x0016c150: jal 0x167980
+    func_00167980();  // 167980                                // 0x0016c150: jal 0x167980
     /* nop */                                                   // 0x0016c154: nop 
     if (v0 != s3) goto label_0x16c1a4;                          // 0x0016c158: bnel $v0, $s3, 0x16c1a4
-    func_0016c220();  // 0x16c1c0                                // 0x0016c160: jal 0x16c1c0
+    func_0016c1c0();  // 16c1c0                                // 0x0016c160: jal 0x16c1c0
     if (v0 == 0) goto label_0x16c1a0;                           // 0x0016c168: beqz $v0, 0x16c1a0
-    func_00167980();  // 0x167960                                // 0x0016c174: jal 0x167960
+    func_00167960();  // 167960                                // 0x0016c174: jal 0x167960
     a2 = 1;                                                     // 0x0016c178: addiu $a2, $zero, 1
     return func_0016c350();  // Tail call                       // 0x0016c194: j 0x16c350
     sp = sp + 0x30;                                             // 0x0016c198: addiu $sp, $sp, 0x30

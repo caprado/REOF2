@@ -10,7 +10,7 @@ void func_001b0ec0() {
     a0 = 0x4d << 16;                                            // 0x001b0ec4: lui $a0, 0x4d
     v0 = 7 << 16;                                               // 0x001b0ec8: lui $v0, 7
     a0 = a0 + -0xb50;                                           // 0x001b0ed0: addiu $a0, $a0, -0xb50
-    func_00107d30();  // 0x107c70                                // 0x001b0ed8: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001b0ed8: jal 0x107c70
     a2 = v0 | 0x800;                                            // 0x001b0edc: ori $a2, $v0, 0x800
     v1 = 0x4c << 16;                                            // 0x001b0ee0: lui $v1, 0x4c
     a3 = 0x54 << 16;                                            // 0x001b0ee4: lui $a3, 0x54

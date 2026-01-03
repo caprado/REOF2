@@ -398,10 +398,10 @@ label_0x156d48:
     s0 = t0 + v0;                                               // 0x00156d4c: addu $s0, $t0, $v0
     a0 = s0 + -8;                                               // 0x00156d50: addiu $a0, $s0, -8
     v0 = a0 - t3;                                               // 0x00156d54: subu $v0, $a0, $t3
-    func_00157a80();  // 0x157a00                                // 0x00156d58: jal 0x157a00
+    func_00157a00();  // 157a00                                // 0x00156d58: jal 0x157a00
     *(uint32_t*)(s1) = v0;                                      // 0x00156d5c: sw $v0, 0($s1)
     /* bnezl $v0, 0x156d88 */                                   // 0x00156d60: bnezl $v0, 0x156d88
-    func_00157a80();  // 0x157a00                                // 0x00156d68: jal 0x157a00
+    func_00157a00();  // 157a00                                // 0x00156d68: jal 0x157a00
     a0 = s0 + -7;                                               // 0x00156d6c: addiu $a0, $s0, -7
     v1 = 4 << 16;                                               // 0x00156d70: lui $v1, 4
     if (v0 != v1) goto label_0x156d88;                          // 0x00156d74: bne $v0, $v1, 0x156d88

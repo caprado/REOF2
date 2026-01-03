@@ -13,7 +13,7 @@ void func_00191ec0() {
     /* FPU: neg.s $f0, $f20 */                                  // 0x00191ed4: neg.s $f0, $f20
     /* FPU: mul.s $f1, $f0, $f20 */                             // 0x00191ed8: mul.s $f1, $f0, $f20
     /* move to FPU: $v0, $f0 */                                 // 0x00191edc: mtc1 $v0, $f0
-    func_00192200();  // 0x191fd0                                // 0x00191ee0: jal 0x191fd0
+    func_00191fd0();  // 191fd0                                // 0x00191ee0: jal 0x191fd0
     /* FPU: add.s $f12, $f0, $f1 */                             // 0x00191ee4: add.s $f12, $f0, $f1
     /* nop */                                                   // 0x00191ee8: nop 
     /* nop */                                                   // 0x00191eec: nop 

@@ -15,7 +15,7 @@ void func_001875d8() {
     g_00216320 = 0;  // Global at 0x00216320                    // 0x0018760c: sw $zero, 0x6320($s2)
     PollSema();  // 0x114320                                    // 0x00187610: jal 0x114320
     s3 = s1 + 0x80;                                             // 0x00187614: addiu $s3, $s1, 0x80
-    func_00114c70();  // 0x114bd8                                // 0x0018761c: jal 0x114bd8
+    func_00114bd8();  // 114bd8                                // 0x0018761c: jal 0x114bd8
     a1 = s1 + 0xff;                                             // 0x00187620: addiu $a1, $s1, 0xff
     v1 = g_0027f140;  // Global at 0x0027f140                   // 0x00187624: lw $v1, -0xec0($s0)
     v0 = g_00216320;  // Global at 0x00216320                   // 0x00187628: lw $v0, 0x6320($s2)

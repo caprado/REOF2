@@ -11,7 +11,7 @@ void func_001735e8() {
     v0 = *(int32_t*)((s0) + 4);                                 // 0x00173608: lw $v0, 4($s0)
     v0 = v0 + a1;                                               // 0x0017360c: addu $v0, $v0, $a1
     a1 = 0x25;                                                  // 0x00173610: addiu $a1, $zero, 0x25
-    func_001752f8();  // 0x1752e8                                // 0x00173614: jal 0x1752e8
+    func_001752e8();  // 1752e8                                // 0x00173614: jal 0x1752e8
     *(uint32_t*)((s0) + 4) = v0;                                // 0x00173618: sw $v0, 4($s0)
     if (v0 == 0) goto label_0x173634;                           // 0x00173624: beqz $v0, 0x173634
     /* call function at address in v0 */                        // 0x0017362c: jalr $v0

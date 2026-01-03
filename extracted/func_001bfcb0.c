@@ -27,7 +27,7 @@ void func_001bfcb0() {
     s4 = g_0021cf18;  // Global at 0x0021cf18                   // 0x001bfd0c: lw $s4, 0($v0)
     v0 = s0 + s4;                                               // 0x001bfd10: addu $v0, $s0, $s4
     a3 = g_0021cf24;  // Global at 0x0021cf24                   // 0x001bfd14: lw $a3, 0xc($v0)
-    func_0010a570();  // 0x10a4d8                                // 0x001bfd18: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001bfd18: jal 0x10a4d8
     s1 = s1 + 0x5fc0;                                           // 0x001bfd1c: addiu $s1, $s1, 0x5fc0
     v1 = s0 + s4;                                               // 0x001bfd20: addu $v1, $s0, $s4
     at = 0x31 << 16;                                            // 0x001bfd24: lui $at, 0x31
@@ -53,7 +53,7 @@ label_0x1bfd58:
     /* nop */                                                   // 0x001bfd6c: nop 
     a2 = g_0031607c;  // Global at 0x0031607c                   // 0x001bfd70: lw $a2, 0xbc($s1)
     a0 = g_00316090;  // Global at 0x00316090                   // 0x001bfd74: lw $a0, 0xd0($s1)
-    func_00107d30();  // 0x107c70                                // 0x001bfd78: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001bfd78: jal 0x107c70
 label_0x1bfd80:
     /* FPU: xori.b $w1, $w0, 0xb4 */                            // 0x001bfd84: xori.b $w1, $w0, 0xb4
     /* FPU: ld.b $w0, -0x4e($zero) */                           // 0x001bfd8c: ld.b $w0, -0x4e($zero)

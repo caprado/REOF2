@@ -58,13 +58,13 @@ void func_001a05c0() {
     at = 0x29 << 16;                                            // 0x001a06fc: lui $at, 0x29
     at = 0x29 << 16;                                            // 0x001a0704: lui $at, 0x29
     at = 0x29 << 16;                                            // 0x001a070c: lui $at, 0x29
-    func_0018dca0();  // 0x18dc30                                // 0x001a0710: jal 0x18dc30
+    func_0018dc30();  // 18dc30                                // 0x001a0710: jal 0x18dc30
     a0 = 0x29 << 16;                                            // 0x001a071c: lui $a0, 0x29
     a0 = a0 + -0x310;                                           // 0x001a0720: addiu $a0, $a0, -0x310
-    func_00189ad0();  // 0x1899f8                                // 0x001a0728: jal 0x1899f8
+    func_001899f8();  // 1899f8                                // 0x001a0728: jal 0x1899f8
     a2 = 0x14;                                                  // 0x001a072c: addiu $a2, $zero, 0x14
     a3 = 0x29 << 16;                                            // 0x001a0734: lui $a3, 0x29
-    func_0018cff0();  // 0x18ce40                                // 0x001a0744: jal 0x18ce40
+    func_0018ce40();  // 18ce40                                // 0x001a0744: jal 0x18ce40
     a3 = a3 + -0x350;                                           // 0x001a0748: addiu $a3, $a3, -0x350
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001a0750: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x001a0754: jr $ra

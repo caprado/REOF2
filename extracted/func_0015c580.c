@@ -27,7 +27,7 @@ void func_0015c580() {
     return func_001634a8();  // Tail call                        // 0x0015c608: j 0x163410
     sp = sp + 0x30;                                             // 0x0015c60c: addiu $sp, $sp, 0x30
 label_0x15c610:
-    func_0015e610();  // 0x15e5f0                                // 0x0015c610: jal 0x15e5f0
+    func_0015e5f0();  // 15e5f0                                // 0x0015c610: jal 0x15e5f0
     /* nop */                                                   // 0x0015c614: nop 
     v1 = 1;                                                     // 0x0015c618: addiu $v1, $zero, 1
     if (v0 != v1) goto label_0x15c650;                          // 0x0015c61c: bnel $v0, $v1, 0x15c650

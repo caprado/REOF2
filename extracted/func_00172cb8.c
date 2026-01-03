@@ -33,7 +33,7 @@ void func_00172cb8() {
     v0 = (s2 < v0) ? 1 : 0;                                     // 0x00172d34: slt $v0, $s2, $v0
     /* beqzl $v0, 0x172d58 */                                   // 0x00172d38: beqzl $v0, 0x172d58
     v0 = 1;                                                     // 0x00172d3c: addiu $v0, $zero, 1
-    func_001752f8();  // 0x1752e8                                // 0x00172d40: jal 0x1752e8
+    func_001752e8();  // 1752e8                                // 0x00172d40: jal 0x1752e8
     /* nop */                                                   // 0x00172d44: nop 
     v1 = (s2 < v0) ? 1 : 0;                                     // 0x00172d48: slt $v1, $s2, $v0
     if (v1 != 0) goto label_0x172d58;                           // 0x00172d4c: bnez $v1, 0x172d58

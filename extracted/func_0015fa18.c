@@ -10,16 +10,16 @@ void func_0015fa18() {
     uint32_t local_24;
     
     sp = sp + -0x50;                                            // 0x0015fa18: addiu $sp, $sp, -0x50
-    func_0015fcb0();  // 0x15fc80                                // 0x0015fa24: jal 0x15fc80
+    func_0015fc80();  // 15fc80                                // 0x0015fa24: jal 0x15fc80
     if (v0 != 0) goto label_0x15fa50;                           // 0x0015fa30: bnez $v0, 0x15fa50
     a0 = 0x22 << 16;                                            // 0x0015fa38: lui $a0, 0x22
-    func_001634a8();  // 0x163410                                // 0x0015fa3c: jal 0x163410
+    func_00163410();  // 163410                                // 0x0015fa3c: jal 0x163410
     a0 = &str_00227ca8;  // "E2080601 mwPlySetVideoCh: handle is invalid." // 0x0015fa40: addiu $a0, $a0, 0x7ca8
     goto label_0x15fa5c;                                        // 0x0015fa44: b 0x15fa5c
     v0 = -1;                                                    // 0x0015fa48: addiu $v0, $zero, -1
     /* nop */                                                   // 0x0015fa4c: nop 
 label_0x15fa50:
-    func_0015fb78();  // 0x15fb60                                // 0x0015fa50: jal 0x15fb60
+    func_0015fb60();  // 15fb60                                // 0x0015fa50: jal 0x15fb60
     /* nop */                                                   // 0x0015fa54: nop 
     v0 = local_24;                                              // 0x0015fa58: lw $v0, 0x24($sp)
 label_0x15fa5c:

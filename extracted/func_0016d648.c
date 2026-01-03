@@ -16,7 +16,7 @@ void func_0016d648() {
     s5 = g_00229370;  // Global at 0x00229370                   // 0x0016d69c: lw $s5, -0x6c90($s5)
     if (t1 >= 0) goto label_0x16d6cc;                           // 0x0016d6a0: bgez $t1, 0x16d6cc
     s4 = *(int32_t*)((s3) + 0x14);                              // 0x0016d6a4: lw $s4, 0x14($s3)
-    func_0016d7e0();  // 0x16d7c0                                // 0x0016d6ac: jal 0x16d7c0
+    func_0016d7c0();  // 16d7c0                                // 0x0016d6ac: jal 0x16d7c0
     v1 = *(int32_t*)(s2);                                       // 0x0016d6b4: lw $v1, 0($s2)
     v1 = v1 - v0;                                               // 0x0016d6b8: subu $v1, $v1, $v0
     v0 = (v1 < 0) ? 1 : 0;                                      // 0x0016d6bc: slti $v0, $v1, 0
@@ -27,7 +27,7 @@ label_0x16d6cc:
     a2 = 4;                                                     // 0x0016d6d8: addiu $a2, $zero, 4
     s1 = v1 - t1;                                               // 0x0016d6dc: subu $s1, $v1, $t1
     v0 = (s1 < 0) ? 1 : 0;                                      // 0x0016d6e0: slti $v0, $s1, 0
-    func_00107ab8();  // 0x107a20                                // 0x0016d6e4: jal 0x107a20
+    func_00107a20();  // 107a20                                // 0x0016d6e4: jal 0x107a20
     if (v0 != 0) s1 = 0;                                        // 0x0016d6e8: movn $s1, $zero, $v0
     if (v0 == 0) goto label_0x16d738;                           // 0x0016d6f0: beqz $v0, 0x16d738
     v1 = 3;                                                     // 0x0016d6f4: addiu $v1, $zero, 3
@@ -61,7 +61,7 @@ label_0x16d738:
     a2 = (v0 < v1) ? 1 : 0;                                     // 0x0016d76c: slt $a2, $v0, $v1
     if (a2 == 0) v1 = v0;                                       // 0x0016d770: movz $v1, $v0, $a2
     a0 = a0 + v0;                                               // 0x0016d774: addu $a0, $a0, $v0
-    func_0016d7e0();  // 0x16d7c0                                // 0x0016d778: jal 0x16d7c0
+    func_0016d7c0();  // 16d7c0                                // 0x0016d778: jal 0x16d7c0
     *(uint32_t*)((s0) + 8) = v1;                                // 0x0016d77c: sw $v1, 8($s0)
     s1 = s1 + v0;                                               // 0x0016d780: addu $s1, $s1, $v0
     v0 = (s1 < 0) ? 1 : 0;                                      // 0x0016d784: slti $v0, $s1, 0

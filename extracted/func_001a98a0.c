@@ -46,11 +46,11 @@ label_0x1a98f8:
     v0 = *(int32_t*)((gp) + -0x63ec);                           // 0x001a9928: lw $v0, -0x63ec($gp)
     *(uint32_t*)((v0) + 0x14) = v1;                             // 0x001a992c: sw $v1, 0x14($v0)
     a1 = *(int32_t*)((gp) + -0x63ec);                           // 0x001a9930: lw $a1, -0x63ec($gp)
-    func_001a94b0();  // 0x1a94a0                                // 0x001a9934: jal 0x1a94a0
+    func_001a94a0();  // 1a94a0                                // 0x001a9934: jal 0x1a94a0
     a2 = 0x6000;                                                // 0x001a9938: addiu $a2, $zero, 0x6000
-    func_001aaca0();  // 0x1aac80                                // 0x001a993c: jal 0x1aac80
+    func_001aac80();  // 1aac80                                // 0x001a993c: jal 0x1aac80
     /* nop */                                                   // 0x001a9940: nop 
-    func_001aae40();  // 0x1aadb0                                // 0x001a9944: jal 0x1aadb0
+    func_001aadb0();  // 1aadb0                                // 0x001a9944: jal 0x1aadb0
     /* nop */                                                   // 0x001a9948: nop 
     return;                                                     // 0x001a9950: jr $ra
     sp = sp + 0x10;                                             // 0x001a9954: addiu $sp, $sp, 0x10

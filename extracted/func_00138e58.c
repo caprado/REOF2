@@ -24,7 +24,7 @@ void func_00138e58() {
     v0 = *(int32_t*)((s0) + 0x10);                              // 0x00138ea4: lw $v0, 0x10($s0)
     a1 = *(int32_t*)((s0) + 0xc);                               // 0x00138ea8: lw $a1, 0xc($s0)
     a1 = a1 + v0;                                               // 0x00138eb0: addu $a1, $a1, $v0
-    func_00114dc0();  // 0x114d18                                // 0x00138eb4: jal 0x114d18
+    func_00114d18();  // 114d18                                // 0x00138eb4: jal 0x114d18
     a1 = a1 + -1;                                               // 0x00138eb8: addiu $a1, $a1, -1
     v1 = *(int32_t*)((s0) + 0x20);                              // 0x00138ebc: lw $v1, 0x20($s0)
     a0 = *(int32_t*)((s0) + 0x24);                              // 0x00138ec0: lw $a0, 0x24($s0)
@@ -59,12 +59,12 @@ label_0x138ee0:
     g_0020003c = v1;  // Global at 0x0020003c                   // 0x00138f38: sw $v1, 0x3c($v0)
     v0 = *(int32_t*)((s0) + 0x10);                              // 0x00138f40: lw $v0, 0x10($s0)
     a1 = a1 + v0;                                               // 0x00138f44: addu $a1, $a1, $v0
-    func_00114c70();  // 0x114bd8                                // 0x00138f48: jal 0x114bd8
+    func_00114bd8();  // 114bd8                                // 0x00138f48: jal 0x114bd8
     a1 = a1 + -1;                                               // 0x00138f4c: addiu $a1, $a1, -1
     a1 = *(int32_t*)((s0) + 0xc);                               // 0x00138f50: lw $a1, 0xc($s0)
     v0 = *(int32_t*)((s0) + 0x10);                              // 0x00138f54: lw $v0, 0x10($s0)
     a1 = a1 + v0;                                               // 0x00138f5c: addu $a1, $a1, $v0
-    func_00114dc0();  // 0x114d18                                // 0x00138f60: jal 0x114d18
+    func_00114d18();  // 114d18                                // 0x00138f60: jal 0x114d18
     a1 = a1 + 0x3f;                                             // 0x00138f64: addiu $a1, $a1, 0x3f
     v1 = *(int32_t*)((s0) + 0xc);                               // 0x00138f68: lw $v1, 0xc($s0)
     v0 = 0xfff << 16;                                           // 0x00138f6c: lui $v0, 0xfff

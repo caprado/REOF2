@@ -15,7 +15,7 @@ label_0x1b16bc:
     v1 = -1;                                                    // 0x001b16c0: addiu $v1, $zero, -1
     if (a0 == v1) goto label_0x1b16dc;                          // 0x001b16c4: beq $a0, $v1, 0x1b16dc
     /* nop */                                                   // 0x001b16c8: nop 
-    func_00192350();  // 0x192330                                // 0x001b16cc: jal 0x192330
+    func_00192330();  // 192330                                // 0x001b16cc: jal 0x192330
     /* nop */                                                   // 0x001b16d0: nop 
     v1 = -1;                                                    // 0x001b16d4: addiu $v1, $zero, -1
     g_0053fcb0 = v1;  // Global at 0x0053fcb0                   // 0x001b16d8: sw $v1, 0($s1)

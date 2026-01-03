@@ -20,7 +20,7 @@ void func_0013e9e8() {
     s0 = s1 + 8;                                                // 0x0013ea30: addiu $s0, $s1, 8
     /* nop */                                                   // 0x0013ea34: nop 
 label_0x13ea38:
-    func_00138698();  // 0x138690                                // 0x0013ea38: jal 0x138690
+    func_00138690();  // 138690                                // 0x0013ea38: jal 0x138690
     a0 = *(int32_t*)((s0) + 8);                                 // 0x0013ea3c: lw $a0, 8($s0)
     if (v0 == s4) goto label_0x13ea70;                          // 0x0013ea40: beq $v0, $s4, 0x13ea70
     v0 = *(int32_t*)(s0);                                       // 0x0013ea48: lw $v0, 0($s0)
@@ -90,7 +90,7 @@ label_0x13eb48:
     s3 = s3 + 1;                                                // 0x0013eb60: addiu $s3, $s3, 1
     *(uint8_t*)((s1) + 0x53) = 0;                               // 0x0013eb64: sb $zero, 0x53($s1)
     a0 = *(int32_t*)(s2);                                       // 0x0013eb68: lw $a0, 0($s2)
-    func_001388a0();  // 0x138890                                // 0x0013eb6c: jal 0x138890
+    func_00138890();  // 138890                                // 0x0013eb6c: jal 0x138890
     s2 = s2 + 4;                                                // 0x0013eb70: addiu $s2, $s2, 4
     v0 = *(int8_t*)((s1) + 0x26);                               // 0x0013eb74: lb $v0, 0x26($s1)
     v0 = (s3 < v0) ? 1 : 0;                                     // 0x0013eb78: slt $v0, $s3, $v0

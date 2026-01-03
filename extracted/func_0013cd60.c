@@ -9,7 +9,7 @@ void func_0013cd60() {
     sp = sp + -0x10;                                            // 0x0013cd60: addiu $sp, $sp, -0x10
     if (a0 != 0) goto label_0x13cd80;                           // 0x0013cd64: bnez $a0, 0x13cd80
     a0 = 0x22 << 16;                                            // 0x0013cd6c: lui $a0, 0x22
-    func_0013d248();  // 0x13d1b8                                // 0x0013cd70: jal 0x13d1b8
+    func_0013d1b8();  // 13d1b8                                // 0x0013cd70: jal 0x13d1b8
     a0 = &str_00225be8;  // "E0011: Illigal parameter fname=%s\n" // 0x0013cd74: addiu $a0, $a0, 0x5be8
     goto label_0x13cd84;                                        // 0x0013cd78: b 0x13cd84
     v0 = -1;                                                    // 0x0013cd7c: addiu $v0, $zero, -1

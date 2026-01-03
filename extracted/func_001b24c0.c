@@ -23,7 +23,7 @@ label_0x1b24e0:
     *(uint32_t*)((gp) + -0x6370) = v1;                          // 0x001b2504: sw $v1, -0x6370($gp)
     v1 = a3 << 5;                                               // 0x001b2508: sll $v1, $a3, 5
     s0 = v0 + v1;                                               // 0x001b250c: addu $s0, $v0, $v1
-    func_00107d30();  // 0x107c70                                // 0x001b2510: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001b2510: jal 0x107c70
 label_0x1b251c:
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001b2520: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x001b2524: jr $ra

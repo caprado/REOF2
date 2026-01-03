@@ -22,7 +22,7 @@ void func_001c0a20() {
     a0 = a0 + 0x6032;                                           // 0x001c0a64: addiu $a0, $a0, 0x6032
     v0 = -1;                                                    // 0x001c0a68: addiu $v0, $zero, -1
     at = 0x31 << 16;                                            // 0x001c0a6c: lui $at, 0x31
-    func_0010a570();  // 0x10a4d8                                // 0x001c0a70: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001c0a70: jal 0x10a4d8
     g_00315fe4 = v0;  // Global at 0x00315fe4                   // 0x001c0a74: sw $v0, 0x5fe4($at)
     at = 0x31 << 16;                                            // 0x001c0a78: lui $at, 0x31
     g_00316090 = s0;  // Global at 0x00316090                   // 0x001c0a7c: sw $s0, 0x6090($at)

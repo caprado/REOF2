@@ -8,14 +8,14 @@ void func_0017dde0() {
     
     sp = sp + -0x20;                                            // 0x0017dde0: addiu $sp, $sp, -0x20
     s0 = s2 + 0x400;                                            // 0x0017ddf0: addiu $s0, $s2, 0x400
-    func_0017db20();  // 0x17d7b0                                // 0x0017de00: jal 0x17d7b0
+    func_0017d7b0();  // 17d7b0                                // 0x0017de00: jal 0x17d7b0
     goto label_0x17de30;                                        // 0x0017de24: j 0x17de30
     sp = sp + 0x20;                                             // 0x0017de28: addiu $sp, $sp, 0x20
     /* nop */                                                   // 0x0017de2c: nop 
 label_0x17de30:
     sp = sp + -0x20;                                            // 0x0017de30: addiu $sp, $sp, -0x20
     *(float*)((sp) + 0x18) = FPU_F20;  // Store float           // 0x0017de48: swc1 $f20, 0x18($sp)
-    func_0017e0c8();  // 0x17e068                                // 0x0017de4c: jal 0x17e068
+    func_0017e068();  // 17e068                                // 0x0017de4c: jal 0x17e068
     FPU_F20 = *(float*)((a0) + 0x40);  // Load float            // 0x0017de50: lwc1 $f20, 0x40($a0)
     v1 = 1;                                                     // 0x0017de54: addiu $v1, $zero, 1
     if (v0 != v1) goto label_0x17de98;                          // 0x0017de58: bne $v0, $v1, 0x17de98

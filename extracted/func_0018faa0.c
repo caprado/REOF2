@@ -13,7 +13,7 @@ void func_0018faa0() {
     *(float*)((sp) + 4) = FPU_F21;  // Store float              // 0x0018fabc: swc1 $f21, 4($sp)
     *(float*)(sp) = FPU_F20;  // Store float                    // 0x0018fac4: swc1 $f20, 0($sp)
     /* FPU: mov.s $f21, $f12 */                                 // 0x0018fac8: mov.s $f21, $f12
-    func_0018fbd0();  // 0x18fba0                                // 0x0018facc: jal 0x18fba0
+    func_0018fba0();  // 18fba0                                // 0x0018facc: jal 0x18fba0
     /* FPU: mov.s $f20, $f13 */                                 // 0x0018fad0: mov.s $f20, $f13
     if (s1 >= 0) goto label_0x18fae4;                           // 0x0018fad4: bgez $s1, 0x18fae4
     v1 = s1 >> 1;                                               // 0x0018fad8: sra $v1, $s1, 1

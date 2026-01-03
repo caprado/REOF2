@@ -24,7 +24,7 @@ void func_00161788() {
     a3 = sp + 0x10;                                             // 0x001617dc: addiu $a3, $sp, 0x10
     v0 = *(int32_t*)((s0) + 0xec);                              // 0x001617e0: lw $v0, 0xec($s0)
     local_4 = v1;                                               // 0x001617e4: sw $v1, 4($sp)
-    func_001407b0();  // 0x1406e0                                // 0x001617e8: jal 0x1406e0
+    func_001406e0();  // 1406e0                                // 0x001617e8: jal 0x1406e0
     local_0 = v0;                                               // 0x001617ec: sw $v0, 0($sp)
     if (v0 != 0) goto label_0x161810;                           // 0x001617f0: bnez $v0, 0x161810
     s3 = s0 + 0xf4;                                             // 0x001617f4: addiu $s3, $s0, 0xf4
@@ -39,7 +39,7 @@ label_0x161810:
     v0 = *(int32_t*)(s3);                                       // 0x00161810: lw $v0, 0($s3)
     if (v0 == 0) goto label_0x161898;                           // 0x00161814: beqz $v0, 0x161898
     a1 = local_10;                                              // 0x0016181c: lw $a1, 0x10($sp)
-    func_00107b68();  // 0x107ab8                                // 0x00161820: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x00161820: jal 0x107ab8
     a2 = local_14;                                              // 0x00161824: lw $a2, 0x14($sp)
     v1 = *(int32_t*)(s3);                                       // 0x00161828: lw $v1, 0($s3)
     a1 = local_14;                                              // 0x0016182c: lw $a1, 0x14($sp)
@@ -68,7 +68,7 @@ label_0x161898:
     v0 = local_10;                                              // 0x001618a0: lw $v0, 0x10($sp)
     *(uint32_t*)(s1) = v1;                                      // 0x001618a8: sw $v1, 0($s1)
     *(uint32_t*)((s1) + 4) = v0;                                // 0x001618ac: sw $v0, 4($s1)
-    func_00161a40();  // 0x1619e0                                // 0x001618b0: jal 0x1619e0
+    func_001619e0();  // 1619e0                                // 0x001618b0: jal 0x1619e0
     *(uint32_t*)((s1) + 8) = a1;                                // 0x001618b4: sw $a1, 8($s1)
 label_0x1618b8:
 label_0x1618bc:

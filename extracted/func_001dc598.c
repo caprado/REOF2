@@ -36,11 +36,11 @@ label_0x1dc5e4:
     a1 = 2;                                                     // 0x001dc614: addiu $a1, $zero, 2
     a2 = 1;                                                     // 0x001dc618: addiu $a2, $zero, 1
     t0 = 0x10;                                                  // 0x001dc61c: addiu $t0, $zero, 0x10
-    func_001178a0();  // 0x1176a8                                // 0x001dc620: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x001dc620: jal 0x1176a8
     t2 = 0x50;                                                  // 0x001dc624: addiu $t2, $zero, 0x50
     if (v0 == 0) goto label_0x1dc644;                           // 0x001dc628: beqz $v0, 0x1dc644
     a0 = 0x25 << 16;                                            // 0x001dc62c: lui $a0, 0x25
-    func_00116598();  // 0x116508                                // 0x001dc634: jal 0x116508
+    func_00116508();  // 116508                                // 0x001dc634: jal 0x116508
     a0 = &str_00248298;  // "sceUsbKbGetLocation: sceSifCallRpc -> %d\n" // 0x001dc638: addiu $a0, $a0, -0x7d68
     goto label_0x1dc658;                                        // 0x001dc63c: b 0x1dc658
     v0 = -2;                                                    // 0x001dc640: addiu $v0, $zero, -2

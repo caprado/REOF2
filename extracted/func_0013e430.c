@@ -27,24 +27,24 @@ label_0x13e49c:
     v1 = 0x10;                                                  // 0x0013e49c: addiu $v1, $zero, 0x10
     if (s1 == v1) goto label_0x13e758;                          // 0x0013e4a0: beq $s1, $v1, 0x13e758
     a2 = 0x60;                                                  // 0x0013e4b0: addiu $a2, $zero, 0x60
-    func_00107d30();  // 0x107c70                                // 0x0013e4b4: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x0013e4b4: jal 0x107c70
     if (s2 <= 0) goto label_0x13e538;                           // 0x0013e4bc: blez $s2, 0x13e538
     g_00209e84 = s2;  // Global at 0x00209e84                   // 0x0013e4c0: sw $s2, 4($s3)
     s4 = s3 + 8;                                                // 0x0013e4c4: addiu $s4, $s3, 8
     s6 = 0x22 << 16;                                            // 0x0013e4c8: lui $s6, 0x22
 label_0x13e4d0:
-    func_0013dc58();  // 0x13dbe0                                // 0x0013e4d0: jal 0x13dbe0
+    func_0013dbe0();  // 13dbe0                                // 0x0013e4d0: jal 0x13dbe0
     /* nop */                                                   // 0x0013e4d4: nop 
     g_00209e94 = v0;  // Global at 0x00209e94                   // 0x0013e4d8: sw $v0, 0($s0)
     if (v0 != 0) goto label_0x13e528;                           // 0x0013e4dc: bnez $v0, 0x13e528
     s0 = s0 + 4;                                                // 0x0013e4e0: addiu $s0, $s0, 4
-    func_00116598();  // 0x116508                                // 0x0013e4e4: jal 0x116508
+    func_00116508();  // 116508                                // 0x0013e4e4: jal 0x116508
     a0 = &str_00226030;  // "E0100401: can't create PS2RNA of IOP\n" // 0x0013e4e8: addiu $a0, $s6, 0x6030
     if (s2 <= 0) goto label_0x13e758;                           // 0x0013e4ec: blez $s2, 0x13e758
     v0 = *(int32_t*)(s1);                                       // 0x0013e4fc: lw $v0, 0($s1)
     s1 = s1 + 4;                                                // 0x0013e500: addiu $s1, $s1, 4
     if (v0 == 0) goto label_0x13e514;                           // 0x0013e504: beqz $v0, 0x13e514
-    func_0013dcc0();  // 0x13dc58                                // 0x0013e50c: jal 0x13dc58
+    func_0013dc58();  // 13dc58                                // 0x0013e50c: jal 0x13dc58
     /* nop */                                                   // 0x0013e510: nop 
 label_0x13e514:
     s0 = s0 + -1;                                               // 0x0013e514: addiu $s0, $s0, -1
@@ -75,12 +75,12 @@ label_0x13e570:
     a0 = 8;                                                     // 0x0013e570: addiu $a0, $zero, 8
     a2 = 4;                                                     // 0x0013e578: addiu $a2, $zero, 4
     a3 = sp + 0x10;                                             // 0x0013e57c: addiu $a3, $sp, 0x10
-    func_00139228();  // 0x139120                                // 0x0013e580: jal 0x139120
+    func_00139120();  // 139120                                // 0x0013e580: jal 0x139120
     t0 = 1;                                                     // 0x0013e584: addiu $t0, $zero, 1
     if (v0 != 0) goto label_0x13e5a8;                           // 0x0013e588: bnez $v0, 0x13e5a8
     g_00209ea0 = v0;  // Global at 0x00209ea0                   // 0x0013e58c: sw $v0, 0x20($s3)
     a0 = 0x22 << 16;                                            // 0x0013e590: lui $a0, 0x22
-    func_00116598();  // 0x116508                                // 0x0013e594: jal 0x116508
+    func_00116508();  // 116508                                // 0x0013e594: jal 0x116508
     a0 = &str_00226058;  // "E1072602: can't create DTR handle\n" // 0x0013e598: addiu $a0, $a0, 0x6058
     goto label_0x13e758;                                        // 0x0013e59c: b 0x13e758
     /* nop */                                                   // 0x0013e5a4: nop 
@@ -96,34 +96,34 @@ label_0x13e5c0:
     v0 = v0 + s5;                                               // 0x0013e5c8: addu $v0, $v0, $s5
     a2 = g_00209f24;  // Global at 0x00209f24                   // 0x0013e5cc: lw $a2, 0($v1)
     a0 = g_00210000;  // Global at 0x00210000                   // 0x0013e5d0: lw $a0, 0($v0)
-    func_00138868();  // 0x138778                                // 0x0013e5d4: jal 0x138778
+    func_00138778();  // 138778                                // 0x0013e5d4: jal 0x138778
     a1 = *(int32_t*)((a2) + 8);                                 // 0x0013e5d8: lw $a1, 8($a2)
     v1 = (s1 < s2) ? 1 : 0;                                     // 0x0013e5dc: slt $v1, $s1, $s2
     g_00209e90 = v0;  // Global at 0x00209e90                   // 0x0013e5e0: sw $v0, 0($s0)
     if (v0 != 0) goto label_0x13e678;                           // 0x0013e5e4: bnez $v0, 0x13e678
     s0 = s0 + 4;                                                // 0x0013e5e8: addiu $s0, $s0, 4
     a0 = &str_00226080;  // "PS2RNA_Start: not implemented\n"   // 0x0013e5ec: addiu $a0, $s6, 0x6080
-    func_00116598();  // 0x116508                                // 0x0013e5f0: jal 0x116508
+    func_00116508();  // 116508                                // 0x0013e5f0: jal 0x116508
     if (s2 <= 0) goto label_0x13e758;                           // 0x0013e5f8: blez $s2, 0x13e758
     s0 = s3 + 0x10;                                             // 0x0013e604: addiu $s0, $s3, 0x10
     v0 = g_00209e90;  // Global at 0x00209e90                   // 0x0013e608: lw $v0, 0($s0)
     /* nop */                                                   // 0x0013e60c: nop 
     s0 = s0 + 4;                                                // 0x0013e610: addiu $s0, $s0, 4
     if (v0 == 0) goto label_0x13e624;                           // 0x0013e614: beqz $v0, 0x13e624
-    func_00138890();  // 0x138868                                // 0x0013e61c: jal 0x138868
+    func_00138868();  // 138868                                // 0x0013e61c: jal 0x138868
     /* nop */                                                   // 0x0013e620: nop 
 label_0x13e624:
     v0 = g_00209ea0;  // Global at 0x00209ea0                   // 0x0013e624: lw $v0, 0x20($s3)
     if (v0 == 0) goto label_0x13e648;                           // 0x0013e628: beqz $v0, 0x13e648
     a0 = 9;                                                     // 0x0013e62c: addiu $a0, $zero, 9
     a2 = 1;                                                     // 0x0013e634: addiu $a2, $zero, 1
-    func_00139228();  // 0x139120                                // 0x0013e640: jal 0x139120
+    func_00139120();  // 139120                                // 0x0013e640: jal 0x139120
     local_0 = v0;                                               // 0x0013e644: sw $v0, 0($sp)
 label_0x13e648:
     a0 = *(int32_t*)(s1);                                       // 0x0013e648: lw $a0, 0($s1)
     if (a0 == 0) goto label_0x13e65c;                           // 0x0013e64c: beqz $a0, 0x13e65c
     s1 = s1 + 4;                                                // 0x0013e650: addiu $s1, $s1, 4
-    func_0013dcc0();  // 0x13dc58                                // 0x0013e654: jal 0x13dc58
+    func_0013dc58();  // 13dc58                                // 0x0013e654: jal 0x13dc58
     /* nop */                                                   // 0x0013e658: nop 
 label_0x13e65c:
     s5 = s5 + 1;                                                // 0x0013e65c: addiu $s5, $s5, 1

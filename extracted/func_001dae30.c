@@ -11,10 +11,10 @@ void func_001dae30() {
     at = 0x31 << 16;                                            // 0x001dae3c: lui $at, 0x31
     a2 = g_003137ba;  // Global at 0x003137ba                   // 0x001dae40: lhu $a2, 0x37ba($at)
     a0 = sp + 0x10;                                             // 0x001dae44: addiu $a0, $sp, 0x10
-    func_0010a570();  // 0x10a4d8                                // 0x001dae48: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001dae48: jal 0x10a4d8
     a1 = &str_002479c8;  // "data\\rom\\sound\\ps2\\snd\\"      // 0x001dae4c: addiu $a1, $a1, 0x79c8
     a0 = sp + 0x10;                                             // 0x001dae50: addiu $a0, $sp, 0x10
-    func_001daf80();  // 0x1daef0                                // 0x001dae54: jal 0x1daef0
+    func_001daef0();  // 1daef0                                // 0x001dae54: jal 0x1daef0
     a1 = 1;                                                     // 0x001dae58: addiu $a1, $zero, 1
     return;                                                     // 0x001dae60: jr $ra
     sp = sp + 0x90;                                             // 0x001dae64: addiu $sp, $sp, 0x90

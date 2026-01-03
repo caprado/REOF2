@@ -17,7 +17,7 @@ void func_00136538() {
     /* nop */                                                   // 0x0013655c: nop 
 label_0x136560:
     s1 = sp + 0x130;                                            // 0x00136560: addiu $s1, $sp, 0x130
-    func_001358d8();  // 0x135790                                // 0x0013656c: jal 0x135790
+    func_00135790();  // 135790                                // 0x0013656c: jal 0x135790
     v0 = local_130;                                             // 0x00136574: lb $v0, 0x130($sp)
     if (v0 != 0) goto label_0x136590;                           // 0x00136578: bnez $v0, 0x136590
     a0 = 0x22 << 16;                                            // 0x00136580: lui $a0, 0x22
@@ -25,11 +25,11 @@ label_0x136560:
     a0 = &str_002247f0;  // "cvFsRemoveDir #2:illegal device name" // 0x00136588: addiu $a0, $a0, 0x47f0
     /* nop */                                                   // 0x0013658c: nop 
 label_0x136590:
-    func_001355f0();  // 0x135548                                // 0x00136594: jal 0x135548
+    func_00135548();  // 135548                                // 0x00136594: jal 0x135548
     /* bnezl $s0, 0x1365b8 */                                   // 0x001365a0: bnezl $s0, 0x1365b8
     v0 = *(int32_t*)((s0) + 0x54);                              // 0x001365a4: lw $v0, 0x54($s0)
     a0 = 0x22 << 16;                                            // 0x001365a8: lui $a0, 0x22
-    func_00134fb0();  // 0x134ec0                                // 0x001365ac: jal 0x134ec0
+    func_00134ec0();  // 134ec0                                // 0x001365ac: jal 0x134ec0
     a0 = &str_00224840;  // "cvFsRemoveDir #4:vtbl error"       // 0x001365b0: addiu $a0, $a0, 0x4840
     v0 = *(int32_t*)((s0) + 0x54);                              // 0x001365b4: lw $v0, 0x54($s0)
     /* beqzl $v0, 0x1365d0 */                                   // 0x001365b8: beqzl $v0, 0x1365d0
@@ -38,7 +38,7 @@ label_0x136590:
     goto label_0x1365e4;                                        // 0x001365c8: b 0x1365e4
     a0 = &str_00224868;  // "cvFsDeleteFile #1:illegal file name" // 0x001365d0: addiu $a0, $a0, 0x4868
 label_0x1365d4:
-    func_00134fb0();  // 0x134ec0                                // 0x001365d4: jal 0x134ec0
+    func_00134ec0();  // 134ec0                                // 0x001365d4: jal 0x134ec0
     /* nop */                                                   // 0x001365d8: nop 
     v0 = -1;                                                    // 0x001365dc: addiu $v0, $zero, -1
 label_0x1365e4:

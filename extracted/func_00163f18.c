@@ -10,7 +10,7 @@ void func_00163f18() {
     return func_00163d98();  // Tail call                        // 0x00163f28: j 0x163cf8
     sp = sp + 0x10;                                             // 0x00163f2c: addiu $sp, $sp, 0x10
     sp = sp + -0x10;                                            // 0x00163f30: addiu $sp, $sp, -0x10
-    func_0015e348();  // 0x15e338                                // 0x00163f3c: jal 0x15e338
+    func_0015e338();  // 15e338                                // 0x00163f3c: jal 0x15e338
     *(uint32_t*)((v0) + 0x54) = s0;                             // 0x00163f44: sw $s0, 0x54($v0)
     return;                                                     // 0x00163f50: jr $ra
     sp = sp + 0x10;                                             // 0x00163f54: addiu $sp, $sp, 0x10

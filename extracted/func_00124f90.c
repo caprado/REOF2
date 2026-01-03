@@ -14,7 +14,7 @@ label_0x124f90:
     v1 = *(int32_t*)((v0) + 0x14);                              // 0x00124fac: lw $v1, 0x14($v0)
     a3 = a3 << 1;                                               // 0x00124fb0: sll $a3, $a3, 1
     a1 = *(int32_t*)(v0);                                       // 0x00124fb4: lw $a1, 0($v0)
-    func_00134c90();  // 0x134c60                                // 0x00124fbc: jal 0x134c60
+    func_00134c60();  // 134c60                                // 0x00124fbc: jal 0x134c60
     a3 = v1 + a3;                                               // 0x00124fc0: addu $a3, $v1, $a3
     return func_00134cc0();  // Tail call                       // 0x00124fd0: j 0x134cc0
     sp = sp + 0x10;                                             // 0x00124fd4: addiu $sp, $sp, 0x10
@@ -30,7 +30,7 @@ label_0x124fd8:
     a3 = a3 + v0;                                               // 0x00125004: addu $a3, $a3, $v0
     a1 = *(int32_t*)(v1);                                       // 0x00125008: lw $a1, 0($v1)
     t0 = t0 << 1;                                               // 0x0012500c: sll $t0, $t0, 1
-    func_00134ce0();  // 0x134c90                                // 0x00125014: jal 0x134c90
+    func_00134c90();  // 134c90                                // 0x00125014: jal 0x134c90
     t0 = a3 + t0;                                               // 0x00125018: addu $t0, $a3, $t0
     return func_00134cc0();  // Tail call                       // 0x00125028: j 0x134cc0
     sp = sp + 0x10;                                             // 0x0012502c: addiu $sp, $sp, 0x10

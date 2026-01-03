@@ -11,7 +11,7 @@ void func_001af5c0() {
     v1 = g_003137da;  // Global at 0x003137da                   // 0x001af5cc: lbu $v1, 0x37da($at)
     if (v1 == 0) goto label_0x1af634;                           // 0x001af5d0: beqz $v1, 0x1af634
     /* nop */                                                   // 0x001af5d4: nop 
-    func_001afb80();  // 0x1afb40                                // 0x001af5d8: jal 0x1afb40
+    func_001afb40();  // 1afb40                                // 0x001af5d8: jal 0x1afb40
     /* nop */                                                   // 0x001af5dc: nop 
     v1 = 3;                                                     // 0x001af5e0: addiu $v1, $zero, 3
     if (v0 == v1) goto label_0x1af634;                          // 0x001af5e4: beq $v0, $v1, 0x1af634

@@ -33,7 +33,7 @@ label_0x17d3c0:
     s0 = 0x21 << 16;                                            // 0x0017d3cc: lui $s0, 0x21
     s0 = s0 + 0x5d48;                                           // 0x0017d3d0: addiu $s0, $s0, 0x5d48
     a2 = 0x22c;                                                 // 0x0017d3d4: addiu $a2, $zero, 0x22c
-    func_00107d30();  // 0x107c70                                // 0x0017d3dc: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x0017d3dc: jal 0x107c70
     v1 = 8;                                                     // 0x0017d3e4: addiu $v1, $zero, 8
     g_00215d50 = v1;  // Global at 0x00215d50                   // 0x0017d3e8: sw $v1, 8($s0)
     return func_0017e058();  // Tail call                       // 0x0017d3f8: j 0x17e058

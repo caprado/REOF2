@@ -29,19 +29,19 @@ label_0x13ba00:
     if (a1 == v0) goto label_0x13ba60;                          // 0x0013ba10: beq $a1, $v0, 0x13ba60
     goto label_0x13ba6c;                                        // 0x0013ba18: b 0x13ba6c
 label_0x13ba20:
-    func_0013b930();  // 0x13b910                                // 0x0013ba20: jal 0x13b910
+    func_0013b910();  // 13b910                                // 0x0013ba20: jal 0x13b910
     /* nop */                                                   // 0x0013ba24: nop 
     goto label_0x13ba64;                                        // 0x0013ba28: b 0x13ba64
 label_0x13ba30:
-    func_0013b960();  // 0x13b930                                // 0x0013ba30: jal 0x13b930
+    func_0013b930();  // 13b930                                // 0x0013ba30: jal 0x13b930
     /* nop */                                                   // 0x0013ba34: nop 
     goto label_0x13ba64;                                        // 0x0013ba38: b 0x13ba64
 label_0x13ba40:
-    func_0013b980();  // 0x13b960                                // 0x0013ba40: jal 0x13b960
+    func_0013b960();  // 13b960                                // 0x0013ba40: jal 0x13b960
     /* nop */                                                   // 0x0013ba44: nop 
     goto label_0x13ba64;                                        // 0x0013ba48: b 0x13ba64
 label_0x13ba50:
-    func_0013b9b0();  // 0x13b980                                // 0x0013ba50: jal 0x13b980
+    func_0013b980();  // 13b980                                // 0x0013ba50: jal 0x13b980
     /* nop */                                                   // 0x0013ba54: nop 
     goto label_0x13ba64;                                        // 0x0013ba58: b 0x13ba64
 label_0x13ba60:

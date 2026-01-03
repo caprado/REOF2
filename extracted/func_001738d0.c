@@ -13,7 +13,7 @@ void func_001738d0() {
     v1 = 1;                                                     // 0x001738ec: addiu $v1, $zero, 1
     a1 = 7;                                                     // 0x001738f0: addiu $a1, $zero, 7
     a2 = 7;                                                     // 0x001738f4: addiu $a2, $zero, 7
-    func_00177908();  // 0x1778a0                                // 0x001738fc: jal 0x1778a0
+    func_001778a0();  // 1778a0                                // 0x001738fc: jal 0x1778a0
     /* bnezl $v0, 0x173920 */                                   // 0x00173904: bnezl $v0, 0x173920
     v1 = 1;                                                     // 0x0017390c: addiu $v1, $zero, 1
 label_0x173910:

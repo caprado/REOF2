@@ -11,7 +11,7 @@ void func_00179128() {
     v1 = *(int32_t*)((s1) + 0xc);                               // 0x0017914c: lw $v1, 0xc($s1)
     v1 = (v1 < 0x6e) ? 1 : 0;                                   // 0x00179150: slti $v1, $v1, 0x6e
     if (v1 != 0) goto label_0x1791e0;                           // 0x00179154: bnez $v1, 0x1791e0
-    func_0017a2e0();  // 0x17a298                                // 0x0017915c: jal 0x17a298
+    func_0017a298();  // 17a298                                // 0x0017915c: jal 0x17a298
     /* nop */                                                   // 0x00179160: nop 
     a2 = 0xe0;                                                  // 0x00179164: addiu $a2, $zero, 0xe0
     v0 = 0xc0;                                                  // 0x0017916c: addiu $v0, $zero, 0xc0
@@ -20,17 +20,17 @@ void func_00179128() {
     goto label_0x1791e4;                                        // 0x00179184: b 0x1791e4
     /* nop */                                                   // 0x0017918c: nop 
 label_0x179190:
-    func_00179a70();  // 0x179a18                                // 0x00179190: jal 0x179a18
+    func_00179a18();  // 179a18                                // 0x00179190: jal 0x179a18
     /* nop */                                                   // 0x00179194: nop 
     if (v1 == 0) goto label_0x1791e0;                           // 0x001791a0: beqz $v1, 0x1791e0
-    func_0017a258();  // 0x17a218                                // 0x001791a8: jal 0x17a218
+    func_0017a218();  // 17a218                                // 0x001791a8: jal 0x17a218
     /* nop */                                                   // 0x001791ac: nop 
     goto label_0x1791dc;                                        // 0x001791b0: b 0x1791dc
     *(uint32_t*)(s2) = v0;                                      // 0x001791b4: sw $v0, 0($s2)
 label_0x1791b8:
-    func_00179a70();  // 0x179a18                                // 0x001791b8: jal 0x179a18
+    func_00179a18();  // 179a18                                // 0x001791b8: jal 0x179a18
     if (v1 == 0) goto label_0x1791e0;                           // 0x001791c8: beqz $v1, 0x1791e0
-    func_0017a298();  // 0x17a258                                // 0x001791d0: jal 0x17a258
+    func_0017a258();  // 17a258                                // 0x001791d0: jal 0x17a258
     /* nop */                                                   // 0x001791d4: nop 
     *(uint32_t*)(s2) = v0;                                      // 0x001791d8: sw $v0, 0($s2)
 label_0x1791dc:

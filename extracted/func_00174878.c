@@ -12,7 +12,7 @@ void func_00174878() {
     sp = sp + -0x30;                                            // 0x00174878: addiu $sp, $sp, -0x30
     if (s0 == 0) goto label_0x1748d0;                           // 0x00174894: beqz $s0, 0x1748d0
     *(uint32_t*)(s1) = 0;                                       // 0x00174898: sw $zero, 0($s1)
-    func_00174538();  // 0x1744f0                                // 0x0017489c: jal 0x1744f0
+    func_001744f0();  // 1744f0                                // 0x0017489c: jal 0x1744f0
     /* nop */                                                   // 0x001748a0: nop 
     v0 = local_0;                                               // 0x001748a4: lw $v0, 0($sp)
     /* beqzl $v0, 0x1748d4 */                                   // 0x001748a8: beqzl $v0, 0x1748d4

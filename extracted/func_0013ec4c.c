@@ -13,7 +13,7 @@ void func_0013ec4c() {
     /* beqzl $v1, 0x13ec98 */                                   // 0x0013ec60: beqzl $v1, 0x13ec98
     v0 = 0 | 0xbb80;                                            // 0x0013ec64: ori $v0, $zero, 0xbb80
     a0 = 0x22 << 16;                                            // 0x0013ec68: lui $a0, 0x22
-    func_00116598();  // 0x116508                                // 0x0013ec6c: jal 0x116508
+    func_00116508();  // 116508                                // 0x0013ec6c: jal 0x116508
     a0 = &str_00226140;  // "PS2RNA_SetBitPerSmpl: not support %d bps\n" // 0x0013ec70: addiu $a0, $a0, 0x6140
     /* nop */                                                   // 0x0013ec74: nop 
 label_0x13ec78:
@@ -33,7 +33,7 @@ label_0x13ec78:
     v0 = v0 & 1;                                                // 0x0013ecb0: andi $v0, $v0, 1
     if (v0 == 0) goto label_0x13ece8;                           // 0x0013ecb4: beqz $v0, 0x13ece8
     a0 = 0x22 << 16;                                            // 0x0013ecbc: lui $a0, 0x22
-    func_00116598();  // 0x116508                                // 0x0013ecc0: jal 0x116508
+    func_00116508();  // 116508                                // 0x0013ecc0: jal 0x116508
     a0 = &str_00226140;  // "PS2RNA_SetBitPerSmpl: not support %d bps\n" // 0x0013ecc4: addiu $a0, $a0, 0x6140
 label_0x13ecc8:
     /* nop */                                                   // 0x0013ecc8: nop 

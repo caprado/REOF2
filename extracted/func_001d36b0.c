@@ -11,17 +11,17 @@ void func_001d36b0() {
     
     sp = sp + -0x80;                                            // 0x001d36b0: addiu $sp, $sp, -0x80
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001d36b8: addu.qb $zero, $sp, $s1
-    func_001d3540();  // 0x1d34f0                                // 0x001d36c0: jal 0x1d34f0
+    func_001d34f0();  // 1d34f0                                // 0x001d36c0: jal 0x1d34f0
     if (s0 != 0) goto label_0x1d36dc;                           // 0x001d36cc: bnez $s0, 0x1d36dc
     goto label_0x1d3740;                                        // 0x001d36d4: b 0x1d3740
 label_0x1d36dc:
-    func_0018e210();  // 0x18e090                                // 0x001d36dc: jal 0x18e090
+    func_0018e090();  // 18e090                                // 0x001d36dc: jal 0x18e090
     a1 = 4;                                                     // 0x001d36e0: addiu $a1, $zero, 4
     *(uint32_t*)(s0) = v0;                                      // 0x001d36e4: sw $v0, 0($s0)
     v0 = *(int32_t*)(s0);                                       // 0x001d36e8: lw $v0, 0($s0)
     if (v0 == 0) goto label_0x1d3734;                           // 0x001d36ec: beqz $v0, 0x1d3734
     a1 = v0 & 0xffff;                                           // 0x001d36f4: andi $a1, $v0, 0xffff
-    func_0019d7e0();  // 0x19d630                                // 0x001d36f8: jal 0x19d630
+    func_0019d630();  // 19d630                                // 0x001d36f8: jal 0x19d630
     a0 = sp + 0x30;                                             // 0x001d36fc: addiu $a0, $sp, 0x30
     v1 = 1;                                                     // 0x001d3700: addiu $v1, $zero, 1
     if (v0 != v1) goto label_0x1d372c;                          // 0x001d3704: bne $v0, $v1, 0x1d372c
@@ -37,7 +37,7 @@ label_0x1d36dc:
 label_0x1d372c:
     goto label_0x1d3740;                                        // 0x001d372c: b 0x1d3740
 label_0x1d3734:
-    func_001d35a0();  // 0x1d3540                                // 0x001d3734: jal 0x1d3540
+    func_001d3540();  // 1d3540                                // 0x001d3734: jal 0x1d3540
     /* nop */                                                   // 0x001d3738: nop 
 label_0x1d3740:
     /* FPU: aver_u.h $w0, $w0, $w17 */                          // 0x001d3744: aver_u.h $w0, $w0, $w17

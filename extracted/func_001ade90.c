@@ -13,7 +13,7 @@ void func_001ade90() {
     /* FPU: dpa.w.ph $ac0, $sp, $s2 */                          // 0x001adea8: dpa.w.ph $ac0, $sp, $s2
     /* FPU: addu.qb $zero, $sp, $s0 */                          // 0x001adeb0: addu.qb $zero, $sp, $s0
     *(float*)(sp) = FPU_F20;  // Store float                    // 0x001adeb4: swc1 $f20, 0($sp)
-    func_001b7a80();  // 0x1b7a70                                // 0x001adeb8: jal 0x1b7a70
+    func_001b7a70();  // 1b7a70                                // 0x001adeb8: jal 0x1b7a70
     g_003137df = 0;  // Global at 0x003137df                    // 0x001adebc: sb $zero, 0x37df($at)
     if (v0 != 0) goto label_0x1adf24;                           // 0x001adec0: bnez $v0, 0x1adf24
     s0 = 0x2b << 16;                                            // 0x001adec8: lui $s0, 0x2b
@@ -22,7 +22,7 @@ void func_001ade90() {
 label_0x1aded8:
     if (s0 == 0) goto label_0x1adf0c;                           // 0x001aded8: beqz $s0, 0x1adf0c
     /* nop */                                                   // 0x001adedc: nop 
-    func_00131c20();  // 0x131bb8                                // 0x001adee0: jal 0x131bb8
+    func_00131bb8();  // 131bb8                                // 0x001adee0: jal 0x131bb8
     a0 = g_002aa878;  // Global at 0x002aa878                   // 0x001adee4: lw $a0, 0($s0)
     v1 = 1;                                                     // 0x001adee8: addiu $v1, $zero, 1
     if (v0 == v1) goto label_0x1adefc;                          // 0x001adeec: beq $v0, $v1, 0x1adefc
@@ -100,7 +100,7 @@ label_0x1adfbc:
     /* nop */                                                   // 0x001adff8: nop 
     /* nop */                                                   // 0x001adffc: nop 
     /* mflo $a1 */                                              // 0x001ae000
-    func_001324e0();  // 0x132478                                // 0x001ae004: jal 0x132478
+    func_00132478();  // 132478                                // 0x001ae004: jal 0x132478
     /* nop */                                                   // 0x001ae008: nop 
 label_0x1ae00c:
     g_002aa880 = s3;  // Global at 0x002aa880                   // 0x001ae00c: sw $s3, 4($s0)
@@ -132,7 +132,7 @@ label_0x1ae068:
     v0 = (s4 < 3) ? 1 : 0;                                      // 0x001ae06c: slti $v0, $s4, 3
     if (v0 != 0) goto label_0x1adf28;                           // 0x001ae070: bnez $v0, 0x1adf28
     v1 = s4 << 1;                                               // 0x001ae074: sll $v1, $s4, 1
-    func_0012bbd0();  // 0x12bbb8                                // 0x001ae078: jal 0x12bbb8
+    func_0012bbb8();  // 12bbb8                                // 0x001ae078: jal 0x12bbb8
     /* nop */                                                   // 0x001ae07c: nop 
     FPU_F20 = *(float*)(sp);  // Load float                     // 0x001ae084: lwc1 $f20, 0($sp)
     /* FPU: aver_u.h $w1, $w0, $w20 */                          // 0x001ae088: aver_u.h $w1, $w0, $w20

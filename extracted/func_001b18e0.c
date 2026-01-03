@@ -11,10 +11,10 @@ void func_001b18e0() {
     /* nop */                                                   // 0x001b18ec: nop 
     sp = sp + -0x20;                                            // 0x001b18f0: addiu $sp, $sp, -0x20
     a2 = 0x7d0;                                                 // 0x001b18fc: addiu $a2, $zero, 0x7d0
-    func_001b18e0();  // 0x1b1870                                // 0x001b1908: jal 0x1b1870
+    func_001b1870();  // 1b1870                                // 0x001b1908: jal 0x1b1870
     a0 = s0 + 4;                                                // 0x001b190c: addiu $a0, $s0, 4
     a0 = s0 + 0xfa4;                                            // 0x001b1910: addiu $a0, $s0, 0xfa4
-    func_00107d30();  // 0x107c70                                // 0x001b1918: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001b1918: jal 0x107c70
     a2 = 0xfa0;                                                 // 0x001b191c: addiu $a2, $zero, 0xfa0
     *(uint16_t*)((s0) + 0x1f46) = 0;                            // 0x001b1920: sh $zero, 0x1f46($s0)
     v1 = 0 & 0xffff;                                            // 0x001b1924: andi $v1, $zero, 0xffff

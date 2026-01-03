@@ -7,8 +7,8 @@ void func_001a2800() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x001a2800: addiu $sp, $sp, -0x20
-    func_001a2800();  // 0x1a27b0                                // 0x001a280c: jal 0x1a27b0
-    func_001a2850();  // 0x1a2830                                // 0x001a2818: jal 0x1a2830
+    func_001a27b0();  // 1a27b0                                // 0x001a280c: jal 0x1a27b0
+    func_001a2830();  // 1a2830                                // 0x001a2818: jal 0x1a2830
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001a2824: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x001a2828: jr $ra
     sp = sp + 0x20;                                             // 0x001a282c: addiu $sp, $sp, 0x20

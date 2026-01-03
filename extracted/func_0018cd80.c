@@ -19,7 +19,7 @@ void func_0018cd80() {
     at = ((unsigned)v0 < (unsigned)v1) ? 1 : 0;                 // 0x0018cdbc: sltu $at, $v0, $v1
     if (at != 0) goto label_0x18ce1c;                           // 0x0018cdc0: bnez $at, 0x18ce1c
     s1 = a0 + 0x14;                                             // 0x0018cdc4: addiu $s1, $a0, 0x14
-    func_0018db10();  // 0x18db00                                // 0x0018cdc8: jal 0x18db00
+    func_0018db00();  // 18db00                                // 0x0018cdc8: jal 0x18db00
     a0 = *(int32_t*)((a0) + 0xc);                               // 0x0018cdcc: lw $a0, 0xc($a0)
     v1 = *(int32_t*)(s1);                                       // 0x0018cdd0: lw $v1, 0($s1)
     a1 = s0 + s2;                                               // 0x0018cdd4: addu $a1, $s0, $s2

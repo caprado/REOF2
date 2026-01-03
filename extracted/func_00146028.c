@@ -32,19 +32,19 @@ label_0x146090:
     s4 = s1 + 0x1b0;                                            // 0x0014609c: addiu $s4, $s1, 0x1b0
     /* nop */                                                   // 0x001460a4: nop 
 label_0x1460a8:
-    func_00145818();  // 0x1456a8                                // 0x001460a8: jal 0x1456a8
+    func_001456a8();  // 1456a8                                // 0x001460a8: jal 0x1456a8
     a1 = 0x10;                                                  // 0x001460ac: addiu $a1, $zero, 0x10
     s0 = s2 << 2;                                               // 0x001460b0: sll $s0, $s2, 2
     v1 = s5 + s0;                                               // 0x001460b4: addu $v1, $s5, $s0
     *(uint32_t*)(v1) = v0;                                      // 0x001460bc: sw $v0, 0($v1)
-    func_00145818();  // 0x1456a8                                // 0x001460c0: jal 0x1456a8
+    func_001456a8();  // 1456a8                                // 0x001460c0: jal 0x1456a8
     a1 = 1;                                                     // 0x001460c4: addiu $a1, $zero, 1
     s2 = s2 + 1;                                                // 0x001460c8: addiu $s2, $s2, 1
-    func_00145818();  // 0x1456a8                                // 0x001460d0: jal 0x1456a8
+    func_001456a8();  // 1456a8                                // 0x001460d0: jal 0x1456a8
     a1 = 0x10;                                                  // 0x001460d4: addiu $a1, $zero, 0x10
     s0 = s4 + s0;                                               // 0x001460d8: addu $s0, $s4, $s0
     *(uint32_t*)(s0) = v0;                                      // 0x001460e0: sw $v0, 0($s0)
-    func_00145818();  // 0x1456a8                                // 0x001460e4: jal 0x1456a8
+    func_001456a8();  // 1456a8                                // 0x001460e4: jal 0x1456a8
     a1 = 1;                                                     // 0x001460e8: addiu $a1, $zero, 1
     v1 = (s2 < s3) ? 1 : 0;                                     // 0x001460ec: slt $v1, $s2, $s3
     if (v1 != 0) goto label_0x1460a8;                           // 0x001460f0: bnez $v1, 0x1460a8

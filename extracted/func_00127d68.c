@@ -17,7 +17,7 @@ void func_00127d68() {
     sp = sp + -0x10;                                            // 0x00127d90: addiu $sp, $sp, -0x10
     v0 = 0x1f << 16;                                            // 0x00127d94: lui $v0, 0x1f
     s0 = v0 + 0x2db8;                                           // 0x00127d9c: addiu $s0, $v0, 0x2db8
-    func_0010b460();  // 0x10b2a0                                // 0x00127dac: jal 0x10b2a0
+    func_0010b2a0();  // 10b2a0                                // 0x00127dac: jal 0x10b2a0
     a2 = 0xff;                                                  // 0x00127db0: addiu $a2, $zero, 0xff
     v1 = 0x1f << 16;                                            // 0x00127db4: lui $v1, 0x1f
     v1 = g_001f2db0;  // Global at 0x001f2db0                   // 0x00127db8: lw $v1, 0x2db0($v1)
@@ -33,8 +33,8 @@ label_0x127dd0:
     v0 = 0x1f << 16;                                            // 0x00127dec: lui $v0, 0x1f
     s1 = v0 + 0x2db8;                                           // 0x00127df4: addiu $s1, $v0, 0x2db8
     a2 = 0xff;                                                  // 0x00127e00: addiu $a2, $zero, 0xff
-    func_0010b460();  // 0x10b2a0                                // 0x00127e0c: jal 0x10b2a0
-    func_0010b0e8();  // 0x10af38                                // 0x00127e1c: jal 0x10af38
+    func_0010b2a0();  // 10b2a0                                // 0x00127e0c: jal 0x10b2a0
+    func_0010af38();  // 10af38                                // 0x00127e1c: jal 0x10af38
     a2 = 0xff;                                                  // 0x00127e20: addiu $a2, $zero, 0xff
     v1 = 0x1f << 16;                                            // 0x00127e24: lui $v1, 0x1f
     v1 = g_001f2db0;  // Global at 0x001f2db0                   // 0x00127e28: lw $v1, 0x2db0($v1)
@@ -76,7 +76,7 @@ label_0x127e40:
 label_0x127eec:
     v0 = 0x25 << 16;                                            // 0x00127eec: lui $v0, 0x25
     s1 = v0 + 0x3688;                                           // 0x00127ef0: addiu $s1, $v0, 0x3688
-    func_0010af38();  // 0x10ae00                                // 0x00127ef4: jal 0x10ae00
+    func_0010ae00();  // 10ae00                                // 0x00127ef4: jal 0x10ae00
     v0 = s2 + -1;                                               // 0x00127f00: addiu $v0, $s2, -1
     v1 = (a3 < v0) ? 1 : 0;                                     // 0x00127f04: slt $v1, $a3, $v0
     if (v1 == 0) a3 = v0;                                       // 0x00127f08: movz $a3, $v0, $v1

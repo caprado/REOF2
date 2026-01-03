@@ -8,10 +8,10 @@ void func_00174768() {
     
     sp = sp + -0x20;                                            // 0x00174768: addiu $sp, $sp, -0x20
     a1 = 2;                                                     // 0x00174774: addiu $a1, $zero, 2
-    func_00177970();  // 0x177950                                // 0x00174788: jal 0x177950
+    func_00177950();  // 177950                                // 0x00174788: jal 0x177950
     if (v0 == 0) goto label_0x1747c8;                           // 0x00174794: beqz $v0, 0x1747c8
     a1 = 5;                                                     // 0x00174798: addiu $a1, $zero, 5
-    func_001752f8();  // 0x1752e8                                // 0x0017479c: jal 0x1752e8
+    func_001752e8();  // 1752e8                                // 0x0017479c: jal 0x1752e8
     /* nop */                                                   // 0x001747a0: nop 
     v0 = 1;                                                     // 0x001747a8: addiu $v0, $zero, 1
     if (v1 != v0) goto label_0x1747cc;                          // 0x001747ac: bnel $v1, $v0, 0x1747cc

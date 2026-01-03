@@ -30,7 +30,7 @@ label_0x11e63c:
     v0 = v0 & 2;                                                // 0x0011e63c: andi $v0, $v0, 2
     if (v0 == 0) goto label_0x11e650;                           // 0x0011e640: beqz $v0, 0x11e650
     /* nop */                                                   // 0x0011e644: nop 
-    func_0011e1c0();  // 0x11e188                                // 0x0011e648: jal 0x11e188
+    func_0011e188();  // 11e188                                // 0x0011e648: jal 0x11e188
 label_0x11e650:
     *(uint32_t*)((s0) + 8) = 0;                                 // 0x0011e650: sw $zero, 8($s0)
     *(uint32_t*)((s0) + 0xc) = 0;                               // 0x0011e658: sw $zero, 0xc($s0)

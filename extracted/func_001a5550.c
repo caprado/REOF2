@@ -7,7 +7,7 @@ void func_001a5550() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x30;                                            // 0x001a5550: addiu $sp, $sp, -0x30
-    func_001a56b0();  // 0x1a54d0                                // 0x001a5560: jal 0x1a54d0
+    func_001a54d0();  // 1a54d0                                // 0x001a5560: jal 0x1a54d0
     a2 = *(uint8_t*)((v0) + 0x11);                              // 0x001a5568: lbu $a2, 0x11($v0)
     at = (a2 < 2) ? 1 : 0;                                      // 0x001a5574: slti $at, $a2, 2
     if (at != 0) goto label_0x1a55c4;                           // 0x001a5578: bnez $at, 0x1a55c4
@@ -32,7 +32,7 @@ label_0x1a55a4:
 label_0x1a55c0:
     a1 = a1 + v0;                                               // 0x001a55c0: addu $a1, $a1, $v0
 label_0x1a55c4:
-    func_001a54d0();  // 0x1a5460                                // 0x001a55c4: jal 0x1a5460
+    func_001a5460();  // 1a5460                                // 0x001a55c4: jal 0x1a5460
     t1 = t1 + v0;                                               // 0x001a55cc: addu $t1, $t1, $v0
     v0 = *(uint8_t*)((t0) + 0x11);                              // 0x001a55d0: lbu $v0, 0x11($t0)
     at = (v0 < 2) ? 1 : 0;                                      // 0x001a55d4: slti $at, $v0, 2
@@ -42,7 +42,7 @@ label_0x1a55e8:
     v0 = v0 + sp;                                               // 0x001a55e8: addu $v0, $v0, $sp
     v0 = *(int32_t*)((v0) + 0x10);                              // 0x001a55ec: lw $v0, 0x10($v0)
     a1 = *(int32_t*)(v0);                                       // 0x001a55f0: lw $a1, 0($v0)
-    func_001a54d0();  // 0x1a5460                                // 0x001a55f4: jal 0x1a5460
+    func_001a5460();  // 1a5460                                // 0x001a55f4: jal 0x1a5460
     a3 = a3 + v0;                                               // 0x001a55fc: addu $a3, $a3, $v0
     a2 = a2 + 1;                                                // 0x001a5600: addiu $a2, $a2, 1
 label_0x1a5604:

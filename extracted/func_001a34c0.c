@@ -7,14 +7,14 @@ void func_001a34c0() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x10;                                            // 0x001a34c0: addiu $sp, $sp, -0x10
-    func_001a3320();  // 0x1a32e0                                // 0x001a34d4: jal 0x1a32e0
+    func_001a32e0();  // 1a32e0                                // 0x001a34d4: jal 0x1a32e0
     at = (v0 < t2) ? 1 : 0;                                     // 0x001a34dc: slt $at, $v0, $t2
     if (at == 0) goto label_0x1a34f0;                           // 0x001a34e0: beqz $at, 0x1a34f0
     goto label_0x1a3560;                                        // 0x001a34e8: b 0x1a3560
     v0 = -1;                                                    // 0x001a34ec: addiu $v0, $zero, -1
 label_0x1a34f0:
     a1 = 5;                                                     // 0x001a34f0: addiu $a1, $zero, 5
-    func_001a32e0();  // 0x1a3230                                // 0x001a34f4: jal 0x1a3230
+    func_001a3230();  // 1a3230                                // 0x001a34f4: jal 0x1a3230
     if (v0 != 0) goto label_0x1a350c;                           // 0x001a34fc: bnez $v0, 0x1a350c
     a1 = v0 + 0xc;                                              // 0x001a3500: addiu $a1, $v0, 0xc
     goto label_0x1a3560;                                        // 0x001a3504: b 0x1a3560
@@ -32,7 +32,7 @@ label_0x1a3528:
     if (v0 != 0) goto label_0x1a3514;                           // 0x001a352c: bnez $v0, 0x1a3514
     /* nop */                                                   // 0x001a3530: nop 
     a1 = 6 << 16;                                               // 0x001a3538: lui $a1, 6
-    func_001a32e0();  // 0x1a3230                                // 0x001a3540: jal 0x1a3230
+    func_001a3230();  // 1a3230                                // 0x001a3540: jal 0x1a3230
     t0 = t0 + t1;                                               // 0x001a3544: addu $t0, $t0, $t1
     if (v0 != 0) goto label_0x1a3558;                           // 0x001a3548: bnez $v0, 0x1a3558
     v1 = t0 << 2;                                               // 0x001a354c: sll $v1, $t0, 2

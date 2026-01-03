@@ -15,7 +15,7 @@ void func_001ca600() {
     goto label_0x1ca6a0;                                        // 0x001ca620: b 0x1ca6a0
     g_00317698 = v1;  // Global at 0x00317698                   // 0x001ca624: sw $v1, 0x7698($at)
 label_0x1ca628:
-    func_001ca270();  // 0x1ca260                                // 0x001ca628: jal 0x1ca260
+    func_001ca260();  // 1ca260                                // 0x001ca628: jal 0x1ca260
     /* nop */                                                   // 0x001ca62c: nop 
     a0 = 0x31 << 16;                                            // 0x001ca630: lui $a0, 0x31
     a0 = a0 + 0x76a0;                                           // 0x001ca638: addiu $a0, $a0, 0x76a0
@@ -34,7 +34,7 @@ label_0x1ca660:
     if (s0 != v0) goto label_0x1ca680;                          // 0x001ca664: bne $s0, $v0, 0x1ca680
     v0 = 0xc;                                                   // 0x001ca668: addiu $v0, $zero, 0xc
     at = 0x31 << 16;                                            // 0x001ca66c: lui $at, 0x31
-    func_001ca280();  // 0x1ca270                                // 0x001ca670: jal 0x1ca270
+    func_001ca270();  // 1ca270                                // 0x001ca670: jal 0x1ca270
     g_00317698 = v0;  // Global at 0x00317698                   // 0x001ca674: sw $v0, 0x7698($at)
     goto label_0x1ca6a0;                                        // 0x001ca678: b 0x1ca6a0
     v0 = -1;                                                    // 0x001ca67c: addiu $v0, $zero, -1
@@ -44,7 +44,7 @@ label_0x1ca680:
     v0 = v0 + 0x76a0;                                           // 0x001ca688: addiu $v0, $v0, 0x76a0
     a0 = -2;                                                    // 0x001ca68c: addiu $a0, $zero, -2
     v0 = v0 + v1;                                               // 0x001ca690: addu $v0, $v0, $v1
-    func_001ca280();  // 0x1ca270                                // 0x001ca694: jal 0x1ca270
+    func_001ca270();  // 1ca270                                // 0x001ca694: jal 0x1ca270
     g_003176a0 = a0;  // Global at 0x003176a0                   // 0x001ca698: sw $a0, 0($v0)
 label_0x1ca6a0:
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001ca6a4: xori.b $w0, $w0, 0xb0

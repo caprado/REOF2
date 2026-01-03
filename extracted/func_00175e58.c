@@ -7,7 +7,7 @@ void func_00175e58() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x00175e58: addiu $sp, $sp, -0x20
-    func_00169b10();  // 0x169af0                                // 0x00175e74: jal 0x169af0
+    func_00169af0();  // 169af0                                // 0x00175e74: jal 0x169af0
     a1 = 0xff00 << 16;                                          // 0x00175e7c: lui $a1, 0xff00
     if (v0 == 0) goto label_0x175eb0;                           // 0x00175e88: beqz $v0, 0x175eb0
     a1 = a1 | 0x121;                                            // 0x00175e8c: ori $a1, $a1, 0x121
@@ -21,7 +21,7 @@ label_0x175eb0:
 label_0x175ed0:
     sp = sp + -0x30;                                            // 0x00175ed0: addiu $sp, $sp, -0x30
     s1 = v0 + 0xda4;                                            // 0x00175ee4: addiu $s1, $v0, 0xda4
-    func_00176010();  // 0x175ff8                                // 0x00175efc: jal 0x175ff8
+    func_00175ff8();  // 175ff8                                // 0x00175efc: jal 0x175ff8
     s3 = v0 + 0xcc0;                                            // 0x00175f00: addiu $s3, $v0, 0xcc0
     a1 = *(int32_t*)(s0);                                       // 0x00175f04: lw $a1, 0($s0)
     v1 = 1;                                                     // 0x00175f08: addiu $v1, $zero, 1
@@ -38,7 +38,7 @@ label_0x175ed0:
 label_0x175f38:
     /* beqzl $v0, 0x175f5c */                                   // 0x00175f38: beqzl $v0, 0x175f5c
     a2 = *(int32_t*)((s1) + 0x24);                              // 0x00175f40: lw $a2, 0x24($s1)
-    func_0015b7b0();  // 0x15b740                                // 0x00175f44: jal 0x15b740
+    func_0015b740();  // 15b740                                // 0x00175f44: jal 0x15b740
     a0 = *(int32_t*)((s1) + 0x20);                              // 0x00175f48: lw $a0, 0x20($s1)
     v1 = *(int32_t*)(s2);                                       // 0x00175f4c: lw $v1, 0($s2)
     v1 = v1 + v0;                                               // 0x00175f50: addu $v1, $v1, $v0

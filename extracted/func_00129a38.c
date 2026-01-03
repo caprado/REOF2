@@ -32,7 +32,7 @@ label_0x129a78:
 label_0x129a94:
     a0 = &str_00222ae0;  // "E0041201:state is reading(ADXF_SetReqRdSct)" // 0x00129a94: addiu $a0, $a0, 0x2ae0
 label_0x129a98:
-    func_00127de8();  // 0x127d90                                // 0x00129a98: jal 0x127d90
+    func_00127d90();  // 127d90                                // 0x00129a98: jal 0x127d90
     /* nop */                                                   // 0x00129a9c: nop 
     v0 = -3;                                                    // 0x00129aa0: addiu $v0, $zero, -3
 label_0x129aa4:

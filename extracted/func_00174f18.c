@@ -34,7 +34,7 @@ label_0x174f70:
     if (a2 <= 0) goto label_0x174f8c;                           // 0x00174f78: blezl $a2, 0x174f8c
     *(uint32_t*)((s0) + 0xd94) = v0;                            // 0x00174f7c: sw $v0, 0xd94($s0)
 label_0x174f80:
-    func_0015b7b0();  // 0x15b740                                // 0x00174f80: jal 0x15b740
+    func_0015b740();  // 15b740                                // 0x00174f80: jal 0x15b740
     /* nop */                                                   // 0x00174f84: nop 
     *(uint32_t*)((s0) + 0xd94) = v0;                            // 0x00174f88: sw $v0, 0xd94($s0)
 label_0x174f8c:

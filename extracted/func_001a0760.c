@@ -23,9 +23,9 @@ label_0x1a07a8:
     a1 = local_818;                                             // 0x001a07a8: lw $a1, 0x818($sp)
     v0 = sp + 0x860;                                            // 0x001a07ac: addiu $v0, $sp, 0x860
     a0 = sp + 0x10;                                             // 0x001a07b0: addiu $a0, $sp, 0x10
-    func_0010f580();  // 0x10f528                                // 0x001a07b4: jal 0x10f528
+    func_0010f528();  // 10f528                                // 0x001a07b4: jal 0x10f528
     a2 = v0 - v1;                                               // 0x001a07b8: subu $a2, $v0, $v1
-    func_0010af38();  // 0x10ae00                                // 0x001a07bc: jal 0x10ae00
+    func_0010ae00();  // 10ae00                                // 0x001a07bc: jal 0x10ae00
     a0 = sp + 0x10;                                             // 0x001a07c0: addiu $a0, $sp, 0x10
     v0 = v0 + sp;                                               // 0x001a07c4: addu $v0, $v0, $sp
     v1 = 0xd;                                                   // 0x001a07c8: addiu $v1, $zero, 0xd
@@ -38,21 +38,21 @@ label_0x1a07a8:
     if (v0 == 0) goto label_0x1a0818;                           // 0x001a07e4: beqz $v0, 0x1a0818
     a0 = sp + 0x10;                                             // 0x001a07e8: addiu $a0, $sp, 0x10
     a0 = 0x23 << 16;                                            // 0x001a07ec: lui $a0, 0x23
-    func_0010af38();  // 0x10ae00                                // 0x001a07f0: jal 0x10ae00
+    func_0010ae00();  // 10ae00                                // 0x001a07f0: jal 0x10ae00
     a0 = &str_0022a610;  // "This is not BMP image. @plBMPSetContextFromImage" // 0x001a07f4: addiu $a0, $a0, -0x59f0
     a0 = 0x23 << 16;                                            // 0x001a07f8: lui $a0, 0x23
     a1 = 0x23 << 16;                                            // 0x001a07fc: lui $a1, 0x23
     a0 = &str_0022a600;  // "Debug Message Output for PS2\r\n"  // 0x001a0804: addiu $a0, $a0, -0x5a00
-    func_0018d830();  // 0x18d760                                // 0x001a0808: jal 0x18d760
+    func_0018d760();  // 18d760                                // 0x001a0808: jal 0x18d760
     a1 = &str_0022a610;  // "This is not BMP image. @plBMPSetContextFromImage" // 0x001a080c: addiu $a1, $a1, -0x59f0
     *(uint32_t*)((gp) + -0x7d6c) = 0;                           // 0x001a0810: sw $zero, -0x7d6c($gp)
     a0 = sp + 0x10;                                             // 0x001a0814: addiu $a0, $sp, 0x10
 label_0x1a0818:
-    func_0010af38();  // 0x10ae00                                // 0x001a0818: jal 0x10ae00
+    func_0010ae00();  // 10ae00                                // 0x001a0818: jal 0x10ae00
     /* nop */                                                   // 0x001a081c: nop 
     a0 = 0x23 << 16;                                            // 0x001a0820: lui $a0, 0x23
     a0 = &str_0022a600;  // "Debug Message Output for PS2\r\n"  // 0x001a0828: addiu $a0, $a0, -0x5a00
-    func_0018d910();  // 0x18d830                                // 0x001a082c: jal 0x18d830
+    func_0018d830();  // 18d830                                // 0x001a082c: jal 0x18d830
     a1 = sp + 0x10;                                             // 0x001a0830: addiu $a1, $sp, 0x10
     v0 = 1;                                                     // 0x001a0838: addiu $v0, $zero, 1
     return;                                                     // 0x001a083c: jr $ra

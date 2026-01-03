@@ -83,7 +83,7 @@ label_0x1b6ea8:
 label_0x1b6ef0:
     goto label_0x1b6f08;                                        // 0x001b6ef0: b 0x1b6f08
 label_0x1b6ef8:
-    func_001b5e90();  // 0x1b5e60                                // 0x001b6ef8: jal 0x1b5e60
+    func_001b5e60();  // 1b5e60                                // 0x001b6ef8: jal 0x1b5e60
     a1 = g_002ac498;  // Global at 0x002ac498                   // 0x001b6efc: lw $a1, 8($s4)
     s5 = 1;                                                     // 0x001b6f00: addiu $s5, $zero, 1
 label_0x1b6f08:
@@ -107,7 +107,7 @@ label_0x1b6f08:
     g_002ac504 = v0;  // Global at 0x002ac504                   // 0x001b6f5c: sw $v0, 0x74($s4)
     v0 = g_002ac508;  // Global at 0x002ac508                   // 0x001b6f60: lw $v0, 0x78($s4)
     v0 = v0 + -1;                                               // 0x001b6f64: addiu $v0, $v0, -1
-    func_001b6d60();  // 0x1b6a60                                // 0x001b6f68: jal 0x1b6a60
+    func_001b6a60();  // 1b6a60                                // 0x001b6f68: jal 0x1b6a60
     g_002ac508 = v0;  // Global at 0x002ac508                   // 0x001b6f6c: sw $v0, 0x78($s4)
     g_002ac510 = s3;  // Global at 0x002ac510                   // 0x001b6f70: sw $s3, 0x80($s4)
     v0 = local_c0;                                              // 0x001b6f78: lw $v0, 0xc0($sp)
@@ -123,7 +123,7 @@ label_0x1b6f08:
     v0 = g_002ac4f0;  // Global at 0x002ac4f0                   // 0x001b6fa0: lw $v0, 0x60($s4)
     at = ((unsigned)v1 < (unsigned)v0) ? 1 : 0;                 // 0x001b6fa4: sltu $at, $v1, $v0
     if (at == 0) goto label_0x1b7010;                           // 0x001b6fa8: beqz $at, 0x1b7010
-    func_001b6d60();  // 0x1b6a60                                // 0x001b6fb8: jal 0x1b6a60
+    func_001b6a60();  // 1b6a60                                // 0x001b6fb8: jal 0x1b6a60
     v0 = g_002ac4f4;  // Global at 0x002ac4f4                   // 0x001b6fc4: lw $v0, 0x64($s4)
     v0 = v0 + 1;                                                // 0x001b6fc8: addiu $v0, $v0, 1
     g_002ac4f4 = v0;  // Global at 0x002ac4f4                   // 0x001b6fcc: sw $v0, 0x64($s4)

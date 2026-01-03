@@ -7,10 +7,10 @@ void func_0017f688() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x50;                                            // 0x0017f688: addiu $sp, $sp, -0x50
-    func_0017eee8();  // 0x17ee98                                // 0x0017f6ac: jal 0x17ee98
-    func_0017eee8();  // 0x17ee98                                // 0x0017f6b8: jal 0x17ee98
+    func_0017ee98();  // 17ee98                                // 0x0017f6ac: jal 0x17ee98
+    func_0017ee98();  // 17ee98                                // 0x0017f6b8: jal 0x17ee98
     a0 = s0 + 0x10;                                             // 0x0017f6bc: addiu $a0, $s0, 0x10
-    func_0017eee8();  // 0x17ee98                                // 0x0017f6c4: jal 0x17ee98
+    func_0017ee98();  // 17ee98                                // 0x0017f6c4: jal 0x17ee98
     a0 = s0 + 0x20;                                             // 0x0017f6c8: addiu $a0, $s0, 0x20
     a0 = s0 + 0x30;                                             // 0x0017f6cc: addiu $a0, $s0, 0x30
     return func_0017eee8();  // Tail call                        // 0x0017f6e8: j 0x17ee98
@@ -44,7 +44,7 @@ void func_0017f688() {
     /* nop */                                                   // 0x0017f760: nop 
     /* nop */                                                   // 0x0017f764: nop 
     /* FPU: div.s $f20, $f20, $f19 */                           // 0x0017f768: div.s $f20, $f20, $f19
-    func_0017f0e8();  // 0x17f090                                // 0x0017f770: jal 0x17f090
+    func_0017f090();  // 17f090                                // 0x0017f770: jal 0x17f090
     /* FPU: mov.s $f25, $f16 */                                 // 0x0017f774: mov.s $f25, $f16
     at = 0x3f80 << 16;                                          // 0x0017f778: lui $at, 0x3f80
     /* move to FPU: $at, $f0 */                                 // 0x0017f77c: mtc1 $at, $f0
@@ -53,14 +53,14 @@ void func_0017f688() {
     *(uint32_t*)((s0) + 0x28) = 0;                              // 0x0017f78c: sw $zero, 0x28($s0)
     *(uint32_t*)((s0) + 0x3c) = 0;                              // 0x0017f790: sw $zero, 0x3c($s0)
     *(float*)((s0) + 0x2c) = FPU_F0;  // Store float            // 0x0017f794: swc1 $f0, 0x2c($s0)
-    func_0017f0e8();  // 0x17f090                                // 0x0017f798: jal 0x17f090
+    func_0017f090();  // 17f090                                // 0x0017f798: jal 0x17f090
     *(float*)((s0) + 0x38) = FPU_F0;  // Store float            // 0x0017f79c: swc1 $f0, 0x38($s0)
     *(float*)(sp) = FPU_F24;  // Store float                    // 0x0017f7a4: swc1 $f24, 0($sp)
     *(float*)((sp) + 0x14) = FPU_F23;  // Store float           // 0x0017f7a8: swc1 $f23, 0x14($sp)
     *(float*)((sp) + 0x28) = FPU_F21;  // Store float           // 0x0017f7b0: swc1 $f21, 0x28($sp)
     *(float*)((sp) + 0x30) = FPU_F26;  // Store float           // 0x0017f7b8: swc1 $f26, 0x30($sp)
     *(float*)((sp) + 0x34) = FPU_F25;  // Store float           // 0x0017f7bc: swc1 $f25, 0x34($sp)
-    func_0017e878();  // 0x17e7e8                                // 0x0017f7c0: jal 0x17e7e8
+    func_0017e7e8();  // 17e7e8                                // 0x0017f7c0: jal 0x17e7e8
     *(float*)((sp) + 0x38) = FPU_F20;  // Store float           // 0x0017f7c4: swc1 $f20, 0x38($sp)
     FPU_F26 = *(float*)((sp) + 0x90);  // Load float            // 0x0017f7d0: lwc1 $f26, 0x90($sp)
     FPU_F25 = *(float*)((sp) + 0x88);  // Load float            // 0x0017f7d4: lwc1 $f25, 0x88($sp)

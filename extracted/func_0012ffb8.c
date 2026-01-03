@@ -43,7 +43,7 @@ label_0x130060:
     v1 = g_00200eac;  // Global at 0x00200eac                   // 0x00130060: lw $v1, 0xeac($t5)
 label_0x130064:
     if (a1 == v1) goto label_0x130084;                          // 0x00130064: beq $a1, $v1, 0x130084
-    func_0012fed8();  // 0x12fdc8                                // 0x00130078: jal 0x12fdc8
+    func_0012fdc8();  // 12fdc8                                // 0x00130078: jal 0x12fdc8
 label_0x130084:
     return;                                                     // 0x0013008c: jr $ra
     sp = sp + 0x10;                                             // 0x00130090: addiu $sp, $sp, 0x10

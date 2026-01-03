@@ -18,7 +18,7 @@ void func_001b7720() {
     /* call function at address in v0 */                        // 0x001b7754: jalr $v0
     /* nop */                                                   // 0x001b7758: nop 
 label_0x1b775c:
-    func_00107d30();  // 0x107c70                                // 0x001b7764: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001b7764: jal 0x107c70
     a2 = 0x20;                                                  // 0x001b7768: addiu $a2, $zero, 0x20
     *(uint32_t*)((s0) + 4) = s1;                                // 0x001b776c: sw $s1, 4($s0)
     v1 = 4;                                                     // 0x001b7770: addiu $v1, $zero, 4

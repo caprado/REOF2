@@ -14,7 +14,7 @@ label_0x1d56ec:
     v1 = -1;                                                    // 0x001d56f0: addiu $v1, $zero, -1
     if (a0 == v1) goto label_0x1d5718;                          // 0x001d56f4: beq $a0, $v1, 0x1d5718
     a1 = 1;                                                     // 0x001d56f8: addiu $a1, $zero, 1
-    func_001d3c20();  // 0x1d3ae0                                // 0x001d56fc: jal 0x1d3ae0
+    func_001d3ae0();  // 1d3ae0                                // 0x001d56fc: jal 0x1d3ae0
     /* nop */                                                   // 0x001d5700: nop 
     s1 = s1 + 2;                                                // 0x001d5704: addiu $s1, $s1, 2
     s0 = s0 + 1;                                                // 0x001d5708: addiu $s0, $s0, 1

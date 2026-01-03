@@ -11,7 +11,7 @@ void func_001c0f20() {
     v0 = g_0021d098;  // Global at 0x0021d098                   // 0x001c0f2c: lb $v0, -0x2f68($v1)
     s0 = v1 + -0x2f68;                                          // 0x001c0f30: addiu $s0, $v1, -0x2f68
     if (v0 != 0) goto label_0x1c0f44;                           // 0x001c0f34: bnez $v0, 0x1c0f44
-    func_001c0f20();  // 0x1c0eb0                                // 0x001c0f3c: jal 0x1c0eb0
+    func_001c0eb0();  // 1c0eb0                                // 0x001c0f3c: jal 0x1c0eb0
     /* nop */                                                   // 0x001c0f40: nop 
 label_0x1c0f44:
     v0 = g_0021d09c;  // Global at 0x0021d09c                   // 0x001c0f44: lb $v0, 4($s0)

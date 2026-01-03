@@ -10,7 +10,7 @@ void func_00124f38() {
     v1 = 3;                                                     // 0x00124f3c: addiu $v1, $zero, 3
     v0 = *(int32_t*)((s0) + 4);                                 // 0x00124f4c: lw $v0, 4($s0)
     if (v0 != v1) goto label_0x124f6c;                          // 0x00124f50: bnel $v0, $v1, 0x124f6c
-    func_00134d20();  // 0x134d08                                // 0x00124f58: jal 0x134d08
+    func_00134d08();  // 134d08                                // 0x00124f58: jal 0x134d08
     a0 = *(int32_t*)((s0) + 8);                                 // 0x00124f5c: lw $a0, 8($s0)
     *(uint32_t*)((s0) + 0x8c) = 0;                              // 0x00124f60: sw $zero, 0x8c($s0)
     *(uint32_t*)((s0) + 4) = 0;                                 // 0x00124f64: sw $zero, 4($s0)

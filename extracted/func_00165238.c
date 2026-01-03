@@ -10,7 +10,7 @@ void func_00165238() {
     uint32_t local_0, local_4;
     
     sp = sp + -0x40;                                            // 0x00165238: addiu $sp, $sp, -0x40
-    func_00166d88();  // 0x166ca8                                // 0x00165254: jal 0x166ca8
+    func_00166ca8();  // 166ca8                                // 0x00165254: jal 0x166ca8
     a1 = *(int32_t*)((a0) + 0x1b7c);                            // 0x00165258: lw $a1, 0x1b7c($a0)
     v1 = local_0;                                               // 0x0016525c: lw $v1, 0($sp)
     a0 = local_4;                                               // 0x00165260: lw $a0, 4($sp)

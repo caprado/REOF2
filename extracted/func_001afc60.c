@@ -8,7 +8,7 @@ void func_001afc60() {
     
     sp = sp + -0x30;                                            // 0x001afc60: addiu $sp, $sp, -0x30
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001afc68: addu.qb $zero, $sp, $s1
-    func_001afb40();  // 0x1afb10                                // 0x001afc6c: jal 0x1afb10
+    func_001afb10();  // 1afb10                                // 0x001afc6c: jal 0x1afb10
     v1 = 1;                                                     // 0x001afc74: addiu $v1, $zero, 1
     if (v0 != v1) goto label_0x1afcd8;                          // 0x001afc78: bne $v0, $v1, 0x1afcd8
     at = 0x49 << 16;                                            // 0x001afc7c: lui $at, 0x49

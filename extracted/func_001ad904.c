@@ -14,7 +14,7 @@ void func_001ad904() {
     a0 = a2 + a0;                                               // 0x001ad91c: addu $a0, $a2, $a0
     v0 = v0 + v1;                                               // 0x001ad920: addu $v0, $v0, $v1
     *(uint8_t*)(a0) = a1;                                       // 0x001ad924: sb $a1, 0($a0)
-    func_00132c40();  // 0x132b10                                // 0x001ad928: jal 0x132b10
+    func_00132b10();  // 132b10                                // 0x001ad928: jal 0x132b10
     a0 = g_002aa878;  // Global at 0x002aa878                   // 0x001ad92c: lw $a0, 0($v0)
     return;                                                     // 0x001ad938: jr $ra
     sp = sp + 0x10;                                             // 0x001ad93c: addiu $sp, $sp, 0x10

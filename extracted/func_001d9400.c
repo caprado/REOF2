@@ -12,7 +12,7 @@ void func_001d9400() {
     if (v1 != 0) goto label_0x1d9424;                           // 0x001d9410: bnez $v1, 0x1d9424
     at = 0x31 << 16;                                            // 0x001d9414: lui $at, 0x31
     a0 = g_003137ba;  // Global at 0x003137ba                   // 0x001d9418: lhu $a0, 0x37ba($at)
-    func_001d4c80();  // 0x1d4ab0                                // 0x001d941c: jal 0x1d4ab0
+    func_001d4ab0();  // 1d4ab0                                // 0x001d941c: jal 0x1d4ab0
     a1 = 0x2400;                                                // 0x001d9420: addiu $a1, $zero, 0x2400
 label_0x1d9424:
     return;                                                     // 0x001d9428: jr $ra

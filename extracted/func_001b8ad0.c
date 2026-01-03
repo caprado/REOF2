@@ -9,12 +9,12 @@ void func_001b8ad0() {
     sp = sp + -0x10;                                            // 0x001b8ad0: addiu $sp, $sp, -0x10
     if (a3 != 0) goto label_0x1b8af4;                           // 0x001b8ad8: bnez $a3, 0x1b8af4
     a0 = 1;                                                     // 0x001b8ae0: addiu $a0, $zero, 1
-    func_001b8b40();  // 0x1b8b20                                // 0x001b8ae4: jal 0x1b8b20
+    func_001b8b20();  // 1b8b20                                // 0x001b8ae4: jal 0x1b8b20
     goto label_0x1b8b10;                                        // 0x001b8aec: b 0x1b8b10
 label_0x1b8af4:
     a0 = 1;                                                     // 0x001b8af4: addiu $a0, $zero, 1
     t0 = 2;                                                     // 0x001b8afc: addiu $t0, $zero, 2
-    func_001b8c20();  // 0x1b8b40                                // 0x001b8b04: jal 0x1b8b40
+    func_001b8b40();  // 1b8b40                                // 0x001b8b04: jal 0x1b8b40
 label_0x1b8b10:
     return;                                                     // 0x001b8b10: jr $ra
     sp = sp + 0x10;                                             // 0x001b8b14: addiu $sp, $sp, 0x10

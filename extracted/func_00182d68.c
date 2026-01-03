@@ -32,7 +32,7 @@ label_0x182dd0:
     s2 = v0 + v1;                                               // 0x00182dec: addu $s2, $v0, $v1
     /* nop */                                                   // 0x00182df4: nop 
 label_0x182df8:
-    func_00182b88();  // 0x182a70                                // 0x00182dfc: jal 0x182a70
+    func_00182a70();  // 182a70                                // 0x00182dfc: jal 0x182a70
     v0 = *(int32_t*)(s1);                                       // 0x00182e08: lw $v0, 0($s1)
     if (v0 != 0) goto label_0x182e64;                           // 0x00182e0c: bnez $v0, 0x182e64
     v0 = v1 & s4;                                               // 0x00182e14: and $v0, $v1, $s4

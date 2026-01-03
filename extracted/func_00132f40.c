@@ -28,9 +28,9 @@ void func_00132f40() {
     a0 = local_0;                                               // 0x00132fbc: lw $a0, 0($sp)
     /* divide: v0 / s0 -> hi:lo */                              // 0x00132fc0: div $zero, $v0, $s0
     /* mflo $v0 */                                              // 0x00132fc4
-    func_00107d30();  // 0x107c70                                // 0x00132fd0: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x00132fd0: jal 0x107c70
     s2 = sp + 0x10;                                             // 0x00132fdc: addiu $s2, $sp, 0x10
-    func_00140598();  // 0x1404a0                                // 0x00132fe8: jal 0x1404a0
+    func_001404a0();  // 1404a0                                // 0x00132fe8: jal 0x1404a0
     v1 = *(int32_t*)(s4);                                       // 0x00132ff0: lw $v1, 0($s4)
     v0 = *(int32_t*)((v1) + 0x20);                              // 0x00132ffc: lw $v0, 0x20($v1)
     /* call function at address in v0 */                        // 0x00133000: jalr $v0
@@ -48,9 +48,9 @@ void func_00132f40() {
     a0 = local_0;                                               // 0x0013304c: lw $a0, 0($sp)
     /* divide: v0 / s0 -> hi:lo */                              // 0x00133050: div $zero, $v0, $s0
     /* mflo $v0 */                                              // 0x00133054
-    func_00107d30();  // 0x107c70                                // 0x00133060: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x00133060: jal 0x107c70
     s1 = s1 + s5;                                               // 0x00133064: addu $s1, $s1, $s5
-    func_00140598();  // 0x1404a0                                // 0x00133074: jal 0x1404a0
+    func_001404a0();  // 1404a0                                // 0x00133074: jal 0x1404a0
     v1 = *(int32_t*)(s4);                                       // 0x0013307c: lw $v1, 0($s4)
     v0 = *(int32_t*)((v1) + 0x20);                              // 0x00133088: lw $v0, 0x20($v1)
     /* call function at address in v0 */                        // 0x0013308c: jalr $v0

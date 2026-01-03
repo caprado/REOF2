@@ -7,10 +7,10 @@ void func_0015d4e0() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x10;                                            // 0x0015d4e0: addiu $sp, $sp, -0x10
-    func_0015fcb0();  // 0x15fc80                                // 0x0015d4ec: jal 0x15fc80
+    func_0015fc80();  // 15fc80                                // 0x0015d4ec: jal 0x15fc80
     if (v0 != 0) return;  // Branch to 0x15d520                 // 0x0015d4f4: bnez $v0, 0x15d520
     a0 = 0x22 << 16;                                            // 0x0015d4fc: lui $a0, 0x22
-    func_001634a8();  // 0x163410                                // 0x0015d500: jal 0x163410
+    func_00163410();  // 163410                                // 0x0015d500: jal 0x163410
     a0 = &str_002274a0;  // "E1122614: mwPlyGetCurFrm: handle is invalid." // 0x0015d504: addiu $a0, $a0, 0x74a0
     return;                                                     // 0x0015d514: jr $ra
     sp = sp + 0x10;                                             // 0x0015d518: addiu $sp, $sp, 0x10

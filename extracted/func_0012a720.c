@@ -24,8 +24,8 @@ void func_0012a720() {
 label_0x12a784:
     /* bnezl $v0, 0x12a7ac */                                   // 0x0012a784: bnezl $v0, 0x12a7ac
     v0 = 0xbeb << 16;                                           // 0x0012a788: lui $v0, 0xbeb
-    func_0012ad98();  // 0x12ad48                                // 0x0012a78c: jal 0x12ad48
-    func_0012ae18();  // 0x12adb0                                // 0x0012a794: jal 0x12adb0
+    func_0012ad48();  // 12ad48                                // 0x0012a78c: jal 0x12ad48
+    func_0012adb0();  // 12adb0                                // 0x0012a794: jal 0x12adb0
     v1 = *(int32_t*)(s3);                                       // 0x0012a79c: lw $v1, 0($s3)
     /* bnezl $v1, 0x12a780 */                                   // 0x0012a7a0: bnezl $v1, 0x12a780
     s0 = s0 + 1;                                                // 0x0012a7a4: addiu $s0, $s0, 1
@@ -33,11 +33,11 @@ label_0x12a784:
     v0 = v0 | 0xc200;                                           // 0x0012a7ac: ori $v0, $v0, 0xc200
     if (s0 != v0) goto label_0x12a7c8;                          // 0x0012a7b0: bnel $s0, $v0, 0x12a7c8
     a0 = 0x22 << 16;                                            // 0x0012a7b8: lui $a0, 0x22
-    func_001415b8();  // 0x141568                                // 0x0012a7bc: jal 0x141568
+    func_00141568();  // 141568                                // 0x0012a7bc: jal 0x141568
     a0 = &str_00222d38;  // "ADXRNA_GetStat: not implemented\n" // 0x0012a7c0: addiu $a0, $a0, 0x2d38
 label_0x12a7c8:
     iChangeThreadPriority();  // 0x114170                       // 0x0012a7c8: jal 0x114170
-    func_0012ae78();  // 0x12ae18                                // 0x0012a7d0: jal 0x12ae18
+    func_0012ae18();  // 12ae18                                // 0x0012a7d0: jal 0x12ae18
 label_0x12a7d8:
     return;                                                     // 0x0012a7f0: jr $ra
     sp = sp + 0x30;                                             // 0x0012a7f4: addiu $sp, $sp, 0x30

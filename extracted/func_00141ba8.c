@@ -10,7 +10,7 @@ void func_00141ba8() {
     v0 = ((unsigned)s1 < (unsigned)6) ? 1 : 0;                  // 0x00141bb4: sltiu $v0, $s1, 6
     if (v0 != 0) goto label_0x141bdc;                           // 0x00141bc8: bnez $v0, 0x141bdc
     a0 = 0x22 << 16;                                            // 0x00141bd0: lui $a0, 0x22
-    func_001415b8();  // 0x141568                                // 0x00141bd4: jal 0x141568
+    func_00141568();  // 141568                                // 0x00141bd4: jal 0x141568
     a0 = &str_00226550;  // "1071302:SVM_ExecSvrFuncId:illegal svtype" // 0x00141bd8: addiu $a0, $a0, 0x6550
 label_0x141bdc:
     if (s0 < 0) goto label_0x141bec;                            // 0x00141bdc: bltz $s0, 0x141bec
@@ -19,7 +19,7 @@ label_0x141bdc:
     v0 = s0 << 1;                                               // 0x00141be8: sll $v0, $s0, 1
 label_0x141bec:
     a0 = 0x22 << 16;                                            // 0x00141bec: lui $a0, 0x22
-    func_001415b8();  // 0x141568                                // 0x00141bf0: jal 0x141568
+    func_00141568();  // 141568                                // 0x00141bf0: jal 0x141568
     a0 = &str_00226578;  // "Invalid modion type -- ignored(%d)" // 0x00141bf4: addiu $a0, $a0, 0x6578
     v0 = s0 << 1;                                               // 0x00141bf8: sll $v0, $s0, 1
 label_0x141bfc:

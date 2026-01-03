@@ -20,7 +20,7 @@ void func_0010f528() {
     local_c = v0;                                               // 0x0010f554: sh $v0, 0xc($sp)
     local_10 = a3;                                              // 0x0010f558: sw $a3, 0x10($sp)
     local_54 = t0;                                              // 0x0010f55c: sw $t0, 0x54($sp)
-    func_0010ce88();  // 0x10ce10                                // 0x0010f560: jal 0x10ce10
+    func_0010ce10();  // 10ce10                                // 0x0010f560: jal 0x10ce10
     local_0 = a3;                                               // 0x0010f564: sw $a3, 0($sp)
     v1 = local_0;                                               // 0x0010f568: lw $v1, 0($sp)
     g_7fff0000 = 0;  // Global at 0x7fff0000                    // 0x0010f570: sb $zero, 0($v1)

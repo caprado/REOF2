@@ -29,7 +29,7 @@ label_0x114a30:
     v0 = ((unsigned)v0 < (unsigned)s0) ? 1 : 0;                 // 0x00114a38: sltu $v0, $v0, $s0
     if (v0 == 0) goto label_0x114a68;                           // 0x00114a3c: beqz $v0, 0x114a68
     v0 = g_001f0334;  // Global at 0x001f0334                   // 0x00114a40: lw $v0, 0x334($s2)
-    func_001050b8();  // 0x104ef8                                // 0x00114a44: jal 0x104ef8
+    func_00104ef8();  // 104ef8                                // 0x00114a44: jal 0x104ef8
     /* nop */                                                   // 0x00114a48: nop 
     v1 = 0xc;                                                   // 0x00114a4c: addiu $v1, $zero, 0xc
     if (s1 == 0) goto label_0x114a5c;                           // 0x00114a50: beqz $s1, 0x114a5c

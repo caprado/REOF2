@@ -12,18 +12,18 @@ void func_00134078() {
     sp = sp + -0x40;                                            // 0x00134078: addiu $sp, $sp, -0x40
     s2 = *(int32_t*)((s1) + 0xc);                               // 0x00134098: lw $s2, 0xc($s1)
     s4 = *(int32_t*)((s1) + 4);                                 // 0x0013409c: lw $s4, 4($s1)
-    func_0012c408();  // 0x12c3f0                                // 0x001340a0: jal 0x12c3f0
-    func_0012c458();  // 0x12c408                                // 0x001340ac: jal 0x12c408
+    func_0012c3f0();  // 12c3f0                                // 0x001340a0: jal 0x12c3f0
+    func_0012c408();  // 12c408                                // 0x001340ac: jal 0x12c408
     v0 = *(int32_t*)((s1) + 0x48);                              // 0x001340b8: lw $v0, 0x48($s1)
     v0 = v0 << 1;                                               // 0x001340bc: sll $v0, $v0, 1
     s0 = (s0 < v0) ? 1 : 0;                                     // 0x001340c0: slt $s0, $s0, $v0
     /* beqzl $s0, 0x1340f8 */                                   // 0x001340c4: beqzl $s0, 0x1340f8
     v0 = *(int8_t*)((s1) + 0x70);                               // 0x001340c8: lb $v0, 0x70($s1)
-    func_0012d4b0();  // 0x12d498                                // 0x001340cc: jal 0x12d498
+    func_0012d498();  // 12d498                                // 0x001340cc: jal 0x12d498
     v0 = (v0 < s3) ? 1 : 0;                                     // 0x001340d4: slt $v0, $v0, $s3
     /* beqzl $v0, 0x1340f8 */                                   // 0x001340d8: beqzl $v0, 0x1340f8
     v0 = *(int8_t*)((s1) + 0x70);                               // 0x001340dc: lb $v0, 0x70($s1)
-    func_0012c880();  // 0x12c878                                // 0x001340e0: jal 0x12c878
+    func_0012c878();  // 12c878                                // 0x001340e0: jal 0x12c878
     a0 = *(int32_t*)((s1) + 4);                                 // 0x001340e4: lw $a0, 4($s1)
     v1 = 3;                                                     // 0x001340e8: addiu $v1, $zero, 3
     if (v0 != v1) goto label_0x13413c;                          // 0x001340ec: bne $v0, $v1, 0x13413c
@@ -34,7 +34,7 @@ void func_00134078() {
     v0 = *(int8_t*)((s1) + 0x72);                               // 0x00134100: lb $v0, 0x72($s1)
     /* bnezl $v0, 0x134130 */                                   // 0x00134104: bnezl $v0, 0x134130
     v0 = 3;                                                     // 0x00134108: addiu $v0, $zero, 3
-    func_0012c3d8();  // 0x12c3c0                                // 0x00134110: jal 0x12c3c0
+    func_0012c3c0();  // 12c3c0                                // 0x00134110: jal 0x12c3c0
     a1 = 1;                                                     // 0x00134114: addiu $a1, $zero, 1
     *(uint32_t*)((s1) + 0x9c) = 0;                              // 0x00134118: sw $zero, 0x9c($s1)
     v0 = 0x1f << 16;                                            // 0x0013411c: lui $v0, 0x1f
@@ -47,11 +47,11 @@ void func_00134078() {
 label_0x134138:
     *(uint8_t*)((s1) + 0x71) = v0;                              // 0x00134138: sb $v0, 0x71($s1)
 label_0x13413c:
-    func_0012c880();  // 0x12c878                                // 0x0013413c: jal 0x12c878
+    func_0012c878();  // 12c878                                // 0x0013413c: jal 0x12c878
     a0 = *(int32_t*)((s1) + 4);                                 // 0x00134140: lw $a0, 4($s1)
     v1 = 3;                                                     // 0x00134144: addiu $v1, $zero, 3
     if (v0 != v1) goto label_0x1341d0;                          // 0x00134148: bne $v0, $v1, 0x1341d0
-    func_00132258();  // 0x132208                                // 0x00134150: jal 0x132208
+    func_00132208();  // 132208                                // 0x00134150: jal 0x132208
     v0 = *(int32_t*)((s1) + 0x48);                              // 0x0013415c: lw $v0, 0x48($s1)
     /* multiply: v0 * v1 -> hi:lo */                            // 0x00134160: mult $ac2, $v0, $v1
     if (v1 <= 0) goto label_0x1341cc;                           // 0x00134164: blez $v1, 0x1341cc
@@ -64,7 +64,7 @@ label_0x13413c:
     /* call function at address in v0 */                        // 0x00134194: jalr $v0
     s1 = s1 + -1;                                               // 0x00134198: addiu $s1, $s1, -1
     a0 = local_0;                                               // 0x001341a0: lw $a0, 0($sp)
-    func_00107d30();  // 0x107c70                                // 0x001341a4: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001341a4: jal 0x107c70
     a2 = local_4;                                               // 0x001341a8: lw $a2, 4($sp)
     v1 = *(int32_t*)(s0);                                       // 0x001341ac: lw $v1, 0($s0)
     a1 = 1;                                                     // 0x001341b4: addiu $a1, $zero, 1

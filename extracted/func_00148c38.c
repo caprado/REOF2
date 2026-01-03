@@ -8,9 +8,9 @@ void func_00148c38() {
     
     sp = sp + -0x70;                                            // 0x00148c38: addiu $sp, $sp, -0x70
     s0 = 1;                                                     // 0x00148c4c: addiu $s0, $zero, 1
-    func_00143c70();  // 0x143c48                                // 0x00148c64: jal 0x143c48
+    func_00143c48();  // 143c48                                // 0x00148c64: jal 0x143c48
     *(uint32_t*)((s1) + 0x860) = s0;                            // 0x00148c68: sw $s0, 0x860($s1)
-    func_00145818();  // 0x1456a8                                // 0x00148c70: jal 0x1456a8
+    func_001456a8();  // 1456a8                                // 0x00148c70: jal 0x1456a8
     a1 = 0x1c;                                                  // 0x00148c74: addiu $a1, $zero, 0x1c
     v1 = (unsigned)s2 >> 1;                                     // 0x00148c7c: srl $v1, $s2, 1
     v0 = (unsigned)s2 >> 0x11;                                  // 0x00148c80: srl $v0, $s2, 0x11
@@ -23,14 +23,14 @@ void func_00148c38() {
     if (v0 == s0) goto label_0x148cb4;                          // 0x00148c9c: beq $v0, $s0, 0x148cb4
     *(uint32_t*)((s1) + 0x158) = v0;                            // 0x00148ca0: sw $v0, 0x158($s1)
     a1 = 0x22 << 16;                                            // 0x00148ca4: lui $a1, 0x22
-    func_00148588();  // 0x148530                                // 0x00148cac: jal 0x148530
+    func_00148530();  // 148530                                // 0x00148cac: jal 0x148530
     a1 = &str_002269e0;  // "Unsupported profile/level"         // 0x00148cb0: addiu $a1, $a1, 0x69e0
 label_0x148cb4:
     v0 = (unsigned)s2 >> 0x13;                                  // 0x00148cb4: srl $v0, $s2, 0x13
     v0 = v0 & 1;                                                // 0x00148cbc: andi $v0, $v0, 1
     a1 = 0x10;                                                  // 0x00148cc0: addiu $a1, $zero, 0x10
     *(uint32_t*)((s1) + 0x154) = v0;                            // 0x00148cc4: sw $v0, 0x154($s1)
-    func_00145818();  // 0x1456a8                                // 0x00148cc8: jal 0x1456a8
+    func_001456a8();  // 1456a8                                // 0x00148cc8: jal 0x1456a8
     s0 = (unsigned)s2 >> 0x14;                                  // 0x00148ccc: srl $s0, $s2, 0x14
     s2 = (unsigned)v0 >> 8;                                     // 0x00148cd0: srl $s2, $v0, 8
     v0 = 0x48;                                                  // 0x00148cd4: addiu $v0, $zero, 0x48
@@ -40,7 +40,7 @@ label_0x148cb4:
     v0 = 0x44;                                                  // 0x00148ce4: addiu $v0, $zero, 0x44
     if (s0 == v0) goto label_0x148cfc;                          // 0x00148ce8: beq $s0, $v0, 0x148cfc
     a1 = 0x22 << 16;                                            // 0x00148cec: lui $a1, 0x22
-    func_00148588();  // 0x148530                                // 0x00148cf4: jal 0x148530
+    func_00148530();  // 148530                                // 0x00148cf4: jal 0x148530
     a1 = &str_00226a08;  // "_sequenceScalableExtension() is not implemented" // 0x00148cf8: addiu $a1, $a1, 0x6a08
 label_0x148cfc:
     a0 = *(int32_t*)((s1) + 0x13c);                             // 0x00148cfc: lw $a0, 0x13c($s1)

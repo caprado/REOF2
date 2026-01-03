@@ -22,13 +22,13 @@ label_0x12fc34:
     goto label_0x12fc34;                                        // 0x0012fc60: b 0x12fc34
     *(uint8_t*)((s0) + 3) = s1;                                 // 0x0012fc64: sb $s1, 3($s0)
 label_0x12fc68:
-    func_0012ec50();  // 0x12eba0                                // 0x0012fc68: jal 0x12eba0
+    func_0012eba0();  // 12eba0                                // 0x0012fc68: jal 0x12eba0
     /* bnezl $a1, 0x12fc48 */                                   // 0x0012fc74: bnezl $a1, 0x12fc48
     v0 = *(int32_t*)((s0) + 0x2c);                              // 0x0012fc78: lw $v0, 0x2c($s0)
     goto label_0x12fca4;                                        // 0x0012fc7c: b 0x12fca4
     /* nop */                                                   // 0x0012fc84: nop 
 label_0x12fc88:
-    func_0012ed50();  // 0x12ec50                                // 0x0012fc88: jal 0x12ec50
+    func_0012ec50();  // 12ec50                                // 0x0012fc88: jal 0x12ec50
     if (v0 <= 0) goto label_0x12fca4;                           // 0x0012fc90: blezl $v0, 0x12fca4
     v0 = 3;                                                     // 0x0012fc98: addiu $v0, $zero, 3
     *(uint8_t*)((s0) + 1) = v0;                                 // 0x0012fc9c: sb $v0, 1($s0)

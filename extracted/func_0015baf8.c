@@ -15,14 +15,14 @@ void func_0015baf8() {
     t0 = sp + 0xc;                                              // 0x0015bb08: addiu $t0, $sp, 0xc
     t1 = sp + 0x10;                                             // 0x0015bb0c: addiu $t1, $sp, 0x10
     t2 = sp + 0x14;                                             // 0x0015bb10: addiu $t2, $sp, 0x14
-    func_0015b948();  // 0x15b860                                // 0x0015bb1c: jal 0x15b860
+    func_0015b860();  // 15b860                                // 0x0015bb1c: jal 0x15b860
     a1 = sp + 0x18;                                             // 0x0015bb24: addiu $a1, $sp, 0x18
     a2 = sp + 0x1c;                                             // 0x0015bb28: addiu $a2, $sp, 0x1c
-    func_0015ba80();  // 0x15b998                                // 0x0015bb2c: jal 0x15b998
+    func_0015b998();  // 15b998                                // 0x0015bb2c: jal 0x15b998
     a1 = sp + 0x20;                                             // 0x0015bb38: addiu $a1, $sp, 0x20
-    func_0015baf0();  // 0x15bad0                                // 0x0015bb3c: jal 0x15bad0
+    func_0015bad0();  // 15bad0                                // 0x0015bb3c: jal 0x15bad0
     a2 = sp + 0x24;                                             // 0x0015bb40: addiu $a2, $sp, 0x24
-    func_0015baf8();  // 0x15baf0                                // 0x0015bb44: jal 0x15baf0
+    func_0015baf0();  // 15baf0                                // 0x0015bb44: jal 0x15baf0
     a0 = local_8;                                               // 0x0015bb4c: lw $a0, 8($sp)
     v1 = local_4;                                               // 0x0015bb50: lw $v1, 4($sp)
     a1 = local_c;                                               // 0x0015bb54: lw $a1, 0xc($sp)

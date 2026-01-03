@@ -11,19 +11,19 @@ void func_00139560() {
     
     sp = sp + -0x50;                                            // 0x00139560: addiu $sp, $sp, -0x50
     if (s0 == 0) goto label_0x1395d4;                           // 0x00139574: beqz $s0, 0x1395d4
-    func_0013a770();  // 0x13a6c0                                // 0x0013957c: jal 0x13a6c0
+    func_0013a6c0();  // 13a6c0                                // 0x0013957c: jal 0x13a6c0
     v1 = 0x20 << 16;                                            // 0x00139584: lui $v1, 0x20
     v0 = local_4;                                               // 0x00139588: lw $v0, 4($sp)
     s1 = v1 + 0x3da0;                                           // 0x0013958c: addiu $s1, $v1, 0x3da0
     if (v0 != 0) goto label_0x1395d0;                           // 0x00139594: bnez $v0, 0x1395d0
-    func_00139fb0();  // 0x139f08                                // 0x0013959c: jal 0x139f08
+    func_00139f08();  // 139f08                                // 0x0013959c: jal 0x139f08
     /* nop */                                                   // 0x001395a0: nop 
-    func_00137fb0();  // 0x137ec8                                // 0x001395a4: jal 0x137ec8
+    func_00137ec8();  // 137ec8                                // 0x001395a4: jal 0x137ec8
     a0 = 0 | 0x8100;                                            // 0x001395a8: ori $a0, $zero, 0x8100
-    func_00100e38();  // 0x100d98                                // 0x001395ac: jal 0x100d98
-    func_00137fb0();  // 0x137ec8                                // 0x001395b4: jal 0x137ec8
+    func_00100d98();  // 100d98                                // 0x001395ac: jal 0x100d98
+    func_00137ec8();  // 137ec8                                // 0x001395b4: jal 0x137ec8
     a0 = 0 | 0x8101;                                            // 0x001395b8: ori $a0, $zero, 0x8101
-    func_00139390();  // 0x1392e8                                // 0x001395c0: jal 0x1392e8
+    func_001392e8();  // 1392e8                                // 0x001395c0: jal 0x1392e8
     if (v0 == 0) goto label_0x1395d8;                           // 0x001395c8: beqz $v0, 0x1395d8
 label_0x1395d0:
     v0 = 1;                                                     // 0x001395d0: addiu $v0, $zero, 1

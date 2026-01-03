@@ -16,7 +16,7 @@ void func_00160bc8() {
 label_0x160bf0:
     goto label_0x160c00;                                        // 0x00160bf0: b 0x160c00
 label_0x160bf8:
-    func_001634a8();  // 0x163410                                // 0x00160bf8: jal 0x163410
+    func_00163410();  // 163410                                // 0x00160bf8: jal 0x163410
     a0 = &str_002281a0;  // "E201195: mwPlyFxCnvFrmARGB8888: handle is invalid." // 0x00160bfc: addiu $a0, $a0, -0x7e60
 label_0x160c00:
 label_0x160c04:

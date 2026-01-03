@@ -33,7 +33,7 @@ label_0x17b098:
     local_1c = t0;                                              // 0x0017b098: sw $t0, 0x1c($sp)
 label_0x17b09c:
     s0 = sp + 0x10;                                             // 0x0017b09c: addiu $s0, $sp, 0x10
-    func_0014f4a8();  // 0x14f488                                // 0x0017b0a0: jal 0x14f488
+    func_0014f488();  // 14f488                                // 0x0017b0a0: jal 0x14f488
     a2 = *(int32_t*)((s1) + 0x48);                              // 0x0017b0ac: lw $a2, 0x48($s1)
     v1 = *(int32_t*)((s1) + 0x44);                              // 0x0017b0b4: lw $v1, 0x44($s1)
     a3 = *(int32_t*)((s3) + 8);                                 // 0x0017b0b8: lw $a3, 8($s3)
@@ -53,7 +53,7 @@ label_0x17b09c:
 label_0x17b0f0:
     local_1c = a3;                                              // 0x0017b0f0: sw $a3, 0x1c($sp)
 label_0x17b0f4:
-    func_0014fdd0();  // 0x14fcc0                                // 0x0017b0f4: jal 0x14fcc0
+    func_0014fcc0();  // 14fcc0                                // 0x0017b0f4: jal 0x14fcc0
     a2 = *(int32_t*)((s3) + 0x3c);                              // 0x0017b0f8: lw $a2, 0x3c($s3)
     return;                                                     // 0x0017b114: jr $ra
     sp = sp + 0x60;                                             // 0x0017b118: addiu $sp, $sp, 0x60

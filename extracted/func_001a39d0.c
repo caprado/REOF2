@@ -9,9 +9,9 @@ void func_001a39d0() {
     sp = sp + -0x50;                                            // 0x001a39d0: addiu $sp, $sp, -0x50
     /* FPU: dpa.w.ph $ac0, $sp, $s3 */                          // 0x001a39d8: dpa.w.ph $ac0, $sp, $s3
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001a39e8: addu.qb $zero, $sp, $s1
-    func_001a31e0();  // 0x1a31d0                                // 0x001a39f4: jal 0x1a31d0
+    func_001a31d0();  // 1a31d0                                // 0x001a39f4: jal 0x1a31d0
     a1 = 2;                                                     // 0x001a39fc: addiu $a1, $zero, 2
-    func_001a32e0();  // 0x1a3230                                // 0x001a3a00: jal 0x1a3230
+    func_001a3230();  // 1a3230                                // 0x001a3a00: jal 0x1a3230
     if (v0 != 0) goto label_0x1a3a18;                           // 0x001a3a08: bnez $v0, 0x1a3a18
     /* nop */                                                   // 0x001a3a0c: nop 
     goto label_0x1a3ab0;                                        // 0x001a3a10: b 0x1a3ab0
@@ -21,7 +21,7 @@ label_0x1a3a18:
     if (at != 0) goto label_0x1a3a30;                           // 0x001a3a20: bnez $at, 0x1a3a30
     goto label_0x1a3ab0;                                        // 0x001a3a28: b 0x1a3ab0
 label_0x1a3a30:
-    func_001a2ef0();  // 0x1a2e50                                // 0x001a3a30: jal 0x1a2e50
+    func_001a2e50();  // 1a2e50                                // 0x001a3a30: jal 0x1a2e50
     if (v0 != 0) goto label_0x1a3a48;                           // 0x001a3a38: bnez $v0, 0x1a3a48
     goto label_0x1a3ab0;                                        // 0x001a3a40: b 0x1a3ab0
 label_0x1a3a48:
@@ -43,9 +43,9 @@ label_0x1a3a8c:
 label_0x1a3a90:
     goto label_0x1a3ab4;                                        // 0x001a3a90: b 0x1a3ab4
 label_0x1a3a98:
-    func_001a3140();  // 0x1a30f0                                // 0x001a3a98: jal 0x1a30f0
+    func_001a30f0();  // 1a30f0                                // 0x001a3a98: jal 0x1a30f0
     *(uint16_t*)((s3) + 0x20) = v0;                             // 0x001a3aa4: sh $v0, 0x20($s3)
-    func_001a3b20();  // 0x1a3ad0                                // 0x001a3aa8: jal 0x1a3ad0
+    func_001a3ad0();  // 1a3ad0                                // 0x001a3aa8: jal 0x1a3ad0
 label_0x1a3ab0:
 label_0x1a3ab4:
     /* FPU: ld.b $w0, -0x4e($zero) */                           // 0x001a3ab8: ld.b $w0, -0x4e($zero)

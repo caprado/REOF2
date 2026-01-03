@@ -7,7 +7,7 @@ void func_001cc0d0() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x10;                                            // 0x001cc0d0: addiu $sp, $sp, -0x10
-    func_001cfc90();  // 0x1cfc80                                // 0x001cc0d8: jal 0x1cfc80
+    func_001cfc80();  // 1cfc80                                // 0x001cc0d8: jal 0x1cfc80
     a0 = a0 + 0x28;                                             // 0x001cc0dc: addiu $a0, $a0, 0x28
     v0 = 0x447a << 16;                                          // 0x001cc0e0: lui $v0, 0x447a
     /* move to FPU: $v0, $f1 */                                 // 0x001cc0e8: mtc1 $v0, $f1

@@ -12,7 +12,7 @@ void func_00123f98() {
     v1 = *(int32_t*)((s0) + 4);                                 // 0x00123fb8: lw $v1, 4($s0)
     if (v1 != v0) goto label_0x124100;                          // 0x00123fbc: bne $v1, $v0, 0x124100
     s2 = *(int32_t*)(s1);                                       // 0x00123fc0: lw $s2, 0($s1)
-    func_00134c60();  // 0x134c58                                // 0x00123fc4: jal 0x134c58
+    func_00134c58();  // 134c58                                // 0x00123fc4: jal 0x134c58
     a0 = *(int32_t*)((s0) + 8);                                 // 0x00123fc8: lw $a0, 8($s0)
     /* bnezl $v0, 0x124100 */                                   // 0x00123fcc: bnezl $v0, 0x124100
     v1 = *(int32_t*)((s0) + 4);                                 // 0x00123fd0: lw $v1, 4($s0)

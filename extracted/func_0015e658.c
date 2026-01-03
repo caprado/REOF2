@@ -11,7 +11,7 @@ void func_0015e658() {
     FPU_F0 = *(float*)(a0);  // Load float                      // 0x0015e664: lwc1 $f0, 0($a0)
     /* FPU: cvt.w.s $f1, $f0 */                                 // 0x0015e668: cvt.w.s $f1, $f0
     /* move from FPU: $a2, $f1 */                               // 0x0015e66c: mfc1 $a2, $f1
-    func_0015fbd8();  // 0x15fb78                                // 0x0015e670: jal 0x15fb78
+    func_0015fb78();  // 15fb78                                // 0x0015e670: jal 0x15fb78
     a1 = 7;                                                     // 0x0015e680: addiu $a1, $zero, 7
     a2 = 1;                                                     // 0x0015e684: addiu $a2, $zero, 1
     return func_0015fbd8();  // Tail call                        // 0x0015e688: j 0x15fb78

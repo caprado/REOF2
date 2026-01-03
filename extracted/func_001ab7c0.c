@@ -19,7 +19,7 @@ label_0x1ab7f8:
     a0 = 0x22 << 16;                                            // 0x001ab7f8: lui $a0, 0x22
     a1 = 0x7000 << 16;                                          // 0x001ab7fc: lui $a1, 0x7000
     a0 = a0 + -0x43d0;                                          // 0x001ab800: addiu $a0, $a0, -0x43d0
-    func_00189ad0();  // 0x1899f8                                // 0x001ab804: jal 0x1899f8
+    func_001899f8();  // 1899f8                                // 0x001ab804: jal 0x1899f8
     a2 = 3;                                                     // 0x001ab808: addiu $a2, $zero, 3
     at = 0x29 << 16;                                            // 0x001ab80c: lui $at, 0x29
     v0 = 0x1000;                                                // 0x001ab810: addiu $v0, $zero, 0x1000
@@ -80,7 +80,7 @@ label_0x1ab8d8:
     s5 = s5 + t1;                                               // 0x001ab8e0: addu $s5, $s5, $t1
     s1 = s1 + t0;                                               // 0x001ab8e4: addu $s1, $s1, $t0
     s4 = s4 + t0;                                               // 0x001ab8e8: addu $s4, $s4, $t0
-    func_00198aa0();  // 0x1989a0                                // 0x001ab8ec: jal 0x1989a0
+    func_001989a0();  // 1989a0                                // 0x001ab8ec: jal 0x1989a0
     a1 = 1;                                                     // 0x001ab8f0: addiu $a1, $zero, 1
     at = 0x7000 << 16;                                          // 0x001ab900: lui $at, 0x7000
     v1 = (unsigned)v0 >> 0x10;                                  // 0x001ab908: srl $v1, $v0, 0x10
@@ -116,7 +116,7 @@ label_0x1ab998:
     at = 0x7000 << 16;                                          // 0x001ab9a0: lui $at, 0x7000
     v0 = v1 | v0;                                               // 0x001ab9a8: or $v0, $v1, $v0
     a0 = *(int32_t*)((s0) + 0xc);                               // 0x001ab9b0: lw $a0, 0xc($s0)
-    func_00198aa0();  // 0x1989a0                                // 0x001ab9b4: jal 0x1989a0
+    func_001989a0();  // 1989a0                                // 0x001ab9b4: jal 0x1989a0
     a1 = 1;                                                     // 0x001ab9b8: addiu $a1, $zero, 1
     v1 = (unsigned)v0 >> 0x10;                                  // 0x001ab9bc: srl $v1, $v0, 0x10
     a1 = v1 & 0xff;                                             // 0x001ab9c4: andi $a1, $v1, 0xff
@@ -152,7 +152,7 @@ label_0x1aba54:
     at = 0x7000 << 16;                                          // 0x001aba5c: lui $at, 0x7000
     v0 = v1 | v0;                                               // 0x001aba64: or $v0, $v1, $v0
     a0 = *(int32_t*)((s0) + 0x10);                              // 0x001aba6c: lw $a0, 0x10($s0)
-    func_00198aa0();  // 0x1989a0                                // 0x001aba70: jal 0x1989a0
+    func_001989a0();  // 1989a0                                // 0x001aba70: jal 0x1989a0
     a1 = 1;                                                     // 0x001aba74: addiu $a1, $zero, 1
     a0 = (unsigned)v0 >> 0x10;                                  // 0x001aba7c: srl $a0, $v0, 0x10
     a1 = a0 & 0xff;                                             // 0x001aba84: andi $a1, $a0, 0xff
@@ -188,7 +188,7 @@ label_0x1abb14:
     at = 0x7000 << 16;                                          // 0x001abb1c: lui $at, 0x7000
     v0 = v1 | v0;                                               // 0x001abb24: or $v0, $v1, $v0
     a0 = *(int32_t*)((s0) + 0x14);                              // 0x001abb2c: lw $a0, 0x14($s0)
-    func_00198aa0();  // 0x1989a0                                // 0x001abb30: jal 0x1989a0
+    func_001989a0();  // 1989a0                                // 0x001abb30: jal 0x1989a0
     a1 = 1;                                                     // 0x001abb34: addiu $a1, $zero, 1
     a0 = (unsigned)v0 >> 0x10;                                  // 0x001abb38: srl $a0, $v0, 0x10
     v1 = (unsigned)v0 >> 8;                                     // 0x001abb3c: srl $v1, $v0, 8
@@ -224,7 +224,7 @@ label_0x1abbc8:
     at = 0x7000 << 16;                                          // 0x001abbd0: lui $at, 0x7000
     a0 = 0x7000 << 16;                                          // 0x001abbd8: lui $a0, 0x7000
     v0 = v1 | v0;                                               // 0x001abbdc: or $v0, $v1, $v0
-    func_00193f40();  // 0x193e90                                // 0x001abbe0: jal 0x193e90
+    func_00193e90();  // 193e90                                // 0x001abbe0: jal 0x193e90
     v0 = 1;                                                     // 0x001abbe8: addiu $v0, $zero, 1
 label_0x1abbec:
     /* FPU: aver_u.h $w1, $w0, $w21 */                          // 0x001abbf0: aver_u.h $w1, $w0, $w21

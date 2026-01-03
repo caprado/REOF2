@@ -9,7 +9,7 @@ void func_00129898() {
     sp = sp + -0x10;                                            // 0x00129898: addiu $sp, $sp, -0x10
     if (a0 != 0) goto label_0x1298b8;                           // 0x0012989c: bnez $a0, 0x1298b8
     a0 = 0x22 << 16;                                            // 0x001298a4: lui $a0, 0x22
-    func_00127de8();  // 0x127d90                                // 0x001298a8: jal 0x127d90
+    func_00127d90();  // 127d90                                // 0x001298a8: jal 0x127d90
     a0 = &str_002229d8;  // "E9040828:'adxf' is NULL.(ADXF_GetFsizeSct)" // 0x001298ac: addiu $a0, $a0, 0x29d8
     goto label_0x1298bc;                                        // 0x001298b0: b 0x1298bc
     v0 = -3;                                                    // 0x001298b4: addiu $v0, $zero, -3

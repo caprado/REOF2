@@ -13,7 +13,7 @@ void func_001440b0() {
     s4 = 0x22 << 16;                                            // 0x001440d4: lui $s4, 0x22
     s3 = 0xf;                                                   // 0x001440dc: addiu $s3, $zero, 0xf
 label_0x1440f8:
-    func_00145478();  // 0x145208                                // 0x001440f8: jal 0x145208
+    func_00145208();  // 145208                                // 0x001440f8: jal 0x145208
     if (s0 == s6) goto label_0x144164;                          // 0x00144104: beq $s0, $s6, 0x144164
     v0 = ((unsigned)s0 < (unsigned)0x23) ? 1 : 0;               // 0x00144108: sltiu $v0, $s0, 0x23
     if (v0 == 0) goto label_0x144124;                           // 0x0014410c: beqz $v0, 0x144124
@@ -28,20 +28,20 @@ label_0x144124:
     goto label_0x144188;                                        // 0x00144130: b 0x144188
     s2 = s2 + 0x21;                                             // 0x00144134: addiu $s2, $s2, 0x21
 label_0x144138:
-    func_00145598();  // 0x145478                                // 0x00144138: jal 0x145478
+    func_00145478();  // 145478                                // 0x00144138: jal 0x145478
     a1 = 0xb;                                                   // 0x0014413c: addiu $a1, $zero, 0xb
     v0 = *(int32_t*)((s1) + 0x860);                             // 0x00144144: lw $v0, 0x860($s1)
     if (v0 == 0) goto label_0x14416c;                           // 0x00144148: beqz $v0, 0x14416c
     a1 = &str_00226668;  // "= Skip to the next picture ="      // 0x0014414c: addiu $a1, $s4, 0x6668
     if (v1 != s3) goto label_0x144170;                          // 0x00144150: bne $v1, $s3, 0x144170
-    func_001456a8();  // 0x145598                                // 0x0014415c: jal 0x145598
+    func_00145598();  // 145598                                // 0x0014415c: jal 0x145598
     a1 = 0xb;                                                   // 0x00144160: addiu $a1, $zero, 0xb
 label_0x144164:
     goto label_0x144188;                                        // 0x00144164: b 0x144188
     v0 = 1;                                                     // 0x00144168: addiu $v0, $zero, 1
 label_0x14416c:
 label_0x144170:
-    func_00148530();  // 0x1484f8                                // 0x00144170: jal 0x1484f8
+    func_001484f8();  // 1484f8                                // 0x00144170: jal 0x1484f8
     *(uint32_t*)((s1) + 0x134) = s7;                            // 0x00144178: sw $s7, 0x134($s1)
     goto label_0x144194;                                        // 0x0014417c: b 0x144194
     v0 = 1;                                                     // 0x00144180: addiu $v0, $zero, 1

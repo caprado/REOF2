@@ -17,13 +17,13 @@ void func_001b6150() {
     s0 = 0x2b << 16;                                            // 0x001b616c: lui $s0, 0x2b
     if (v1 == v0) goto label_0x1b6188;                          // 0x001b6170: beq $v1, $v0, 0x1b6188
     s0 = s0 + -0x3ac0;                                          // 0x001b6174: addiu $s0, $s0, -0x3ac0
-    func_0010af38();  // 0x10ae00                                // 0x001b6178: jal 0x10ae00
+    func_0010ae00();  // 10ae00                                // 0x001b6178: jal 0x10ae00
     /* nop */                                                   // 0x001b617c: nop 
     goto label_0x1b620c;                                        // 0x001b6180: b 0x1b620c
 label_0x1b6188:
     local_3c = a0;                                              // 0x001b6188: sw $a0, 0x3c($sp)
 label_0x1b6190:
-    func_001b60d0();  // 0x1b5fa0                                // 0x001b6190: jal 0x1b5fa0
+    func_001b5fa0();  // 1b5fa0                                // 0x001b6190: jal 0x1b5fa0
     a0 = sp + 0x3c;                                             // 0x001b6194: addiu $a0, $sp, 0x3c
     if (v0 == 0) goto label_0x1b6204;                           // 0x001b6198: beqz $v0, 0x1b6204
     /* nop */                                                   // 0x001b619c: nop 
@@ -41,8 +41,8 @@ label_0x1b61c0:
     s1 = s1 + 1;                                                // 0x001b61cc: addiu $s1, $s1, 1
 label_0x1b61d0:
 label_0x1b61d4:
-    func_001b6140();  // 0x1b60d0                                // 0x001b61d4: jal 0x1b60d0
-    func_001b6150();  // 0x1b6140                                // 0x001b61e0: jal 0x1b6140
+    func_001b60d0();  // 1b60d0                                // 0x001b61d4: jal 0x1b60d0
+    func_001b6140();  // 1b6140                                // 0x001b61e0: jal 0x1b6140
     if (v0 != 0) goto label_0x1b61f8;                           // 0x001b61e8: bnez $v0, 0x1b61f8
     /* nop */                                                   // 0x001b61ec: nop 
     goto label_0x1b61fc;                                        // 0x001b61f0: b 0x1b61fc

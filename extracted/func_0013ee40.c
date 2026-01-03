@@ -14,7 +14,7 @@ void func_0013ee40() {
     /* nop */                                                   // 0x0013ee5c: nop 
     a0 = 0x22 << 16;                                            // 0x0013ee60: lui $a0, 0x22
     sp = sp + -0x10;                                            // 0x0013ee64: addiu $sp, $sp, -0x10
-    func_00116598();  // 0x116508                                // 0x0013ee6c: jal 0x116508
+    func_00116508();  // 116508                                // 0x0013ee6c: jal 0x116508
     a0 = &str_00226260;  // "SJMEM Error"                       // 0x0013ee70: addiu $a0, $a0, 0x6260
     return;                                                     // 0x0013ee7c: jr $ra
     sp = sp + 0x10;                                             // 0x0013ee80: addiu $sp, $sp, 0x10

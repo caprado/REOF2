@@ -10,7 +10,7 @@ void func_001dc230() {
     uint32_t local_0, local_94, local_98, local_b0;
     
     sp = sp + -0x100;                                           // 0x001dc230: addiu $sp, $sp, -0x100
-    func_00116ee0();  // 0x116d40                                // 0x001dc248: jal 0x116d40
+    func_00116d40();  // 116d40                                // 0x001dc248: jal 0x116d40
     goto label_0x1dc284;                                        // 0x001dc250: b 0x1dc284
     s1 = 0x33 << 16;                                            // 0x001dc254: lui $s1, 0x33
 label_0x1dc258:
@@ -30,7 +30,7 @@ label_0x1dc284:
     s0 = s1 + -0xa0;                                            // 0x001dc284: addiu $s0, $s1, -0xa0
     a1 = 0x8000 << 16;                                          // 0x001dc288: lui $a1, 0x8000
     a1 = a1 | 0x211;                                            // 0x001dc290: ori $a1, $a1, 0x211
-    func_001176a8();  // 0x1174d8                                // 0x001dc294: jal 0x1174d8
+    func_001174d8();  // 1174d8                                // 0x001dc294: jal 0x1174d8
     if (v0 < 0) goto label_0x1dc3f4;                            // 0x001dc29c: bltz $v0, 0x1dc3f4
     a0 = 0x25 << 16;                                            // 0x001dc2a0: lui $a0, 0x25
     v0 = g_0032ff84;  // Global at 0x0032ff84                   // 0x001dc2a4: lw $v0, 0x24($s0)
@@ -45,14 +45,14 @@ label_0x1dc284:
     if (v0 != s0) goto label_0x1dc2e4;                          // 0x001dc2c8: bne $v0, $s0, 0x1dc2e4
     g_0021fcf8 = v0;  // Global at 0x0021fcf8                   // 0x001dc2cc: sw $v0, -0x308($s1)
     a0 = 0x25 << 16;                                            // 0x001dc2d0: lui $a0, 0x25
-    func_00116598();  // 0x116508                                // 0x001dc2d4: jal 0x116508
+    func_00116508();  // 116508                                // 0x001dc2d4: jal 0x116508
     a0 = &str_002481f8;  // "libusbkb.a : RemoveIntcHandler() --> error\n" // 0x001dc2d8: addiu $a0, $a0, -0x7e08
     goto label_0x1dc410;                                        // 0x001dc2dc: b 0x1dc410
     v0 = -1;                                                    // 0x001dc2e0: addiu $v0, $zero, -1
 label_0x1dc2e4:
-    func_001dc598();  // 0x1dc4f0                                // 0x001dc2e4: jal 0x1dc4f0
+    func_001dc4f0();  // 1dc4f0                                // 0x001dc2e4: jal 0x1dc4f0
     if (v0 != 0) goto label_0x1dc334;                           // 0x001dc2ec: bnez $v0, 0x1dc334
-    func_001dcac8();  // 0x1dca18                                // 0x001dc2f4: jal 0x1dca18
+    func_001dca18();  // 1dca18                                // 0x001dc2f4: jal 0x1dca18
     a1 = sp + 0xb0;                                             // 0x001dc2f8: addiu $a1, $sp, 0xb0
     v1 = local_b0;                                              // 0x001dc2fc: lw $v1, 0xb0($sp)
     if (v1 != 0) goto label_0x1dc334;                           // 0x001dc300: bnez $v1, 0x1dc334
@@ -121,12 +121,12 @@ label_0x1dc3c0:
     goto label_0x1dc410;                                        // 0x001dc3ec: b 0x1dc410
     g_0021fcf8 = v1;  // Global at 0x0021fcf8                   // 0x001dc3f0: sw $v1, -0x308($s1)
 label_0x1dc3f4:
-    func_00116598();  // 0x116508                                // 0x001dc3f4: jal 0x116508
+    func_00116508();  // 116508                                // 0x001dc3f4: jal 0x116508
     a0 = a0 + -0x7e20;                                          // 0x001dc3f8: addiu $a0, $a0, -0x7e20
     goto label_0x1dc410;                                        // 0x001dc3fc: b 0x1dc410
     v0 = -1;                                                    // 0x001dc400: addiu $v0, $zero, -1
 label_0x1dc404:
-    func_00114e90();  // 0x114e28                                // 0x001dc404: jal 0x114e28
+    func_00114e28();  // 114e28                                // 0x001dc404: jal 0x114e28
     a0 = 3;                                                     // 0x001dc408: addiu $a0, $zero, 3
 label_0x1dc410:
     return;                                                     // 0x001dc420: jr $ra

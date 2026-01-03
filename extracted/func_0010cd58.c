@@ -28,10 +28,10 @@ void func_0010cd58() {
     local_14 = t2;                                              // 0x0010cda8: sw $t2, 0x14($sp)
     local_0 = t3;                                               // 0x0010cdac: sw $t3, 0($sp)
     local_8 = t2;                                               // 0x0010cdb0: sw $t2, 8($sp)
-    func_0010ce88();  // 0x10ce10                                // 0x0010cdb4: jal 0x10ce10
+    func_0010ce10();  // 10ce10                                // 0x0010cdb4: jal 0x10ce10
     local_18 = 0;                                               // 0x0010cdb8: sw $zero, 0x18($sp)
     if (s1 < 0) goto label_0x10cdd8;                            // 0x0010cdc0: bltz $s1, 0x10cdd8
-    func_001051d0();  // 0x1050b8                                // 0x0010cdc8: jal 0x1050b8
+    func_001050b8();  // 1050b8                                // 0x0010cdc8: jal 0x1050b8
     /* nop */                                                   // 0x0010cdcc: nop 
     v1 = -1;                                                    // 0x0010cdd0: addiu $v1, $zero, -1
     if (v0 != 0) s1 = v1;                                       // 0x0010cdd4: movn $s1, $v1, $v0

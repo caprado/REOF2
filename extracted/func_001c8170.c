@@ -8,14 +8,14 @@ void func_001c8170() {
     
     sp = sp + -0x30;                                            // 0x001c8170: addiu $sp, $sp, -0x30
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001c8178: addu.qb $zero, $sp, $s1
-    func_001c7780();  // 0x1c7770                                // 0x001c8180: jal 0x1c7770
+    func_001c7770();  // 1c7770                                // 0x001c8180: jal 0x1c7770
     a0 = 0x25;                                                  // 0x001c8188: addiu $a0, $zero, 0x25
     a1 = 0x20;                                                  // 0x001c818c: addiu $a1, $zero, 0x20
-    func_001c7670();  // 0x1c75b0                                // 0x001c8190: jal 0x1c75b0
+    func_001c75b0();  // 1c75b0                                // 0x001c8190: jal 0x1c75b0
     a2 = 0x4c;                                                  // 0x001c8194: addiu $a2, $zero, 0x4c
     if (s0 >= 0) goto label_0x1c81b8;                           // 0x001c81a0: bgez $s0, 0x1c81b8
     /* nop */                                                   // 0x001c81a4: nop 
-    func_001c7790();  // 0x1c7780                                // 0x001c81a8: jal 0x1c7780
+    func_001c7780();  // 1c7780                                // 0x001c81a8: jal 0x1c7780
     /* nop */                                                   // 0x001c81ac: nop 
     goto label_0x1c8220;                                        // 0x001c81b0: b 0x1c8220
 label_0x1c81b8:
@@ -42,7 +42,7 @@ label_0x1c81b8:
     FPU_F0 = *(float*)((v0) + 0x28);  // Load float             // 0x001c8208: lwc1 $f0, 0x28($v0)
     *(float*)((s1) + 0x20) = FPU_F2;  // Store float            // 0x001c820c: swc1 $f2, 0x20($s1)
     *(float*)((s1) + 0x24) = FPU_F1;  // Store float            // 0x001c8210: swc1 $f1, 0x24($s1)
-    func_001c7790();  // 0x1c7780                                // 0x001c8214: jal 0x1c7780
+    func_001c7780();  // 1c7780                                // 0x001c8214: jal 0x1c7780
     *(float*)((s1) + 0x28) = FPU_F0;  // Store float            // 0x001c8218: swc1 $f0, 0x28($s1)
 label_0x1c8220:
     /* FPU: aver_u.h $w0, $w0, $w17 */                          // 0x001c8224: aver_u.h $w0, $w0, $w17

@@ -55,7 +55,7 @@ label_0x146dc0:
 label_0x146e40:
     s1 = s0 + 0x5a8;                                            // 0x00146e40: addiu $s1, $s0, 0x5a8
 label_0x146e44:
-    func_0011d378();  // 0x11d320                                // 0x00146e44: jal 0x11d320
+    func_0011d320();  // 11d320                                // 0x00146e44: jal 0x11d320
     /* nop */                                                   // 0x00146e48: nop 
     /* memory sync */                                           // 0x00146e4c: sync 
     a2 = *(int32_t*)((s0) + 0x828);                             // 0x00146e50: lw $a2, 0x828($s0)

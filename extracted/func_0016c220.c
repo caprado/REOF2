@@ -12,7 +12,7 @@ void func_0016c220() {
     v1 = ~(0 | s0);                                             // 0x0016c238: nor $v1, $zero, $s0
     if (v1 == 0) s0 = v0;                                       // 0x0016c23c: movz $s0, $v0, $v1
     a1 = (v0 < s0) ? 1 : 0;                                     // 0x0016c240: slt $a1, $v0, $s0
-    func_001702f0();  // 0x170250                                // 0x0016c244: jal 0x170250
+    func_00170250();  // 170250                                // 0x0016c244: jal 0x170250
     if (a1 != 0) s0 = v0;                                       // 0x0016c248: movn $s0, $v0, $a1
     v0 = (v0 < s0) ? 1 : 0;                                     // 0x0016c24c: slt $v0, $v0, $s0
     v0 = ((unsigned)v0 < (unsigned)1) ? 1 : 0;                  // 0x0016c258: sltiu $v0, $v0, 1

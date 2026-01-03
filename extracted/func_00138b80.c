@@ -23,7 +23,7 @@ label_0x138bbc:
     a1 = 0x22 << 16;                                            // 0x00138bc0: lui $a1, 0x22
     s0 = s0 + 0x2a24;                                           // 0x00138bc4: addiu $s0, $s0, 0x2a24
     a1 = &str_002251d0;  // "eewk is not alignment 64 byte\n"   // 0x00138bc8: addiu $a1, $a1, 0x51d0
-    func_0010a570();  // 0x10a4d8                                // 0x00138bcc: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x00138bcc: jal 0x10a4d8
     a2 = g_00202a24;  // Global at 0x00202a24                   // 0x00138bd0: lw $a2, 0($s0)
     v1 = g_00202a24;  // Global at 0x00202a24                   // 0x00138bd4: lw $v1, 0($s0)
     v1 = v1 + 1;                                                // 0x00138bdc: addiu $v1, $v1, 1

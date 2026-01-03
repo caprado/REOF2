@@ -10,7 +10,7 @@ void func_0011eebc() {
     /* nop */                                                   // 0x0011eec4: nop 
     /* nop */                                                   // 0x0011eec8: nop 
     /* FPU: div.s $f12, $f0, $f12 */                            // 0x0011eecc: div.s $f12, $f0, $f12
-    func_00111418();  // 0x1112f0                                // 0x0011eed0: jal 0x1112f0
+    func_001112f0();  // 1112f0                                // 0x0011eed0: jal 0x1112f0
     /* nop */                                                   // 0x0011eed4: nop 
     return;                                                     // 0x0011eedc: jr $ra
     sp = sp + 0x10;                                             // 0x0011eee0: addiu $sp, $sp, 0x10

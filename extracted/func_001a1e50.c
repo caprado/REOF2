@@ -8,12 +8,12 @@ void func_001a1e50() {
     
     sp = sp + -0x40;                                            // 0x001a1e50: addiu $sp, $sp, -0x40
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001a1e5c: addu.qb $zero, $sp, $s1
-    func_001a2740();  // 0x1a2720                                // 0x001a1e70: jal 0x1a2720
+    func_001a2720();  // 1a2720                                // 0x001a1e70: jal 0x1a2720
     v1 = (v0 < s2) ? 1 : 0;                                     // 0x001a1e78: slt $v1, $v0, $s2
     if (v1 != 0) goto label_0x1a1f08;                           // 0x001a1e7c: bnez $v1, 0x1a1f08
-    func_001a1a60();  // 0x1a1a10                                // 0x001a1e84: jal 0x1a1a10
+    func_001a1a10();  // 1a1a10                                // 0x001a1e84: jal 0x1a1a10
     if (v0 == 0) goto label_0x1a1f08;                           // 0x001a1e8c: beqz $v0, 0x1a1f08
-    func_001a1a10();  // 0x1a1a00                                // 0x001a1e94: jal 0x1a1a00
+    func_001a1a00();  // 1a1a00                                // 0x001a1e94: jal 0x1a1a00
     if (v0 == 0) goto label_0x1a1f08;                           // 0x001a1e9c: beqz $v0, 0x1a1f08
     /* nop */                                                   // 0x001a1ea0: nop 
     a0 = *(uint8_t*)(v0);                                       // 0x001a1ea4: lbu $a0, 0($v0)
@@ -41,7 +41,7 @@ label_0x1a1ed8:
     /* nop */                                                   // 0x001a1eec: nop 
     goto label_0x1a1f0c;                                        // 0x001a1ef0: b 0x1a1f0c
 label_0x1a1ef8:
-    func_001a20e0();  // 0x1a1f20                                // 0x001a1f00: jal 0x1a1f20
+    func_001a1f20();  // 1a1f20                                // 0x001a1f00: jal 0x1a1f20
 label_0x1a1f08:
 label_0x1a1f0c:
     /* FPU: ld.b $w0, -0x4e($zero) */                           // 0x001a1f0c: ld.b $w0, -0x4e($zero)
