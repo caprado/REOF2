@@ -88,4 +88,6 @@ jobs:
 
         git add .github/data/progress.json .github/data/progress_report.txt .github/data/badge.svg
         git diff --staged --quiet || git commit -m "Update decompilation progress data [skip ci]"
-        git push
+
+        # Push to progress-data branch instead of main
+        git push origin HEAD:refs/heads/progress-data --force
