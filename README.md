@@ -22,18 +22,9 @@ The game binary has been extracted into raw C code using decompilation tools. Cu
 ```
 src/
 ├── core/
-│   ├── entry.c
-│   ├── thread.c
-│   └── memory.c
 ├── io/
-│   ├── cdrom.c
-│   └── filesystem.c
 ├── game/
-│   ├── state.c
-│   └── init.c
 ├── platform/
-│   ├── ps2/
-│   └── windows/
 └── include/
 ```
 
@@ -62,6 +53,10 @@ src/
 We use a JSDoc-style tagging system to track which functions have been categorized and refactored.
 
 **Quick example:**
+
+### Original function
+Do not edit other then to tag
+
 ```c
 /** @category: core/entry @status: complete @author: yourname */
 void func_00100230() {
@@ -69,21 +64,29 @@ void func_00100230() {
 }
 ```
 
-### Running Progress Tracker Locally
+### Refactored Code
+```c
+/** 
+ * @category core/entry
+ * @status complete
+ * @author caprado
+ * @original func_00100230
+ * @address 0x00100230
+ * @description Main entry point that initializes the system and returns a status code
+ * @windows_compatibility high
+ */
+int main_entry_point(void) {
+    int result;
+    
+    // Call system initialization function
+    result = initialize_system();
 
-```bash
-# View current progress
-python tools/track_progress.py
-
-# Generate detailed reports
-python tools/track_progress.py --json progress.json --report progress.txt
-
-# Generate badge
-python tools/generate_badge.py --json progress.json --output badge.svg
+    return (result > 0) ? 1 : 0;
+}
 ```
 
 ## Getting Involved
-This project is open-source, and welcome contributions from anyone interested in video games, reverse engineering, or software preservation. If you'd like to contribute or have suggestions, please reach out via our project repository.
+This project is open-source, and welcome contributions from anyone interested in video games, reverse engineering, or software preservation. If you'd like to contribute or have suggestions, please reach out.
 
 ## Disclaimer
 This project is for educational and preservation purposes only. It does not endorse piracy, and participants are advised to ensure they own legal copies of the game and comply with all relevant copyright laws.
