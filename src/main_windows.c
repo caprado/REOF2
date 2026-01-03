@@ -1,7 +1,7 @@
 /**
  * @file main_windows.c
  * @category platform/windows
- * @status complete
+ * @status in_progress
  * @author caprado
  * @description Clean Windows entry point for REOF2 port
  *
@@ -10,18 +10,20 @@
  *   → OpenGL Initialization (window, context, textures)
  *     → Engine Initialization (engine_startup.c)
  *       → GameData Structure Init (g_game global)
- *         → Text System Allocation
- *           → Demo Mode State Machine
- *             → Main Loop
- *               → Menu Controller → processMenuController()
- *                 → Game State Manager → processGameStateManager()
+ *         → Main Loop
+ *           → func_001b9e60 (Menu Controller - TO BE REFACTORED)
+ *
+ * ENTRY POINT FOR REFACTORING:
+ * Start with func_001b9e60 and follow BFS through its callees:
+ *   - func_001b9ef0 (0x1b9ef0) - Menu init
+ *   - func_001b9f10 (0x1b9f10) - Menu state update
+ *   - func_001ba0f0 (0x1ba0f0) - Game state manager
  *
  * KEY CHANGES FROM PS2:
  * - Removed all PS2-specific initialization (hardware registers, VSync, DMA, etc.)
  * - Replaced hardcoded memory addresses with g_game global struct
  * - Unified initialization via engine_startup.c
  * - Uses pure OpenGL + Windows APIs
- * - No malloc/free for GameData (static global)
  */
 
 #include <stdio.h>
@@ -34,11 +36,11 @@
 #include "graphics/texture_slot.h"
 #include "game/game_data.h"
 #include "game/engine_startup.h"
-#include "game/demo_state.h"
-#include "game/demo_loop.h"
 
-// Global demo state context
-static DemoStateContext g_demoContext = {0};
+// Entry point stub - to be refactored from extracted/func_001b9e60.c
+// This is the main menu controller that drives the game
+extern void func_001b9e60(void* context);
+
 static bool g_isRunning = false;
 
 /**
@@ -108,12 +110,8 @@ bool initializeGameEngine(void) {
     }
     printf("[INIT]   ✓ Game engine initialized (g_game struct ready)\n");
 
-    // Initialize demo state context
-    g_demoContext.currentState = DEMO_STATE_INIT;  // Start in DEMO_STATE_INIT
-    g_demoContext.timerCounter = 0;
-    printf("[INIT]   ✓ Demo state machine initialized (state=DEMO_STATE_INIT)\n");
-
     printf("[INIT] Game engine ready\n");
+    printf("[INIT] Entry point: func_001b9e60 (to be refactored)\n");
     return true;
 }
 
@@ -128,17 +126,16 @@ bool mainMenuLoop(void) {
         return false;
     }
 
-    // TODO classify these and implement properly:
-    // processMenuController(); // func_001b9e60() - Main entry point - True main entry to the ELF
-    // Uncomment when stubs are properly implemented
-    // updateDemoLoop();
-    // processDemoStateMachine(&g_demoContext);
+    // TODO: Call the main entry point once refactored
+    // func_001b9e60(NULL);  // Main menu controller - TO BE REFACTORED
+    //
+    // Call tree from func_001b9e60:
+    //   → func_001b9ef0 (0x1b9ef0) - Initialize menu system
+    //   → func_001b9f10 (0x1b9f10) - Update menu state
+    //   → func_001ba0f0 (0x1ba0f0) - Process game state manager (if flag == 1)
 
     // Clear screen to dark blue (to show window is working)
     opengl_clear(0.1f, 0.1f, 0.3f, 1.0f);
-
-    // TODO: Render demo content here
-    // Currently just shows a blue screen
 
     // Swap buffers
     opengl_swap_buffers();
@@ -242,8 +239,7 @@ int main(int argc, char* argv[]) {
 
         // Print status every 60 frames (~1 second)
         if (frameCount % 60 == 0) {
-            printf("[MENU] Frame %d | State: %d | Timer: %d\n",
-                   frameCount, g_demoContext.currentState, g_demoContext.timerCounter);
+            printf("[MENU] Frame %d\n", frameCount);
         }
 
         // Frame timing: ~60fps
@@ -254,7 +250,6 @@ int main(int argc, char* argv[]) {
     printf("\n================================================\n");
     printf("MAIN MENU ENDED\n");
     printf("Total frames: %d\n", frameCount);
-    printf("Final state: %d\n", g_demoContext.currentState);
     printf("================================================\n\n");
 
     shutdownSystems();
