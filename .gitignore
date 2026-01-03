@@ -44,3 +44,4 @@ badge.svg
 # OS
 Thumbs.db
 assets/
+.local_docs/
