@@ -90,4 +90,5 @@ jobs:
         git add .github/data/progress.json .github/data/progress_report.txt .github/data/badge.svg
         git diff --staged --quiet || git commit -m "Update decompilation progress data [skip ci]"
 
+        git pull --rebase
         git push
