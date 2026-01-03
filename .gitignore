@@ -44,3 +44,11 @@ badge.svg
 # OS
 Thumbs.db
 assets/
+.local_docs/BUILD.md
+.local_docs/CLAUDE.md
+.local_docs/CONVERSION_GUIDE.md
+.local_docs/DEMO_MODE_REFACTOR.md
+.local_docs/FUNCTION_ANALYSIS.md
+.local_docs/MAIN_MENU_ANALYSIS.md
+.local_docs/REFACTORING_PLAN.md
+.local_docs/STATE_MACHINE_REFACTOR.md
