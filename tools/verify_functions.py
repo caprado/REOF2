@@ -97,8 +97,9 @@ def find_extracted_function(extracted_dir, func_name):
                 with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
                     content = f.read()
 
-                # Look for this function definition
-                pattern = rf'^\s*(?:static\s+)?(?:inline\s+)?[\w\*]+\s+{re.escape(func_name)}\s*\('
+                # Look for this function definition (exclude return statements and other keywords)
+                # Must have a type that's not a C keyword like return, if, while, etc.
+                pattern = rf'^\s*(?:static\s+)?(?:inline\s+)?(?!return\b|if\b|while\b|for\b|switch\b)[\w\*]+\s+{re.escape(func_name)}\s*\('
                 if re.search(pattern, content, re.MULTILINE):
                     return filepath, content
 
@@ -110,8 +111,8 @@ def find_extracted_function(extracted_dir, func_name):
 
 def extract_function_with_doc(content, func_name):
     """Extract a function and its preceding doc block from content."""
-    # Find the function definition
-    func_pattern = rf'^\s*(?:static\s+)?(?:inline\s+)?[\w\*]+\s+{re.escape(func_name)}\s*\([^)]*\)\s*{{'
+    # Find the function definition (exclude keywords like return, if, while, etc.)
+    func_pattern = rf'^\s*(?:static\s+)?(?:inline\s+)?(?!return\b|if\b|while\b|for\b|switch\b)[\w\*]+\s+{re.escape(func_name)}\s*\([^)]*\)\s*{{'
     func_match = re.search(func_pattern, content, re.MULTILINE)
 
     if not func_match:
@@ -481,8 +482,8 @@ def main():
                     with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
                         content = f.read()
 
-                    # Find all functions
-                    pattern = r'^\s*(?:static\s+)?(?:inline\s+)?[\w\*]+\s+(\w+)\s*\('
+                    # Find all functions (exclude keywords like return, if, while, etc.)
+                    pattern = r'^\s*(?:static\s+)?(?:inline\s+)?(?!return\b|if\b|while\b|for\b|switch\b)[\w\*]+\s+(\w+)\s*\('
                     for match in re.finditer(pattern, content, re.MULTILINE):
                         func_name = match.group(1)
                         h = get_function_body_hash(content, func_name)
