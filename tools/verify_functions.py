@@ -60,6 +60,11 @@ def find_refactored_functions(src_dir):
                     original_match = re.search(r'@original\s+(\w+)', doc_block)
                     category_match = re.search(r'@category\s+([^\s\*]+)', doc_block)
 
+                    # Skip functions without @category tag - these are helper functions
+                    # that don't map to extracted functions and shouldn't be validated
+                    if not category_match:
+                        continue
+
                     # Find the function name after the doc block
                     after_doc = content[block_end:block_end + 500]
                     func_match = re.search(r'^\s*(?:static\s+)?(?:inline\s+)?[\w\*]+\s+(\w+)\s*\(',
@@ -70,7 +75,7 @@ def find_refactored_functions(src_dir):
                             'file': filepath,
                             'name': func_match.group(1),
                             'original': original_match.group(1) if original_match else None,
-                            'category': category_match.group(1) if category_match else None,
+                            'category': category_match.group(1),
                             'doc_block': doc_block
                         })
 

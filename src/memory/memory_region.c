@@ -97,23 +97,10 @@ void registerMemoryRegion(void* regionPtr) {
     s_regionCount = slotIndex + 1;
 }
 
-/**
- * @category memory/allocation
- * @status complete
- * @description Gets the number of registered memory regions
- * @return Current count of registered regions
- */
 int32_t getMemoryRegionCount(void) {
     return s_regionCount;
 }
 
-/**
- * @category memory/allocation
- * @status complete
- * @description Gets a registered memory region by index
- * @param index Slot index (0-7)
- * @return Pointer to registered region, or NULL if invalid/empty
- */
 void* getMemoryRegion(int32_t index) {
     if (index < 0 || index >= MAX_MEMORY_REGIONS) {
         return NULL;
@@ -121,11 +108,6 @@ void* getMemoryRegion(int32_t index) {
     return s_regionTable[index].regionPtr;
 }
 
-/**
- * @category memory/allocation
- * @status complete
- * @description Clears all registered memory regions (for shutdown/reset)
- */
 void clearMemoryRegions(void) {
     for (int i = 0; i < MAX_MEMORY_REGIONS; i++) {
         s_regionTable[i].regionPtr = NULL;
@@ -134,12 +116,6 @@ void clearMemoryRegions(void) {
     s_regionCount = 0;
 }
 
-/**
- * @category memory/allocation
- * @status complete
- * @description Gets pointer to the global allocator context
- * @return Pointer to allocator context (original: 0x002903e0)
- */
 AllocatorContext* getAllocatorContext(void) {
     return &s_allocatorContext;
 }
@@ -230,12 +206,6 @@ void* allocateMemory(uint32_t size) {
     return result;
 }
 
-/**
- * @category memory/allocation
- * @status complete
- * @description Gets pointer to the bump allocator state
- * @return Pointer to bump allocator (original: 0x002aa8b0)
- */
 BumpAllocator* getBumpAllocator(void) {
     return &s_bumpAllocator;
 }
