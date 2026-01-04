@@ -29,6 +29,8 @@ static uint8_t s_resourceSubsystemsReady = 0;
  * @original func_001acfe0
  * @address 0x001acfe0
  * @description Clears I/O state buffer and sets up I/O buffer pointer from secondaryBuffer.
+ * @windows_compatibility high
+ * @author caprado
  */
 static void initializeIOBuffers(void) {
     // Original: memset(0x2a5240, 0, 0x1c8)
@@ -47,6 +49,8 @@ static void initializeIOBuffers(void) {
  * @address 0x001ac100
  * @description Initializes I/O subsystem. On PS2, creates semaphores and I/O threads.
  *              On Windows, only the buffer initialization is needed.
+ * @windows_compatibility high
+ * @author caprado
  */
 static void initializeIOSubsystem(void) {
     // Original: func_001a6d80 - PS2 semaphore/IOP init - not needed on Windows
@@ -70,6 +74,8 @@ static void initializeIOSubsystem(void) {
  *              initializes the PS2 EE subsystem, GSC (Graphics Synthesizer Controller),
  *              and CRI Middleware (Sofdec/ADX). For Windows, only buffer init is needed.
  *              Graphics/audio init will be handled separately with Windows APIs.
+ * @windows_compatibility high
+ * @author caprado
  */
 static void initializeResourceStateBuffer(void) {
     // Original: v0 = 0x33 << 16 + -0x1f10 = 0x32e0f0
@@ -95,7 +101,8 @@ static void initializeResourceStateBuffer(void) {
  * @description Initializes resource subsystems. On PS2, this sets up DVD filesystem,
  *              threading, and loads initial files. On Windows, only buffer initialization
  *              and the ready flag are needed.
- * @windows_compatibility low - Most sub-functions are PS2-specific
+ * @windows_compatibility low
+ * @author caprado
  */
 static void initializeResourceSubsystems(void) {
     // Original: jal 0x1a82b0 - DVD filesystem setup ("Setup DVD file system.\n")
@@ -128,6 +135,9 @@ static void initializeResourceSubsystems(void) {
  * @status complete
  * @original func_001b7f80
  * @address 0x001b7f80
+ * @description Stores pointer table address to resource entry base.
+ * @windows_compatibility high
+ * @author caprado
  */
 static void initializePointerTable(void) {
     // Original: v1 = 0x220000 + -0x36b0 = 0x21c950
@@ -140,6 +150,9 @@ static void initializePointerTable(void) {
  * @status complete
  * @original func_001ba960
  * @address 0x001ba960
+ * @description Initializes secondary game subsystems including I/O, resources, and state.
+ * @windows_compatibility high
+ * @author caprado
  */
 void initializeSecondarySubsystems(void) {
     // Original: jal 0x1ac150 -> jumps to 0x1ac100

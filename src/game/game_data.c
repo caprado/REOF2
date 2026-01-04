@@ -2,32 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-/**
- * @category game/state
- * @status complete
- * @original N/A (new abstraction)
- * @description Central game data structure replacing PS2 hardcoded addresses.
- *
- * ORIGINAL PS2 BEHAVIOR:
- * Used fixed RAM addresses and GP-relative addressing for all game state:
- * - GP-relative: gp-0x638c, gp-0x6390, gp-0x6384, etc.
- * - Absolute: 0x00307f91, 0x00313884, 0x003136e0, etc.
- *
- * WINDOWS REPLACEMENT:
- * Single unified GameData structure accessed via g_game global.
- * No fixed memory layout or GP register required.
- *
- * @windows_compatibility high
- * @author caprado
- */
-
-// Global game data instance (replaces all scattered PS2 addresses)
 GameData g_game = {0};
 
-/**
- * @brief Initialize game data structure
- * @description Sets all fields to safe initial values
- */
 void initializeGameData(void) {
     // Zero out the structure
     memset(&g_game, 0, sizeof(GameData));
@@ -76,10 +52,6 @@ void initializeGameData(void) {
     // allocateTextArray(32);
 }
 
-/**
- * @brief Shutdown game data and free resources
- * @description Cleans up any dynamically allocated resources
- */
 void shutdownGameData(void) {
     // Free text array and all strings
     if (g_game.textArray != NULL) {

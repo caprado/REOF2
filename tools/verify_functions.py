@@ -161,18 +161,19 @@ def check_extracted_tag(doc_block):
     """
     Check if extracted function has proper minimal tag.
     Expected format: /** @category [category] @status complete @author caprado */
+    Also accepts format with colons: /** @category: [category] @status: complete @author: caprado */
     """
     if not doc_block:
         return False, "No documentation tag found", None
 
-    # Extract category
-    category_match = re.search(r'@category\s+(\S+)', doc_block)
+    # Extract category (accept with or without colon)
+    category_match = re.search(r'@category:?\s+(\S+)', doc_block)
     category = category_match.group(1) if category_match else None
 
-    # Check for required components
+    # Check for required components (accept with or without colon)
     has_category = bool(category_match)
-    has_status = bool(re.search(r'@status\s+complete', doc_block))
-    has_author = bool(re.search(r'@author\s+\S+', doc_block))
+    has_status = bool(re.search(r'@status:?\s+complete', doc_block))
+    has_author = bool(re.search(r'@author:?\s+\S+', doc_block))
 
     if not has_category:
         return False, "Missing @category tag", None

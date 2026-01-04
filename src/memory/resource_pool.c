@@ -43,14 +43,6 @@ int16_t allocateResourceSlot(int32_t size) {
     return s_resourceSlots[slotIndex].startOffset;
 }
 
-/**
- * @category memory/allocation
- * @status complete
- * @original helper
- * @description Initializes the resource pool to empty state.
- * @windows_compatibility high
- * @author caprado
- */
 void initializeResourcePool(void) {
     for (int i = 0; i < RESOURCE_POOL_MAX_SLOTS; i++) {
         s_resourceSlots[i].active = 0;

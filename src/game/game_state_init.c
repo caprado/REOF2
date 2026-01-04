@@ -31,6 +31,9 @@ static const uint8_t s_bitmaskSource3[] = {
  * @status complete
  * @original func_001afe50
  * @address 0x001afe50
+ * @description Sets bits in a bitmask array from source byte indices.
+ * @windows_compatibility high
+ * @author caprado
  */
 void setBitmaskFromData(const uint8_t* source, uint32_t* dest, int32_t count) {
     int32_t i = 0;
@@ -49,6 +52,9 @@ void setBitmaskFromData(const uint8_t* source, uint32_t* dest, int32_t count) {
  * @status complete
  * @original func_001aff00
  * @address 0x001aff00
+ * @description Initializes three bitmask arrays from static source data.
+ * @windows_compatibility high
+ * @author caprado
  */
 void initializeBitmasks(void) {
     setBitmaskFromData(s_bitmaskSource1, g_game.bitmask1, 0x1f);
@@ -61,6 +67,9 @@ void initializeBitmasks(void) {
  * @status complete
  * @original func_001ae830
  * @address 0x001ae830
+ * @description Clears game state buffer, sets initial values, and initializes bitmasks.
+ * @windows_compatibility high
+ * @author caprado
  */
 void initializeGameState(void) {
     // Original: a0 = 0x311d30, a1 = 0 (move $a1, $zero), a2 = 0x1474

@@ -98,16 +98,6 @@ void callAllFunctionPointers(void) {
     }
 }
 
-/**
- * @category utility/array
- * @status complete
- * @author caprado
- * @original helper
- * @address N/A
- * @description Adds an entry to the global pointer array.
- *              This is a helper for registering function pointers.
- * @windows_compatibility high
- */
 void addToPointerArray(uintptr_t addressToAdd) {
     // Check if we have space
     if (g_arrayCount < MAX_ARRAY_ENTRIES) {
@@ -116,28 +106,10 @@ void addToPointerArray(uintptr_t addressToAdd) {
     }
 }
 
-/**
- * @category utility/array
- * @status complete
- * @author caprado
- * @original helper
- * @address N/A
- * @description Gets current count of entries in pointer array.
- * @windows_compatibility high
- */
 int32_t getPointerArrayCount(void) {
     return g_arrayCount;
 }
 
-/**
- * @category utility/array
- * @status complete
- * @author caprado
- * @original helper
- * @address N/A
- * @description Gets pointer at specified index in array.
- * @windows_compatibility high
- */
 uintptr_t getPointerArrayEntry(int32_t index) {
     if (index >= 0 && index < g_arrayCount) {
         return g_pointerArray[index];
