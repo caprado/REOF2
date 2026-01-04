@@ -1,3 +1,4 @@
+#include "array.h"
 #include <stdint.h>
 #include <stdbool.h>
 
@@ -5,6 +6,26 @@
 #define MAX_ARRAY_ENTRIES 256
 static uintptr_t g_pointerArray[MAX_ARRAY_ENTRIES];  // Original: g_002aa890 at 0x2aa890
 static int32_t g_arrayCount = 0;                      // Original: gp-0x63b4
+static int32_t g_arrayUnused = 0;                     // Original: gp-0x63b8 (written but never read)
+
+/**
+ * @category utility/array
+ * @status complete
+ * @original func_001af240
+ * @address 0x001af240
+ * @description Clears the pointer array and resets count to zero.
+ *              Zeroes entries 0-7 and resets both count variables.
+ * @windows_compatibility high
+ * @author caprado
+ */
+void clearPointerArray(void) {
+    g_arrayCount = 0;
+    g_arrayUnused = 0;
+
+    for (int32_t i = 7; i >= 0; i--) {
+        g_pointerArray[i] = 0;
+    }
+}
 
 /**
  * @category utility/array

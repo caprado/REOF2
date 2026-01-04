@@ -10,14 +10,11 @@
  *   → OpenGL Initialization (window, context, textures)
  *     → Engine Initialization (engine_startup.c)
  *       → GameData Structure Init (g_game global)
- *         → Main Loop
- *           → func_001b9e60 (Menu Controller - TO BE REFACTORED)
- *
- * ENTRY POINT FOR REFACTORING:
- * Start with func_001b9e60 and follow BFS through its callees:
- *   - func_001b9ef0 (0x1b9ef0) - Menu init
- *   - func_001b9f10 (0x1b9f10) - Menu state update
- *   - func_001ba0f0 (0x1ba0f0) - Game state manager
+ *         → Main Loop (each frame):
+ *           1. updateGameStateManager() - State management & init (func_001ba1d0)
+ *           2. func_001ba310() - Update all subsystems
+ *           3. func_001ba360() - Render all subsystems
+ *           4. processMenuController() - Menu state machine (func_001b9e60)
  *
  * KEY CHANGES FROM PS2:
  * - Removed all PS2-specific initialization (hardware registers, VSync, DMA, etc.)
@@ -30,16 +27,22 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <stdint.h>
+#include <string.h>
 #include <windows.h>
 #include "platform/windows/opengl_renderer.h"
 #include "game/texture_manager.h"
 #include "graphics/texture_slot.h"
 #include "game/game_data.h"
 #include "game/engine_startup.h"
+#include "game/menu_controller.h"
+#include "game/game_state_manager.h"
 
-// Entry point stub - to be refactored from extracted/func_001b9e60.c
-// This is the main menu controller that drives the game
-extern void func_001b9e60(void* context);
+// Forward declarations for unrefactored functions
+extern void func_001ba310(void);  // Update game subsystems
+extern void func_001ba360(void);  // Render game frame
+
+// Menu controller context - passed to processMenuController each frame
+static MenuControllerContext g_menuContext;
 
 static bool g_isRunning = false;
 
@@ -111,28 +114,35 @@ bool initializeGameEngine(void) {
     printf("[INIT]   ✓ Game engine initialized (g_game struct ready)\n");
 
     printf("[INIT] Game engine ready\n");
-    printf("[INIT] Entry point: func_001b9e60 (to be refactored)\n");
+    printf("[INIT] Entry point: processMenuController (menu_controller.c)\n");
     return true;
 }
 
 /**
- * @brief Main menu loop - processes one frame
- * @description Handles main menu UI and idle demo playback
+ * @brief Main game loop - processes one frame
  * @return true to continue, false to exit
  */
-bool mainMenuLoop(void) {
+bool mainGameLoop(void) {
     // Process window events (ESC to quit)
     if (!opengl_process_events()) {
         return false;
     }
 
-    // TODO: Call the main entry point once refactored
-    // func_001b9e60(NULL);  // Main menu controller - TO BE REFACTORED
-    //
-    // Call tree from func_001b9e60:
-    //   → func_001b9ef0 (0x1b9ef0) - Initialize menu system
-    //   → func_001b9f10 (0x1b9f10) - Update menu state
-    //   → func_001ba0f0 (0x1ba0f0) - Process game state manager (if flag == 1)
+    // === GAME LOOP - Call all four core functions each frame ===
+
+    // 1. Game state management (func_001ba1d0 -> updateGameStateManager)
+    updateGameStateManager();
+
+    // 2. Update all game subsystems (func_001ba310)
+    func_001ba310();
+
+    // 3. Render game frame (func_001ba360)
+    func_001ba360();
+
+    // 4. Menu controller state machine (func_001b9e60)
+    processMenuController(&g_menuContext);
+
+    // === END GAME LOOP ===
 
     // Clear screen to dark blue (to show window is working)
     opengl_clear(0.1f, 0.1f, 0.3f, 1.0f);
@@ -221,7 +231,11 @@ int main(int argc, char* argv[]) {
     printf("[DEBUG] Game engine initialized successfully\n");
     fflush(stdout);
 
-    // Step 3: Main menu loop
+    // Step 3: Initialize menu controller context
+    memset(&g_menuContext, 0, sizeof(g_menuContext));
+    printf("[INIT] Menu context initialized (state=0)\n");
+
+    // Step 4: Main menu loop
     printf("\n================================================\n");
     printf("ENTERING MAIN MENU\n");
     printf("Press ESC to exit\n");
@@ -231,7 +245,7 @@ int main(int argc, char* argv[]) {
     int frameCount = 0;
 
     while (g_isRunning) {
-        if (!mainMenuLoop()) {
+        if (!mainGameLoop()) {
             g_isRunning = false;
         }
 
@@ -246,7 +260,7 @@ int main(int argc, char* argv[]) {
         Sleep(16);
     }
 
-    // Step 4: Cleanup
+    // Step 5: Cleanup
     printf("\n================================================\n");
     printf("MAIN MENU ENDED\n");
     printf("Total frames: %d\n", frameCount);

@@ -3,11 +3,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-// Entry point - to be refactored
-// func_001b9e60: Main menu controller entry point
-// Calls: func_001b9ef0 (0x1b9ef0), func_001b9f10 (0x1b9f10), func_001ba0f0 (0x1ba0f0)
-extern void func_001b9e60(void* context);
-
 /**
  * @category game/init
  * @status complete
@@ -83,14 +78,6 @@ bool initializeEngine(void) {
     if (!initializeResourceSystem()) {
         return false;
     }
-
-    // Step 4: Graphics memory system initialization
-    // (Will be called on-demand by checkGraphicsMemoryReady)
-
-    // Step 5: Menu system initialization
-    // Entry point: func_001b9e60 (to be refactored)
-    // For now, this is a stub - uncomment when refactored
-    // func_001b9e60(NULL);
 
     return true;
 }
