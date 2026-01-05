@@ -12,7 +12,7 @@
  *       → GameData Structure Init (g_game global)
  *         → Main Loop (each frame):
  *           1. updateGameStateManager() - State management & init (func_001ba1d0)
- *           2. func_001ba310() - Update all subsystems
+ *           2. updateGameSubsystems() - Update all subsystems (func_001ba310)
  *           3. func_001ba360() - Render all subsystems
  *           4. processMenuController() - Menu state machine (func_001b9e60)
  *
@@ -36,10 +36,10 @@
 #include "game/engine_startup.h"
 #include "game/menu_controller.h"
 #include "game/game_state_manager.h"
+#include "game/frame_update.h"
 
 // Forward declarations for unrefactored functions
-extern void func_001ba310(void);  // Update game subsystems
-extern void func_001ba360(void);  // Render game frame
+extern void func_001ba360(void);  // Render game frame (updateRenderState already in frame_update)
 
 // Menu controller context - passed to processMenuController each frame
 static MenuControllerContext g_menuContext;
@@ -133,8 +133,8 @@ bool mainGameLoop(void) {
     // 1. Game state management (func_001ba1d0 -> updateGameStateManager)
     updateGameStateManager();
 
-    // 2. Update all game subsystems (func_001ba310)
-    func_001ba310();
+    // 2. Update all game subsystems (func_001ba310 -> updateGameSubsystems)
+    updateGameSubsystems();
 
     // 3. Render game frame (func_001ba360)
     func_001ba360();
