@@ -14,7 +14,7 @@ void func_001a1f20() {
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001a1f48: addu.qb $zero, $sp, $s1
     s2 = *(int32_t*)((a2) + 4);                                 // 0x001a1f50: lw $s2, 4($a2)
     *(uint16_t*)((a1) + 2) = s2;                                // 0x001a1f58: sh $s2, 2($a1)
-    func_001899f8();  // 0x1898e0                                // 0x001a1f60: jal 0x1898e0
+    func_001898e0();  // 1898e0                                // 0x001a1f60: jal 0x1898e0
     a1 = s2 << 3;                                               // 0x001a1f64: sll $a1, $s2, 3
     *(uint32_t*)((s5) + 4) = s4;                                // 0x001a1f70: sw $s4, 4($s5)
     goto label_0x1a1f8c;                                        // 0x001a1f74: b 0x1a1f8c
@@ -38,7 +38,7 @@ label_0x1a1fa4:
     /* nop */                                                   // 0x001a1fb4: nop 
     v0 = s0 << 3;                                               // 0x001a1fb8: sll $v0, $s0, 3
     s1 = s4 + v0;                                               // 0x001a1fc0: addu $s1, $s4, $v0
-    func_001a21a0();  // 0x1a20e0                                // 0x001a1fc4: jal 0x1a20e0
+    func_001a20e0();  // 1a20e0                                // 0x001a1fc4: jal 0x1a20e0
     a0 = s6 & 0x1ff;                                            // 0x001a1fcc: andi $a0, $s6, 0x1ff
     v1 = 0x100;                                                 // 0x001a1fd0: addiu $v1, $zero, 0x100
     if (a0 == v1) goto label_0x1a2084;                          // 0x001a1fd4: beq $a0, $v1, 0x1a2084

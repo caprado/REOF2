@@ -19,9 +19,9 @@ void func_0018f530() {
     /* FPU: mov.s $f22, $f12 */                                 // 0x0018f560: mov.s $f22, $f12
     /* FPU: mov.s $f20, $f13 */                                 // 0x0018f564: mov.s $f20, $f13
     /* FPU: mov.s $f21, $f15 */                                 // 0x0018f568: mov.s $f21, $f15
-    thunk_func_00122190();  // 0x191f60                          // 0x0018f56c: jal 0x191f60
+    thunk_func_00191f60();  // 191f60                          // 0x0018f56c: jal 0x191f60
     /* FPU: mov.s $f12, $f14 */                                 // 0x0018f570: mov.s $f12, $f14
-    func_0018fbd0();  // 0x18fba0                                // 0x0018f574: jal 0x18fba0
+    func_0018fba0();  // 18fba0                                // 0x0018f574: jal 0x18fba0
     FPU_F3 = *(float*)((sp) + 0x3c);  // Load float             // 0x0018f57c: lwc1 $f3, 0x3c($sp)
     v1 = 0x4000 << 16;                                          // 0x0018f580: lui $v1, 0x4000
     FPU_F2 = *(float*)((sp) + 0x38);  // Load float             // 0x0018f584: lwc1 $f2, 0x38($sp)

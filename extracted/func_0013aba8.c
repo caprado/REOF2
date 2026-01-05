@@ -29,9 +29,9 @@ void func_0013aba8() {
     sp = sp + -0x10;                                            // 0x0013ac20: addiu $sp, $sp, -0x10
     v0 = 0x20 << 16;                                            // 0x0013ac24: lui $v0, 0x20
     v0 = v0 + 0x4078;                                           // 0x0013ac2c: addiu $v0, $v0, 0x4078
-    func_0013c768();  // 0x13c6d8                                // 0x0013ac34: jal 0x13c6d8
+    func_0013c6d8();  // 13c6d8                                // 0x0013ac34: jal 0x13c6d8
     v1 = g_00204078;  // Global at 0x00204078                   // 0x0013ac38: lw $v1, 0($v0)
-    func_0013c7f0();  // 0x13c768                                // 0x0013ac3c: jal 0x13c768
+    func_0013c768();  // 13c768                                // 0x0013ac3c: jal 0x13c768
     v0 = 0x20 << 16;                                            // 0x0013ac44: lui $v0, 0x20
     v0 = v0 + 0x4088;                                           // 0x0013ac4c: addiu $v0, $v0, 0x4088
     return;                                                     // 0x0013ac50: jr $ra

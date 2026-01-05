@@ -13,7 +13,7 @@ void func_001d9390() {
     /* nop */                                                   // 0x001d93a4: nop 
     v0 = a0 & 0xffff;                                           // 0x001d93a8: andi $v0, $a0, 0xffff
     a1 = 0x2a00;                                                // 0x001d93ac: addiu $a1, $zero, 0x2a00
-    func_001d4c80();  // 0x1d4ab0                                // 0x001d93b0: jal 0x1d4ab0
+    func_001d4ab0();  // 1d4ab0                                // 0x001d93b0: jal 0x1d4ab0
     a0 = v0 << 0x10;                                            // 0x001d93b4: sll $a0, $v0, 0x10
 label_0x1d93b8:
     return;                                                     // 0x001d93bc: jr $ra

@@ -9,9 +9,9 @@ void func_001c6c80() {
     sp = sp + -0x10;                                            // 0x001c6c84: addiu $sp, $sp, -0x10
     a0 = 0x31 << 16;                                            // 0x001c6c88: lui $a0, 0x31
     a0 = a0 + 0x35a0;                                           // 0x001c6c90: addiu $a0, $a0, 0x35a0
-    func_00107b68();  // 0x107ab8                                // 0x001c6c94: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x001c6c94: jal 0x107ab8
     a2 = 0x10;                                                  // 0x001c6c98: addiu $a2, $zero, 0x10
-    func_001ba660();  // 0x1ba590                                // 0x001c6c9c: jal 0x1ba590
+    func_001ba590();  // 1ba590                                // 0x001c6c9c: jal 0x1ba590
     /* nop */                                                   // 0x001c6ca0: nop 
     return;                                                     // 0x001c6ca8: jr $ra
     sp = sp + 0x10;                                             // 0x001c6cac: addiu $sp, $sp, 0x10

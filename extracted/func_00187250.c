@@ -51,7 +51,7 @@ label_0x187338:
     goto label_0x187384;                                        // 0x0018736c: b 0x187384
     v0 = 1;                                                     // 0x00187370: addiu $v0, $zero, 1
 label_0x187374:
-    func_00186e08();  // 0x186dc8                                // 0x0018737c: jal 0x186dc8
+    func_00186dc8();  // 186dc8                                // 0x0018737c: jal 0x186dc8
     a3 = 1;                                                     // 0x00187380: addiu $a3, $zero, 1
 label_0x187384:
     return;                                                     // 0x00187388: jr $ra

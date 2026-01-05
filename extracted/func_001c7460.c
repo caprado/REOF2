@@ -13,7 +13,7 @@ void func_001c7460() {
     /* nop */                                                   // 0x001c747c: nop 
     sp = sp + -0x10;                                            // 0x001c7480: addiu $sp, $sp, -0x10
     at = 0 | 0x8390;                                            // 0x001c7484: ori $at, $zero, 0x8390
-    func_0010af38();  // 0x10ae00                                // 0x001c748c: jal 0x10ae00
+    func_0010ae00();  // 10ae00                                // 0x001c748c: jal 0x10ae00
     a0 = a0 + at;                                               // 0x001c7490: addu $a0, $a0, $at
     v0 = ((unsigned)0 < (unsigned)v0) ? 1 : 0;                  // 0x001c7498: sltu $v0, $zero, $v0
     return;                                                     // 0x001c749c: jr $ra

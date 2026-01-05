@@ -13,7 +13,7 @@ void func_001cbe70() {
     a1 = sp + 0x3f;                                             // 0x001cbe78: addiu $a1, $sp, 0x3f
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001cbe7c: addu.qb $zero, $sp, $s1
     a0 = s1 + 0x28;                                             // 0x001cbe88: addiu $a0, $s1, 0x28
-    func_001cfc50();  // 0x1cfaa0                                // 0x001cbe90: jal 0x1cfaa0
+    func_001cfaa0();  // 1cfaa0                                // 0x001cbe90: jal 0x1cfaa0
     v1 = 4;                                                     // 0x001cbe98: addiu $v1, $zero, 4
     if (v0 == v1) goto label_0x1cbed4;                          // 0x001cbe9c: beq $v0, $v1, 0x1cbed4
     /* nop */                                                   // 0x001cbea0: nop 
@@ -35,7 +35,7 @@ label_0x1cbed4:
     *(uint8_t*)((s1) + 0x1ce) = v0;                             // 0x001cbedc: sb $v0, 0x1ce($s1)
 label_0x1cbee0:
     if (s0 != 0) goto label_0x1cbefc;                           // 0x001cbee0: bnez $s0, 0x1cbefc
-    func_001cfd80();  // 0x1cfd70                                // 0x001cbee8: jal 0x1cfd70
+    func_001cfd70();  // 1cfd70                                // 0x001cbee8: jal 0x1cfd70
     /* nop */                                                   // 0x001cbeec: nop 
     if (v0 == 0) goto label_0x1cbefc;                           // 0x001cbef0: beqz $v0, 0x1cbefc
     /* nop */                                                   // 0x001cbef4: nop 

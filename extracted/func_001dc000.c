@@ -11,11 +11,11 @@ void func_001dc000() {
     
     sp = sp + -0x30;                                            // 0x001dc000: addiu $sp, $sp, -0x30
     a1 = 2;                                                     // 0x001dc004: addiu $a1, $zero, 2
-    func_001dc930();  // 0x1dc830                                // 0x001dc014: jal 0x1dc830
+    func_001dc830();  // 1dc830                                // 0x001dc014: jal 0x1dc830
     local_2c = v0;                                              // 0x001dc01c: sw $v0, 0x2c($sp)
     v0 = local_2c;                                              // 0x001dc020: lw $v0, 0x2c($sp)
     if (v0 != 0) goto label_0x1dc05c;                           // 0x001dc024: bnez $v0, 0x1dc05c
-    func_001dcac8();  // 0x1dca18                                // 0x001dc02c: jal 0x1dca18
+    func_001dca18();  // 1dca18                                // 0x001dc02c: jal 0x1dca18
     a1 = sp + 0x2c;                                             // 0x001dc030: addiu $a1, $sp, 0x2c
     *(uint32_t*)((gp) + -0x6214) = v0;                          // 0x001dc034: sw $v0, -0x6214($gp)
     v0 = *(int32_t*)((gp) + -0x6214);                           // 0x001dc038: lw $v0, -0x6214($gp)

@@ -13,10 +13,10 @@ void func_001905f0() {
     *(float*)(sp) = FPU_F20;  // Store float                    // 0x00190608: swc1 $f20, 0($sp)
     /* FPU: mov.s $f22, $f12 */                                 // 0x0019060c: mov.s $f22, $f12
     /* FPU: mov.s $f21, $f13 */                                 // 0x00190610: mov.s $f21, $f13
-    func_0018fc10();  // 0x18fbd0                                // 0x00190614: jal 0x18fbd0
+    func_0018fbd0();  // 18fbd0                                // 0x00190614: jal 0x18fbd0
     /* FPU: mov.s $f20, $f14 */                                 // 0x00190618: mov.s $f20, $f14
     /* FPU: mov.s $f12, $f20 */                                 // 0x0019061c: mov.s $f12, $f20
-    func_0018f4c0();  // 0x18f3a0                                // 0x00190620: jal 0x18f3a0
+    func_0018f3a0();  // 18f3a0                                // 0x00190620: jal 0x18f3a0
     a0 = sp + 0x50;                                             // 0x00190624: addiu $a0, $sp, 0x50
     FPU_F1 = *(float*)((sp) + 0x50);  // Load float             // 0x00190628: lwc1 $f1, 0x50($sp)
     FPU_F0 = *(float*)((sp) + 0x54);  // Load float             // 0x0019062c: lwc1 $f0, 0x54($sp)
@@ -29,7 +29,7 @@ void func_001905f0() {
     *(vec128_t*)((s0) + 0x10) = VPU_VF5;  // Store 128-bit vector // 0x00190690: sdc2 $5, 0x10($s0)
     *(vec128_t*)((s0) + 0x20) = VPU_VF6;  // Store 128-bit vector // 0x00190694: sdc2 $6, 0x20($s0)
     /* FPU: mov.s $f12, $f21 */                                 // 0x00190698: mov.s $f12, $f21
-    func_0018f4c0();  // 0x18f3a0                                // 0x0019069c: jal 0x18f3a0
+    func_0018f3a0();  // 18f3a0                                // 0x0019069c: jal 0x18f3a0
     a0 = sp + 0x40;                                             // 0x001906a0: addiu $a0, $sp, 0x40
     FPU_F1 = *(float*)((sp) + 0x40);  // Load float             // 0x001906a4: lwc1 $f1, 0x40($sp)
     FPU_F0 = *(float*)((sp) + 0x44);  // Load float             // 0x001906a8: lwc1 $f0, 0x44($sp)
@@ -42,7 +42,7 @@ void func_001905f0() {
     *(vec128_t*)((s0) + 0x10) = VPU_VF5;  // Store 128-bit vector // 0x00190710: sdc2 $5, 0x10($s0)
     *(vec128_t*)((s0) + 0x20) = VPU_VF6;  // Store 128-bit vector // 0x00190714: sdc2 $6, 0x20($s0)
     /* FPU: mov.s $f12, $f22 */                                 // 0x00190718: mov.s $f12, $f22
-    func_0018f4c0();  // 0x18f3a0                                // 0x0019071c: jal 0x18f3a0
+    func_0018f3a0();  // 18f3a0                                // 0x0019071c: jal 0x18f3a0
     a0 = sp + 0x30;                                             // 0x00190720: addiu $a0, $sp, 0x30
     FPU_F1 = *(float*)((sp) + 0x30);  // Load float             // 0x00190724: lwc1 $f1, 0x30($sp)
     FPU_F0 = *(float*)((sp) + 0x34);  // Load float             // 0x00190728: lwc1 $f0, 0x34($sp)

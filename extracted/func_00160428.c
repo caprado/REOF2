@@ -7,14 +7,14 @@ void func_00160428() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x00160428: addiu $sp, $sp, -0x20
-    func_0015fcb0();  // 0x15fc80                                // 0x0016043c: jal 0x15fc80
+    func_0015fc80();  // 15fc80                                // 0x0016043c: jal 0x15fc80
     if (v0 != 0) goto label_0x160468;                           // 0x00160444: bnez $v0, 0x160468
     a0 = 0x23 << 16;                                            // 0x0016044c: lui $a0, 0x23
     a0 = &str_00228030;  // "E1122624: mwPlyGetInputSj: handle is invalid." // 0x00160458: addiu $a0, $a0, -0x7fd0
     return func_001634a8();  // Tail call                        // 0x00160460: j 0x163410
     sp = sp + 0x20;                                             // 0x00160464: addiu $sp, $sp, 0x20
 label_0x160468:
-    func_0015f820();  // 0x15f7e0                                // 0x00160468: jal 0x15f7e0
+    func_0015f7e0();  // 15f7e0                                // 0x00160468: jal 0x15f7e0
     /* nop */                                                   // 0x0016046c: nop 
     a2 = s1 ^ 1;                                                // 0x00160470: xori $a2, $s1, 1
     a1 = 7;                                                     // 0x00160478: addiu $a1, $zero, 7
@@ -23,11 +23,11 @@ label_0x160468:
     sp = sp + 0x20;                                             // 0x00160490: addiu $sp, $sp, 0x20
     /* nop */                                                   // 0x00160494: nop 
     sp = sp + -0x10;                                            // 0x00160498: addiu $sp, $sp, -0x10
-    func_0015fcb0();  // 0x15fc80                                // 0x001604a4: jal 0x15fc80
+    func_0015fc80();  // 15fc80                                // 0x001604a4: jal 0x15fc80
     /* bnezl $v0, 0x1604c4 */                                   // 0x001604ac: bnezl $v0, 0x1604c4
     v0 = *(int32_t*)((s0) + 0x12c);                             // 0x001604b0: lw $v0, 0x12c($s0)
     a0 = 0x23 << 16;                                            // 0x001604b4: lui $a0, 0x23
-    func_001634a8();  // 0x163410                                // 0x001604b8: jal 0x163410
+    func_00163410();  // 163410                                // 0x001604b8: jal 0x163410
     a0 = &str_00228068;  // "E202191: mwPlyGetPlyInf: handle is invalid." // 0x001604bc: addiu $a0, $a0, -0x7f98
     return;                                                     // 0x001604cc: jr $ra
     sp = sp + 0x10;                                             // 0x001604d0: addiu $sp, $sp, 0x10

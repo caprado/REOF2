@@ -17,7 +17,7 @@ label_0x1b0f54:
     v1 = v1 << 1;                                               // 0x001b0f74: sll $v1, $v1, 1
     v1 = v1 + s0;                                               // 0x001b0f78: addu $v1, $v1, $s0
     v1 = v1 << 2;                                               // 0x001b0f7c: sll $v1, $v1, 2
-    func_00107d30();  // 0x107c70                                // 0x001b0f80: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001b0f80: jal 0x107c70
     a0 = v0 + v1;                                               // 0x001b0f84: addu $a0, $v0, $v1
     v1 = s1 + 1;                                                // 0x001b0f88: addiu $v1, $s1, 1
     a0 = 0x4c << 16;                                            // 0x001b0f8c: lui $a0, 0x4c

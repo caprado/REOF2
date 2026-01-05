@@ -26,7 +26,7 @@ label_0x15fdf0:
     return func_001750b0();  // Tail call                        // 0x0015fdf8: j 0x174ff8
     sp = sp + 0x10;                                             // 0x0015fdfc: addiu $sp, $sp, 0x10
     sp = sp + -0x20;                                            // 0x0015fe00: addiu $sp, $sp, -0x20
-    func_0015fcb0();  // 0x15fc80                                // 0x0015fe14: jal 0x15fc80
+    func_0015fc80();  // 15fc80                                // 0x0015fe14: jal 0x15fc80
     if (v0 != 0) goto label_0x15fe40;                           // 0x0015fe1c: bnez $v0, 0x15fe40
     a0 = 0x22 << 16;                                            // 0x0015fe20: lui $a0, 0x22
     a0 = &str_00227dc0;  // "E2010802: mwPlyGetSyncMode: handle is invalid." // 0x0015fe2c: addiu $a0, $a0, 0x7dc0

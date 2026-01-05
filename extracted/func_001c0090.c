@@ -26,7 +26,7 @@ void func_001c0090() {
     /* nop */                                                   // 0x001c00e0: nop 
     goto label_0x1c0300;                                        // 0x001c00e4: b 0x1c0300
 label_0x1c00ec:
-    func_001bf210();  // 0x1bf010                                // 0x001c00ec: jal 0x1bf010
+    func_001bf010();  // 1bf010                                // 0x001c00ec: jal 0x1bf010
     /* nop */                                                   // 0x001c00f0: nop 
     v1 = 2;                                                     // 0x001c00f4: addiu $v1, $zero, 2
     if (v0 == v1) goto label_0x1c013c;                          // 0x001c00f8: beq $v0, $v1, 0x1c013c
@@ -54,7 +54,7 @@ label_0x1c013c:
     goto label_0x1c02fc;                                        // 0x001c0144: b 0x1c02fc
     *(uint32_t*)(s0) = v0;                                      // 0x001c0148: sw $v0, 0($s0)
 label_0x1c014c:
-    func_001bf300();  // 0x1bf210                                // 0x001c014c: jal 0x1bf210
+    func_001bf210();  // 1bf210                                // 0x001c014c: jal 0x1bf210
     /* nop */                                                   // 0x001c0150: nop 
     v1 = 3;                                                     // 0x001c0154: addiu $v1, $zero, 3
     if (v0 == v1) goto label_0x1c01fc;                          // 0x001c0158: beq $v0, $v1, 0x1c01fc
@@ -94,7 +94,7 @@ label_0x1c01cc:
     a0 = s0 + 0x72;                                             // 0x001c01d0: addiu $a0, $s0, 0x72
     a1 = s0 + 0x50;                                             // 0x001c01d4: addiu $a1, $s0, 0x50
     v0 = v0 + 2;                                                // 0x001c01d8: addiu $v0, $v0, 2
-    func_0010ae00();  // 0x10ac68                                // 0x001c01dc: jal 0x10ac68
+    func_0010ac68();  // 10ac68                                // 0x001c01dc: jal 0x10ac68
     *(uint32_t*)(s0) = v0;                                      // 0x001c01e0: sw $v0, 0($s0)
     goto label_0x1c02fc;                                        // 0x001c01e4: b 0x1c02fc
     *(uint32_t*)((s0) + 0xbc) = 0;                              // 0x001c01e8: sw $zero, 0xbc($s0)
@@ -109,7 +109,7 @@ label_0x1c01fc:
     goto label_0x1c02fc;                                        // 0x001c0204: b 0x1c02fc
     *(uint32_t*)((s0) + 0x24) = v0;                             // 0x001c0208: sw $v0, 0x24($s0)
 label_0x1c020c:
-    func_001bf3c0();  // 0x1bf300                                // 0x001c020c: jal 0x1bf300
+    func_001bf300();  // 1bf300                                // 0x001c020c: jal 0x1bf300
     /* nop */                                                   // 0x001c0210: nop 
     v1 = 1;                                                     // 0x001c0214: addiu $v1, $zero, 1
     if (v0 == v1) goto label_0x1c0254;                          // 0x001c0218: beq $v0, $v1, 0x1c0254
@@ -135,7 +135,7 @@ label_0x1c0254:
     goto label_0x1c02fc;                                        // 0x001c025c: b 0x1c02fc
     *(uint32_t*)((s0) + 0x24) = v0;                             // 0x001c0260: sw $v0, 0x24($s0)
 label_0x1c0264:
-    func_001bf300();  // 0x1bf210                                // 0x001c0264: jal 0x1bf210
+    func_001bf210();  // 1bf210                                // 0x001c0264: jal 0x1bf210
     /* nop */                                                   // 0x001c0268: nop 
     v1 = 3;                                                     // 0x001c026c: addiu $v1, $zero, 3
     if (v0 == v1) goto label_0x1c02f0;                          // 0x001c0270: beq $v0, $v1, 0x1c02f0
@@ -180,7 +180,7 @@ label_0x1c02f0:
     *(uint32_t*)((s0) + 0x24) = v0;                             // 0x001c02f8: sw $v0, 0x24($s0)
 label_0x1c02fc:
 label_0x1c0300:
-    func_001bfc20();  // 0x1bfbf0                                // 0x001c0300: jal 0x1bfbf0
+    func_001bfbf0();  // 1bfbf0                                // 0x001c0300: jal 0x1bfbf0
     /* nop */                                                   // 0x001c0304: nop 
     /* FPU: aver_u.h $w0, $w0, $w17 */                          // 0x001c030c: aver_u.h $w0, $w0, $w17
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001c0310: xori.b $w0, $w0, 0xb0

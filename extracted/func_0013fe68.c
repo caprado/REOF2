@@ -8,7 +8,7 @@ void func_0013fe68() {
     
     sp = sp + -0x10;                                            // 0x0013fe68: addiu $sp, $sp, -0x10
     if (s0 == 0) goto label_0x13fe8c;                           // 0x0013fe74: beqz $s0, 0x13fe8c
-    func_00107d30();  // 0x107c70                                // 0x0013fe80: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x0013fe80: jal 0x107c70
     a2 = 0x30;                                                  // 0x0013fe84: addiu $a2, $zero, 0x30
     *(uint8_t*)((s0) + 4) = 0;                                  // 0x0013fe88: sb $zero, 4($s0)
 label_0x13fe8c:

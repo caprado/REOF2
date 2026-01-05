@@ -11,7 +11,7 @@ void func_001d88c0() {
     v1 = g_004912df;  // Global at 0x004912df                   // 0x001d88d0: lbu $v1, 0x12df($at)
     if (v1 != 0) goto label_0x1d8940;                           // 0x001d88d4: bnez $v1, 0x1d8940
     /* nop */                                                   // 0x001d88d8: nop 
-    func_001b1b10();  // 0x1b1ae0                                // 0x001d88dc: jal 0x1b1ae0
+    func_001b1ae0();  // 1b1ae0                                // 0x001d88dc: jal 0x1b1ae0
     /* nop */                                                   // 0x001d88e0: nop 
     at = 0x31 << 16;                                            // 0x001d88e4: lui $at, 0x31
     a1 = 0x24 << 16;                                            // 0x001d88e8: lui $a1, 0x24
@@ -19,14 +19,14 @@ void func_001d88c0() {
     a0 = sp + 0x20;                                             // 0x001d88f0: addiu $a0, $sp, 0x20
     at = 0x31 << 16;                                            // 0x001d88f4: lui $at, 0x31
     a2 = g_003137ba;  // Global at 0x003137ba                   // 0x001d88f8: lhu $a2, 0x37ba($at)
-    func_0010a570();  // 0x10a4d8                                // 0x001d88fc: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001d88fc: jal 0x10a4d8
     a1 = &str_00247680;  // "data\\rom\\motion\\player\\pc_%03d.bin" // 0x001d8900: addiu $a1, $a1, 0x7680
     v0 = 2 << 16;                                               // 0x001d8904: lui $v0, 2
     a0 = sp + 0x20;                                             // 0x001d8908: addiu $a0, $sp, 0x20
-    func_001d33e0();  // 0x1d3390                                // 0x001d8914: jal 0x1d3390
+    func_001d3390();  // 1d3390                                // 0x001d8914: jal 0x1d3390
     a2 = v0 | 1;                                                // 0x001d8918: ori $a2, $v0, 1
-    func_001d88c0();  // 0x1d8810                                // 0x001d8924: jal 0x1d8810
-    func_001b2a00();  // 0x1b29f0                                // 0x001d892c: jal 0x1b29f0
+    func_001d8810();  // 1d8810                                // 0x001d8924: jal 0x1d8810
+    func_001b29f0();  // 1b29f0                                // 0x001d892c: jal 0x1b29f0
     /* nop */                                                   // 0x001d8930: nop 
     v1 = 1;                                                     // 0x001d8934: addiu $v1, $zero, 1
     at = 0x49 << 16;                                            // 0x001d8938: lui $at, 0x49

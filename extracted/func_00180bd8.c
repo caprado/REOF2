@@ -28,7 +28,7 @@ label_0x180c28:
     PollSema();  // 0x114320                                    // 0x00180c28: jal 0x114320
     a0 = g_0026b1ac;  // Global at 0x0026b1ac                   // 0x00180c2c: lw $a0, -0x4e54($s1)
     local_8 = s0;                                               // 0x00180c30: sw $s0, 8($sp)
-    func_00189098();  // 0x189010                                // 0x00180c38: jal 0x189010
+    func_00189010();  // 189010                                // 0x00180c38: jal 0x189010
     local_c = s2;                                               // 0x00180c3c: sw $s2, 0xc($sp)
     if (s0 >= 0) goto label_0x180c60;                           // 0x00180c44: bgez $s0, 0x180c60
     /* nop */                                                   // 0x00180c48: nop 

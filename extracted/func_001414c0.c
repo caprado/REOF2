@@ -17,10 +17,10 @@ void func_001414c0() {
     *(float*)((sp) + 0x38) = FPU_F16;  // Store float           // 0x00141514: swc1 $f16, 0x38($sp)
     *(float*)((sp) + 0x3c) = FPU_F17;  // Store float           // 0x00141518: swc1 $f17, 0x3c($sp)
     *(float*)((sp) + 0x40) = FPU_F18;  // Store float           // 0x0014151c: swc1 $f18, 0x40($sp)
-    func_00107d30();  // 0x107c70                                // 0x00141520: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x00141520: jal 0x107c70
     *(float*)((sp) + 0x44) = FPU_F19;  // Store float           // 0x00141524: swc1 $f19, 0x44($sp)
     a2 = sp + 0x48;                                             // 0x00141528: addiu $a2, $sp, 0x48
-    func_0010f580();  // 0x10f528                                // 0x00141530: jal 0x10f528
+    func_0010f528();  // 10f528                                // 0x00141530: jal 0x10f528
     v0 = 0x25 << 16;                                            // 0x00141538: lui $v0, 0x25
     v0 = v0 + 0x6170;                                           // 0x0014153c: addiu $v0, $v0, 0x6170
     v1 = g_00256170;  // Global at 0x00256170                   // 0x00141540: lw $v1, 0($v0)

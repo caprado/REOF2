@@ -27,7 +27,7 @@ void func_001707a8() {
     DeleteSema();  // 0x1142e0                                  // 0x001707f4: jal 0x1142e0
     local_8 = v0;                                               // 0x001707f8: sw $v0, 8($sp)
     *(uint32_t*)((s0) + 0x40) = v0;                             // 0x001707fc: sw $v0, 0x40($s0)
-    func_00170960();  // 0x170820                                // 0x00170800: jal 0x170820
+    func_00170820();  // 170820                                // 0x00170800: jal 0x170820
     v0 = 1;                                                     // 0x00170810: addiu $v0, $zero, 1
     return;                                                     // 0x00170818: jr $ra
     sp = sp + 0x30;                                             // 0x0017081c: addiu $sp, $sp, 0x30

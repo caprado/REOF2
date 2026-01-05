@@ -17,7 +17,7 @@ void func_00146280() {
     a1 = *(int32_t*)((s0) + 0x1dc);                             // 0x001462b0: lw $a1, 0x1dc($s0)
 label_0x1462b4:
     a2 = a3 + -1;                                               // 0x001462b4: addiu $a2, $a3, -1
-    func_00146ba8();  // 0x146a98                                // 0x001462b8: jal 0x146a98
+    func_00146a98();  // 146a98                                // 0x001462b8: jal 0x146a98
     goto label_0x1462f0;                                        // 0x001462c0: b 0x1462f0
     v1 = *(int32_t*)((s0) + 0x110);                             // 0x001462c4: lw $v1, 0x110($s0)
 label_0x1462c8:
@@ -30,7 +30,7 @@ label_0x1462dc:
     a2 = *(int32_t*)((s0) + 0x1f0);                             // 0x001462dc: lw $a2, 0x1f0($s0)
 label_0x1462e0:
     a3 = a3 + -1;                                               // 0x001462e0: addiu $a3, $a3, -1
-    func_00146d60();  // 0x146ba8                                // 0x001462e4: jal 0x146ba8
+    func_00146ba8();  // 146ba8                                // 0x001462e4: jal 0x146ba8
 label_0x1462ec:
     v1 = *(int32_t*)((s0) + 0x110);                             // 0x001462ec: lw $v1, 0x110($s0)
 label_0x1462f0:

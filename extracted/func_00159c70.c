@@ -152,7 +152,7 @@ label_0x159eac:
     a1 = a1 >> 3;                                               // 0x00159ec4: sra $a1, $a1, 3
     a1 = t2 + a1;                                               // 0x00159ecc: addu $a1, $t2, $a1
     a1 = a1 + -8;                                               // 0x00159ed4: addiu $a1, $a1, -8
-    func_00140598();  // 0x1404a0                                // 0x00159ed8: jal 0x1404a0
+    func_001404a0();  // 1404a0                                // 0x00159ed8: jal 0x1404a0
     a1 = a1 - v1;                                               // 0x00159edc: subu $a1, $a1, $v1
     v1 = *(int32_t*)(s2);                                       // 0x00159ee0: lw $v1, 0($s2)
     v0 = *(int32_t*)((v1) + 0x20);                              // 0x00159eec: lw $v0, 0x20($v1)

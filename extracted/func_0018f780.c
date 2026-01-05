@@ -32,7 +32,7 @@ label_0x18f7f8:
     /* move to FPU: $v0, $f0 */                                 // 0x0018f7f8: mtc1 $v0, $f0
     a0 = 0x28 << 16;                                            // 0x0018f7fc: lui $a0, 0x28
     a0 = a0 + 0x53e0;                                           // 0x0018f800: addiu $a0, $a0, 0x53e0
-    func_0018fbd0();  // 0x18fba0                                // 0x0018f804: jal 0x18fba0
+    func_0018fba0();  // 18fba0                                // 0x0018f804: jal 0x18fba0
     /* FPU: cvt.s.w $f20, $f0 */                                // 0x0018f808: cvt.s.w $f20, $f0
     at = 0x28 << 16;                                            // 0x0018f80c: lui $at, 0x28
     v0 = 0x3f80 << 16;                                          // 0x0018f810: lui $v0, 0x3f80
@@ -79,7 +79,7 @@ label_0x18f89c:
     v0 = v0 >> 1;                                               // 0x0018f8b0: sra $v0, $v0, 1
 label_0x18f8b4:
     /* move to FPU: $v0, $f0 */                                 // 0x0018f8b4: mtc1 $v0, $f0
-    func_0018fbd0();  // 0x18fba0                                // 0x0018f8bc: jal 0x18fba0
+    func_0018fba0();  // 18fba0                                // 0x0018f8bc: jal 0x18fba0
     /* FPU: cvt.s.w $f20, $f0 */                                // 0x0018f8c0: cvt.s.w $f20, $f0
     /* move to FPU: $s1, $f2 */                                 // 0x0018f8c4: mtc1 $s1, $f2
     a0 = 0x3f00 << 16;                                          // 0x0018f8c8: lui $a0, 0x3f00
@@ -181,7 +181,7 @@ label_0x18f8b4:
     /* move from FPU: $a2, $f1 */                               // 0x0018fa50: mfc1 $a2, $f1
     /* FPU: cvt.w.s $f0, $f0 */                                 // 0x0018fa54: cvt.w.s $f0, $f0
     /* move from FPU: $a3, $f0 */                               // 0x0018fa58: mfc1 $a3, $f0
-    func_0018fba0();  // 0x18faa0                                // 0x0018fa5c: jal 0x18faa0
+    func_0018faa0();  // 18faa0                                // 0x0018fa5c: jal 0x18faa0
     /* FPU: mov.s $f13, $f22 */                                 // 0x0018fa60: mov.s $f13, $f22
     FPU_F24 = *(float*)((sp) + 0x10);  // Load float            // 0x0018fa68: lwc1 $f24, 0x10($sp)
     FPU_F23 = *(float*)((sp) + 0xc);  // Load float             // 0x0018fa70: lwc1 $f23, 0xc($sp)

@@ -111,7 +111,7 @@ label_0x16e304:
     *(uint32_t*)((t4) + 0x138) = t1;                            // 0x0016e304: sw $t1, 0x138($t4)
 label_0x16e308:
     a1 = t4 + 0x30;                                             // 0x0016e308: addiu $a1, $t4, 0x30
-    func_0016f940();  // 0x16f8b0                                // 0x0016e310: jal 0x16f8b0
+    func_0016f8b0();  // 16f8b0                                // 0x0016e310: jal 0x16f8b0
     a0 = t4 + 0x13c;                                            // 0x0016e314: addiu $a0, $t4, 0x13c
     return;                                                     // 0x0016e320: jr $ra
     sp = sp + 0x10;                                             // 0x0016e324: addiu $sp, $sp, 0x10

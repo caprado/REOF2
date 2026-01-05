@@ -11,7 +11,7 @@ void func_00102510() {
     
     sp = sp + -0x20;                                            // 0x00102510: addiu $sp, $sp, -0x20
     a1 = 0x43a;                                                 // 0x00102514: addiu $a1, $zero, 0x43a
-    func_00102370();  // 0x102328                                // 0x0010251c: jal 0x102328
+    func_00102328();  // 102328                                // 0x0010251c: jal 0x102328
     v0 = local_0;                                               // 0x00102524: lhu $v0, 0($sp)
     return;                                                     // 0x0010252c: jr $ra
     sp = sp + 0x20;                                             // 0x00102530: addiu $sp, $sp, 0x20

@@ -12,7 +12,7 @@ void func_00172188() {
     v0 = g_0021578c;  // Global at 0x0021578c                   // 0x001721a4: lw $v0, 0($s0)
     s0 = s0 + 4;                                                // 0x001721a8: addiu $s0, $s0, 4
     if (v0 == 0) goto label_0x1721c4;                           // 0x001721ac: beqz $v0, 0x1721c4
-    func_00172188();  // 0x172160                                // 0x001721b4: jal 0x172160
+    func_00172160();  // 172160                                // 0x001721b4: jal 0x172160
     /* nop */                                                   // 0x001721b8: nop 
     /* beqzl $v0, 0x1721dc */                                   // 0x001721bc: beqzl $v0, 0x1721dc
 label_0x1721c4:

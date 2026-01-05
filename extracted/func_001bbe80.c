@@ -15,12 +15,12 @@ void func_001bbe80() {
     /* nop */                                                   // 0x001bbe9c: nop 
     goto label_0x1bbec4;                                        // 0x001bbea0: b 0x1bbec4
 label_0x1bbea8:
-    func_001bbf40();  // 0x1bbed0                                // 0x001bbea8: jal 0x1bbed0
+    func_001bbed0();  // 1bbed0                                // 0x001bbea8: jal 0x1bbed0
     /* nop */                                                   // 0x001bbeac: nop 
     goto label_0x1bbec0;                                        // 0x001bbeb0: b 0x1bbec0
     /* nop */                                                   // 0x001bbeb4: nop 
 label_0x1bbeb8:
-    thunk_func_001dd9a0();  // 0x1bc190                          // 0x001bbeb8: jal 0x1bc190
+    thunk_func_001bc190();  // 1bc190                          // 0x001bbeb8: jal 0x1bc190
     /* nop */                                                   // 0x001bbebc: nop 
 label_0x1bbec0:
 label_0x1bbec4:

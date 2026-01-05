@@ -8,9 +8,9 @@ void func_00179ad8() {
     
     sp = sp + -0x20;                                            // 0x00179ad8: addiu $sp, $sp, -0x20
     s0 = a1 & 0xff;                                             // 0x00179ae0: andi $s0, $a1, 0xff
-    func_00179a70();  // 0x179a18                                // 0x00179af4: jal 0x179a18
+    func_00179a18();  // 179a18                                // 0x00179af4: jal 0x179a18
     if (s1 == 0) goto label_0x179b40;                           // 0x00179b00: beqz $s1, 0x179b40
-    func_0017a2e0();  // 0x17a298                                // 0x00179b08: jal 0x17a298
+    func_0017a298();  // 17a298                                // 0x00179b08: jal 0x17a298
     /* nop */                                                   // 0x00179b0c: nop 
     v1 = 0xc0;                                                  // 0x00179b10: addiu $v1, $zero, 0xc0
     if (v0 == v1) goto label_0x179b28;                          // 0x00179b14: beq $v0, $v1, 0x179b28

@@ -47,7 +47,7 @@ label_0x1caf48:
     a0 = *(int16_t*)(s0);                                       // 0x001caf48: lh $a0, 0($s0)
     a1 = sp + 0x5e;                                             // 0x001caf4c: addiu $a1, $sp, 0x5e
     a2 = sp + 0x5c;                                             // 0x001caf50: addiu $a2, $sp, 0x5c
-    func_001c7c00();  // 0x1c7b50                                // 0x001caf54: jal 0x1c7b50
+    func_001c7b50();  // 1c7b50                                // 0x001caf54: jal 0x1c7b50
     a3 = sp + 0x5a;                                             // 0x001caf58: addiu $a3, $sp, 0x5a
     if (v0 >= 0) goto label_0x1caf80;                           // 0x001caf64: bgez $v0, 0x1caf80
     v1 = 0x68;                                                  // 0x001caf68: addiu $v1, $zero, 0x68
@@ -64,14 +64,14 @@ label_0x1caf80:
     if (v1 != v0) goto label_0x1cafc0;                          // 0x001caf90: bne $v1, $v0, 0x1cafc0
     /* nop */                                                   // 0x001caf94: nop 
 label_0x1caf98:
-    func_001cb2a0();  // 0x1cb250                                // 0x001caf98: jal 0x1cb250
+    func_001cb250();  // 1cb250                                // 0x001caf98: jal 0x1cb250
     /* nop */                                                   // 0x001caf9c: nop 
     v0 = s1 + 1;                                                // 0x001cafa4: addiu $v0, $s1, 1
     v0 = (v0 < 0x41a0) ? 1 : 0;                                 // 0x001cafb4: slti $v0, $v0, 0x41a0
     if (v0 != 0) goto label_0x1caf48;                           // 0x001cafb8: bnez $v0, 0x1caf48
 label_0x1cafc0:
     a0 = *(int16_t*)(s0);                                       // 0x001cafc0: lh $a0, 0($s0)
-    func_001c7d70();  // 0x1c7c00                                // 0x001cafcc: jal 0x1c7c00
+    func_001c7c00();  // 1c7c00                                // 0x001cafcc: jal 0x1c7c00
     if (v0 >= 0) goto label_0x1caff8;                           // 0x001cafdc: bgez $v0, 0x1caff8
     v1 = 0x68;                                                  // 0x001cafe0: addiu $v1, $zero, 0x68
     at = 0x31 << 16;                                            // 0x001cafe4: lui $at, 0x31

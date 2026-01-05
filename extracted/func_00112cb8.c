@@ -42,7 +42,7 @@ label_0x112d0c:
     v0 = v0 | a0;                                               // 0x00112d54: or $v0, $v0, $a0
 label_0x112d58:
     a0 = 0x22 << 16;                                            // 0x00112d58: lui $a0, 0x22
-    func_00116598();  // 0x116508                                // 0x00112d5c: jal 0x116508
+    func_00116508();  // 116508                                // 0x00112d5c: jal 0x116508
     a0 = &str_00220e80;  // "sceGsSyncPath: DMA Ch.1 does not terminate\r\n" // 0x00112d60: addiu $a0, $a0, 0xe80
     goto label_0x112d94;                                        // 0x00112d64: b 0x112d94
     v0 = -1;                                                    // 0x00112d68: addiu $v0, $zero, -1

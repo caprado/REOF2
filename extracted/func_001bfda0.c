@@ -33,7 +33,7 @@ void func_001bfda0() {
     g_00316090 = a1;  // Global at 0x00316090                   // 0x001bfe0c: sw $a1, 0x6090($at)
     a0 = a0 + 0x6032;                                           // 0x001bfe10: addiu $a0, $a0, 0x6032
     a1 = 0x24 << 16;                                            // 0x001bfe14: lui $a1, 0x24
-    func_0010a570();  // 0x10a4d8                                // 0x001bfe18: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001bfe18: jal 0x10a4d8
     a1 = &str_0023e180;  // "rom0:ROMVER"                       // 0x001bfe1c: addiu $a1, $a1, -0x1e80
     v1 = *(int32_t*)((s0) + 0x54);                              // 0x001bfe20: lw $v1, 0x54($s0)
     at = 0x31 << 16;                                            // 0x001bfe24: lui $at, 0x31

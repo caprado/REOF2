@@ -18,7 +18,7 @@ label_0x174ac8:
     *(uint32_t*)(s0) = 0;                                       // 0x00174ad8: sw $zero, 0($s0)
     /* nop */                                                   // 0x00174adc: nop 
 label_0x174ae0:
-    func_0015b7b0();  // 0x15b740                                // 0x00174ae4: jal 0x15b740
+    func_0015b740();  // 15b740                                // 0x00174ae4: jal 0x15b740
     a1 = 0x3e8;                                                 // 0x00174ae8: addiu $a1, $zero, 0x3e8
     *(uint32_t*)(s0) = v0;                                      // 0x00174aec: sw $v0, 0($s0)
 label_0x174af0:

@@ -19,15 +19,15 @@ void func_001aad20() {
 label_0x1aad54:
     a1 = 0x24 << 16;                                            // 0x001aad54: lui $a1, 0x24
     a0 = sp + 0x10;                                             // 0x001aad58: addiu $a0, $sp, 0x10
-    func_0010a570();  // 0x10a4d8                                // 0x001aad5c: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001aad5c: jal 0x10a4d8
     a1 = &str_0023da28;  // "bgm.afs"                           // 0x001aad60: addiu $a1, $a1, -0x25d8
     a3 = 0x54 << 16;                                            // 0x001aad64: lui $a3, 0x54
     a0 = 2;                                                     // 0x001aad68: addiu $a0, $zero, 2
     a1 = sp + 0x10;                                             // 0x001aad6c: addiu $a1, $sp, 0x10
-    func_001283a8();  // 0x128380                                // 0x001aad74: jal 0x128380
+    func_00128380();  // 128380                                // 0x001aad74: jal 0x128380
     a3 = a3 + 0x1120;                                           // 0x001aad78: addiu $a3, $a3, 0x1120
 label_0x1aad7c:
-    func_00128be8();  // 0x1287d8                                // 0x001aad7c: jal 0x1287d8
+    func_001287d8();  // 1287d8                                // 0x001aad7c: jal 0x1287d8
     a0 = 2;                                                     // 0x001aad80: addiu $a0, $zero, 2
     v1 = 3;                                                     // 0x001aad84: addiu $v1, $zero, 3
     /* nop */                                                   // 0x001aad88: nop 

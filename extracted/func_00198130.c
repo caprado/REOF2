@@ -9,7 +9,7 @@ void func_00198130() {
     
     sp = sp + -0x20;                                            // 0x00198130: addiu $sp, $sp, -0x20
     a1 = 0x10;                                                  // 0x00198134: addiu $a1, $zero, 0x10
-    func_0018dca0();  // 0x18dc30                                // 0x00198144: jal 0x18dc30
+    func_0018dc30();  // 18dc30                                // 0x00198144: jal 0x18dc30
     a0 = 0x30;                                                  // 0x00198148: addiu $a0, $zero, 0x30
     v1 = 0 | 0xf000;                                            // 0x0019814c: ori $v1, $zero, 0xf000
     a3 = 0x29 << 16;                                            // 0x00198150: lui $a3, 0x29
@@ -32,7 +32,7 @@ void func_00198130() {
     a2 = a2 | a1;                                               // 0x001981b0: or $a2, $a2, $a1
     v1 = 0x3d;                                                  // 0x001981b4: addiu $v1, $zero, 0x3d
     a2 = a0 | a2;                                               // 0x001981b8: or $a2, $a0, $a2
-    func_0018cff0();  // 0x18ce40                                // 0x001981d0: jal 0x18ce40
+    func_0018ce40();  // 18ce40                                // 0x001981d0: jal 0x18ce40
     v0 = 1;                                                     // 0x001981dc: addiu $v0, $zero, 1
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001981e0: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x001981e4: jr $ra

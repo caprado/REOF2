@@ -12,13 +12,13 @@ void func_00114d18() {
     s0 = s0 & v0;                                               // 0x00114d3c: and $s0, $s0, $v0
     if (s0 == 0) goto label_0x114d50;                           // 0x00114d40: beqz $s0, 0x114d50
     /* nop */                                                   // 0x00114d44: nop 
-    func_0011d378();  // 0x11d320                                // 0x00114d48: jal 0x11d320
+    func_0011d320();  // 11d320                                // 0x00114d48: jal 0x11d320
     /* nop */                                                   // 0x00114d4c: nop 
 label_0x114d50:
     a0 = 0xffff << 16;                                          // 0x00114d50: lui $a0, 0xffff
     a0 = a0 | 0xffc0;                                           // 0x00114d54: ori $a0, $a0, 0xffc0
     a1 = s1 & a0;                                               // 0x00114d58: and $a1, $s1, $a0
-    func_00114d18();  // 0x114c70                                // 0x00114d5c: jal 0x114c70
+    func_00114c70();  // 114c70                                // 0x00114d5c: jal 0x114c70
     a0 = s2 & a0;                                               // 0x00114d60: and $a0, $s2, $a0
     if (s0 == 0) goto label_0x114d80;                           // 0x00114d64: beqz $s0, 0x114d80
     return func_0011d390();  // Tail call                        // 0x00114d78: j 0x11d378

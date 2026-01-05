@@ -14,7 +14,7 @@ void func_001ab1d0() {
     v1 = 1;                                                     // 0x001ab1e8: addiu $v1, $zero, 1
     if (a0 != v1) goto label_0x1ab20c;                          // 0x001ab1ec: bne $a0, $v1, 0x1ab20c
     v1 = a0 + -1;                                               // 0x001ab1f0: addiu $v1, $a0, -1
-    func_0012ba78();  // 0x12ba50                                // 0x001ab1f4: jal 0x12ba50
+    func_0012ba50();  // 12ba50                                // 0x001ab1f4: jal 0x12ba50
     /* nop */                                                   // 0x001ab1f8: nop 
     v1 = *(int32_t*)((gp) + -0x63e0);                           // 0x001ab1fc: lw $v1, -0x63e0($gp)
     v1 = v1 + -1;                                               // 0x001ab200: addiu $v1, $v1, -1

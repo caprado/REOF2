@@ -26,13 +26,13 @@ label_0x19ec2c:
     if (v0 != 0) goto label_0x19ec9c;                           // 0x0019ec5c: bnez $v0, 0x19ec9c
     /* nop */                                                   // 0x0019ec60: nop 
     a1 = *(int16_t*)((s4) + 0x12);                              // 0x0019ec64: lh $a1, 0x12($s4)
-    func_0019ee10();  // 0x19ed40                                // 0x0019ec68: jal 0x19ed40
+    func_0019ed40();  // 19ed40                                // 0x0019ec68: jal 0x19ed40
     a0 = *(int16_t*)((s4) + 0x10);                              // 0x0019ec6c: lh $a0, 0x10($s4)
     v1 = -1;                                                    // 0x0019ec70: addiu $v1, $zero, -1
     if (v0 != v1) goto label_0x19ec84;                          // 0x0019ec74: bne $v0, $v1, 0x19ec84
     goto label_0x19ed1c;                                        // 0x0019ec7c: b 0x19ed1c
 label_0x19ec84:
-    func_0019ea90();  // 0x19e990                                // 0x0019ec84: jal 0x19e990
+    func_0019e990();  // 19e990                                // 0x0019ec84: jal 0x19e990
     if (v0 != 0) goto label_0x19ec9c;                           // 0x0019ec8c: bnez $v0, 0x19ec9c
     /* nop */                                                   // 0x0019ec90: nop 
     goto label_0x19ed1c;                                        // 0x0019ec94: b 0x19ed1c
@@ -52,13 +52,13 @@ label_0x19ec9c:
     if (v0 != 0) goto label_0x19ed0c;                           // 0x0019eccc: bnez $v0, 0x19ed0c
     /* nop */                                                   // 0x0019ecd0: nop 
     a1 = *(int16_t*)((s1) + 0x12);                              // 0x0019ecd4: lh $a1, 0x12($s1)
-    func_0019ee10();  // 0x19ed40                                // 0x0019ecd8: jal 0x19ed40
+    func_0019ed40();  // 19ed40                                // 0x0019ecd8: jal 0x19ed40
     a0 = *(int16_t*)((s1) + 0x10);                              // 0x0019ecdc: lh $a0, 0x10($s1)
     v1 = -1;                                                    // 0x0019ece0: addiu $v1, $zero, -1
     if (v0 != v1) goto label_0x19ecf4;                          // 0x0019ece4: bne $v0, $v1, 0x19ecf4
     goto label_0x19ed1c;                                        // 0x0019ecec: b 0x19ed1c
 label_0x19ecf4:
-    func_0019ea90();  // 0x19e990                                // 0x0019ecf4: jal 0x19e990
+    func_0019e990();  // 19e990                                // 0x0019ecf4: jal 0x19e990
     if (v0 != 0) goto label_0x19ed0c;                           // 0x0019ecfc: bnez $v0, 0x19ed0c
     /* nop */                                                   // 0x0019ed00: nop 
     goto label_0x19ed1c;                                        // 0x0019ed04: b 0x19ed1c

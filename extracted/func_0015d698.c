@@ -12,7 +12,7 @@ void func_0015d698() {
     v0 = (v0 < v1) ? 1 : 0;                                     // 0x0015d6b8: slt $v0, $v0, $v1
     /* beqzl $v0, 0x15d6d4 */                                   // 0x0015d6bc: beqzl $v0, 0x15d6d4
     *(uint32_t*)((s0) + 0xfc) = v1;                             // 0x0015d6c0: sw $v1, 0xfc($s0)
-    func_00161788();  // 0x161740                                // 0x0015d6c4: jal 0x161740
+    func_00161740();  // 161740                                // 0x0015d6c4: jal 0x161740
     /* nop */                                                   // 0x0015d6c8: nop 
     v1 = *(int32_t*)((s1) + 0x2c);                              // 0x0015d6cc: lw $v1, 0x2c($s1)
     *(uint32_t*)((s0) + 0xfc) = v1;                             // 0x0015d6d0: sw $v1, 0xfc($s0)

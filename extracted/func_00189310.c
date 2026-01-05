@@ -14,7 +14,7 @@ void func_00189310() {
     v0 = (v1 < 0x1081) ? 1 : 0;                                 // 0x00189340: slti $v0, $v1, 0x1081
     if (v0 != 0) goto label_0x189364;                           // 0x00189344: bnez $v0, 0x189364
     a0 = 0x23 << 16;                                            // 0x0018934c: lui $a0, 0x23
-    func_001896f0();  // 0x1896c8                                // 0x00189354: jal 0x1896c8
+    func_001896c8();  // 1896c8                                // 0x00189354: jal 0x1896c8
     a0 = &str_0022a1f0;  // "dbcman : SendData2 BUSY\n"         // 0x00189358: addiu $a0, $a0, -0x5e10
     goto label_0x189448;                                        // 0x0018935c: b 0x189448
 label_0x189364:
@@ -47,7 +47,7 @@ label_0x1893c8:
     a3 = 0x28 << 16;                                            // 0x001893c8: lui $a3, 0x28
     s0 = a3 + 0x1270;                                           // 0x001893cc: addiu $s0, $a3, 0x1270
 label_0x1893d0:
-    func_001178e0();  // 0x1178a0                                // 0x001893d0: jal 0x1178a0
+    func_001178a0();  // 1178a0                                // 0x001893d0: jal 0x1178a0
     v1 = 1;                                                     // 0x001893d8: addiu $v1, $zero, 1
     if (v0 != v1) goto label_0x1893f0;                          // 0x001893dc: bne $v0, $v1, 0x1893f0
     a3 = s3 + 0x1540;                                           // 0x001893e0: addiu $a3, $s3, 0x1540
@@ -61,12 +61,12 @@ label_0x1893f0:
     a2 = 1;                                                     // 0x00189400: addiu $a2, $zero, 1
     t0 = 0x1090;                                                // 0x00189404: addiu $t0, $zero, 0x1090
     t2 = 0x1090;                                                // 0x0018940c: addiu $t2, $zero, 0x1090
-    func_001178a0();  // 0x1176a8                                // 0x00189410: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x00189410: jal 0x1176a8
     if (v0 >= 0) goto label_0x18943c;                           // 0x00189418: bgez $v0, 0x18943c
     a0 = 0x23 << 16;                                            // 0x0018941c: lui $a0, 0x23
     a0 = &str_0022a240;  // "libdbc: SendData3 data length too long\n" // 0x00189420: addiu $a0, $a0, -0x5dc0
 label_0x189424:
-    func_001896f0();  // 0x1896c8                                // 0x00189424: jal 0x1896c8
+    func_001896c8();  // 1896c8                                // 0x00189424: jal 0x1896c8
     /* nop */                                                   // 0x00189428: nop 
     iSignalSema();  // 0x114300                                 // 0x0018942c: jal 0x114300
     a0 = g_00284800;  // Global at 0x00284800                   // 0x00189430: lw $a0, 0x4800($s5)

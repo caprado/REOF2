@@ -85,22 +85,22 @@ label_0x1b04fc:
     *(uint16_t*)((s3) + 0x20) = v0;                             // 0x001b056c: sh $v0, 0x20($s3)
     v0 = g_0031370c;  // Global at 0x0031370c                   // 0x001b0570: lh $v0, 0x2c($v1)
     *(uint16_t*)((s3) + 0x28) = v0;                             // 0x001b0574: sh $v0, 0x28($s3)
-    func_00191db0();  // 0x191ca0                                // 0x001b0578: jal 0x191ca0
+    func_00191ca0();  // 191ca0                                // 0x001b0578: jal 0x191ca0
     FPU_F12 = *(float*)((v1) + 0x24);  // Load float            // 0x001b057c: lwc1 $f12, 0x24($v1)
     v0 = v0 & 0xffff;                                           // 0x001b0580: andi $v0, $v0, 0xffff
     v0 = v0 + -0x4000;                                          // 0x001b0584: addiu $v0, $v0, -0x4000
     *(uint16_t*)((s3) + 0x22) = v0;                             // 0x001b0588: sh $v0, 0x22($s3)
     v0 = *(int32_t*)((gp) + -0x6430);                           // 0x001b058c: lw $v0, -0x6430($gp)
     v0 = v0 + s2;                                               // 0x001b0590: addu $v0, $v0, $s2
-    func_00191db0();  // 0x191ca0                                // 0x001b0594: jal 0x191ca0
+    func_00191ca0();  // 191ca0                                // 0x001b0594: jal 0x191ca0
     FPU_F12 = *(float*)((v0) + 0x30);  // Load float            // 0x001b0598: lwc1 $f12, 0x30($v0)
     v0 = v0 & 0xffff;                                           // 0x001b059c: andi $v0, $v0, 0xffff
     v0 = v0 + -0x4000;                                          // 0x001b05a4: addiu $v0, $v0, -0x4000
     *(uint16_t*)((s3) + 0x2a) = v0;                             // 0x001b05ac: sh $v0, 0x2a($s3)
-    func_001a1740();  // 0x1a15f0                                // 0x001b05b0: jal 0x1a15f0
+    func_001a15f0();  // 1a15f0                                // 0x001b05b0: jal 0x1a15f0
     a2 = sp + 0x60;                                             // 0x001b05b4: addiu $a2, $sp, 0x60
     a1 = 1;                                                     // 0x001b05bc: addiu $a1, $zero, 1
-    func_001a1740();  // 0x1a15f0                                // 0x001b05c0: jal 0x1a15f0
+    func_001a15f0();  // 1a15f0                                // 0x001b05c0: jal 0x1a15f0
     v0 = 0x31 << 16;                                            // 0x001b05c8: lui $v0, 0x31
     v0 = v0 + 0x3620;                                           // 0x001b05cc: addiu $v0, $v0, 0x3620
     s3 = v0 + s4;                                               // 0x001b05d0: addu $s3, $v0, $s4
@@ -130,14 +130,14 @@ label_0x1b04fc:
     *(uint16_t*)((s3) + 0x20) = v0;                             // 0x001b0630: sh $v0, 0x20($s3)
     v0 = g_0031370c;  // Global at 0x0031370c                   // 0x001b0634: lh $v0, 0x2c($v1)
     *(uint16_t*)((s3) + 0x28) = v0;                             // 0x001b0638: sh $v0, 0x28($s3)
-    func_00191db0();  // 0x191ca0                                // 0x001b063c: jal 0x191ca0
+    func_00191ca0();  // 191ca0                                // 0x001b063c: jal 0x191ca0
     FPU_F12 = *(float*)((v1) + 0x24);  // Load float            // 0x001b0640: lwc1 $f12, 0x24($v1)
     v0 = v0 & 0xffff;                                           // 0x001b0644: andi $v0, $v0, 0xffff
     v0 = v0 + -0x4000;                                          // 0x001b0648: addiu $v0, $v0, -0x4000
     *(uint16_t*)((s3) + 0x22) = v0;                             // 0x001b064c: sh $v0, 0x22($s3)
     v0 = *(int32_t*)((gp) + -0x642c);                           // 0x001b0650: lw $v0, -0x642c($gp)
     v0 = v0 + s2;                                               // 0x001b0654: addu $v0, $v0, $s2
-    func_00191db0();  // 0x191ca0                                // 0x001b0658: jal 0x191ca0
+    func_00191ca0();  // 191ca0                                // 0x001b0658: jal 0x191ca0
     FPU_F12 = *(float*)((v0) + 0x30);  // Load float            // 0x001b065c: lwc1 $f12, 0x30($v0)
     v1 = v0 & 0xffff;                                           // 0x001b0660: andi $v1, $v0, 0xffff
     s1 = s1 + 1;                                                // 0x001b0664: addiu $s1, $s1, 1

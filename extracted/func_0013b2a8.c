@@ -27,47 +27,47 @@ label_0x13b2f8:
     a1 = &str_00225870;  // "E0092710:not enough handle resource.(htCiOpen)" // 0x0013b308: addiu $a1, $a1, 0x5870
     /* nop */                                                   // 0x0013b30c: nop 
 label_0x13b310:
-    func_0013b2a8();  // 0x13b270                                // 0x0013b310: jal 0x13b270
+    func_0013b270();  // 13b270                                // 0x0013b310: jal 0x13b270
     /* nop */                                                   // 0x0013b314: nop 
     if (s0 != 0) goto label_0x13b340;                           // 0x0013b31c: bnez $s0, 0x13b340
     a1 = 0x22 << 16;                                            // 0x0013b324: lui $a1, 0x22
     a1 = &str_00225898;  // "HTCI: File cache was not hit. \\"  // 0x0013b32c: addiu $a1, $a1, 0x5898
 label_0x13b330:
-    func_0013acb8();  // 0x13ac88                                // 0x0013b330: jal 0x13ac88
+    func_0013ac88();  // 13ac88                                // 0x0013b330: jal 0x13ac88
     /* nop */                                                   // 0x0013b334: nop 
     goto label_0x13b438;                                        // 0x0013b338: b 0x13b438
 label_0x13b340:
-    func_0013c4f8();  // 0x13c4a8                                // 0x0013b340: jal 0x13c4a8
+    func_0013c4a8();  // 13c4a8                                // 0x0013b340: jal 0x13c4a8
     v0 = local_4;                                               // 0x0013b348: lw $v0, 4($sp)
     if (v0 != 0) goto label_0x13b3f0;                           // 0x0013b34c: bnez $v0, 0x13b3f0
     v0 = 1;                                                     // 0x0013b350: addiu $v0, $zero, 1
     v0 = 0x20 << 16;                                            // 0x0013b354: lui $v0, 0x20
     s2 = v0 + 0x4360;                                           // 0x0013b35c: addiu $s2, $v0, 0x4360
-    func_0013bc58();  // 0x13bb40                                // 0x0013b360: jal 0x13bb40
+    func_0013bb40();  // 13bb40                                // 0x0013b360: jal 0x13bb40
     v0 = 0x20 << 16;                                            // 0x0013b368: lui $v0, 0x20
     v1 = g_002044a4;  // Global at 0x002044a4                   // 0x0013b36c: lw $v1, 0x44a4($v0)
     if (v1 != 0) goto label_0x13b384;                           // 0x0013b370: bnez $v1, 0x13b384
     a0 = 0x22 << 16;                                            // 0x0013b374: lui $a0, 0x22
-    func_00116598();  // 0x116508                                // 0x0013b37c: jal 0x116508
+    func_00116508();  // 116508                                // 0x0013b37c: jal 0x116508
     a0 = &str_002258c8;  // "E0092711:sceOpen fail.(htCiOpen)"  // 0x0013b380: addiu $a0, $a0, 0x58c8
 label_0x13b384:
-    func_0013b1e8();  // 0x13aff0                                // 0x0013b384: jal 0x13aff0
+    func_0013aff0();  // 13aff0                                // 0x0013b384: jal 0x13aff0
     if (v1 == 0) goto label_0x13b438;                           // 0x0013b394: beqz $v1, 0x13b438
-    func_00137fb0();  // 0x137ec8                                // 0x0013b39c: jal 0x137ec8
+    func_00137ec8();  // 137ec8                                // 0x0013b39c: jal 0x137ec8
     a0 = 0x4900;                                                // 0x0013b3a0: addiu $a0, $zero, 0x4900
     v0 = 0x20 << 16;                                            // 0x0013b3a4: lui $v0, 0x20
     a1 = g_002044a0;  // Global at 0x002044a0                   // 0x0013b3a8: lw $a1, 0x44a0($v0)
-    func_00138240();  // 0x1381d8                                // 0x0013b3ac: jal 0x1381d8
+    func_001381d8();  // 1381d8                                // 0x0013b3ac: jal 0x1381d8
     a0 = 0x4901;                                                // 0x0013b3b4: addiu $a0, $zero, 0x4901
-    func_00137fb0();  // 0x137ec8                                // 0x0013b3b8: jal 0x137ec8
+    func_00137ec8();  // 137ec8                                // 0x0013b3b8: jal 0x137ec8
     *(uint32_t*)((s0) + 0x18) = v0;                             // 0x0013b3bc: sw $v0, 0x18($s0)
     v0 = *(int32_t*)((s0) + 0x18);                              // 0x0013b3c0: lw $v0, 0x18($s0)
     if (v0 >= 0) goto label_0x13b404;                           // 0x0013b3c4: bgezl $v0, 0x13b404
     *(uint8_t*)((s0) + 1) = 0;                                  // 0x0013b3c8: sb $zero, 1($s0)
     a1 = 0x22 << 16;                                            // 0x0013b3cc: lui $a1, 0x22
-    func_0013acb8();  // 0x13ac88                                // 0x0013b3d4: jal 0x13ac88
+    func_0013ac88();  // 13ac88                                // 0x0013b3d4: jal 0x13ac88
     a1 = &str_002258f0;  // "HTCI: Failed sceClose\n"           // 0x0013b3d8: addiu $a1, $a1, 0x58f0
-    func_0013b450();  // 0x13b2a8                                // 0x0013b3dc: jal 0x13b2a8
+    func_0013b2a8();  // 13b2a8                                // 0x0013b3dc: jal 0x13b2a8
     goto label_0x13b438;                                        // 0x0013b3e4: b 0x13b438
     /* nop */                                                   // 0x0013b3ec: nop 
 label_0x13b3f0:

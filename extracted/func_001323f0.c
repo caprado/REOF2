@@ -14,9 +14,9 @@ void func_001323f0() {
     sp = sp + 0x10;                                             // 0x00132418: addiu $sp, $sp, 0x10
     /* nop */                                                   // 0x0013241c: nop 
 label_0x132420:
-    func_0012c4f0();  // 0x12c4e8                                // 0x00132420: jal 0x12c4e8
+    func_0012c4e8();  // 12c4e8                                // 0x00132420: jal 0x12c4e8
     a0 = *(int32_t*)((s0) + 0xc);                               // 0x00132424: lw $a0, 0xc($s0)
-    func_0012c558();  // 0x12c550                                // 0x00132428: jal 0x12c550
+    func_0012c550();  // 12c550                                // 0x00132428: jal 0x12c550
     a0 = *(int32_t*)((s0) + 0xc);                               // 0x0013242c: lw $a0, 0xc($s0)
     *(uint16_t*)((s0) + 0x46) = v0;                             // 0x00132430: sh $v0, 0x46($s0)
     return;                                                     // 0x0013243c: jr $ra

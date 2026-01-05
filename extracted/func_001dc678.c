@@ -36,11 +36,11 @@ label_0x1dc6c4:
     a1 = 3;                                                     // 0x001dc6f4: addiu $a1, $zero, 3
     a2 = 1;                                                     // 0x001dc6f8: addiu $a2, $zero, 1
     t0 = 0x10;                                                  // 0x001dc6fc: addiu $t0, $zero, 0x10
-    func_001178a0();  // 0x1176a8                                // 0x001dc700: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x001dc700: jal 0x1176a8
     t2 = 0x10;                                                  // 0x001dc704: addiu $t2, $zero, 0x10
     if (v0 == 0) goto label_0x1dc724;                           // 0x001dc708: beqz $v0, 0x1dc724
     a0 = 0x25 << 16;                                            // 0x001dc70c: lui $a0, 0x25
-    func_00116598();  // 0x116508                                // 0x001dc714: jal 0x116508
+    func_00116508();  // 116508                                // 0x001dc714: jal 0x116508
     a0 = &str_002482c0;  // "sceUsbKbSetLEDStatus: sceSifCallRpc -> %d\n" // 0x001dc718: addiu $a0, $a0, -0x7d40
     goto label_0x1dc738;                                        // 0x001dc71c: b 0x1dc738
     v0 = -2;                                                    // 0x001dc720: addiu $v0, $zero, -2

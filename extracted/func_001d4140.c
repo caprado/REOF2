@@ -44,14 +44,14 @@ label_0x1d41a4:
     if (a2 != 0) goto label_0x1d41ec;                           // 0x001d41c4: bnez $a2, 0x1d41ec
     a3 = 0x24 << 16;                                            // 0x001d41d0: lui $a3, 0x24
     a1 = a1 & 0xffff;                                           // 0x001d41d4: andi $a1, $a1, 0xffff
-    func_001d3f60();  // 0x1d3e40                                // 0x001d41dc: jal 0x1d3e40
+    func_001d3e40();  // 1d3e40                                // 0x001d41dc: jal 0x1d3e40
     a3 = &str_002472e8;  // "NPC\\N"                            // 0x001d41e0: addiu $a3, $a3, 0x72e8
     goto label_0x1d4200;                                        // 0x001d41e4: b 0x1d4200
     /* nop */                                                   // 0x001d41e8: nop 
 label_0x1d41ec:
     a3 = 0x24 << 16;                                            // 0x001d41ec: lui $a3, 0x24
     a1 = a1 & 0xffff;                                           // 0x001d41f0: andi $a1, $a1, 0xffff
-    func_001d3f60();  // 0x1d3e40                                // 0x001d41f8: jal 0x1d3e40
+    func_001d3e40();  // 1d3e40                                // 0x001d41f8: jal 0x1d3e40
     a3 = &str_002472f8;  // "PL\\LOW\\P"                        // 0x001d41fc: addiu $a3, $a3, 0x72f8
 label_0x1d4200:
     goto label_0x1d4a28;                                        // 0x001d4200: b 0x1d4a28
@@ -60,7 +60,7 @@ label_0x1d4208:
     if (a2 != 0) goto label_0x1d422c;                           // 0x001d4208: bnez $a2, 0x1d422c
     a3 = 0x24 << 16;                                            // 0x001d4210: lui $a3, 0x24
     a1 = a1 & 0xffff;                                           // 0x001d4214: andi $a1, $a1, 0xffff
-    func_001d3f60();  // 0x1d3e40                                // 0x001d421c: jal 0x1d3e40
+    func_001d3e40();  // 1d3e40                                // 0x001d421c: jal 0x1d3e40
     a3 = &str_00247300;  // "PL\\EP"                            // 0x001d4220: addiu $a3, $a3, 0x7300
     goto label_0x1d4a28;                                        // 0x001d4224: b 0x1d4a28
     /* nop */                                                   // 0x001d4228: nop 
@@ -68,14 +68,14 @@ label_0x1d422c:
     if (a3 != 0) goto label_0x1d4254;                           // 0x001d422c: bnez $a3, 0x1d4254
     a3 = 0x24 << 16;                                            // 0x001d4238: lui $a3, 0x24
     a1 = a1 & 0xffff;                                           // 0x001d423c: andi $a1, $a1, 0xffff
-    func_001d3f60();  // 0x1d3e40                                // 0x001d4244: jal 0x1d3e40
+    func_001d3e40();  // 1d3e40                                // 0x001d4244: jal 0x1d3e40
     a3 = a3 + 0x7310;                                           // 0x001d4248: addiu $a3, $a3, 0x7310
     goto label_0x1d4268;                                        // 0x001d424c: b 0x1d4268
     /* nop */                                                   // 0x001d4250: nop 
 label_0x1d4254:
     a3 = 0x24 << 16;                                            // 0x001d4254: lui $a3, 0x24
     a1 = a1 & 0xffff;                                           // 0x001d4258: andi $a1, $a1, 0xffff
-    func_001d3f60();  // 0x1d3e40                                // 0x001d4260: jal 0x1d3e40
+    func_001d3e40();  // 1d3e40                                // 0x001d4260: jal 0x1d3e40
     a3 = &str_00247318;  // "PL\\HIGH\\HP"                      // 0x001d4264: addiu $a3, $a3, 0x7318
 label_0x1d4268:
     goto label_0x1d4a28;                                        // 0x001d4268: b 0x1d4a28
@@ -88,14 +88,14 @@ label_0x1d4270:
     if (a2 != 0) goto label_0x1d42a4;                           // 0x001d4280: bnez $a2, 0x1d42a4
     a1 = a1 & 0xffff;                                           // 0x001d428c: andi $a1, $a1, 0xffff
     a2 = 0x24 << 16;                                            // 0x001d4290: lui $a2, 0x24
-    func_001d3e40();  // 0x1d3da0                                // 0x001d4294: jal 0x1d3da0
+    func_001d3da0();  // 1d3da0                                // 0x001d4294: jal 0x1d3da0
     a2 = &str_00247320;  // "PL\\HP"                            // 0x001d4298: addiu $a2, $a2, 0x7320
     goto label_0x1d42b4;                                        // 0x001d429c: b 0x1d42b4
     /* nop */                                                   // 0x001d42a0: nop 
 label_0x1d42a4:
     a1 = a1 & 0xffff;                                           // 0x001d42a4: andi $a1, $a1, 0xffff
     a2 = 0x24 << 16;                                            // 0x001d42a8: lui $a2, 0x24
-    func_001d3e40();  // 0x1d3da0                                // 0x001d42ac: jal 0x1d3da0
+    func_001d3da0();  // 1d3da0                                // 0x001d42ac: jal 0x1d3da0
     a2 = &str_00247330;  // "NPC\\HIGH\\HN"                     // 0x001d42b0: addiu $a2, $a2, 0x7330
 label_0x1d42b4:
     goto label_0x1d4a28;                                        // 0x001d42b4: b 0x1d4a28
@@ -160,14 +160,14 @@ label_0x1d4368:
     if (a2 != 0) goto label_0x1d43a0;                           // 0x001d437c: bnez $a2, 0x1d43a0
     a1 = a1 & 0xffff;                                           // 0x001d4388: andi $a1, $a1, 0xffff
     a2 = 0x24 << 16;                                            // 0x001d438c: lui $a2, 0x24
-    func_001d3e40();  // 0x1d3da0                                // 0x001d4390: jal 0x1d3da0
+    func_001d3da0();  // 1d3da0                                // 0x001d4390: jal 0x1d3da0
     a2 = &str_002472e8;  // "NPC\\N"                            // 0x001d4394: addiu $a2, $a2, 0x72e8
     goto label_0x1d43b0;                                        // 0x001d4398: b 0x1d43b0
     /* nop */                                                   // 0x001d439c: nop 
 label_0x1d43a0:
     a1 = a1 & 0xffff;                                           // 0x001d43a0: andi $a1, $a1, 0xffff
     a2 = 0x24 << 16;                                            // 0x001d43a4: lui $a2, 0x24
-    func_001d3e40();  // 0x1d3da0                                // 0x001d43a8: jal 0x1d3da0
+    func_001d3da0();  // 1d3da0                                // 0x001d43a8: jal 0x1d3da0
     a2 = &str_002472f8;  // "PL\\LOW\\P"                        // 0x001d43ac: addiu $a2, $a2, 0x72f8
 label_0x1d43b0:
     goto label_0x1d4a28;                                        // 0x001d43b0: b 0x1d4a28
@@ -180,14 +180,14 @@ label_0x1d43b8:
     if (a2 != 0) goto label_0x1d43ec;                           // 0x001d43c8: bnez $a2, 0x1d43ec
     a1 = a1 & 0xffff;                                           // 0x001d43d4: andi $a1, $a1, 0xffff
     a2 = 0x24 << 16;                                            // 0x001d43d8: lui $a2, 0x24
-    func_001d3e40();  // 0x1d3da0                                // 0x001d43dc: jal 0x1d3da0
+    func_001d3da0();  // 1d3da0                                // 0x001d43dc: jal 0x1d3da0
     a2 = &str_00247338;  // "NPC\\HN"                           // 0x001d43e0: addiu $a2, $a2, 0x7338
     goto label_0x1d43fc;                                        // 0x001d43e4: b 0x1d43fc
     /* nop */                                                   // 0x001d43e8: nop 
 label_0x1d43ec:
     a1 = a1 & 0xffff;                                           // 0x001d43ec: andi $a1, $a1, 0xffff
     a2 = 0x24 << 16;                                            // 0x001d43f0: lui $a2, 0x24
-    func_001d3e40();  // 0x1d3da0                                // 0x001d43f4: jal 0x1d3da0
+    func_001d3da0();  // 1d3da0                                // 0x001d43f4: jal 0x1d3da0
     a2 = &str_00247348;  // "MOVIE64.TM2"                       // 0x001d43f8: addiu $a2, $a2, 0x7348
 label_0x1d43fc:
     goto label_0x1d4a28;                                        // 0x001d43fc: b 0x1d4a28
@@ -200,7 +200,7 @@ label_0x1d4408:
     at = (a0 < 0x2000) ? 1 : 0;                                 // 0x001d4410: slti $at, $a0, 0x2000
     if (at == 0) goto label_0x1d442c;                           // 0x001d4414: beqz $at, 0x1d442c
     /* nop */                                                   // 0x001d4418: nop 
-    func_001d3fe0();  // 0x1d3f60                                // 0x001d441c: jal 0x1d3f60
+    func_001d3f60();  // 1d3f60                                // 0x001d441c: jal 0x1d3f60
     goto label_0x1d4a28;                                        // 0x001d4424: b 0x1d4a28
     /* nop */                                                   // 0x001d4428: nop 
 label_0x1d442c:
@@ -208,7 +208,7 @@ label_0x1d442c:
     at = (a0 < 0x2400) ? 1 : 0;                                 // 0x001d4430: slti $at, $a0, 0x2400
     if (at == 0) goto label_0x1d4454;                           // 0x001d4434: beqz $at, 0x1d4454
     v1 = (a0 < 0x2000) ? 1 : 0;                                 // 0x001d4438: slti $v1, $a0, 0x2000
-    func_001d4060();  // 0x1d3fe0                                // 0x001d4440: jal 0x1d3fe0
+    func_001d3fe0();  // 1d3fe0                                // 0x001d4440: jal 0x1d3fe0
     a1 = a1 & 0xffff;                                           // 0x001d4444: andi $a1, $a1, 0xffff
     goto label_0x1d4a28;                                        // 0x001d4448: b 0x1d4a28
     /* nop */                                                   // 0x001d444c: nop 
@@ -221,7 +221,7 @@ label_0x1d4454:
     if (at == 0) goto label_0x1d447c;                           // 0x001d4460: beqz $at, 0x1d447c
     /* nop */                                                   // 0x001d4464: nop 
     a0 = a1 & 0xffff;                                           // 0x001d4468: andi $a0, $a1, 0xffff
-    func_001d40d0();  // 0x1d4060                                // 0x001d446c: jal 0x1d4060
+    func_001d4060();  // 1d4060                                // 0x001d446c: jal 0x1d4060
     goto label_0x1d4a28;                                        // 0x001d4474: b 0x1d4a28
     /* nop */                                                   // 0x001d4478: nop 
 label_0x1d447c:
@@ -230,7 +230,7 @@ label_0x1d447c:
     if (at == 0) goto label_0x1d44a4;                           // 0x001d4484: beqz $at, 0x1d44a4
     v1 = (a0 < 0x2a00) ? 1 : 0;                                 // 0x001d4488: slti $v1, $a0, 0x2a00
     a0 = a1 & 0xffff;                                           // 0x001d448c: andi $a0, $a1, 0xffff
-    func_001d4140();  // 0x1d40d0                                // 0x001d4490: jal 0x1d40d0
+    func_001d40d0();  // 1d40d0                                // 0x001d4490: jal 0x1d40d0
     goto label_0x1d4a28;                                        // 0x001d4498: b 0x1d4a28
     /* nop */                                                   // 0x001d449c: nop 
 label_0x1d44a0:

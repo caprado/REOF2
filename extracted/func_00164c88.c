@@ -20,14 +20,14 @@ void func_00164c88() {
     *(uint32_t*)(s3) = 0;                                       // 0x00164cdc: sw $zero, 0($s3)
     if (v0 != 0) goto label_0x164d3c;                           // 0x00164ce8: bnez $v0, 0x164d3c
     s4 = *(int32_t*)((s0) + 0x1b74);                            // 0x00164cec: lw $s4, 0x1b74($s0)
-    func_00132f00();  // 0x132e68                                // 0x00164cf0: jal 0x132e68
+    func_00132e68();  // 132e68                                // 0x00164cf0: jal 0x132e68
     /* nop */                                                   // 0x00164cf4: nop 
     if (v0 != 0) goto label_0x164d2c;                           // 0x00164cf8: bnez $v0, 0x164d2c
     v1 = local_0;                                               // 0x00164cfc: lw $v1, 0($sp)
-    func_00169678();  // 0x169640                                // 0x00164d00: jal 0x169640
+    func_00169640();  // 169640                                // 0x00164d00: jal 0x169640
     v0 = (v0 < 0x6c) ? 1 : 0;                                   // 0x00164d0c: slti $v0, $v0, 0x6c
     if (v0 == 0) goto label_0x164d2c;                           // 0x00164d18: beqz $v0, 0x164d2c
-    func_00164e80();  // 0x164d60                                // 0x00164d20: jal 0x164d60
+    func_00164d60();  // 164d60                                // 0x00164d20: jal 0x164d60
     /* nop */                                                   // 0x00164d24: nop 
     v1 = v0 - s1;                                               // 0x00164d28: subu $v1, $v0, $s1
 label_0x164d2c:

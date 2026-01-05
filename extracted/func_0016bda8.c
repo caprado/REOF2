@@ -7,7 +7,7 @@ void func_0016bda8() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x30;                                            // 0x0016bda8: addiu $sp, $sp, -0x30
-    func_00169b10();  // 0x169af0                                // 0x0016bdcc: jal 0x169af0
+    func_00169af0();  // 169af0                                // 0x0016bdcc: jal 0x169af0
     if (v0 == 0) goto label_0x16be00;                           // 0x0016bdd4: beqz $v0, 0x16be00
     a1 = 0xff00 << 16;                                          // 0x0016bddc: lui $a1, 0xff00
     a1 = a1 | 0x185;                                            // 0x0016bdec: ori $a1, $a1, 0x185
@@ -22,7 +22,7 @@ label_0x16be00:
     /* bnezl $s3, 0x16be30 */                                   // 0x0016be14: bnezl $s3, 0x16be30
     v0 = *(int32_t*)((s2) + 0x2c);                              // 0x0016be18: lw $v0, 0x2c($s2)
 label_0x16be1c:
-    func_0016f9b8();  // 0x16f960                                // 0x0016be1c: jal 0x16f960
+    func_0016f960();  // 16f960                                // 0x0016be1c: jal 0x16f960
     /* nop */                                                   // 0x0016be20: nop 
     goto label_0x16becc;                                        // 0x0016be24: b 0x16becc
     /* nop */                                                   // 0x0016be2c: nop 

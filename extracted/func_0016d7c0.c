@@ -13,7 +13,7 @@ void func_0016d7c0() {
     sp = sp + 0x10;                                             // 0x0016d7dc: addiu $sp, $sp, 0x10
     sp = sp + -0x30;                                            // 0x0016d7e0: addiu $sp, $sp, -0x30
     a1 = 0x34;                                                  // 0x0016d7ec: addiu $a1, $zero, 0x34
-    func_001752f8();  // 0x1752e8                                // 0x0016d80c: jal 0x1752e8
+    func_001752e8();  // 1752e8                                // 0x0016d80c: jal 0x1752e8
     if (s0 != 0) goto label_0x16d860;                           // 0x0016d818: bnez $s0, 0x16d860
     v0 = 1;                                                     // 0x0016d81c: addiu $v0, $zero, 1
     if (s3 >= 0) goto label_0x16d84c;                           // 0x0016d820: bgez $s3, 0x16d84c
@@ -22,13 +22,13 @@ void func_0016d7c0() {
     a1 = 0x34;                                                  // 0x0016d830: addiu $a1, $zero, 0x34
     /* beqzl $s4, 0x16d860 */                                   // 0x0016d834: beqzl $s4, 0x16d860
     v0 = 1;                                                     // 0x0016d838: addiu $v0, $zero, 1
-    func_0016d948();  // 0x16d8b8                                // 0x0016d83c: jal 0x16d8b8
+    func_0016d8b8();  // 16d8b8                                // 0x0016d83c: jal 0x16d8b8
     if (v0 == 0) goto label_0x16d85c;                           // 0x0016d844: beqz $v0, 0x16d85c
 label_0x16d84c:
     a1 = 0x34;                                                  // 0x0016d84c: addiu $a1, $zero, 0x34
 label_0x16d850:
     a2 = 1;                                                     // 0x0016d850: addiu $a2, $zero, 1
-    func_00175170();  // 0x175120                                // 0x0016d854: jal 0x175120
+    func_00175120();  // 175120                                // 0x0016d854: jal 0x175120
     s0 = 1;                                                     // 0x0016d858: addiu $s0, $zero, 1
 label_0x16d85c:
     v0 = 1;                                                     // 0x0016d85c: addiu $v0, $zero, 1

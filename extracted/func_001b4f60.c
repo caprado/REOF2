@@ -15,7 +15,7 @@ void func_001b4f60() {
     goto label_0x1b4f90;                                        // 0x001b4f80: b 0x1b4f90
     g_003137ca = 0;  // Global at 0x003137ca                    // 0x001b4f84: sb $zero, 0x37ca($at)
 label_0x1b4f88:
-    func_001b4f60();  // 0x1b4d00                                // 0x001b4f88: jal 0x1b4d00
+    func_001b4d00();  // 1b4d00                                // 0x001b4f88: jal 0x1b4d00
     /* nop */                                                   // 0x001b4f8c: nop 
 label_0x1b4f90:
     return;                                                     // 0x001b4f94: jr $ra

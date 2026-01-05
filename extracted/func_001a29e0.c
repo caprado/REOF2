@@ -8,12 +8,12 @@ void func_001a29e0() {
     
     sp = sp + -0x30;                                            // 0x001a29e0: addiu $sp, $sp, -0x30
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001a29e8: addu.qb $zero, $sp, $s1
-    func_001a27b0();  // 0x1a2780                                // 0x001a29f4: jal 0x1a2780
+    func_001a2780();  // 1a2780                                // 0x001a29f4: jal 0x1a2780
     v0 = (s0 < v0) ? 1 : 0;                                     // 0x001a29fc: slt $v0, $s0, $v0
     if (v0 != 0) goto label_0x1a2a10;                           // 0x001a2a00: bnez $v0, 0x1a2a10
     goto label_0x1a2a20;                                        // 0x001a2a08: b 0x1a2a20
 label_0x1a2a10:
-    func_001a2830();  // 0x1a2800                                // 0x001a2a10: jal 0x1a2800
+    func_001a2800();  // 1a2800                                // 0x001a2a10: jal 0x1a2800
     v0 = v0 << 6;                                               // 0x001a2a18: sll $v0, $v0, 6
     v0 = v0 + 0x10;                                             // 0x001a2a1c: addiu $v0, $v0, 0x10
 label_0x1a2a20:

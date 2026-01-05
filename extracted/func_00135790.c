@@ -37,9 +37,9 @@ label_0x135810:
     v1 = s0 + t0;                                               // 0x00135814: addu $v1, $s0, $t0
 label_0x135818:
     v0 = s0 + t0;                                               // 0x00135818: addu $v0, $s0, $t0
-    func_0010af38();  // 0x10ae00                                // 0x00135820: jal 0x10ae00
+    func_0010ae00();  // 10ae00                                // 0x00135820: jal 0x10ae00
     *(uint8_t*)(v0) = 0;                                        // 0x00135824: sb $zero, 0($v0)
-    func_00107b68();  // 0x107ab8                                // 0x00135830: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x00135830: jal 0x107ab8
     a2 = v0 + 1;                                                // 0x00135834: addiu $a2, $v0, 1
     goto label_0x1358c0;                                        // 0x00135838: b 0x1358c0
     *(uint8_t*)(s0) = 0;                                        // 0x0013583c: sb $zero, 0($s0)

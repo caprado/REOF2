@@ -20,7 +20,7 @@ void func_00172f98() {
 label_0x172fd0:
     goto label_0x172fe4;                                        // 0x00172fd0: b 0x172fe4
 label_0x172fd8:
-    func_00175d00();  // 0x175cc0                                // 0x00172fd8: jal 0x175cc0
+    func_00175cc0();  // 175cc0                                // 0x00172fd8: jal 0x175cc0
     /* nop */                                                   // 0x00172fdc: nop 
     v0 = ((unsigned)0 < (unsigned)v0) ? 1 : 0;                  // 0x00172fe0: sltu $v0, $zero, $v0
 label_0x172fe4:

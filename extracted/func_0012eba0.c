@@ -21,10 +21,10 @@ label_0x12ebc8:
     /* divide: v0 / v1 -> hi:lo */                              // 0x0012ebf4: div $zero, $v0, $v1
     /* mflo $v0 */                                              // 0x0012ebf8
     if (v0 <= 0) goto label_0x12ec34;                           // 0x0012ebfc: blez $v0, 0x12ec34
-    func_0012ea70();  // 0x12e8b0                                // 0x0012ec04: jal 0x12e8b0
+    func_0012e8b0();  // 12e8b0                                // 0x0012ec04: jal 0x12e8b0
     /* nop */                                                   // 0x0012ec08: nop 
     if (v0 == 0) goto label_0x12ec34;                           // 0x0012ec0c: beqz $v0, 0x12ec34
-    func_0012eba0();  // 0x12ea70                                // 0x0012ec14: jal 0x12ea70
+    func_0012ea70();  // 12ea70                                // 0x0012ec14: jal 0x12ea70
     v1 = *(int32_t*)((s0) + 0x30);                              // 0x0012ec1c: lw $v1, 0x30($s0)
     a0 = *(int32_t*)((s0) + 0x3c);                              // 0x0012ec20: lw $a0, 0x3c($s0)
     v1 = (v1 < a0) ? 1 : 0;                                     // 0x0012ec24: slt $v1, $v1, $a0

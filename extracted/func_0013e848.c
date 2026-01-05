@@ -13,7 +13,7 @@ void func_0013e848() {
     sp = sp + 0x10;                                             // 0x0013e860: addiu $sp, $sp, 0x10
     /* nop */                                                   // 0x0013e864: nop 
     sp = sp + -0x10;                                            // 0x0013e868: addiu $sp, $sp, -0x10
-    func_0013e910();  // 0x13e898                                // 0x0013e878: jal 0x13e898
+    func_0013e898();  // 13e898                                // 0x0013e878: jal 0x13e898
     return func_0013e918();  // Tail call                        // 0x0013e890: j 0x13e910
     sp = sp + 0x10;                                             // 0x0013e894: addiu $sp, $sp, 0x10
     sp = sp + -0x30;                                            // 0x0013e898: addiu $sp, $sp, -0x30
@@ -27,7 +27,7 @@ void func_0013e848() {
 label_0x13e8d8:
     a0 = *(int32_t*)(s0);                                       // 0x0013e8d8: lw $a0, 0($s0)
     s0 = s0 + 4;                                                // 0x0013e8dc: addiu $s0, $s0, 4
-    func_00138950();  // 0x1388a0                                // 0x0013e8e0: jal 0x1388a0
+    func_001388a0();  // 1388a0                                // 0x0013e8e0: jal 0x1388a0
     s2 = s2 + -1;                                               // 0x0013e8e4: addiu $s2, $s2, -1
     *(uint8_t*)((s1) + 0x51) = s3;                              // 0x0013e8e8: sb $s3, 0x51($s1)
     if (s2 != 0) goto label_0x13e8d8;                           // 0x0013e8ec: bnez $s2, 0x13e8d8

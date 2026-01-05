@@ -17,7 +17,7 @@ void func_0013e780() {
     /* nop */                                                   // 0x0013e7ac: nop 
     if (a0 == 0) goto label_0x13e7c4;                           // 0x0013e7b0: beqz $a0, 0x13e7c4
     s0 = s0 + 4;                                                // 0x0013e7b4: addiu $s0, $s0, 4
-    func_00138890();  // 0x138868                                // 0x0013e7b8: jal 0x138868
+    func_00138868();  // 138868                                // 0x0013e7b8: jal 0x138868
     /* nop */                                                   // 0x0013e7bc: nop 
     v1 = *(int32_t*)((s1) + 4);                                 // 0x0013e7c0: lw $v1, 4($s1)
 label_0x13e7c4:
@@ -29,7 +29,7 @@ label_0x13e7d4:
     v0 = *(int32_t*)((s1) + 0x20);                              // 0x0013e7d4: lw $v0, 0x20($s1)
     a0 = 9;                                                     // 0x0013e7d8: addiu $a0, $zero, 9
     a2 = 1;                                                     // 0x0013e7e0: addiu $a2, $zero, 1
-    func_00139228();  // 0x139120                                // 0x0013e7ec: jal 0x139120
+    func_00139120();  // 139120                                // 0x0013e7ec: jal 0x139120
     local_0 = v0;                                               // 0x0013e7f0: sw $v0, 0($sp)
     v1 = *(int32_t*)((s1) + 4);                                 // 0x0013e7f4: lw $v1, 4($s1)
     if (v1 <= 0) goto label_0x13e82c;                           // 0x0013e7f8: blez $v1, 0x13e82c
@@ -37,7 +37,7 @@ label_0x13e7d4:
     a0 = *(int32_t*)(s0);                                       // 0x0013e804: lw $a0, 0($s0)
     if (a0 == 0) goto label_0x13e81c;                           // 0x0013e808: beqz $a0, 0x13e81c
     s0 = s0 + 4;                                                // 0x0013e80c: addiu $s0, $s0, 4
-    func_0013dcc0();  // 0x13dc58                                // 0x0013e810: jal 0x13dc58
+    func_0013dc58();  // 13dc58                                // 0x0013e810: jal 0x13dc58
     /* nop */                                                   // 0x0013e814: nop 
     v1 = *(int32_t*)((s1) + 4);                                 // 0x0013e818: lw $v1, 4($s1)
 label_0x13e81c:

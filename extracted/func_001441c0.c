@@ -20,12 +20,12 @@ void func_001441c0() {
     /* nop */                                                   // 0x0014420c: nop 
 label_0x144210:
 label_0x144214:
-    func_00144608();  // 0x144408                                // 0x00144214: jal 0x144408
+    func_00144408();  // 144408                                // 0x00144214: jal 0x144408
     if (s0 == s4) goto label_0x144214;                          // 0x00144220: beq $s0, $s4, 0x144214
     if (s0 == s3) goto label_0x144210;                          // 0x00144228: beq $s0, $s3, 0x144210
     /* nop */                                                   // 0x0014422c: nop 
-    func_00145080();  // 0x144f18                                // 0x00144230: jal 0x144f18
-    func_00143f08();  // 0x143c70                                // 0x00144238: jal 0x143c70
+    func_00144f18();  // 144f18                                // 0x00144230: jal 0x144f18
+    func_00143c70();  // 143c70                                // 0x00144238: jal 0x143c70
     if (v0 != 0) goto label_0x14425c;                           // 0x00144240: bnez $v0, 0x14425c
     v1 = 0x1000 << 16;                                          // 0x00144244: lui $v1, 0x1000
     v0 = *(int32_t*)((s2) + 0x10a0);                            // 0x00144248: lw $v0, 0x10a0($s2)
@@ -48,13 +48,13 @@ label_0x144268:
     if (s0 != 0) goto label_0x1442a0;                           // 0x00144284: bnez $s0, 0x1442a0
     v0 = ((unsigned)s1 < (unsigned)2) ? 1 : 0;                  // 0x00144288: sltiu $v0, $s1, 2
     a1 = *(int32_t*)((s2) + 0x828);                             // 0x0014428c: lw $a1, 0x828($s2)
-    func_00143c48();  // 0x142c78                                // 0x00144294: jal 0x142c78
+    func_00142c78();  // 142c78                                // 0x00144294: jal 0x142c78
     a1 = ((unsigned)a1 < (unsigned)1) ? 1 : 0;                  // 0x00144298: sltiu $a1, $a1, 1
     v0 = ((unsigned)s1 < (unsigned)2) ? 1 : 0;                  // 0x0014429c: sltiu $v0, $s1, 2
 label_0x1442a0:
     if (v0 == 0) goto label_0x1442b4;                           // 0x001442a0: beqz $v0, 0x1442b4
     a1 = 0x22 << 16;                                            // 0x001442a8: lui $a1, 0x22
-    func_00148588();  // 0x148530                                // 0x001442ac: jal 0x148530
+    func_00148530();  // 148530                                // 0x001442ac: jal 0x148530
     a1 = &str_002266a0;  // "slice_start_code(0x%08x) out of range" // 0x001442b0: addiu $a1, $a1, 0x66a0
 label_0x1442b4:
 label_0x1442b8:

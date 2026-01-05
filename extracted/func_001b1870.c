@@ -16,7 +16,7 @@ label_0x1b1898:
     a0 = *(uint16_t*)(s0);                                      // 0x001b189c: lhu $a0, 0($s0)
     if (a0 == 0) goto label_0x1b18b4;                           // 0x001b18a0: beqz $a0, 0x1b18b4
     /* nop */                                                   // 0x001b18a4: nop 
-    func_00192370();  // 0x192350                                // 0x001b18a8: jal 0x192350
+    func_00192350();  // 192350                                // 0x001b18a8: jal 0x192350
     /* nop */                                                   // 0x001b18ac: nop 
     *(uint16_t*)(s0) = 0;                                       // 0x001b18b0: sh $zero, 0($s0)
 label_0x1b18b4:

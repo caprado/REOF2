@@ -23,7 +23,7 @@ void func_00125b20() {
     t3 = s0 + 0x14;                                             // 0x00125b78: addiu $t3, $s0, 0x14
     local_0 = v0;                                               // 0x00125b7c: sw $v0, 0($sp)
     local_10 = v1;                                              // 0x00125b80: sw $v1, 0x10($sp)
-    func_00125b20();  // 0x1258f0                                // 0x00125b84: jal 0x1258f0
+    func_001258f0();  // 1258f0                                // 0x00125b84: jal 0x1258f0
     local_8 = s2;                                               // 0x00125b88: sw $s2, 8($sp)
     if (v0 >= 0) goto label_0x125ba0;                           // 0x00125b8c: bgezl $v0, 0x125ba0
     *(uint32_t*)((s0) + 0x34) = 0;                              // 0x00125b90: sw $zero, 0x34($s0)

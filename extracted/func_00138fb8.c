@@ -18,10 +18,10 @@ void func_00138fb8() {
     /* nop */                                                   // 0x00138ff4: nop 
 label_0x138ff8:
     a0 = s0 + 0x2e70;                                           // 0x00138ff8: addiu $a0, $s0, 0x2e70
-    func_001176a8();  // 0x1174d8                                // 0x00138ffc: jal 0x1174d8
+    func_001174d8();  // 1174d8                                // 0x00138ffc: jal 0x1174d8
     if (v0 >= 0) goto label_0x139038;                           // 0x00139004: bgezl $v0, 0x139038
     v0 = g_00202e94;  // Global at 0x00202e94                   // 0x00139008: lw $v0, 0x24($s1)
-    func_00116598();  // 0x116508                                // 0x0013900c: jal 0x116508
+    func_00116508();  // 116508                                // 0x0013900c: jal 0x116508
     a0 = &str_00225280;  // "\nDVCI/PS2EE Ver.2.64 Build:Jul 28 2003 17:50:09\n" // 0x00139010: addiu $a0, $s4, 0x5280
     /* nop */                                                   // 0x00139014: nop 
 label_0x139018:

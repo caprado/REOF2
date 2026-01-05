@@ -14,11 +14,11 @@ void func_0012a318() {
     return func_00127de8();  // Tail call                        // 0x0012a340: j 0x127d90
     sp = sp + 0x10;                                             // 0x0012a344: addiu $sp, $sp, 0x10
 label_0x12a348:
-    func_0013c9f8();  // 0x13c9d0                                // 0x0012a348: jal 0x13c9d0
+    func_0013c9d0();  // 13c9d0                                // 0x0012a348: jal 0x13c9d0
     a0 = 0x22 << 16;                                            // 0x0012a350: lui $a0, 0x22
     a0 = &str_00222ba0;  // "E02080855 ADXT_EntryAfs: parameter error" // 0x0012a354: addiu $a0, $a0, 0x2ba0
     if (v0 >= 0) goto label_0x12a368;                           // 0x0012a358: bgez $v0, 0x12a368
-    func_00127e58();  // 0x127de8                                // 0x0012a360: jal 0x127de8
+    func_00127de8();  // 127de8                                // 0x0012a360: jal 0x127de8
     /* nop */                                                   // 0x0012a364: nop 
 label_0x12a368:
     return;                                                     // 0x0012a370: jr $ra

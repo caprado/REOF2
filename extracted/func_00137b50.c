@@ -24,7 +24,7 @@ void func_00137b50() {
     v1 = ((unsigned)a2 < (unsigned)v1) ? 1 : 0;                 // 0x00137b98: sltu $v1, $a2, $v1
     /* beqzl $v1, 0x137b80 */                                   // 0x00137b9c: beqzl $v1, 0x137b80
     v0 = g_002021c4;  // Global at 0x002021c4                   // 0x00137ba0: lw $v0, 0x21c4($t0)
-    func_00116598();  // 0x116508                                // 0x00137ba4: jal 0x116508
+    func_00116508();  // 116508                                // 0x00137ba4: jal 0x116508
     a0 = &str_00224e48;  // "SRD: SRD Info.\n"                  // 0x00137ba8: addiu $a0, $a0, 0x4e48
 label_0x137bb0:
     return;                                                     // 0x00137bb0: jr $ra

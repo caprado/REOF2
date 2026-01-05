@@ -10,12 +10,12 @@ void func_0013a920() {
     v0 = 0x25 << 16;                                            // 0x0013a924: lui $v0, 0x25
     a2 = 0x1000;                                                // 0x0013a944: addiu $a2, $zero, 0x1000
     a0 = v0 + 0x3d40;                                           // 0x0013a948: addiu $a0, $v0, 0x3d40
-    func_00107d30();  // 0x107c70                                // 0x0013a960: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x0013a960: jal 0x107c70
     v1 = 0x20 << 16;                                            // 0x0013a968: lui $v1, 0x20
     v0 = g_00203ed0;  // Global at 0x00203ed0                   // 0x0013a96c: lw $v0, 0x3ed0($v1)
     if (v0 == 0) goto label_0x13a980;                           // 0x0013a970: beqz $v0, 0x13a980
     /* nop */                                                   // 0x0013a974: nop 
-    func_0013a6c0();  // 0x13a698                                // 0x0013a978: jal 0x13a698
+    func_0013a698();  // 13a698                                // 0x0013a978: jal 0x13a698
     /* nop */                                                   // 0x0013a97c: nop 
 label_0x13a980:
     if (s4 == 0) goto label_0x13a9a0;                           // 0x0013a980: beqz $s4, 0x13a9a0
@@ -27,7 +27,7 @@ label_0x13a980:
     if (s1 != 0) goto label_0x13a9a8;                           // 0x0013a998: bnez $s1, 0x13a9a8
     /* nop */                                                   // 0x0013a99c: nop 
 label_0x13a9a0:
-    func_0013a6c0();  // 0x13a698                                // 0x0013a9a0: jal 0x13a698
+    func_0013a698();  // 13a698                                // 0x0013a9a0: jal 0x13a698
     /* nop */                                                   // 0x0013a9a4: nop 
 label_0x13a9a8:
     if (s4 == 0) goto label_0x13aa64;                           // 0x0013a9a8: beqz $s4, 0x13aa64
@@ -51,7 +51,7 @@ label_0x13a9f0:
     a0 = 0x22 << 16;                                            // 0x0013a9f8: lui $a0, 0x22
     a0 = &str_002255e0;  // "DVCI: Can't read filelist file.(%s)\n" // 0x0013aa00: addiu $a0, $a0, 0x55e0
 label_0x13aa04:
-    func_00116598();  // 0x116508                                // 0x0013aa04: jal 0x116508
+    func_00116508();  // 116508                                // 0x0013aa04: jal 0x116508
     /* nop */                                                   // 0x0013aa08: nop 
     goto label_0x13aa64;                                        // 0x0013aa0c: b 0x13aa64
     /* nop */                                                   // 0x0013aa14: nop 
@@ -60,9 +60,9 @@ label_0x13aa18:
     /* beqzl $s0, 0x13aa34 */                                   // 0x0013aa2c: beqzl $s0, 0x13aa34
     /* break (trap) */                                          // 0x0013aa30: break 0, 7
     /* mflo $s1 */                                              // 0x0013aa34
-    func_0013a270();  // 0x13a0d8                                // 0x0013aa3c: jal 0x13a0d8
+    func_0013a0d8();  // 13a0d8                                // 0x0013aa3c: jal 0x13a0d8
     s1 = s1 << 3;                                               // 0x0013aa40: sll $s1, $s1, 3
-    func_0013a5d0();  // 0x13a3f8                                // 0x0013aa48: jal 0x13a3f8
+    func_0013a3f8();  // 13a3f8                                // 0x0013aa48: jal 0x13a3f8
     /* beqzl $s0, 0x13aa58 */                                   // 0x0013aa50: beqzl $s0, 0x13aa58
     /* break (trap) */                                          // 0x0013aa54: break 0, 7
     v1 = s5 + 1;                                                // 0x0013aa58: addiu $v1, $s5, 1

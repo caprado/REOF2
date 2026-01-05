@@ -9,7 +9,7 @@ void func_001b2110() {
     sp = sp + -0x90;                                            // 0x001b2110: addiu $sp, $sp, -0x90
     /* FPU: dpa.w.ph $ac0, $sp, $s3 */                          // 0x001b211c: dpa.w.ph $ac0, $sp, $s3
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001b212c: addu.qb $zero, $sp, $s1
-    func_001b2530();  // 0x1b24c0                                // 0x001b2134: jal 0x1b24c0
+    func_001b24c0();  // 1b24c0                                // 0x001b2134: jal 0x1b24c0
     if (v0 != 0) goto label_0x1b214c;                           // 0x001b213c: bnez $v0, 0x1b214c
     goto label_0x1b2290;                                        // 0x001b2144: b 0x1b2290
     v0 = -1;                                                    // 0x001b2148: addiu $v0, $zero, -1
@@ -31,7 +31,7 @@ label_0x1b214c:
     FPU_F0 = *(float*)((s2) + 4);  // Load float                // 0x001b2184: lwc1 $f0, 4($s2)
     *(float*)((sp) + 0x74) = FPU_F0;  // Store float            // 0x001b2188: swc1 $f0, 0x74($sp)
     FPU_F0 = *(float*)((s2) + 8);  // Load float                // 0x001b218c: lwc1 $f0, 8($s2)
-    func_00191b30();  // 0x191ac0                                // 0x001b2190: jal 0x191ac0
+    func_00191ac0();  // 191ac0                                // 0x001b2190: jal 0x191ac0
     *(float*)((sp) + 0x78) = FPU_F0;  // Store float            // 0x001b2194: swc1 $f0, 0x78($sp)
     /* move to FPU: $zero, $f1 */                               // 0x001b2198: mtc1 $zero, $f1
     /* nop */                                                   // 0x001b219c: nop 
@@ -46,7 +46,7 @@ label_0x1b214c:
     /* FPU: c.ole.s $f1, $f0 */                                 // 0x001b21c0: c.ole.s $f1, $f0
     /* bc1t 0x1b21dc */                                         // 0x001b21c4: bc1t 0x1b21dc
     /* nop */                                                   // 0x001b21c8: nop 
-    func_001b2560();  // 0x1b2530                                // 0x001b21cc: jal 0x1b2530
+    func_001b2530();  // 1b2530                                // 0x001b21cc: jal 0x1b2530
     /* nop */                                                   // 0x001b21d0: nop 
     goto label_0x1b2290;                                        // 0x001b21d4: b 0x1b2290
     v0 = -1;                                                    // 0x001b21d8: addiu $v0, $zero, -1
@@ -92,7 +92,7 @@ label_0x1b2268:
     v0 = v0 + -0x5d50;                                          // 0x001b2274: addiu $v0, $v0, -0x5d50
     v1 = v1 - a1;                                               // 0x001b227c: subu $v1, $v1, $a1
     v1 = v1 << 2;                                               // 0x001b2280: sll $v1, $v1, 2
-    func_001b25c0();  // 0x1b2560                                // 0x001b2284: jal 0x1b2560
+    func_001b2560();  // 1b2560                                // 0x001b2284: jal 0x1b2560
     a1 = v0 + v1;                                               // 0x001b2288: addu $a1, $v0, $v1
     v0 = *(int32_t*)((s0) + 4);                                 // 0x001b228c: lw $v0, 4($s0)
 label_0x1b2290:

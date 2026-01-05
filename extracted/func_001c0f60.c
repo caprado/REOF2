@@ -11,7 +11,7 @@ void func_001c0f60() {
     
     sp = sp + -0x20;                                            // 0x001c0f60: addiu $sp, $sp, -0x20
     FlushCache();  // 0x114390                                  // 0x001c0f68: jal 0x114390
-    func_001c0f60();  // 0x1c0f20                                // 0x001c0f70: jal 0x1c0f20
+    func_001c0f20();  // 1c0f20                                // 0x001c0f70: jal 0x1c0f20
     /* nop */                                                   // 0x001c0f74: nop 
     if (v0 == 0) goto label_0x1c0f88;                           // 0x001c0f78: beqz $v0, 0x1c0f88
     v0 = 0x22 << 16;                                            // 0x001c0f7c: lui $v0, 0x22

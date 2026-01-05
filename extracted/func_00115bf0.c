@@ -14,7 +14,7 @@ void func_00115bf0() {
     s2 = 0x25 << 16;                                            // 0x00115c18: lui $s2, 0x25
     g_001f0340 = 0;  // Global at 0x001f0340                    // 0x00115c1c: sw $zero, 0x340($s1)
     v0 = s2 + -0x3a40;                                          // 0x00115c20: addiu $v0, $s2, -0x3a40
-    func_00115668();  // 0x115640                                // 0x00115c28: jal 0x115640
+    func_00115640();  // 115640                                // 0x00115c28: jal 0x115640
     g_0024c63f = 0;  // Global at 0x0024c63f                    // 0x00115c2c: sb $zero, 0x7f($v0)
     goto label_0x115c3c;                                        // 0x00115c30: b 0x115c3c
     a1 = g_001f0340;  // Global at 0x001f0340                   // 0x00115c34: lw $a1, 0x340($s1)

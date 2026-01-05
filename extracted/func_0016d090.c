@@ -19,7 +19,7 @@ void func_0016d090() {
     a2 = sp + 0x24;                                             // 0x0016d0f0: addiu $a2, $sp, 0x24
     v0 = local_18;                                              // 0x0016d0f4: lw $v0, 0x18($sp)
     v0 = v0 + 1;                                                // 0x0016d0f8: addiu $v0, $v0, 1
-    func_00176720();  // 0x176680                                // 0x0016d0fc: jal 0x176680
+    func_00176680();  // 176680                                // 0x0016d0fc: jal 0x176680
     local_18 = v0;                                              // 0x0016d100: sw $v0, 0x18($sp)
     v0 = local_20;                                              // 0x0016d104: lw $v0, 0x20($sp)
     v1 = *(int32_t*)((s0) + 0x20);                              // 0x0016d108: lw $v1, 0x20($s0)

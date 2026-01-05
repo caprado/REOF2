@@ -29,7 +29,7 @@ void func_001726f8() {
     /* nop */                                                   // 0x00172754: nop 
     if (a1 != v0) goto label_0x17276c;                          // 0x00172758: bne $a1, $v0, 0x17276c
     a3 = 3;                                                     // 0x0017275c: addiu $a3, $zero, 3
-    func_001752f8();  // 0x1752e8                                // 0x00172760: jal 0x1752e8
+    func_001752e8();  // 1752e8                                // 0x00172760: jal 0x1752e8
     a1 = 0x19;                                                  // 0x00172764: addiu $a1, $zero, 0x19
 label_0x17276c:
     a1 = 0x19;                                                  // 0x0017277c: addiu $a1, $zero, 0x19
@@ -59,9 +59,9 @@ label_0x1727f0:
     goto label_0x172810;                                        // 0x001727f0: b 0x172810
     s1 = 3;                                                     // 0x001727f4: addiu $s1, $zero, 3
 label_0x1727f8:
-    func_00172908();  // 0x1728a0                                // 0x001727f8: jal 0x1728a0
+    func_001728a0();  // 1728a0                                // 0x001727f8: jal 0x1728a0
     if (v0 == 0) goto label_0x172810;                           // 0x00172800: beqz $v0, 0x172810
-    func_001737e8();  // 0x1737c0                                // 0x00172808: jal 0x1737c0
+    func_001737c0();  // 1737c0                                // 0x00172808: jal 0x1737c0
     s1 = 4;                                                     // 0x0017280c: addiu $s1, $zero, 4
 label_0x172810:
 label_0x172818:

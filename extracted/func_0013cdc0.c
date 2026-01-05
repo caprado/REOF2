@@ -9,7 +9,7 @@ void func_0013cdc0() {
     sp = sp + -0x10;                                            // 0x0013cdc0: addiu $sp, $sp, -0x10
     if (a2 != 0) goto label_0x13cde8;                           // 0x0013cdcc: bnez $a2, 0x13cde8
     a0 = 0x22 << 16;                                            // 0x0013cdd4: lui $a0, 0x22
-    func_0013d248();  // 0x13d1b8                                // 0x0013cdd8: jal 0x13d1b8
+    func_0013d1b8();  // 13d1b8                                // 0x0013cdd8: jal 0x13d1b8
     a0 = &str_00225be8;  // "E0011: Illigal parameter fname=%s\n" // 0x0013cddc: addiu $a0, $a0, 0x5be8
     goto label_0x13ce44;                                        // 0x0013cde0: b 0x13ce44
     v0 = -1;                                                    // 0x0013cde4: addiu $v0, $zero, -1
@@ -22,7 +22,7 @@ label_0x13cde8:
     a1 = *(int32_t*)((a2) + 0x20);                              // 0x0013cdfc: lw $a1, 0x20($a2)
     a0 = 0x22 << 16;                                            // 0x0013ce00: lui $a0, 0x22
 label_0x13ce04:
-    func_0013d248();  // 0x13d1b8                                // 0x0013ce04: jal 0x13d1b8
+    func_0013d1b8();  // 13d1b8                                // 0x0013ce04: jal 0x13d1b8
     a0 = &str_00225c38;  // "E0012: Can not find stream ID =%d\n" // 0x0013ce08: addiu $a0, $a0, 0x5c38
     goto label_0x13ce44;                                        // 0x0013ce0c: b 0x13ce44
     v0 = -1;                                                    // 0x0013ce10: addiu $v0, $zero, -1

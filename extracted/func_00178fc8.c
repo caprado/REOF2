@@ -13,7 +13,7 @@ void func_00178fc8() {
     s3 = 1;                                                     // 0x00178fe4: addiu $s3, $zero, 1
     *(uint32_t*)(s2) = 0;                                       // 0x00178fec: sw $zero, 0($s2)
     v0 = *(int32_t*)((s0) + 4);                                 // 0x00178ff0: lw $v0, 4($s0)
-    func_00178f58();  // 0x178f48                                // 0x00178ff4: jal 0x178f48
+    func_00178f48();  // 178f48                                // 0x00178ff4: jal 0x178f48
     s1 = v0 + 0x20;                                             // 0x00178ff8: addiu $s1, $v0, 0x20
     if (v0 != s3) goto label_0x179010;                          // 0x00178ffc: bnel $v0, $s3, 0x179010
     v0 = *(int32_t*)((s0) + 8);                                 // 0x00179000: lw $v0, 8($s0)
@@ -29,7 +29,7 @@ label_0x179010:
     /* nop */                                                   // 0x0017902c: nop 
 label_0x179030:
     a2 = 0x18;                                                  // 0x00179034: addiu $a2, $zero, 0x18
-    func_00107ab8();  // 0x107a20                                // 0x00179038: jal 0x107a20
+    func_00107a20();  // 107a20                                // 0x00179038: jal 0x107a20
     a1 = &str_00229668;  // "COMPO"                             // 0x0017903c: addiu $a1, $a1, -0x6998
     if (v0 == 0) goto label_0x179060;                           // 0x00179048: beqz $v0, 0x179060
     a2 = sp + 4;                                                // 0x0017904c: addiu $a2, $sp, 4
@@ -38,7 +38,7 @@ label_0x179030:
     goto label_0x17909c;                                        // 0x00179058: b 0x17909c
 label_0x179060:
     v0 = 2;                                                     // 0x00179060: addiu $v0, $zero, 2
-    func_00179400();  // 0x1793b0                                // 0x00179064: jal 0x1793b0
+    func_001793b0();  // 1793b0                                // 0x00179064: jal 0x1793b0
     *(uint32_t*)(s0) = v0;                                      // 0x00179068: sw $v0, 0($s0)
     if (v0 == 0) goto label_0x17909c;                           // 0x0017906c: beqz $v0, 0x17909c
     v1 = local_0;                                               // 0x00179070: lw $v1, 0($sp)

@@ -11,24 +11,24 @@ void func_0019e990() {
     if (s2 != 0) goto label_0x19e9e8;                           // 0x0019e9a8: bnez $s2, 0x19e9e8
     a0 = 0x29 << 16;                                            // 0x0019e9b0: lui $a0, 0x29
     a1 = 0x200;                                                 // 0x0019e9b4: addiu $a1, $zero, 0x200
-    func_0019e880();  // 0x19e820                                // 0x0019e9b8: jal 0x19e820
+    func_0019e820();  // 19e820                                // 0x0019e9b8: jal 0x19e820
     a0 = a0 + -0x3b50;                                          // 0x0019e9bc: addiu $a0, $a0, -0x3b50
     if (v0 != 0) goto label_0x19e9d0;                           // 0x0019e9c0: bnez $v0, 0x19e9d0
     goto label_0x19ea70;                                        // 0x0019e9c8: b 0x19ea70
 label_0x19e9d0:
-    func_0019e950();  // 0x19e900                                // 0x0019e9d4: jal 0x19e900
+    func_0019e900();  // 19e900                                // 0x0019e9d4: jal 0x19e900
     at = 0x29 << 16;                                            // 0x0019e9dc: lui $at, 0x29
     goto label_0x19ea3c;                                        // 0x0019e9e0: b 0x19ea3c
     a0 = g_0028ffb8;  // Global at 0x0028ffb8                   // 0x0019e9e4: lh $a0, -0x48($at)
 label_0x19e9e8:
     a0 = 0x29 << 16;                                            // 0x0019e9e8: lui $a0, 0x29
     a1 = 0x200;                                                 // 0x0019e9ec: addiu $a1, $zero, 0x200
-    func_0019e880();  // 0x19e820                                // 0x0019e9f0: jal 0x19e820
+    func_0019e820();  // 19e820                                // 0x0019e9f0: jal 0x19e820
     a0 = a0 + -0x3b50;                                          // 0x0019e9f4: addiu $a0, $a0, -0x3b50
     if (v0 != 0) goto label_0x19ea08;                           // 0x0019e9f8: bnez $v0, 0x19ea08
     goto label_0x19ea70;                                        // 0x0019ea00: b 0x19ea70
 label_0x19ea08:
-    func_0019e950();  // 0x19e900                                // 0x0019ea0c: jal 0x19e900
+    func_0019e900();  // 19e900                                // 0x0019ea0c: jal 0x19e900
     v0 = *(int16_t*)((s1) + 0x12);                              // 0x0019ea14: lh $v0, 0x12($s1)
     a0 = *(int16_t*)((s2) + 0x14);                              // 0x0019ea18: lh $a0, 0x14($s2)
     v1 = *(int16_t*)((s2) + 0x16);                              // 0x0019ea1c: lh $v1, 0x16($s2)

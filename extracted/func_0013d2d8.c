@@ -21,15 +21,15 @@ label_0x13d318:
     v0 = g_00204710;  // Global at 0x00204710                   // 0x0013d318: lb $v0, 0($s0)
     if (v0 != s2) goto label_0x13d330;                          // 0x0013d31c: bnel $v0, $s2, 0x13d330
     s1 = s1 + -1;                                               // 0x0013d320: addiu $s1, $s1, -1
-    func_0013c9c8();  // 0x13c978                                // 0x0013d324: jal 0x13c978
+    func_0013c978();  // 13c978                                // 0x0013d324: jal 0x13c978
     s1 = s1 + -1;                                               // 0x0013d32c: addiu $s1, $s1, -1
 label_0x13d330:
     if (s1 >= 0) goto label_0x13d318;                           // 0x0013d330: bgez $s1, 0x13d318
     s0 = s0 + 0x238;                                            // 0x0013d334: addiu $s0, $s0, 0x238
     a0 = s3 + 0x4710;                                           // 0x0013d338: addiu $a0, $s3, 0x4710
-    func_00107d30();  // 0x107c70                                // 0x0013d340: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x0013d340: jal 0x107c70
     a2 = 0x2380;                                                // 0x0013d344: addiu $a2, $zero, 0x2380
-    func_0013d258();  // 0x13d250                                // 0x0013d348: jal 0x13d250
+    func_0013d250();  // 13d250                                // 0x0013d348: jal 0x13d250
     /* nop */                                                   // 0x0013d34c: nop 
     return func_0013d1b8();  // Tail call                        // 0x0013d36c: j 0x13d190
     sp = sp + 0x30;                                             // 0x0013d370: addiu $sp, $sp, 0x30

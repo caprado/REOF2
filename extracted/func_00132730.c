@@ -11,13 +11,13 @@ void func_00132730() {
     /* move to FPU: $zero, $f20 */                              // 0x00132748: mtc1 $zero, $f20
     if (s2 != 0) goto label_0x132770;                           // 0x0013274c: bnez $s2, 0x132770
     a0 = 0x22 << 16;                                            // 0x00132754: lui $a0, 0x22
-    func_00127de8();  // 0x127d90                                // 0x00132758: jal 0x127d90
+    func_00127d90();  // 127d90                                // 0x00132758: jal 0x127d90
     a0 = &str_00223b48;  // "E02080836 ADXT_IsIbufSafety: parameter error" // 0x0013275c: addiu $a0, $a0, 0x3b48
     at = 0xbf80 << 16;                                          // 0x00132760: lui $at, 0xbf80
     /* move to FPU: $at, $f0 */                                 // 0x00132764: mtc1 $at, $f0
     goto label_0x1327fc;                                        // 0x00132768: b 0x1327fc
 label_0x132770:
-    func_00131c20();  // 0x131bb8                                // 0x00132770: jal 0x131bb8
+    func_00131bb8();  // 131bb8                                // 0x00132770: jal 0x131bb8
     /* nop */                                                   // 0x00132774: nop 
     v0 = (v0 < 2) ? 1 : 0;                                      // 0x00132778: slti $v0, $v0, 2
     if (v0 != 0) goto label_0x1327f8;                           // 0x0013277c: bnez $v0, 0x1327f8
@@ -28,8 +28,8 @@ label_0x132770:
     v0 = *(int32_t*)((v1) + 0x24);                              // 0x00132794: lw $v0, 0x24($v1)
     /* call function at address in v0 */                        // 0x00132798: jalr $v0
     a1 = 1;                                                     // 0x0013279c: addiu $a1, $zero, 1
-    func_00132258();  // 0x132208                                // 0x001327a4: jal 0x132208
-    func_00132208();  // 0x1321b8                                // 0x001327b0: jal 0x1321b8
+    func_00132208();  // 132208                                // 0x001327a4: jal 0x132208
+    func_001321b8();  // 1321b8                                // 0x001327b0: jal 0x1321b8
     v1 = s1 << 3;                                               // 0x001327b8: sll $v1, $s1, 3
     v1 = v1 + s1;                                               // 0x001327bc: addu $v1, $v1, $s1
     /* move to FPU: $v0, $f1 */                                 // 0x001327c0: mtc1 $v0, $f1

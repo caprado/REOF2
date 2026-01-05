@@ -20,7 +20,7 @@ void func_001dca18() {
 label_0x1dca5c:
     PollSema();  // 0x114320                                    // 0x001dca5c: jal 0x114320
     /* nop */                                                   // 0x001dca60: nop 
-    func_001dcb88();  // 0x1dcac8                                // 0x001dca64: jal 0x1dcac8
+    func_001dcac8();  // 1dcac8                                // 0x001dca64: jal 0x1dcac8
     /* nop */                                                   // 0x001dca68: nop 
     *(uint32_t*)(s0) = v0;                                      // 0x001dca6c: sw $v0, 0($s0)
     iSignalSema();  // 0x114300                                 // 0x001dca70: jal 0x114300
@@ -28,11 +28,11 @@ label_0x1dca5c:
     goto label_0x1dcaa4;                                        // 0x001dca78: b 0x1dcaa4
 label_0x1dca80:
     a0 = 0x33 << 16;                                            // 0x001dca80: lui $a0, 0x33
-    func_001178e0();  // 0x1178a0                                // 0x001dca84: jal 0x1178a0
+    func_001178a0();  // 1178a0                                // 0x001dca84: jal 0x1178a0
     a0 = a0 + -0xa0;                                            // 0x001dca88: addiu $a0, $a0, -0xa0
     /* bnezl $v0, 0x1dcaa4 */                                   // 0x001dca8c: bnezl $v0, 0x1dcaa4
     v0 = 1;                                                     // 0x001dca90: addiu $v0, $zero, 1
-    func_001dcb88();  // 0x1dcac8                                // 0x001dca94: jal 0x1dcac8
+    func_001dcac8();  // 1dcac8                                // 0x001dca94: jal 0x1dcac8
     /* nop */                                                   // 0x001dca98: nop 
     *(uint32_t*)(s0) = v0;                                      // 0x001dca9c: sw $v0, 0($s0)
 label_0x1dcaa4:

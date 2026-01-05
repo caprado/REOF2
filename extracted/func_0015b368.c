@@ -15,13 +15,13 @@ void func_0015b368() {
 label_0x15b3a0:
     if (s0 != 0) goto label_0x15b3c0;                           // 0x0015b3a0: bnez $s0, 0x15b3c0
     /* nop */                                                   // 0x0015b3a4: nop 
-    func_0015b470();  // 0x15b420                                // 0x0015b3a8: jal 0x15b420
+    func_0015b420();  // 15b420                                // 0x0015b3a8: jal 0x15b420
     v0 = 0x25 << 16;                                            // 0x0015b3b0: lui $v0, 0x25
     goto label_0x15b3f4;                                        // 0x0015b3b4: b 0x15b3f4
     a0 = v0 + 0x63f0;                                           // 0x0015b3b8: addiu $a0, $v0, 0x63f0
     /* nop */                                                   // 0x0015b3bc: nop 
 label_0x15b3c0:
-    func_0015b498();  // 0x15b470                                // 0x0015b3c0: jal 0x15b470
+    func_0015b470();  // 15b470                                // 0x0015b3c0: jal 0x15b470
     a1 = 0xff03 << 16;                                          // 0x0015b3c8: lui $a1, 0xff03
     if (v0 == 0) goto label_0x15b3f0;                           // 0x0015b3cc: beqz $v0, 0x15b3f0
     a1 = a1 | 0x202;                                            // 0x0015b3d8: ori $a1, $a1, 0x202

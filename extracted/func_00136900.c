@@ -12,7 +12,7 @@ void func_00136900() {
     sp = sp + -0x50;                                            // 0x00136900: addiu $sp, $sp, -0x50
     if (a0 != 0) goto label_0x136940;                           // 0x00136920: bnez $a0, 0x136940
     a0 = 0x22 << 16;                                            // 0x00136928: lui $a0, 0x22
-    func_00134fb0();  // 0x134ec0                                // 0x0013692c: jal 0x134ec0
+    func_00134ec0();  // 134ec0                                // 0x0013692c: jal 0x134ec0
     a0 = &str_00224a40;  // "cvFsAddVolumeEx #2:illegal volume name" // 0x00136930: addiu $a0, $a0, 0x4a40
     goto label_0x1369ec;                                        // 0x00136934: b 0x1369ec
     v0 = -1;                                                    // 0x00136938: addiu $v0, $zero, -1
@@ -21,7 +21,7 @@ label_0x136940:
     if (s2 != 0) goto label_0x136960;                           // 0x00136940: bnez $s2, 0x136960
     /* nop */                                                   // 0x00136944: nop 
     a0 = 0x22 << 16;                                            // 0x00136948: lui $a0, 0x22
-    func_00134fb0();  // 0x134ec0                                // 0x0013694c: jal 0x134ec0
+    func_00134ec0();  // 134ec0                                // 0x0013694c: jal 0x134ec0
     a0 = &str_00224a68;  // "cvFsAddVolumeEx #3:illegal image handle" // 0x00136950: addiu $a0, $a0, 0x4a68
     goto label_0x1369ec;                                        // 0x00136954: b 0x1369ec
     v0 = -1;                                                    // 0x00136958: addiu $v0, $zero, -1
@@ -30,21 +30,21 @@ label_0x136960:
     if (s1 != 0) goto label_0x136980;                           // 0x00136960: bnez $s1, 0x136980
     /* nop */                                                   // 0x00136964: nop 
     a0 = 0x22 << 16;                                            // 0x00136968: lui $a0, 0x22
-    func_00134fb0();  // 0x134ec0                                // 0x0013696c: jal 0x134ec0
+    func_00134ec0();  // 134ec0                                // 0x0013696c: jal 0x134ec0
     a0 = &str_00224a90;  // "cvFsAddVolumeEx #3:device not found" // 0x00136970: addiu $a0, $a0, 0x4a90
     goto label_0x1369ec;                                        // 0x00136974: b 0x1369ec
     v0 = -1;                                                    // 0x00136978: addiu $v0, $zero, -1
     /* nop */                                                   // 0x0013697c: nop 
 label_0x136980:
-    func_001352b8();  // 0x135220                                // 0x00136980: jal 0x135220
+    func_00135220();  // 135220                                // 0x00136980: jal 0x135220
     /* nop */                                                   // 0x00136984: nop 
     /* bnezl $s0, 0x1369a8 */                                   // 0x0013698c: bnezl $s0, 0x1369a8
     a0 = 0x22 << 16;                                            // 0x00136994: lui $a0, 0x22
-    func_00134fb0();  // 0x134ec0                                // 0x00136998: jal 0x134ec0
+    func_00134ec0();  // 134ec0                                // 0x00136998: jal 0x134ec0
     a0 = &str_00224ab8;  // "cvFsDelVolume #1:illegal device name" // 0x0013699c: addiu $a0, $a0, 0x4ab8
     goto label_0x1369ec;                                        // 0x001369a0: b 0x1369ec
     v0 = -1;                                                    // 0x001369a4: addiu $v0, $zero, -1
-    func_00107d30();  // 0x107c70                                // 0x001369ac: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001369ac: jal 0x107c70
     a2 = 0x14;                                                  // 0x001369b0: addiu $a2, $zero, 0x14
     local_0 = s1;                                               // 0x001369b4: sw $s1, 0($sp)
     local_4 = s2;                                               // 0x001369b8: sw $s2, 4($sp)

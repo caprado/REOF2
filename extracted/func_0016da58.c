@@ -16,7 +16,7 @@ void func_0016da58() {
     s2 = 0x23 << 16;                                            // 0x0016da98: lui $s2, 0x23
     s2 = s2 + v0;                                               // 0x0016da9c: addu $s2, $s2, $v0
     s2 = g_00229118;  // Global at 0x00229118                   // 0x0016daa0: lw $s2, -0x6ee8($s2)
-    func_0015b860();  // 0x15b7b0                                // 0x0016daa4: jal 0x15b7b0
+    func_0015b7b0();  // 15b7b0                                // 0x0016daa4: jal 0x15b7b0
     v1 = v0 - s0;                                               // 0x0016daac: subu $v1, $v0, $s0
     v0 = (v1 < 0) ? 1 : 0;                                      // 0x0016dab0: slti $v0, $v1, 0
     if (s1 == 0) goto label_0x16dbc8;                           // 0x0016dab4: beqz $s1, 0x16dbc8

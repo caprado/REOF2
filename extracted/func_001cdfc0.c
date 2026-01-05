@@ -15,7 +15,7 @@ void func_001cdfc0() {
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001cdfd4: addu.qb $zero, $sp, $s1
     s3 = *(int32_t*)((a0) + 8);                                 // 0x001cdfdc: lw $s3, 8($a0)
     a0 = g_003257d0;  // Global at 0x003257d0                   // 0x001cdfe4: lw $a0, 0x57d0($at)
-    func_001c91f0();  // 0x1c90c0                                // 0x001cdfe8: jal 0x1c90c0
+    func_001c90c0();  // 1c90c0                                // 0x001cdfe8: jal 0x1c90c0
     a1 = sp + 0x58;                                             // 0x001cdfec: addiu $a1, $sp, 0x58
     if (v0 >= 0) goto label_0x1ce000;                           // 0x001cdff0: bgez $v0, 0x1ce000
     /* nop */                                                   // 0x001cdff4: nop 
@@ -47,7 +47,7 @@ label_0x1ce060:
     if (a0 != v0) goto label_0x1ce0a4;                          // 0x001ce060: bne $a0, $v0, 0x1ce0a4
     /* nop */                                                   // 0x001ce064: nop 
     a0 = 5;                                                     // 0x001ce068: addiu $a0, $zero, 5
-    func_001cdfc0();  // 0x1cdf70                                // 0x001ce070: jal 0x1cdf70
+    func_001cdf70();  // 1cdf70                                // 0x001ce070: jal 0x1cdf70
     at = 0x32 << 16;                                            // 0x001ce078: lui $at, 0x32
     v0 = 0x15;                                                  // 0x001ce07c: addiu $v0, $zero, 0x15
     v1 = g_00325938;  // Global at 0x00325938                   // 0x001ce080: lhu $v1, 0x5938($at)

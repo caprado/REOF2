@@ -10,7 +10,7 @@ void func_001cb6d0() {
     at = (a1 < 2) ? 1 : 0;                                      // 0x001cb6d4: slti $at, $a1, 2
     if (at != 0) goto label_0x1cb6ec;                           // 0x001cb6d8: bnez $at, 0x1cb6ec
     a2 = a1 + -1;                                               // 0x001cb6e0: addiu $a2, $a1, -1
-    func_001cb820();  // 0x1cb700                                // 0x001cb6e4: jal 0x1cb700
+    func_001cb700();  // 1cb700                                // 0x001cb6e4: jal 0x1cb700
 label_0x1cb6ec:
     return;                                                     // 0x001cb6f0: jr $ra
     sp = sp + 0x10;                                             // 0x001cb6f4: addiu $sp, $sp, 0x10

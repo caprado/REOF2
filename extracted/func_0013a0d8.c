@@ -54,8 +54,8 @@ label_0x13a194:
 label_0x13a1ac:
     a1 = s3 + a0;                                               // 0x0013a1ac: addu $a1, $s3, $a0
 label_0x13a1b0:
-    func_00107b68();  // 0x107ab8                                // 0x0013a1b4: jal 0x107ab8
-    func_00139560();  // 0x1394e8                                // 0x0013a1bc: jal 0x1394e8
+    func_00107ab8();  // 107ab8                                // 0x0013a1b4: jal 0x107ab8
+    func_001394e8();  // 1394e8                                // 0x0013a1bc: jal 0x1394e8
     a2 = s0 + s1;                                               // 0x0013a1c4: addu $a2, $s0, $s1
     v0 = *(int8_t*)((a2) + -1);                                 // 0x0013a1c8: lb $v0, -1($a2)
     /* bnezl $v0, 0x13a1d4 */                                   // 0x0013a1cc: bnezl $v0, 0x13a1d4

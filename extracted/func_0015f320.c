@@ -7,13 +7,13 @@ void func_0015f320() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x0015f320: addiu $sp, $sp, -0x20
-    func_0010af38();  // 0x10ae00                                // 0x0015f338: jal 0x10ae00
+    func_0010ae00();  // 10ae00                                // 0x0015f338: jal 0x10ae00
     a0 = 0x22 << 16;                                            // 0x0015f340: lui $a0, 0x22
     v1 = *(int32_t*)((s0) + 0x114);                             // 0x0015f344: lw $v1, 0x114($s0)
     a0 = a0 + 0x7ae0;                                           // 0x0015f348: addiu $a0, $a0, 0x7ae0
     v1 = (v1 < v0) ? 1 : 0;                                     // 0x0015f34c: slt $v1, $v1, $v0
     if (v1 == 0) goto label_0x15f380;                           // 0x0015f350: beqz $v1, 0x15f380
-    func_001634a8();  // 0x163410                                // 0x0015f358: jal 0x163410
+    func_00163410();  // 163410                                // 0x0015f358: jal 0x163410
     /* nop */                                                   // 0x0015f35c: nop 
     a2 = *(int32_t*)((s0) + 0x114);                             // 0x0015f360: lw $a2, 0x114($s0)
     a0 = *(int32_t*)((s0) + 0x110);                             // 0x0015f36c: lw $a0, 0x110($s0)
@@ -24,7 +24,7 @@ label_0x15f380:
     return func_0010ae00();  // Tail call                        // 0x0015f390: j 0x10ac68
     sp = sp + 0x20;                                             // 0x0015f394: addiu $sp, $sp, 0x20
     sp = sp + -0x10;                                            // 0x0015f398: addiu $sp, $sp, -0x10
-    func_0015f398();  // 0x15f320                                // 0x0015f3a4: jal 0x15f320
+    func_0015f320();  // 15f320                                // 0x0015f3a4: jal 0x15f320
     v0 = 0xf << 16;                                             // 0x0015f3ac: lui $v0, 0xf
     v1 = 1;                                                     // 0x0015f3b0: addiu $v1, $zero, 1
     v0 = v0 | 0xffff;                                           // 0x0015f3b4: ori $v0, $v0, 0xffff

@@ -9,7 +9,7 @@ void func_001258c8() {
     a1 = 0x22 << 16;                                            // 0x001258c8: lui $a1, 0x22
     sp = sp + -0x10;                                            // 0x001258cc: addiu $sp, $sp, -0x10
     a2 = 4;                                                     // 0x001258d0: addiu $a2, $zero, 4
-    func_00107ab8();  // 0x107a20                                // 0x001258d8: jal 0x107a20
+    func_00107a20();  // 107a20                                // 0x001258d8: jal 0x107a20
     a1 = a1 + 0x2438;                                           // 0x001258dc: addiu $a1, $a1, 0x2438
     v0 = ((unsigned)v0 < (unsigned)1) ? 1 : 0;                  // 0x001258e4: sltiu $v0, $v0, 1
     return;                                                     // 0x001258e8: jr $ra

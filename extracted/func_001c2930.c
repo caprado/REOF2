@@ -41,7 +41,7 @@ label_0x1c2990:
     goto label_0x1c2a28;                                        // 0x001c29b4: b 0x1c2a28
     g_003160b0 = 0;  // Global at 0x003160b0                    // 0x001c29b8: sw $zero, 0($s0)
 label_0x1c29bc:
-    func_001c28b0();  // 0x1c27a0                                // 0x001c29bc: jal 0x1c27a0
+    func_001c27a0();  // 1c27a0                                // 0x001c29bc: jal 0x1c27a0
     /* nop */                                                   // 0x001c29c0: nop 
     v1 = 1;                                                     // 0x001c29c4: addiu $v1, $zero, 1
     goto label_0x1c2970;                                        // 0x001c29c8: b 0x1c2970
@@ -54,7 +54,7 @@ label_0x1c29d0:
     if (a2 == 0) goto label_0x1c29fc;                           // 0x001c29e0: beqz $a2, 0x1c29fc
     a0 = 1;                                                     // 0x001c29e4: addiu $a0, $zero, 1
     t0 = 0x18;                                                  // 0x001c29f0: addiu $t0, $zero, 0x18
-    func_001b4380();  // 0x1b42c0                                // 0x001c29f4: jal 0x1b42c0
+    func_001b42c0();  // 1b42c0                                // 0x001c29f4: jal 0x1b42c0
     t1 = s0 + 0x18;                                             // 0x001c29f8: addiu $t1, $s0, 0x18
 label_0x1c29fc:
     v1 = g_003161c8;  // Global at 0x003161c8                   // 0x001c29fc: lb $v1, 0x118($s0)
@@ -64,7 +64,7 @@ label_0x1c29fc:
     if (a2 == 0) goto label_0x1c2a28;                           // 0x001c2a0c: beqz $a2, 0x1c2a28
     a0 = 1;                                                     // 0x001c2a10: addiu $a0, $zero, 1
     t0 = 0x18;                                                  // 0x001c2a1c: addiu $t0, $zero, 0x18
-    func_001b4380();  // 0x1b42c0                                // 0x001c2a20: jal 0x1b42c0
+    func_001b42c0();  // 1b42c0                                // 0x001c2a20: jal 0x1b42c0
     t1 = s0 + 0x118;                                            // 0x001c2a24: addiu $t1, $s0, 0x118
 label_0x1c2a28:
     v1 = g_003160b0;  // Global at 0x003160b0                   // 0x001c2a28: lw $v1, 0($s0)

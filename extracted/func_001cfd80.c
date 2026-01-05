@@ -13,12 +13,12 @@ void func_001cfd80() {
     v1 = a3 + a2;                                               // 0x001cfd9c: addu $v1, $a3, $a2
     at = (v0 < v1) ? 1 : 0;                                     // 0x001cfda0: slt $at, $v0, $v1
     if (at == 0) goto label_0x1cfdbc;                           // 0x001cfda4: beqz $at, 0x1cfdbc
-    func_001ce640();  // 0x1ce600                                // 0x001cfdac: jal 0x1ce600
+    func_001ce600();  // 1ce600                                // 0x001cfdac: jal 0x1ce600
     a0 = 4;                                                     // 0x001cfdb0: addiu $a0, $zero, 4
     goto label_0x1cfdd8;                                        // 0x001cfdb4: b 0x1cfdd8
 label_0x1cfdbc:
     v0 = *(int32_t*)((s0) + 8);                                 // 0x001cfdbc: lw $v0, 8($s0)
-    func_00107b68();  // 0x107ab8                                // 0x001cfdc0: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x001cfdc0: jal 0x107ab8
     a0 = v0 + a3;                                               // 0x001cfdc4: addu $a0, $v0, $a3
     v1 = *(int32_t*)((s0) + 0xc);                               // 0x001cfdc8: lw $v1, 0xc($s0)
     v1 = v1 + s1;                                               // 0x001cfdcc: addu $v1, $v1, $s1

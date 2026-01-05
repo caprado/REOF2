@@ -13,13 +13,13 @@ void func_001d8950() {
     a1 = 0x24 << 16;                                            // 0x001d8968: lui $a1, 0x24
     s0 = g_003137fc;  // Global at 0x003137fc                   // 0x001d896c: lw $s0, 0x37fc($at)
     a0 = sp + 0x20;                                             // 0x001d8970: addiu $a0, $sp, 0x20
-    func_0010a570();  // 0x10a4d8                                // 0x001d8974: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001d8974: jal 0x10a4d8
     a1 = &str_002476b0;  // "data\\rom\\motion\\player\\pl%02d_pc_000.bin" // 0x001d8978: addiu $a1, $a1, 0x76b0
     v0 = 2 << 16;                                               // 0x001d897c: lui $v0, 2
     a0 = sp + 0x20;                                             // 0x001d8980: addiu $a0, $sp, 0x20
-    func_001d33e0();  // 0x1d3390                                // 0x001d898c: jal 0x1d3390
+    func_001d3390();  // 1d3390                                // 0x001d898c: jal 0x1d3390
     a2 = v0 | 1;                                                // 0x001d8990: ori $a2, $v0, 1
-    func_001d88c0();  // 0x1d8810                                // 0x001d899c: jal 0x1d8810
+    func_001d8810();  // 1d8810                                // 0x001d899c: jal 0x1d8810
     a2 = 1;                                                     // 0x001d89a0: addiu $a2, $zero, 1
 label_0x1d89a4:
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001d89a8: xori.b $w0, $w0, 0xb0

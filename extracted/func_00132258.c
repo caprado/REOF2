@@ -9,7 +9,7 @@ void func_00132258() {
     sp = sp + -0x10;                                            // 0x00132258: addiu $sp, $sp, -0x10
     if (a0 != 0) goto label_0x132278;                           // 0x0013225c: bnez $a0, 0x132278
     a0 = 0x22 << 16;                                            // 0x00132264: lui $a0, 0x22
-    func_00127de8();  // 0x127d90                                // 0x00132268: jal 0x127d90
+    func_00127d90();  // 127d90                                // 0x00132268: jal 0x127d90
     a0 = &str_002238a8;  // "E02080821 ADXT_GetFmtBps: parameter error" // 0x0013226c: addiu $a0, $a0, 0x38a8
     goto label_0x132298;                                        // 0x00132270: b 0x132298
     v0 = -1;                                                    // 0x00132274: addiu $v0, $zero, -1

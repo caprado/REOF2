@@ -11,7 +11,7 @@ void func_00176438() {
     sp = sp + 0x10;                                             // 0x00176448: addiu $sp, $sp, 0x10
     /* nop */                                                   // 0x0017644c: nop 
     sp = sp + -0x20;                                            // 0x00176450: addiu $sp, $sp, -0x20
-    func_00169b10();  // 0x169af0                                // 0x00176464: jal 0x169af0
+    func_00169af0();  // 169af0                                // 0x00176464: jal 0x169af0
     if (v0 == 0) goto label_0x176498;                           // 0x00176474: beqz $v0, 0x176498
     a2 = 4;                                                     // 0x00176478: addiu $a2, $zero, 4
     a1 = 0xff00 << 16;                                          // 0x0017647c: lui $a1, 0xff00
@@ -19,9 +19,9 @@ void func_00176438() {
     return func_00169940();  // Tail call                        // 0x00176490: j 0x1698d0
     sp = sp + 0x20;                                             // 0x00176494: addiu $sp, $sp, 0x20
 label_0x176498:
-    func_00176680();  // 0x176670                                // 0x00176498: jal 0x176670
+    func_00176670();  // 176670                                // 0x00176498: jal 0x176670
     a1 = 0xf;                                                   // 0x001764a4: addiu $a1, $zero, 0xf
-    func_00175170();  // 0x175120                                // 0x001764a8: jal 0x175120
+    func_00175120();  // 175120                                // 0x001764a8: jal 0x175120
     a2 = 4;                                                     // 0x001764ac: addiu $a2, $zero, 4
     return;                                                     // 0x001764c0: jr $ra
     sp = sp + 0x20;                                             // 0x001764c4: addiu $sp, $sp, 0x20

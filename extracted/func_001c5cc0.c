@@ -37,13 +37,13 @@ label_0x1c5d28:
     v0 = v1 & 0x20;                                             // 0x001c5d2c: andi $v0, $v1, 0x20
     if (v0 == 0) goto label_0x1c5d6c;                           // 0x001c5d30: beqz $v0, 0x1c5d6c
     /* nop */                                                   // 0x001c5d34: nop 
-    func_001c7470();  // 0x1c7460                                // 0x001c5d38: jal 0x1c7460
+    func_001c7460();  // 1c7460                                // 0x001c5d38: jal 0x1c7460
     /* nop */                                                   // 0x001c5d3c: nop 
     *(uint32_t*)((s0) + 0x30) = 0;                              // 0x001c5d40: sw $zero, 0x30($s0)
     a1 = 1;                                                     // 0x001c5d44: addiu $a1, $zero, 1
     v0 = *(int32_t*)((s0) + 0x38);                              // 0x001c5d48: lw $v0, 0x38($s0)
     if (v0 != a1) goto label_0x1c5d64;                          // 0x001c5d4c: bne $v0, $a1, 0x1c5d64
-    func_001c2e20();  // 0x1c2a50                                // 0x001c5d54: jal 0x1c2a50
+    func_001c2a50();  // 1c2a50                                // 0x001c5d54: jal 0x1c2a50
     a0 = *(int32_t*)((s0) + 0x20);                              // 0x001c5d58: lw $a0, 0x20($s0)
     goto label_0x1c5dd8;                                        // 0x001c5d5c: b 0x1c5dd8
     v0 = 1;                                                     // 0x001c5d60: addiu $v0, $zero, 1
@@ -72,7 +72,7 @@ label_0x1c5da0:
     if (v1 != v0) goto label_0x1c5dd4;                          // 0x001c5db0: bne $v1, $v0, 0x1c5dd4
     /* nop */                                                   // 0x001c5db4: nop 
 label_0x1c5db8:
-    func_001c7480();  // 0x1c7470                                // 0x001c5db8: jal 0x1c7470
+    func_001c7470();  // 1c7470                                // 0x001c5db8: jal 0x1c7470
     /* nop */                                                   // 0x001c5dbc: nop 
     v1 = *(int32_t*)((s0) + 0x38);                              // 0x001c5dc0: lw $v1, 0x38($s0)
     v0 = 5;                                                     // 0x001c5dc4: addiu $v0, $zero, 5

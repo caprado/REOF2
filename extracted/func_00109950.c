@@ -13,7 +13,7 @@ void func_00109950() {
     a1 = a1 | 0x4c95;                                           // 0x00109968: ori $a1, $a1, 0x4c95
     a1 = a1 | 0x7f2d;                                           // 0x00109970: ori $a1, $a1, 0x7f2d
     s0 = g_001efdf0;  // Global at 0x001efdf0                   // 0x00109974: lw $s0, -0x210($v0)
-    func_0010f7c0();  // 0x10f748                                // 0x0010997c: jal 0x10f748
+    func_0010f748();  // 10f748                                // 0x0010997c: jal 0x10f748
     a0 = 0x7fff << 16;                                          // 0x00109984: lui $a0, 0x7fff
     a0 = a0 | 0xffff;                                           // 0x00109988: ori $a0, $a0, 0xffff
     v0 = v0 & a0;                                               // 0x0010999c: and $v0, $v0, $a0

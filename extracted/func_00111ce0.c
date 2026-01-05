@@ -11,10 +11,10 @@ void func_00111ce0() {
     
     sp = sp + -0x60;                                            // 0x00111ce0: addiu $sp, $sp, -0x60
     a0 = sp + 0x40;                                             // 0x00111ce8: addiu $a0, $sp, 0x40
-    func_00111738();  // 0x111678                                // 0x00111cf8: jal 0x111678
+    func_00111678();  // 111678                                // 0x00111cf8: jal 0x111678
     s0 = sp + 0x20;                                             // 0x00111d00: addiu $s0, $sp, 0x20
     a0 = sp + 0x48;                                             // 0x00111d04: addiu $a0, $sp, 0x48
-    func_00111738();  // 0x111678                                // 0x00111d08: jal 0x111678
+    func_00111678();  // 111678                                // 0x00111d08: jal 0x111678
     a2 = local_0;                                               // 0x00111d10: lw $a2, 0($sp)
     v0 = ((unsigned)a2 < (unsigned)2) ? 1 : 0;                  // 0x00111d18: sltiu $v0, $a2, 2
     if (v0 != 0) goto label_0x111e08;                           // 0x00111d1c: bnez $v0, 0x111e08
@@ -64,7 +64,7 @@ label_0x111df0:
     a1 = ((unsigned)v0 < (unsigned)a2) ? 1 : 0;                 // 0x00111df4: sltu $a1, $v0, $a2
     if (v1 != 0) goto label_0x111dd8;                           // 0x00111df8: bnez $v1, 0x111dd8
 label_0x111e08:
-    func_00111678();  // 0x1115a0                                // 0x00111e08: jal 0x1115a0
+    func_001115a0();  // 1115a0                                // 0x00111e08: jal 0x1115a0
     /* nop */                                                   // 0x00111e0c: nop 
     return;                                                     // 0x00111e18: jr $ra
     sp = sp + 0x60;                                             // 0x00111e1c: addiu $sp, $sp, 0x60

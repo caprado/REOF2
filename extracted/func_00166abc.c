@@ -23,7 +23,7 @@ void func_00166abc() {
     sp = sp + 0x10;                                             // 0x00166b04: addiu $sp, $sp, 0x10
 label_0x166b08:
     a3 = *(int32_t*)((t0) + 4);                                 // 0x00166b08: lw $a3, 4($t0)
-    func_00166bc8();  // 0x166b28                                // 0x00166b10: jal 0x166b28
+    func_00166b28();  // 166b28                                // 0x00166b10: jal 0x166b28
     a3 = ((unsigned)0 < (unsigned)a3) ? 1 : 0;                  // 0x00166b14: sltu $a3, $zero, $a3
     return;                                                     // 0x00166b20: jr $ra
     sp = sp + 0x10;                                             // 0x00166b24: addiu $sp, $sp, 0x10

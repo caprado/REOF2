@@ -17,7 +17,7 @@ void func_001d0fa0() {
     a0 = sp + 0x1c;                                             // 0x001d0fb8: addiu $a0, $sp, 0x1c
     goto label_0x1d1044;                                        // 0x001d0fbc: b 0x1d1044
 label_0x1d0fc4:
-    func_001ca1e0();  // 0x1ca170                                // 0x001d0fc4: jal 0x1ca170
+    func_001ca170();  // 1ca170                                // 0x001d0fc4: jal 0x1ca170
     /* nop */                                                   // 0x001d0fc8: nop 
     v1 = 1;                                                     // 0x001d0fcc: addiu $v1, $zero, 1
     if (v0 == v1) goto label_0x1d0ff0;                          // 0x001d0fd0: beq $v0, $v1, 0x1d0ff0
@@ -28,15 +28,15 @@ label_0x1d0fc4:
 label_0x1d0fe8:
     goto label_0x1d1044;                                        // 0x001d0fe8: b 0x1d1044
 label_0x1d0ff0:
-    func_001ca220();  // 0x1ca1e0                                // 0x001d0ff0: jal 0x1ca1e0
+    func_001ca1e0();  // 1ca1e0                                // 0x001d0ff0: jal 0x1ca1e0
     a1 = sp + 0x18;                                             // 0x001d0ff4: addiu $a1, $sp, 0x18
     if (v0 <= 0) goto label_0x1d1034;                           // 0x001d0ff8: blez $v0, 0x1d1034
     /* nop */                                                   // 0x001d0ffc: nop 
-    func_001c8cd0();  // 0x1c8cc0                                // 0x001d1000: jal 0x1c8cc0
+    func_001c8cc0();  // 1c8cc0                                // 0x001d1000: jal 0x1c8cc0
     /* nop */                                                   // 0x001d1004: nop 
     if (v0 != 0) goto label_0x1d1034;                           // 0x001d1008: bnez $v0, 0x1d1034
     /* nop */                                                   // 0x001d100c: nop 
-    func_001ca250();  // 0x1ca220                                // 0x001d1010: jal 0x1ca220
+    func_001ca220();  // 1ca220                                // 0x001d1010: jal 0x1ca220
     a0 = local_18;                                              // 0x001d1014: lw $a0, 0x18($sp)
     if (v0 != 0) goto label_0x1d1034;                           // 0x001d1018: bnez $v0, 0x1d1034
     /* nop */                                                   // 0x001d101c: nop 

@@ -37,7 +37,7 @@ void func_001ce8e0() {
     /* nop */                                                   // 0x001ce950: nop 
     goto label_0x1ce984;                                        // 0x001ce954: b 0x1ce984
 label_0x1ce95c:
-    func_001c9d10();  // 0x1c9b00                                // 0x001ce95c: jal 0x1c9b00
+    func_001c9b00();  // 1c9b00                                // 0x001ce95c: jal 0x1c9b00
     a0 = sp + 0x20;                                             // 0x001ce960: addiu $a0, $sp, 0x20
     a0 = local_28;                                              // 0x001ce964: lw $a0, 0x28($sp)
     v1 = 0x64;                                                  // 0x001ce968: addiu $v1, $zero, 0x64

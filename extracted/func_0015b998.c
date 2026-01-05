@@ -13,9 +13,9 @@ void func_0015b998() {
     a2 = sp + 4;                                                // 0x0015b9c0: addiu $a2, $sp, 4
     a3 = sp + 8;                                                // 0x0015b9c4: addiu $a3, $sp, 8
     t0 = sp + 0xc;                                              // 0x0015b9c8: addiu $t0, $sp, 0xc
-    func_0015b998();  // 0x15b948                                // 0x0015b9cc: jal 0x15b948
+    func_0015b948();  // 15b948                                // 0x0015b9cc: jal 0x15b948
     s2 = *(int32_t*)((s0) + 0x10);                              // 0x0015b9d0: lw $s2, 0x10($s0)
-    func_0015bad0();  // 0x15ba80                                // 0x0015b9d4: jal 0x15ba80
+    func_0015ba80();  // 15ba80                                // 0x0015b9d4: jal 0x15ba80
     a0 = *(int32_t*)((s0) + 0x24);                              // 0x0015b9d8: lw $a0, 0x24($s0)
     t1 = 2;                                                     // 0x0015b9dc: addiu $t1, $zero, 2
     a1 = local_0;                                               // 0x0015b9e0: lw $a1, 0($sp)

@@ -10,11 +10,11 @@ void func_00157eb8() {
     if (v0 != 0) goto label_0x157ee8;                           // 0x00157ecc: bnez $v0, 0x157ee8
     a0 = v0 + 4;                                                // 0x00157ed0: addiu $a0, $v0, 4
     v0 = 0x21 << 16;                                            // 0x00157ed4: lui $v0, 0x21
-    func_00157f40();  // 0x157f08                                // 0x00157ed8: jal 0x157f08
+    func_00157f08();  // 157f08                                // 0x00157ed8: jal 0x157f08
     a0 = g_00213e70;  // Global at 0x00213e70                   // 0x00157edc: lw $a0, 0x3e70($v0)
     goto label_0x157ef4;                                        // 0x00157ee0: b 0x157ef4
 label_0x157ee8:
-    func_00157f40();  // 0x157f08                                // 0x00157ee8: jal 0x157f08
+    func_00157f08();  // 157f08                                // 0x00157ee8: jal 0x157f08
     /* nop */                                                   // 0x00157eec: nop 
 label_0x157ef4:
     return;                                                     // 0x00157efc: jr $ra

@@ -7,11 +7,11 @@ void func_001c8340() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x001c8340: addiu $sp, $sp, -0x20
-    func_001c7780();  // 0x1c7770                                // 0x001c8348: jal 0x1c7770
+    func_001c7770();  // 1c7770                                // 0x001c8348: jal 0x1c7770
     a1 = 0x20;                                                  // 0x001c8350: addiu $a1, $zero, 0x20
     a0 = 0x29;                                                  // 0x001c8354: addiu $a0, $zero, 0x29
-    func_001c7670();  // 0x1c75b0                                // 0x001c8358: jal 0x1c75b0
-    func_001c7790();  // 0x1c7780                                // 0x001c8364: jal 0x1c7780
+    func_001c75b0();  // 1c75b0                                // 0x001c8358: jal 0x1c75b0
+    func_001c7780();  // 1c7780                                // 0x001c8364: jal 0x1c7780
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001c8374: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x001c8378: jr $ra
     sp = sp + 0x20;                                             // 0x001c837c: addiu $sp, $sp, 0x20

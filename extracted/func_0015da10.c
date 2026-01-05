@@ -24,7 +24,7 @@ void func_0015da10() {
 label_0x15da50:
     if (a0 == v0) goto label_0x15da6c;                          // 0x0015da50: beq $a0, $v0, 0x15da6c
     a0 = 0x22 << 16;                                            // 0x0015da58: lui $a0, 0x22
-    func_001634a8();  // 0x163410                                // 0x0015da5c: jal 0x163410
+    func_00163410();  // 163410                                // 0x0015da5c: jal 0x163410
     a0 = &str_00227520;  // "E301271: mwsffrm_DecideFrmType() : Invalid Pstruct" // 0x0015da60: addiu $a0, $a0, 0x7520
     v1 = 1;                                                     // 0x0015da64: addiu $v1, $zero, 1
 label_0x15da68:

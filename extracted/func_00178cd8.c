@@ -14,10 +14,10 @@ void func_00178cd8() {
     v1 = v0 + 1;                                                // 0x00178d04: addiu $v1, $v0, 1
     g_002678c4 = v1;  // Global at 0x002678c4                   // 0x00178d08: sw $v1, 0($a0)
     s0 = 0x26 << 16;                                            // 0x00178d0c: lui $s0, 0x26
-    func_00178d68();  // 0x178cb8                                // 0x00178d10: jal 0x178cb8
+    func_00178cb8();  // 178cb8                                // 0x00178d10: jal 0x178cb8
     s0 = s0 + 0x78b0;                                           // 0x00178d14: addiu $s0, $s0, 0x78b0
     g_002678b0 = v0;  // Global at 0x002678b0                   // 0x00178d1c: sw $v0, 0($s0)
-    func_00178f48();  // 0x178ef8                                // 0x00178d20: jal 0x178ef8
+    func_00178ef8();  // 178ef8                                // 0x00178d20: jal 0x178ef8
     a0 = 0x26 << 16;                                            // 0x00178d28: lui $a0, 0x26
     a0 = a0 + 0x78b8;                                           // 0x00178d40: addiu $a0, $a0, 0x78b8
     return func_00178eb8();  // Tail call                       // 0x00178d48: j 0x178eb8

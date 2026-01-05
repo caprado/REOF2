@@ -13,8 +13,8 @@ void func_00164680() {
     v1 = *(int32_t*)((v0) + 0x1b0);                             // 0x001646a4: lw $v1, 0x1b0($v0)
     if (v1 != a1) goto label_0x1646f8;                          // 0x001646a8: bne $v1, $a1, 0x1646f8
     s1 = *(int32_t*)(a0);                                       // 0x001646ac: lw $s1, 0($a0)
-    func_001321b8();  // 0x132168                                // 0x001646b0: jal 0x132168
-    func_00132208();  // 0x1321b8                                // 0x001646bc: jal 0x1321b8
+    func_00132168();  // 132168                                // 0x001646b0: jal 0x132168
+    func_001321b8();  // 1321b8                                // 0x001646bc: jal 0x1321b8
     if (s2 <= 0) goto label_0x1646fc;                           // 0x001646c4: blezl $s2, 0x1646fc
     if (v0 <= 0) goto label_0x1646fc;                           // 0x001646cc: blezl $v0, 0x1646fc
     return func_00167c80();  // Tail call                        // 0x001646f0: j 0x167bc8

@@ -16,10 +16,10 @@ void func_00172e60() {
     if (s0 == a1) goto label_0x172eb8;                          // 0x00172e80: beq $s0, $a1, 0x172eb8
     s1 = *(int32_t*)((v1) + 0x54);                              // 0x00172e84: lw $s1, 0x54($v1)
     a2 = sp + 4;                                                // 0x00172e88: addiu $a2, $sp, 4
-    func_00176060();  // 0x176010                                // 0x00172e8c: jal 0x176010
+    func_00176010();  // 176010                                // 0x00172e8c: jal 0x176010
     v1 = local_0;                                               // 0x00172e98: lw $v1, 0($sp)
     if (v1 < 0) goto label_0x172eb8;                            // 0x00172ea4: bltz $v1, 0x172eb8
-    func_0014fef0();  // 0x14fea8                                // 0x00172eac: jal 0x14fea8
+    func_0014fea8();  // 14fea8                                // 0x00172eac: jal 0x14fea8
     a1 = local_4;                                               // 0x00172eb0: lw $a1, 4($sp)
     v0 = ((unsigned)v0 < (unsigned)1) ? 1 : 0;                  // 0x00172eb4: sltiu $v0, $v0, 1
 label_0x172eb8:

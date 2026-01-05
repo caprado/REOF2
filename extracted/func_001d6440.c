@@ -15,7 +15,7 @@ label_0x1d645c:
     if (v1 == 0) goto label_0x1d6474;                           // 0x001d6460: beqz $v1, 0x1d6474
     /* nop */                                                   // 0x001d6464: nop 
     a1 = g_0032ea9c;  // Global at 0x0032ea9c                   // 0x001d6468: lhu $a1, 0xc($s1)
-    func_001d6440();  // 0x1d63a0                                // 0x001d646c: jal 0x1d63a0
+    func_001d63a0();  // 1d63a0                                // 0x001d646c: jal 0x1d63a0
     a0 = g_0032ea98;  // Global at 0x0032ea98                   // 0x001d6470: lhu $a0, 8($s1)
 label_0x1d6474:
     s0 = s0 + 1;                                                // 0x001d6474: addiu $s0, $s0, 1

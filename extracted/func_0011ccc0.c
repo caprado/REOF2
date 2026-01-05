@@ -13,7 +13,7 @@ void func_0011ccc0() {
     goto label_0x11cce4;                                        // 0x0011ccd4: b 0x11cce4
     v0 = -1;                                                    // 0x0011ccd8: addiu $v0, $zero, -1
 label_0x11ccdc:
-    func_0011ccc0();  // 0x11ccb0                                // 0x0011ccdc: jal 0x11ccb0
+    func_0011ccb0();  // 11ccb0                                // 0x0011ccdc: jal 0x11ccb0
     /* nop */                                                   // 0x0011cce0: nop 
 label_0x11cce4:
     return;                                                     // 0x0011cce8: jr $ra

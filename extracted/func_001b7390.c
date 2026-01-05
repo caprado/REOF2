@@ -1,3 +1,4 @@
+/** @category graphics/dma @status complete @author caprado */
 void func_001b7390() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
@@ -22,20 +23,20 @@ label_0x1b73bc:
     if (v1 == 0) goto label_0x1b744c;                           // 0x001b73c8: beqz $v1, 0x1b744c
     s0 = s0 + -0x3ac0;                                          // 0x001b73cc: addiu $s0, $s0, -0x3ac0
     a0 = 0x5f;                                                  // 0x001b73d0: addiu $a0, $zero, 0x5f
-    func_001972e0();  // 0x196050                                // 0x001b73d4: jal 0x196050
+    func_00196050();  // 196050                                // 0x001b73d4: jal 0x196050
     a1 = 5;                                                     // 0x001b73d8: addiu $a1, $zero, 5
     a0 = 0x60;                                                  // 0x001b73dc: addiu $a0, $zero, 0x60
-    func_001972e0();  // 0x196050                                // 0x001b73e0: jal 0x196050
+    func_00196050();  // 196050                                // 0x001b73e0: jal 0x196050
     v0 = g_002ac5e0;  // Global at 0x002ac5e0                   // 0x001b73e8: lw $v0, 0xa0($s0)
     if (v0 == 0) goto label_0x1b7408;                           // 0x001b73ec: beqz $v0, 0x1b7408
     a0 = 0x6c;                                                  // 0x001b73f0: addiu $a0, $zero, 0x6c
     a0 = 0x6c;                                                  // 0x001b73f4: addiu $a0, $zero, 0x6c
-    func_001972e0();  // 0x196050                                // 0x001b73f8: jal 0x196050
+    func_00196050();  // 196050                                // 0x001b73f8: jal 0x196050
     a1 = 1;                                                     // 0x001b73fc: addiu $a1, $zero, 1
     goto label_0x1b7414;                                        // 0x001b7400: b 0x1b7414
     v1 = g_002ac58c;  // Global at 0x002ac58c                   // 0x001b7404: lw $v1, 0x4c($s0)
 label_0x1b7408:
-    func_001972e0();  // 0x196050                                // 0x001b7408: jal 0x196050
+    func_00196050();  // 196050                                // 0x001b7408: jal 0x196050
     v1 = g_002ac58c;  // Global at 0x002ac58c                   // 0x001b7410: lw $v1, 0x4c($s0)
 label_0x1b7414:
     v0 = 0xf000 << 16;                                          // 0x001b7414: lui $v0, 0xf000
@@ -49,7 +50,7 @@ label_0x1b7414:
     v0 = v0 << 2;                                               // 0x001b7434: sll $v0, $v0, 2
     v0 = v0 + s0;                                               // 0x001b7438: addu $v0, $v0, $s0
     v0 = g_f0000038;  // Global at 0xf0000038                   // 0x001b743c: lw $v0, 0x38($v0)
-    func_0018ce40();  // 0x18cd80                                // 0x001b7444: jal 0x18cd80
+    func_0018cd80();  // 18cd80                                // 0x001b7444: jal 0x18cd80
 label_0x1b744c:
     v1 = g_002ac588;  // Global at 0x002ac588                   // 0x001b744c: lw $v1, 0x48($s0)
     v1 = v1 ^ 1;                                                // 0x001b7450: xori $v1, $v1, 1

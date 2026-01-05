@@ -8,7 +8,7 @@ void func_001a3320() {
     
     sp = sp + -0x10;                                            // 0x001a3320: addiu $sp, $sp, -0x10
     a1 = 5;                                                     // 0x001a332c: addiu $a1, $zero, 5
-    func_001a32e0();  // 0x1a3230                                // 0x001a3330: jal 0x1a3230
+    func_001a3230();  // 1a3230                                // 0x001a3330: jal 0x1a3230
     if (v0 != 0) goto label_0x1a3348;                           // 0x001a3338: bnez $v0, 0x1a3348
     /* nop */                                                   // 0x001a333c: nop 
     goto label_0x1a338c;                                        // 0x001a3340: b 0x1a338c

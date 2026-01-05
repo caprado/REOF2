@@ -42,16 +42,16 @@ void func_001ba590() {
     at = 0x31 << 16;                                            // 0x001ba618: lui $at, 0x31
     g_003137d0 = v0;  // Global at 0x003137d0                   // 0x001ba61c: sb $v0, 0x37d0($at)
     at = 0x31 << 16;                                            // 0x001ba620: lui $at, 0x31
-    func_001af020();  // 0x1af010                                // 0x001ba624: jal 0x1af010
+    func_001af010();  // 1af010                                // 0x001ba624: jal 0x1af010
     a1 = g_003137ce;  // Global at 0x003137ce                   // 0x001ba628: lb $a1, 0x37ce($at)
     at = 0x31 << 16;                                            // 0x001ba62c: lui $at, 0x31
-    func_001b7e90();  // 0x1b7e60                                // 0x001ba630: jal 0x1b7e60
+    func_001b7e60();  // 1b7e60                                // 0x001ba630: jal 0x1b7e60
     a0 = g_003137a5;  // Global at 0x003137a5                   // 0x001ba634: lbu $a0, 0x37a5($at)
     at = 0x31 << 16;                                            // 0x001ba638: lui $at, 0x31
-    func_001b7f10();  // 0x1b7e90                                // 0x001ba63c: jal 0x1b7e90
+    func_001b7e90();  // 1b7e90                                // 0x001ba63c: jal 0x1b7e90
     a0 = g_003137aa;  // Global at 0x003137aa                   // 0x001ba640: lbu $a0, 0x37aa($at)
     at = 0x31 << 16;                                            // 0x001ba644: lui $at, 0x31
-    func_001b7f80();  // 0x1b7f10                                // 0x001ba648: jal 0x1b7f10
+    func_001b7f10();  // 1b7f10                                // 0x001ba648: jal 0x1b7f10
     a0 = g_003137a9;  // Global at 0x003137a9                   // 0x001ba64c: lbu $a0, 0x37a9($at)
     return;                                                     // 0x001ba654: jr $ra
     sp = sp + 0x10;                                             // 0x001ba658: addiu $sp, $sp, 0x10

@@ -17,7 +17,7 @@ label_0x1b163c:
     /* nop */                                                   // 0x001b1648: nop 
     if (a0 == 0) goto label_0x1b1664;                           // 0x001b164c: beqz $a0, 0x1b1664
     /* nop */                                                   // 0x001b1650: nop 
-    func_0018c490();  // 0x18c350                                // 0x001b1654: jal 0x18c350
+    func_0018c350();  // 18c350                                // 0x001b1654: jal 0x18c350
     /* nop */                                                   // 0x001b1658: nop 
     v0 = -1;                                                    // 0x001b165c: addiu $v0, $zero, -1
     g_0053fdb0 = v0;  // Global at 0x0053fdb0                   // 0x001b1660: sw $v0, 0($s1)
@@ -26,11 +26,11 @@ label_0x1b1664:
     v0 = (s0 < 0x2bc) ? 1 : 0;                                  // 0x001b1668: slti $v0, $s0, 0x2bc
     if (v0 != 0) goto label_0x1b163c;                           // 0x001b166c: bnez $v0, 0x1b163c
     s1 = s1 + 4;                                                // 0x001b1670: addiu $s1, $s1, 4
-    func_001b0fc0();  // 0x1b0f40                                // 0x001b1674: jal 0x1b0f40
+    func_001b0f40();  // 1b0f40                                // 0x001b1674: jal 0x1b0f40
     /* nop */                                                   // 0x001b1678: nop 
-    func_001b0f40();  // 0x1b0ec0                                // 0x001b167c: jal 0x1b0ec0
+    func_001b0ec0();  // 1b0ec0                                // 0x001b167c: jal 0x1b0ec0
     /* nop */                                                   // 0x001b1680: nop 
-    func_001b26f0();  // 0x1b26a0                                // 0x001b1684: jal 0x1b26a0
+    func_001b26a0();  // 1b26a0                                // 0x001b1684: jal 0x1b26a0
     /* nop */                                                   // 0x001b1688: nop 
     /* FPU: aver_u.h $w0, $w0, $w17 */                          // 0x001b1690: aver_u.h $w0, $w0, $w17
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001b1694: xori.b $w0, $w0, 0xb0

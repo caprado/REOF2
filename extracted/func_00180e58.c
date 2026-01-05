@@ -14,7 +14,7 @@ void func_00180e58() {
     goto label_0x180f00;                                        // 0x00180e84: b 0x180f00
     v0 = v0 | 0x8001;                                           // 0x00180e88: ori $v0, $v0, 0x8001
 label_0x180e8c:
-    func_001887a0();  // 0x188758                                // 0x00180e8c: jal 0x188758
+    func_00188758();  // 188758                                // 0x00180e8c: jal 0x188758
     if (s0 >= 0) goto label_0x180eac;                           // 0x00180e98: bgez $s0, 0x180eac
     s1 = 0x27 << 16;                                            // 0x00180e9c: lui $s1, 0x27
     v0 = 0x8101 << 16;                                          // 0x00180ea0: lui $v0, 0x8101

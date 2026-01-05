@@ -8,20 +8,20 @@ void func_001c85d0() {
     
     sp = sp + -0x30;                                            // 0x001c85d0: addiu $sp, $sp, -0x30
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001c85d8: addu.qb $zero, $sp, $s1
-    func_001c7780();  // 0x1c7770                                // 0x001c85e0: jal 0x1c7770
+    func_001c7770();  // 1c7770                                // 0x001c85e0: jal 0x1c7770
     a0 = 0x31;                                                  // 0x001c85e8: addiu $a0, $zero, 0x31
     a1 = 0x20;                                                  // 0x001c85ec: addiu $a1, $zero, 0x20
-    func_001c7670();  // 0x1c75b0                                // 0x001c85f0: jal 0x1c75b0
+    func_001c75b0();  // 1c75b0                                // 0x001c85f0: jal 0x1c75b0
     a2 = 0x24;                                                  // 0x001c85f4: addiu $a2, $zero, 0x24
     if (s0 >= 0) goto label_0x1c8618;                           // 0x001c8600: bgez $s0, 0x1c8618
     /* nop */                                                   // 0x001c8604: nop 
-    func_001c7790();  // 0x1c7780                                // 0x001c8608: jal 0x1c7780
+    func_001c7780();  // 1c7780                                // 0x001c8608: jal 0x1c7780
     /* nop */                                                   // 0x001c860c: nop 
     goto label_0x1c8630;                                        // 0x001c8610: b 0x1c8630
 label_0x1c8618:
     at = 0x31 << 16;                                            // 0x001c8618: lui $at, 0x31
     v0 = g_0031669c;  // Global at 0x0031669c                   // 0x001c861c: lw $v0, 0x669c($at)
-    func_001c7790();  // 0x1c7780                                // 0x001c8620: jal 0x1c7780
+    func_001c7780();  // 1c7780                                // 0x001c8620: jal 0x1c7780
     *(uint32_t*)(s1) = v0;                                      // 0x001c8624: sw $v0, 0($s1)
     /* nop */                                                   // 0x001c862c: nop 
 label_0x1c8630:

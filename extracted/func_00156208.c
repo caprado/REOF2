@@ -7,7 +7,7 @@ void func_00156208() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x30;                                            // 0x00156208: addiu $sp, $sp, -0x30
-    func_00157a80();  // 0x157a00                                // 0x00156234: jal 0x157a00
+    func_00157a00();  // 157a00                                // 0x00156234: jal 0x157a00
     *(uint32_t*)(s3) = 0;                                       // 0x00156238: sw $zero, 0($s3)
     a0 = s1 + 0x20;                                             // 0x0015623c: addiu $a0, $s1, 0x20
     v0 = 2 << 16;                                               // 0x00156244: lui $v0, 2
@@ -25,17 +25,17 @@ label_0x156280:
     goto label_0x1562dc;                                        // 0x00156288: b 0x1562dc
 label_0x156290:
     a0 = s1 + 0x14;                                             // 0x00156290: addiu $a0, $s1, 0x14
-    func_00156758();  // 0x1562f8                                // 0x0015629c: jal 0x1562f8
+    func_001562f8();  // 1562f8                                // 0x0015629c: jal 0x1562f8
     s0 = 1;                                                     // 0x001562a0: addiu $s0, $zero, 1
     goto label_0x1562d8;                                        // 0x001562a4: b 0x1562d8
     /* nop */                                                   // 0x001562ac: nop 
 label_0x1562b0:
-    func_00156d98();  // 0x156758                                // 0x001562b0: jal 0x156758
+    func_00156758();  // 156758                                // 0x001562b0: jal 0x156758
     s0 = 1;                                                     // 0x001562b4: addiu $s0, $zero, 1
     goto label_0x1562d8;                                        // 0x001562b8: b 0x1562d8
 label_0x1562c0:
     a3 = *(int32_t*)((s1) + 0x10);                              // 0x001562c0: lw $a3, 0x10($s1)
-    func_001579e8();  // 0x156d98                                // 0x001562cc: jal 0x156d98
+    func_00156d98();  // 156d98                                // 0x001562cc: jal 0x156d98
     a0 = s1 + 0xa0;                                             // 0x001562d0: addiu $a0, $s1, 0xa0
 label_0x1562d8:
 label_0x1562dc:

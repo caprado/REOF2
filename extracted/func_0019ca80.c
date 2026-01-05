@@ -38,23 +38,23 @@ label_0x19cab0:
 label_0x19caec:
     a0 = sp + 0x2c;                                             // 0x0019caec: addiu $a0, $sp, 0x2c
 label_0x19caf0:
-    func_0019ed40();  // 0x19ec00                                // 0x0019caf0: jal 0x19ec00
+    func_0019ec00();  // 19ec00                                // 0x0019caf0: jal 0x19ec00
     a1 = 1;                                                     // 0x0019caf4: addiu $a1, $zero, 1
     if (v0 != 0) goto label_0x19cb10;                           // 0x0019caf8: bnez $v0, 0x19cb10
     a1 = 4;                                                     // 0x0019cb00: addiu $a1, $zero, 4
     goto label_0x19cab0;                                        // 0x0019cb04: b 0x19cab0
     *(uint32_t*)(s0) = a1;                                      // 0x0019cb08: sw $a1, 0($s0)
 label_0x19cb10:
-    func_0019cd80();  // 0x19cb80                                // 0x0019cb10: jal 0x19cb80
+    func_0019cb80();  // 19cb80                                // 0x0019cb10: jal 0x19cb80
     /* nop */                                                   // 0x0019cb14: nop 
-    func_0018c760();  // 0x18c750                                // 0x0019cb18: jal 0x18c750
+    func_0018c750();  // 18c750                                // 0x0019cb18: jal 0x18c750
     a0 = *(int32_t*)((s0) + 8);                                 // 0x0019cb1c: lw $a0, 8($s0)
-    func_0018dca0();  // 0x18dc30                                // 0x0019cb24: jal 0x18dc30
+    func_0018dc30();  // 18dc30                                // 0x0019cb24: jal 0x18dc30
     a1 = 0x10;                                                  // 0x0019cb28: addiu $a1, $zero, 0x10
     a1 = 1;                                                     // 0x0019cb30: addiu $a1, $zero, 1
-    func_0018cc10();  // 0x18cba0                                // 0x0019cb34: jal 0x18cba0
+    func_0018cba0();  // 18cba0                                // 0x0019cb34: jal 0x18cba0
     a3 = 0x29 << 16;                                            // 0x0019cb40: lui $a3, 0x29
-    func_0018cff0();  // 0x18ce40                                // 0x0019cb50: jal 0x18ce40
+    func_0018ce40();  // 18ce40                                // 0x0019cb50: jal 0x18ce40
     a3 = a3 + -0x350;                                           // 0x0019cb54: addiu $a3, $a3, -0x350
 label_0x19cb58:
     v1 = *(int32_t*)((gp) + -0x6444);                           // 0x0019cb58: lw $v1, -0x6444($gp)

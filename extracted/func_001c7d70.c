@@ -13,7 +13,7 @@ void func_001c7d70() {
     goto label_0x1c7e70;                                        // 0x001c7da4: b 0x1c7e70
     /* nop */                                                   // 0x001c7dac: nop 
 label_0x1c7db0:
-    func_001c7780();  // 0x1c7770                                // 0x001c7db0: jal 0x1c7770
+    func_001c7770();  // 1c7770                                // 0x001c7db0: jal 0x1c7770
     /* nop */                                                   // 0x001c7db4: nop 
     at = (s2 < 0x3cb) ? 1 : 0;                                  // 0x001c7db8: slti $at, $s2, 0x3cb
     if (at != 0) goto label_0x1c7dc8;                           // 0x001c7dbc: bnez $at, 0x1c7dc8
@@ -25,12 +25,12 @@ label_0x1c7dc8:
     a1 = s2 + 0x26;                                             // 0x001c7dd8: addiu $a1, $s2, 0x26
     g_0031669c = s4;  // Global at 0x0031669c                   // 0x001c7ddc: sh $s4, 0($s3)
     a0 = 0x13;                                                  // 0x001c7de0: addiu $a0, $zero, 0x13
-    func_001c7670();  // 0x1c75b0                                // 0x001c7de8: jal 0x1c75b0
+    func_001c75b0();  // 1c75b0                                // 0x001c7de8: jal 0x1c75b0
     g_0031669e = s0;  // Global at 0x0031669e                   // 0x001c7dec: sh $s0, 2($s3)
     iFlushCache();  // 0x114560                                 // 0x001c7df8: jal 0x114560
     if (v0 >= 0) goto label_0x1c7e20;                           // 0x001c7e08: bgez $v0, 0x1c7e20
     /* nop */                                                   // 0x001c7e0c: nop 
-    func_001c7790();  // 0x1c7780                                // 0x001c7e10: jal 0x1c7780
+    func_001c7780();  // 1c7780                                // 0x001c7e10: jal 0x1c7780
     /* nop */                                                   // 0x001c7e14: nop 
     goto label_0x1c7e70;                                        // 0x001c7e18: b 0x1c7e70
 label_0x1c7e20:
@@ -43,11 +43,11 @@ label_0x1c7e20:
 label_0x1c7e40:
     at = (0 < a2) ? 1 : 0;                                      // 0x001c7e48: slt $at, $zero, $a2
     if (at == 0) goto label_0x1c7e60;                           // 0x001c7e4c: beqz $at, 0x1c7e60
-    func_00107b68();  // 0x107ab8                                // 0x001c7e54: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x001c7e54: jal 0x107ab8
     a1 = s3 + 4;                                                // 0x001c7e58: addiu $a1, $s3, 4
     /* nop */                                                   // 0x001c7e5c: nop 
 label_0x1c7e60:
-    func_001c7790();  // 0x1c7780                                // 0x001c7e60: jal 0x1c7780
+    func_001c7780();  // 1c7780                                // 0x001c7e60: jal 0x1c7780
     /* nop */                                                   // 0x001c7e64: nop 
     /* nop */                                                   // 0x001c7e6c: nop 
 label_0x1c7e70:

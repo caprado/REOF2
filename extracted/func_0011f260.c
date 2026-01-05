@@ -1,3 +1,4 @@
+/** @category ps2-kernel-not-needed @status complete @author caprado */
 void func_0011f260() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
@@ -21,7 +22,7 @@ label_0x11f28c:
     v0 = v0 | 0x8002;                                           // 0x0011f294: ori $v0, $v0, 0x8002
 label_0x11f298:
     a0 = *(int32_t*)((s0) + 4);                                 // 0x0011f298: lw $a0, 4($s0)
-    func_0011e688();  // 0x11e5e8                                // 0x0011f29c: jal 0x11e5e8
+    func_0011e5e8();  // 11e5e8                                // 0x0011f29c: jal 0x11e5e8
     /* nop */                                                   // 0x0011f2a0: nop 
     if (a0 != 0) goto label_0x11f2c8;                           // 0x0011f2a8: bnez $a0, 0x11f2c8
     v0 = 0x25 << 16;                                            // 0x0011f2b0: lui $v0, 0x25

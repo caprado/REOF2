@@ -15,11 +15,11 @@ void func_001dbba0() {
     a1 = &str_00247d78;  // "data/rom/scene/em_set"             // 0x001dbbc0: addiu $a1, $a1, 0x7d78
     at = 0x31 << 16;                                            // 0x001dbbc4: lui $at, 0x31
     a3 = g_003137ba;  // Global at 0x003137ba                   // 0x001dbbc8: lhu $a3, 0x37ba($at)
-    func_0010a570();  // 0x10a4d8                                // 0x001dbbcc: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001dbbcc: jal 0x10a4d8
     a2 = &str_00247d90;  // "data/rom/netwk/lobby_01.tm2"       // 0x001dbbd0: addiu $a2, $a2, 0x7d90
     v0 = 1 << 16;                                               // 0x001dbbd4: lui $v0, 1
     a0 = sp + 0x20;                                             // 0x001dbbd8: addiu $a0, $sp, 0x20
-    func_001d33e0();  // 0x1d3390                                // 0x001dbbe4: jal 0x1d3390
+    func_001d3390();  // 1d3390                                // 0x001dbbe4: jal 0x1d3390
     a2 = v0 | 1;                                                // 0x001dbbe8: ori $a2, $v0, 1
     if (v0 > 0) goto label_0x1dbbfc;                            // 0x001dbbec: bgtz $v0, 0x1dbbfc
     /* nop */                                                   // 0x001dbbf0: nop 

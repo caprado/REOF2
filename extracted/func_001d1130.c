@@ -20,7 +20,7 @@ void func_001d1130() {
     a0 = 1;                                                     // 0x001d1194: addiu $a0, $zero, 1
     a3 = &str_00243ae0;  // "TCP&PPP DISCONNECTING...\n"        // 0x001d1198: addiu $a3, $a3, 0x3ae0
     a1 = 0x1b;                                                  // 0x001d119c: addiu $a1, $zero, 0x1b
-    func_001d09f0();  // 0x1d09d0                                // 0x001d11a0: jal 0x1d09d0
+    func_001d09d0();  // 1d09d0                                // 0x001d11a0: jal 0x1d09d0
     v1 = *(int8_t*)(s5);                                        // 0x001d11a8: lb $v1, 0($s5)
     v0 = 0x22 << 16;                                            // 0x001d11ac: lui $v0, 0x22
     v0 = v0 + -0xbf8;                                           // 0x001d11b0: addiu $v0, $v0, -0xbf8

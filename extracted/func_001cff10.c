@@ -12,7 +12,7 @@ void func_001cff10() {
     sp = sp + -0x20;                                            // 0x001cff10: addiu $sp, $sp, -0x20
     a2 = 2;                                                     // 0x001cff14: addiu $a2, $zero, 2
     local_1e = a1;                                              // 0x001cff1c: sh $a1, 0x1e($sp)
-    func_001cfdf0();  // 0x1cfd80                                // 0x001cff20: jal 0x1cfd80
+    func_001cfd80();  // 1cfd80                                // 0x001cff20: jal 0x1cfd80
     a1 = sp + 0x1e;                                             // 0x001cff24: addiu $a1, $sp, 0x1e
     return;                                                     // 0x001cff2c: jr $ra
     sp = sp + 0x20;                                             // 0x001cff30: addiu $sp, $sp, 0x20

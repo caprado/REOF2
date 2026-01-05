@@ -12,7 +12,7 @@ void func_00139898() {
     v0 = ((unsigned)v0 < (unsigned)2) ? 1 : 0;                  // 0x001398b0: sltiu $v0, $v0, 2
     /* bnezl $v0, 0x1398c8 */                                   // 0x001398b4: bnezl $v0, 0x1398c8
     *(uint8_t*)(s0) = 0;                                        // 0x001398b8: sb $zero, 0($s0)
-    func_00139c68();  // 0x139b68                                // 0x001398bc: jal 0x139b68
+    func_00139b68();  // 139b68                                // 0x001398bc: jal 0x139b68
     /* nop */                                                   // 0x001398c0: nop 
     *(uint8_t*)(s0) = 0;                                        // 0x001398c4: sb $zero, 0($s0)
     return func_00139898();  // Tail call                        // 0x001398d4: j 0x1396f0

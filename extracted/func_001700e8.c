@@ -7,17 +7,17 @@ void func_001700e8() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x001700e8: addiu $sp, $sp, -0x20
-    func_00169b10();  // 0x169af0                                // 0x001700fc: jal 0x169af0
+    func_00169af0();  // 169af0                                // 0x001700fc: jal 0x169af0
     a1 = 0xff00 << 16;                                          // 0x00170104: lui $a1, 0xff00
     if (v0 == 0) goto label_0x170128;                           // 0x00170108: beqz $v0, 0x170128
     a1 = a1 | 0x189;                                            // 0x00170114: ori $a1, $a1, 0x189
     return func_00169940();  // Tail call                        // 0x00170120: j 0x1698d0
     sp = sp + 0x20;                                             // 0x00170124: addiu $sp, $sp, 0x20
 label_0x170128:
-    func_001701d8();  // 0x170190                                // 0x0017012c: jal 0x170190
+    func_00170190();  // 170190                                // 0x0017012c: jal 0x170190
     a1 = 0xff00 << 16;                                          // 0x00170138: lui $a1, 0xff00
     if (a2 != 0) goto label_0x170158;                           // 0x0017013c: bnez $a2, 0x170158
-    func_00169940();  // 0x1698d0                                // 0x00170144: jal 0x1698d0
+    func_001698d0();  // 1698d0                                // 0x00170144: jal 0x1698d0
     a1 = a1 | 0xf31;                                            // 0x00170148: ori $a1, $a1, 0xf31
     goto label_0x170170;                                        // 0x0017014c: b 0x170170
     v0 = *(int32_t*)((s0) + 0x974);                             // 0x00170150: lw $v0, 0x974($s0)

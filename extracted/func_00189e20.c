@@ -13,7 +13,7 @@ void func_00189e20() {
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x00189e48: addu.qb $zero, $sp, $s1
     a0 = sp + 0x80;                                             // 0x00189e4c: addiu $a0, $sp, 0x80
     s0 = g_0010004c;  // Global at 0x0010004c                   // 0x00189e58: lw $s0, 0x4c($a1)
-    func_0018da10();  // 0x18d9e0                                // 0x00189e60: jal 0x18d9e0
+    func_0018d9e0();  // 18d9e0                                // 0x00189e60: jal 0x18d9e0
     a3 = *(int32_t*)((s4) + 8);                                 // 0x00189e68: lw $a3, 8($s4)
     t5 = -1;                                                    // 0x00189e6c: addiu $t5, $zero, -1
     t0 = *(int32_t*)((s4) + 4);                                 // 0x00189e70: lw $t0, 4($s4)
@@ -179,10 +179,10 @@ label_0x18a044:
     v1 = v1 + 0xf;                                              // 0x0018a0e8: addiu $v1, $v1, 0xf
     v0 = v1 & v0;                                               // 0x0018a0ec: and $v0, $v1, $v0
     a0 = a0 + a2;                                               // 0x0018a0f0: addu $a0, $a0, $a2
-    thunk_func_001a0a20();  // 0x18dab0                          // 0x0018a0f4: jal 0x18dab0
+    thunk_func_0018dab0();  // 18dab0                          // 0x0018a0f4: jal 0x18dab0
     a0 = a0 + v0;                                               // 0x0018a0f8: addu $a0, $a0, $v0
     *(uint32_t*)((s3) + 0x1c) = v0;                             // 0x0018a0fc: sw $v0, 0x1c($s3)
-    func_0018db10();  // 0x18db00                                // 0x0018a100: jal 0x18db00
+    func_0018db00();  // 18db00                                // 0x0018a100: jal 0x18db00
     a0 = *(int32_t*)((s3) + 0x1c);                              // 0x0018a104: lw $a0, 0x1c($s3)
     *(uint32_t*)((s3) + 0x20) = v0;                             // 0x0018a108: sw $v0, 0x20($s3)
     /* FPU: ld.b $w1, -0x4a($zero) */                           // 0x0018a110: ld.b $w1, -0x4a($zero)

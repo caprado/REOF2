@@ -1,3 +1,4 @@
+/** @category system/ps2 @status complete @author caprado */
 void func_00116508() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
@@ -13,7 +14,7 @@ void func_00116508() {
     s1 = g_001f0344;  // Global at 0x001f0344                   // 0x00116520: lw $s1, 0x344($s0)
     g_001f0344 = v0;  // Global at 0x001f0344                   // 0x00116528: sw $v0, 0x344($s0)
     a1 = sp + 0x78;                                             // 0x0011652c: addiu $a1, $sp, 0x78
-    func_001164d0();  // 0x115ed8                                // 0x00116548: jal 0x115ed8
+    func_00115ed8();  // 115ed8                                // 0x00116548: jal 0x115ed8
     g_001f0344 = s1;  // Global at 0x001f0344                   // 0x00116550: sw $s1, 0x344($s0)
     return;                                                     // 0x00116560: jr $ra
     sp = sp + 0xb0;                                             // 0x00116564: addiu $sp, $sp, 0xb0

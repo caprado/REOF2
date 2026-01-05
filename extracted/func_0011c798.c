@@ -10,9 +10,9 @@ void func_0011c798() {
     uint32_t local_0, local_4, local_8, local_c;
     
     sp = sp + -0x40;                                            // 0x0011c798: addiu $sp, $sp, -0x40
-    func_0011f878();  // 0x11f490                                // 0x0011c7b4: jal 0x11f490
+    func_0011f490();  // 11f490                                // 0x0011c7b4: jal 0x11f490
     a0 = 1;                                                     // 0x0011c7bc: addiu $a0, $zero, 1
-    func_0011f878();  // 0x11f490                                // 0x0011c7c0: jal 0x11f490
+    func_0011f490();  // 11f490                                // 0x0011c7c0: jal 0x11f490
     GetOsdConfigParam2();  // 0x1145b0                          // 0x0011c7c8: jal 0x1145b0
     /* nop */                                                   // 0x0011c7cc: nop 
     a0 = 0x8000 << 16;                                          // 0x0011c7d0: lui $a0, 0x8000
@@ -50,7 +50,7 @@ label_0x11c820:
     local_4 = t3;                                               // 0x0011c868: sw $t3, 4($sp)
     local_8 = a3;                                               // 0x0011c86c: sw $a3, 8($sp)
     local_c = t0;                                               // 0x0011c870: sw $t0, 0xc($sp)
-    func_00116d40();  // 0x116c90                                // 0x0011c874: jal 0x116c90
+    func_00116c90();  // 116c90                                // 0x0011c874: jal 0x116c90
     local_0 = a2;                                               // 0x0011c878: sw $a2, 0($sp)
     a0 = 4;                                                     // 0x0011c87c: addiu $a0, $zero, 4
     sceSifGetReg();  // 0x1146e0                                // 0x0011c880: jal 0x1146e0

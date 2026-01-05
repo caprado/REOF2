@@ -11,15 +11,15 @@ void func_0011a160() {
     
     sp = sp + -0x90;                                            // 0x0011a160: addiu $sp, $sp, -0x90
     s3 = 0x25 << 16;                                            // 0x0011a174: lui $s3, 0x25
-    func_00117f28();  // 0x117eb8                                // 0x0011a180: jal 0x117eb8
+    func_00117eb8();  // 117eb8                                // 0x0011a180: jal 0x117eb8
     s2 = s3 + -0x1e40;                                          // 0x0011a184: addiu $s2, $s3, -0x1e40
-    func_00118360();  // 0x118330                                // 0x0011a18c: jal 0x118330
+    func_00118330();  // 118330                                // 0x0011a18c: jal 0x118330
     a0 = 0xb;                                                   // 0x0011a190: addiu $a0, $zero, 0xb
     v0 = 0x1f << 16;                                            // 0x0011a194: lui $v0, 0x1f
     v1 = g_001f03dc;  // Global at 0x001f03dc                   // 0x0011a198: lw $v1, 0x3dc($v0)
     if (v1 != 0) goto label_0x11a1b4;                           // 0x0011a19c: bnez $v1, 0x11a1b4
     /* nop */                                                   // 0x0011a1a0: nop 
-    func_00118418();  // 0x118360                                // 0x0011a1a4: jal 0x118360
+    func_00118360();  // 118360                                // 0x0011a1a4: jal 0x118360
     /* nop */                                                   // 0x0011a1a8: nop 
     goto label_0x11a29c;                                        // 0x0011a1ac: b 0x11a29c
     v0 = -1;                                                    // 0x0011a1b0: addiu $v0, $zero, -1
@@ -30,7 +30,7 @@ label_0x11a1b4:
     /* bnezl $v0, 0x11a1d8 */                                   // 0x0011a1c0: bnezl $v0, 0x11a1d8
     v0 = g_0024ee00;  // Global at 0x0024ee00                   // 0x0011a1c4: lw $v0, 0($s0)
 label_0x11a1c8:
-    func_00118418();  // 0x118360                                // 0x0011a1c8: jal 0x118360
+    func_00118360();  // 118360                                // 0x0011a1c8: jal 0x118360
     /* nop */                                                   // 0x0011a1cc: nop 
     goto label_0x11a29c;                                        // 0x0011a1d0: b 0x11a29c
     v0 = -9;                                                    // 0x0011a1d4: addiu $v0, $zero, -9
@@ -55,17 +55,17 @@ label_0x11a1c8:
     local_0 = 0;                                                // 0x0011a228: sw $zero, 0($sp)
     t0 = 0x20;                                                  // 0x0011a230: addiu $t0, $zero, 0x20
     t2 = 4;                                                     // 0x0011a238: addiu $t2, $zero, 4
-    func_001178a0();  // 0x1176a8                                // 0x0011a23c: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x0011a23c: jal 0x1176a8
     if (v0 >= 0) goto label_0x11a264;                           // 0x0011a244: bgez $v0, 0x11a264
     v0 = 0x2000 << 16;                                          // 0x0011a248: lui $v0, 0x2000
     PollSema();  // 0x114320                                    // 0x0011a24c: jal 0x114320
-    func_00118418();  // 0x118360                                // 0x0011a254: jal 0x118360
+    func_00118360();  // 118360                                // 0x0011a254: jal 0x118360
     /* nop */                                                   // 0x0011a258: nop 
     goto label_0x11a29c;                                        // 0x0011a25c: b 0x11a29c
     v0 = -0xb;                                                  // 0x0011a260: addiu $v0, $zero, -0xb
 label_0x11a264:
     v0 = s0 | v0;                                               // 0x0011a264: or $v0, $s0, $v0
-    func_00118418();  // 0x118360                                // 0x0011a268: jal 0x118360
+    func_00118360();  // 118360                                // 0x0011a268: jal 0x118360
     s0 = g_20000000;  // Global at 0x20000000                   // 0x0011a26c: lw $s0, 0($v0)
     if (s0 != 0) goto label_0x11a288;                           // 0x0011a270: bnez $s0, 0x11a288
     /* nop */                                                   // 0x0011a274: nop 

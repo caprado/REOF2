@@ -26,7 +26,7 @@ label_0x175e18:
     goto label_0x175e38;                                        // 0x00175e18: b 0x175e38
     v0 = -1;                                                    // 0x00175e1c: addiu $v0, $zero, -1
 label_0x175e20:
-    func_0015b7b0();  // 0x15b740                                // 0x00175e20: jal 0x15b740
+    func_0015b740();  // 15b740                                // 0x00175e20: jal 0x15b740
     v1 = 0x21 << 16;                                            // 0x00175e28: lui $v1, 0x21
     a0 = 0x21 << 16;                                            // 0x00175e2c: lui $a0, 0x21
     g_002157d0 = s0;  // Global at 0x002157d0                   // 0x00175e30: sw $s0, 0x57d0($v1)

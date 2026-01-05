@@ -9,7 +9,7 @@ void func_001c28b0() {
     sp = sp + -0x20;                                            // 0x001c28b0: addiu $sp, $sp, -0x20
     a2 = 0x220;                                                 // 0x001c28bc: addiu $a2, $zero, 0x220
     a0 = 0x31 << 16;                                            // 0x001c28c8: lui $a0, 0x31
-    func_00107d30();  // 0x107c70                                // 0x001c28cc: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001c28cc: jal 0x107c70
     a0 = a0 + 0x60b0;                                           // 0x001c28d0: addiu $a0, $a0, 0x60b0
     v0 = 0x22 << 16;                                            // 0x001c28d4: lui $v0, 0x22
     a0 = 0x31 << 16;                                            // 0x001c28d8: lui $a0, 0x31
@@ -23,7 +23,7 @@ void func_001c28b0() {
     a0 = a0 + 0x60b0;                                           // 0x001c28f8: addiu $a0, $a0, 0x60b0
     v0 = v0 + v1;                                               // 0x001c28fc: addu $v0, $v0, $v1
     v0 = g_0021e9f0;  // Global at 0x0021e9f0                   // 0x001c2900: lw $v0, 0($v0)
-    func_001c28b0();  // 0x1c27a0                                // 0x001c2904: jal 0x1c27a0
+    func_001c27a0();  // 1c27a0                                // 0x001c2904: jal 0x1c27a0
     g_003160bc = v0;  // Global at 0x003160bc                   // 0x001c2908: sw $v0, 0x60bc($at)
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001c2910: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x001c2914: jr $ra

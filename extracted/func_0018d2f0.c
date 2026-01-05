@@ -1,3 +1,4 @@
+/** @category graphics/dma @status complete @author caprado */
 void func_0018d2f0() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
@@ -32,7 +33,7 @@ void func_0018d2f0() {
     a0 = *(int32_t*)((v0) + 0xc);                               // 0x0018d358: lw $a0, 0xc($v0)
     v0 = a1 << 2;                                               // 0x0018d35c: sll $v0, $a1, 2
     v0 = v1 + v0;                                               // 0x0018d360: addu $v0, $v1, $v0
-    func_0018db10();  // 0x18db00                                // 0x0018d364: jal 0x18db00
+    func_0018db00();  // 18db00                                // 0x0018d364: jal 0x18db00
     s1 = *(int32_t*)(v0);                                       // 0x0018d368: lw $s1, 0($v0)
     a0 = s0 + s2;                                               // 0x0018d36c: addu $a0, $s0, $s2
     v1 = 0xf000 << 16;                                          // 0x0018d370: lui $v1, 0xf000
@@ -63,7 +64,7 @@ void func_0018d2f0() {
     v0 = v0 | v1;                                               // 0x0018d3e0: or $v0, $v0, $v1
     iFlushCache();  // 0x114560                                 // 0x0018d3e4: jal 0x114560
     *(uint8_t*)(s1) = v0;                                       // 0x0018d3e8: sb $v0, 0($s1)
-    func_00103418();  // 0x1033b0                                // 0x0018d3f4: jal 0x1033b0
+    func_001033b0();  // 1033b0                                // 0x0018d3f4: jal 0x1033b0
     goto label_0x18d4a4;                                        // 0x0018d3fc: b 0x18d4a4
     v0 = -0x201;                                                // 0x0018d408: addiu $v0, $zero, -0x201
     v1 = 2;                                                     // 0x0018d410: addiu $v1, $zero, 2
@@ -74,7 +75,7 @@ void func_0018d2f0() {
     *(uint32_t*)((gp) + -0x64ec) = a1;                          // 0x0018d42c: sw $a1, -0x64ec($gp)
     at = 0x1200 << 16;                                          // 0x0018d434: lui $at, 0x1200
     at = 0x1200 << 16;                                          // 0x0018d440: lui $at, 0x1200
-    func_00114e90();  // 0x114e28                                // 0x0018d444: jal 0x114e28
+    func_00114e28();  // 114e28                                // 0x0018d444: jal 0x114e28
     a3 = g_0028fce0;  // Global at 0x0028fce0                   // 0x0018d44c: lw $a3, 0x30($s2)
     v0 = 0 & 1;                                                 // 0x0018d450: andi $v0, $zero, 1
     a1 = -0x41;                                                 // 0x0018d454: addiu $a1, $zero, -0x41
@@ -92,7 +93,7 @@ void func_0018d2f0() {
     v0 = v0 | v1;                                               // 0x0018d488: or $v0, $v0, $v1
     iFlushCache();  // 0x114560                                 // 0x0018d48c: jal 0x114560
     *(uint8_t*)(s1) = v0;                                       // 0x0018d490: sb $v0, 0($s1)
-    func_00103418();  // 0x1033b0                                // 0x0018d498: jal 0x1033b0
+    func_001033b0();  // 1033b0                                // 0x0018d498: jal 0x1033b0
 label_0x18d4a0:
 label_0x18d4a4:
     /* FPU: ld.b $w0, -0x4e($zero) */                           // 0x0018d4a4: ld.b $w0, -0x4e($zero)

@@ -19,7 +19,7 @@ label_0x108de0:
     /* nop */                                                   // 0x00108de4: nop 
 label_0x108de8:
     a1 = 0 | 0x8048;                                            // 0x00108de8: ori $a1, $zero, 0x8048
-    func_00111ce0();  // 0x111a58                                // 0x00108df0: jal 0x111a58
+    func_00111a58();  // 111a58                                // 0x00108df0: jal 0x111a58
     s0 = s0 + -1;                                               // 0x00108df4: addiu $s0, $s0, -1
     if (s0 > 0) goto label_0x108de8;                            // 0x00108dfc: bgtz $s0, 0x108de8
     /* nop */                                                   // 0x00108e00: nop 

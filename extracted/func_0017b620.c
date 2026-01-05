@@ -23,7 +23,7 @@ void func_0017b620() {
     local_18 = v0;                                              // 0x0017b678: sw $v0, 0x18($sp)
     local_4 = a3;                                               // 0x0017b67c: sw $a3, 4($sp)
     local_8 = v1;                                               // 0x0017b680: sw $v1, 8($sp)
-    func_0014f390();  // 0x14f370                                // 0x0017b684: jal 0x14f370
+    func_0014f370();  // 14f370                                // 0x0017b684: jal 0x14f370
     local_10 = s3;                                              // 0x0017b688: sw $s3, 0x10($sp)
     a3 = *(int32_t*)((s0) + 0x48);                              // 0x0017b68c: lw $a3, 0x48($s0)
     v0 = *(int32_t*)((s0) + 0x44);                              // 0x0017b694: lw $v0, 0x44($s0)
@@ -34,7 +34,7 @@ void func_0017b620() {
     local_14 = v0;                                              // 0x0017b6ac: sw $v0, 0x14($sp)
     local_18 = a3;                                              // 0x0017b6b0: sw $a3, 0x18($sp)
     local_4 = v0;                                               // 0x0017b6b4: sw $v0, 4($sp)
-    func_0014fea8();  // 0x14fdd0                                // 0x0017b6b8: jal 0x14fdd0
+    func_0014fdd0();  // 14fdd0                                // 0x0017b6b8: jal 0x14fdd0
     local_8 = a3;                                               // 0x0017b6bc: sw $a3, 8($sp)
     return;                                                     // 0x0017b6d8: jr $ra
     sp = sp + 0x60;                                             // 0x0017b6dc: addiu $sp, $sp, 0x60

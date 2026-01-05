@@ -12,26 +12,26 @@ void func_00133150() {
     sp = sp + -0x40;                                            // 0x00133150: addiu $sp, $sp, -0x40
     if (s0 != 0) goto label_0x133188;                           // 0x0013316c: bnez $s0, 0x133188
     a0 = 0x22 << 16;                                            // 0x00133174: lui $a0, 0x22
-    func_00127de8();  // 0x127d90                                // 0x00133178: jal 0x127d90
+    func_00127d90();  // 127d90                                // 0x00133178: jal 0x127d90
     a0 = &str_00223df8;  // "E8101202 ADXT_StartAfs: can't open " // 0x0013317c: addiu $a0, $a0, 0x3df8
     goto label_0x13322c;                                        // 0x00133180: b 0x13322c
 label_0x133188:
-    func_00131bb8();  // 0x131af8                                // 0x00133188: jal 0x131af8
+    func_00131af8();  // 131af8                                // 0x00133188: jal 0x131af8
     /* nop */                                                   // 0x0013318c: nop 
     a2 = *(int32_t*)((s0) + 0xb0);                              // 0x00133194: lw $a2, 0xb0($s0)
     a3 = sp + 0x10;                                             // 0x0013319c: addiu $a3, $sp, 0x10
     t0 = sp + 0x14;                                             // 0x001331a0: addiu $t0, $sp, 0x14
-    func_00129c30();  // 0x129ad8                                // 0x001331a4: jal 0x129ad8
+    func_00129ad8();  // 129ad8                                // 0x001331a4: jal 0x129ad8
     t1 = sp + 0x18;                                             // 0x001331a8: addiu $t1, $sp, 0x18
     /* bnezl $v0, 0x13322c */                                   // 0x001331ac: bnezl $v0, 0x13322c
     v0 = *(int32_t*)((s0) + 8);                                 // 0x001331b4: lw $v0, 8($s0)
     if (v0 != 0) goto label_0x1331f8;                           // 0x001331b8: bnez $v0, 0x1331f8
     v1 = local_10;                                              // 0x001331bc: lw $v1, 0x10($sp)
-    func_00127fe8();  // 0x127f60                                // 0x001331cc: jal 0x127f60
+    func_00127f60();  // 127f60                                // 0x001331cc: jal 0x127f60
     a3 = 0x10;                                                  // 0x001331d0: addiu $a3, $zero, 0x10
     a0 = 0x22 << 16;                                            // 0x001331d4: lui $a0, 0x22
     a0 = &str_00223e28;  // "E02080807 ADXT_StartFname: parameter error" // 0x001331d8: addiu $a0, $a0, 0x3e28
-    func_00127e58();  // 0x127de8                                // 0x001331dc: jal 0x127de8
+    func_00127de8();  // 127de8                                // 0x001331dc: jal 0x127de8
     v0 = -1;                                                    // 0x001331e4: addiu $v0, $zero, -1
     v1 = 6;                                                     // 0x001331e8: addiu $v1, $zero, 6
     *(uint16_t*)((s0) + 0x60) = v0;                             // 0x001331ec: sh $v0, 0x60($s0)

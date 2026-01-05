@@ -15,7 +15,7 @@ void func_0012a6b0() {
     g_001f6a80 = v0;  // Global at 0x001f6a80                   // 0x0012a6d4: sw $v0, 0($s1)
     s0 = 0x1f << 16;                                            // 0x0012a6d8: lui $s0, 0x1f
     s0 = s0 + 0x6ad8;                                           // 0x0012a6dc: addiu $s0, $s0, 0x6ad8
-    func_0012ae78();  // 0x12ae18                                // 0x0012a6e0: jal 0x12ae18
+    func_0012ae18();  // 12ae18                                // 0x0012a6e0: jal 0x12ae18
     a0 = g_001f6ad8;  // Global at 0x001f6ad8                   // 0x0012a6e4: lw $a0, 0($s0)
     ReferThreadStatus();  // 0x1141d0                           // 0x0012a6e8: jal 0x1141d0
     v1 = g_001f6ad8;  // Global at 0x001f6ad8                   // 0x0012a6ec: lw $v1, 0($s0)

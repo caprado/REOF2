@@ -8,7 +8,7 @@ void func_0017f160() {
     
     sp = sp + -0x40;                                            // 0x0017f160: addiu $sp, $sp, -0x40
     *(float*)((sp) + 0x30) = FPU_F20;  // Store float           // 0x0017f170: swc1 $f20, 0x30($sp)
-    func_0011d378();  // 0x11d320                                // 0x0017f17c: jal 0x11d320
+    func_0011d320();  // 11d320                                // 0x0017f17c: jal 0x11d320
     /* FPU: mov.s $f20, $f12 */                                 // 0x0017f180: mov.s $f20, $f12
     /* move to FPU: $zero, $f0 */                               // 0x0017f184: mtc1 $zero, $f0
     /* FPU: c.olt.s $f20, $f0 */                                // 0x0017f188: c.olt.s $f20, $f0
@@ -23,7 +23,7 @@ void func_0017f160() {
     /* FPU: sub.s $f20, $f0, $f20 */                            // 0x0017f1ac: sub.s $f20, $f0, $f20
 label_0x17f1b4:
     /* move from FPU: $t0, $f20 */                              // 0x0017f1b4: mfc1 $t0, $f20
-    func_0017f160();  // 0x17f0e8                                // 0x0017f1c0: jal 0x17f0e8
+    func_0017f0e8();  // 17f0e8                                // 0x0017f1c0: jal 0x17f0e8
     /* nop */                                                   // 0x0017f1c4: nop 
     a3 = 4;                                                     // 0x0017f1f4: addiu $a3, $zero, 4
 label_0x17f1f8:

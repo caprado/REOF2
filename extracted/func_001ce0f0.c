@@ -45,7 +45,7 @@ label_0x1ce170:
     a0 = 1;                                                     // 0x001ce184: addiu $a0, $zero, 1
     a1 = 7;                                                     // 0x001ce188: addiu $a1, $zero, 7
     a3 = &str_00243950;  // "Conexant"                          // 0x001ce190: addiu $a3, $a3, 0x3950
-    func_001d09f0();  // 0x1d09d0                                // 0x001ce194: jal 0x1d09d0
+    func_001d09d0();  // 1d09d0                                // 0x001ce194: jal 0x1d09d0
     at = 0x32 << 16;                                            // 0x001ce19c: lui $at, 0x32
     v1 = g_003257d5;  // Global at 0x003257d5                   // 0x001ce1a0: lbu $v1, 0x57d5($at)
     at = 0x32 << 16;                                            // 0x001ce1a4: lui $at, 0x32

@@ -11,7 +11,7 @@ void func_001bfbf0() {
     a0 = *(int32_t*)((a0) + 0x24);                              // 0x001bfbfc: lw $a0, 0x24($a0)
     if (a0 == v1) goto label_0x1bfc10;                          // 0x001bfc00: beq $a0, $v1, 0x1bfc10
     /* nop */                                                   // 0x001bfc04: nop 
-    func_001bfbf0();  // 0x1bfbc0                                // 0x001bfc08: jal 0x1bfbc0
+    func_001bfbc0();  // 1bfbc0                                // 0x001bfc08: jal 0x1bfbc0
     /* nop */                                                   // 0x001bfc0c: nop 
 label_0x1bfc10:
     return;                                                     // 0x001bfc14: jr $ra

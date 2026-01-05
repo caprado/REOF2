@@ -11,10 +11,10 @@ void func_001dadf0() {
     at = 0x31 << 16;                                            // 0x001dadfc: lui $at, 0x31
     a2 = g_003137ba;  // Global at 0x003137ba                   // 0x001dae00: lhu $a2, 0x37ba($at)
     a0 = sp + 0x10;                                             // 0x001dae04: addiu $a0, $sp, 0x10
-    func_0010a570();  // 0x10a4d8                                // 0x001dae08: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001dae08: jal 0x10a4d8
     a1 = &str_002479b8;  // "s%02d_com"                         // 0x001dae0c: addiu $a1, $a1, 0x79b8
     a0 = sp + 0x10;                                             // 0x001dae10: addiu $a0, $sp, 0x10
-    func_001daf80();  // 0x1daef0                                // 0x001dae14: jal 0x1daef0
+    func_001daef0();  // 1daef0                                // 0x001dae14: jal 0x1daef0
     a1 = 0xd;                                                   // 0x001dae18: addiu $a1, $zero, 0xd
     return;                                                     // 0x001dae20: jr $ra
     sp = sp + 0x90;                                             // 0x001dae24: addiu $sp, $sp, 0x90

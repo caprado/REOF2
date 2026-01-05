@@ -7,7 +7,7 @@ void func_001165e0() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x60;                                            // 0x001165e0: addiu $sp, $sp, -0x60
-    func_0011d378();  // 0x11d320                                // 0x001165f8: jal 0x11d320
+    func_0011d320();  // 11d320                                // 0x001165f8: jal 0x11d320
     t2 = 0x1f << 16;                                            // 0x00116600: lui $t2, 0x1f
     v0 = g_001f0348;  // Global at 0x001f0348                   // 0x00116604: lw $v0, 0x348($t2)
     if (v0 == 0) goto label_0x116630;                           // 0x00116608: beqz $v0, 0x116630
@@ -71,7 +71,7 @@ label_0x1166c8:
     s0 = 0x20;                                                  // 0x00116700: addiu $s0, $zero, 0x20
     g_0024c74c = v1;  // Global at 0x0024c74c                   // 0x00116704: sw $v1, 0xc($a0)
     g_0024c750 = s1;  // Global at 0x0024c750                   // 0x00116708: sw $s1, 0x10($a0)
-    func_0011d390();  // 0x11d378                                // 0x0011670c: jal 0x11d378
+    func_0011d378();  // 11d378                                // 0x0011670c: jal 0x11d378
     g_0024c744 = s1;  // Global at 0x0024c744                   // 0x00116710: sw $s1, 4($a0)
     iFlushCache();  // 0x114560                                 // 0x00116714: jal 0x114560
     v0 = 0x1000 << 16;                                          // 0x0011671c: lui $v0, 0x1000
@@ -98,7 +98,7 @@ label_0x116760:
     AddDmacHandler();  // 0x113ff0                              // 0x00116768: jal 0x113ff0
     v1 = 0x25 << 16;                                            // 0x00116770: lui $v1, 0x25
     a0 = 5;                                                     // 0x00116774: addiu $a0, $zero, 5
-    func_00114f60();  // 0x114ef8                                // 0x00116778: jal 0x114ef8
+    func_00114ef8();  // 114ef8                                // 0x00116778: jal 0x114ef8
     g_0024c714 = v0;  // Global at 0x0024c714                   // 0x0011677c: sw $v0, -0x38ec($v1)
     a0 = 0x8000 << 16;                                          // 0x00116780: lui $a0, 0x8000
     Deci2Call();  // 0x1146f0                                   // 0x00116784: jal 0x1146f0
@@ -138,7 +138,7 @@ label_0x1167d8:
     return func_00116b08();  // Tail call                        // 0x00116858: j 0x116ac8
     sp = sp + 0x60;                                             // 0x0011685c: addiu $sp, $sp, 0x60
     sp = sp + -0x10;                                            // 0x00116860: addiu $sp, $sp, -0x10
-    func_00114ef8();  // 0x114e90                                // 0x00116868: jal 0x114e90
+    func_00114e90();  // 114e90                                // 0x00116868: jal 0x114e90
     a0 = 5;                                                     // 0x0011686c: addiu $a0, $zero, 5
     v1 = 0x25 << 16;                                            // 0x00116870: lui $v1, 0x25
     a0 = 5;                                                     // 0x00116874: addiu $a0, $zero, 5

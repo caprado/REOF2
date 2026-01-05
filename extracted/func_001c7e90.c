@@ -7,14 +7,14 @@ void func_001c7e90() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x001c7e90: addiu $sp, $sp, -0x20
-    func_001c7780();  // 0x1c7770                                // 0x001c7e9c: jal 0x1c7770
+    func_001c7770();  // 1c7770                                // 0x001c7e9c: jal 0x1c7770
     at = 0x31 << 16;                                            // 0x001c7ea4: lui $at, 0x31
     a0 = 0x16;                                                  // 0x001c7ea8: addiu $a0, $zero, 0x16
     a1 = 0x22;                                                  // 0x001c7eac: addiu $a1, $zero, 0x22
     a2 = 0x20;                                                  // 0x001c7eb0: addiu $a2, $zero, 0x20
-    func_001c7670();  // 0x1c75b0                                // 0x001c7eb4: jal 0x1c75b0
+    func_001c75b0();  // 1c75b0                                // 0x001c7eb4: jal 0x1c75b0
     g_0031669c = s0;  // Global at 0x0031669c                   // 0x001c7eb8: sh $s0, 0x669c($at)
-    func_001c7790();  // 0x1c7780                                // 0x001c7ec0: jal 0x1c7780
+    func_001c7780();  // 1c7780                                // 0x001c7ec0: jal 0x1c7780
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001c7ed0: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x001c7ed4: jr $ra
     sp = sp + 0x20;                                             // 0x001c7ed8: addiu $sp, $sp, 0x20

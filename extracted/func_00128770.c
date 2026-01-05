@@ -14,11 +14,11 @@ void func_00128770() {
     v0 = 0x1f << 16;                                            // 0x0012878c: lui $v0, 0x1f
     v1 = g_001f3834;  // Global at 0x001f3834                   // 0x00128790: lw $v1, 0x3834($v0)
     if (v1 < 0) goto label_0x1287cc;                            // 0x00128794: bltzl $v1, 0x1287cc
-    func_00129a38();  // 0x129a08                                // 0x0012879c: jal 0x129a08
+    func_00129a08();  // 129a08                                // 0x0012879c: jal 0x129a08
     /* nop */                                                   // 0x001287a0: nop 
     v1 = 1;                                                     // 0x001287a4: addiu $v1, $zero, 1
     if (v0 == v1) goto label_0x1287bc;                          // 0x001287a8: beql $v0, $v1, 0x1287bc
-    func_00129590();  // 0x1294a0                                // 0x001287b0: jal 0x1294a0
+    func_001294a0();  // 1294a0                                // 0x001287b0: jal 0x1294a0
     a0 = g_001f3830;  // Global at 0x001f3830                   // 0x001287b4: lw $a0, 0($s0)
 label_0x1287bc:
     return func_00128770();  // Tail call                        // 0x001287c0: j 0x128720

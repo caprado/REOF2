@@ -11,7 +11,7 @@ void func_00100858() {
     
     sp = sp + -0xc0;                                            // 0x00100858: addiu $sp, $sp, -0xc0
     s6 = 0x1f << 16;                                            // 0x00100874: lui $s6, 0x1f
-    func_00100668();  // 0x1005b0                                // 0x00100890: jal 0x1005b0
+    func_001005b0();  // 1005b0                                // 0x00100890: jal 0x1005b0
     local_10 = a2;                                              // 0x00100894: sw $a2, 0x10($sp)
     a0 = g_001edf28;  // Global at 0x001edf28                   // 0x00100898: lw $a0, -0x20d8($s6)
     SetOsdConfigParam();  // 0x114330                           // 0x0010089c: jal 0x114330
@@ -26,10 +26,10 @@ void func_00100858() {
     g_001edf1c = v1;  // Global at 0x001edf1c                   // 0x001008c4: sw $v1, -0x20e4($a2)
     iReferThreadStatus();  // 0x1141e0                          // 0x001008c8: jal 0x1141e0
     a1 = a1 + -0x48e0;                                          // 0x001008cc: addiu $a1, $a1, -0x48e0
-    func_00100e38();  // 0x100d98                                // 0x001008d0: jal 0x100d98
+    func_00100d98();  // 100d98                                // 0x001008d0: jal 0x100d98
     a0 = 1;                                                     // 0x001008d4: addiu $a0, $zero, 1
     if (v0 != 0) goto label_0x100a70;                           // 0x001008d8: bnez $v0, 0x100a70
-    func_00116ee0();  // 0x116d40                                // 0x001008e0: jal 0x116d40
+    func_00116d40();  // 116d40                                // 0x001008e0: jal 0x116d40
     s1 = 0x1f << 16;                                            // 0x001008e4: lui $s1, 0x1f
     v0 = g_001edf44;  // Global at 0x001edf44                   // 0x001008e8: lw $v0, -0x20bc($s1)
     if (v0 >= 0) goto label_0x1009a4;                           // 0x001008ec: bgez $v0, 0x1009a4
@@ -55,14 +55,14 @@ label_0x10092c:
 label_0x100930:
     a1 = 0x8000 << 16;                                          // 0x00100930: lui $a1, 0x8000
     a1 = a1 | 0x597;                                            // 0x00100938: ori $a1, $a1, 0x597
-    func_001176a8();  // 0x1174d8                                // 0x0010093c: jal 0x1174d8
+    func_001174d8();  // 1174d8                                // 0x0010093c: jal 0x1174d8
     if (v0 >= 0) goto label_0x100994;                           // 0x00100944: bgezl $v0, 0x100994
     v0 = g_0024b924;  // Global at 0x0024b924                   // 0x00100948: lw $v0, 0x24($s0)
     v0 = g_001edf10;  // Global at 0x001edf10                   // 0x0010094c: lw $v0, -0x20f0($s4)
     if (v0 <= 0) goto label_0x100968;                           // 0x00100950: blez $v0, 0x100968
     v0 = 0x10 << 16;                                            // 0x00100954: lui $v0, 0x10
     a0 = 0x22 << 16;                                            // 0x00100958: lui $a0, 0x22
-    func_00116598();  // 0x116508                                // 0x0010095c: jal 0x116508
+    func_00116508();  // 116508                                // 0x0010095c: jal 0x116508
     a0 = &str_0021fd28;  // "ee call cmd search %s\n"           // 0x00100960: addiu $a0, $a0, -0x2d8
     v0 = 0x10 << 16;                                            // 0x00100964: lui $v0, 0x10
 label_0x100968:
@@ -116,21 +116,21 @@ label_0x100a0c:
     a0 = 0x22 << 16;                                            // 0x00100a10: lui $a0, 0x22
     a1 = 0x25 << 16;                                            // 0x00100a14: lui $a1, 0x25
     a0 = &str_0021fd48;  // "search name %s\n"                  // 0x00100a18: addiu $a0, $a0, -0x2b8
-    func_00116598();  // 0x116508                                // 0x00100a1c: jal 0x116508
+    func_00116508();  // 116508                                // 0x00100a1c: jal 0x116508
     a1 = a1 + -0x485c;                                          // 0x00100a20: addiu $a1, $a1, -0x485c
 label_0x100a24:
     v0 = local_10;                                              // 0x00100a24: lw $v0, 0x10($sp)
     s0 = s5 + -0x4880;                                          // 0x00100a28: addiu $s0, $s5, -0x4880
     a1 = 0x12c;                                                 // 0x00100a2c: addiu $a1, $zero, 0x12c
     g_0024b8a8 = v0;  // Global at 0x0024b8a8                   // 0x00100a34: sw $v0, 0x128($s0)
-    func_00116d40();  // 0x116c90                                // 0x00100a38: jal 0x116c90
+    func_00116c90();  // 116c90                                // 0x00100a38: jal 0x116c90
     g_0024b8a4 = s0;  // Global at 0x0024b8a4                   // 0x00100a3c: sw $s0, 0x124($s0)
     a0 = s7 + -0x4700;                                          // 0x00100a40: addiu $a0, $s7, -0x4700
     local_0 = 0;                                                // 0x00100a44: sw $zero, 0($sp)
     t0 = 0x12c;                                                 // 0x00100a54: addiu $t0, $zero, 0x12c
     t1 = fp + -0x4740;                                          // 0x00100a58: addiu $t1, $fp, -0x4740
     t2 = 4;                                                     // 0x00100a5c: addiu $t2, $zero, 4
-    func_001178a0();  // 0x1176a8                                // 0x00100a60: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x00100a60: jal 0x1176a8
     if (v0 >= 0) goto label_0x100a84;                           // 0x00100a68: bgez $v0, 0x100a84
     v0 = 0x2000 << 16;                                          // 0x00100a6c: lui $v0, 0x2000
 label_0x100a70:
@@ -148,19 +148,19 @@ label_0x100a84:
     if (v1 <= 0) goto label_0x100b20;                           // 0x00100adc: blez $v1, 0x100b20
     a0 = 0x22 << 16;                                            // 0x00100ae0: lui $a0, 0x22
     a1 = s3 + 8;                                                // 0x00100ae4: addiu $a1, $s3, 8
-    func_00116598();  // 0x116508                                // 0x00100ae8: jal 0x116508
+    func_00116508();  // 116508                                // 0x00100ae8: jal 0x116508
     a0 = &str_0021fd60;  // "search size %d\n"                  // 0x00100aec: addiu $a0, $a0, -0x2a0
     v0 = g_001edf10;  // Global at 0x001edf10                   // 0x00100af0: lw $v0, -0x20f0($s4)
     if (v0 <= 0) goto label_0x100b20;                           // 0x00100af4: blez $v0, 0x100b20
     a0 = 0x22 << 16;                                            // 0x00100af8: lui $a0, 0x22
     a1 = *(int32_t*)((s3) + 4);                                 // 0x00100afc: lw $a1, 4($s3)
-    func_00116598();  // 0x116508                                // 0x00100b00: jal 0x116508
+    func_00116508();  // 116508                                // 0x00100b00: jal 0x116508
     a0 = &str_0021fd70;  // "search loc lbn %d\n"               // 0x00100b04: addiu $a0, $a0, -0x290
     v0 = g_001edf10;  // Global at 0x001edf10                   // 0x00100b08: lw $v0, -0x20f0($s4)
     if (v0 <= 0) goto label_0x100b20;                           // 0x00100b0c: blez $v0, 0x100b20
     a0 = 0x22 << 16;                                            // 0x00100b10: lui $a0, 0x22
     a1 = *(int32_t*)(s3);                                       // 0x00100b14: lw $a1, 0($s3)
-    func_00116598();  // 0x116508                                // 0x00100b18: jal 0x116508
+    func_00116508();  // 116508                                // 0x00100b18: jal 0x116508
     a0 = &str_0021fd80;  // "Ncmd fail sema cur_cmd:%d keep_cmd:%d\n" // 0x00100b1c: addiu $a0, $a0, -0x280
 label_0x100b20:
     v1 = 0x2000 << 16;                                          // 0x00100b20: lui $v1, 0x2000

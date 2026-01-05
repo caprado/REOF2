@@ -10,7 +10,7 @@ void func_001741f8() {
     if (a1 <= 0) goto label_0x17422c;                           // 0x00174204: blez $a1, 0x17422c
 label_0x174218:
     s1 = s1 + 0xdc4;                                            // 0x00174218: addiu $s1, $s1, 0xdc4
-    func_001742b0();  // 0x174240                                // 0x0017421c: jal 0x174240
+    func_00174240();  // 174240                                // 0x0017421c: jal 0x174240
     s0 = s0 + -1;                                               // 0x00174220: addiu $s0, $s0, -1
     if (s0 != 0) goto label_0x174218;                           // 0x00174224: bnez $s0, 0x174218
 label_0x17422c:

@@ -21,7 +21,7 @@ label_0x146f88:
     /* nop */                                                   // 0x00146f98: nop 
     if (v0 < 0) goto label_0x146f88;                            // 0x00146f9c: bltz $v0, 0x146f88
     /* nop */                                                   // 0x00146fa0: nop 
-    func_0011d378();  // 0x11d320                                // 0x00146fa4: jal 0x11d320
+    func_0011d320();  // 11d320                                // 0x00146fa4: jal 0x11d320
     /* nop */                                                   // 0x00146fa8: nop 
     v1 = 0xfff << 16;                                           // 0x00146fac: lui $v1, 0xfff
     a1 = 0x1000 << 16;                                          // 0x00146fb0: lui $a1, 0x1000
@@ -38,15 +38,15 @@ label_0x146f88:
     g_10000000 = a0;  // Global at 0x10000000                   // 0x00146fdc: sw $a0, 0($v1)
     /* beqzl $v0, 0x146ff4 */                                   // 0x00146fe0: beqzl $v0, 0x146ff4
     a1 = 0x7000 << 16;                                          // 0x00146fe4: lui $a1, 0x7000
-    func_0011d390();  // 0x11d378                                // 0x00146fe8: jal 0x11d378
+    func_0011d378();  // 11d378                                // 0x00146fe8: jal 0x11d378
     /* nop */                                                   // 0x00146fec: nop 
     a1 = 0x7000 << 16;                                          // 0x00146ff0: lui $a1, 0x7000
-    func_00144f18();  // 0x144ee8                                // 0x00146ff8: jal 0x144ee8
+    func_00144ee8();  // 144ee8                                // 0x00146ff8: jal 0x144ee8
     a1 = s3 | a1;                                               // 0x00146ffc: or $a1, $s3, $a1
     a0 = *(int32_t*)((s2) + 0x870);                             // 0x00147000: lw $a0, 0x870($s2)
     v0 = 4;                                                     // 0x00147004: addiu $v0, $zero, 4
     local_0 = v0;                                               // 0x00147008: sw $v0, 0($sp)
-    func_00147ca0();  // 0x147c28                                // 0x0014700c: jal 0x147c28
+    func_00147c28();  // 147c28                                // 0x0014700c: jal 0x147c28
     v1 = 0x1000 << 16;                                          // 0x00147014: lui $v1, 0x1000
     v1 = v1 | 0xb000;                                           // 0x00147018: ori $v1, $v1, 0xb000
     /* nop */                                                   // 0x0014701c: nop 

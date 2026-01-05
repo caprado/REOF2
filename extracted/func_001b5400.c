@@ -1,3 +1,4 @@
+/** @category graphics/dma @status complete @author caprado */
 void func_001b5400() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
@@ -16,7 +17,7 @@ void func_001b5400() {
     at = 0x2b << 16;                                            // 0x001b5424: lui $at, 0x2b
     g_002ac5c8 = v0;  // Global at 0x002ac5c8                   // 0x001b5428: sw $v0, -0x3a38($at)
 label_0x1b542c:
-    func_001b5090();  // 0x1b5060                                // 0x001b542c: jal 0x1b5060
+    func_001b5060();  // 1b5060                                // 0x001b542c: jal 0x1b5060
     a0 = 1;                                                     // 0x001b5430: addiu $a0, $zero, 1
     func_006bb7e0();  // 0x6bb7e0                               // 0x001b5434: jal 0x6bb7e0
     /* nop */                                                   // 0x001b5438: nop 
@@ -25,7 +26,7 @@ label_0x1b542c:
     *(uint32_t*)(a1) = v1;                                      // 0x001b5448: sw $v1, 0($a1)
     *(uint32_t*)((a1) + 4) = 0;                                 // 0x001b544c: sw $zero, 4($a1)
     *(uint32_t*)((a1) + 8) = 0;                                 // 0x001b5450: sw $zero, 8($a1)
-    func_001b5090();  // 0x1b5060                                // 0x001b5454: jal 0x1b5060
+    func_001b5060();  // 1b5060                                // 0x001b5454: jal 0x1b5060
     *(uint32_t*)((a1) + 0xc) = 0;                               // 0x001b5458: sw $zero, 0xc($a1)
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001b5460: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x001b5464: jr $ra

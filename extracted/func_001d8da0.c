@@ -23,7 +23,7 @@ void func_001d8da0() {
     *(uint8_t*)((gp) + -0x6114) = v0;                           // 0x001d8ddc: sb $v0, -0x6114($gp)
     v0 = *(uint8_t*)((gp) + -0x6114);                           // 0x001d8de0: lbu $v0, -0x6114($gp)
     v0 = v0 << 7;                                               // 0x001d8de4: sll $v0, $v0, 7
-    func_001d4c80();  // 0x1d4ab0                                // 0x001d8de8: jal 0x1d4ab0
+    func_001d4ab0();  // 1d4ab0                                // 0x001d8de8: jal 0x1d4ab0
     a1 = v0 + 0x1800;                                           // 0x001d8dec: addiu $a1, $v0, 0x1800
 label_0x1d8df0:
     return;                                                     // 0x001d8df4: jr $ra

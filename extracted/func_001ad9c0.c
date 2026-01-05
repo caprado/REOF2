@@ -41,7 +41,7 @@ void func_001ad9c0() {
     /* nop */                                                   // 0x001ada48: nop 
     /* nop */                                                   // 0x001ada4c: nop 
     /* mflo $a1 */                                              // 0x001ada50
-    func_001324e0();  // 0x132478                                // 0x001ada54: jal 0x132478
+    func_00132478();  // 132478                                // 0x001ada54: jal 0x132478
     /* nop */                                                   // 0x001ada58: nop 
     /* move to FPU: $s1, $f0 */                                 // 0x001ada5c: mtc1 $s1, $f0
     v1 = 0x2b << 16;                                            // 0x001ada60: lui $v1, 0x2b

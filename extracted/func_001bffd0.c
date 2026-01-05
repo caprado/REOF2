@@ -36,7 +36,7 @@ void func_001bffd0() {
     a1 = &str_0023e180;  // "rom0:ROMVER"                       // 0x001c0044: addiu $a1, $a1, -0x1e80
     a2 = 0x31 << 16;                                            // 0x001c0048: lui $a2, 0x31
     a2 = a2 + 0x6010;                                           // 0x001c004c: addiu $a2, $a2, 0x6010
-    func_0010a570();  // 0x10a4d8                                // 0x001c0050: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001c0050: jal 0x10a4d8
     at = 0x31 << 16;                                            // 0x001c0058: lui $at, 0x31
     v0 = *(int32_t*)((s0) + 0x54);                              // 0x001c005c: lw $v0, 0x54($s0)
     a0 = g_00316090;  // Global at 0x00316090                   // 0x001c0060: lw $a0, 0x6090($at)
@@ -44,7 +44,7 @@ void func_001bffd0() {
     g_0031607c = v0;  // Global at 0x0031607c                   // 0x001c0068: sw $v0, 0x607c($at)
     at = 0x31 << 16;                                            // 0x001c006c: lui $at, 0x31
     a2 = g_0031607c;  // Global at 0x0031607c                   // 0x001c0070: lw $a2, 0x607c($at)
-    func_00107d30();  // 0x107c70                                // 0x001c0074: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001c0074: jal 0x107c70
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001c0080: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x001c0084: jr $ra
     sp = sp + 0x20;                                             // 0x001c0088: addiu $sp, $sp, 0x20

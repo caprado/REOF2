@@ -21,11 +21,11 @@ void func_001dabc0() {
     func_006905d0();  // 0x6905d0                               // 0x001dac04: jal 0x6905d0
     a1 = 0x24 << 16;                                            // 0x001dac0c: lui $a1, 0x24
     a0 = sp + 0x30;                                             // 0x001dac14: addiu $a0, $sp, 0x30
-    func_0010a570();  // 0x10a4d8                                // 0x001dac18: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001dac18: jal 0x10a4d8
     a1 = &str_00247948;  // "common"                            // 0x001dac1c: addiu $a1, $a1, 0x7948
     v0 = *(uint8_t*)((s1) + 3);                                 // 0x001dac20: lbu $v0, 3($s1)
     a0 = sp + 0x30;                                             // 0x001dac24: addiu $a0, $sp, 0x30
-    func_001ad120();  // 0x1ad030                                // 0x001dac28: jal 0x1ad030
+    func_001ad030();  // 1ad030                                // 0x001dac28: jal 0x1ad030
     a1 = v0 + 8;                                                // 0x001dac2c: addiu $a1, $v0, 8
 label_0x1dac30:
     /* FPU: aver_u.h $w0, $w0, $w17 */                          // 0x001dac34: aver_u.h $w0, $w0, $w17

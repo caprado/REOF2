@@ -15,12 +15,12 @@ void func_001b2a80() {
     g_00490c20 = 0;  // Global at 0x00490c20                    // 0x001b2aa0: sh $zero, 0xc20($at)
     a2 = 4;                                                     // 0x001b2aa4: addiu $a2, $zero, 4
     at = 0x49 << 16;                                            // 0x001b2aa8: lui $at, 0x49
-    func_00107d30();  // 0x107c70                                // 0x001b2aac: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001b2aac: jal 0x107c70
     g_00490c22 = 0;  // Global at 0x00490c22                    // 0x001b2ab0: sh $zero, 0xc22($at)
     a0 = 0x49 << 16;                                            // 0x001b2ab4: lui $a0, 0x49
     a1 = 0xff;                                                  // 0x001b2ab8: addiu $a1, $zero, 0xff
     a0 = a0 + -0x790;                                           // 0x001b2abc: addiu $a0, $a0, -0x790
-    func_00107d30();  // 0x107c70                                // 0x001b2ac0: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001b2ac0: jal 0x107c70
     a2 = 0x600;                                                 // 0x001b2ac4: addiu $a2, $zero, 0x600
     return;                                                     // 0x001b2acc: jr $ra
     sp = sp + 0x10;                                             // 0x001b2ad0: addiu $sp, $sp, 0x10

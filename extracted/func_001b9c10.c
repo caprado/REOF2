@@ -14,8 +14,8 @@ void func_001b9c10() {
     a0 = sp + 0x30;                                             // 0x001b9c34: addiu $a0, $sp, 0x30
     a1 = &str_0023ddb0;  // "%s%s%s%s%s"                        // 0x001b9c38: addiu $a1, $a1, -0x2250
     a2 = 2;                                                     // 0x001b9c3c: addiu $a2, $zero, 2
-    func_0010a570();  // 0x10a4d8                                // 0x001b9c40: jal 0x10a4d8
-    func_001aaee0();  // 0x1aae40                                // 0x001b9c4c: jal 0x1aae40
+    func_0010a4d8();  // 10a4d8                                // 0x001b9c40: jal 0x10a4d8
+    func_001aae40();  // 1aae40                                // 0x001b9c4c: jal 0x1aae40
     if (v0 == 0) goto label_0x1b9c74;                           // 0x001b9c54: beqz $v0, 0x1b9c74
     v1 = 0x49 << 16;                                            // 0x001b9c58: lui $v1, 0x49
     v1 = 0x49 << 16;                                            // 0x001b9c5c: lui $v1, 0x49

@@ -13,7 +13,7 @@ void func_0011d484() {
     a1 = *(int32_t*)((v0) + 0xa58);                             // 0x0011d488: lw $a1, 0xa58($v0)
     v1 = a0 << 2;                                               // 0x0011d48c: sll $v1, $a0, 2
     a2 = 4;                                                     // 0x0011d498: addiu $a2, $zero, 4
-    func_0011d470();  // 0x11d3e8                                // 0x0011d49c: jal 0x11d3e8
+    func_0011d3e8();  // 11d3e8                                // 0x0011d49c: jal 0x11d3e8
     a1 = a1 + v1;                                               // 0x0011d4a0: addu $a1, $a1, $v1
     v0 = local_0;                                               // 0x0011d4a4: lw $v0, 0($sp)
     return;                                                     // 0x0011d4ac: jr $ra

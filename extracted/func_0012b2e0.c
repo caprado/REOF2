@@ -24,14 +24,14 @@ void func_0012b2e0() {
     g_001f6a9c = 0;  // Global at 0x001f6a9c                    // 0x0012b32c: sw $zero, 0($v1)
     /* bnezl $a1, 0x12b448 */                                   // 0x0012b330: bnezl $a1, 0x12b448
     v1 = s2 + 0x6a54;                                           // 0x0012b334: addiu $v1, $s2, 0x6a54
-    func_00141df8();  // 0x141db8                                // 0x0012b338: jal 0x141db8
+    func_00141db8();  // 141db8                                // 0x0012b338: jal 0x141db8
     /* nop */                                                   // 0x0012b33c: nop 
     a0 = 0x13 << 16;                                            // 0x0012b340: lui $a0, 0x13
-    func_00141ac8();  // 0x141ab0                                // 0x0012b348: jal 0x141ab0
+    func_00141ab0();  // 141ab0                                // 0x0012b348: jal 0x141ab0
     a0 = a0 + -0x59d8;                                          // 0x0012b34c: addiu $a0, $a0, -0x59d8
     a0 = 0x13 << 16;                                            // 0x0012b350: lui $a0, 0x13
     a0 = a0 + -0x5950;                                          // 0x0012b354: addiu $a0, $a0, -0x5950
-    func_00141ba8();  // 0x141ac8                                // 0x0012b358: jal 0x141ac8
+    func_00141ac8();  // 141ac8                                // 0x0012b358: jal 0x141ac8
     /* bnezl $s0, 0x12b3a8 */                                   // 0x0012b360: bnezl $s0, 0x12b3a8
     v1 = g_001f6af8;  // Global at 0x001f6af8                   // 0x0012b364: lw $v1, 0x10($s0)
     s1 = 0x1f << 16;                                            // 0x0012b368: lui $s1, 0x1f
@@ -72,13 +72,13 @@ label_0x12b3dc:
     a0 = g_001f6ae8;  // Global at 0x001f6ae8                   // 0x0012b3f4: lw $a0, 0($s0)
     v1 = 0x20 << 16;                                            // 0x0012b3f8: lui $v1, 0x20
     v0 = local_18;                                              // 0x0012b3fc: lw $v0, 0x18($sp)
-    func_0012af20();  // 0x12ae78                                // 0x0012b400: jal 0x12ae78
+    func_0012ae78();  // 12ae78                                // 0x0012b400: jal 0x12ae78
     g_001fe378 = v0;  // Global at 0x001fe378                   // 0x0012b404: sw $v0, -0x1c88($v1)
-    func_0012b030();  // 0x12afa8                                // 0x0012b408: jal 0x12afa8
+    func_0012afa8();  // 12afa8                                // 0x0012b408: jal 0x12afa8
     /* nop */                                                   // 0x0012b40c: nop 
-    func_0012b0b8();  // 0x12b030                                // 0x0012b410: jal 0x12b030
+    func_0012b030();  // 12b030                                // 0x0012b410: jal 0x12b030
     /* nop */                                                   // 0x0012b414: nop 
-    func_0012b150();  // 0x12b0b8                                // 0x0012b418: jal 0x12b0b8
+    func_0012b0b8();  // 12b0b8                                // 0x0012b418: jal 0x12b0b8
     /* nop */                                                   // 0x0012b41c: nop 
     a0 = g_001f6ae8;  // Global at 0x001f6ae8                   // 0x0012b420: lw $a0, 0($s0)
     v0 = s1 + 0x6a60;                                           // 0x0012b424: addiu $v0, $s1, 0x6a60
@@ -87,7 +87,7 @@ label_0x12b3dc:
     a1 = 0x13 << 16;                                            // 0x0012b430: lui $a1, 0x13
     a1 = a1 + -0x5808;                                          // 0x0012b434: addiu $a1, $a1, -0x5808
     a0 = 6;                                                     // 0x0012b438: addiu $a0, $zero, 6
-    func_00141a30();  // 0x1419d8                                // 0x0012b43c: jal 0x1419d8
+    func_001419d8();  // 1419d8                                // 0x0012b43c: jal 0x1419d8
     v1 = s2 + 0x6a54;                                           // 0x0012b444: addiu $v1, $s2, 0x6a54
     v0 = g_001f6a54;  // Global at 0x001f6a54                   // 0x0012b44c: lw $v0, 0($v1)
     v0 = v0 + 1;                                                // 0x0012b458: addiu $v0, $v0, 1

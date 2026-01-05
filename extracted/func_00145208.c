@@ -28,7 +28,7 @@ label_0x145278:
     if (v0 != 0) goto label_0x145298;                           // 0x0014527c: bnez $v0, 0x145298
     a3 = a3 + 1;                                                // 0x00145280: addiu $a3, $a3, 1
     a0 = *(int32_t*)((s0) + 0x870);                             // 0x00145284: lw $a0, 0x870($s0)
-    func_00147d70();  // 0x147ca0                                // 0x00145288: jal 0x147ca0
+    func_00147ca0();  // 147ca0                                // 0x00145288: jal 0x147ca0
     /* FPU: addu.qb $zero, $sp, $t0 */                          // 0x0014528c: addu.qb $zero, $sp, $t0
     /* FPU: aver_u.h $w0, $w0, $w8 */                           // 0x00145290: aver_u.h $w0, $w0, $w8
 label_0x145298:
@@ -86,7 +86,7 @@ label_0x1452dc:
     /* nop */                                                   // 0x0014535c: nop 
 label_0x145360:
     if (v0 == 0) goto label_0x1453c0;                           // 0x00145360: beqz $v0, 0x1453c0
-    func_0011d378();  // 0x11d320                                // 0x00145368: jal 0x11d320
+    func_0011d320();  // 11d320                                // 0x00145368: jal 0x11d320
     /* nop */                                                   // 0x0014536c: nop 
     v1 = g_10000000;  // Global at 0x10000000                   // 0x00145370: lw $v1, 0($s2)
     a0 = 1 << 16;                                               // 0x00145374: lui $a0, 1
@@ -98,7 +98,7 @@ label_0x145360:
     v1 = v1 & s6;                                               // 0x0014538c: and $v1, $v1, $s6
     if (v0 == 0) goto label_0x1453a0;                           // 0x00145390: beqz $v0, 0x1453a0
     g_10000000 = v1;  // Global at 0x10000000                   // 0x00145394: sw $v1, 0($s3)
-    func_0011d390();  // 0x11d378                                // 0x00145398: jal 0x11d378
+    func_0011d378();  // 11d378                                // 0x00145398: jal 0x11d378
     /* nop */                                                   // 0x0014539c: nop 
 label_0x1453a0:
     g_10000000 = 0;  // Global at 0x10000000                    // 0x001453a0: sw $zero, 0($s7)
@@ -112,7 +112,7 @@ label_0x1453c0:
     if (v0 != 0) goto label_0x1453e0;                           // 0x001453c4: bnez $v0, 0x1453e0
     t0 = t0 + 1;                                                // 0x001453c8: addiu $t0, $t0, 1
     a0 = *(int32_t*)((s0) + 0x870);                             // 0x001453cc: lw $a0, 0x870($s0)
-    func_00147d70();  // 0x147ca0                                // 0x001453d4: jal 0x147ca0
+    func_00147ca0();  // 147ca0                                // 0x001453d4: jal 0x147ca0
     /* FPU: addu.qb $zero, $sp, $t0 */                          // 0x001453d8: addu.qb $zero, $sp, $t0
     /* FPU: aver_u.h $w0, $w0, $w8 */                           // 0x001453dc: aver_u.h $w0, $w0, $w8
 label_0x1453e0:

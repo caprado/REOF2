@@ -18,9 +18,9 @@ void func_00102f98() {
 label_0x102fd8:
     if (s0 >= 0) goto label_0x102ff0;                           // 0x00102fd8: bgez $s0, 0x102ff0
     /* nop */                                                   // 0x00102fdc: nop 
-    func_00116598();  // 0x116508                                // 0x00102fe0: jal 0x116508
+    func_00116508();  // 116508                                // 0x00102fe0: jal 0x116508
     a0 = &str_0021ff78;  // "Infinity"                          // 0x00102fe4: addiu $a0, $s3, -0x88
-    func_00103770();  // 0x1036c0                                // 0x00102fe8: jal 0x1036c0
+    func_001036c0();  // 1036c0                                // 0x00102fe8: jal 0x1036c0
 label_0x102ff0:
     v0 = *(int32_t*)((s1) + 0x10);                              // 0x00102ff0: lw $v0, 0x10($s1)
     v0 = ((unsigned)v0 < (unsigned)s2) ? 1 : 0;                 // 0x00102ff4: sltu $v0, $v0, $s2

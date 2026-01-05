@@ -24,10 +24,10 @@ label_0x1b734c:
     v0 = sp + 0x270;                                            // 0x001b7350: addiu $v0, $sp, 0x270
     s0 = sp + 0x20;                                             // 0x001b7354: addiu $s0, $sp, 0x20
     a2 = v0 - v1;                                               // 0x001b7358: subu $a2, $v0, $v1
-    func_0010f580();  // 0x10f528                                // 0x001b735c: jal 0x10f528
+    func_0010f528();  // 10f528                                // 0x001b735c: jal 0x10f528
     s0 = s0 + v0;                                               // 0x001b7364: addu $s0, $s0, $v0
     a0 = sp + 0x20;                                             // 0x001b7368: addiu $a0, $sp, 0x20
-    func_001b7300();  // 0x1b7130                                // 0x001b736c: jal 0x1b7130
+    func_001b7130();  // 1b7130                                // 0x001b736c: jal 0x1b7130
     *(uint8_t*)(s0) = 0;                                        // 0x001b7370: sb $zero, 0($s0)
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001b7378: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x001b737c: jr $ra

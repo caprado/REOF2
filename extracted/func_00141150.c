@@ -26,7 +26,7 @@ label_0x141190:
 label_0x1411b4:
     v1 = 0x20;                                                  // 0x001411b4: addiu $v1, $zero, 0x20
     if (a0 == v1) goto label_0x14122c;                          // 0x001411b8: beq $a0, $v1, 0x14122c
-    func_00107d30();  // 0x107c70                                // 0x001411c8: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001411c8: jal 0x107c70
     a2 = 0x14;                                                  // 0x001411cc: addiu $a2, $zero, 0x14
     g_00210094 = s3;  // Global at 0x00210094                   // 0x001411d0: sw $s3, 4($s0)
     g_0021009c = s1;  // Global at 0x0021009c                   // 0x001411d4: sw $s1, 0xc($s0)
@@ -36,12 +36,12 @@ label_0x1411b4:
     local_0 = s3;                                               // 0x001411f0: sw $s3, 0($sp)
     local_4 = s2;                                               // 0x001411f4: sw $s2, 4($sp)
     local_8 = s1;                                               // 0x001411f8: sw $s1, 8($sp)
-    func_00139228();  // 0x139120                                // 0x001411fc: jal 0x139120
+    func_00139120();  // 139120                                // 0x001411fc: jal 0x139120
     local_c = s0;                                               // 0x00141200: sw $s0, 0xc($sp)
     if (v0 != 0) goto label_0x141220;                           // 0x00141204: bnez $v0, 0x141220
     g_002100a0 = v0;  // Global at 0x002100a0                   // 0x00141208: sw $v0, 0x10($s0)
     a0 = 0x22 << 16;                                            // 0x0014120c: lui $a0, 0x22
-    func_00116598();  // 0x116508                                // 0x00141210: jal 0x116508
+    func_00116508();  // 116508                                // 0x00141210: jal 0x116508
     a0 = &str_002263d0;  // "\nSVM/PS2EE Ver.1.51 Build:Jul 28 2003 17:49:49\n" // 0x00141214: addiu $a0, $a0, 0x63d0
     goto label_0x14122c;                                        // 0x00141218: b 0x14122c
 label_0x141220:

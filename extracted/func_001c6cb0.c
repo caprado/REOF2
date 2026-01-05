@@ -17,13 +17,13 @@ void func_001c6cb0() {
     a2 = 0x7800;                                                // 0x001c6cd4: addiu $a2, $zero, 0x7800
     a0 = 0x31 << 16;                                            // 0x001c6ce4: lui $a0, 0x31
     a1 = s0 + 0x10;                                             // 0x001c6ce8: addiu $a1, $s0, 0x10
-    func_00107b68();  // 0x107ab8                                // 0x001c6cec: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x001c6cec: jal 0x107ab8
     a0 = a0 + -0x5ad0;                                          // 0x001c6cf0: addiu $a0, $a0, -0x5ad0
     at = 0 | 0x8390;                                            // 0x001c6cf4: ori $at, $zero, 0x8390
     a0 = 0x31 << 16;                                            // 0x001c6cf8: lui $a0, 0x31
     a1 = s0 + at;                                               // 0x001c6cfc: addu $a1, $s0, $at
     a0 = a0 + 0x64d0;                                           // 0x001c6d00: addiu $a0, $a0, 0x64d0
-    func_00107b68();  // 0x107ab8                                // 0x001c6d04: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x001c6d04: jal 0x107ab8
     a2 = 0x140;                                                 // 0x001c6d08: addiu $a2, $zero, 0x140
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001c6d10: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x001c6d14: jr $ra

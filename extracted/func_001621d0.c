@@ -7,7 +7,7 @@ void func_001621d0() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x001621d0: addiu $sp, $sp, -0x20
-    func_0015fcb0();  // 0x15fc80                                // 0x001621e4: jal 0x15fc80
+    func_0015fc80();  // 15fc80                                // 0x001621e4: jal 0x15fc80
     a0 = 0x23 << 16;                                            // 0x001621ec: lui $a0, 0x23
     if (v0 != 0) goto label_0x162210;                           // 0x001621f0: bnez $v0, 0x162210
     a0 = &str_00228988;  // "E10915B: mwPlyEntryFname: fname is NULL." // 0x001621f4: addiu $a0, $a0, -0x7678
@@ -22,7 +22,7 @@ label_0x162210:
     return func_001634a8();  // Tail call                        // 0x0016222c: j 0x163410
     sp = sp + 0x20;                                             // 0x00162230: addiu $sp, $sp, 0x20
     /* nop */                                                   // 0x00162234: nop 
-    func_0013c9f8();  // 0x13c9d0                                // 0x00162238: jal 0x13c9d0
+    func_0013c9d0();  // 13c9d0                                // 0x00162238: jal 0x13c9d0
     a0 = 0x23 << 16;                                            // 0x00162240: lui $a0, 0x23
     if (v0 >= 0) goto label_0x162270;                           // 0x00162248: bgez $v0, 0x162270
     a0 = &str_002289e8;  // "E1122634: mwPlyStartSeamless: handle is invalid." // 0x0016224c: addiu $a0, $a0, -0x7618

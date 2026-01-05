@@ -13,7 +13,7 @@ void func_00168a80() {
     s3 = v0 + -0x7148;                                          // 0x00168ab4: addiu $s3, $v0, -0x7148
     s4 = v1 + -0x6f20;                                          // 0x00168ab8: addiu $s4, $v1, -0x6f20
 label_0x168ac0:
-    func_00158518();  // 0x158410                                // 0x00168ac4: jal 0x158410
+    func_00158410();  // 158410                                // 0x00168ac4: jal 0x158410
     a2 = 0x40;                                                  // 0x00168ac8: addiu $a2, $zero, 0x40
     if (a1 == 0) goto label_0x168bc4;                           // 0x00168ad0: beqz $a1, 0x168bc4
     a0 = a1 - s1;                                               // 0x00168ad4: subu $a0, $a1, $s1

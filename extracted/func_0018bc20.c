@@ -17,7 +17,7 @@ void func_0018bc20() {
     s7 = local_a0;                                              // 0x0018bc64: lw $s7, 0xa0($sp)
     fp = local_c0;                                              // 0x0018bc68: lw $fp, 0xc0($sp)
     if (a0 == 0) goto label_0x18bcb0;                           // 0x0018bc6c: beqz $a0, 0x18bcb0
-    func_00198870();  // 0x198330                                // 0x0018bc74: jal 0x198330
+    func_00198330();  // 198330                                // 0x0018bc74: jal 0x198330
     t3 = *(int32_t*)((gp) + -0x645c);                           // 0x0018bc78: lw $t3, -0x645c($gp)
     a0 = 0x3b;                                                  // 0x0018bc7c: addiu $a0, $zero, 0x3b
     v1 = 0x14;                                                  // 0x0018bc80: addiu $v1, $zero, 0x14
@@ -40,7 +40,7 @@ label_0x18bcf8:
     t0 = local_b0;                                              // 0x0018bd08: lw $t0, 0xb0($sp)
     t1 = local_b8;                                              // 0x0018bd10: lw $t1, 0xb8($sp)
     t3 = *(int32_t*)((gp) + -0x645c);                           // 0x0018bd18: lw $t3, -0x645c($gp)
-    func_00198870();  // 0x198330                                // 0x0018bd1c: jal 0x198330
+    func_00198330();  // 198330                                // 0x0018bd1c: jal 0x198330
     a0 = 0x3b;                                                  // 0x0018bd24: addiu $a0, $zero, 0x3b
     v1 = 0x15;                                                  // 0x0018bd28: addiu $v1, $zero, 0x15
     a1 = 7;                                                     // 0x0018bd30: addiu $a1, $zero, 7

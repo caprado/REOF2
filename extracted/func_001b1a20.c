@@ -8,10 +8,10 @@ void func_001b1a20() {
     
     sp = sp + -0x20;                                            // 0x001b1a20: addiu $sp, $sp, -0x20
     a0 = 0x4c << 16;                                            // 0x001b1a30: lui $a0, 0x4c
-    func_001b1a20();  // 0x1b1960                                // 0x001b1a38: jal 0x1b1960
+    func_001b1960();  // 1b1960                                // 0x001b1a38: jal 0x1b1960
     a0 = a0 + -0x1170;                                          // 0x001b1a3c: addiu $a0, $a0, -0x1170
     a0 = 0x4c << 16;                                            // 0x001b1a40: lui $a0, 0x4c
-    func_001b1a20();  // 0x1b1960                                // 0x001b1a48: jal 0x1b1960
+    func_001b1960();  // 1b1960                                // 0x001b1a48: jal 0x1b1960
     a0 = a0 + -0x30c0;                                          // 0x001b1a4c: addiu $a0, $a0, -0x30c0
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001b1a54: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x001b1a58: jr $ra

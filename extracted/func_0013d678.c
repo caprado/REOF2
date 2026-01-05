@@ -22,7 +22,7 @@ void func_0013d678() {
     v1 = *(int32_t*)((v0) + 0x40);                              // 0x0013d6c8: lw $v1, 0x40($v0)
     if (v1 != a2) goto label_0x13d6e4;                          // 0x0013d6cc: bne $v1, $a2, 0x13d6e4
     v0 = a1 << 5;                                               // 0x0013d6d0: sll $v0, $a1, 5
-    func_0013d570();  // 0x13d4c0                                // 0x0013d6d4: jal 0x13d4c0
+    func_0013d4c0();  // 13d4c0                                // 0x0013d6d4: jal 0x13d4c0
     /* nop */                                                   // 0x0013d6d8: nop 
     a1 = *(int32_t*)((s0) + 0x20);                              // 0x0013d6dc: lw $a1, 0x20($s0)
     v0 = a1 << 5;                                               // 0x0013d6e0: sll $v0, $a1, 5
@@ -31,7 +31,7 @@ label_0x13d6e4:
     v1 = *(int32_t*)((v0) + 0x40);                              // 0x0013d6e8: lw $v1, 0x40($v0)
     if (v1 != s2) goto label_0x13d704;                          // 0x0013d6ec: bne $v1, $s2, 0x13d704
     v0 = a1 << 5;                                               // 0x0013d6f0: sll $v0, $a1, 5
-    func_0013d678();  // 0x13d570                                // 0x0013d6f4: jal 0x13d570
+    func_0013d570();  // 13d570                                // 0x0013d6f4: jal 0x13d570
     a1 = *(int32_t*)((s0) + 0x20);                              // 0x0013d6fc: lw $a1, 0x20($s0)
     v0 = a1 << 5;                                               // 0x0013d700: sll $v0, $a1, 5
 label_0x13d704:

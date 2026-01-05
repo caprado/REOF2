@@ -17,14 +17,14 @@ void func_00131e20() {
     s0 = 0x20 << 16;                                            // 0x00131e60: lui $s0, 0x20
 label_0x131e64:
     a0 = 0x22 << 16;                                            // 0x00131e64: lui $a0, 0x22
-    func_00127de8();  // 0x127d90                                // 0x00131e68: jal 0x127d90
+    func_00127d90();  // 127d90                                // 0x00131e68: jal 0x127d90
     a0 = &str_002237f0;  // "E02080817 ADXT_GetNumSmpl: parameter error" // 0x00131e6c: addiu $a0, $a0, 0x37f0
     goto label_0x1320f0;                                        // 0x00131e70: b 0x1320f0
 label_0x131e78:
     v0 = g_00201d50;  // Global at 0x00201d50                   // 0x00131e78: lw $v0, 0x1d50($s0)
     if (v0 != 0) goto label_0x131e98;                           // 0x00131e7c: bnez $v0, 0x131e98
     s1 = 0x20 << 16;                                            // 0x00131e80: lui $s1, 0x20
-    func_00131e08();  // 0x131ce8                                // 0x00131e84: jal 0x131ce8
+    func_00131ce8();  // 131ce8                                // 0x00131e84: jal 0x131ce8
     /* nop */                                                   // 0x00131e88: nop 
     goto label_0x1320f0;                                        // 0x00131e8c: b 0x1320f0
     /* nop */                                                   // 0x00131e94: nop 
@@ -51,7 +51,7 @@ label_0x131e98:
     v0 = v0 + a1;                                               // 0x00131ee4: addu $v0, $v0, $a1
     *(uint32_t*)(s3) = v0;                                      // 0x00131ee8: sw $v0, 0($s3)
     a2 = sp + 4;                                                // 0x00131ef0: addiu $a2, $sp, 4
-    func_00131e08();  // 0x131ce8                                // 0x00131ef8: jal 0x131ce8
+    func_00131ce8();  // 131ce8                                // 0x00131ef8: jal 0x131ce8
     s6 = 0x20 << 16;                                            // 0x00131efc: lui $s6, 0x20
     FPU_F1 = *(float*)(s3);  // Load float                      // 0x00131f00: lwc1 $f1, 0($s3)
     /* FPU: cvt.s.w $f1, $f1 */                                 // 0x00131f04: cvt.s.w $f1, $f1
@@ -93,8 +93,8 @@ label_0x131e98:
     s1 = g_00201d50;  // Global at 0x00201d50                   // 0x00131f98: lw $s1, 0($s0)
     a2 = sp + 4;                                                // 0x00131f9c: addiu $a2, $sp, 4
     g_00201d50 = 0;  // Global at 0x00201d50                    // 0x00131fa0: sw $zero, 0($s0)
-    func_00132118();  // 0x131e20                                // 0x00131fa4: jal 0x131e20
-    func_00131e20();  // 0x131e08                                // 0x00131fac: jal 0x131e08
+    func_00131e20();  // 131e20                                // 0x00131fa4: jal 0x131e20
+    func_00131e08();  // 131e08                                // 0x00131fac: jal 0x131e08
     g_00201d50 = s1;  // Global at 0x00201d50                   // 0x00131fb0: sw $s1, 0($s0)
     a3 = g_00201d88;  // Global at 0x00201d88                   // 0x00131fb4: lw $a3, 0($s4)
     a1 = local_0;                                               // 0x00131fb8: lw $a1, 0($sp)
@@ -134,13 +134,13 @@ label_0x132030:
     if (v0 != v1) goto label_0x1320d0;                          // 0x00132038: bnel $v0, $v1, 0x1320d0
     *(uint32_t*)(s3) = 0;                                       // 0x0013203c: sw $zero, 0($s3)
     a0 = *(int32_t*)((s2) + 4);                                 // 0x00132040: lw $a0, 4($s2)
-    func_0012d4e0();  // 0x12d4c8                                // 0x00132044: jal 0x12d4c8
+    func_0012d4c8();  // 12d4c8                                // 0x00132044: jal 0x12d4c8
     s6 = 0x20 << 16;                                            // 0x00132048: lui $s6, 0x20
     a0 = *(int32_t*)((s2) + 4);                                 // 0x0013204c: lw $a0, 4($s2)
-    func_0012d468();  // 0x12d450                                // 0x00132050: jal 0x12d450
+    func_0012d450();  // 12d450                                // 0x00132050: jal 0x12d450
     local_0 = v0;                                               // 0x00132054: sw $v0, 0($sp)
     a0 = *(int32_t*)((s2) + 4);                                 // 0x00132058: lw $a0, 4($s2)
-    func_0012d498();  // 0x12d480                                // 0x0013205c: jal 0x12d480
+    func_0012d480();  // 12d480                                // 0x0013205c: jal 0x12d480
     local_4 = v0;                                               // 0x00132060: sw $v0, 4($sp)
     v1 = 0x10;                                                  // 0x00132064: addiu $v1, $zero, 0x10
     /* divide: v1 / v0 -> hi:lo */                              // 0x00132068: div $zero, $v1, $v0

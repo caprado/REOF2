@@ -14,13 +14,13 @@ void func_001d3a30() {
     /* nop */                                                   // 0x001d3a50: nop 
     goto label_0x1d3a80;                                        // 0x001d3a54: b 0x1d3a80
 label_0x1d3a5c:
-    func_001d3600();  // 0x1d35a0                                // 0x001d3a5c: jal 0x1d35a0
+    func_001d35a0();  // 1d35a0                                // 0x001d3a5c: jal 0x1d35a0
     /* nop */                                                   // 0x001d3a60: nop 
     if (v0 == 0) goto label_0x1d3a74;                           // 0x001d3a64: beqz $v0, 0x1d3a74
     goto label_0x1d3a80;                                        // 0x001d3a6c: b 0x1d3a80
     v0 = *(int32_t*)(v0);                                       // 0x001d3a70: lw $v0, 0($v0)
 label_0x1d3a74:
-    func_001d36b0();  // 0x1d3600                                // 0x001d3a74: jal 0x1d3600
+    func_001d3600();  // 1d3600                                // 0x001d3a74: jal 0x1d3600
     /* nop */                                                   // 0x001d3a78: nop 
     v0 = *(int32_t*)(v0);                                       // 0x001d3a7c: lw $v0, 0($v0)
 label_0x1d3a80:

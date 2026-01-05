@@ -21,7 +21,7 @@ void func_001a7970() {
     a0 = a0 + 0x1100;                                           // 0x001a79b4: addiu $a0, $a0, 0x1100
     a2 = 1;                                                     // 0x001a79b8: addiu $a2, $zero, 1
     t3 = t3 + 0x7960;                                           // 0x001a79c4: addiu $t3, $t3, 0x7960
-    func_001178a0();  // 0x1176a8                                // 0x001a79c8: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x001a79c8: jal 0x1176a8
     if (v0 >= 0) goto label_0x1a79e8;                           // 0x001a79d0: bgez $v0, 0x1a79e8
     /* nop */                                                   // 0x001a79d4: nop 
     iSignalSema();  // 0x114300                                 // 0x001a79d8: jal 0x114300

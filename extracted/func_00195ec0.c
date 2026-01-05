@@ -8,26 +8,26 @@ void func_00195ec0() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x10;                                            // 0x00195ec0: addiu $sp, $sp, -0x10
-    func_001a0970();  // 0x1a0960                                // 0x00195ec8: jal 0x1a0960
+    func_001a0960();  // 1a0960                                // 0x00195ec8: jal 0x1a0960
     /* nop */                                                   // 0x00195ecc: nop 
     a0 = *(int32_t*)((gp) + -0x645c);                           // 0x00195ed0: lw $a0, -0x645c($gp)
-    func_00198130();  // 0x197a10                                // 0x00195ed4: jal 0x197a10
+    func_00197a10();  // 197a10                                // 0x00195ed4: jal 0x197a10
     a1 = 2;                                                     // 0x00195ed8: addiu $a1, $zero, 2
     a0 = *(int32_t*)((gp) + -0x645c);                           // 0x00195edc: lw $a0, -0x645c($gp)
-    func_00197a10();  // 0x197760                                // 0x00195ee0: jal 0x197760
+    func_00197760();  // 197760                                // 0x00195ee0: jal 0x197760
     a1 = 2;                                                     // 0x00195ee4: addiu $a1, $zero, 2
     a0 = *(int32_t*)((gp) + -0x645c);                           // 0x00195ee8: lw $a0, -0x645c($gp)
-    func_00197760();  // 0x1975e0                                // 0x00195eec: jal 0x1975e0
+    func_001975e0();  // 1975e0                                // 0x00195eec: jal 0x1975e0
     a1 = 2;                                                     // 0x00195ef0: addiu $a1, $zero, 2
     a2 = *(int32_t*)((gp) + -0x6448);                           // 0x00195ef4: lw $a2, -0x6448($gp)
     a3 = *(int32_t*)((gp) + -0x644c);                           // 0x00195efc: lw $a3, -0x644c($gp)
-    func_001975e0();  // 0x197300                                // 0x00195f04: jal 0x197300
+    func_00197300();  // 197300                                // 0x00195f04: jal 0x197300
     t0 = 2;                                                     // 0x00195f08: addiu $t0, $zero, 2
-    func_001981f0();  // 0x198130                                // 0x00195f0c: jal 0x198130
+    func_00198130();  // 198130                                // 0x00195f0c: jal 0x198130
     a0 = *(int32_t*)((gp) + -0x6468);                           // 0x00195f10: lw $a0, -0x6468($gp)
     a0 = *(int32_t*)((gp) + -0x645c);                           // 0x00195f14: lw $a0, -0x645c($gp)
-    func_001982c0();  // 0x1981f0                                // 0x00195f18: jal 0x1981f0
-    func_001a0980();  // 0x1a0970                                // 0x00195f20: jal 0x1a0970
+    func_001981f0();  // 1981f0                                // 0x00195f18: jal 0x1981f0
+    func_001a0970();  // 1a0970                                // 0x00195f20: jal 0x1a0970
     *(uint32_t*)((gp) + -0x64c8) = 0;                           // 0x00195f24: sw $zero, -0x64c8($gp)
     v1 = *(int32_t*)((gp) + -0x6448);                           // 0x00195f28: lw $v1, -0x6448($gp)
     goto label_0x195f3c;                                        // 0x00195f30: b 0x195f3c

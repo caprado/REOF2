@@ -12,7 +12,7 @@ void func_001326c8() {
     v0 = a1 << 2;                                               // 0x001326d8: sll $v0, $a1, 2
 label_0x1326dc:
     a0 = 0x22 << 16;                                            // 0x001326dc: lui $a0, 0x22
-    func_00127de8();  // 0x127d90                                // 0x001326e0: jal 0x127d90
+    func_00127d90();  // 127d90                                // 0x001326e0: jal 0x127d90
     a0 = &str_00223b18;  // "E02080835 ADXT_GetIbufRemainTime: parameter error" // 0x001326e4: addiu $a0, $a0, 0x3b18
     goto label_0x132724;                                        // 0x001326e8: b 0x132724
     v0 = -1;                                                    // 0x001326ec: addiu $v0, $zero, -1

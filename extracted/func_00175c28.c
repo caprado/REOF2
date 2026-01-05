@@ -10,7 +10,7 @@ void func_00175c28() {
     v0 = 0x21 << 16;                                            // 0x00175c2c: lui $v0, 0x21
     a1 = 0x47;                                                  // 0x00175c38: addiu $a1, $zero, 0x47
     s3 = v0 + 0x5738;                                           // 0x00175c4c: addiu $s3, $v0, 0x5738
-    func_001752f8();  // 0x1752e8                                // 0x00175c54: jal 0x1752e8
+    func_001752e8();  // 1752e8                                // 0x00175c54: jal 0x1752e8
     v1 = 1;                                                     // 0x00175c5c: addiu $v1, $zero, 1
     if (v0 != v1) goto label_0x175c88;                          // 0x00175c60: bne $v0, $v1, 0x175c88
     /* nop */                                                   // 0x00175c64: nop 

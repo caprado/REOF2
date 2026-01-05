@@ -1,3 +1,4 @@
+/** @category: graphics/dma @status: complete @author: caprado */
 void func_00113448() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
@@ -51,7 +52,7 @@ label_0x1134f4:
     v0 = (v0 < a2) ? 1 : 0;                                     // 0x001134f8: slt $v0, $v0, $a2
     if (v0 == 0) goto label_0x113514;                           // 0x001134fc: beqz $v0, 0x113514
     a0 = 0x22 << 16;                                            // 0x00113500: lui $a0, 0x22
-    func_00116598();  // 0x116508                                // 0x00113504: jal 0x116508
+    func_00116508();  // 116508                                // 0x00113504: jal 0x116508
     a0 = &str_00221040;  // "sceGsExecLoadImage: DMA Ch.2 does not terminate\r\n" // 0x00113508: addiu $a0, $a0, 0x1040
     goto label_0x113620;                                        // 0x0011350c: b 0x113620
 label_0x113514:

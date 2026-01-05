@@ -8,7 +8,7 @@ void func_001b5dd0() {
     
     sp = sp + -0x10;                                            // 0x001b5dd0: addiu $sp, $sp, -0x10
     if (a1 != 0) goto label_0x1b5e14;                           // 0x001b5dd4: bnez $a1, 0x1b5e14
-    func_001b5d40();  // 0x1b5c60                                // 0x001b5ddc: jal 0x1b5c60
+    func_001b5c60();  // 1b5c60                                // 0x001b5ddc: jal 0x1b5c60
     /* nop */                                                   // 0x001b5de0: nop 
     v1 = (unsigned)a0 >> 8;                                     // 0x001b5de8: srl $v1, $a0, 8
     v0 = v0 & 0xff;                                             // 0x001b5dec: andi $v0, $v0, 0xff
@@ -22,7 +22,7 @@ void func_001b5dd0() {
     goto label_0x1b5e48;                                        // 0x001b5e0c: b 0x1b5e48
     v0 = v1 + v0;                                               // 0x001b5e10: addu $v0, $v1, $v0
 label_0x1b5e14:
-    func_001b5dd0();  // 0x1b5d40                                // 0x001b5e14: jal 0x1b5d40
+    func_001b5d40();  // 1b5d40                                // 0x001b5e14: jal 0x1b5d40
     /* nop */                                                   // 0x001b5e18: nop 
     v1 = (unsigned)v0 >> 8;                                     // 0x001b5e1c: srl $v1, $v0, 8
     v1 = v1 & 0xff;                                             // 0x001b5e20: andi $v1, $v1, 0xff

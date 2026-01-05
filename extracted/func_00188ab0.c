@@ -20,11 +20,11 @@ void func_00188ab0() {
     local_0 = 0;                                                // 0x00188adc: sw $zero, 0($sp)
     t0 = 0x280;                                                 // 0x00188ae0: addiu $t0, $zero, 0x280
     t2 = 0x280;                                                 // 0x00188ae8: addiu $t2, $zero, 0x280
-    func_001178a0();  // 0x1176a8                                // 0x00188aec: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x00188aec: jal 0x1176a8
     if (v0 >= 0) goto label_0x188b0c;                           // 0x00188af4: bgez $v0, 0x188b0c
     v0 = g_002812c0;  // Global at 0x002812c0                   // 0x00188af8: lw $v0, 0x12c0($s0)
     a0 = 0x23 << 16;                                            // 0x00188afc: lui $a0, 0x23
-    func_001896f0();  // 0x1896c8                                // 0x00188b00: jal 0x1896c8
+    func_001896c8();  // 1896c8                                // 0x00188b00: jal 0x1896c8
     a0 = &str_0022a0c8;  // "sceDbcCreateSocket: rpc error\n"   // 0x00188b04: addiu $a0, $a0, -0x5f38
 label_0x188b0c:
     return;                                                     // 0x00188b14: jr $ra

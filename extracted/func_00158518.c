@@ -45,7 +45,7 @@ label_0x1585c8:
     v0 = ((unsigned)s0 < (unsigned)s2) ? 1 : 0;                 // 0x001585cc: sltu $v0, $s0, $s2
     goto label_0x1585f4;                                        // 0x001585d0: b 0x1585f4
 label_0x1585d8:
-    func_00158310();  // 0x158278                                // 0x001585d8: jal 0x158278
+    func_00158278();  // 158278                                // 0x001585d8: jal 0x158278
     a0 = s0 + -4;                                               // 0x001585dc: addiu $a0, $s0, -4
     v1 = s5 & v0;                                               // 0x001585e0: and $v1, $s5, $v0
     if (v1 != 0) goto label_0x158600;                           // 0x001585e4: bnez $v1, 0x158600

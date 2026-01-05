@@ -27,15 +27,15 @@ label_0x1cfcd0:
     if (v0 <= 0) goto label_0x1cfd38;                           // 0x001cfcdc: blez $v0, 0x1cfd38
     *(uint32_t*)((gp) + -0x62c0) = v1;                          // 0x001cfce0: sw $v1, -0x62c0($gp)
     /* move to FPU: $v0, $f0 */                                 // 0x001cfce4: mtc1 $v0, $f0
-    func_001115a0();  // 0x111560                                // 0x001cfce8: jal 0x111560
+    func_00111560();  // 111560                                // 0x001cfce8: jal 0x111560
     /* FPU: cvt.s.w $f12, $f0 */                                // 0x001cfcec: cvt.s.w $f12, $f0
     v1 = 0x4030 << 16;                                          // 0x001cfcf0: lui $v1, 0x4030
-    func_00111e20();  // 0x111ce0                                // 0x001cfcf8: jal 0x111ce0
-    func_00112048();  // 0x111f90                                // 0x001cfd04: jal 0x111f90
+    func_00111ce0();  // 111ce0                                // 0x001cfcf8: jal 0x111ce0
+    func_00111f90();  // 111f90                                // 0x001cfd04: jal 0x111f90
     a0 = 0x3e8;                                                 // 0x001cfd08: addiu $a0, $zero, 0x3e8
-    func_00111e20();  // 0x111ce0                                // 0x001cfd10: jal 0x111ce0
-    func_00111ce0();  // 0x111a58                                // 0x001cfd1c: jal 0x111a58
-    func_00112170();  // 0x112118                                // 0x001cfd24: jal 0x112118
+    func_00111ce0();  // 111ce0                                // 0x001cfd10: jal 0x111ce0
+    func_00111a58();  // 111a58                                // 0x001cfd1c: jal 0x111a58
+    func_00112118();  // 112118                                // 0x001cfd24: jal 0x112118
     FPU_F1 = *(float*)((gp) + -0x62bc);  // Load float          // 0x001cfd2c: lwc1 $f1, -0x62bc($gp)
     /* FPU: add.s $f0, $f1, $f0 */                              // 0x001cfd30: add.s $f0, $f1, $f0
     *(float*)((gp) + -0x62bc) = FPU_F0;  // Store float         // 0x001cfd34: swc1 $f0, -0x62bc($gp)

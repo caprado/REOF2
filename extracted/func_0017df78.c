@@ -10,13 +10,13 @@ void func_0017df78() {
     *(float*)((sp) + 0x18) = FPU_F21;  // Store float           // 0x0017df84: swc1 $f21, 0x18($sp)
     /* FPU: mov.s $f21, $f12 */                                 // 0x0017df88: mov.s $f21, $f12
     *(float*)((sp) + 0x10) = FPU_F20;  // Store float           // 0x0017df8c: swc1 $f20, 0x10($sp)
-    func_0017e028();  // 0x17dfe0                                // 0x0017df94: jal 0x17dfe0
+    func_0017dfe0();  // 17dfe0                                // 0x0017df94: jal 0x17dfe0
     /* FPU: mov.s $f20, $f13 */                                 // 0x0017df98: mov.s $f20, $f13
     a2 = 0x23 << 16;                                            // 0x0017df9c: lui $a2, 0x23
     v1 = 1;                                                     // 0x0017dfa0: addiu $v1, $zero, 1
     a2 = a2 + -0x62e8;                                          // 0x0017dfa8: addiu $a2, $a2, -0x62e8
     if (v0 == v1) goto label_0x17dfbc;                          // 0x0017dfac: beq $v0, $v1, 0x17dfbc
-    func_0017cec8();  // 0x17ce88                                // 0x0017dfb4: jal 0x17ce88
+    func_0017ce88();  // 17ce88                                // 0x0017dfb4: jal 0x17ce88
     /* nop */                                                   // 0x0017dfb8: nop 
 label_0x17dfbc:
     *(float*)((s0) + 0x40) = FPU_F20;  // Store float           // 0x0017dfbc: swc1 $f20, 0x40($s0)

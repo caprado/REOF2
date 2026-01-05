@@ -14,7 +14,7 @@ void func_00189470() {
     v0 = (v0 < 0x2081) ? 1 : 0;                                 // 0x001894a8: slti $v0, $v0, 0x2081
     if (v0 != 0) goto label_0x1894c8;                           // 0x001894ac: bnez $v0, 0x1894c8
     a0 = 0x23 << 16;                                            // 0x001894b4: lui $a0, 0x23
-    func_001896f0();  // 0x1896c8                                // 0x001894b8: jal 0x1896c8
+    func_001896c8();  // 1896c8                                // 0x001894b8: jal 0x1896c8
     a0 = &str_0022a260;  // "dbcman : SendData3 BUSY\n"         // 0x001894bc: addiu $a0, $a0, -0x5da0
     goto label_0x1895ac;                                        // 0x001894c0: b 0x1895ac
 label_0x1894c8:
@@ -48,12 +48,12 @@ label_0x189530:
     a3 = 0x28 << 16;                                            // 0x00189530: lui $a3, 0x28
     s0 = a3 + 0x1298;                                           // 0x00189534: addiu $s0, $a3, 0x1298
 label_0x189538:
-    func_001178e0();  // 0x1178a0                                // 0x00189538: jal 0x1178a0
+    func_001178a0();  // 1178a0                                // 0x00189538: jal 0x1178a0
     v1 = 1;                                                     // 0x00189540: addiu $v1, $zero, 1
     if (v0 != v1) goto label_0x189560;                          // 0x00189544: bne $v0, $v1, 0x189560
     a3 = s3 + 0x2640;                                           // 0x00189548: addiu $a3, $s3, 0x2640
     a0 = 0x23 << 16;                                            // 0x0018954c: lui $a0, 0x23
-    func_001896f0();  // 0x1896c8                                // 0x00189550: jal 0x1896c8
+    func_001896c8();  // 1896c8                                // 0x00189550: jal 0x1896c8
     a0 = &str_0022a288;  // "sceDbcReceiveData: rpc error\n"    // 0x00189554: addiu $a0, $a0, -0x5d78
     goto label_0x189590;                                        // 0x00189558: b 0x189590
     /* nop */                                                   // 0x0018955c: nop 
@@ -63,7 +63,7 @@ label_0x189560:
     a1 = a1 | 0x131c;                                           // 0x00189570: ori $a1, $a1, 0x131c
     a2 = 1;                                                     // 0x00189574: addiu $a2, $zero, 1
     t0 = 0x2090;                                                // 0x00189578: addiu $t0, $zero, 0x2090
-    func_001178a0();  // 0x1176a8                                // 0x00189580: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x00189580: jal 0x1176a8
     t2 = 0x2090;                                                // 0x00189584: addiu $t2, $zero, 0x2090
     if (v0 >= 0) goto label_0x1895a0;                           // 0x00189588: bgez $v0, 0x1895a0
     /* nop */                                                   // 0x0018958c: nop 

@@ -1,3 +1,4 @@
+/** @category graphics/init @status complete @author caprado */
 void func_001b7ab0() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
@@ -31,9 +32,9 @@ label_0x1b7aec:
     /* FPU: mul.s $f0, $f0, $f1 */                              // 0x001b7b04: mul.s $f0, $f0, $f1
     /* FPU: cvt.w.s $f0, $f0 */                                 // 0x001b7b08: cvt.w.s $f0, $f0
     /* move from FPU: $a1, $f0 */                               // 0x001b7b0c: mfc1 $a1, $f0
-    func_001ac980();  // 0x1ac8e0                                // 0x001b7b10: jal 0x1ac8e0
+    func_001ac8e0();  // 1ac8e0                                // 0x001b7b10: jal 0x1ac8e0
     a0 = -1;                                                    // 0x001b7b14: addiu $a0, $zero, -1
-    func_001b9010();  // 0x1b8ff0                                // 0x001b7b18: jal 0x1b8ff0
+    func_001b8ff0();  // 1b8ff0                                // 0x001b7b18: jal 0x1b8ff0
     /* nop */                                                   // 0x001b7b1c: nop 
     return;                                                     // 0x001b7b24: jr $ra
     sp = sp + 0x10;                                             // 0x001b7b28: addiu $sp, $sp, 0x10

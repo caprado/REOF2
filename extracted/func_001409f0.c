@@ -43,7 +43,7 @@ void func_001409f0() {
     g_00255d84 = a1;  // Global at 0x00255d84                   // 0x00140ab0: sw $a1, 4($v0)
     a0 = 0x29;                                                  // 0x00140abc: addiu $a0, $zero, 0x29
     a2 = 2;                                                     // 0x00140ac0: addiu $a2, $zero, 2
-    func_00139228();  // 0x139120                                // 0x00140ac4: jal 0x139120
+    func_00139120();  // 139120                                // 0x00140ac4: jal 0x139120
     t0 = 1;                                                     // 0x00140ac8: addiu $t0, $zero, 1
     v0 = g_00255e80;  // Global at 0x00255e80                   // 0x00140acc: lw $v0, 0($s0)
     return;                                                     // 0x00140ad8: jr $ra

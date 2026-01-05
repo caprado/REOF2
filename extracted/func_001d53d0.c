@@ -15,7 +15,7 @@ void func_001d53d0() {
     /* nop */                                                   // 0x001d53ec: nop 
     *(uint8_t*)((a0) + 0x10) = 0;                               // 0x001d53f0: sb $zero, 0x10($a0)
     *(uint8_t*)((a0) + 0xf) = 0;                                // 0x001d53f4: sb $zero, 0xf($a0)
-    func_001d5730();  // 0x1d56d0                                // 0x001d53f8: jal 0x1d56d0
+    func_001d56d0();  // 1d56d0                                // 0x001d53f8: jal 0x1d56d0
     a0 = a0 + 2;                                                // 0x001d53fc: addiu $a0, $a0, 2
 label_0x1d5400:
     return;                                                     // 0x001d5404: jr $ra

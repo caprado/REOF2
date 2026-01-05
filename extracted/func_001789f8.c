@@ -8,12 +8,12 @@ void func_001789f8() {
     
     sp = sp + -0x20;                                            // 0x001789f8: addiu $sp, $sp, -0x20
     a1 = 5;                                                     // 0x001789fc: addiu $a1, $zero, 5
-    func_001752f8();  // 0x1752e8                                // 0x00178a0c: jal 0x1752e8
+    func_001752e8();  // 1752e8                                // 0x00178a0c: jal 0x1752e8
     if (v0 == 0) goto label_0x178a3c;                           // 0x00178a14: beqz $v0, 0x178a3c
-    func_00178ad0();  // 0x178a50                                // 0x00178a1c: jal 0x178a50
+    func_00178a50();  // 178a50                                // 0x00178a1c: jal 0x178a50
     /* nop */                                                   // 0x00178a20: nop 
-    func_00178bd8();  // 0x178ba0                                // 0x00178a24: jal 0x178ba0
-    func_00178b98();  // 0x178b18                                // 0x00178a30: jal 0x178b18
+    func_00178ba0();  // 178ba0                                // 0x00178a24: jal 0x178ba0
+    func_00178b18();  // 178b18                                // 0x00178a30: jal 0x178b18
 label_0x178a3c:
     return;                                                     // 0x00178a48: jr $ra
     sp = sp + 0x20;                                             // 0x00178a4c: addiu $sp, $sp, 0x20

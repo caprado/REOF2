@@ -1,3 +1,4 @@
+/** @category: graphics/sync @status: complete @author: caprado */
 void func_00113098() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
@@ -7,12 +8,12 @@ void func_00113098() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x00113098: addiu $sp, $sp, -0x20
-    func_001123b0();  // 0x1123a0                                // 0x001130a4: jal 0x1123a0
+    func_001123a0();  // 1123a0                                // 0x001130a4: jal 0x1123a0
     /* nop */                                                   // 0x001130a8: nop 
     v0 = *(int32_t*)((s0) + 8);                                 // 0x001130b0: lw $v0, 8($s0)
     if (v0 != 0) goto label_0x1130f8;                           // 0x001130b4: bnez $v0, 0x1130f8
     /* nop */                                                   // 0x001130b8: nop 
-    func_00114800();  // 0x114770                                // 0x001130bc: jal 0x114770
+    func_00114770();  // 114770                                // 0x001130bc: jal 0x114770
     /* nop */                                                   // 0x001130c0: nop 
     v1 = *(int16_t*)(s0);                                       // 0x001130c4: lh $v1, 0($s0)
     v0 = 1;                                                     // 0x001130c8: addiu $v0, $zero, 1
@@ -22,7 +23,7 @@ void func_00113098() {
     v0 = v0 & 1;                                                // 0x001130e4: andi $v0, $v0, 1
     goto label_0x113124;                                        // 0x001130f0: b 0x113124
 label_0x1130f8:
-    func_001148a8();  // 0x114800                                // 0x001130f8: jal 0x114800
+    func_00114800();  // 114800                                // 0x001130f8: jal 0x114800
     /* nop */                                                   // 0x001130fc: nop 
     v1 = *(int16_t*)(s0);                                       // 0x00113104: lh $v1, 0($s0)
     a0 = v0 & 1;                                                // 0x00113108: andi $a0, $v0, 1

@@ -9,7 +9,7 @@ void func_001af3a0() {
     
     sp = sp + -0x30;                                            // 0x001af3a0: addiu $sp, $sp, -0x30
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001af3a8: addu.qb $zero, $sp, $s1
-    func_001b2080();  // 0x1b2010                                // 0x001af3ac: jal 0x1b2010
+    func_001b2010();  // 1b2010                                // 0x001af3ac: jal 0x1b2010
     s0 = *(int32_t*)((gp) + -0x63b4);                           // 0x001af3b4: lw $s0, -0x63b4($gp)
     s1 = 0x2b << 16;                                            // 0x001af3b8: lui $s1, 0x2b
     goto label_0x1af3d8;                                        // 0x001af3bc: b 0x1af3d8

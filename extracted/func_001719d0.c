@@ -7,19 +7,19 @@ void func_001719d0() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x40;                                            // 0x001719d0: addiu $sp, $sp, -0x40
-    func_00171200();  // 0x1711f0                                // 0x00171a04: jal 0x1711f0
+    func_001711f0();  // 1711f0                                // 0x00171a04: jal 0x1711f0
     if (v0 != 0) goto label_0x171a48;                           // 0x00171a14: bnez $v0, 0x171a48
     return func_00158df0();  // Tail call                        // 0x00171a3c: j 0x158de8
     sp = sp + 0x40;                                             // 0x00171a40: addiu $sp, $sp, 0x40
     /* nop */                                                   // 0x00171a44: nop 
 label_0x171a48:
-    func_00158ea8();  // 0x158df0                                // 0x00171a48: jal 0x158df0
+    func_00158df0();  // 158df0                                // 0x00171a48: jal 0x158df0
     s2 = *(int32_t*)((s5) + 0x1b30);                            // 0x00171a4c: lw $s2, 0x1b30($s5)
     s0 = s2 + 0xa48;                                            // 0x00171a54: addiu $s0, $s2, 0xa48
     s3 = s2 + 0x9d8;                                            // 0x00171a58: addiu $s3, $s2, 0x9d8
-    func_00171138();  // 0x170e20                                // 0x00171a60: jal 0x170e20
+    func_00170e20();  // 170e20                                // 0x00171a60: jal 0x170e20
     s1 = s2 + 4;                                                // 0x00171a64: addiu $s1, $s2, 4
-    func_00170d20();  // 0x170b20                                // 0x00171a68: jal 0x170b20
+    func_00170b20();  // 170b20                                // 0x00171a68: jal 0x170b20
     a0 = s2 + 0xa00;                                            // 0x00171a70: addiu $a0, $s2, 0xa00
     v0 = 1;                                                     // 0x00171a74: addiu $v0, $zero, 1
     t2 = *(int32_t*)((s5) + 0x38);                              // 0x00171a78: lw $t2, 0x38($s5)
@@ -36,19 +36,19 @@ label_0x171a48:
     v0 = v0 >> 4;                                               // 0x00171aa4: sra $v0, $v0, 4
     v1 = v1 >> 4;                                               // 0x00171aa8: sra $v1, $v1, 4
     if (t2 != t1) goto label_0x171ac8;                          // 0x00171aac: bne $t2, $t1, 0x171ac8
-    func_00147a38();  // 0x1479f0                                // 0x00171ab4: jal 0x1479f0
+    func_001479f0();  // 1479f0                                // 0x00171ab4: jal 0x1479f0
     a1 = *(int32_t*)((s4) + 0x20);                              // 0x00171ab8: lw $a1, 0x20($s4)
     goto label_0x171ad4;                                        // 0x00171abc: b 0x171ad4
     *(uint32_t*)((s3) + 0x14) = 0;                              // 0x00171ac0: sw $zero, 0x14($s3)
     /* nop */                                                   // 0x00171ac4: nop 
 label_0x171ac8:
-    func_00147a80();  // 0x147a38                                // 0x00171ac8: jal 0x147a38
+    func_00147a38();  // 147a38                                // 0x00171ac8: jal 0x147a38
     a1 = *(int32_t*)((s4) + 0x20);                              // 0x00171acc: lw $a1, 0x20($s4)
     *(uint32_t*)((s3) + 0x14) = 0;                              // 0x00171ad0: sw $zero, 0x14($s3)
 label_0x171ad4:
-    func_00170e20();  // 0x170d20                                // 0x00171ad4: jal 0x170d20
+    func_00170d20();  // 170d20                                // 0x00171ad4: jal 0x170d20
     a0 = s3 + 0x70;                                             // 0x00171ad8: addiu $a0, $s3, 0x70
-    func_00171cd8();  // 0x171cc0                                // 0x00171adc: jal 0x171cc0
+    func_00171cc0();  // 171cc0                                // 0x00171adc: jal 0x171cc0
     v1 = *(int32_t*)((s3) + 0x18);                              // 0x00171ae4: lw $v1, 0x18($s3)
     v0 = -3;                                                    // 0x00171ae8: addiu $v0, $zero, -3
     if (v1 == 0) v0 = s6;                                       // 0x00171af0: movz $v0, $s6, $v1

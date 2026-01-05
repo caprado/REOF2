@@ -11,15 +11,15 @@ void func_00175d00() {
     
     sp = sp + -0x30;                                            // 0x00175d00: addiu $sp, $sp, -0x30
     a1 = 6;                                                     // 0x00175d04: addiu $a1, $zero, 6
-    func_001752f8();  // 0x1752e8                                // 0x00175d14: jal 0x1752e8
+    func_001752e8();  // 1752e8                                // 0x00175d14: jal 0x1752e8
     if (v0 == 0) goto label_0x175d6c;                           // 0x00175d20: beqz $v0, 0x175d6c
     a1 = 0x33;                                                  // 0x00175d24: addiu $a1, $zero, 0x33
-    func_001752f8();  // 0x1752e8                                // 0x00175d28: jal 0x1752e8
+    func_001752e8();  // 1752e8                                // 0x00175d28: jal 0x1752e8
     /* nop */                                                   // 0x00175d2c: nop 
     a1 = a0 + 0xcc0;                                            // 0x00175d38: addiu $a1, $a0, 0xcc0
     if (s1 == 0) goto label_0x175d6c;                           // 0x00175d40: beqz $s1, 0x175d6c
     a3 = sp + 4;                                                // 0x00175d44: addiu $a3, $sp, 4
-    func_00175cc0();  // 0x175c28                                // 0x00175d48: jal 0x175c28
+    func_00175c28();  // 175c28                                // 0x00175d48: jal 0x175c28
     /* nop */                                                   // 0x00175d4c: nop 
     v1 = local_4;                                               // 0x00175d50: lw $v1, 4($sp)
     v0 = local_0;                                               // 0x00175d54: lw $v0, 0($sp)

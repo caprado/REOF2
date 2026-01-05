@@ -31,14 +31,14 @@ label_0x1c6a6c:
     at = 0x31 << 16;                                            // 0x001c6a6c: lui $at, 0x31
     a0 = s0 + 0x10;                                             // 0x001c6a70: addiu $a0, $s0, 0x10
     a1 = g_00313890;  // Global at 0x00313890                   // 0x001c6a74: lw $a1, 0x3890($at)
-    func_00107b68();  // 0x107ab8                                // 0x001c6a78: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x001c6a78: jal 0x107ab8
     a2 = 0 | 0x8000;                                            // 0x001c6a7c: ori $a2, $zero, 0x8000
     at = 1 << 16;                                               // 0x001c6a80: lui $at, 1
     at = at | 0x10;                                             // 0x001c6a84: ori $at, $at, 0x10
     a0 = s0 + at;                                               // 0x001c6a88: addu $a0, $s0, $at
     at = 0x31 << 16;                                            // 0x001c6a8c: lui $at, 0x31
     a1 = g_00313898;  // Global at 0x00313898                   // 0x001c6a90: lw $a1, 0x3898($at)
-    func_00107b68();  // 0x107ab8                                // 0x001c6a94: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x001c6a94: jal 0x107ab8
     a2 = 0x40;                                                  // 0x001c6a98: addiu $a2, $zero, 0x40
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001c6aa0: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x001c6aa4: jr $ra

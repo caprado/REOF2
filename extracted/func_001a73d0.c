@@ -85,7 +85,7 @@ label_0x1a74ec:
 label_0x1a74f0:
     at = 0x2a << 16;                                            // 0x001a74f0: lui $at, 0x2a
     g_002a0f70 = v0;  // Global at 0x002a0f70                   // 0x001a74f8: sw $v0, 0xf70($at)
-    func_001a73d0();  // 0x1a72a0                                // 0x001a7508: jal 0x1a72a0
+    func_001a72a0();  // 1a72a0                                // 0x001a7508: jal 0x1a72a0
 label_0x1a7514:
 label_0x1a7518:
     return;                                                     // 0x001a7518: jr $ra

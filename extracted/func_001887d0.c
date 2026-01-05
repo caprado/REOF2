@@ -19,7 +19,7 @@ void func_001887d0() {
     a1 = a1 | 0x1363;                                           // 0x001887f4: ori $a1, $a1, 0x1363
     t0 = 0x280;                                                 // 0x001887fc: addiu $t0, $zero, 0x280
     t2 = 0x280;                                                 // 0x00188804: addiu $t2, $zero, 0x280
-    func_001178a0();  // 0x1176a8                                // 0x00188808: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x00188808: jal 0x1176a8
     v0 = g_002812c0;  // Global at 0x002812c0                   // 0x00188810: lw $v0, 0x12c0($s0)
     return;                                                     // 0x0018881c: jr $ra
     sp = sp + 0x30;                                             // 0x00188820: addiu $sp, $sp, 0x30

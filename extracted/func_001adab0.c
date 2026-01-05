@@ -23,7 +23,7 @@ void func_001adab0() {
     /* nop */                                                   // 0x001adaf4: nop 
     /* nop */                                                   // 0x001adaf8: nop 
     /* mflo $a1 */                                              // 0x001adafc
-    func_001324e0();  // 0x132478                                // 0x001adb00: jal 0x132478
+    func_00132478();  // 132478                                // 0x001adb00: jal 0x132478
     a0 = *(int32_t*)(a0);                                       // 0x001adb04: lw $a0, 0($a0)
     v0 = s1 << 1;                                               // 0x001adb08: sll $v0, $s1, 1
     v1 = 0x2b << 16;                                            // 0x001adb0c: lui $v1, 0x2b

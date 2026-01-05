@@ -171,7 +171,7 @@ label_0x120348:
     /* FPU: add.s $f22, $f1, $f10 */                            // 0x00120420: add.s $f22, $f1, $f10
     /* FPU: mul.s $f0, $f21, $f0 */                             // 0x00120424: mul.s $f0, $f21, $f0
     /* FPU: add.s $f0, $f0, $f8 */                              // 0x00120428: add.s $f0, $f0, $f8
-    func_00120c28();  // 0x120b58                                // 0x0012042c: jal 0x120b58
+    func_00120b58();  // 120b58                                // 0x0012042c: jal 0x120b58
     /* FPU: mul.s $f20, $f21, $f0 */                            // 0x00120430: mul.s $f20, $f21, $f0
     /* FPU: mov.s $f13, $f0 */                                  // 0x00120434: mov.s $f13, $f0
     at = 0x33a2 << 16;                                          // 0x00120438: lui $at, 0x33a2
@@ -197,7 +197,7 @@ label_0x120478:
     /* move to FPU: $at, $f1 */                                 // 0x00120484: mtc1 $at, $f1
     /* FPU: sub.s $f0, $f20, $f11 */                            // 0x00120488: sub.s $f0, $f20, $f11
     /* FPU: mul.s $f21, $f0, $f1 */                             // 0x0012048c: mul.s $f21, $f0, $f1
-    func_00120c28();  // 0x120b58                                // 0x00120490: jal 0x120b58
+    func_00120b58();  // 120b58                                // 0x00120490: jal 0x120b58
     /* FPU: mov.s $f12, $f21 */                                 // 0x00120494: mov.s $f12, $f21
     /* FPU: mov.s $f11, $f0 */                                  // 0x00120498: mov.s $f11, $f0
     /* FPU: mov.s $f13, $f11 */                                 // 0x0012049c: mov.s $f13, $f11

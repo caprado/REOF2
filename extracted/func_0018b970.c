@@ -31,7 +31,7 @@ label_0x18b9d4:
     a3 = s3 + 0x60;                                             // 0x0018b9e0: addiu $a3, $s3, 0x60
     t0 = s3 + 0x70;                                             // 0x0018b9e4: addiu $t0, $s3, 0x70
     t1 = s3 + 0x80;                                             // 0x0018b9e8: addiu $t1, $s3, 0x80
-    func_0018bc20();  // 0x18bb30                                // 0x0018b9ec: jal 0x18bb30
+    func_0018bb30();  // 18bb30                                // 0x0018b9ec: jal 0x18bb30
     t2 = s3 + 0x90;                                             // 0x0018b9f0: addiu $t2, $s3, 0x90
     s3 = s3 + s1;                                               // 0x0018b9f4: addu $s3, $s3, $s1
     s2 = s2 + 4;                                                // 0x0018b9f8: addiu $s2, $s2, 4
@@ -49,7 +49,7 @@ label_0x18ba1c:
     a3 = s3 + 0x60;                                             // 0x0018ba28: addiu $a3, $s3, 0x60
     t0 = s3 + 0x70;                                             // 0x0018ba2c: addiu $t0, $s3, 0x70
     t1 = s3 + 0x80;                                             // 0x0018ba30: addiu $t1, $s3, 0x80
-    func_0018bc20();  // 0x18bb30                                // 0x0018ba34: jal 0x18bb30
+    func_0018bb30();  // 18bb30                                // 0x0018ba34: jal 0x18bb30
     t2 = s3 + 0x90;                                             // 0x0018ba38: addiu $t2, $s3, 0x90
     s3 = s3 + s1;                                               // 0x0018ba3c: addu $s3, $s3, $s1
     s2 = s2 + 4;                                                // 0x0018ba40: addiu $s2, $s2, 4
@@ -68,7 +68,7 @@ label_0x18ba64:
     a3 = s3 + 0x60;                                             // 0x0018ba70: addiu $a3, $s3, 0x60
     t0 = s3 + 0x70;                                             // 0x0018ba74: addiu $t0, $s3, 0x70
     t1 = s3 + 0x80;                                             // 0x0018ba78: addiu $t1, $s3, 0x80
-    func_0018bc20();  // 0x18bb30                                // 0x0018ba7c: jal 0x18bb30
+    func_0018bb30();  // 18bb30                                // 0x0018ba7c: jal 0x18bb30
     t2 = s3 + 0x90;                                             // 0x0018ba80: addiu $t2, $s3, 0x90
     s3 = s3 + s1;                                               // 0x0018ba84: addu $s3, $s3, $s1
     s2 = s2 + 4;                                                // 0x0018ba88: addiu $s2, $s2, 4
@@ -93,7 +93,7 @@ label_0x18baac:
     t3 = *(int32_t*)((gp) + -0x6494);                           // 0x0018bae4: lw $t3, -0x6494($gp)
     t0 = s3 + 0x70;                                             // 0x0018bae8: addiu $t0, $s3, 0x70
     t1 = s3 + 0x80;                                             // 0x0018baec: addiu $t1, $s3, 0x80
-    func_0018be00();  // 0x18bc20                                // 0x0018baf0: jal 0x18bc20
+    func_0018bc20();  // 18bc20                                // 0x0018baf0: jal 0x18bc20
     t2 = s3 + 0x90;                                             // 0x0018baf4: addiu $t2, $s3, 0x90
     s3 = s3 + s1;                                               // 0x0018baf8: addu $s3, $s3, $s1
     s2 = s2 + 4;                                                // 0x0018bafc: addiu $s2, $s2, 4

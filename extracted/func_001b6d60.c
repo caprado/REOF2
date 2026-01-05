@@ -14,7 +14,7 @@ void func_001b6d60() {
     *(uint32_t*)((a0) + 8) = 0;                                 // 0x001b6d88: sw $zero, 8($a0)
     *(uint32_t*)((a0) + 0xc) = 0;                               // 0x001b6d90: sw $zero, 0xc($a0)
     a3 = a3 + -0x350;                                           // 0x001b6d94: addiu $a3, $a3, -0x350
-    func_0018cff0();  // 0x18ce40                                // 0x001b6d98: jal 0x18ce40
+    func_0018ce40();  // 18ce40                                // 0x001b6d98: jal 0x18ce40
     v0 = s0 + 0x10;                                             // 0x001b6da0: addiu $v0, $s0, 0x10
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001b6da8: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x001b6dac: jr $ra

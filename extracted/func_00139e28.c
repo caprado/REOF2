@@ -45,7 +45,7 @@ label_0x139ed0:
     /* nop */                                                   // 0x00139ed4: nop 
     goto label_0x139ef4;                                        // 0x00139ed8: b 0x139ef4
 label_0x139ee0:
-    func_00139f08();  // 0x139e28                                // 0x00139ee0: jal 0x139e28
+    func_00139e28();  // 139e28                                // 0x00139ee0: jal 0x139e28
     /* nop */                                                   // 0x00139ee4: nop 
     goto label_0x139ef4;                                        // 0x00139ee8: b 0x139ef4
 label_0x139ef0:

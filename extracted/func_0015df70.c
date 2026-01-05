@@ -24,7 +24,7 @@ void func_0015df70() {
 label_0x15dfb0:
     if (a0 == v0) goto label_0x15dfcc;                          // 0x0015dfb0: beq $a0, $v0, 0x15dfcc
     a0 = 0x22 << 16;                                            // 0x0015dfb8: lui $a0, 0x22
-    func_001634a8();  // 0x163410                                // 0x0015dfbc: jal 0x163410
+    func_00163410();  // 163410                                // 0x0015dfbc: jal 0x163410
     a0 = &str_00227580;  // "E1122615: mwPlyRelCurFrm: handle is invalid." // 0x0015dfc0: addiu $a0, $a0, 0x7580
     v1 = 1;                                                     // 0x0015dfc4: addiu $v1, $zero, 1
 label_0x15dfc8:

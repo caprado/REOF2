@@ -9,7 +9,7 @@ void func_00132818() {
     sp = sp + -0x10;                                            // 0x00132818: addiu $sp, $sp, -0x10
     if (s0 != 0) goto label_0x132840;                           // 0x00132824: bnez $s0, 0x132840
     a0 = 0x22 << 16;                                            // 0x0013282c: lui $a0, 0x22
-    func_00127de8();  // 0x127d90                                // 0x00132830: jal 0x127d90
+    func_00127d90();  // 127d90                                // 0x00132830: jal 0x127d90
     a0 = &str_00223b80;  // "E02080802 ADXT_IsCompleted: parameter error" // 0x00132834: addiu $a0, $a0, 0x3b80
     goto label_0x132874;                                        // 0x00132838: b 0x132874
     v0 = -1;                                                    // 0x0013283c: addiu $v0, $zero, -1

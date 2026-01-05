@@ -22,7 +22,7 @@ void func_0016d120() {
     local_4 = v0;                                               // 0x0016d158: sw $v0, 4($sp)
     /* nop */                                                   // 0x0016d15c: nop 
 label_0x16d160:
-    func_00167d50();  // 0x167c80                                // 0x0016d164: jal 0x167c80
+    func_00167c80();  // 167c80                                // 0x0016d164: jal 0x167c80
     a2 = sp + 4;                                                // 0x0016d168: addiu $a2, $sp, 4
     if (v0 != 0) goto label_0x16d184;                           // 0x0016d16c: bnez $v0, 0x16d184
     v1 = local_0;                                               // 0x0016d170: lw $v1, 0($sp)
@@ -37,7 +37,7 @@ label_0x16d184:
     v0 = v0 + v1;                                               // 0x0016d18c: addu $v0, $v0, $v1
     a2 = local_4;                                               // 0x0016d190: lw $a2, 4($sp)
     *(uint32_t*)((s1) + 0x1ac) = v0;                            // 0x0016d194: sw $v0, 0x1ac($s1)
-    func_0015b7b0();  // 0x15b740                                // 0x0016d198: jal 0x15b740
+    func_0015b740();  // 15b740                                // 0x0016d198: jal 0x15b740
     v1 = *(int32_t*)((s1) + 0x120);                             // 0x0016d1a0: lw $v1, 0x120($s1)
     v0 = v0 - v1;                                               // 0x0016d1a4: subu $v0, $v0, $v1
     a0 = (v0 < 0) ? 1 : 0;                                      // 0x0016d1a8: slti $a0, $v0, 0

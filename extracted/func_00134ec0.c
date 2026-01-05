@@ -47,7 +47,7 @@ label_0x134f50:
     s0 = 0x25 << 16;                                            // 0x00134f6c: lui $s0, 0x25
     s0 = s0 + 0x39e8;                                           // 0x00134f74: addiu $s0, $s0, 0x39e8
     a2 = 9;                                                     // 0x00134f78: addiu $a2, $zero, 9
-    func_00107d30();  // 0x107c70                                // 0x00134f7c: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x00134f7c: jal 0x107c70
     g_002539e8 = 0;  // Global at 0x002539e8                    // 0x00134f84: sb $zero, 0($s0)
     v1 = s1 + 0x2184;                                           // 0x00134f88: addiu $v1, $s1, 0x2184
 label_0x134f8c:

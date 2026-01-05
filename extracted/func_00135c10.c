@@ -10,7 +10,7 @@ void func_00135c10() {
     s0 = 3;                                                     // 0x00135c18: addiu $s0, $zero, 3
     if (a0 != 0) goto label_0x135c38;                           // 0x00135c1c: bnez $a0, 0x135c38
     a0 = 0x22 << 16;                                            // 0x00135c24: lui $a0, 0x22
-    func_00134fb0();  // 0x134ec0                                // 0x00135c28: jal 0x134ec0
+    func_00134ec0();  // 134ec0                                // 0x00135c28: jal 0x134ec0
     a0 = &str_00224330;  // "cvFsGetStat #2:vtbl error"         // 0x00135c2c: addiu $a0, $a0, 0x4330
     goto label_0x135c64;                                        // 0x00135c30: b 0x135c64
     v0 = 3;                                                     // 0x00135c34: addiu $v0, $zero, 3
@@ -22,7 +22,7 @@ label_0x135c38:
     /* call function at address in v0 */                        // 0x00135c48: jalr $v0
     a0 = g_00220004;  // Global at 0x00220004                   // 0x00135c4c: lw $a0, 4($a0)
     goto label_0x135c60;                                        // 0x00135c50: b 0x135c60
-    func_00134fb0();  // 0x134ec0                                // 0x00135c58: jal 0x134ec0
+    func_00134ec0();  // 134ec0                                // 0x00135c58: jal 0x134ec0
     a0 = &str_00224350;  // "cvFsGetFileSize #1:illegal file name" // 0x00135c5c: addiu $a0, $a0, 0x4350
 label_0x135c60:
 label_0x135c64:

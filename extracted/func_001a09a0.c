@@ -1,3 +1,4 @@
+/** @category memory/allocation @status complete @author caprado */
 void func_001a09a0() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
@@ -76,7 +77,7 @@ label_0x1a0ac0:
     sp = sp + -0x50;                                            // 0x001a0ac0: addiu $sp, $sp, -0x50
     /* FPU: dpa.w.ph $ac0, $sp, $s3 */                          // 0x001a0ac8: dpa.w.ph $ac0, $sp, $s3
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001a0ad4: addu.qb $zero, $sp, $s1
-    func_001a12a0();  // 0x1a1250                                // 0x001a0ae0: jal 0x1a1250
+    func_001a1250();  // 1a1250                                // 0x001a0ae0: jal 0x1a1250
     v1 = s2 + s1;                                               // 0x001a0ae8: addu $v1, $s2, $s1
     at = ((unsigned)v1 < (unsigned)v0) ? 1 : 0;                 // 0x001a0aec: sltu $at, $v1, $v0
     if (at != 0) goto label_0x1a0b00;                           // 0x001a0af0: bnez $at, 0x1a0b00
@@ -86,7 +87,7 @@ label_0x1a0b00:
     if (s2 != 0) goto label_0x1a0b10;                           // 0x001a0b00: bnez $s2, 0x1a0b10
     goto label_0x1a0bec;                                        // 0x001a0b08: b 0x1a0bec
 label_0x1a0b10:
-    func_001a1310();  // 0x1a12a0                                // 0x001a0b10: jal 0x1a12a0
+    func_001a12a0();  // 1a12a0                                // 0x001a0b10: jal 0x1a12a0
     /* nop */                                                   // 0x001a0b14: nop 
     v0 = 0 | 0xffff;                                            // 0x001a0b1c: ori $v0, $zero, 0xffff
     if (s0 != v0) goto label_0x1a0b30;                          // 0x001a0b20: bne $s0, $v0, 0x1a0b30
@@ -137,7 +138,7 @@ label_0x1a0ba4:
 label_0x1a0bd0:
     v0 = *(int32_t*)((s3) + 0x1c);                              // 0x001a0bd0: lw $v0, 0x1c($s3)
     v0 = v0 + s2;                                               // 0x001a0bdc: addu $v0, $v0, $s2
-    func_001a1440();  // 0x1a1310                                // 0x001a0be0: jal 0x1a1310
+    func_001a1310();  // 1a1310                                // 0x001a0be0: jal 0x1a1310
     *(uint32_t*)((s3) + 0x1c) = v0;                             // 0x001a0be4: sw $v0, 0x1c($s3)
     v0 = s0 + 1;                                                // 0x001a0be8: addiu $v0, $s0, 1
 label_0x1a0bec:

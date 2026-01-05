@@ -28,32 +28,32 @@ void func_001a20e0() {
     /* nop */                                                   // 0x001a2130: nop 
     goto label_0x1a2198;                                        // 0x001a2134: b 0x1a2198
 label_0x1a213c:
-    func_001a2250();  // 0x1a21a0                                // 0x001a213c: jal 0x1a21a0
+    func_001a21a0();  // 1a21a0                                // 0x001a213c: jal 0x1a21a0
     /* nop */                                                   // 0x001a2140: nop 
     goto label_0x1a2194;                                        // 0x001a2144: b 0x1a2194
     /* nop */                                                   // 0x001a2148: nop 
 label_0x1a214c:
-    func_001a2310();  // 0x1a2250                                // 0x001a214c: jal 0x1a2250
+    func_001a2250();  // 1a2250                                // 0x001a214c: jal 0x1a2250
     /* nop */                                                   // 0x001a2150: nop 
     goto label_0x1a2194;                                        // 0x001a2154: b 0x1a2194
     /* nop */                                                   // 0x001a2158: nop 
 label_0x1a215c:
-    func_001a23e0();  // 0x1a2310                                // 0x001a215c: jal 0x1a2310
+    func_001a2310();  // 1a2310                                // 0x001a215c: jal 0x1a2310
     /* nop */                                                   // 0x001a2160: nop 
     goto label_0x1a2194;                                        // 0x001a2164: b 0x1a2194
     /* nop */                                                   // 0x001a2168: nop 
 label_0x1a216c:
-    func_001a2490();  // 0x1a23e0                                // 0x001a216c: jal 0x1a23e0
+    func_001a23e0();  // 1a23e0                                // 0x001a216c: jal 0x1a23e0
     /* nop */                                                   // 0x001a2170: nop 
     goto label_0x1a2194;                                        // 0x001a2174: b 0x1a2194
     /* nop */                                                   // 0x001a2178: nop 
 label_0x1a217c:
-    func_001a2550();  // 0x1a2490                                // 0x001a217c: jal 0x1a2490
+    func_001a2490();  // 1a2490                                // 0x001a217c: jal 0x1a2490
     /* nop */                                                   // 0x001a2180: nop 
     goto label_0x1a2194;                                        // 0x001a2184: b 0x1a2194
     /* nop */                                                   // 0x001a2188: nop 
 label_0x1a218c:
-    func_001a2620();  // 0x1a2550                                // 0x001a218c: jal 0x1a2550
+    func_001a2550();  // 1a2550                                // 0x001a218c: jal 0x1a2550
     /* nop */                                                   // 0x001a2190: nop 
 label_0x1a2194:
 label_0x1a2198:

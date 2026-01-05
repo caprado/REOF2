@@ -20,7 +20,7 @@ label_0x140298:
     if (v0 <= 0) goto label_0x140380;                           // 0x0014029c: blezl $v0, 0x140380
     v0 = *(int32_t*)(s1);                                       // 0x001402a4: lw $v0, 0($s1)
     /* beqzl $v0, 0x140380 */                                   // 0x001402a8: beqzl $v0, 0x140380
-    func_0013ef30();  // 0x13ef18                                // 0x001402b0: jal 0x13ef18
+    func_0013ef18();  // 13ef18                                // 0x001402b0: jal 0x13ef18
     /* nop */                                                   // 0x001402b4: nop 
     a1 = s2 << 2;                                               // 0x001402b8: sll $a1, $s2, 2
     t0 = s0 + 8;                                                // 0x001402bc: addiu $t0, $s0, 8

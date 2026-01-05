@@ -23,20 +23,20 @@ label_0x136a30:
     a0 = &str_00224b08;  // "cvFsDelVolume #3:device not found" // 0x00136a40: addiu $a0, $a0, 0x4b08
     /* nop */                                                   // 0x00136a44: nop 
 label_0x136a48:
-    func_001352b8();  // 0x135220                                // 0x00136a48: jal 0x135220
+    func_00135220();  // 135220                                // 0x00136a48: jal 0x135220
     /* nop */                                                   // 0x00136a4c: nop 
     if (s1 != 0) goto label_0x136a80;                           // 0x00136a5c: bnez $s1, 0x136a80
     a2 = 0x14;                                                  // 0x00136a60: addiu $a2, $zero, 0x14
     a0 = 0x22 << 16;                                            // 0x00136a64: lui $a0, 0x22
     a0 = &str_00224b30;  // "cvFsGetVolumeInfo #1:illegal device name" // 0x00136a68: addiu $a0, $a0, 0x4b30
 label_0x136a6c:
-    func_00134fb0();  // 0x134ec0                                // 0x00136a6c: jal 0x134ec0
+    func_00134ec0();  // 134ec0                                // 0x00136a6c: jal 0x134ec0
     /* nop */                                                   // 0x00136a70: nop 
     goto label_0x136ab0;                                        // 0x00136a74: b 0x136ab0
     v0 = -1;                                                    // 0x00136a78: addiu $v0, $zero, -1
     /* nop */                                                   // 0x00136a7c: nop 
 label_0x136a80:
-    func_00107d30();  // 0x107c70                                // 0x00136a80: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x00136a80: jal 0x107c70
     /* nop */                                                   // 0x00136a84: nop 
     v0 = -1;                                                    // 0x00136a88: addiu $v0, $zero, -1
     local_4 = s0;                                               // 0x00136a8c: sw $s0, 4($sp)

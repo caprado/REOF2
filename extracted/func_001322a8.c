@@ -9,7 +9,7 @@ void func_001322a8() {
     sp = sp + -0x10;                                            // 0x001322a8: addiu $sp, $sp, -0x10
     if (a0 != 0) goto label_0x1322c8;                           // 0x001322ac: bnez $a0, 0x1322c8
     a0 = 0x22 << 16;                                            // 0x001322b4: lui $a0, 0x22
-    func_00127de8();  // 0x127d90                                // 0x001322b8: jal 0x127d90
+    func_00127d90();  // 127d90                                // 0x001322b8: jal 0x127d90
     a0 = &str_002238d8;  // "E02080825 ADXT_SetOutPan: parameter error" // 0x001322bc: addiu $a0, $a0, 0x38d8
     goto label_0x1322e8;                                        // 0x001322c0: b 0x1322e8
     v0 = -1;                                                    // 0x001322c4: addiu $v0, $zero, -1

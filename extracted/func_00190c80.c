@@ -9,7 +9,7 @@ void func_00190c80() {
     sp = sp + -0x40;                                            // 0x00190c80: addiu $sp, $sp, -0x40
     /* FPU: mov.s $f2, $f12 */                                  // 0x00190c88: mov.s $f2, $f12
     a0 = sp + 0x30;                                             // 0x00190c90: addiu $a0, $sp, 0x30
-    func_0018f4c0();  // 0x18f3a0                                // 0x00190c94: jal 0x18f3a0
+    func_0018f3a0();  // 18f3a0                                // 0x00190c94: jal 0x18f3a0
     /* FPU: mov.s $f12, $f14 */                                 // 0x00190c98: mov.s $f12, $f14
     FPU_F1 = *(float*)((sp) + 0x30);  // Load float             // 0x00190c9c: lwc1 $f1, 0x30($sp)
     FPU_F0 = *(float*)((sp) + 0x34);  // Load float             // 0x00190ca0: lwc1 $f0, 0x34($sp)
@@ -22,7 +22,7 @@ void func_00190c80() {
     *(vec128_t*)((t1) + 0x10) = VPU_VF5;  // Store 128-bit vector // 0x00190d04: sdc2 $5, 0x10($t1)
     *(vec128_t*)((t1) + 0x20) = VPU_VF6;  // Store 128-bit vector // 0x00190d08: sdc2 $6, 0x20($t1)
     /* FPU: mov.s $f12, $f2 */                                  // 0x00190d0c: mov.s $f12, $f2
-    func_0018f4c0();  // 0x18f3a0                                // 0x00190d10: jal 0x18f3a0
+    func_0018f3a0();  // 18f3a0                                // 0x00190d10: jal 0x18f3a0
     a0 = sp + 0x20;                                             // 0x00190d14: addiu $a0, $sp, 0x20
     FPU_F1 = *(float*)((sp) + 0x20);  // Load float             // 0x00190d18: lwc1 $f1, 0x20($sp)
     FPU_F0 = *(float*)((sp) + 0x24);  // Load float             // 0x00190d1c: lwc1 $f0, 0x24($sp)
@@ -35,7 +35,7 @@ void func_00190c80() {
     *(vec128_t*)((t1) + 0x10) = VPU_VF5;  // Store 128-bit vector // 0x00190d84: sdc2 $5, 0x10($t1)
     *(vec128_t*)((t1) + 0x20) = VPU_VF6;  // Store 128-bit vector // 0x00190d88: sdc2 $6, 0x20($t1)
     /* FPU: mov.s $f12, $f13 */                                 // 0x00190d8c: mov.s $f12, $f13
-    func_0018f4c0();  // 0x18f3a0                                // 0x00190d90: jal 0x18f3a0
+    func_0018f3a0();  // 18f3a0                                // 0x00190d90: jal 0x18f3a0
     a0 = sp + 0x10;                                             // 0x00190d94: addiu $a0, $sp, 0x10
     FPU_F1 = *(float*)((sp) + 0x10);  // Load float             // 0x00190d98: lwc1 $f1, 0x10($sp)
     FPU_F0 = *(float*)((sp) + 0x14);  // Load float             // 0x00190d9c: lwc1 $f0, 0x14($sp)

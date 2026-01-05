@@ -9,18 +9,18 @@ void func_001d03a0() {
     sp = sp + -0x60;                                            // 0x001d03a0: addiu $sp, $sp, -0x60
     a0 = sp + 0x40;                                             // 0x001d03ac: addiu $a0, $sp, 0x40
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001d03b8: addu.qb $zero, $sp, $s1
-    func_001ce710();  // 0x1ce700                                // 0x001d03c0: jal 0x1ce700
-    func_001ce720();  // 0x1ce710                                // 0x001d03c8: jal 0x1ce710
+    func_001ce700();  // 1ce700                                // 0x001d03c0: jal 0x1ce700
+    func_001ce710();  // 1ce710                                // 0x001d03c8: jal 0x1ce710
     a0 = sp + 0x40;                                             // 0x001d03cc: addiu $a0, $sp, 0x40
     at = (s0 < 2) ? 1 : 0;                                      // 0x001d03d4: slti $at, $s0, 2
     if (at == 0) goto label_0x1d03e8;                           // 0x001d03d8: beqz $at, 0x1d03e8
     a0 = sp + 0x40;                                             // 0x001d03dc: addiu $a0, $sp, 0x40
     goto label_0x1d0470;                                        // 0x001d03e0: b 0x1d0470
 label_0x1d03e8:
-    func_001ce990();  // 0x1ce8f0                                // 0x001d03e8: jal 0x1ce8f0
+    func_001ce8f0();  // 1ce8f0                                // 0x001d03e8: jal 0x1ce8f0
     /* nop */                                                   // 0x001d03ec: nop 
     s1 = v0 & 0xff;                                             // 0x001d03f0: andi $s1, $v0, 0xff
-    func_001ce990();  // 0x1ce8f0                                // 0x001d03f4: jal 0x1ce8f0
+    func_001ce8f0();  // 1ce8f0                                // 0x001d03f4: jal 0x1ce8f0
     a0 = sp + 0x40;                                             // 0x001d03f8: addiu $a0, $sp, 0x40
     at = (s1 < 2) ? 1 : 0;                                      // 0x001d03fc: slti $at, $s1, 2
     if (at == 0) goto label_0x1d0410;                           // 0x001d0400: beqz $at, 0x1d0410
@@ -43,9 +43,9 @@ label_0x1d0438:
     a0 = sp + 0x40;                                             // 0x001d043c: addiu $a0, $sp, 0x40
     goto label_0x1d0470;                                        // 0x001d0440: b 0x1d0470
 label_0x1d0448:
-    thunk_func_001cfeb0();  // 0x1ce8e0                          // 0x001d0448: jal 0x1ce8e0
+    thunk_func_001ce8e0();  // 1ce8e0                          // 0x001d0448: jal 0x1ce8e0
     /* nop */                                                   // 0x001d044c: nop 
-    thunk_func_001cfeb0();  // 0x1ce8e0                          // 0x001d0450: jal 0x1ce8e0
+    thunk_func_001ce8e0();  // 1ce8e0                          // 0x001d0450: jal 0x1ce8e0
     a0 = sp + 0x40;                                             // 0x001d0454: addiu $a0, $sp, 0x40
     v0 = v0 & 0xffff;                                           // 0x001d0458: andi $v0, $v0, 0xffff
     v0 = v0 + 0xc;                                              // 0x001d045c: addiu $v0, $v0, 0xc

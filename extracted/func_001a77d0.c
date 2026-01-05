@@ -24,7 +24,7 @@ label_0x1a780c:
     goto label_0x1a7848;                                        // 0x001a7810: b 0x1a7848
     s1 = g_002a0f78;  // Global at 0x002a0f78                   // 0x001a7814: lw $s1, 0xf78($at)
 label_0x1a7818:
-    func_001a82b0();  // 0x1a7f00                                // 0x001a7818: jal 0x1a7f00
+    func_001a7f00();  // 1a7f00                                // 0x001a7818: jal 0x1a7f00
     if (v0 < 0) goto label_0x1a786c;                            // 0x001a7820: bltz $v0, 0x1a786c
     /* nop */                                                   // 0x001a7824: nop 
     v1 = -1;                                                    // 0x001a7828: addiu $v1, $zero, -1
@@ -64,7 +64,7 @@ label_0x1a7894:
     t3 = 0x1a << 16;                                            // 0x001a78a4: lui $t3, 0x1a
     a0 = a0 + 0x1130;                                           // 0x001a78ac: addiu $a0, $a0, 0x1130
     t3 = t3 + 0x7960;                                           // 0x001a78bc: addiu $t3, $t3, 0x7960
-    func_001178a0();  // 0x1176a8                                // 0x001a78c0: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x001a78c0: jal 0x1176a8
     if (v0 >= 0) goto label_0x1a78e0;                           // 0x001a78c8: bgez $v0, 0x1a78e0
     at = 0x2a << 16;                                            // 0x001a78cc: lui $at, 0x2a
     iSignalSema();  // 0x114300                                 // 0x001a78d0: jal 0x114300

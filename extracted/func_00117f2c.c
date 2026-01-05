@@ -43,7 +43,7 @@ label_0x117f48:
     if (v0 < 0) goto label_0x117fc4;                            // 0x00117fb0: bltz $v0, 0x117fc4
     a0 = local_8;                                               // 0x00117fb4: lw $a0, 8($sp)
     a1 = s0 + 0x10;                                             // 0x00117fb8: addiu $a1, $s0, 0x10
-    func_00107b68();  // 0x107ab8                                // 0x00117fbc: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x00117fbc: jal 0x107ab8
     a2 = local_c;                                               // 0x00117fc0: lw $a2, 0xc($sp)
 label_0x117fc4:
     v0 = local_4;                                               // 0x00117fc4: lw $v0, 4($sp)
@@ -158,7 +158,7 @@ label_0x118160:
     local_14 = v0;                                              // 0x00118248: sw $v0, 0x14($sp)
     a0 = local_10;                                              // 0x0011824c: lw $a0, 0x10($sp)
 label_0x118250:
-    func_00107b68();  // 0x107ab8                                // 0x00118250: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x00118250: jal 0x107ab8
     a1 = s0 + 0x1c;                                             // 0x00118254: addiu $a1, $s0, 0x1c
 label_0x118258:
     a0 = local_0;                                               // 0x00118258: lw $a0, 0($sp)

@@ -13,10 +13,10 @@ label_0x163560:
     if (v0 == 0) goto label_0x163594;                           // 0x00163560: beqz $v0, 0x163594
     s1 = s1 + 1;                                                // 0x00163564: addiu $s1, $s1, 1
     a1 = 1;                                                     // 0x00163568: addiu $a1, $zero, 1
-    func_00164028();  // 0x163fe8                                // 0x0016356c: jal 0x163fe8
-    func_0012bd80();  // 0x12bd00                                // 0x00163574: jal 0x12bd00
+    func_00163fe8();  // 163fe8                                // 0x0016356c: jal 0x163fe8
+    func_0012bd00();  // 12bd00                                // 0x00163574: jal 0x12bd00
     /* nop */                                                   // 0x00163578: nop 
-    func_00164028();  // 0x163fe8                                // 0x00163580: jal 0x163fe8
+    func_00163fe8();  // 163fe8                                // 0x00163580: jal 0x163fe8
     v0 = *(int32_t*)((s0) + 0x60);                              // 0x00163588: lw $v0, 0x60($s0)
     if (v0 != 0) goto label_0x163560;                           // 0x0016358c: bnez $v0, 0x163560
     v0 = (s1 < 0xa) ? 1 : 0;                                    // 0x00163590: slti $v0, $s1, 0xa

@@ -7,10 +7,10 @@ void func_0016cf70() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x0016cf70: addiu $sp, $sp, -0x20
-    func_0016d090();  // 0x16cfc0                                // 0x0016cf84: jal 0x16cfc0
+    func_0016cfc0();  // 16cfc0                                // 0x0016cf84: jal 0x16cfc0
     v1 = -1;                                                    // 0x0016cf8c: addiu $v1, $zero, -1
     if (v0 == v1) goto label_0x16cfa8;                          // 0x0016cf94: beq $v0, $v1, 0x16cfa8
-    func_0016d288();  // 0x16d1c8                                // 0x0016cf9c: jal 0x16d1c8
+    func_0016d1c8();  // 16d1c8                                // 0x0016cf9c: jal 0x16d1c8
     /* nop */                                                   // 0x0016cfa0: nop 
 label_0x16cfa8:
     return;                                                     // 0x0016cfb4: jr $ra

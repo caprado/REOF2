@@ -19,16 +19,16 @@ void func_001d89c0() {
     a1 = 0x24 << 16;                                            // 0x001d89f4: lui $a1, 0x24
     s1 = g_003137fc;  // Global at 0x003137fc                   // 0x001d89f8: lw $s1, 0x37fc($at)
     a0 = sp + 0x30;                                             // 0x001d89fc: addiu $a0, $sp, 0x30
-    func_0010a570();  // 0x10a4d8                                // 0x001d8a00: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001d8a00: jal 0x10a4d8
     a1 = &str_002476e0;  // "data\\rom\\motion\\npc\\rn%02d_tbl.bin" // 0x001d8a04: addiu $a1, $a1, 0x76e0
     v0 = 2 << 16;                                               // 0x001d8a08: lui $v0, 2
     a0 = sp + 0x30;                                             // 0x001d8a0c: addiu $a0, $sp, 0x30
-    func_001d33e0();  // 0x1d3390                                // 0x001d8a18: jal 0x1d3390
+    func_001d3390();  // 1d3390                                // 0x001d8a18: jal 0x1d3390
     a2 = v0 | 1;                                                // 0x001d8a1c: ori $a2, $v0, 1
     v1 = 0x4b << 16;                                            // 0x001d8a20: lui $v1, 0x4b
     v1 = v1 + -0x2b00;                                          // 0x001d8a28: addiu $v1, $v1, -0x2b00
     a1 = v1 + s0;                                               // 0x001d8a30: addu $a1, $v1, $s0
-    func_001d87a0();  // 0x1d8780                                // 0x001d8a34: jal 0x1d8780
+    func_001d8780();  // 1d8780                                // 0x001d8a34: jal 0x1d8780
 label_0x1d8a3c:
     /* FPU: aver_u.h $w0, $w0, $w17 */                          // 0x001d8a40: aver_u.h $w0, $w0, $w17
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001d8a44: xori.b $w0, $w0, 0xb0

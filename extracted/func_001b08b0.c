@@ -8,7 +8,7 @@ void func_001b08b0() {
     
     sp = sp + -0x30;                                            // 0x001b08b0: addiu $sp, $sp, -0x30
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001b08b8: addu.qb $zero, $sp, $s1
-    func_001afb80();  // 0x1afb40                                // 0x001b08c4: jal 0x1afb40
+    func_001afb40();  // 1afb40                                // 0x001b08c4: jal 0x1afb40
     v1 = 1;                                                     // 0x001b08cc: addiu $v1, $zero, 1
     if (v0 != v1) goto label_0x1b08f0;                          // 0x001b08d0: bne $v0, $v1, 0x1b08f0
     at = 0x49 << 16;                                            // 0x001b08d4: lui $at, 0x49
@@ -17,7 +17,7 @@ void func_001b08b0() {
     if (a0 == v1) goto label_0x1b0924;                          // 0x001b08e0: beq $a0, $v1, 0x1b0924
     goto label_0x1b0ac4;                                        // 0x001b08e8: b 0x1b0ac4
 label_0x1b08f0:
-    func_001afb40();  // 0x1afb10                                // 0x001b08f0: jal 0x1afb10
+    func_001afb10();  // 1afb10                                // 0x001b08f0: jal 0x1afb10
     /* nop */                                                   // 0x001b08f4: nop 
     if (v0 != 0) goto label_0x1b0914;                           // 0x001b08f8: bnez $v0, 0x1b0914
     /* nop */                                                   // 0x001b08fc: nop 

@@ -7,7 +7,7 @@ void func_00158df0() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x30;                                            // 0x00158df0: addiu $sp, $sp, -0x30
-    func_0015b498();  // 0x15b470                                // 0x00158e0c: jal 0x15b470
+    func_0015b470();  // 15b470                                // 0x00158e0c: jal 0x15b470
     if (v0 == 0) goto label_0x158e40;                           // 0x00158e14: beqz $v0, 0x158e40
     a1 = 0xff03 << 16;                                          // 0x00158e1c: lui $a1, 0xff03
     a1 = a1 | 0x20a;                                            // 0x00158e2c: ori $a1, $a1, 0x20a
@@ -19,13 +19,13 @@ label_0x158e40:
     s1 = s1 | 0x305;                                            // 0x00158e48: ori $s1, $s1, 0x305
     /* nop */                                                   // 0x00158e4c: nop 
 label_0x158e50:
-    func_0015ac00();  // 0x15aaa8                                // 0x00158e50: jal 0x15aaa8
+    func_0015aaa8();  // 15aaa8                                // 0x00158e50: jal 0x15aaa8
     a1 = 1;                                                     // 0x00158e5c: addiu $a1, $zero, 1
     a2 = 4;                                                     // 0x00158e60: addiu $a2, $zero, 4
     if (v0 == 0) goto label_0x158e84;                           // 0x00158e64: beqz $v0, 0x158e84
     v1 = v0 & 0xcc;                                             // 0x00158e68: andi $v1, $v0, 0xcc
     /* bnezl $v1, 0x158e84 */                                   // 0x00158e6c: bnezl $v1, 0x158e84
-    func_0015ad38();  // 0x15acd0                                // 0x00158e74: jal 0x15acd0
+    func_0015acd0();  // 15acd0                                // 0x00158e74: jal 0x15acd0
     /* nop */                                                   // 0x00158e78: nop 
     if (v0 == s2) goto label_0x158e50;                          // 0x00158e7c: beq $v0, $s2, 0x158e50
     /* nop */                                                   // 0x00158e80: nop 
@@ -33,7 +33,7 @@ label_0x158e84:
     return func_00158c48();  // Tail call                        // 0x00158ea0: j 0x158bf8
     sp = sp + 0x30;                                             // 0x00158ea4: addiu $sp, $sp, 0x30
     sp = sp + -0x20;                                            // 0x00158ea8: addiu $sp, $sp, -0x20
-    func_0015b498();  // 0x15b470                                // 0x00158ebc: jal 0x15b470
+    func_0015b470();  // 15b470                                // 0x00158ebc: jal 0x15b470
     if (v0 == 0) goto label_0x158ee8;                           // 0x00158ec4: beqz $v0, 0x158ee8
     a1 = 0xff03 << 16;                                          // 0x00158ecc: lui $a1, 0xff03
     a1 = a1 | 0x20c;                                            // 0x00158edc: ori $a1, $a1, 0x20c

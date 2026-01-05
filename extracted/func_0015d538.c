@@ -10,17 +10,17 @@ void func_0015d538() {
     uint32_t local_0;
     
     sp = sp + -0x50;                                            // 0x0015d538: addiu $sp, $sp, -0x50
-    func_0015fcb0();  // 0x15fc80                                // 0x0015d55c: jal 0x15fc80
+    func_0015fc80();  // 15fc80                                // 0x0015d55c: jal 0x15fc80
     if (v0 != 0) goto label_0x15d580;                           // 0x0015d564: bnez $v0, 0x15d580
     /* nop */                                                   // 0x0015d568: nop 
     a0 = 0x22 << 16;                                            // 0x0015d56c: lui $a0, 0x22
-    func_001634a8();  // 0x163410                                // 0x0015d570: jal 0x163410
+    func_00163410();  // 163410                                // 0x0015d570: jal 0x163410
     a0 = &str_002274d0;  // "E201301: MWSFD: GetFps failed."    // 0x0015d574: addiu $a0, $a0, 0x74d0
     goto label_0x15d674;                                        // 0x0015d578: b 0x15d674
     *(uint32_t*)(s3) = 0;                                       // 0x0015d57c: sw $zero, 0($s3)
 label_0x15d580:
-    func_0015f820();  // 0x15f7e0                                // 0x0015d580: jal 0x15f7e0
-    func_00173cf0();  // 0x173c70                                // 0x0015d590: jal 0x173c70
+    func_0015f7e0();  // 15f7e0                                // 0x0015d580: jal 0x15f7e0
+    func_00173c70();  // 173c70                                // 0x0015d590: jal 0x173c70
     v1 = local_0;                                               // 0x0015d598: lw $v1, 0($sp)
     /* beqzl $v1, 0x15d674 */                                   // 0x0015d59c: beqzl $v1, 0x15d674
     *(uint32_t*)(s3) = 0;                                       // 0x0015d5a0: sw $zero, 0($s3)
@@ -33,13 +33,13 @@ label_0x15d580:
 label_0x15d5c0:
     if (v0 == 0) goto label_0x15d600;                           // 0x0015d5c0: beqz $v0, 0x15d600
     s2 = s2 + 1;                                                // 0x0015d5c4: addiu $s2, $s2, 1
-    func_0015e138();  // 0x15e0b0                                // 0x0015d5c8: jal 0x15e0b0
+    func_0015e0b0();  // 15e0b0                                // 0x0015d5c8: jal 0x15e0b0
     if (v0 != s5) goto label_0x15d600;                          // 0x0015d5d0: bne $v0, $s5, 0x15d600
-    func_00173d60();  // 0x173cf0                                // 0x0015d5d8: jal 0x173cf0
+    func_00173cf0();  // 173cf0                                // 0x0015d5d8: jal 0x173cf0
     a1 = local_0;                                               // 0x0015d5dc: lw $a1, 0($sp)
     v1 = *(int32_t*)((s0) + 0x84);                              // 0x0015d5e0: lw $v1, 0x84($s0)
     v1 = v1 + 1;                                                // 0x0015d5ec: addiu $v1, $v1, 1
-    func_00173cf0();  // 0x173c70                                // 0x0015d5f0: jal 0x173c70
+    func_00173c70();  // 173c70                                // 0x0015d5f0: jal 0x173c70
     *(uint32_t*)((s0) + 0x84) = v1;                             // 0x0015d5f4: sw $v1, 0x84($s0)
     goto label_0x15d5c0;                                        // 0x0015d5f8: b 0x15d5c0
     v0 = (s2 < s4) ? 1 : 0;                                     // 0x0015d5fc: slt $v0, $s2, $s4
@@ -48,20 +48,20 @@ label_0x15d600:
 label_0x15d604:
     /* beqzl $v1, 0x15d674 */                                   // 0x0015d604: beqzl $v1, 0x15d674
     *(uint32_t*)(s3) = 0;                                       // 0x0015d608: sw $zero, 0($s3)
-    func_0015dc08();  // 0x15db68                                // 0x0015d60c: jal 0x15db68
+    func_0015db68();  // 15db68                                // 0x0015d60c: jal 0x15db68
     v0 = *(int32_t*)((s0) + 0x7c);                              // 0x0015d614: lw $v0, 0x7c($s0)
     v1 = local_0;                                               // 0x0015d618: lw $v1, 0($sp)
     v0 = v0 + 1;                                                // 0x0015d620: addiu $v0, $v0, 1
     *(uint32_t*)((s0) + 0x7c) = v0;                             // 0x0015d624: sw $v0, 0x7c($s0)
-    func_0015db68();  // 0x15db20                                // 0x0015d62c: jal 0x15db20
+    func_0015db20();  // 15db20                                // 0x0015d62c: jal 0x15db20
     *(uint32_t*)((s0) + 0x78) = v1;                             // 0x0015d630: sw $v1, 0x78($s0)
     a1 = local_0;                                               // 0x0015d638: lw $a1, 0($sp)
-    func_0015d8e8();  // 0x15d768                                // 0x0015d63c: jal 0x15d768
-    func_0015de20();  // 0x15dd08                                // 0x0015d648: jal 0x15dd08
+    func_0015d768();  // 15d768                                // 0x0015d63c: jal 0x15d768
+    func_0015dd08();  // 15dd08                                // 0x0015d648: jal 0x15dd08
     a1 = local_0;                                               // 0x0015d64c: lw $a1, 0($sp)
-    func_0015d6e8();  // 0x15d698                                // 0x0015d654: jal 0x15d698
-    func_0015d768();  // 0x15d6e8                                // 0x0015d65c: jal 0x15d6e8
-    func_0015db20();  // 0x15da78                                // 0x0015d668: jal 0x15da78
+    func_0015d698();  // 15d698                                // 0x0015d654: jal 0x15d698
+    func_0015d6e8();  // 15d6e8                                // 0x0015d65c: jal 0x15d6e8
+    func_0015da78();  // 15da78                                // 0x0015d668: jal 0x15da78
     a1 = local_0;                                               // 0x0015d66c: lw $a1, 0($sp)
     *(uint32_t*)((s3) + 0x48) = v0;                             // 0x0015d670: sw $v0, 0x48($s3)
 label_0x15d674:

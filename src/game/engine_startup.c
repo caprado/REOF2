@@ -3,31 +3,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-/**
- * @category game/init
- * @status complete
- * @original N/A (new abstraction)
- * @description Centralized engine initialization replacing scattered PS2 startup code.
- *
- * ORIGINAL PS2 BEHAVIOR:
- * - Systems initialized in various places throughout main()
- * - Used hardcoded memory addresses for all state
- * - No centralized initialization order
- *
- * WINDOWS REPLACEMENT:
- * - Single initialization function with proper ordering
- * - All systems use GameData structure
- * - Clean error handling
- *
- * @windows_compatibility high
- * @author caprado
- */
-
-/**
- * @brief Initialize text rendering system
- * @description Allocates text array for in-game text rendering
- * @return true if successful, false on allocation failure
- */
 static bool initializeTextSystem(void) {
     // Allocate text array with default capacity
     g_game.textArrayCapacity = 32;
@@ -41,11 +16,6 @@ static bool initializeTextSystem(void) {
     return true;
 }
 
-/**
- * @brief Initialize resource system
- * @description Allocates resource entry array (32 bytes per entry, 256 entries)
- * @return true if successful, false on allocation failure
- */
 static bool initializeResourceSystem(void) {
     // PS2 used hardcoded address 0x00307d90 for resource array
     // Windows: Allocate dynamically (256 entries × 32 bytes = 8192 bytes)
@@ -62,9 +32,6 @@ static bool initializeResourceSystem(void) {
     return true;
 }
 
-/**
- * @brief Initialize all game engine systems
- */
 bool initializeEngine(void) {
     // Step 1: Initialize GameData structure
     initializeGameData();
@@ -79,20 +46,9 @@ bool initializeEngine(void) {
         return false;
     }
 
-    // Step 4: Graphics memory system initialization
-    // (Will be called on-demand by checkGraphicsMemoryReady)
-
-    // Step 5: Menu system initialization
-    // (Will be called by processMenuController on first frame)
-
-    processMenuController();
-
     return true;
 }
 
-/**
- * @brief Shutdown all game engine systems
- */
 void shutdownEngine(void) {
     // Free resource entry array
     if (g_game.resourceEntryBase != NULL) {

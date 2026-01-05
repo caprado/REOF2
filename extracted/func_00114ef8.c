@@ -12,13 +12,13 @@ void func_00114ef8() {
     s0 = s0 & v0;                                               // 0x00114f14: and $s0, $s0, $v0
     if (s0 == 0) goto label_0x114f28;                           // 0x00114f18: beqz $s0, 0x114f28
     /* nop */                                                   // 0x00114f1c: nop 
-    func_0011d378();  // 0x11d320                                // 0x00114f20: jal 0x11d320
+    func_0011d320();  // 11d320                                // 0x00114f20: jal 0x11d320
     /* nop */                                                   // 0x00114f24: nop 
 label_0x114f28:
     _DisableDmac();  // 0x114040                                // 0x00114f28: jal 0x114040
     /* memory sync */                                           // 0x00114f34: sync 
     if (s0 == 0) goto label_0x114f4c;                           // 0x00114f38: beqz $s0, 0x114f4c
-    func_0011d390();  // 0x11d378                                // 0x00114f40: jal 0x11d378
+    func_0011d378();  // 11d378                                // 0x00114f40: jal 0x11d378
     /* nop */                                                   // 0x00114f44: nop 
 label_0x114f4c:
     return;                                                     // 0x00114f58: jr $ra

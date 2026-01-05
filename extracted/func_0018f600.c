@@ -8,7 +8,7 @@ void func_0018f600() {
     
     sp = sp + -0x10;                                            // 0x0018f604: addiu $sp, $sp, -0x10
     a0 = 0x28 << 16;                                            // 0x0018f608: lui $a0, 0x28
-    func_00191330();  // 0x1912b0                                // 0x0018f610: jal 0x1912b0
+    func_001912b0();  // 1912b0                                // 0x0018f610: jal 0x1912b0
     a0 = a0 + 0x5320;                                           // 0x0018f614: addiu $a0, $a0, 0x5320
     FPU_F2 = *(float*)((gp) + -0x64ac);  // Load float          // 0x0018f618: lwc1 $f2, -0x64ac($gp)
     v1 = 0x3f00 << 16;                                          // 0x0018f61c: lui $v1, 0x3f00

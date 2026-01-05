@@ -11,7 +11,7 @@ void func_00101b08() {
     
     sp = sp + -0x30;                                            // 0x00101b08: addiu $sp, $sp, -0x30
     a0 = 3;                                                     // 0x00101b0c: addiu $a0, $zero, 3
-    func_001010c8();  // 0x100ea8                                // 0x00101b14: jal 0x100ea8
+    func_00100ea8();  // 100ea8                                // 0x00101b14: jal 0x100ea8
     if (v0 != 0) goto label_0x101b2c;                           // 0x00101b1c: bnez $v0, 0x101b2c
     v0 = 0x1f << 16;                                            // 0x00101b20: lui $v0, 0x1f
     goto label_0x101b90;                                        // 0x00101b24: b 0x101b90
@@ -23,7 +23,7 @@ label_0x101b2c:
     local_0 = 0;                                                // 0x00101b38: sw $zero, 0($sp)
     a1 = 4;                                                     // 0x00101b3c: addiu $a1, $zero, 4
     t2 = 4;                                                     // 0x00101b50: addiu $t2, $zero, 4
-    func_001178a0();  // 0x1176a8                                // 0x00101b54: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x00101b54: jal 0x1176a8
     if (v0 >= 0) goto label_0x101b78;                           // 0x00101b5c: bgez $v0, 0x101b78
     v1 = 0x1f << 16;                                            // 0x00101b60: lui $v1, 0x1f
     v0 = 0x1f << 16;                                            // 0x00101b64: lui $v0, 0x1f

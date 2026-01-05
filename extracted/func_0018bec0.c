@@ -19,7 +19,7 @@ label_0x18bed0:
     v1 = *(int32_t*)((a0) + 0x1c);                              // 0x0018bef0: lw $v1, 0x1c($a0)
     if (v1 == 0) goto label_0x18bf04;                           // 0x0018bef4: beqz $v1, 0x18bf04
     /* nop */                                                   // 0x0018bef8: nop 
-    func_0018c030();  // 0x18bf30                                // 0x0018befc: jal 0x18bf30
+    func_0018bf30();  // 18bf30                                // 0x0018befc: jal 0x18bf30
     /* nop */                                                   // 0x0018bf00: nop 
 label_0x18bf04:
     s0 = s0 + 1;                                                // 0x0018bf04: addiu $s0, $s0, 1

@@ -7,14 +7,14 @@ void func_0015ec18() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x10;                                            // 0x0015ec18: addiu $sp, $sp, -0x10
-    func_00171d88();  // 0x171d38                                // 0x0015ec20: jal 0x171d38
+    func_00171d38();  // 171d38                                // 0x0015ec20: jal 0x171d38
     a0 = g_002278f0;  // Global at 0x002278f0                   // 0x0015ec24: lw $a0, 0x40($a0)
     a0 = 1;                                                     // 0x0015ec28: addiu $a0, $zero, 1
     if (v0 == 0) goto label_0x15ec50;                           // 0x0015ec2c: beqz $v0, 0x15ec50
     if (v0 == a0) goto label_0x15ec50;                          // 0x0015ec34: beq $v0, $a0, 0x15ec50
     v1 = 1;                                                     // 0x0015ec38: addiu $v1, $zero, 1
     a0 = 0x22 << 16;                                            // 0x0015ec3c: lui $a0, 0x22
-    func_001634a8();  // 0x163410                                // 0x0015ec44: jal 0x163410
+    func_00163410();  // 163410                                // 0x0015ec44: jal 0x163410
     a0 = &str_002278b0;  // "E0203263: mw_sfd_start_ex: RESET failed." // 0x0015ec48: addiu $a0, $a0, 0x78b0
 label_0x15ec50:
     return;                                                     // 0x0015ec58: jr $ra

@@ -7,7 +7,7 @@ void func_00138950() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x00138950: addiu $sp, $sp, -0x20
-    func_0013ef30();  // 0x13ef18                                // 0x0013896c: jal 0x13ef18
+    func_0013ef18();  // 13ef18                                // 0x0013896c: jal 0x13ef18
     v0 = 2;                                                     // 0x00138974: addiu $v0, $zero, 2
     if (s0 == v0) goto label_0x138998;                          // 0x00138978: beq $s0, $v0, 0x138998
     v1 = ((unsigned)s0 < (unsigned)2) ? 1 : 0;                  // 0x0013897c: sltiu $v1, $s0, 2
@@ -21,13 +21,13 @@ label_0x138998:
     a0 = *(int32_t*)(s1);                                       // 0x00138998: lw $a0, 0($s1)
     a1 = *(int32_t*)((s1) + 4);                                 // 0x0013899c: lw $a1, 4($s1)
     a2 = *(int32_t*)((s1) + 8);                                 // 0x001389a0: lw $a2, 8($s1)
-    func_00138dd0();  // 0x138c38                                // 0x001389a4: jal 0x138c38
+    func_00138c38();  // 138c38                                // 0x001389a4: jal 0x138c38
     a3 = *(int32_t*)((s1) + 0xc);                               // 0x001389a8: lw $a3, 0xc($s1)
     goto label_0x1389fc;                                        // 0x001389ac: b 0x1389fc
     *(uint32_t*)(s1) = v0;                                      // 0x001389b0: sw $v0, 0($s1)
     /* nop */                                                   // 0x001389b4: nop 
 label_0x1389b8:
-    func_00138e38();  // 0x138dd0                                // 0x001389b8: jal 0x138dd0
+    func_00138dd0();  // 138dd0                                // 0x001389b8: jal 0x138dd0
     a0 = *(int32_t*)(s1);                                       // 0x001389bc: lw $a0, 0($s1)
     goto label_0x1389fc;                                        // 0x001389c0: b 0x1389fc
     /* nop */                                                   // 0x001389c4: nop 
@@ -45,7 +45,7 @@ label_0x1389c8:
     a0 = g_002030e0;  // Global at 0x002030e0                   // 0x001389f0: lw $a0, 0x30e0($a0)
     /* call function at address in v0 */                        // 0x001389f4: jalr $v0
 label_0x1389fc:
-    func_0013ef80();  // 0x13ef30                                // 0x001389fc: jal 0x13ef30
+    func_0013ef30();  // 13ef30                                // 0x001389fc: jal 0x13ef30
     /* nop */                                                   // 0x00138a00: nop 
     return;                                                     // 0x00138a18: jr $ra
     sp = sp + 0x20;                                             // 0x00138a1c: addiu $sp, $sp, 0x20

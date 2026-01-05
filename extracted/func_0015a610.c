@@ -25,7 +25,7 @@ void func_0015a610() {
     s1 = s1 + -0x20;                                            // 0x0015a684: addiu $s1, $s1, -0x20
     s2 = s2 + 4;                                                // 0x0015a688: addiu $s2, $s2, 4
 label_0x15a68c:
-    func_0015a8f8();  // 0x15a730                                // 0x0015a68c: jal 0x15a730
+    func_0015a730();  // 15a730                                // 0x0015a68c: jal 0x15a730
     a2 = *(int32_t*)((s5) + 0x34c);                             // 0x0015a690: lw $a2, 0x34c($s5)
     v1 = *(int32_t*)(s4);                                       // 0x0015a694: lw $v1, 0($s4)
     v0 = s1 & 7;                                                // 0x0015a69c: andi $v0, $s1, 7
@@ -35,7 +35,7 @@ label_0x15a68c:
     a1 = a1 >> 3;                                               // 0x0015a6b0: sra $a1, $a1, 3
     a1 = s2 + a1;                                               // 0x0015a6b8: addu $a1, $s2, $a1
     a1 = a1 + -4;                                               // 0x0015a6c0: addiu $a1, $a1, -4
-    func_00140598();  // 0x1404a0                                // 0x0015a6c4: jal 0x1404a0
+    func_001404a0();  // 1404a0                                // 0x0015a6c4: jal 0x1404a0
     a1 = a1 - v1;                                               // 0x0015a6c8: subu $a1, $a1, $v1
     v1 = *(int32_t*)(s3);                                       // 0x0015a6cc: lw $v1, 0($s3)
     v0 = *(int32_t*)((v1) + 0x20);                              // 0x0015a6d8: lw $v0, 0x20($v1)
@@ -44,7 +44,7 @@ label_0x15a68c:
     a1 = 1;                                                     // 0x0015a6e8: addiu $a1, $zero, 1
     v0 = *(int32_t*)((v1) + 0x1c);                              // 0x0015a6f0: lw $v0, 0x1c($v1)
     /* call function at address in v0 */                        // 0x0015a6f4: jalr $v0
-    func_0015ac00();  // 0x15aaa8                                // 0x0015a6fc: jal 0x15aaa8
+    func_0015aaa8();  // 15aaa8                                // 0x0015a6fc: jal 0x15aaa8
     return;                                                     // 0x0015a724: jr $ra
     sp = sp + 0x50;                                             // 0x0015a728: addiu $sp, $sp, 0x50
 }

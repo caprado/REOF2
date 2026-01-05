@@ -8,15 +8,15 @@ void func_00136ca8() {
     
     sp = sp + -0x20;                                            // 0x00136ca8: addiu $sp, $sp, -0x20
     if (s0 != 0) goto label_0x136cd4;                           // 0x00136cc0: bnez $s0, 0x136cd4
-    func_00135548();  // 0x135538                                // 0x00136cc8: jal 0x135538
+    func_00135538();  // 135538                                // 0x00136cc8: jal 0x135538
     /* nop */                                                   // 0x00136ccc: nop 
 label_0x136cd4:
-    func_00136ca8();  // 0x136c58                                // 0x00136cd4: jal 0x136c58
+    func_00136c58();  // 136c58                                // 0x00136cd4: jal 0x136c58
     v1 = 0x25 << 16;                                            // 0x00136cdc: lui $v1, 0x25
     s2 = v1 + 0x39f8;                                           // 0x00136ce0: addiu $s2, $v1, 0x39f8
     v1 = 1;                                                     // 0x00136ce4: addiu $v1, $zero, 1
     if (v0 != v1) goto label_0x136d28;                          // 0x00136cec: bne $v0, $v1, 0x136d28
-    func_0010ae00();  // 0x10ac68                                // 0x00136cf4: jal 0x10ac68
+    func_0010ac68();  // 10ac68                                // 0x00136cf4: jal 0x10ac68
     /* nop */                                                   // 0x00136cf8: nop 
     a1 = 0x22 << 16;                                            // 0x00136cfc: lui $a1, 0x22
     a1 = &str_00224c58;  // "cvFsGetNumTr64 #1:handle error"    // 0x00136d1c: addiu $a1, $a1, 0x4c58

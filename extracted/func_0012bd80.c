@@ -26,7 +26,7 @@ void func_0012bd80() {
     local_8 = a2;                                               // 0x0012bdc4: sw $a2, 8($sp)
 label_0x12bdc8:
 label_0x12bdcc:
-    func_0012b470();  // 0x12b2f8                                // 0x0012bdcc: jal 0x12b2f8
+    func_0012b2f8();  // 12b2f8                                // 0x0012bdcc: jal 0x12b2f8
     return;                                                     // 0x0012bdd8: jr $ra
     sp = sp + 0x30;                                             // 0x0012bddc: addiu $sp, $sp, 0x30
 }

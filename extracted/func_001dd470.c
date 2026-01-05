@@ -42,7 +42,7 @@ label_0x1dd4f8:
     goto label_0x1dd514;                                        // 0x001dd504: b 0x1dd514
     s2 = v1 + v0;                                               // 0x001dd508: addu $s2, $v1, $v0
 label_0x1dd50c:
-    func_00116598();  // 0x116508                                // 0x001dd50c: jal 0x116508
+    func_00116508();  // 116508                                // 0x001dd50c: jal 0x116508
     a0 = &str_00248350;  // "BIO-VOL2"                          // 0x001dd510: addiu $a0, $a0, -0x7cb0
 label_0x1dd514:
     if (s0 == 0) goto label_0x1dd5ac;                           // 0x001dd514: beqz $s0, 0x1dd5ac
@@ -57,7 +57,7 @@ label_0x1dd530:
     if (a1 != v1) goto label_0x1dd558;                          // 0x001dd53c: bne $a1, $v1, 0x1dd558
     v0 = 0 | 0x8000;                                            // 0x001dd540: ori $v0, $zero, 0x8000
     a0 = s3 & 0xff;                                             // 0x001dd544: andi $a0, $s3, 0xff
-    func_001dd638();  // 0x1dd5c8                                // 0x001dd548: jal 0x1dd5c8
+    func_001dd5c8();  // 1dd5c8                                // 0x001dd548: jal 0x1dd5c8
     a1 = s0 & 0xff;                                             // 0x001dd54c: andi $a1, $s0, 0xff
     v0 = 0 | 0x8000;                                            // 0x001dd554: ori $v0, $zero, 0x8000
 label_0x1dd558:

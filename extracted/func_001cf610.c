@@ -7,19 +7,19 @@ void func_001cf610() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x10;                                            // 0x001cf610: addiu $sp, $sp, -0x10
-    func_001d07c0();  // 0x1d06b0                                // 0x001cf618: jal 0x1d06b0
+    func_001d06b0();  // 1d06b0                                // 0x001cf618: jal 0x1d06b0
     /* nop */                                                   // 0x001cf61c: nop 
-    func_001cef30();  // 0x1ceef0                                // 0x001cf620: jal 0x1ceef0
+    func_001ceef0();  // 1ceef0                                // 0x001cf620: jal 0x1ceef0
     /* nop */                                                   // 0x001cf624: nop 
     a0 = *(int32_t*)((gp) + -0x6574);                           // 0x001cf628: lw $a0, -0x6574($gp)
     a2 = 0x24 << 16;                                            // 0x001cf62c: lui $a2, 0x24
     a1 = 1;                                                     // 0x001cf630: addiu $a1, $zero, 1
     a2 = a2 + 0x3aa8;                                           // 0x001cf634: addiu $a2, $a2, 0x3aa8
     *(uint32_t*)((gp) + -0x62cc) = 0;                           // 0x001cf640: sw $zero, -0x62cc($gp)
-    func_001ced80();  // 0x1cebd0                                // 0x001cf644: jal 0x1cebd0
+    func_001cebd0();  // 1cebd0                                // 0x001cf644: jal 0x1cebd0
     *(uint32_t*)((gp) + -0x62c8) = 0;                           // 0x001cf648: sw $zero, -0x62c8($gp)
     a0 = 0x24 << 16;                                            // 0x001cf64c: lui $a0, 0x24
-    func_0011c140();  // 0x11c0a0                                // 0x001cf650: jal 0x11c0a0
+    func_0011c0a0();  // 11c0a0                                // 0x001cf650: jal 0x11c0a0
     a0 = a0 + 0x3ab0;                                           // 0x001cf654: addiu $a0, $a0, 0x3ab0
     at = (v0 < 0) ? 1 : 0;                                      // 0x001cf658: slt $at, $v0, $zero
     if (at != 0) goto label_0x1cf6cc;                           // 0x001cf65c: bnez $at, 0x1cf6cc
@@ -52,13 +52,13 @@ void func_001cf610() {
     g_0032d880 = v0;  // Global at 0x0032d880                   // 0x001cf6c8: sw $v0, -0x2780($at)
 label_0x1cf6cc:
     a0 = *(int32_t*)((gp) + -0x6568);                           // 0x001cf6cc: lw $a0, -0x6568($gp)
-    func_001cebd0();  // 0x1cea30                                // 0x001cf6dc: jal 0x1cea30
+    func_001cea30();  // 1cea30                                // 0x001cf6dc: jal 0x1cea30
     a0 = 0x32 << 16;                                            // 0x001cf6e4: lui $a0, 0x32
     v0 = 0x127 << 16;                                           // 0x001cf6e8: lui $v0, 0x127
     a0 = a0 + 0x59c0;                                           // 0x001cf6ec: addiu $a0, $a0, 0x59c0
-    func_001cf5f0();  // 0x1cf580                                // 0x001cf6f0: jal 0x1cf580
+    func_001cf580();  // 1cf580                                // 0x001cf6f0: jal 0x1cf580
     a1 = v0 | 0x10;                                             // 0x001cf6f4: ori $a1, $v0, 0x10
-    func_001cf580();  // 0x1cf420                                // 0x001cf6f8: jal 0x1cf420
+    func_001cf420();  // 1cf420                                // 0x001cf6f8: jal 0x1cf420
     /* nop */                                                   // 0x001cf6fc: nop 
     return;                                                     // 0x001cf708: jr $ra
     sp = sp + 0x10;                                             // 0x001cf70c: addiu $sp, $sp, 0x10

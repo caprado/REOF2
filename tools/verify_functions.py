@@ -29,6 +29,12 @@ class ValidationError:
     severity: str = "error"  # error, warning
 
 
+# Categories that don't require refactored code (e.g., PS2 kernel stubs)
+SKIP_REFACTOR_CATEGORIES = {
+    'ps2-kernel-not-needed',
+}
+
+
 def find_refactored_functions(src_dir):
     """Find all functions in src/ with @status complete."""
     functions = []
@@ -54,6 +60,11 @@ def find_refactored_functions(src_dir):
                     original_match = re.search(r'@original\s+(\w+)', doc_block)
                     category_match = re.search(r'@category\s+([^\s\*]+)', doc_block)
 
+                    # Skip functions without @category tag - these are helper functions
+                    # that don't map to extracted functions and shouldn't be validated
+                    if not category_match:
+                        continue
+
                     # Find the function name after the doc block
                     after_doc = content[block_end:block_end + 500]
                     func_match = re.search(r'^\s*(?:static\s+)?(?:inline\s+)?[\w\*]+\s+(\w+)\s*\(',
@@ -64,7 +75,7 @@ def find_refactored_functions(src_dir):
                             'file': filepath,
                             'name': func_match.group(1),
                             'original': original_match.group(1) if original_match else None,
-                            'category': category_match.group(1) if category_match else None,
+                            'category': category_match.group(1),
                             'doc_block': doc_block
                         })
 
@@ -86,8 +97,9 @@ def find_extracted_function(extracted_dir, func_name):
                 with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
                     content = f.read()
 
-                # Look for this function definition
-                pattern = rf'^\s*(?:static\s+)?(?:inline\s+)?[\w\*]+\s+{re.escape(func_name)}\s*\('
+                # Look for this function definition (exclude return statements and other keywords)
+                # Must have a type that's not a C keyword like return, if, while, etc.
+                pattern = rf'^\s*(?:static\s+)?(?:inline\s+)?(?!return\b|if\b|while\b|for\b|switch\b)[\w\*]+\s+{re.escape(func_name)}\s*\('
                 if re.search(pattern, content, re.MULTILINE):
                     return filepath, content
 
@@ -99,8 +111,8 @@ def find_extracted_function(extracted_dir, func_name):
 
 def extract_function_with_doc(content, func_name):
     """Extract a function and its preceding doc block from content."""
-    # Find the function definition
-    func_pattern = rf'^\s*(?:static\s+)?(?:inline\s+)?[\w\*]+\s+{re.escape(func_name)}\s*\([^)]*\)\s*{{'
+    # Find the function definition (exclude keywords like return, if, while, etc.)
+    func_pattern = rf'^\s*(?:static\s+)?(?:inline\s+)?(?!return\b|if\b|while\b|for\b|switch\b)[\w\*]+\s+{re.escape(func_name)}\s*\([^)]*\)\s*{{'
     func_match = re.search(func_pattern, content, re.MULTILINE)
 
     if not func_match:
@@ -150,28 +162,41 @@ def check_extracted_tag(doc_block):
     """
     Check if extracted function has proper minimal tag.
     Expected format: /** @category [category] @status complete @author caprado */
+    Also accepts format with colons: /** @category: [category] @status: complete @author: caprado */
     """
     if not doc_block:
-        return False, "No documentation tag found"
+        return False, "No documentation tag found", None
 
-    # Check for required components
-    has_category = bool(re.search(r'@category\s+\S+', doc_block))
-    has_status = bool(re.search(r'@status\s+complete', doc_block))
-    has_author = bool(re.search(r'@author\s+\S+', doc_block))
+    # Extract category (accept with or without colon)
+    category_match = re.search(r'@category:?\s+(\S+)', doc_block)
+    category = category_match.group(1) if category_match else None
+
+    # Check for required components (accept with or without colon)
+    has_category = bool(category_match)
+    has_status = bool(re.search(r'@status:?\s+complete', doc_block))
+    has_author = bool(re.search(r'@author:?\s+\S+', doc_block))
 
     if not has_category:
-        return False, "Missing @category tag"
+        return False, "Missing @category tag", None
     if not has_status:
-        return False, "Missing @status complete tag"
+        return False, "Missing @status complete tag", category
     if not has_author:
-        return False, "Missing @author tag"
+        return False, "Missing @author tag", category
 
     # Check it's a single-line comment (extracted style)
     # Should be like: /** @category ... @status complete @author ... */
     if doc_block.count('\n') > 1:
-        return False, "Extracted tag should be single-line format: /** @category ... @status complete @author ... */"
+        return False, "Extracted tag should be single-line format: /** @category ... @status complete @author ... */", category
 
-    return True, None
+    return True, None, category
+
+
+def is_skip_refactor_category(category: Optional[str]) -> bool:
+    """Check if a category should skip refactored code verification."""
+    if not category:
+        return False
+    # Check exact match or if it starts with a skip category prefix
+    return category.lower() in SKIP_REFACTOR_CATEGORIES
 
 
 def check_refactored_doc_block(doc_block: Optional[str]) -> list[str]:
@@ -296,7 +321,7 @@ def verify_functions(src_dir, extracted_dir, baseline_file=None):
 
         # Check 4: Extracted function has proper tag (single-line format)
         doc_block, _, _ = extract_function_with_doc(extracted_content, original_name)
-        tag_valid, tag_error = check_extracted_tag(doc_block)
+        tag_valid, tag_error, extracted_category = check_extracted_tag(doc_block)
 
         if not tag_valid:
             errors.append(ValidationError(
@@ -305,6 +330,11 @@ def verify_functions(src_dir, extracted_dir, baseline_file=None):
                 error_type="invalid_extracted_tag",
                 message=f"Extracted function '{original_name}': {tag_error}"
             ))
+
+        # Skip further checks for categories that don't need refactored code
+        # (e.g., PS2 kernel stubs that won't be ported to Windows)
+        if is_skip_refactor_category(extracted_category):
+            continue
 
         # Check 5: Function body hasn't been modified (only tag added)
         current_hash = get_function_body_hash(extracted_content, original_name)
@@ -452,8 +482,8 @@ def main():
                     with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
                         content = f.read()
 
-                    # Find all functions
-                    pattern = r'^\s*(?:static\s+)?(?:inline\s+)?[\w\*]+\s+(\w+)\s*\('
+                    # Find all functions (exclude keywords like return, if, while, etc.)
+                    pattern = r'^\s*(?:static\s+)?(?:inline\s+)?(?!return\b|if\b|while\b|for\b|switch\b)[\w\*]+\s+(\w+)\s*\('
                     for match in re.finditer(pattern, content, re.MULTILINE):
                         func_name = match.group(1)
                         h = get_function_body_hash(content, func_name)

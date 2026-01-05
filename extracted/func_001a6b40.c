@@ -70,7 +70,7 @@ label_0x1a6c10:
     a2 = sp + 0x1f;                                             // 0x001a6c1c: addiu $a2, $sp, 0x1f
     v0 = v1 + v0;                                               // 0x001a6c20: addu $v0, $v1, $v0
     a0 = *(uint8_t*)(v0);                                       // 0x001a6c24: lbu $a0, 0($v0)
-    func_00189860();  // 0x189770                                // 0x001a6c28: jal 0x189770
+    func_00189770();  // 189770                                // 0x001a6c28: jal 0x189770
     t0 = sp + 0x1c;                                             // 0x001a6c2c: addiu $t0, $sp, 0x1c
     v0 = 1;                                                     // 0x001a6c30: addiu $v0, $zero, 1
 label_0x1a6c34:

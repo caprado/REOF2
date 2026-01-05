@@ -11,7 +11,7 @@ void func_001b42c0() {
     /* FPU: dpa.w.ph $ac0, $sp, $s3 */                          // 0x001b42d4: dpa.w.ph $ac0, $sp, $s3
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001b42e4: addu.qb $zero, $sp, $s1
     a0 = 2;                                                     // 0x001b42f8: addiu $a0, $zero, 2
-    func_001a9030();  // 0x1a8fc0                                // 0x001b42fc: jal 0x1a8fc0
+    func_001a8fc0();  // 1a8fc0                                // 0x001b42fc: jal 0x1a8fc0
     if (v0 == 0) goto label_0x1b4338;                           // 0x001b4304: beqz $v0, 0x1b4338
     at = 0x31 << 16;                                            // 0x001b430c: lui $at, 0x31
     v0 = g_003137a0;  // Global at 0x003137a0                   // 0x001b4310: lbu $v0, 0x37a0($at)
@@ -25,7 +25,7 @@ void func_001b42c0() {
     /* nop */                                                   // 0x001b4330: nop 
 label_0x1b4334:
 label_0x1b4338:
-    func_001b42c0();  // 0x1b4180                                // 0x001b434c: jal 0x1b4180
+    func_001b4180();  // 1b4180                                // 0x001b434c: jal 0x1b4180
 label_0x1b4354:
     /* FPU: aver_u.h $w1, $w0, $w21 */                          // 0x001b4358: aver_u.h $w1, $w0, $w21
     /* FPU: xori.b $w1, $w0, 0xb4 */                            // 0x001b435c: xori.b $w1, $w0, 0xb4

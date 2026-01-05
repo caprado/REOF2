@@ -22,7 +22,7 @@ void func_0016eff8() {
     v0 = g_00230d74;  // Global at 0x00230d74                   // 0x0016f048: lw $v0, 0x20($s3)
     v1 = g_00230de0;  // Global at 0x00230de0                   // 0x0016f04c: lw $v1, 0x120($s2)
     v0 = v0 + v1;                                               // 0x0016f050: addu $v0, $v0, $v1
-    func_00171200();  // 0x1711f0                                // 0x0016f054: jal 0x1711f0
+    func_001711f0();  // 1711f0                                // 0x0016f054: jal 0x1711f0
     *(uint32_t*)((s1) + 0x24) = v0;                             // 0x0016f058: sw $v0, 0x24($s1)
     if (v0 == 0) goto label_0x16f0bc;                           // 0x0016f05c: beqz $v0, 0x16f0bc
     v0 = *(int32_t*)((s1) + 0x3c);                              // 0x0016f064: lw $v0, 0x3c($s1)
@@ -30,7 +30,7 @@ void func_0016eff8() {
     s0 = 0x23 << 16;                                            // 0x0016f06c: lui $s0, 0x23
     s0 = s0 + v0;                                               // 0x0016f070: addu $s0, $s0, $v0
     s0 = g_00229370;  // Global at 0x00229370                   // 0x0016f074: lw $s0, -0x6c90($s0)
-    func_00171b28();  // 0x171b18                                // 0x0016f078: jal 0x171b18
+    func_00171b18();  // 171b18                                // 0x0016f078: jal 0x171b18
     /* nop */                                                   // 0x0016f07c: nop 
     v1 = g_00230ddc;  // Global at 0x00230ddc                   // 0x0016f080: lw $v1, 0x11c($s2)
     a0 = g_00230d78;  // Global at 0x00230d78                   // 0x0016f084: lw $a0, 0x24($s3)
@@ -39,7 +39,7 @@ void func_0016eff8() {
     a1 = a1 - v0;                                               // 0x0016f094: subu $a1, $a1, $v0
     a1 = a1 << 2;                                               // 0x0016f098: sll $a1, $a1, 2
     a1 = a1 + v0;                                               // 0x0016f09c: addu $a1, $a1, $v0
-    func_0015b7b0();  // 0x15b740                                // 0x0016f0a0: jal 0x15b740
+    func_0015b740();  // 15b740                                // 0x0016f0a0: jal 0x15b740
     a1 = a1 << 3;                                               // 0x0016f0a4: sll $a1, $a1, 3
     *(uint32_t*)((s1) + 0x20) = v0;                             // 0x0016f0a8: sw $v0, 0x20($s1)
     v1 = g_00230de0;  // Global at 0x00230de0                   // 0x0016f0ac: lw $v1, 0x120($s2)

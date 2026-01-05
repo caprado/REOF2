@@ -18,7 +18,7 @@ void func_00180698() {
     v0 = v1 + 0x80;                                             // 0x001806bc: addiu $v0, $v1, 0x80
     local_4 = v0;                                               // 0x001806c0: sw $v0, 4($sp)
     a1 = a0 + 0x100;                                            // 0x001806c4: addiu $a1, $a0, 0x100
-    func_00114c70();  // 0x114bd8                                // 0x001806c8: jal 0x114bd8
+    func_00114bd8();  // 114bd8                                // 0x001806c8: jal 0x114bd8
     local_0 = v1;                                               // 0x001806cc: sw $v1, 0($sp)
     a0 = local_0;                                               // 0x001806d0: lw $a0, 0($sp)
     a1 = local_4;                                               // 0x001806d4: lw $a1, 4($sp)

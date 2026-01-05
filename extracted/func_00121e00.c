@@ -52,7 +52,7 @@ label_0x121e68:
     goto label_0x121fa0;                                        // 0x00121eb0: b 0x121fa0
     /* FPU: mul.s $f12, $f13, $f13 */                           // 0x00121eb4: mul.s $f12, $f13, $f13
 label_0x121eb8:
-    func_00122190();  // 0x122168                                // 0x00121eb8: jal 0x122168
+    func_00122168();  // 122168                                // 0x00121eb8: jal 0x122168
     /* nop */                                                   // 0x00121ebc: nop 
     v0 = 0x3f97 << 16;                                          // 0x00121ec0: lui $v0, 0x3f97
     v0 = v0 | 0xffff;                                           // 0x00121ec4: ori $v0, $v0, 0xffff

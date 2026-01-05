@@ -1,3 +1,4 @@
+/** @category system/ps2 @status complete @author caprado */
 void func_00116ac8() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
@@ -7,7 +8,7 @@ void func_00116ac8() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x10;                                            // 0x00116ad4: addiu $sp, $sp, -0x10
-    func_00116ac8();  // 0x116990                                // 0x00116af0: jal 0x116990
+    func_00116990();  // 116990                                // 0x00116af0: jal 0x116990
     return;                                                     // 0x00116afc: jr $ra
     sp = sp + 0x10;                                             // 0x00116b00: addiu $sp, $sp, 0x10
 }

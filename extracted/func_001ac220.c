@@ -53,14 +53,14 @@ label_0x1ac2f0:
     v0 = *(uint8_t*)((s2) + 7);                                 // 0x001ac2f0: lbu $v0, 7($s2)
     if (v0 == 0) goto label_0x1ac350;                           // 0x001ac2f4: beqz $v0, 0x1ac350
     a0 = 1;                                                     // 0x001ac2f8: addiu $a0, $zero, 1
-    func_001ae690();  // 0x1ae5c0                                // 0x001ac2fc: jal 0x1ae5c0
+    func_001ae5c0();  // 1ae5c0                                // 0x001ac2fc: jal 0x1ae5c0
     /* nop */                                                   // 0x001ac300: nop 
     v0 = v0 & 0xffff;                                           // 0x001ac304: andi $v0, $v0, 0xffff
     s1 = 1;                                                     // 0x001ac308: addiu $s1, $zero, 1
     v1 = v0 & 1;                                                // 0x001ac30c: andi $v1, $v0, 1
     a0 = 1;                                                     // 0x001ac310: addiu $a0, $zero, 1
     v0 = -1;                                                    // 0x001ac314: addiu $v0, $zero, -1
-    func_001ae690();  // 0x1ae5c0                                // 0x001ac318: jal 0x1ae5c0
+    func_001ae5c0();  // 1ae5c0                                // 0x001ac318: jal 0x1ae5c0
     if (v1 == 0) s1 = v0;                                       // 0x001ac31c: movz $s1, $v0, $v1
     v1 = *(uint8_t*)((s2) + 7);                                 // 0x001ac320: lbu $v1, 7($s2)
     a0 = v0 & 0xffff;                                           // 0x001ac324: andi $a0, $v0, 0xffff
@@ -79,7 +79,7 @@ label_0x1ac350:
     v0 = v0 + 0x2000;                                           // 0x001ac354: addiu $v0, $v0, 0x2000
     s3 = v0 & 0x3fff;                                           // 0x001ac358: andi $s3, $v0, 0x3fff
 label_0x1ac35c:
-    func_001ae690();  // 0x1ae5c0                                // 0x001ac35c: jal 0x1ae5c0
+    func_001ae5c0();  // 1ae5c0                                // 0x001ac35c: jal 0x1ae5c0
     a0 = 1;                                                     // 0x001ac360: addiu $a0, $zero, 1
     v0 = v0 & 0xffff;                                           // 0x001ac364: andi $v0, $v0, 0xffff
     s1 = 1;                                                     // 0x001ac368: addiu $s1, $zero, 1
@@ -89,7 +89,7 @@ label_0x1ac35c:
     v0 = *(uint8_t*)((s2) + 6);                                 // 0x001ac378: lbu $v0, 6($s2)
     if (v0 == 0) goto label_0x1ac3b4;                           // 0x001ac37c: beqz $v0, 0x1ac3b4
     a0 = 1;                                                     // 0x001ac380: addiu $a0, $zero, 1
-    func_001ae690();  // 0x1ae5c0                                // 0x001ac384: jal 0x1ae5c0
+    func_001ae5c0();  // 1ae5c0                                // 0x001ac384: jal 0x1ae5c0
     /* nop */                                                   // 0x001ac388: nop 
     v1 = *(uint8_t*)((s2) + 6);                                 // 0x001ac38c: lbu $v1, 6($s2)
     a0 = v0 & 0xffff;                                           // 0x001ac390: andi $a0, $v0, 0xffff
@@ -164,7 +164,7 @@ label_0x1ac470:
     a0 = a0 << 7;                                               // 0x001ac4a8: sll $a0, $a0, 7
     v1 = v1 & 0x7f;                                             // 0x001ac4ac: andi $v1, $v1, 0x7f
     v1 = a0 | v1;                                               // 0x001ac4b0: or $v1, $a0, $v1
-    func_001a6f70();  // 0x1a6e60                                // 0x001ac4b4: jal 0x1a6e60
+    func_001a6e60();  // 1a6e60                                // 0x001ac4b4: jal 0x1a6e60
     a0 = v0 | v1;                                               // 0x001ac4b8: or $a0, $v0, $v1
     if (v0 >= 0) goto label_0x1ac518;                           // 0x001ac4bc: bgez $v0, 0x1ac518
     /* nop */                                                   // 0x001ac4c0: nop 
@@ -182,7 +182,7 @@ label_0x1ac4cc:
     a0 = a0 << 7;                                               // 0x001ac4ec: sll $a0, $a0, 7
     v1 = v1 & 0x7f;                                             // 0x001ac4f0: andi $v1, $v1, 0x7f
     v1 = a0 | v1;                                               // 0x001ac4f4: or $v1, $a0, $v1
-    func_001a7070();  // 0x1a6f70                                // 0x001ac4f8: jal 0x1a6f70
+    func_001a6f70();  // 1a6f70                                // 0x001ac4f8: jal 0x1a6f70
     a0 = v0 | v1;                                               // 0x001ac4fc: or $a0, $v0, $v1
     if (v0 >= 0) goto label_0x1ac518;                           // 0x001ac500: bgez $v0, 0x1ac518
     /* nop */                                                   // 0x001ac504: nop 

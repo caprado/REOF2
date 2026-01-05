@@ -29,7 +29,7 @@ label_0x171e60:
     if (v0 != 0) goto label_0x171e94;                           // 0x00171e7c: bnez $v0, 0x171e94
     *(uint32_t*)((v1) + 0x54) = v0;                             // 0x00171e80: sw $v0, 0x54($v1)
 label_0x171e88:
-    func_00171f10();  // 0x171ea8                                // 0x00171e88: jal 0x171ea8
+    func_00171ea8();  // 171ea8                                // 0x00171e88: jal 0x171ea8
     /* nop */                                                   // 0x00171e8c: nop 
 label_0x171e94:
 label_0x171e98:

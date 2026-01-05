@@ -28,11 +28,11 @@ void func_001dc4f0() {
     a1 = 1;                                                     // 0x001dc540: addiu $a1, $zero, 1
     a2 = 1;                                                     // 0x001dc544: addiu $a2, $zero, 1
     t0 = 0x10;                                                  // 0x001dc548: addiu $t0, $zero, 0x10
-    func_001178a0();  // 0x1176a8                                // 0x001dc54c: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x001dc54c: jal 0x1176a8
     t2 = 0x90;                                                  // 0x001dc550: addiu $t2, $zero, 0x90
     if (v0 == 0) goto label_0x1dc570;                           // 0x001dc554: beqz $v0, 0x1dc570
     a0 = 0x25 << 16;                                            // 0x001dc558: lui $a0, 0x25
-    func_00116598();  // 0x116508                                // 0x001dc560: jal 0x116508
+    func_00116508();  // 116508                                // 0x001dc560: jal 0x116508
     a0 = &str_00248270;  // "sceUsbKbRead: sceSifCallRpc -> %d\n" // 0x001dc564: addiu $a0, $a0, -0x7d90
     goto label_0x1dc588;                                        // 0x001dc568: b 0x1dc588
     v0 = -2;                                                    // 0x001dc56c: addiu $v0, $zero, -2

@@ -53,7 +53,7 @@ label_0x1b3624:
     t1 = g_002ac450;  // Global at 0x002ac450                   // 0x001b364c: lw $t1, 0x10($s0)
     t3 = g_002ac444;  // Global at 0x002ac444                   // 0x001b3654: lw $t3, 4($s0)
     a2 = g_002ac454;  // Global at 0x002ac454                   // 0x001b365c: lw $a2, 0x14($s0)
-    func_001b3830();  // 0x1b3710                                // 0x001b3660: jal 0x1b3710
+    func_001b3710();  // 1b3710                                // 0x001b3660: jal 0x1b3710
     a0 = g_002ac48c;  // Global at 0x002ac48c                   // 0x001b3668: lw $a0, 0x4c($s0)
     a0 = a0 + 1;                                                // 0x001b3670: addiu $a0, $a0, 1
     g_002ac48c = a0;  // Global at 0x002ac48c                   // 0x001b3674: sw $a0, 0x4c($s0)

@@ -71,23 +71,23 @@ label_0x161d68:
     /* nop */                                                   // 0x00161ec4: nop 
 label_0x161ec8:
     sp = sp + -0xe0;                                            // 0x00161ec8: addiu $sp, $sp, -0xe0
-    func_0015fcb0();  // 0x15fc80                                // 0x00161f08: jal 0x15fc80
+    func_0015fc80();  // 15fc80                                // 0x00161f08: jal 0x15fc80
     /* bnezl $v0, 0x161f30 */                                   // 0x00161f10: bnezl $v0, 0x161f30
     v0 = *(int32_t*)(s2);                                       // 0x00161f14: lw $v0, 0($s2)
     a0 = 0x23 << 16;                                            // 0x00161f18: lui $a0, 0x23
-    func_001634a8();  // 0x163410                                // 0x00161f1c: jal 0x163410
+    func_00163410();  // 163410                                // 0x00161f1c: jal 0x163410
     a0 = &str_00228848;  // "E306166: MWSFD_CnvFrmClipARGB8888: getfrm is failed." // 0x00161f20: addiu $a0, $a0, -0x77b8
     goto label_0x161f88;                                        // 0x00161f24: b 0x161f88
     /* nop */                                                   // 0x00161f2c: nop 
     if (v0 != 0) goto label_0x161f48;                           // 0x00161f30: bnez $v0, 0x161f48
     a0 = 0x23 << 16;                                            // 0x00161f34: lui $a0, 0x23
-    func_001634a8();  // 0x163410                                // 0x00161f38: jal 0x163410
+    func_00163410();  // 163410                                // 0x00161f38: jal 0x163410
     a0 = &str_00228880;  // "E306167: MWSFD_CnvFrmClipYUV422: handle is invalid." // 0x00161f3c: addiu $a0, $a0, -0x7780
     goto label_0x161f88;                                        // 0x00161f40: b 0x161f88
 label_0x161f48:
-    func_00160860();  // 0x160850                                // 0x00161f48: jal 0x160850
-    func_001608f0();  // 0x160878                                // 0x00161f5c: jal 0x160878
-    func_0017ad58();  // 0x17acd0                                // 0x00161f7c: jal 0x17acd0
+    func_00160850();  // 160850                                // 0x00161f48: jal 0x160850
+    func_00160878();  // 160878                                // 0x00161f5c: jal 0x160878
+    func_0017acd0();  // 17acd0                                // 0x00161f7c: jal 0x17acd0
 label_0x161f88:
     return;                                                     // 0x00161fa8: jr $ra
     sp = sp + 0xe0;                                             // 0x00161fac: addiu $sp, $sp, 0xe0

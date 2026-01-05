@@ -7,15 +7,15 @@ void func_00172df0() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x10;                                            // 0x00172df0: addiu $sp, $sp, -0x10
-    func_00172ed0();  // 0x172e60                                // 0x00172dfc: jal 0x172e60
+    func_00172e60();  // 172e60                                // 0x00172dfc: jal 0x172e60
     if (v0 != 0) goto label_0x172e3c;                           // 0x00172e04: bnez $v0, 0x172e3c
-    func_00172f98();  // 0x172ed0                                // 0x00172e0c: jal 0x172ed0
+    func_00172ed0();  // 172ed0                                // 0x00172e0c: jal 0x172ed0
     /* nop */                                                   // 0x00172e10: nop 
     if (v0 != 0) goto label_0x172e3c;                           // 0x00172e14: bnez $v0, 0x172e3c
-    func_00172ff0();  // 0x172f98                                // 0x00172e1c: jal 0x172f98
+    func_00172f98();  // 172f98                                // 0x00172e1c: jal 0x172f98
     /* nop */                                                   // 0x00172e20: nop 
     if (v0 != 0) goto label_0x172e3c;                           // 0x00172e24: bnez $v0, 0x172e3c
-    func_00173080();  // 0x172ff0                                // 0x00172e2c: jal 0x172ff0
+    func_00172ff0();  // 172ff0                                // 0x00172e2c: jal 0x172ff0
     /* nop */                                                   // 0x00172e30: nop 
     /* beqzl $v0, 0x172e50 */                                   // 0x00172e34: beqzl $v0, 0x172e50
 label_0x172e3c:

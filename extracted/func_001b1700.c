@@ -11,7 +11,7 @@ void func_001b1700() {
     s2 = *(int32_t*)(a0);                                       // 0x001b1718: lw $s2, 0($a0)
     goto label_0x1b1738;                                        // 0x001b171c: b 0x1b1738
 label_0x1b1724:
-    func_001b1090();  // 0x1b1040                                // 0x001b1724: jal 0x1b1040
+    func_001b1040();  // 1b1040                                // 0x001b1724: jal 0x1b1040
     a0 = *(int32_t*)(s2);                                       // 0x001b1728: lw $a0, 0($s2)
     *(uint32_t*)(s2) = 0;                                       // 0x001b172c: sw $zero, 0($s2)
     s1 = s1 + 1;                                                // 0x001b1730: addiu $s1, $s1, 1
@@ -34,7 +34,7 @@ label_0x1b1770:
     a0 = *(int32_t*)(s2);                                       // 0x001b1770: lw $a0, 0($s2)
     if (a0 == 0) goto label_0x1b1784;                           // 0x001b1774: beqz $a0, 0x1b1784
     /* nop */                                                   // 0x001b1778: nop 
-    func_001b1090();  // 0x1b1040                                // 0x001b177c: jal 0x1b1040
+    func_001b1040();  // 1b1040                                // 0x001b177c: jal 0x1b1040
     /* nop */                                                   // 0x001b1780: nop 
 label_0x1b1784:
     *(uint32_t*)(s2) = 0;                                       // 0x001b1784: sw $zero, 0($s2)

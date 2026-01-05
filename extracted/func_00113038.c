@@ -10,15 +10,15 @@ void func_00113038() {
     s0 = a1 & 1;                                                // 0x00113048: andi $s0, $a1, 1
     a0 = 0x28;                                                  // 0x0011304c: addiu $a0, $zero, 0x28
     /* multiply: s0 * a0 -> hi:lo */                            // 0x00113050: mult $ac2, $s0, $a0
-    func_00112900();  // 0x112840                                // 0x00113058: jal 0x112840
+    func_00112840();  // 112840                                // 0x00113058: jal 0x112840
     a0 = v0 + s1;                                               // 0x0011305c: addu $a0, $v0, $s1
     if (s0 == 0) goto label_0x113078;                           // 0x00113060: beqz $s0, 0x113078
     /* nop */                                                   // 0x00113064: nop 
-    func_00112da0();  // 0x112cb8                                // 0x00113068: jal 0x112cb8
+    func_00112cb8();  // 112cb8                                // 0x00113068: jal 0x112cb8
     a0 = s1 + 0x140;                                            // 0x0011306c: addiu $a0, $s1, 0x140
     goto label_0x113084;                                        // 0x00113070: b 0x113084
 label_0x113078:
-    func_00112da0();  // 0x112cb8                                // 0x00113078: jal 0x112cb8
+    func_00112cb8();  // 112cb8                                // 0x00113078: jal 0x112cb8
     a0 = s1 + 0x50;                                             // 0x0011307c: addiu $a0, $s1, 0x50
 label_0x113084:
     return;                                                     // 0x0011308c: jr $ra

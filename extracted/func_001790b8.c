@@ -9,10 +9,10 @@ void func_001790b8() {
     sp = sp + -0x20;                                            // 0x001790b8: addiu $sp, $sp, -0x20
     s1 = a1 & 0xff;                                             // 0x001790c0: andi $s1, $a1, 0xff
     *(uint32_t*)(s2) = 0;                                       // 0x001790d4: sw $zero, 0($s2)
-    func_00178fa0();  // 0x178f58                                // 0x001790d8: jal 0x178f58
+    func_00178f58();  // 178f58                                // 0x001790d8: jal 0x178f58
     s0 = *(int32_t*)((a0) + 4);                                 // 0x001790dc: lw $s0, 4($a0)
     if (v0 == 0) goto label_0x17910c;                           // 0x001790e4: beqz $v0, 0x17910c
-    func_00179240();  // 0x1791f8                                // 0x001790ec: jal 0x1791f8
+    func_001791f8();  // 1791f8                                // 0x001790ec: jal 0x1791f8
     /* nop */                                                   // 0x001790f0: nop 
     if (v0 == 0) goto label_0x179108;                           // 0x001790f4: beqz $v0, 0x179108
     v0 = 1;                                                     // 0x001790f8: addiu $v0, $zero, 1

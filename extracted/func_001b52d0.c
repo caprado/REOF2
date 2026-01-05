@@ -58,15 +58,15 @@ label_0x1b5394:
     g_002ac514 = v1;  // Global at 0x002ac514                   // 0x001b5398: sw $v1, 0x84($s0)
 label_0x1b539c:
     a1 = g_002ac498;  // Global at 0x002ac498                   // 0x001b539c: lw $a1, 8($s0)
-    func_001b5e90();  // 0x1b5e60                                // 0x001b53a0: jal 0x1b5e60
+    func_001b5e60();  // 1b5e60                                // 0x001b53a0: jal 0x1b5e60
     a0 = a0 & 0xff;                                             // 0x001b53a4: andi $a0, $a0, 0xff
 label_0x1b53a8:
     a1 = g_002ac498;  // Global at 0x002ac498                   // 0x001b53a8: lw $a1, 8($s0)
-    func_001b5e60();  // 0x1b5dd0                                // 0x001b53ac: jal 0x1b5dd0
+    func_001b5dd0();  // 1b5dd0                                // 0x001b53ac: jal 0x1b5dd0
     v1 = g_002ac4ac;  // Global at 0x002ac4ac                   // 0x001b53b4: lw $v1, 0x1c($s0)
     at = ((unsigned)v0 < (unsigned)v1) ? 1 : 0;                 // 0x001b53b8: sltu $at, $v0, $v1
     if (at == 0) goto label_0x1b5308;                           // 0x001b53bc: beqz $at, 0x1b5308
-    func_001b5920();  // 0x1b5730                                // 0x001b53c8: jal 0x1b5730
+    func_001b5730();  // 1b5730                                // 0x001b53c8: jal 0x1b5730
     goto label_0x1b5308;                                        // 0x001b53d0: b 0x1b5308
 label_0x1b53d8:
 label_0x1b53dc:

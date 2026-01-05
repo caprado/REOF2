@@ -22,9 +22,9 @@ label_0x1adbf4:
     v1 = v1 << 3;                                               // 0x001adc1c: sll $v1, $v1, 3
     v0 = v0 + v1;                                               // 0x001adc24: addu $v0, $v0, $v1
     g_002aa820 = 0;  // Global at 0x002aa820                    // 0x001adc28: sb $zero, 0($v0)
-    func_00132c40();  // 0x132b10                                // 0x001adc2c: jal 0x132b10
+    func_00132b10();  // 132b10                                // 0x001adc2c: jal 0x132b10
     g_002aa823 = 0;  // Global at 0x002aa823                    // 0x001adc30: sb $zero, 3($v0)
-    func_00131bb8();  // 0x131af8                                // 0x001adc34: jal 0x131af8
+    func_00131af8();  // 131af8                                // 0x001adc34: jal 0x131af8
     a0 = *(int32_t*)(s1);                                       // 0x001adc38: lw $a0, 0($s1)
 label_0x1adc3c:
     s0 = s0 + 1;                                                // 0x001adc3c: addiu $s0, $s0, 1

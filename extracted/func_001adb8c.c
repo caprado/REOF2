@@ -19,7 +19,7 @@ void func_001adb8c() {
     v0 = 0x2b << 16;                                            // 0x001adbb8: lui $v0, 0x2b
     v0 = v0 + -0x5788;                                          // 0x001adbbc: addiu $v0, $v0, -0x5788
     v0 = v0 + v1;                                               // 0x001adbc0: addu $v0, $v0, $v1
-    func_00131bb8();  // 0x131af8                                // 0x001adbc4: jal 0x131af8
+    func_00131af8();  // 131af8                                // 0x001adbc4: jal 0x131af8
     a0 = g_002aa878;  // Global at 0x002aa878                   // 0x001adbc8: lw $a0, 0($v0)
     return;                                                     // 0x001adbd4: jr $ra
     sp = sp + 0x10;                                             // 0x001adbd8: addiu $sp, $sp, 0x10

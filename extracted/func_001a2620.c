@@ -16,7 +16,7 @@ label_0x1a2644:
     v0 = s0 << 3;                                               // 0x001a2648: sll $v0, $s0, 3
     v1 = *(int32_t*)((gp) + -0x6428);                           // 0x001a264c: lw $v1, -0x6428($gp)
     v1 = a0 + v1;                                               // 0x001a2650: addu $v1, $a0, $v1
-    func_001a4b30();  // 0x1a4b20                                // 0x001a2654: jal 0x1a4b20
+    func_001a4b20();  // 1a4b20                                // 0x001a2654: jal 0x1a4b20
     a0 = v1 + v0;                                               // 0x001a2658: addu $a0, $v1, $v0
     /* FPU: c.ole.s $f0, $f20 */                                // 0x001a265c: c.ole.s $f0, $f20
     /* bc1t 0x1a266c */                                         // 0x001a2660: bc1t 0x1a266c

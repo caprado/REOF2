@@ -45,11 +45,11 @@ label_0x189128:
     a1 = a1 | 0x1318;                                           // 0x00189134: ori $a1, $a1, 0x1318
     t0 = 0x280;                                                 // 0x0018913c: addiu $t0, $zero, 0x280
     t2 = 0x280;                                                 // 0x00189144: addiu $t2, $zero, 0x280
-    func_001178a0();  // 0x1176a8                                // 0x00189148: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x00189148: jal 0x1176a8
     if (v0 >= 0) goto label_0x18916c;                           // 0x00189150: bgezl $v0, 0x18916c
     v0 = g_002816d0;  // Global at 0x002816d0                   // 0x00189154: lw $v0, 0x410($s0)
     a0 = 0x23 << 16;                                            // 0x00189158: lui $a0, 0x23
-    func_001896f0();  // 0x1896c8                                // 0x0018915c: jal 0x1896c8
+    func_001896c8();  // 1896c8                                // 0x0018915c: jal 0x1896c8
     a0 = &str_0022a1b0;  // "sceDbcSendData: rpc error\n"       // 0x00189160: addiu $a0, $a0, -0x5e50
     goto label_0x1891c4;                                        // 0x00189164: b 0x1891c4
 label_0x18916c:

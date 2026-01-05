@@ -44,7 +44,7 @@ label_0x1170d8:
     WaitSema();  // 0x114310                                    // 0x001170e0: jal 0x114310
     /* nop */                                                   // 0x001170e4: nop 
 label_0x1170e8:
-    func_00116fd0();  // 0x116fb0                                // 0x001170e8: jal 0x116fb0
+    func_00116fb0();  // 116fb0                                // 0x001170e8: jal 0x116fb0
     a0 = *(int32_t*)(s1);                                       // 0x001170ec: lw $a0, 0($s1)
     *(uint32_t*)(s1) = 0;                                       // 0x001170f0: sw $zero, 0($s1)
     return;                                                     // 0x00117104: jr $ra

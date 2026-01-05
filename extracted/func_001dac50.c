@@ -40,36 +40,36 @@ label_0x1daca0:
     a0 = sp + 0x20;                                             // 0x001dacd8: addiu $a0, $sp, 0x20
 label_0x1dacdc:
     a0 = sp + 0x20;                                             // 0x001dacdc: addiu $a0, $sp, 0x20
-    func_0010a570();  // 0x10a4d8                                // 0x001dace0: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001dace0: jal 0x10a4d8
     a1 = &str_00247960;  // "download"                          // 0x001dace4: addiu $a1, $a1, 0x7960
     goto label_0x1dad2c;                                        // 0x001dace8: b 0x1dad2c
     s0 = 0x2000;                                                // 0x001dacec: addiu $s0, $zero, 0x2000
 label_0x1dacf0:
     a0 = sp + 0x20;                                             // 0x001dacf0: addiu $a0, $sp, 0x20
-    func_0010a570();  // 0x10a4d8                                // 0x001dacf4: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001dacf4: jal 0x10a4d8
     a1 = a1 + 0x7968;                                           // 0x001dacf8: addiu $a1, $a1, 0x7968
     goto label_0x1dad2c;                                        // 0x001dacfc: b 0x1dad2c
     s0 = 0x2500;                                                // 0x001dad00: addiu $s0, $zero, 0x2500
 label_0x1dad04:
     a0 = sp + 0x20;                                             // 0x001dad04: addiu $a0, $sp, 0x20
-    func_0010a570();  // 0x10a4d8                                // 0x001dad08: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001dad08: jal 0x10a4d8
     a1 = a1 + 0x7978;                                           // 0x001dad0c: addiu $a1, $a1, 0x7978
     goto label_0x1dad2c;                                        // 0x001dad10: b 0x1dad2c
     s0 = 0x2500;                                                // 0x001dad14: addiu $s0, $zero, 0x2500
 label_0x1dad18:
     a1 = 0x24 << 16;                                            // 0x001dad18: lui $a1, 0x24
     a0 = sp + 0x20;                                             // 0x001dad1c: addiu $a0, $sp, 0x20
-    func_0010a570();  // 0x10a4d8                                // 0x001dad20: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001dad20: jal 0x10a4d8
     a1 = a1 + 0x7980;                                           // 0x001dad24: addiu $a1, $a1, 0x7980
     s0 = 0x2500;                                                // 0x001dad28: addiu $s0, $zero, 0x2500
 label_0x1dad2c:
     a0 = sp + 0x20;                                             // 0x001dad2c: addiu $a0, $sp, 0x20
 label_0x1dad30:
-    func_001daf80();  // 0x1daef0                                // 0x001dad30: jal 0x1daef0
+    func_001daef0();  // 1daef0                                // 0x001dad30: jal 0x1daef0
     a1 = 0xc;                                                   // 0x001dad34: addiu $a1, $zero, 0xc
     a0 = 1;                                                     // 0x001dad3c: addiu $a0, $zero, 1
     a1 = 4;                                                     // 0x001dad40: addiu $a1, $zero, 4
-    thunk_func_001ad1b0();  // 0x1ac9a0                          // 0x001dad48: jal 0x1ac9a0
+    thunk_func_001ac9a0();  // 1ac9a0                          // 0x001dad48: jal 0x1ac9a0
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001dad54: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x001dad58: jr $ra
     sp = sp + 0xa0;                                             // 0x001dad5c: addiu $sp, $sp, 0xa0

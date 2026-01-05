@@ -17,7 +17,7 @@ void func_0012dba8() {
     a2 = sp + 0x10;                                             // 0x0012dbd0: addiu $a2, $sp, 0x10
     a3 = sp + 0x12;                                             // 0x0012dbd4: addiu $a3, $sp, 0x12
     t2 = sp + 0x15;                                             // 0x0012dbd8: addiu $t2, $sp, 0x15
-    func_00126558();  // 0x126458                                // 0x0012dbe0: jal 0x126458
+    func_00126458();  // 126458                                // 0x0012dbe0: jal 0x126458
     local_8 = v0;                                               // 0x0012dbe4: sw $v0, 8($sp)
     v1 = local_15;                                              // 0x0012dbe8: lb $v1, 0x15($sp)
     a0 = local_13;                                              // 0x0012dbec: lb $a0, 0x13($sp)

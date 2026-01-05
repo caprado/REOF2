@@ -88,11 +88,11 @@ label_0x19c95c:
     if (a1 == v0) goto label_0x19c9b8;                          // 0x0019c99c: beq $a1, $v0, 0x19c9b8
     /* nop */                                                   // 0x0019c9a0: nop 
     a0 = 0x23 << 16;                                            // 0x0019c9a4: lui $a0, 0x23
-    func_001a0850();  // 0x1a0760                                // 0x0019c9a8: jal 0x1a0760
+    func_001a0760();  // 1a0760                                // 0x0019c9a8: jal 0x1a0760
     a0 = &str_0022a4c0;  // "Not supported height...%d @flPS2GetTextureInfoFromContext" // 0x0019c9ac: addiu $a0, $a0, -0x5b40
     goto label_0x19ca60;                                        // 0x0019c9b0: b 0x19ca60
 label_0x19c9b8:
-    func_0019d830();  // 0x19d7e0                                // 0x0019c9b8: jal 0x19d7e0
+    func_0019d7e0();  // 19d7e0                                // 0x0019c9b8: jal 0x19d7e0
     a0 = *(int16_t*)((s0) + 0x1a);                              // 0x0019c9bc: lh $a0, 0x1a($s0)
     *(uint16_t*)((s0) + 0x16) = v0;                             // 0x0019c9c0: sh $v0, 0x16($s0)
     a1 = *(int32_t*)((s1) + 8);                                 // 0x0019c9c4: lw $a1, 8($s1)
@@ -115,21 +115,21 @@ label_0x19c9b8:
     if (a1 == v0) goto label_0x19ca24;                          // 0x0019ca08: beq $a1, $v0, 0x19ca24
     /* nop */                                                   // 0x0019ca0c: nop 
     a0 = 0x23 << 16;                                            // 0x0019ca10: lui $a0, 0x23
-    func_001a0850();  // 0x1a0760                                // 0x0019ca14: jal 0x1a0760
+    func_001a0760();  // 1a0760                                // 0x0019ca14: jal 0x1a0760
     a0 = &str_0022a500;  // "Supported only 1 palette. Unallocatable. @flCreatePaletteHandle" // 0x0019ca18: addiu $a0, $a0, -0x5b00
     goto label_0x19ca60;                                        // 0x0019ca1c: b 0x19ca60
 label_0x19ca24:
-    func_0019d830();  // 0x19d7e0                                // 0x0019ca24: jal 0x19d7e0
+    func_0019d7e0();  // 19d7e0                                // 0x0019ca24: jal 0x19d7e0
     a0 = *(int16_t*)((s0) + 0x1c);                              // 0x0019ca28: lh $a0, 0x1c($s0)
     *(uint16_t*)((s0) + 0x18) = v0;                             // 0x0019ca2c: sh $v0, 0x18($s0)
-    func_0019d9f0();  // 0x19d8d0                                // 0x0019ca30: jal 0x19d8d0
+    func_0019d8d0();  // 19d8d0                                // 0x0019ca30: jal 0x19d8d0
     *(uint16_t*)((s0) + 0x10) = v0;                             // 0x0019ca38: sh $v0, 0x10($s0)
     v0 = 0x20;                                                  // 0x0019ca3c: addiu $v0, $zero, 0x20
     *(uint16_t*)((s0) + 0x12) = v0;                             // 0x0019ca40: sh $v0, 0x12($s0)
     a2 = *(int16_t*)((s0) + 0x1c);                              // 0x0019ca44: lh $a2, 0x1c($s0)
     a3 = *(int32_t*)((s0) + 0x30);                              // 0x0019ca48: lw $a3, 0x30($s0)
     a0 = *(int32_t*)((s0) + 0x20);                              // 0x0019ca4c: lw $a0, 0x20($s0)
-    func_0019d8d0();  // 0x19d830                                // 0x0019ca50: jal 0x19d830
+    func_0019d830();  // 19d830                                // 0x0019ca50: jal 0x19d830
     a1 = *(int16_t*)((s0) + 0x1a);                              // 0x0019ca54: lh $a1, 0x1a($s0)
     *(uint32_t*)((s0) + 8) = v0;                                // 0x0019ca58: sw $v0, 8($s0)
     v0 = 1;                                                     // 0x0019ca5c: addiu $v0, $zero, 1

@@ -33,13 +33,13 @@ label_0x12458c:
     v0 = v0 + a3;                                               // 0x001245b0: addu $v0, $v0, $a3
     v0 = v0 << 2;                                               // 0x001245b4: sll $v0, $v0, 2
     s0 = v0 + v1;                                               // 0x001245b8: addu $s0, $v0, $v1
-    func_00107d30();  // 0x107c70                                // 0x001245bc: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001245bc: jal 0x107c70
     v1 = 1;                                                     // 0x001245c4: addiu $v1, $zero, 1
-    func_00134b70();  // 0x134aa0                                // 0x001245c8: jal 0x134aa0
+    func_00134aa0();  // 134aa0                                // 0x001245c8: jal 0x134aa0
     *(uint16_t*)(s0) = v1;                                      // 0x001245cc: sh $v1, 0($s0)
     if (v0 != 0) goto label_0x1245e8;                           // 0x001245d0: bnez $v0, 0x1245e8
     *(uint32_t*)((s0) + 8) = v0;                                // 0x001245d4: sw $v0, 8($s0)
-    func_001246a8();  // 0x124660                                // 0x001245d8: jal 0x124660
+    func_00124660();  // 124660                                // 0x001245d8: jal 0x124660
     goto label_0x124640;                                        // 0x001245e0: b 0x124640
 label_0x1245e8:
     v0 = 0x12 << 16;                                            // 0x001245e8: lui $v0, 0x12
@@ -60,7 +60,7 @@ label_0x1245e8:
     *(uint32_t*)((s0) + 0x84) = s0;                             // 0x00124628: sw $s0, 0x84($s0)
     *(uint32_t*)((s0) + 0xc8) = 0;                              // 0x0012462c: sw $zero, 0xc8($s0)
     *(uint16_t*)((s0) + 0xdc) = 0;                              // 0x00124630: sh $zero, 0xdc($s0)
-    func_00107d30();  // 0x107c70                                // 0x00124634: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x00124634: jal 0x107c70
     *(uint16_t*)((s0) + 0xde) = a3;                             // 0x00124638: sh $a3, 0xde($s0)
 label_0x124640:
     return;                                                     // 0x00124658: jr $ra

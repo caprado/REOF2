@@ -10,15 +10,15 @@ void func_00161b50() {
     uint32_t local_0, local_4, local_8;
     
     sp = sp + -0x20;                                            // 0x00161b50: addiu $sp, $sp, -0x20
-    func_00160860();  // 0x160850                                // 0x00161b6c: jal 0x160850
+    func_00160850();  // 160850                                // 0x00161b6c: jal 0x160850
     s0 = s0 ^ 1;                                                // 0x00161b74: xori $s0, $s0, 1
     a3 = ((unsigned)s0 < (unsigned)1) ? 1 : 0;                  // 0x00161b8c: sltiu $a3, $s0, 1
     return func_0017d0f0();  // Tail call                       // 0x00161b98: j 0x17d0f0
     sp = sp + 0x20;                                             // 0x00161b9c: addiu $sp, $sp, 0x20
     sp = sp + -0x30;                                            // 0x00161ba0: addiu $sp, $sp, -0x30
-    func_00160860();  // 0x160850                                // 0x00161bbc: jal 0x160850
+    func_00160850();  // 160850                                // 0x00161bbc: jal 0x160850
     a2 = sp + 4;                                                // 0x00161bcc: addiu $a2, $sp, 4
-    func_0017d128();  // 0x17d108                                // 0x00161bd0: jal 0x17d108
+    func_0017d108();  // 17d108                                // 0x00161bd0: jal 0x17d108
     a3 = sp + 8;                                                // 0x00161bd4: addiu $a3, $sp, 8
     v0 = local_8;                                               // 0x00161bd8: lw $v0, 8($sp)
     a0 = local_0;                                               // 0x00161bdc: lw $a0, 0($sp)

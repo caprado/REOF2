@@ -10,7 +10,7 @@ void func_001b2350() {
     /* FPU: dpa.w.ph $ac0, $sp, $s2 */                          // 0x001b2358: dpa.w.ph $ac0, $sp, $s2
     /* FPU: addu.qb $zero, $sp, $s0 */                          // 0x001b2364: addu.qb $zero, $sp, $s0
     *(float*)(sp) = FPU_F20;  // Store float                    // 0x001b236c: swc1 $f20, 0($sp)
-    func_001b2530();  // 0x1b24c0                                // 0x001b2370: jal 0x1b24c0
+    func_001b24c0();  // 1b24c0                                // 0x001b2370: jal 0x1b24c0
     /* FPU: mov.s $f20, $f12 */                                 // 0x001b2374: mov.s $f20, $f12
     if (v0 != 0) goto label_0x1b2388;                           // 0x001b2378: bnez $v0, 0x1b2388
     goto label_0x1b2450;                                        // 0x001b2380: b 0x1b2450
@@ -28,7 +28,7 @@ label_0x1b2388:
     /* FPU: c.ole.s $f20, $f0 */                                // 0x001b23ac: c.ole.s $f20, $f0
     /* bc1t 0x1b23c8 */                                         // 0x001b23b0: bc1t 0x1b23c8
     /* nop */                                                   // 0x001b23b4: nop 
-    func_001b2560();  // 0x1b2530                                // 0x001b23b8: jal 0x1b2530
+    func_001b2530();  // 1b2530                                // 0x001b23b8: jal 0x1b2530
     /* nop */                                                   // 0x001b23bc: nop 
     goto label_0x1b2450;                                        // 0x001b23c0: b 0x1b2450
     v0 = -1;                                                    // 0x001b23c4: addiu $v0, $zero, -1
@@ -63,7 +63,7 @@ label_0x1b2428:
     v0 = v0 + -0x5d50;                                          // 0x001b2434: addiu $v0, $v0, -0x5d50
     v1 = v1 - a1;                                               // 0x001b243c: subu $v1, $v1, $a1
     v1 = v1 << 2;                                               // 0x001b2440: sll $v1, $v1, 2
-    func_001b25c0();  // 0x1b2560                                // 0x001b2444: jal 0x1b2560
+    func_001b2560();  // 1b2560                                // 0x001b2444: jal 0x1b2560
     a1 = v0 + v1;                                               // 0x001b2448: addu $a1, $v0, $v1
     v0 = *(int32_t*)((s0) + 4);                                 // 0x001b244c: lw $v0, 4($s0)
 label_0x1b2450:

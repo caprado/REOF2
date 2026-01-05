@@ -23,11 +23,11 @@ void func_001895d8() {
     local_0 = 0;                                                // 0x00189620: sw $zero, 0($sp)
     g_002812c8 = v0;  // Global at 0x002812c8                   // 0x00189628: sw $v0, 8($s0)
     t2 = 0x280;                                                 // 0x00189630: addiu $t2, $zero, 0x280
-    func_001178a0();  // 0x1176a8                                // 0x00189634: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x00189634: jal 0x1176a8
     if (v0 >= 0) goto label_0x189658;                           // 0x0018963c: bgezl $v0, 0x189658
     v0 = g_002814cc;  // Global at 0x002814cc                   // 0x00189640: lw $v0, 0x20c($s0)
     a0 = 0x23 << 16;                                            // 0x00189644: lui $a0, 0x23
-    func_001896f0();  // 0x1896c8                                // 0x00189648: jal 0x1896c8
+    func_001896c8();  // 1896c8                                // 0x00189648: jal 0x1896c8
     a0 = &str_0022a2a8;  // "A = %x B = %x, %x @flPS2ConvClayData" // 0x0018964c: addiu $a0, $a0, -0x5d58
     goto label_0x1896ac;                                        // 0x00189650: b 0x1896ac
 label_0x189658:

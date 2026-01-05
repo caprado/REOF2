@@ -13,7 +13,7 @@ void func_0010cd10() {
     *(uint32_t*)((s0) + 4) = 0;                                 // 0x0010cd30: sw $zero, 4($s0)
     /* nop */                                                   // 0x0010cd34: nop 
 label_0x10cd38:
-    func_00106740();  // 0x106360                                // 0x0010cd38: jal 0x106360
+    func_00106360();  // 106360                                // 0x0010cd38: jal 0x106360
     /* nop */                                                   // 0x0010cd3c: nop 
     *(uint32_t*)((s0) + 4) = 0;                                 // 0x0010cd40: sw $zero, 4($s0)
     *(uint32_t*)((s0) + 8) = 0;                                 // 0x0010cd44: sw $zero, 8($s0)

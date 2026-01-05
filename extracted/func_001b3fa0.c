@@ -15,11 +15,11 @@ void func_001b3fa0() {
     v1 = g_00491364;  // Global at 0x00491364                   // 0x001b3fc0: lbu $v1, 0x1364($at)
     if (v1 != 0) goto label_0x1b401c;                           // 0x001b3fc4: bnez $v1, 0x1b401c
     /* nop */                                                   // 0x001b3fc8: nop 
-    func_001b3fa0();  // 0x1b3ef0                                // 0x001b3fcc: jal 0x1b3ef0
+    func_001b3ef0();  // 1b3ef0                                // 0x001b3fcc: jal 0x1b3ef0
     /* nop */                                                   // 0x001b3fd0: nop 
     s1 = 0x30 << 16;                                            // 0x001b3fd4: lui $s1, 0x30
     a0 = -2;                                                    // 0x001b3fd8: addiu $a0, $zero, -2
-    func_001b5020();  // 0x1b5010                                // 0x001b3fdc: jal 0x1b5010
+    func_001b5010();  // 1b5010                                // 0x001b3fdc: jal 0x1b5010
     s1 = s1 + 0x6c10;                                           // 0x001b3fe0: addiu $s1, $s1, 0x6c10
 label_0x1b3fe8:
     v1 = g_00306c10;  // Global at 0x00306c10                   // 0x001b3fe8: lh $v1, 0($s1)
@@ -29,7 +29,7 @@ label_0x1b3fe8:
     a1 = g_00306c14;  // Global at 0x00306c14                   // 0x001b3ff8: lh $a1, 4($s1)
     a2 = g_00306c18;  // Global at 0x00306c18                   // 0x001b3ffc: lbu $a2, 8($s1)
     t0 = g_00306c1a;  // Global at 0x00306c1a                   // 0x001b4000: lbu $t0, 0xa($s1)
-    func_001b3ef0();  // 0x1b3ba0                                // 0x001b4004: jal 0x1b3ba0
+    func_001b3ba0();  // 1b3ba0                                // 0x001b4004: jal 0x1b3ba0
     a3 = s1 + 0xc;                                              // 0x001b4008: addiu $a3, $s1, 0xc
 label_0x1b400c:
     s0 = s0 + 1;                                                // 0x001b400c: addiu $s0, $s0, 1

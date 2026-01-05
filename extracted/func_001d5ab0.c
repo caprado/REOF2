@@ -12,7 +12,7 @@ void func_001d5ab0() {
     *(uint8_t*)(a0) = v1;                                       // 0x001d5ac4: sb $v1, 0($a0)
     v1 = v1 & 0xff;                                             // 0x001d5ac8: andi $v1, $v1, 0xff
     if (v1 != 0) goto label_0x1d5ae4;                           // 0x001d5acc: bnez $v1, 0x1d5ae4
-    func_001b12b0();  // 0x1b11d0                                // 0x001d5ad4: jal 0x1b11d0
+    func_001b11d0();  // 1b11d0                                // 0x001d5ad4: jal 0x1b11d0
     a0 = *(int32_t*)((s0) + 4);                                 // 0x001d5ad8: lw $a0, 4($s0)
     *(uint8_t*)((s0) + 3) = 0;                                  // 0x001d5adc: sb $zero, 3($s0)
     *(uint8_t*)((s0) + 8) = 0;                                  // 0x001d5ae0: sb $zero, 8($s0)

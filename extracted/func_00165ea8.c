@@ -7,15 +7,15 @@ void func_00165ea8() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x00165ea8: addiu $sp, $sp, -0x20
-    func_00169b10();  // 0x169af0                                // 0x00165ebc: jal 0x169af0
+    func_00169af0();  // 169af0                                // 0x00165ebc: jal 0x169af0
     a1 = 0xff00 << 16;                                          // 0x00165ec4: lui $a1, 0xff00
     if (v0 == 0) goto label_0x165ee8;                           // 0x00165ec8: beqz $v0, 0x165ee8
-    func_00169940();  // 0x1698d0                                // 0x00165ed4: jal 0x1698d0
+    func_001698d0();  // 1698d0                                // 0x00165ed4: jal 0x1698d0
     a1 = a1 | 0x1a2;                                            // 0x00165ed8: ori $a1, $a1, 0x1a2
     goto label_0x165f0c;                                        // 0x00165edc: b 0x165f0c
     /* nop */                                                   // 0x00165ee4: nop 
 label_0x165ee8:
-    func_001752f8();  // 0x1752e8                                // 0x00165ee8: jal 0x1752e8
+    func_001752e8();  // 1752e8                                // 0x00165ee8: jal 0x1752e8
     a1 = 6;                                                     // 0x00165eec: addiu $a1, $zero, 6
     if (v0 == 0) goto label_0x165f0c;                           // 0x00165ef4: beqz $v0, 0x165f0c
     v1 = *(int32_t*)((s0) + 0x1c84);                            // 0x00165efc: lw $v1, 0x1c84($s0)

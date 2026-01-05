@@ -14,14 +14,14 @@ void func_00180f18() {
     goto label_0x180ff8;                                        // 0x00180f50: b 0x180ff8
     v0 = v0 | 0x8001;                                           // 0x00180f54: ori $v0, $v0, 0x8001
 label_0x180f58:
-    func_001887a0();  // 0x188758                                // 0x00180f58: jal 0x188758
+    func_00188758();  // 188758                                // 0x00180f58: jal 0x188758
     if (s0 >= 0) goto label_0x180f78;                           // 0x00180f64: bgez $s0, 0x180f78
     /* nop */                                                   // 0x00180f68: nop 
     v0 = 0x8101 << 16;                                          // 0x00180f6c: lui $v0, 0x8101
     goto label_0x180ff8;                                        // 0x00180f70: b 0x180ff8
     v0 = v0 | 0x8002;                                           // 0x00180f74: ori $v0, $v0, 0x8002
 label_0x180f78:
-    func_0010af38();  // 0x10ae00                                // 0x00180f78: jal 0x10ae00
+    func_0010ae00();  // 10ae00                                // 0x00180f78: jal 0x10ae00
     v0 = ((unsigned)v0 < (unsigned)0x80) ? 1 : 0;               // 0x00180f80: sltiu $v0, $v0, 0x80
     if (v0 != 0) goto label_0x180f98;                           // 0x00180f84: bnez $v0, 0x180f98
     s2 = 0x27 << 16;                                            // 0x00180f88: lui $s2, 0x27
@@ -43,7 +43,7 @@ label_0x180f98:
     v0 = v0 | 0x10;                                             // 0x00180fc4: ori $v0, $v0, 0x10
     g_0026ac80 = s0;  // Global at 0x0026ac80                   // 0x00180fc8: sw $s0, -0x5380($v1)
     g_0026ac84 = v0;  // Global at 0x0026ac84                   // 0x00180fcc: sw $v0, 4($s1)
-    func_0010ae00();  // 0x10ac68                                // 0x00180fd4: jal 0x10ac68
+    func_0010ac68();  // 10ac68                                // 0x00180fd4: jal 0x10ac68
     a0 = s1 + 0x41c;                                            // 0x00180fd8: addiu $a0, $s1, 0x41c
     g_0026ac8c = s4;  // Global at 0x0026ac8c                   // 0x00180fdc: sw $s4, 0xc($s1)
     v1 = 0x27 << 16;                                            // 0x00180fe0: lui $v1, 0x27

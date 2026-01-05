@@ -1,3 +1,4 @@
+/** @category system/ps2 @status complete @author caprado */
 void func_001174d8() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
@@ -13,7 +14,7 @@ void func_001174d8() {
     a0 = 0x25 << 16;                                            // 0x001174ec: lui $a0, 0x25
     *(uint32_t*)((s1) + 0x10) = 0;                              // 0x00117500: sw $zero, 0x10($s1)
     a0 = a0 + -0x1ec0;                                          // 0x00117504: addiu $a0, $a0, -0x1ec0
-    func_00116fb0();  // 0x116f08                                // 0x00117508: jal 0x116f08
+    func_00116f08();  // 116f08                                // 0x00117508: jal 0x116f08
     *(uint32_t*)((s1) + 0x24) = 0;                              // 0x0011750c: sw $zero, 0x24($s1)
     if (s0 == 0) goto label_0x1175fc;                           // 0x00117514: beqz $s0, 0x1175fc
     v0 = -1;                                                    // 0x00117518: addiu $v0, $zero, -1
@@ -31,17 +32,17 @@ void func_001174d8() {
     DeleteSema();  // 0x1142e0                                  // 0x00117548: jal 0x1142e0
     if (v0 >= 0) goto label_0x117568;                           // 0x00117550: bgez $v0, 0x117568
     *(uint32_t*)((s1) + 8) = v0;                                // 0x00117554: sw $v0, 8($s1)
-    func_00116fd0();  // 0x116fb0                                // 0x00117558: jal 0x116fb0
+    func_00116fb0();  // 116fb0                                // 0x00117558: jal 0x116fb0
     goto label_0x1175fc;                                        // 0x00117560: b 0x1175fc
     v0 = -3;                                                    // 0x00117564: addiu $v0, $zero, -3
 label_0x117568:
     a0 = 0x8000 << 16;                                          // 0x00117568: lui $a0, 0x8000
     a0 = a0 | 9;                                                // 0x00117570: ori $a0, $a0, 9
     a2 = 0x40;                                                  // 0x00117574: addiu $a2, $zero, 0x40
-    func_00116b08();  // 0x116ac8                                // 0x00117580: jal 0x116ac8
+    func_00116ac8();  // 116ac8                                // 0x00117580: jal 0x116ac8
     if (v0 != 0) goto label_0x1175a8;                           // 0x00117588: bnez $v0, 0x1175a8
     /* nop */                                                   // 0x0011758c: nop 
-    func_00116fd0();  // 0x116fb0                                // 0x00117590: jal 0x116fb0
+    func_00116fb0();  // 116fb0                                // 0x00117590: jal 0x116fb0
     SignalSema();  // 0x1142f0                                  // 0x00117598: jal 0x1142f0
     a0 = *(int32_t*)((s1) + 8);                                 // 0x0011759c: lw $a0, 8($s1)
     goto label_0x1175fc;                                        // 0x001175a0: b 0x1175fc
@@ -58,9 +59,9 @@ label_0x1175c0:
     *(uint32_t*)((s1) + 8) = v0;                                // 0x001175c8: sw $v0, 8($s1)
     a0 = a0 | 9;                                                // 0x001175cc: ori $a0, $a0, 9
     a2 = 0x40;                                                  // 0x001175d4: addiu $a2, $zero, 0x40
-    func_00116b08();  // 0x116ac8                                // 0x001175e0: jal 0x116ac8
+    func_00116ac8();  // 116ac8                                // 0x001175e0: jal 0x116ac8
     if (v0 != 0) goto label_0x1175fc;                           // 0x001175e8: bnez $v0, 0x1175fc
-    func_00116fd0();  // 0x116fb0                                // 0x001175f0: jal 0x116fb0
+    func_00116fb0();  // 116fb0                                // 0x001175f0: jal 0x116fb0
     v0 = -2;                                                    // 0x001175f8: addiu $v0, $zero, -2
 label_0x1175fc:
     return;                                                     // 0x00117610: jr $ra

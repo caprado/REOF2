@@ -19,7 +19,7 @@ void func_00138b18() {
     t1 = t1 + 0x3c40;                                           // 0x00138b38: addiu $t1, $t1, 0x3c40
     a1 = 3;                                                     // 0x00138b3c: addiu $a1, $zero, 3
     t0 = 4;                                                     // 0x00138b44: addiu $t0, $zero, 4
-    func_001178a0();  // 0x1176a8                                // 0x00138b50: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x00138b50: jal 0x1176a8
     local_0 = 0;                                                // 0x00138b54: sw $zero, 0($sp)
     return;                                                     // 0x00138b5c: jr $ra
     sp = sp + 0x20;                                             // 0x00138b60: addiu $sp, $sp, 0x20

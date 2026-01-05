@@ -19,7 +19,7 @@ void func_001634a8() {
     sp = sp + 0x10;                                             // 0x001634e8: addiu $sp, $sp, 0x10
     /* nop */                                                   // 0x001634ec: nop 
     sp = sp + -0x10;                                            // 0x001634f0: addiu $sp, $sp, -0x10
-    func_00174fb8();  // 0x174fa0                                // 0x001634f8: jal 0x174fa0
+    func_00174fa0();  // 174fa0                                // 0x001634f8: jal 0x174fa0
     /* nop */                                                   // 0x001634fc: nop 
     v0 = v0 ^ 1;                                                // 0x00163500: xori $v0, $v0, 1
     v0 = ((unsigned)0 < (unsigned)v0) ? 1 : 0;                  // 0x00163508: sltu $v0, $zero, $v0

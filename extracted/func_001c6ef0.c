@@ -15,7 +15,7 @@ void func_001c6ef0() {
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001c6f0c: addu.qb $zero, $sp, $s1
     a0 = g_000301f4;  // Global at 0x000301f4                   // 0x001c6f18: lw $a0, 0xec($a0)
     a2 = *(int32_t*)((s1) + 0x20);                              // 0x001c6f1c: lw $a2, 0x20($s1)
-    func_001c7310();  // 0x1c7230                                // 0x001c6f20: jal 0x1c7230
+    func_001c7230();  // 1c7230                                // 0x001c6f20: jal 0x1c7230
     a1 = v0 | 0xfcc8;                                           // 0x001c6f24: ori $a1, $v0, 0xfcc8
     if (v0 >= 0) goto label_0x1c6f38;                           // 0x001c6f28: bgez $v0, 0x1c6f38
     /* nop */                                                   // 0x001c6f2c: nop 
@@ -26,12 +26,12 @@ label_0x1c6f38:
     v0 = 3 << 16;                                               // 0x001c6f3c: lui $v0, 3
     a1 = *(int32_t*)((s1) + 0xec);                              // 0x001c6f40: lw $a1, 0xec($s1)
     a2 = v0 | 0xfcc8;                                           // 0x001c6f44: ori $a2, $v0, 0xfcc8
-    func_00107b68();  // 0x107ab8                                // 0x001c6f48: jal 0x107ab8
-    func_001b0290();  // 0x1b0150                                // 0x001c6f50: jal 0x1b0150
+    func_00107ab8();  // 107ab8                                // 0x001c6f48: jal 0x107ab8
+    func_001b0150();  // 1b0150                                // 0x001c6f50: jal 0x1b0150
     a0 = s0 + 0x108;                                            // 0x001c6f54: addiu $a0, $s0, 0x108
     a2 = *(int32_t*)((s1) + 0x20);                              // 0x001c6f58: lw $a2, 0x20($s1)
     v0 = 3 << 16;                                               // 0x001c6f5c: lui $v0, 3
-    func_001c7170();  // 0x1c7050                                // 0x001c6f64: jal 0x1c7050
+    func_001c7050();  // 1c7050                                // 0x001c6f64: jal 0x1c7050
     a1 = v0 | 0xfcc8;                                           // 0x001c6f68: ori $a1, $v0, 0xfcc8
 label_0x1c6f70:
     /* FPU: aver_u.h $w0, $w0, $w17 */                          // 0x001c6f74: aver_u.h $w0, $w0, $w17

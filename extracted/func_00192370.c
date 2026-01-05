@@ -13,7 +13,7 @@ void func_00192370() {
     *(float*)(sp) = FPU_F20;  // Store float                    // 0x00192390: swc1 $f20, 0($sp)
     a0 = *(int32_t*)((a1) + 0xd4);                              // 0x00192394: lw $a0, 0xd4($a1)
     /* FPU: mov.s $f21, $f12 */                                 // 0x00192398: mov.s $f21, $f12
-    func_00192230();  // 0x192200                                // 0x0019239c: jal 0x192200
+    func_00192200();  // 192200                                // 0x0019239c: jal 0x192200
     /* FPU: mov.s $f20, $f13 */                                 // 0x001923a0: mov.s $f20, $f13
     v1 = *(int32_t*)((s1) + 0xd8);                              // 0x001923a4: lw $v1, 0xd8($s1)
     /* FPU: mov.s $f12, $f21 */                                 // 0x001923a8: mov.s $f12, $f21
@@ -23,12 +23,12 @@ void func_00192370() {
     a3 = sp + 0xc0;                                             // 0x001923b8: addiu $a3, $sp, 0xc0
     t0 = s1 + 0x15c;                                            // 0x001923bc: addiu $t0, $s1, 0x15c
     s0 = v1 + v0;                                               // 0x001923c0: addu $s0, $v1, $v0
-    func_00192d90();  // 0x192b90                                // 0x001923c4: jal 0x192b90
+    func_00192b90();  // 192b90                                // 0x001923c4: jal 0x192b90
     a1 = s1 + 0xdc;                                             // 0x001923d0: addiu $a1, $s1, 0xdc
     /* FPU: mov.s $f12, $f20 */                                 // 0x001923d4: mov.s $f12, $f20
     t0 = s1 + 0x15c;                                            // 0x001923d8: addiu $t0, $s1, 0x15c
     a2 = sp + 0x50;                                             // 0x001923dc: addiu $a2, $sp, 0x50
-    func_00192d90();  // 0x192b90                                // 0x001923e0: jal 0x192b90
+    func_00192b90();  // 192b90                                // 0x001923e0: jal 0x192b90
     a3 = sp + 0x80;                                             // 0x001923e4: addiu $a3, $sp, 0x80
     FPU_F1 = *(float*)((sp) + 0xb0);  // Load float             // 0x001923e8: lwc1 $f1, 0xb0($sp)
     v0 = 1;                                                     // 0x001923ec: addiu $v0, $zero, 1

@@ -9,7 +9,7 @@ void func_001c7670() {
     sp = sp + -0x50;                                            // 0x001c7670: addiu $sp, $sp, -0x50
     /* FPU: dpa.w.ph $ac0, $sp, $s2 */                          // 0x001c7678: dpa.w.ph $ac0, $sp, $s2
     /* FPU: addu.qb $zero, $sp, $s0 */                          // 0x001c7684: addu.qb $zero, $sp, $s0
-    func_001c7770();  // 0x1c7740                                // 0x001c768c: jal 0x1c7740
+    func_001c7740();  // 1c7740                                // 0x001c768c: jal 0x1c7740
     if (v0 != 0) goto label_0x1c76a8;                           // 0x001c7694: bnez $v0, 0x1c76a8
     /* nop */                                                   // 0x001c7698: nop 
     goto label_0x1c7728;                                        // 0x001c769c: b 0x1c7728
@@ -41,7 +41,7 @@ label_0x1c76e4:
     a0 = a0 + 0x6630;                                           // 0x001c76f8: addiu $a0, $a0, 0x6630
     t2 = v0 + s0;                                               // 0x001c76fc: addu $t2, $v0, $s0
     a2 = 1;                                                     // 0x001c7700: addiu $a2, $zero, 1
-    func_001178a0();  // 0x1176a8                                // 0x001c7708: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x001c7708: jal 0x1176a8
     if (v0 >= 0) goto label_0x1c7720;                           // 0x001c7710: bgez $v0, 0x1c7720
     /* nop */                                                   // 0x001c7714: nop 
     goto label_0x1c7724;                                        // 0x001c7718: b 0x1c7724

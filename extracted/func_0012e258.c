@@ -48,7 +48,7 @@ label_0x12e2f8:
     a1 = local_0;                                               // 0x0012e334: lw $a1, 0($sp)
     a0 = s1 << 1;                                               // 0x0012e338: sll $a0, $s1, 1
     a2 = local_4;                                               // 0x0012e33c: lw $a2, 4($sp)
-    func_00107b68();  // 0x107ab8                                // 0x0012e340: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x0012e340: jal 0x107ab8
     a0 = a0 + v1;                                               // 0x0012e344: addu $a0, $a0, $v1
     a0 = *(int32_t*)(s0);                                       // 0x0012e348: lw $a0, 0($s0)
     v0 = local_4;                                               // 0x0012e34c: lw $v0, 4($sp)

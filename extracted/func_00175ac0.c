@@ -7,8 +7,8 @@ void func_00175ac0() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x10;                                            // 0x00175ac0: addiu $sp, $sp, -0x10
-    func_00175b80();  // 0x175b10                                // 0x00175acc: jal 0x175b10
-    func_001752f8();  // 0x1752e8                                // 0x00175ad8: jal 0x1752e8
+    func_00175b10();  // 175b10                                // 0x00175acc: jal 0x175b10
+    func_001752e8();  // 1752e8                                // 0x00175ad8: jal 0x1752e8
     a1 = 0x47;                                                  // 0x00175adc: addiu $a1, $zero, 0x47
     v1 = 1;                                                     // 0x00175ae0: addiu $v1, $zero, 1
     if (v0 != v1) goto label_0x175b00;                          // 0x00175ae4: bne $v0, $v1, 0x175b00

@@ -10,7 +10,7 @@ void func_001323b0() {
     v1 = a1 << 1;                                               // 0x001323b4: sll $v1, $a1, 1
     if (a0 != 0) goto label_0x1323d8;                           // 0x001323b8: bnez $a0, 0x1323d8
     a0 = 0x22 << 16;                                            // 0x001323c0: lui $a0, 0x22
-    func_00127de8();  // 0x127d90                                // 0x001323c4: jal 0x127d90
+    func_00127d90();  // 127d90                                // 0x001323c4: jal 0x127d90
     a0 = &str_00223968;  // "E02080870 ADXT_SetOutBalance: parameter error" // 0x001323c8: addiu $a0, $a0, 0x3968
     goto label_0x1323e0;                                        // 0x001323cc: b 0x1323e0
     /* nop */                                                   // 0x001323d4: nop 

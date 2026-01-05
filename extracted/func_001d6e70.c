@@ -9,8 +9,8 @@ void func_001d6e70() {
     sp = sp + -0x30;                                            // 0x001d6e70: addiu $sp, $sp, -0x30
     a0 = 0x1400;                                                // 0x001d6e74: addiu $a0, $zero, 0x1400
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001d6e7c: addu.qb $zero, $sp, $s1
-    func_001d3c30();  // 0x1d3c20                                // 0x001d6e80: jal 0x1d3c20
-    func_001d71b0();  // 0x1d7130                                // 0x001d6e88: jal 0x1d7130
+    func_001d3c20();  // 1d3c20                                // 0x001d6e80: jal 0x1d3c20
+    func_001d7130();  // 1d7130                                // 0x001d6e88: jal 0x1d7130
     /* nop */                                                   // 0x001d6e8c: nop 
     at = 0x31 << 16;                                            // 0x001d6e90: lui $at, 0x31
     v1 = 0x49 << 16;                                            // 0x001d6e94: lui $v1, 0x49
@@ -31,7 +31,7 @@ label_0x1d6ecc:
     v1 = 0 | 0xffff;                                            // 0x001d6ecc: ori $v1, $zero, 0xffff
     if (a1 == v1) goto label_0x1d6eec;                          // 0x001d6ed0: beq $a1, $v1, 0x1d6eec
     a3 = 3;                                                     // 0x001d6edc: addiu $a3, $zero, 3
-    func_001d5f80();  // 0x1d5f60                                // 0x001d6ee4: jal 0x1d5f60
+    func_001d5f60();  // 1d5f60                                // 0x001d6ee4: jal 0x1d5f60
     t1 = -1;                                                    // 0x001d6ee8: addiu $t1, $zero, -1
 label_0x1d6eec:
     s0 = s0 + 1;                                                // 0x001d6eec: addiu $s0, $s0, 1

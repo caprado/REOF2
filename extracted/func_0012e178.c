@@ -28,10 +28,10 @@ void func_0012e178() {
     goto label_0x12e1f8;                                        // 0x0012e1d4: b 0x12e1f8
     /* nop */                                                   // 0x0012e1dc: nop 
 label_0x12e1e0:
-    func_00112048();  // 0x111f90                                // 0x0012e1e0: jal 0x111f90
+    func_00111f90();  // 111f90                                // 0x0012e1e0: jal 0x111f90
     /* nop */                                                   // 0x0012e1e4: nop 
     at = 0x22 << 16;                                            // 0x0012e1e8: lui $at, 0x22
-    func_00111e20();  // 0x111ce0                                // 0x0012e1f0: jal 0x111ce0
+    func_00111ce0();  // 111ce0                                // 0x0012e1f0: jal 0x111ce0
 label_0x12e1f8:
     return;                                                     // 0x0012e204: jr $ra
     sp = sp + 0x10;                                             // 0x0012e208: addiu $sp, $sp, 0x10

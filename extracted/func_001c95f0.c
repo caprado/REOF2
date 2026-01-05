@@ -10,7 +10,7 @@ void func_001c95f0() {
     uint32_t local_20, local_24;
     
     sp = sp + -0x50;                                            // 0x001c95f0: addiu $sp, $sp, -0x50
-    func_001c8240();  // 0x1c8170                                // 0x001c9600: jal 0x1c8170
+    func_001c8170();  // 1c8170                                // 0x001c9600: jal 0x1c8170
     a0 = sp + 0x20;                                             // 0x001c9604: addiu $a0, $sp, 0x20
     if (v0 >= 0) goto label_0x1c9620;                           // 0x001c9610: bgez $v0, 0x1c9620
     /* nop */                                                   // 0x001c9614: nop 

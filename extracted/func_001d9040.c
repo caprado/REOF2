@@ -16,11 +16,11 @@ void func_001d9040() {
     a1 = &str_002478b0;  // "data\\rom\\scene\\pit_tex\\select.tex" // 0x001d9064: addiu $a1, $a1, 0x78b0
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001d906c: addu.qb $zero, $sp, $s1
     s5 = g_003137fc;  // Global at 0x003137fc                   // 0x001d9074: lw $s5, 0x37fc($at)
-    func_0010ae00();  // 0x10ac68                                // 0x001d9078: jal 0x10ac68
+    func_0010ac68();  // 10ac68                                // 0x001d9078: jal 0x10ac68
     s4 = s5 + v0;                                               // 0x001d907c: addu $s4, $s5, $v0
     a0 = sp + 0x70;                                             // 0x001d9080: addiu $a0, $sp, 0x70
     a2 = 1;                                                     // 0x001d9088: addiu $a2, $zero, 1
-    func_001d33e0();  // 0x1d3390                                // 0x001d908c: jal 0x1d3390
+    func_001d3390();  // 1d3390                                // 0x001d908c: jal 0x1d3390
     if (v0 == 0) goto label_0x1d9100;                           // 0x001d9094: beqz $v0, 0x1d9100
     /* nop */                                                   // 0x001d9098: nop 
     s2 = *(int32_t*)((s5) + 4);                                 // 0x001d909c: lw $s2, 4($s5)
@@ -34,13 +34,13 @@ label_0x1d90b4:
 label_0x1d90bc:
     v0 = *(int32_t*)(s3);                                       // 0x001d90bc: lw $v0, 0($s3)
     a0 = s5 + v0;                                               // 0x001d90c4: addu $a0, $s5, $v0
-    func_001aeef0();  // 0x1aee20                                // 0x001d90c8: jal 0x1aee20
+    func_001aee20();  // 1aee20                                // 0x001d90c8: jal 0x1aee20
     s3 = s3 + 8;                                                // 0x001d90cc: addiu $s3, $s3, 8
     v0 = s2 + -1;                                               // 0x001d90d0: addiu $v0, $s2, -1
     if (s0 != v0) goto label_0x1d90e4;                          // 0x001d90d4: bne $s0, $v0, 0x1d90e4
     s1 = 0xa;                                                   // 0x001d90dc: addiu $s1, $zero, 0xa
 label_0x1d90e4:
-    func_001d36b0();  // 0x1d3600                                // 0x001d90e8: jal 0x1d3600
+    func_001d3600();  // 1d3600                                // 0x001d90e8: jal 0x1d3600
     s1 = a0 + 1;                                                // 0x001d90ec: addiu $s1, $a0, 1
     s0 = s0 + 1;                                                // 0x001d90f0: addiu $s0, $s0, 1
 label_0x1d90f4:

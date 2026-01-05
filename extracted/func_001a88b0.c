@@ -10,11 +10,11 @@ void func_001a88b0() {
     v0 = *(int32_t*)((gp) + -0x63f0);                           // 0x001a88b8: lw $v0, -0x63f0($gp)
     if (v0 != 0) goto label_0x1a88d4;                           // 0x001a88bc: bnez $v0, 0x1a88d4
     /* nop */                                                   // 0x001a88c0: nop 
-    func_001a85c0();  // 0x1a8580                                // 0x001a88c4: jal 0x1a8580
+    func_001a8580();  // 1a8580                                // 0x001a88c4: jal 0x1a8580
     /* nop */                                                   // 0x001a88c8: nop 
     goto label_0x1a88e0;                                        // 0x001a88cc: b 0x1a88e0
 label_0x1a88d4:
-    func_001a8600();  // 0x1a85c0                                // 0x001a88d4: jal 0x1a85c0
+    func_001a85c0();  // 1a85c0                                // 0x001a88d4: jal 0x1a85c0
     /* nop */                                                   // 0x001a88d8: nop 
 label_0x1a88e0:
     return;                                                     // 0x001a88e0: jr $ra

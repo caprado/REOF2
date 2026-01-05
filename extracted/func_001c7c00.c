@@ -12,7 +12,7 @@ void func_001c7c00() {
     sp = sp + -0x70;                                            // 0x001c7c00: addiu $sp, $sp, -0x70
     /* FPU: dpa.w.ph $ac0, $sp, $s3 */                          // 0x001c7c0c: dpa.w.ph $ac0, $sp, $s3
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001c7c1c: addu.qb $zero, $sp, $s1
-    func_001c7780();  // 0x1c7770                                // 0x001c7c24: jal 0x1c7770
+    func_001c7770();  // 1c7770                                // 0x001c7c24: jal 0x1c7770
     s1 = 0x31 << 16;                                            // 0x001c7c2c: lui $s1, 0x31
     s1 = s1 + 0x669c;                                           // 0x001c7c34: addiu $s1, $s1, 0x669c
     goto label_0x1c7d20;                                        // 0x001c7c38: b 0x1c7d20
@@ -26,18 +26,18 @@ label_0x1c7c40:
     /* nop */                                                   // 0x001c7c5c: nop 
 label_0x1c7c60:
     a0 = s1 + 4;                                                // 0x001c7c68: addiu $a0, $s1, 4
-    func_00107b68();  // 0x107ab8                                // 0x001c7c70: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x001c7c70: jal 0x107ab8
     g_0031669e = s0;  // Global at 0x0031669e                   // 0x001c7c74: sh $s0, 2($s1)
     at = 0x31 << 16;                                            // 0x001c7c7c: lui $at, 0x31
     g_00316680 = 0;  // Global at 0x00316680                    // 0x001c7c84: sw $zero, 0x6680($at)
     a1 = v0 + 0x26;                                             // 0x001c7c88: addiu $a1, $v0, 0x26
     at = 0x31 << 16;                                            // 0x001c7c8c: lui $at, 0x31
     a0 = 0x10;                                                  // 0x001c7c94: addiu $a0, $zero, 0x10
-    func_001c7670();  // 0x1c75b0                                // 0x001c7c98: jal 0x1c75b0
+    func_001c75b0();  // 1c75b0                                // 0x001c7c98: jal 0x1c75b0
     g_00316684 = 0;  // Global at 0x00316684                    // 0x001c7c9c: sw $zero, 0x6684($at)
     if (s2 >= 0) goto label_0x1c7cc0;                           // 0x001c7ca8: bgez $s2, 0x1c7cc0
     /* nop */                                                   // 0x001c7cac: nop 
-    func_001c7790();  // 0x1c7780                                // 0x001c7cb0: jal 0x1c7780
+    func_001c7780();  // 1c7780                                // 0x001c7cb0: jal 0x1c7780
     /* nop */                                                   // 0x001c7cb4: nop 
     goto label_0x1c7d48;                                        // 0x001c7cb8: b 0x1c7d48
 label_0x1c7cc0:
@@ -69,7 +69,7 @@ label_0x1c7d20:
     /* nop */                                                   // 0x001c7d30: nop 
     /* nop */                                                   // 0x001c7d34: nop 
 label_0x1c7d38:
-    func_001c7790();  // 0x1c7780                                // 0x001c7d38: jal 0x1c7780
+    func_001c7780();  // 1c7780                                // 0x001c7d38: jal 0x1c7780
     /* nop */                                                   // 0x001c7d3c: nop 
     /* nop */                                                   // 0x001c7d44: nop 
 label_0x1c7d48:

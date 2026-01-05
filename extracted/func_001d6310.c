@@ -23,7 +23,7 @@ label_0x1d6338:
     /* nop */                                                   // 0x001d6350: nop 
     a0 = g_0032ead4;  // Global at 0x0032ead4                   // 0x001d6354: lw $a0, 4($t4)
     if (a0 == 0) goto label_0x1d6378;                           // 0x001d6358: beqz $a0, 0x1d6378
-    func_001d6310();  // 0x1d6250                                // 0x001d6360: jal 0x1d6250
+    func_001d6250();  // 1d6250                                // 0x001d6360: jal 0x1d6250
     /* nop */                                                   // 0x001d6364: nop 
     if (v0 == 0) goto label_0x1d6378;                           // 0x001d6368: beqz $v0, 0x1d6378
     /* nop */                                                   // 0x001d636c: nop 

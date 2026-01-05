@@ -9,7 +9,7 @@ void func_00132208() {
     sp = sp + -0x10;                                            // 0x00132208: addiu $sp, $sp, -0x10
     if (a0 != 0) goto label_0x132228;                           // 0x0013220c: bnez $a0, 0x132228
     a0 = 0x22 << 16;                                            // 0x00132214: lui $a0, 0x22
-    func_00127de8();  // 0x127d90                                // 0x00132218: jal 0x127d90
+    func_00127d90();  // 127d90                                // 0x00132218: jal 0x127d90
     a0 = &str_00223878;  // "E02080822 ADXT_GetHdrLen: parameter error" // 0x0013221c: addiu $a0, $a0, 0x3878
     goto label_0x132248;                                        // 0x00132220: b 0x132248
     v0 = -1;                                                    // 0x00132224: addiu $v0, $zero, -1

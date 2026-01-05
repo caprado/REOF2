@@ -1,3 +1,4 @@
+/** @category graphics/memory @status complete @author caprado */
 void func_0018dba0() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
@@ -25,7 +26,7 @@ label_0x18dbd8:
     v0 = v0 + 0x384;                                            // 0x0018dbe4: addiu $v0, $v0, 0x384
     v1 = v1 << 2;                                               // 0x0018dbe8: sll $v1, $v1, 2
     v0 = v0 + v1;                                               // 0x0018dbec: addu $v0, $v0, $v1
-    func_0018db10();  // 0x18db00                                // 0x0018dbf0: jal 0x18db00
+    func_0018db00();  // 18db00                                // 0x0018dbf0: jal 0x18db00
     a0 = g_00290384;  // Global at 0x00290384                   // 0x0018dbf4: lw $a0, 0($v0)
     at = 0x29 << 16;                                            // 0x0018dbf8: lui $at, 0x29
     v1 = 8 << 16;                                               // 0x0018dbfc: lui $v1, 8

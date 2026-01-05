@@ -13,7 +13,7 @@ void func_001ba010() {
     sp = sp + -0x20;                                            // 0x001ba010: addiu $sp, $sp, -0x20
     a1 = sp + 0x1c;                                             // 0x001ba018: addiu $a1, $sp, 0x1c
     local_1c = 0;                                               // 0x001ba01c: sb $zero, 0x1c($sp)
-    func_001ba0f0();  // 0x1ba070                                // 0x001ba020: jal 0x1ba070
+    func_001ba070();  // 1ba070                                // 0x001ba020: jal 0x1ba070
     local_1d = 0;                                               // 0x001ba024: sb $zero, 0x1d($sp)
     at = 0x30 << 16;                                            // 0x001ba028: lui $at, 0x30
     g_00307f9c = 0;  // Global at 0x00307f9c                    // 0x001ba02c: sh $zero, 0x7f9c($at)

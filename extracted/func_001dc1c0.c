@@ -11,13 +11,13 @@ void func_001dc1c0() {
     
     sp = sp + -0x30;                                            // 0x001dc1c0: addiu $sp, $sp, -0x30
     a0 = 0x33 << 16;                                            // 0x001dc1d0: lui $a0, 0x33
-    func_001dc598();  // 0x1dc4f0                                // 0x001dc1d4: jal 0x1dc4f0
+    func_001dc4f0();  // 1dc4f0                                // 0x001dc1d4: jal 0x1dc4f0
     a0 = a0 + -0x290;                                           // 0x001dc1d8: addiu $a0, $a0, -0x290
     if (v0 == 0) goto label_0x1dc1ec;                           // 0x001dc1dc: beqz $v0, 0x1dc1ec
     goto label_0x1dc220;                                        // 0x001dc1e4: b 0x1dc220
     v0 = -1;                                                    // 0x001dc1e8: addiu $v0, $zero, -1
 label_0x1dc1ec:
-    func_001dcac8();  // 0x1dca18                                // 0x001dc1ec: jal 0x1dca18
+    func_001dca18();  // 1dca18                                // 0x001dc1ec: jal 0x1dca18
     a1 = sp + 0x2c;                                             // 0x001dc1f0: addiu $a1, $sp, 0x2c
     v0 = local_2c;                                              // 0x001dc1f4: lw $v0, 0x2c($sp)
     if (v0 == 0) goto label_0x1dc208;                           // 0x001dc1f8: beqz $v0, 0x1dc208

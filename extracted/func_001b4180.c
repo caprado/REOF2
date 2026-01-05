@@ -12,12 +12,12 @@ void func_001b4180() {
     s6 = 0x30 << 16;                                            // 0x001b4198: lui $s6, 0x30
     /* FPU: dpa.w.ph $ac0, $sp, $s3 */                          // 0x001b41a4: dpa.w.ph $ac0, $sp, $s3
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001b41b4: addu.qb $zero, $sp, $s1
-    func_001b40f0();  // 0x1b4030                                // 0x001b41cc: jal 0x1b4030
+    func_001b4030();  // 1b4030                                // 0x001b41cc: jal 0x1b4030
     s6 = s6 + 0x6c00;                                           // 0x001b41d0: addiu $s6, $s6, 0x6c00
     if (v0 != 0) goto label_0x1b41e4;                           // 0x001b41d4: bnez $v0, 0x1b41e4
     goto label_0x1b4290;                                        // 0x001b41dc: b 0x1b4290
 label_0x1b41e4:
-    func_001b4180();  // 0x1b40f0                                // 0x001b41e8: jal 0x1b40f0
+    func_001b40f0();  // 1b40f0                                // 0x001b41e8: jal 0x1b40f0
     if (v0 != 0) goto label_0x1b4200;                           // 0x001b41f0: bnez $v0, 0x1b4200
     /* nop */                                                   // 0x001b41f4: nop 
     goto label_0x1b4290;                                        // 0x001b41f8: b 0x1b4290
@@ -46,7 +46,7 @@ label_0x1b4240:
     g_00306ca7 = s5;  // Global at 0x00306ca7                   // 0x001b424c: sb $s5, 0xb($s6)
     g_00306c9e = v1;  // Global at 0x00306c9e                   // 0x001b4254: sh $v1, 2($s6)
     a0 = s6 + 0xc;                                              // 0x001b4258: addiu $a0, $s6, 0xc
-    func_0010ae00();  // 0x10ac68                                // 0x001b425c: jal 0x10ac68
+    func_0010ac68();  // 10ac68                                // 0x001b425c: jal 0x10ac68
     g_00306ca0 = v0;  // Global at 0x00306ca0                   // 0x001b4260: sh $v0, 4($s6)
     g_00306ca2 = s7;  // Global at 0x00306ca2                   // 0x001b4264: sh $s7, 6($s6)
     if (s0 != 0) goto label_0x1b427c;                           // 0x001b4268: bnez $s0, 0x1b427c

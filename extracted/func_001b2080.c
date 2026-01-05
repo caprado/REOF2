@@ -11,7 +11,7 @@ void func_001b2080() {
 label_0x1b2090:
     a0 = 0x31 << 16;                                            // 0x001b2090: lui $a0, 0x31
     a0 = a0 + -0x7d50;                                          // 0x001b2098: addiu $a0, $a0, -0x7d50
-    func_00107d30();  // 0x107c70                                // 0x001b209c: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001b209c: jal 0x107c70
     a2 = 0x20;                                                  // 0x001b20a0: addiu $a2, $zero, 0x20
     s0 = s0 + 1;                                                // 0x001b20a4: addiu $s0, $s0, 1
     v1 = (s0 < 0x100) ? 1 : 0;                                  // 0x001b20a8: slti $v1, $s0, 0x100

@@ -9,7 +9,7 @@ void func_001bd0e0() {
     sp = sp + -0x10;                                            // 0x001bd0e0: addiu $sp, $sp, -0x10
     v1 = *(int32_t*)((gp) + -0x7c48);                           // 0x001bd0e8: lw $v1, -0x7c48($gp)
     if (v1 < 0) goto label_0x1bd15c;                            // 0x001bd0ec: bltz $v1, 0x1bd15c
-    func_00100788();  // 0x100708                                // 0x001bd0f4: jal 0x100708
+    func_00100708();  // 100708                                // 0x001bd0f4: jal 0x100708
     ChangeThreadPriority();  // 0x114130                        // 0x001bd0fc: jal 0x114130
     a0 = *(int32_t*)((gp) + -0x7c48);                           // 0x001bd100: lw $a0, -0x7c48($gp)
     StartThread();  // 0x1140f0                                 // 0x001bd104: jal 0x1140f0
@@ -19,12 +19,12 @@ void func_001bd0e0() {
     a0 = 0x24 << 16;                                            // 0x001bd114: lui $a0, 0x24
     a1 = 0x5003;                                                // 0x001bd118: addiu $a1, $zero, 0x5003
     a0 = a0 + -0x2050;                                          // 0x001bd11c: addiu $a0, $a0, -0x2050
-    func_0011b140();  // 0x11af08                                // 0x001bd12c: jal 0x11af08
+    func_0011af08();  // 11af08                                // 0x001bd12c: jal 0x11af08
 label_0x1bd134:
     a0 = 0x24 << 16;                                            // 0x001bd134: lui $a0, 0x24
     a1 = 0x4402;                                                // 0x001bd138: addiu $a1, $zero, 0x4402
     a0 = &str_0023dfa8;  // "cdrom0:"                           // 0x001bd13c: addiu $a0, $a0, -0x2058
-    func_0011b140();  // 0x11af08                                // 0x001bd14c: jal 0x11af08
+    func_0011af08();  // 11af08                                // 0x001bd14c: jal 0x11af08
     if (v0 < 0) goto label_0x1bd134;                            // 0x001bd154: bltz $v0, 0x1bd134
     /* nop */                                                   // 0x001bd158: nop 
 label_0x1bd15c:

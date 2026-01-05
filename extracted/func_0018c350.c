@@ -25,22 +25,22 @@ label_0x18c394:
     goto label_0x18c3fc;                                        // 0x0018c3a0: b 0x18c3fc
     /* nop */                                                   // 0x0018c3a4: nop 
 label_0x18c3a8:
-    func_0018d5c0();  // 0x18d530                                // 0x0018c3a8: jal 0x18d530
+    func_0018d530();  // 18d530                                // 0x0018c3a8: jal 0x18d530
     /* nop */                                                   // 0x0018c3ac: nop 
     *(uint32_t*)((s0) + 4) = 0;                                 // 0x0018c3b0: sw $zero, 4($s0)
     a0 = *(int32_t*)((s0) + 0x14);                              // 0x0018c3b4: lw $a0, 0x14($s0)
     if (a0 == 0) goto label_0x18c3c8;                           // 0x0018c3b8: beqz $a0, 0x18c3c8
     /* nop */                                                   // 0x0018c3bc: nop 
-    thunk_func_001a0a10();  // 0x18daf0                          // 0x0018c3c0: jal 0x18daf0
+    thunk_func_0018daf0();  // 18daf0                          // 0x0018c3c0: jal 0x18daf0
     /* nop */                                                   // 0x0018c3c4: nop 
 label_0x18c3c8:
     a0 = *(int32_t*)((s0) + 0x1c);                              // 0x0018c3c8: lw $a0, 0x1c($s0)
     if (a0 == 0) goto label_0x18c3dc;                           // 0x0018c3cc: beqz $a0, 0x18c3dc
     /* nop */                                                   // 0x0018c3d0: nop 
-    thunk_func_001a0a10();  // 0x18daf0                          // 0x0018c3d4: jal 0x18daf0
+    thunk_func_0018daf0();  // 18daf0                          // 0x0018c3d4: jal 0x18daf0
     /* nop */                                                   // 0x0018c3d8: nop 
 label_0x18c3dc:
-    func_0018da10();  // 0x18d9e0                                // 0x0018c3e4: jal 0x18d9e0
+    func_0018d9e0();  // 18d9e0                                // 0x0018c3e4: jal 0x18d9e0
     a2 = 0x180;                                                 // 0x0018c3e8: addiu $a2, $zero, 0x180
     v1 = *(int32_t*)((gp) + -0x64c4);                           // 0x0018c3ec: lw $v1, -0x64c4($gp)
     v0 = 1;                                                     // 0x0018c3f0: addiu $v0, $zero, 1

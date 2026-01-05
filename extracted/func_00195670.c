@@ -20,21 +20,21 @@ label_0x1956a8:
     a0 = 0x21 << 16;                                            // 0x001956a8: lui $a0, 0x21
     a1 = 0x7000 << 16;                                          // 0x001956ac: lui $a1, 0x7000
     a0 = a0 + 0x66a0;                                           // 0x001956b0: addiu $a0, $a0, 0x66a0
-    func_00189ad0();  // 0x1899f8                                // 0x001956b4: jal 0x1899f8
+    func_001899f8();  // 1899f8                                // 0x001956b4: jal 0x1899f8
     a2 = 3;                                                     // 0x001956b8: addiu $a2, $zero, 3
     v0 = 0x7000 << 16;                                          // 0x001956bc: lui $v0, 0x7000
     a0 = sp + 0x60;                                             // 0x001956c0: addiu $a0, $sp, 0x60
     a1 = v0 | 0x3700;                                           // 0x001956c4: ori $a1, $v0, 0x3700
-    func_001910b0();  // 0x191030                                // 0x001956c8: jal 0x191030
+    func_00191030();  // 191030                                // 0x001956c8: jal 0x191030
     a2 = v0 | 0x3f40;                                           // 0x001956cc: ori $a2, $v0, 0x3f40
     a0 = sp + 0x60;                                             // 0x001956d0: addiu $a0, $sp, 0x60
     a2 = 0x28 << 16;                                            // 0x001956d4: lui $a2, 0x28
     a2 = a2 + 0x53a0;                                           // 0x001956d8: addiu $a2, $a2, 0x53a0
-    func_001910b0();  // 0x191030                                // 0x001956dc: jal 0x191030
+    func_00191030();  // 191030                                // 0x001956dc: jal 0x191030
     a0 = *(int32_t*)((s3) + 0x18);                              // 0x001956e4: lw $a0, 0x18($s3)
-    func_00198aa0();  // 0x1989a0                                // 0x001956e8: jal 0x1989a0
+    func_001989a0();  // 1989a0                                // 0x001956e8: jal 0x1989a0
     a0 = sp + 0xa0;                                             // 0x001956f4: addiu $a0, $sp, 0xa0
-    func_001918f0();  // 0x191860                                // 0x001956fc: jal 0x191860
+    func_00191860();  // 191860                                // 0x001956fc: jal 0x191860
     a2 = sp + 0x60;                                             // 0x00195700: addiu $a2, $sp, 0x60
     s2 = sp + 0xac;                                             // 0x00195704: addiu $s2, $sp, 0xac
     v0 = 0x3f80 << 16;                                          // 0x00195708: lui $v0, 0x3f80
@@ -63,15 +63,15 @@ label_0x1956a8:
     /* FPU: mul.s $f0, $f0, $f1 */                              // 0x00195780: mul.s $f0, $f0, $f1
     *(float*)((sp) + 0xb8) = FPU_F0;  // Store float            // 0x00195784: swc1 $f0, 0xb8($sp)
     v0 = v1 | v0;                                               // 0x00195790: or $v0, $v1, $v0
-    func_00198930();  // 0x198910                                // 0x00195798: jal 0x198910
+    func_00198910();  // 198910                                // 0x00195798: jal 0x198910
     FPU_F12 = *(float*)((sp) + 0xa0);  // Load float            // 0x0019579c: lwc1 $f12, 0xa0($sp)
     s1 = sp + 0xa4;                                             // 0x001957a0: addiu $s1, $sp, 0xa4
     FPU_F12 = *(float*)(s1);  // Load float                     // 0x001957a4: lwc1 $f12, 0($s1)
-    func_00198970();  // 0x198930                                // 0x001957a8: jal 0x198930
+    func_00198930();  // 198930                                // 0x001957a8: jal 0x198930
     /* FPU: mov.s $f21, $f0 */                                  // 0x001957ac: mov.s $f21, $f0
     s0 = sp + 0xa8;                                             // 0x001957b0: addiu $s0, $sp, 0xa8
     FPU_F12 = *(float*)(s0);  // Load float                     // 0x001957b4: lwc1 $f12, 0($s0)
-    func_001989a0();  // 0x198970                                // 0x001957b8: jal 0x198970
+    func_00198970();  // 198970                                // 0x001957b8: jal 0x198970
     /* FPU: mov.s $f20, $f0 */                                  // 0x001957bc: mov.s $f20, $f0
     at = 0x29 << 16;                                            // 0x001957c0: lui $at, 0x29
     v0 = 0x4f00 << 16;                                          // 0x001957c4: lui $v0, 0x4f00
@@ -109,7 +109,7 @@ label_0x195844:
     a1 = s3 + 0xc;                                              // 0x00195854: addiu $a1, $s3, 0xc
     v0 = v0 | a2;                                               // 0x00195858: or $v0, $v0, $a2
     a2 = sp + 0x60;                                             // 0x0019585c: addiu $a2, $sp, 0x60
-    func_001918f0();  // 0x191860                                // 0x00195860: jal 0x191860
+    func_00191860();  // 191860                                // 0x00195860: jal 0x191860
     FPU_F0 = *(float*)(s2);  // Load float                      // 0x00195868: lwc1 $f0, 0($s2)
     v0 = 0x3f80 << 16;                                          // 0x0019586c: lui $v0, 0x3f80
     /* move to FPU: $v0, $f1 */                                 // 0x00195870: mtc1 $v0, $f1
@@ -123,13 +123,13 @@ label_0x195844:
     /* FPU: mul.s $f0, $f0, $f1 */                              // 0x00195894: mul.s $f0, $f0, $f1
     *(float*)((sp) + 0xb8) = FPU_F0;  // Store float            // 0x00195898: swc1 $f0, 0xb8($sp)
     v0 = v1 | v0;                                               // 0x001958a4: or $v0, $v1, $v0
-    func_00198930();  // 0x198910                                // 0x001958ac: jal 0x198910
+    func_00198910();  // 198910                                // 0x001958ac: jal 0x198910
     FPU_F12 = *(float*)((sp) + 0xa0);  // Load float            // 0x001958b0: lwc1 $f12, 0xa0($sp)
     FPU_F12 = *(float*)(s1);  // Load float                     // 0x001958b4: lwc1 $f12, 0($s1)
-    func_00198970();  // 0x198930                                // 0x001958b8: jal 0x198930
+    func_00198930();  // 198930                                // 0x001958b8: jal 0x198930
     /* FPU: mov.s $f21, $f0 */                                  // 0x001958bc: mov.s $f21, $f0
     FPU_F12 = *(float*)(s0);  // Load float                     // 0x001958c0: lwc1 $f12, 0($s0)
-    func_001989a0();  // 0x198970                                // 0x001958c4: jal 0x198970
+    func_00198970();  // 198970                                // 0x001958c4: jal 0x198970
     /* FPU: mov.s $f20, $f0 */                                  // 0x001958c8: mov.s $f20, $f0
     at = 0x29 << 16;                                            // 0x001958cc: lui $at, 0x29
     v0 = 0x4f00 << 16;                                          // 0x001958d0: lui $v0, 0x4f00
@@ -165,7 +165,7 @@ label_0x195950:
     at = 0x7000 << 16;                                          // 0x00195950: lui $at, 0x7000
     a0 = 0x7000 << 16;                                          // 0x00195958: lui $a0, 0x7000
     v0 = v0 | a1;                                               // 0x00195960: or $v0, $v0, $a1
-    func_00193f40();  // 0x193e90                                // 0x00195964: jal 0x193e90
+    func_00193e90();  // 193e90                                // 0x00195964: jal 0x193e90
     v0 = 1;                                                     // 0x0019596c: addiu $v0, $zero, 1
 label_0x195970:
     FPU_F21 = *(float*)((sp) + 4);  // Load float               // 0x00195974: lwc1 $f21, 4($sp)

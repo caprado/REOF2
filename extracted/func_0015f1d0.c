@@ -7,7 +7,7 @@ void func_0015f1d0() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x0015f1d0: addiu $sp, $sp, -0x20
-    func_0015fcb0();  // 0x15fc80                                // 0x0015f1ec: jal 0x15fc80
+    func_0015fc80();  // 15fc80                                // 0x0015f1ec: jal 0x15fc80
     if (v0 != 0) goto label_0x15f220;                           // 0x0015f1f4: bnez $v0, 0x15f220
     a0 = 0x22 << 16;                                            // 0x0015f1fc: lui $a0, 0x22
     a0 = &str_00227aa8;  // "?E211121: filename is longer."     // 0x0015f208: addiu $a0, $a0, 0x7aa8
@@ -15,12 +15,12 @@ void func_0015f1d0() {
     sp = sp + 0x20;                                             // 0x0015f218: addiu $sp, $sp, 0x20
     /* nop */                                                   // 0x0015f21c: nop 
 label_0x15f220:
-    func_001604d8();  // 0x160498                                // 0x0015f220: jal 0x160498
+    func_00160498();  // 160498                                // 0x0015f220: jal 0x160498
     /* nop */                                                   // 0x0015f224: nop 
     v0 = *(int32_t*)(s0);                                       // 0x0015f22c: lw $v0, 0($s0)
     v1 = *(int32_t*)((v0) + 0x3c);                              // 0x0015f230: lw $v1, 0x3c($v0)
     /* call function at address in v1 */                        // 0x0015f234: jalr $v1
-    func_0015f450();  // 0x15f3d8                                // 0x0015f244: jal 0x15f3d8
+    func_0015f3d8();  // 15f3d8                                // 0x0015f244: jal 0x15f3d8
     v0 = 1;                                                     // 0x0015f24c: addiu $v0, $zero, 1
     *(uint32_t*)((s0) + 0x118) = v0;                            // 0x0015f250: sw $v0, 0x118($s0)
     return;                                                     // 0x0015f264: jr $ra

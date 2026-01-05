@@ -18,7 +18,7 @@ void func_0016d948() {
     a1 = *(int32_t*)((s0) + 0x10);                              // 0x0016d970: lw $a1, 0x10($s0)
     if (a2 < 0) goto label_0x16d99c;                            // 0x0016d974: bltzl $a2, 0x16d99c
     v0 = *(int32_t*)(v0);                                       // 0x0016d978: lw $v0, 0($v0)
-    func_0016dc40();  // 0x16da58                                // 0x0016d984: jal 0x16da58
+    func_0016da58();  // 16da58                                // 0x0016d984: jal 0x16da58
     goto label_0x16d9e0;                                        // 0x0016d98c: b 0x16d9e0
     v1 = local_8;                                               // 0x0016d990: lw $v1, 8($sp)
     /* nop */                                                   // 0x0016d994: nop 
@@ -37,7 +37,7 @@ label_0x16d99c:
     *(uint32_t*)((s0) + 0x28) = 0;                              // 0x0016d9c4: sw $zero, 0x28($s0)
 label_0x16d9c8:
     if (v1 == 0) goto label_0x16da00;                           // 0x0016d9c8: beqz $v1, 0x16da00
-    func_0016dcf8();  // 0x16dc40                                // 0x0016d9d4: jal 0x16dc40
+    func_0016dc40();  // 16dc40                                // 0x0016d9d4: jal 0x16dc40
     v1 = local_8;                                               // 0x0016d9dc: lw $v1, 8($sp)
 label_0x16d9e0:
     a0 = local_c;                                               // 0x0016d9e0: lw $a0, 0xc($sp)

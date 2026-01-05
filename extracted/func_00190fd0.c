@@ -15,10 +15,10 @@ void func_00190fd0() {
     *(float*)((sp) + 0x24) = FPU_F0;  // Store float            // 0x00190ff4: swc1 $f0, 0x24($sp)
     FPU_F0 = *(float*)((a0) + 0x38);  // Load float             // 0x00190ff8: lwc1 $f0, 0x38($a0)
     /* FPU: neg.s $f0, $f0 */                                   // 0x00190ffc: neg.s $f0, $f0
-    func_00190fd0();  // 0x190f80                                // 0x00191000: jal 0x190f80
+    func_00190f80();  // 190f80                                // 0x00191000: jal 0x190f80
     *(float*)((sp) + 0x28) = FPU_F0;  // Store float            // 0x00191004: swc1 $f0, 0x28($sp)
     a0 = s0 + 0x30;                                             // 0x00191008: addiu $a0, $s0, 0x30
-    func_00191860();  // 0x191780                                // 0x00191010: jal 0x191780
+    func_00191780();  // 191780                                // 0x00191010: jal 0x191780
     a1 = sp + 0x20;                                             // 0x00191014: addiu $a1, $sp, 0x20
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x0019101c: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x00191020: jr $ra

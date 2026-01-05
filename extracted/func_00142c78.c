@@ -73,7 +73,7 @@ label_0x142d7c:
     v1 = *(int32_t*)((v0) + 0x6e4);                             // 0x00142d98: lw $v1, 0x6e4($v0)
     if (v1 == 0) goto label_0x142db0;                           // 0x00142d9c: beqz $v1, 0x142db0
     a1 = 0x22 << 16;                                            // 0x00142da0: lui $a1, 0x22
-    func_00148588();  // 0x148530                                // 0x00142da8: jal 0x148530
+    func_00148530();  // 148530                                // 0x00142da8: jal 0x148530
     a1 = &str_00226630;  // "Error code detected(BDEC)"         // 0x00142dac: addiu $a1, $a1, 0x6630
 label_0x142db0:
     v1 = local_0;                                               // 0x00142db0: lw $v1, 0($sp)

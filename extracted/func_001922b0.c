@@ -10,9 +10,9 @@ void func_001922b0() {
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001922b8: addu.qb $zero, $sp, $s1
     s1 = *(int32_t*)((a0) + 0x14);                              // 0x001922c0: lw $s1, 0x14($a0)
     a0 = *(int32_t*)((s1) + 0x18);                              // 0x001922c4: lw $a0, 0x18($s1)
-    thunk_func_001a0a20();  // 0x18dab0                          // 0x001922c8: jal 0x18dab0
+    thunk_func_0018dab0();  // 18dab0                          // 0x001922c8: jal 0x18dab0
     a1 = 4;                                                     // 0x001922cc: addiu $a1, $zero, 4
-    func_0018db10();  // 0x18db00                                // 0x001922d4: jal 0x18db00
+    func_0018db00();  // 18db00                                // 0x001922d4: jal 0x18db00
     goto label_0x1922fc;                                        // 0x001922e0: b 0x1922fc
 label_0x1922e8:
     v1 = *(int32_t*)(a0);                                       // 0x001922e8: lw $v1, 0($a0)

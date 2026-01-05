@@ -31,13 +31,13 @@ void func_001aac80() {
     sp = sp + -0x20;                                            // 0x001aace0: addiu $sp, $sp, -0x20
     a1 = 0x24 << 16;                                            // 0x001aace8: lui $a1, 0x24
     a0 = sp + 0x10;                                             // 0x001aacf0: addiu $a0, $sp, 0x10
-    func_0010a570();  // 0x10a4d8                                // 0x001aacf4: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001aacf4: jal 0x10a4d8
     a1 = a1 + -0x25e8;                                          // 0x001aacf8: addiu $a1, $a1, -0x25e8
     a1 = 0x2a << 16;                                            // 0x001aacfc: lui $a1, 0x2a
     a0 = sp + 0x10;                                             // 0x001aad00: addiu $a0, $sp, 0x10
     a1 = a1 + 0x2e40;                                           // 0x001aad04: addiu $a1, $a1, 0x2e40
     a2 = 4;                                                     // 0x001aad08: addiu $a2, $zero, 4
-    func_001a93b0();  // 0x1a92d0                                // 0x001aad0c: jal 0x1a92d0
+    func_001a92d0();  // 1a92d0                                // 0x001aad0c: jal 0x1a92d0
     a3 = 1;                                                     // 0x001aad10: addiu $a3, $zero, 1
     return;                                                     // 0x001aad18: jr $ra
     sp = sp + 0x20;                                             // 0x001aad1c: addiu $sp, $sp, 0x20

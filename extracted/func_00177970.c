@@ -8,14 +8,14 @@ void func_00177970() {
     
     sp = sp + -0x10;                                            // 0x00177970: addiu $sp, $sp, -0x10
     a2 = 0x1c0;                                                 // 0x00177978: addiu $a2, $zero, 0x1c0
-    func_00107d30();  // 0x107c70                                // 0x00177984: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x00177984: jal 0x107c70
     v1 = 1;                                                     // 0x0017798c: addiu $v1, $zero, 1
     v0 = 0xa;                                                   // 0x00177990: addiu $v0, $zero, 0xa
     *(uint32_t*)((s0) + 0xc) = v1;                              // 0x00177994: sw $v1, 0xc($s0)
     *(uint32_t*)((s0) + 0x10) = v0;                             // 0x00177998: sw $v0, 0x10($s0)
     *(uint32_t*)(s0) = v1;                                      // 0x001779a0: sw $v1, 0($s0)
     *(uint32_t*)((s0) + 4) = 0;                                 // 0x001779a4: sw $zero, 4($s0)
-    func_00177a90();  // 0x177a50                                // 0x001779a8: jal 0x177a50
+    func_00177a50();  // 177a50                                // 0x001779a8: jal 0x177a50
     *(uint32_t*)((s0) + 8) = 0;                                 // 0x001779ac: sw $zero, 8($s0)
     v1 = 0xf << 16;                                             // 0x001779b4: lui $v1, 0xf
     v1 = v1 | 0x4240;                                           // 0x001779b8: ori $v1, $v1, 0x4240
@@ -40,7 +40,7 @@ void func_00177970() {
     /* nop */                                                   // 0x00177a4c: nop 
     sp = sp + -0x10;                                            // 0x00177a50: addiu $sp, $sp, -0x10
     a0 = s0 + 0x18;                                             // 0x00177a60: addiu $a0, $s0, 0x18
-    func_00107d30();  // 0x107c70                                // 0x00177a68: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x00177a68: jal 0x107c70
     a2 = 0xf0;                                                  // 0x00177a6c: addiu $a2, $zero, 0xf0
     v0 = *(int32_t*)((s0) + 0x19c);                             // 0x00177a70: lw $v0, 0x19c($s0)
     *(uint32_t*)((s0) + 0x14) = 0;                              // 0x00177a74: sw $zero, 0x14($s0)

@@ -12,7 +12,7 @@ void func_0015f3d8() {
     sp = sp + -0x20;                                            // 0x0015f3d8: addiu $sp, $sp, -0x20
     a2 = *(int32_t*)((s0) + 0x110);                             // 0x0015f3f4: lw $a2, 0x110($s0)
     t0 = sp + 4;                                                // 0x0015f3f8: addiu $t0, $sp, 4
-    func_00129c30();  // 0x129ad8                                // 0x0015f3fc: jal 0x129ad8
+    func_00129ad8();  // 129ad8                                // 0x0015f3fc: jal 0x129ad8
     t1 = sp + 8;                                                // 0x0015f400: addiu $t1, $sp, 8
     a0 = 0x22 << 16;                                            // 0x0015f404: lui $a0, 0x22
     if (v0 != 0) goto label_0x15f438;                           // 0x0015f408: bnez $v0, 0x15f438
@@ -28,7 +28,7 @@ void func_0015f3d8() {
     *(uint32_t*)((s0) + 0x124) = a1;                            // 0x0015f430: sw $a1, 0x124($s0)
     /* nop */                                                   // 0x0015f434: nop 
 label_0x15f438:
-    func_001634a8();  // 0x163410                                // 0x0015f438: jal 0x163410
+    func_00163410();  // 163410                                // 0x0015f438: jal 0x163410
     /* nop */                                                   // 0x0015f43c: nop 
 label_0x15f440:
     return;                                                     // 0x0015f448: jr $ra

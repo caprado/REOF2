@@ -21,7 +21,7 @@ void func_00105740() {
     *(float*)((sp) + 0x20) = FPU_F16;  // Store float           // 0x0010579c: swc1 $f16, 0x20($sp)
     *(float*)((sp) + 0x24) = FPU_F17;  // Store float           // 0x001057a0: swc1 $f17, 0x24($sp)
     *(float*)((sp) + 0x28) = FPU_F18;  // Store float           // 0x001057a4: swc1 $f18, 0x28($sp)
-    func_0010ce88();  // 0x10ce10                                // 0x001057a8: jal 0x10ce10
+    func_0010ce10();  // 10ce10                                // 0x001057a8: jal 0x10ce10
     *(float*)((sp) + 0x2c) = FPU_F19;  // Store float           // 0x001057ac: swc1 $f19, 0x2c($sp)
     return;                                                     // 0x001057b4: jr $ra
     sp = sp + 0x60;                                             // 0x001057b8: addiu $sp, $sp, 0x60

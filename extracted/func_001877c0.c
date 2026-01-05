@@ -20,7 +20,7 @@ label_0x1877e4:
     /* nop */                                                   // 0x001877f4: nop 
     /* beqzl $v0, 0x187810 */                                   // 0x001877f8: beqzl $v0, 0x187810
     s0 = s0 + 0x24;                                             // 0x001877fc: addiu $s0, $s0, 0x24
-    func_00188c80();  // 0x188bf8                                // 0x00187800: jal 0x188bf8
+    func_00188bf8();  // 188bf8                                // 0x00187800: jal 0x188bf8
     a0 = g_0027d070;  // Global at 0x0027d070                   // 0x00187804: lw $a0, 4($s0)
     g_0027d06c = 0;  // Global at 0x0027d06c                    // 0x00187808: sw $zero, 0($s0)
     s0 = s0 + 0x24;                                             // 0x0018780c: addiu $s0, $s0, 0x24

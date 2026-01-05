@@ -7,8 +7,8 @@ void func_00167ea8() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x30;                                            // 0x00167ea8: addiu $sp, $sp, -0x30
-    func_00169ba0();  // 0x169b88                                // 0x00167ec8: jal 0x169b88
-    func_00168038();  // 0x167fa0                                // 0x00167ed8: jal 0x167fa0
+    func_00169b88();  // 169b88                                // 0x00167ec8: jal 0x169b88
+    func_00167fa0();  // 167fa0                                // 0x00167ed8: jal 0x167fa0
     t0 = *(int32_t*)((s2) + 8);                                 // 0x00167ee0: lw $t0, 8($s2)
     if (t0 != 0) goto label_0x167f08;                           // 0x00167ee4: bnez $t0, 0x167f08
     v0 = *(int32_t*)((s2) + 0xc);                               // 0x00167eec: lw $v0, 0xc($s2)
@@ -53,7 +53,7 @@ label_0x167f68:
 label_0x167f7c:
     *(uint8_t*)((s2) + 1) = v0;                                 // 0x00167f7c: sb $v0, 1($s2)
 label_0x167f80:
-    func_00169bc8();  // 0x169ba0                                // 0x00167f80: jal 0x169ba0
+    func_00169ba0();  // 169ba0                                // 0x00167f80: jal 0x169ba0
     return;                                                     // 0x00167f98: jr $ra
     sp = sp + 0x30;                                             // 0x00167f9c: addiu $sp, $sp, 0x30
 }

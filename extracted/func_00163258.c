@@ -14,7 +14,7 @@ void func_00163258() {
     sp = sp + 0x10;                                             // 0x00163274: addiu $sp, $sp, 0x10
     a0 = 6;                                                     // 0x0016327c: addiu $a0, $zero, 6
     sp = sp + -0x10;                                            // 0x00163280: addiu $sp, $sp, -0x10
-    func_001418a0();  // 0x1417d0                                // 0x0016328c: jal 0x1417d0
+    func_001417d0();  // 1417d0                                // 0x0016328c: jal 0x1417d0
     v1 = 0x26 << 16;                                            // 0x00163294: lui $v1, 0x26
     g_00261ec8 = v0;  // Global at 0x00261ec8                   // 0x0016329c: sw $v0, 0x1ec8($v1)
     return;                                                     // 0x001632a0: jr $ra

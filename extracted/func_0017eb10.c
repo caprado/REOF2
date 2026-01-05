@@ -8,7 +8,7 @@ void func_0017eb10() {
     
     sp = sp + -0x40;                                            // 0x0017eb10: addiu $sp, $sp, -0x40
     *(float*)((sp) + 0x30) = FPU_F20;  // Store float           // 0x0017eb20: swc1 $f20, 0x30($sp)
-    func_0011d378();  // 0x11d320                                // 0x0017eb2c: jal 0x11d320
+    func_0011d320();  // 11d320                                // 0x0017eb2c: jal 0x11d320
     /* FPU: mov.s $f20, $f12 */                                 // 0x0017eb30: mov.s $f20, $f12
     VPU_VF4 = *(vec128_t*)((s0) + 0);  // Load 128-bit vector   // 0x0017eb34: ldc2 $4, 0($s0)
     /* move from FPU: $t0, $f20 */                              // 0x0017eb38: mfc1 $t0, $f20

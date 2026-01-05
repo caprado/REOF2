@@ -13,19 +13,19 @@ void func_0015b5d0() {
     uint32_t local_8, local_c;
     
     sp = sp + -0xb0;                                            // 0x0015b5d0: addiu $sp, $sp, -0xb0
-    func_00150190();  // 0x150168                                // 0x0015b5f0: jal 0x150168
+    func_00150168();  // 150168                                // 0x0015b5f0: jal 0x150168
     a0 = *(int32_t*)((s0) + 0x380);                             // 0x0015b5f4: lw $a0, 0x380($s0)
     a0 = *(int32_t*)((s0) + 0x380);                             // 0x0015b5f8: lw $a0, 0x380($s0)
-    func_001501b8();  // 0x150190                                // 0x0015b5fc: jal 0x150190
+    func_00150190();  // 150190                                // 0x0015b5fc: jal 0x150190
     a1 = sp + 0x60;                                             // 0x0015b600: addiu $a1, $sp, 0x60
     a0 = *(int32_t*)((s0) + 0x380);                             // 0x0015b604: lw $a0, 0x380($s0)
     a1 = sp + 0x64;                                             // 0x0015b608: addiu $a1, $sp, 0x64
     a2 = sp + 0x68;                                             // 0x0015b60c: addiu $a2, $sp, 0x68
-    func_001501e0();  // 0x1501b8                                // 0x0015b610: jal 0x1501b8
+    func_001501b8();  // 1501b8                                // 0x0015b610: jal 0x1501b8
     a3 = sp + 0x6c;                                             // 0x0015b614: addiu $a3, $sp, 0x6c
     a0 = *(int32_t*)((s0) + 0x380);                             // 0x0015b618: lw $a0, 0x380($s0)
     a1 = sp + 0x70;                                             // 0x0015b61c: addiu $a1, $sp, 0x70
-    func_00150208();  // 0x1501e0                                // 0x0015b620: jal 0x1501e0
+    func_001501e0();  // 1501e0                                // 0x0015b620: jal 0x1501e0
     a2 = sp + 0x74;                                             // 0x0015b624: addiu $a2, $sp, 0x74
     v0 = local_0;                                               // 0x0015b628: lw $v0, 0($sp)
     v1 = local_4;                                               // 0x0015b62c: lw $v1, 4($sp)

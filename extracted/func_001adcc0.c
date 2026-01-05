@@ -25,7 +25,7 @@ label_0x1add04:
     v1 = a0 << 2;                                               // 0x001add08: sll $v1, $a0, 2
     v0 = v0 + -0x5788;                                          // 0x001add0c: addiu $v0, $v0, -0x5788
     v0 = v0 + v1;                                               // 0x001add10: addu $v0, $v0, $v1
-    func_00131c20();  // 0x131bb8                                // 0x001add14: jal 0x131bb8
+    func_00131bb8();  // 131bb8                                // 0x001add14: jal 0x131bb8
     a0 = g_002aa878;  // Global at 0x002aa878                   // 0x001add18: lw $a0, 0($v0)
     goto label_0x1adda0;                                        // 0x001add1c: b 0x1adda0
     /* nop */                                                   // 0x001add20: nop 
@@ -43,7 +43,7 @@ label_0x1add40:
     v0 = v0 + -0x5788;                                          // 0x001add48: addiu $v0, $v0, -0x5788
     v0 = v0 + v1;                                               // 0x001add4c: addu $v0, $v0, $v1
     a0 = g_002aa878;  // Global at 0x002aa878                   // 0x001add50: lw $a0, 0($v0)
-    func_001323f0();  // 0x1323b0                                // 0x001add54: jal 0x1323b0
+    func_001323b0();  // 1323b0                                // 0x001add54: jal 0x1323b0
     goto label_0x1adda0;                                        // 0x001add5c: b 0x1adda0
     /* nop */                                                   // 0x001add60: nop 
 label_0x1add64:
@@ -51,7 +51,7 @@ label_0x1add64:
     v1 = a0 << 2;                                               // 0x001add68: sll $v1, $a0, 2
     v0 = v0 + -0x5788;                                          // 0x001add6c: addiu $v0, $v0, -0x5788
     v0 = v0 + v1;                                               // 0x001add70: addu $v0, $v0, $v1
-    func_001329e0();  // 0x1329b0                                // 0x001add74: jal 0x1329b0
+    func_001329b0();  // 1329b0                                // 0x001add74: jal 0x1329b0
     a0 = g_002aa878;  // Global at 0x002aa878                   // 0x001add78: lw $a0, 0($v0)
     goto label_0x1adda0;                                        // 0x001add7c: b 0x1adda0
     /* nop */                                                   // 0x001add80: nop 

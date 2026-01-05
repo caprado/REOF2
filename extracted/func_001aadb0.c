@@ -15,7 +15,7 @@ label_0x1aadd0:
     v0 = gp + -0x7d30;                                          // 0x001aadd4: addiu $v0, $gp, -0x7d30
     v0 = v0 + s0;                                               // 0x001aadd8: addu $v0, $v0, $s0
     a0 = *(int32_t*)(v0);                                       // 0x001aade0: lw $a0, 0($v0)
-    func_001a93b0();  // 0x1a92d0                                // 0x001aade8: jal 0x1a92d0
+    func_001a92d0();  // 1a92d0                                // 0x001aade8: jal 0x1a92d0
     a3 = 1;                                                     // 0x001aadec: addiu $a3, $zero, 1
     v1 = gp + -0x7d28;                                          // 0x001aadf0: addiu $v1, $gp, -0x7d28
     a0 = -4;                                                    // 0x001aadf4: addiu $a0, $zero, -4

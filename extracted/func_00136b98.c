@@ -12,7 +12,7 @@ void func_00136b98() {
     sp = sp + -0x40;                                            // 0x00136b98: addiu $sp, $sp, -0x40
     if (a0 != 0) goto label_0x136bc8;                           // 0x00136ba8: bnez $a0, 0x136bc8
     a0 = 0x22 << 16;                                            // 0x00136bb0: lui $a0, 0x22
-    func_00134fb0();  // 0x134ec0                                // 0x00136bb4: jal 0x134ec0
+    func_00134ec0();  // 134ec0                                // 0x00136bb4: jal 0x134ec0
     a0 = &str_00224be0;  // "cvFsSetDefVol #2:illegal volume name" // 0x00136bb8: addiu $a0, $a0, 0x4be0
     goto label_0x136c48;                                        // 0x00136bbc: b 0x136c48
     /* nop */                                                   // 0x00136bc4: nop 
@@ -20,21 +20,21 @@ label_0x136bc8:
     if (s0 != 0) goto label_0x136be8;                           // 0x00136bc8: bnez $s0, 0x136be8
     /* nop */                                                   // 0x00136bcc: nop 
     a0 = 0x22 << 16;                                            // 0x00136bd0: lui $a0, 0x22
-    func_00134fb0();  // 0x134ec0                                // 0x00136bd4: jal 0x134ec0
+    func_00134ec0();  // 134ec0                                // 0x00136bd4: jal 0x134ec0
     a0 = &str_00224c08;  // "cvFsSetDefVol #3:device not found" // 0x00136bd8: addiu $a0, $a0, 0x4c08
     goto label_0x136c48;                                        // 0x00136bdc: b 0x136c48
     /* nop */                                                   // 0x00136be4: nop 
 label_0x136be8:
-    func_001352b8();  // 0x135220                                // 0x00136be8: jal 0x135220
+    func_00135220();  // 135220                                // 0x00136be8: jal 0x135220
     /* nop */                                                   // 0x00136bec: nop 
     if (s1 != 0) goto label_0x136c18;                           // 0x00136bfc: bnez $s1, 0x136c18
     a2 = 0x14;                                                  // 0x00136c00: addiu $a2, $zero, 0x14
     a0 = 0x22 << 16;                                            // 0x00136c04: lui $a0, 0x22
-    func_00134fb0();  // 0x134ec0                                // 0x00136c08: jal 0x134ec0
+    func_00134ec0();  // 134ec0                                // 0x00136c08: jal 0x134ec0
     a0 = &str_00224c30;  // "%s:%s"                             // 0x00136c0c: addiu $a0, $a0, 0x4c30
     goto label_0x136c48;                                        // 0x00136c10: b 0x136c48
 label_0x136c18:
-    func_00107d30();  // 0x107c70                                // 0x00136c18: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x00136c18: jal 0x107c70
     /* nop */                                                   // 0x00136c1c: nop 
     a1 = 6;                                                     // 0x00136c20: addiu $a1, $zero, 6
     local_4 = s0;                                               // 0x00136c24: sw $s0, 4($sp)

@@ -44,7 +44,7 @@ label_0x1583a0:
 label_0x1583b0:
     /* bnezl $v0, 0x1583d8 */                                   // 0x001583b0: bnezl $v0, 0x1583d8
     v0 = v0 ^ 1;                                                // 0x001583b4: xori $v0, $v0, 1
-    func_00158310();  // 0x158278                                // 0x001583b8: jal 0x158278
+    func_00158278();  // 158278                                // 0x001583b8: jal 0x158278
     v1 = s3 & v0;                                               // 0x001583c0: and $v1, $s3, $v0
     if (v1 != 0) goto label_0x1583f0;                           // 0x001583c4: bnez $v1, 0x1583f0
     goto label_0x1583e0;                                        // 0x001583cc: b 0x1583e0

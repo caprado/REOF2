@@ -29,7 +29,7 @@ label_0x1a1054:
     *(uint32_t*)((v0) + 4) = 0;                                 // 0x001a1068: sw $zero, 4($v0)
     v0 = *(int32_t*)((a0) + 8);                                 // 0x001a106c: lw $v0, 8($a0)
     v0 = v0 + v1;                                               // 0x001a1070: addu $v0, $v0, $v1
-    func_001a14c0();  // 0x1a1440                                // 0x001a1074: jal 0x1a1440
+    func_001a1440();  // 1a1440                                // 0x001a1074: jal 0x1a1440
     *(uint32_t*)(v0) = 0;                                       // 0x001a1078: sw $zero, 0($v0)
     v0 = 1;                                                     // 0x001a107c: addiu $v0, $zero, 1
 label_0x1a1080:

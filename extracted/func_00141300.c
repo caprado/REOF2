@@ -25,7 +25,7 @@ void func_00141300() {
     /* nop */                                                   // 0x00141350: nop 
     a0 = 0x22 << 16;                                            // 0x00141354: lui $a0, 0x22
     a1 = g_00210bf4;  // Global at 0x00210bf4                   // 0x00141358: lw $a1, 0($s0)
-    func_00141568();  // 0x1414c0                                // 0x0014135c: jal 0x1414c0
+    func_001414c0();  // 1414c0                                // 0x0014135c: jal 0x1414c0
     a0 = &str_00226428;  // "1051001:SVM_SetCbSvr:too many server function" // 0x00141360: addiu $a0, $a0, 0x6428
 label_0x141364:
     g_00210bf4 = 0;  // Global at 0x00210bf4                    // 0x00141364: sw $zero, 0($s0)

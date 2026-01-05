@@ -20,7 +20,7 @@ void func_001728a0() {
     a1 = *(int32_t*)((a2) + 0xb4);                              // 0x001728dc: lw $a1, 0xb4($a2)
     v1 = (v1 < a1) ? 1 : 0;                                     // 0x001728e0: slt $v1, $v1, $a1
     /* beqzl $v1, 0x1728fc */                                   // 0x001728e4: beqzl $v1, 0x1728fc
-    func_00172f98();  // 0x172ed0                                // 0x001728ec: jal 0x172ed0
+    func_00172ed0();  // 172ed0                                // 0x001728ec: jal 0x172ed0
     /* nop */                                                   // 0x001728f0: nop 
     v0 = ((unsigned)0 < (unsigned)v0) ? 1 : 0;                  // 0x001728f4: sltu $v0, $zero, $v0
 label_0x1728f8:

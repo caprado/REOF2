@@ -15,7 +15,7 @@ void func_001bf7e0() {
     goto label_0x1bf878;                                        // 0x001bf804: b 0x1bf878
     v0 = -1;                                                    // 0x001bf808: addiu $v0, $zero, -1
 label_0x1bf80c:
-    func_001bf010();  // 0x1befe0                                // 0x001bf80c: jal 0x1befe0
+    func_001befe0();  // 1befe0                                // 0x001bf80c: jal 0x1befe0
     /* nop */                                                   // 0x001bf810: nop 
     if (v0 < 0) goto label_0x1bf874;                            // 0x001bf814: bltz $v0, 0x1bf874
     /* nop */                                                   // 0x001bf818: nop 
@@ -23,7 +23,7 @@ label_0x1bf80c:
     v0 = gp + -0x6300;                                          // 0x001bf820: addiu $v0, $gp, -0x6300
     v1 = v1 << 2;                                               // 0x001bf824: sll $v1, $v1, 2
     v0 = v0 + v1;                                               // 0x001bf828: addu $v0, $v0, $v1
-    func_00180e58();  // 0x180da8                                // 0x001bf82c: jal 0x180da8
+    func_00180da8();  // 180da8                                // 0x001bf82c: jal 0x180da8
     a0 = *(int32_t*)(v0);                                       // 0x001bf830: lw $a0, 0($v0)
     if (v0 >= 0) goto label_0x1bf844;                           // 0x001bf834: bgez $v0, 0x1bf844
     /* nop */                                                   // 0x001bf838: nop 
@@ -35,7 +35,7 @@ label_0x1bf844:
     goto label_0x1bf874;                                        // 0x001bf84c: b 0x1bf874
     *(uint32_t*)((s0) + 4) = v0;                                // 0x001bf850: sw $v0, 4($s0)
 label_0x1bf854:
-    func_001bf010();  // 0x1befe0                                // 0x001bf854: jal 0x1befe0
+    func_001befe0();  // 1befe0                                // 0x001bf854: jal 0x1befe0
     /* nop */                                                   // 0x001bf858: nop 
     if (v0 < 0) goto label_0x1bf874;                            // 0x001bf85c: bltz $v0, 0x1bf874
     /* nop */                                                   // 0x001bf860: nop 

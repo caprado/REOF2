@@ -25,14 +25,14 @@ void func_001129c8() {
     s5 = t0 >> 0x10;                                            // 0x00112a30: sra $s5, $t0, 0x10
     s3 = t1 >> 0x10;                                            // 0x00112a34: sra $s3, $t1, 0x10
     if (s5 != 0) goto label_0x112a7c;                           // 0x00112a40: bnez $s5, 0x112a7c
-    func_001129c8();  // 0x112900                                // 0x00112a50: jal 0x112900
+    func_00112900();  // 112900                                // 0x00112a50: jal 0x112900
     v1 = s3 & 0xf;                                              // 0x00112a5c: andi $v1, $s3, 0xf
     v0 = v0 | v1;                                               // 0x00112a68: or $v0, $v0, $v1
     a0 = 0 | 0x8000;                                            // 0x00112a6c: ori $a0, $zero, 0x8000
     goto label_0x112aa0;                                        // 0x00112a74: b 0x112aa0
     v0 = v0 | a0;                                               // 0x00112a78: or $v0, $v0, $a0
 label_0x112a7c:
-    func_001129c8();  // 0x112900                                // 0x00112a84: jal 0x112900
+    func_00112900();  // 112900                                // 0x00112a84: jal 0x112900
     v1 = s3 & 0xf;                                              // 0x00112a90: andi $v1, $s3, 0xf
     v0 = v0 | v1;                                               // 0x00112a9c: or $v0, $v0, $v1
 label_0x112aa0:

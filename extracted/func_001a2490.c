@@ -17,7 +17,7 @@ void func_001a2490() {
     a0 = 0x2a << 16;                                            // 0x001a24c0: lui $a0, 0x2a
     v0 = *(uint16_t*)((a1) + 2);                                // 0x001a24c4: lhu $v0, 2($a1)
     a0 = a0 + 0x500;                                            // 0x001a24c8: addiu $a0, $a0, 0x500
-    func_001899f8();  // 0x1898e0                                // 0x001a24cc: jal 0x1898e0
+    func_001898e0();  // 1898e0                                // 0x001a24cc: jal 0x1898e0
     a1 = v0 << 3;                                               // 0x001a24d0: sll $a1, $v0, 3
     goto label_0x1a2510;                                        // 0x001a24dc: b 0x1a2510
     *(uint32_t*)((s1) + 4) = a1;                                // 0x001a24e0: sw $a1, 4($s1)

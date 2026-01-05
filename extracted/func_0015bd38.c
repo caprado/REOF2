@@ -21,10 +21,10 @@ void func_0015bd38() {
     v0 = v0 + v1;                                               // 0x0015bd7c: addu $v0, $v0, $v1
     v0 = v0 >> 1;                                               // 0x0015bd80: sra $v0, $v0, 1
     v0 = v0 + 0x2840;                                           // 0x0015bd84: addiu $v0, $v0, 0x2840
-    func_0015d300();  // 0x15d260                                // 0x0015bd8c: jal 0x15d260
+    func_0015d260();  // 15d260                                // 0x0015bd8c: jal 0x15d260
     local_0 = v0;                                               // 0x0015bd90: sw $v0, 0($sp)
     *(uint32_t*)(s0) = v0;                                      // 0x0015bd98: sw $v0, 0($s0)
-    func_0015d300();  // 0x15d260                                // 0x0015bd9c: jal 0x15d260
+    func_0015d260();  // 15d260                                // 0x0015bd9c: jal 0x15d260
     a1 = local_4;                                               // 0x0015bda0: lw $a1, 4($sp)
     v0 = *(int32_t*)(s0);                                       // 0x0015bda8: lw $v0, 0($s0)
     if (v0 == 0) goto label_0x15bdbc;                           // 0x0015bdac: beqz $v0, 0x15bdbc

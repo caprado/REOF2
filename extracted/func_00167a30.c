@@ -7,7 +7,7 @@ void func_00167a30() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x10;                                            // 0x00167a30: addiu $sp, $sp, -0x10
-    func_00169b10();  // 0x169af0                                // 0x00167a3c: jal 0x169af0
+    func_00169af0();  // 169af0                                // 0x00167a3c: jal 0x169af0
     a1 = 0xff00 << 16;                                          // 0x00167a44: lui $a1, 0xff00
     a2 = 1;                                                     // 0x00167a4c: addiu $a2, $zero, 1
     if (v0 == 0) goto label_0x167a70;                           // 0x00167a50: beqz $v0, 0x167a70
@@ -16,7 +16,7 @@ void func_00167a30() {
     sp = sp + 0x10;                                             // 0x00167a68: addiu $sp, $sp, 0x10
     /* nop */                                                   // 0x00167a6c: nop 
 label_0x167a70:
-    func_00175170();  // 0x175120                                // 0x00167a70: jal 0x175120
+    func_00175120();  // 175120                                // 0x00167a70: jal 0x175120
     a1 = 0x31;                                                  // 0x00167a74: addiu $a1, $zero, 0x31
     return;                                                     // 0x00167a84: jr $ra
     sp = sp + 0x10;                                             // 0x00167a88: addiu $sp, $sp, 0x10

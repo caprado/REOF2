@@ -9,7 +9,7 @@ void func_001737c0() {
     sp = sp + -0x10;                                            // 0x001737c0: addiu $sp, $sp, -0x10
     a1 = 7;                                                     // 0x001737c4: addiu $a1, $zero, 7
     a2 = 6;                                                     // 0x001737c8: addiu $a2, $zero, 6
-    func_00177908();  // 0x1778a0                                // 0x001737d4: jal 0x1778a0
+    func_001778a0();  // 1778a0                                // 0x001737d4: jal 0x1778a0
     return;                                                     // 0x001737e0: jr $ra
     sp = sp + 0x10;                                             // 0x001737e4: addiu $sp, $sp, 0x10
 }

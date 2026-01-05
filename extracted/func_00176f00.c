@@ -19,7 +19,7 @@ void func_00176f00() {
     /* nop */                                                   // 0x00176f3c: nop 
 label_0x176f40:
     a2 = *(int32_t*)((t0) + 0x288);                             // 0x00176f40: lw $a2, 0x288($t0)
-    func_0014fef0();  // 0x14fea8                                // 0x00176f44: jal 0x14fea8
+    func_0014fea8();  // 14fea8                                // 0x00176f44: jal 0x14fea8
     a3 = g_00215740;  // Global at 0x00215740                   // 0x00176f48: lw $a3, 8($v0)
     if (v0 == 0) goto label_0x176f60;                           // 0x00176f4c: beqz $v0, 0x176f60
     v0 = 1;                                                     // 0x00176f50: addiu $v0, $zero, 1

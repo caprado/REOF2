@@ -14,7 +14,7 @@ void func_001322f8() {
     sp = sp + 0x20;                                             // 0x00132338: addiu $sp, $sp, 0x20
     /* nop */                                                   // 0x0013233c: nop 
 label_0x132340:
-    func_0012d678();  // 0x12d610                                // 0x00132340: jal 0x12d610
+    func_0012d610();  // 12d610                                // 0x00132340: jal 0x12d610
     a0 = *(int32_t*)((s0) + 4);                                 // 0x00132344: lw $a0, 4($s0)
     a0 = 0x22 << 16;                                            // 0x00132348: lui $a0, 0x22
     v1 = -0x80;                                                 // 0x0013234c: addiu $v1, $zero, -0x80
@@ -28,11 +28,11 @@ label_0x132340:
     v0 = (s1 < v0) ? 1 : 0;                                     // 0x00132374: slt $v0, $s1, $v0
     if (v0 == 0) goto label_0x132390;                           // 0x00132378: beqz $v0, 0x132390
     a0 = &str_00223938;  // "E02080826 ADXT_GetOutPan: parameter error" // 0x0013237c: addiu $a0, $a0, 0x3938
-    func_0012c4e8();  // 0x12c4d0                                // 0x00132380: jal 0x12c4d0
+    func_0012c4d0();  // 12c4d0                                // 0x00132380: jal 0x12c4d0
     a0 = *(int32_t*)((s0) + 0xc);                               // 0x00132384: lw $a0, 0xc($s0)
     goto label_0x13239c;                                        // 0x00132388: b 0x13239c
 label_0x132390:
-    func_00127de8();  // 0x127d90                                // 0x00132390: jal 0x127d90
+    func_00127d90();  // 127d90                                // 0x00132390: jal 0x127d90
     /* nop */                                                   // 0x00132394: nop 
 label_0x13239c:
     return;                                                     // 0x001323a8: jr $ra

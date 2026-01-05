@@ -9,7 +9,7 @@ void func_00132168() {
     sp = sp + -0x10;                                            // 0x00132168: addiu $sp, $sp, -0x10
     if (a0 != 0) goto label_0x132188;                           // 0x0013216c: bnez $a0, 0x132188
     a0 = 0x22 << 16;                                            // 0x00132174: lui $a0, 0x22
-    func_00127de8();  // 0x127d90                                // 0x00132178: jal 0x127d90
+    func_00127d90();  // 127d90                                // 0x00132178: jal 0x127d90
     a0 = &str_00223818;  // "E02080819 ADXT_GetSfreq: parameter error" // 0x0013217c: addiu $a0, $a0, 0x3818
     goto label_0x1321a8;                                        // 0x00132180: b 0x1321a8
     v0 = -1;                                                    // 0x00132184: addiu $v0, $zero, -1

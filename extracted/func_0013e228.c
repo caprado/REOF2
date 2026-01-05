@@ -13,7 +13,7 @@ void func_0013e228() {
     a2 = 1;                                                     // 0x0013e22c: addiu $a2, $zero, 1
     local_0 = a0;                                               // 0x0013e230: sw $a0, 0($sp)
     a0 = 0xb;                                                   // 0x0013e234: addiu $a0, $zero, 0xb
-    func_00139228();  // 0x139120                                // 0x0013e244: jal 0x139120
+    func_00139120();  // 139120                                // 0x0013e244: jal 0x139120
     return;                                                     // 0x0013e250: jr $ra
     sp = sp + 0x20;                                             // 0x0013e254: addiu $sp, $sp, 0x20
 }

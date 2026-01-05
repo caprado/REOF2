@@ -8,13 +8,13 @@ void func_0017e8e8() {
     
     sp = sp + -0x40;                                            // 0x0017e8e8: addiu $sp, $sp, -0x40
     *(float*)((sp) + 0x30) = FPU_F20;  // Store float           // 0x0017e8f8: swc1 $f20, 0x30($sp)
-    func_0011d378();  // 0x11d320                                // 0x0017e900: jal 0x11d320
+    func_0011d320();  // 11d320                                // 0x0017e900: jal 0x11d320
     VPU_VF4 = *(vec128_t*)((s1) + 0);  // Load 128-bit vector   // 0x0017e90c: ldc2 $4, 0($s1)
     VPU_VF5 = *(vec128_t*)((s0) + 0);  // Load 128-bit vector   // 0x0017e910: ldc2 $5, 0($s0)
     /* move to FPU: $v0, $f20 */                                // 0x0017e924: mtc1 $v0, $f20
     if (v1 == 0) goto label_0x17e93c;                           // 0x0017e928: beqz $v1, 0x17e93c
     /* FPU: mov.s $f0, $f20 */                                  // 0x0017e92c: mov.s $f0, $f20
-    func_0011d390();  // 0x11d378                                // 0x0017e930: jal 0x11d378
+    func_0011d378();  // 11d378                                // 0x0017e930: jal 0x11d378
     /* nop */                                                   // 0x0017e934: nop 
     /* FPU: mov.s $f0, $f20 */                                  // 0x0017e938: mov.s $f0, $f20
 label_0x17e93c:

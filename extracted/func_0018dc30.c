@@ -20,7 +20,7 @@ void func_0018dc30() {
     at = ((unsigned)v1 < (unsigned)a0) ? 1 : 0;                 // 0x0018dc68: sltu $at, $v1, $a0
     if (at == 0) goto label_0x18dc88;                           // 0x0018dc6c: beqz $at, 0x18dc88
     /* nop */                                                   // 0x0018dc70: nop 
-    func_0018d530();  // 0x18d4c0                                // 0x0018dc74: jal 0x18d4c0
+    func_0018d4c0();  // 18d4c0                                // 0x0018dc74: jal 0x18d4c0
     /* nop */                                                   // 0x0018dc78: nop 
     at = 0x29 << 16;                                            // 0x0018dc7c: lui $at, 0x29
     v0 = g_00290378;  // Global at 0x00290378                   // 0x0018dc80: lw $v0, 0x378($at)

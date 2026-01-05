@@ -40,7 +40,7 @@ void func_001bcad0() {
     a0 = *(int32_t*)((gp) + -0x7c48);                           // 0x001bcb48: lw $a0, -0x7c48($gp)
     a1 = *(int32_t*)((gp) + -0x7c4c);                           // 0x001bcb4c: lw $a1, -0x7c4c($gp)
     a0 = 0x1c << 16;                                            // 0x001bcb50: lui $a0, 0x1c
-    func_00100788();  // 0x100708                                // 0x001bcb54: jal 0x100708
+    func_00100708();  // 100708                                // 0x001bcb54: jal 0x100708
     a0 = a0 + -0x3310;                                          // 0x001bcb58: addiu $a0, $a0, -0x3310
     return;                                                     // 0x001bcb60: jr $ra
     sp = sp + 0x60;                                             // 0x001bcb64: addiu $sp, $sp, 0x60

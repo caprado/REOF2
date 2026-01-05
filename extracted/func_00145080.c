@@ -41,7 +41,7 @@ void func_00145080() {
     v0 = *(int32_t*)((a1) + 0x10a0);                            // 0x00145130: lw $v0, 0x10a0($a1)
     /* nop */                                                   // 0x00145134: nop 
     if (v0 == 0) goto label_0x145194;                           // 0x00145138: beqz $v0, 0x145194
-    func_0011d378();  // 0x11d320                                // 0x00145140: jal 0x11d320
+    func_0011d320();  // 11d320                                // 0x00145140: jal 0x11d320
     /* nop */                                                   // 0x00145144: nop 
     v1 = g_10000000;  // Global at 0x10000000                   // 0x00145148: lw $v1, 0($s1)
     a0 = 1 << 16;                                               // 0x0014514c: lui $a0, 1
@@ -53,7 +53,7 @@ void func_00145080() {
     v1 = v1 & s7;                                               // 0x00145164: and $v1, $v1, $s7
     if (v0 == 0) goto label_0x145178;                           // 0x00145168: beqz $v0, 0x145178
     g_10000000 = v1;  // Global at 0x10000000                   // 0x0014516c: sw $v1, 0($s3)
-    func_0011d390();  // 0x11d378                                // 0x00145170: jal 0x11d378
+    func_0011d378();  // 11d378                                // 0x00145170: jal 0x11d378
     /* nop */                                                   // 0x00145174: nop 
 label_0x145178:
     g_10000000 = 0;  // Global at 0x10000000                    // 0x00145178: sw $zero, 0($fp)
@@ -67,7 +67,7 @@ label_0x145194:
     if (v0 != 0) goto label_0x1451b4;                           // 0x00145198: bnez $v0, 0x1451b4
     a0 = a0 + 1;                                                // 0x0014519c: addiu $a0, $a0, 1
     a0 = *(int32_t*)((a1) + 0x870);                             // 0x001451a0: lw $a0, 0x870($a1)
-    func_00147d70();  // 0x147ca0                                // 0x001451a4: jal 0x147ca0
+    func_00147ca0();  // 147ca0                                // 0x001451a4: jal 0x147ca0
     /* FPU: addu.qb $zero, $sp, $a1 */                          // 0x001451a8: addu.qb $zero, $sp, $a1
     /* FPU: aver_u.h $w0, $w0, $w5 */                           // 0x001451ac: aver_u.h $w0, $w0, $w5
 label_0x1451b4:

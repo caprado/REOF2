@@ -10,7 +10,7 @@ void func_0013aa88() {
     uint32_t local_0;
     
     sp = sp + -0x40;                                            // 0x0013aa88: addiu $sp, $sp, -0x40
-    func_0013a770();  // 0x13a6c0                                // 0x0013aa90: jal 0x13a6c0
+    func_0013a6c0();  // 13a6c0                                // 0x0013aa90: jal 0x13a6c0
     v0 = local_0;                                               // 0x0013aa98: lw $v0, 0($sp)
     v0 = ((unsigned)0 < (unsigned)v0) ? 1 : 0;                  // 0x0013aaa0: sltu $v0, $zero, $v0
     return;                                                     // 0x0013aaa4: jr $ra

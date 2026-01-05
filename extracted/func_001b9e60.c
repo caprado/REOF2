@@ -16,7 +16,7 @@ void func_001b9e60() {
     /* nop */                                                   // 0x001b9e84: nop 
     goto label_0x1b9ee4;                                        // 0x001b9e88: b 0x1b9ee4
 label_0x1b9e90:
-    func_001b9f10();  // 0x1b9ef0                                // 0x001b9e90: jal 0x1b9ef0
+    func_001b9ef0();  // 1b9ef0                                // 0x001b9e90: jal 0x1b9ef0
     /* nop */                                                   // 0x001b9e94: nop 
     *(uint32_t*)((gp) + -0x638c) = 0;                           // 0x001b9e98: sw $zero, -0x638c($gp)
     *(uint32_t*)((gp) + -0x6390) = 0;                           // 0x001b9e9c: sw $zero, -0x6390($gp)
@@ -24,7 +24,7 @@ label_0x1b9e90:
     v0 = v0 + 1;                                                // 0x001b9ea4: addiu $v0, $v0, 1
     *(uint8_t*)((s0) + 8) = v0;                                 // 0x001b9ea8: sb $v0, 8($s0)
 label_0x1b9eac:
-    func_001ba010();  // 0x1b9f10                                // 0x001b9eac: jal 0x1b9f10
+    func_001b9f10();  // 1b9f10                                // 0x001b9eac: jal 0x1b9f10
     at = 0x30 << 16;                                            // 0x001b9eb4: lui $at, 0x30
     v1 = 1;                                                     // 0x001b9eb8: addiu $v1, $zero, 1
     a0 = g_00307f91;  // Global at 0x00307f91                   // 0x001b9ebc: lbu $a0, 0x7f91($at)
@@ -35,7 +35,7 @@ label_0x1b9eac:
     goto label_0x1b9ee0;                                        // 0x001b9ed0: b 0x1b9ee0
     /* nop */                                                   // 0x001b9ed4: nop 
 label_0x1b9ed8:
-    func_001ba1d0();  // 0x1ba0f0                                // 0x001b9ed8: jal 0x1ba0f0
+    func_001ba0f0();  // 1ba0f0                                // 0x001b9ed8: jal 0x1ba0f0
 label_0x1b9ee0:
 label_0x1b9ee4:
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001b9ee4: xori.b $w0, $w0, 0xb0

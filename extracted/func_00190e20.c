@@ -30,19 +30,19 @@ void func_00190e20() {
     FPU_F0 = *(float*)((a3) + 8);  // Load float                // 0x00190e88: lwc1 $f0, 8($a3)
     *(float*)(v0) = FPU_F2;  // Store float                     // 0x00190e8c: swc1 $f2, 0($v0)
     *(float*)((v0) + 4) = FPU_F1;  // Store float               // 0x00190e90: swc1 $f1, 4($v0)
-    func_00191ba0();  // 0x191b30                                // 0x00190e94: jal 0x191b30
+    func_00191b30();  // 191b30                                // 0x00190e94: jal 0x191b30
     *(float*)((v0) + 8) = FPU_F0;  // Store float               // 0x00190e98: swc1 $f0, 8($v0)
-    func_00191ba0();  // 0x191b30                                // 0x00190e9c: jal 0x191b30
+    func_00191b30();  // 191b30                                // 0x00190e9c: jal 0x191b30
     a0 = sp + 0x50;                                             // 0x00190ea0: addiu $a0, $sp, 0x50
     a0 = sp + 0x80;                                             // 0x00190ea4: addiu $a0, $sp, 0x80
     a1 = sp + 0x50;                                             // 0x00190ea8: addiu $a1, $sp, 0x50
-    func_00191ca0();  // 0x191c00                                // 0x00190eac: jal 0x191c00
+    func_00191c00();  // 191c00                                // 0x00190eac: jal 0x191c00
     a2 = sp + 0x60;                                             // 0x00190eb0: addiu $a2, $sp, 0x60
-    func_00191ba0();  // 0x191b30                                // 0x00190eb4: jal 0x191b30
+    func_00191b30();  // 191b30                                // 0x00190eb4: jal 0x191b30
     a0 = sp + 0x80;                                             // 0x00190eb8: addiu $a0, $sp, 0x80
     a0 = sp + 0x70;                                             // 0x00190ebc: addiu $a0, $sp, 0x70
     a1 = sp + 0x60;                                             // 0x00190ec0: addiu $a1, $sp, 0x60
-    func_00191ca0();  // 0x191c00                                // 0x00190ec4: jal 0x191c00
+    func_00191c00();  // 191c00                                // 0x00190ec4: jal 0x191c00
     a2 = sp + 0x80;                                             // 0x00190ec8: addiu $a2, $sp, 0x80
     *(uint32_t*)((s3) + 0xc) = 0;                               // 0x00190ecc: sw $zero, 0xc($s3)
     v0 = 0x3f80 << 16;                                          // 0x00190ed0: lui $v0, 0x3f80
@@ -67,15 +67,15 @@ void func_00190e20() {
     FPU_F0 = *(float*)(s1);  // Load float                      // 0x00190f20: lwc1 $f0, 0($s1)
     *(float*)((s3) + 0x18) = FPU_F0;  // Store float            // 0x00190f24: swc1 $f0, 0x18($s3)
     FPU_F0 = *(float*)(s0);  // Load float                      // 0x00190f28: lwc1 $f0, 0($s0)
-    func_00191c00();  // 0x191ba0                                // 0x00190f2c: jal 0x191ba0
+    func_00191ba0();  // 191ba0                                // 0x00190f2c: jal 0x191ba0
     *(float*)((s3) + 0x28) = FPU_F0;  // Store float            // 0x00190f30: swc1 $f0, 0x28($s3)
     /* FPU: neg.s $f0, $f0 */                                   // 0x00190f34: neg.s $f0, $f0
     *(float*)((s3) + 0x30) = FPU_F0;  // Store float            // 0x00190f3c: swc1 $f0, 0x30($s3)
-    func_00191c00();  // 0x191ba0                                // 0x00190f40: jal 0x191ba0
+    func_00191ba0();  // 191ba0                                // 0x00190f40: jal 0x191ba0
     a1 = sp + 0x70;                                             // 0x00190f44: addiu $a1, $sp, 0x70
     /* FPU: neg.s $f0, $f0 */                                   // 0x00190f48: neg.s $f0, $f0
     a1 = sp + 0x60;                                             // 0x00190f50: addiu $a1, $sp, 0x60
-    func_00191c00();  // 0x191ba0                                // 0x00190f54: jal 0x191ba0
+    func_00191ba0();  // 191ba0                                // 0x00190f54: jal 0x191ba0
     *(float*)((s3) + 0x34) = FPU_F0;  // Store float            // 0x00190f58: swc1 $f0, 0x34($s3)
     /* FPU: neg.s $f0, $f0 */                                   // 0x00190f5c: neg.s $f0, $f0
     *(float*)((s3) + 0x38) = FPU_F0;  // Store float            // 0x00190f60: swc1 $f0, 0x38($s3)

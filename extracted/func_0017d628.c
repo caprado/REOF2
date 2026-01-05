@@ -15,7 +15,7 @@ void func_0017d628() {
     s3 = &str_00229cd0;  // "ZMVFRM"                            // 0x0017d638: addiu $s3, $v0, -0x6330
     a1 = &str_00229ce0;  // "ZMFDATA"                           // 0x0017d658: addiu $a1, $v1, -0x6320
     t0 = sp + 4;                                                // 0x0017d660: addiu $t0, $sp, 4
-    func_0017d7b0();  // 0x17d730                                // 0x0017d66c: jal 0x17d730
+    func_0017d730();  // 17d730                                // 0x0017d66c: jal 0x17d730
     a1 = 0x23 << 16;                                            // 0x0017d674: lui $a1, 0x23
     v0 = local_0;                                               // 0x0017d678: lw $v0, 0($sp)
     v1 = 0x7fff << 16;                                          // 0x0017d67c: lui $v1, 0x7fff
@@ -27,12 +27,12 @@ void func_0017d628() {
     goto label_0x17d710;                                        // 0x0017d698: b 0x17d710
     *(uint32_t*)(s2) = v1;                                      // 0x0017d69c: sw $v1, 0($s2)
 label_0x17d6a0:
-    func_0010a618();  // 0x10a570                                // 0x0017d6a0: jal 0x10a570
+    func_0010a570();  // 10a570                                // 0x0017d6a0: jal 0x10a570
     /* nop */                                                   // 0x0017d6a4: nop 
     a1 = 0x23 << 16;                                            // 0x0017d6a8: lui $a1, 0x23
     a1 = &str_00229cf0;  // "%x %x %x"                          // 0x0017d6b4: addiu $a1, $a1, -0x6310
     t0 = sp + 4;                                                // 0x0017d6b8: addiu $t0, $sp, 4
-    func_0017d7b0();  // 0x17d730                                // 0x0017d6bc: jal 0x17d730
+    func_0017d730();  // 17d730                                // 0x0017d6bc: jal 0x17d730
     a1 = 0x23 << 16;                                            // 0x0017d6c4: lui $a1, 0x23
     v1 = local_0;                                               // 0x0017d6c8: lw $v1, 0($sp)
     v0 = 0x7fff << 16;                                          // 0x0017d6cc: lui $v0, 0x7fff
@@ -47,7 +47,7 @@ label_0x17d6a0:
 label_0x17d6f0:
     a0 = local_8;                                               // 0x0017d6f0: lw $a0, 8($sp)
     /* multiply: a0 * s4 -> hi:lo */                            // 0x0017d6f4: mult $ac2, $a0, $s4
-    func_0010a618();  // 0x10a570                                // 0x0017d6f8: jal 0x10a570
+    func_0010a570();  // 10a570                                // 0x0017d6f8: jal 0x10a570
     a0 = v0 + v1;                                               // 0x0017d6fc: addu $a0, $v0, $v1
     v1 = local_10;                                              // 0x0017d700: lw $v1, 0x10($sp)
     v0 = local_14;                                              // 0x0017d704: lw $v0, 0x14($sp)

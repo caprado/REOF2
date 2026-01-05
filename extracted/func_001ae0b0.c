@@ -20,7 +20,7 @@ void func_001ae0b0() {
     v0 = v0 + -0x5788;                                          // 0x001ae0e4: addiu $v0, $v0, -0x5788
     v0 = v0 + v1;                                               // 0x001ae0e8: addu $v0, $v0, $v1
     a0 = g_002aa878;  // Global at 0x002aa878                   // 0x001ae0ec: lw $a0, 0($v0)
-    func_00132ae0();  // 0x132ab0                                // 0x001ae0f0: jal 0x132ab0
+    func_00132ab0();  // 132ab0                                // 0x001ae0f0: jal 0x132ab0
     a1 = *(int8_t*)(a1);                                        // 0x001ae0f4: lb $a1, 0($a1)
     v1 = 0x2b << 16;                                            // 0x001ae0f8: lui $v1, 0x2b
     v1 = v1 + -0x57dd;                                          // 0x001ae0fc: addiu $v1, $v1, -0x57dd

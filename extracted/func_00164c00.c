@@ -17,7 +17,7 @@ label_0x164c3c:
     /* beqzl $v0, 0x164c68 */                                   // 0x00164c40: beqzl $v0, 0x164c68
     s0 = s0 + 0x12;                                             // 0x00164c4c: addiu $s0, $s0, 0x12
     a1 = 0x12;                                                  // 0x00164c50: addiu $a1, $zero, 0x12
-    func_00132f40();  // 0x132f00                                // 0x00164c54: jal 0x132f00
+    func_00132f00();  // 132f00                                // 0x00164c54: jal 0x132f00
     if (v0 == 0) goto label_0x164c38;                           // 0x00164c5c: beqz $v0, 0x164c38
     *(uint32_t*)(s3) = s4;                                      // 0x00164c64: sw $s4, 0($s3)
     return;                                                     // 0x00164c80: jr $ra

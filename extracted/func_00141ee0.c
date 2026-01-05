@@ -51,12 +51,12 @@ label_0x141fb0:
     if (v0 != 0) goto label_0x141fe4;                           // 0x00141fb8: bnez $v0, 0x141fe4
     a1 = 0x22 << 16;                                            // 0x00141fc0: lui $a1, 0x22
     a1 = &str_002265a8;  // "(a) invalid motion_type(%d)-0"     // 0x00141fc8: addiu $a1, $a1, 0x65a8
-    func_00148530();  // 0x1484f8                                // 0x00141fcc: jal 0x1484f8
+    func_001484f8();  // 1484f8                                // 0x00141fcc: jal 0x1484f8
     v1 = 1;                                                     // 0x00141fd4: addiu $v1, $zero, 1
     goto label_0x142120;                                        // 0x00141fdc: b 0x142120
     *(uint32_t*)((s0) + 0x134) = v1;                            // 0x00141fe0: sw $v1, 0x134($s0)
 label_0x141fe4:
-    func_00142858();  // 0x142150                                // 0x00141fe4: jal 0x142150
+    func_00142150();  // 142150                                // 0x00141fe4: jal 0x142150
     v1 = 0x1000 << 16;                                          // 0x00141fec: lui $v1, 0x1000
     s1 = s0 + 0x6e0;                                            // 0x00141ff0: addiu $s1, $s0, 0x6e0
     s2 = s0 + 0x6dc;                                            // 0x00141ff4: addiu $s2, $s0, 0x6dc
@@ -72,7 +72,7 @@ label_0x142008:
     /* nop */                                                   // 0x00142018: nop 
     if (v0 != 0) goto label_0x142008;                           // 0x0014201c: bnez $v0, 0x142008
     /* nop */                                                   // 0x00142020: nop 
-    func_00146ed0();  // 0x146d60                                // 0x00142024: jal 0x146d60
+    func_00146d60();  // 146d60                                // 0x00142024: jal 0x146d60
     v0 = *(int32_t*)((s0) + 0x828);                             // 0x0014202c: lw $v0, 0x828($s0)
     v1 = 0x140;                                                 // 0x00142030: addiu $v1, $zero, 0x140
     a0 = 1;                                                     // 0x00142034: addiu $a0, $zero, 1

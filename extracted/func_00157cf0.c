@@ -7,7 +7,7 @@ void func_00157cf0() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x00157cf0: addiu $sp, $sp, -0x20
-    func_00157cf0();  // 0x157ce0                                // 0x00157d04: jal 0x157ce0
+    func_00157ce0();  // 157ce0                                // 0x00157d04: jal 0x157ce0
     a0 = 0x22 << 16;                                            // 0x00157d0c: lui $a0, 0x22
     v1 = 0x25 << 16;                                            // 0x00157d10: lui $v1, 0x25
     a2 = g_00226e28;  // Global at 0x00226e28                   // 0x00157d14: lbu $a2, 0x6e28($a0)
@@ -24,11 +24,11 @@ label_0x157d30:
     /* nop */                                                   // 0x00157d40: nop 
     /* nop */                                                   // 0x00157d44: nop 
 label_0x157d48:
-    func_00157e18();  // 0x157d80                                // 0x00157d48: jal 0x157d80
+    func_00157d80();  // 157d80                                // 0x00157d48: jal 0x157d80
     /* bnezl $v0, 0x157d70 */                                   // 0x00157d50: bnezl $v0, 0x157d70
-    func_00156060();  // 0x156058                                // 0x00157d58: jal 0x156058
+    func_00156058();  // 156058                                // 0x00157d58: jal 0x156058
     /* nop */                                                   // 0x00157d5c: nop 
-    func_00157a90();  // 0x157a80                                // 0x00157d60: jal 0x157a80
+    func_00157a80();  // 157a80                                // 0x00157d60: jal 0x157a80
     /* nop */                                                   // 0x00157d64: nop 
     return;                                                     // 0x00157d78: jr $ra
     sp = sp + 0x20;                                             // 0x00157d7c: addiu $sp, $sp, 0x20

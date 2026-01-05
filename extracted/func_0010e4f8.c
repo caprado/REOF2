@@ -24,12 +24,12 @@ label_0x10e564:
 label_0x10e56c:
     if (v0 >= 0) goto label_0x10e598;                           // 0x0010e574: bgezl $v0, 0x10e598
     *(uint8_t*)(s0) = 0;                                        // 0x0010e578: sb $zero, 0($s0)
-    func_00111a58();  // 0x1119f0                                // 0x0010e584: jal 0x1119f0
+    func_001119f0();  // 1119f0                                // 0x0010e584: jal 0x1119f0
     /* nop */                                                   // 0x0010e588: nop 
     v0 = 0x2d;                                                  // 0x0010e590: addiu $v0, $zero, 0x2d
     *(uint8_t*)(s0) = v0;                                       // 0x0010e594: sb $v0, 0($s0)
 label_0x10e598:
-    func_00104ee8();  // 0x103c80                                // 0x0010e5b0: jal 0x103c80
+    func_00103c80();  // 103c80                                // 0x0010e5b0: jal 0x103c80
     t2 = sp + 4;                                                // 0x0010e5b4: addiu $t2, $sp, 4
     v0 = 0x67;                                                  // 0x0010e5bc: addiu $v0, $zero, 0x67
     if (s1 == v0) goto label_0x10e5d0;                          // 0x0010e5c0: beq $s1, $v0, 0x10e5d0
@@ -47,7 +47,7 @@ label_0x10e5dc:
     v0 = 0x30;                                                  // 0x0010e5e8: addiu $v0, $zero, 0x30
     if (v1 != v0) goto label_0x10e618;                          // 0x0010e5ec: bnel $v1, $v0, 0x10e618
     v0 = *(int32_t*)(s5);                                       // 0x0010e5f0: lw $v0, 0($s5)
-    func_00111f90();  // 0x111f40                                // 0x0010e5fc: jal 0x111f40
+    func_00111f40();  // 111f40                                // 0x0010e5fc: jal 0x111f40
     /* nop */                                                   // 0x0010e600: nop 
     if (v0 == 0) goto label_0x10e614;                           // 0x0010e604: beqz $v0, 0x10e614
     v0 = 1;                                                     // 0x0010e608: addiu $v0, $zero, 1
@@ -58,7 +58,7 @@ label_0x10e614:
 label_0x10e618:
     s0 = s0 + v0;                                               // 0x0010e618: addu $s0, $s0, $v0
 label_0x10e61c:
-    func_00111f90();  // 0x111f40                                // 0x0010e624: jal 0x111f40
+    func_00111f40();  // 111f40                                // 0x0010e624: jal 0x111f40
     /* nop */                                                   // 0x0010e628: nop 
     v1 = local_4;                                               // 0x0010e62c: lw $v1, 4($sp)
     v0 = v0 ^ 0;                                                // 0x0010e630: xori $v0, $v0, 0

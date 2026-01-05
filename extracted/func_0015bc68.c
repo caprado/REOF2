@@ -50,13 +50,13 @@ label_0x15bce0:
     local_10 = a1;                                              // 0x0015bcfc: sw $a1, 0x10($sp)
 label_0x15bd00:
     local_14 = 0;                                               // 0x0015bd00: sw $zero, 0x14($sp)
-    func_00173dc0();  // 0x173d60                                // 0x0015bd08: jal 0x173d60
+    func_00173d60();  // 173d60                                // 0x0015bd08: jal 0x173d60
     if (v0 == 0) goto label_0x15bd2c;                           // 0x0015bd10: beqz $v0, 0x15bd2c
     a0 = -0x138;                                                // 0x0015bd14: addiu $a0, $zero, -0x138
-    func_0015e7e0();  // 0x15e7b0                                // 0x0015bd18: jal 0x15e7b0
+    func_0015e7b0();  // 15e7b0                                // 0x0015bd18: jal 0x15e7b0
     /* nop */                                                   // 0x0015bd1c: nop 
     a0 = 0x22 << 16;                                            // 0x0015bd20: lui $a0, 0x22
-    func_001634a8();  // 0x163410                                // 0x0015bd24: jal 0x163410
+    func_00163410();  // 163410                                // 0x0015bd24: jal 0x163410
     a0 = &str_00226ff0;  // "E2053002: not enough work"         // 0x0015bd28: addiu $a0, $a0, 0x6ff0
 label_0x15bd2c:
     return;                                                     // 0x0015bd30: jr $ra

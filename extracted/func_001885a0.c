@@ -10,7 +10,7 @@ void func_001885a0() {
     uint32_t local_0, local_10, local_1c, local_4, local_8, local_c;
     
     sp = sp + -0x70;                                            // 0x001885a0: addiu $sp, $sp, -0x70
-    func_001885a0();  // 0x188568                                // 0x001885b4: jal 0x188568
+    func_00188568();  // 188568                                // 0x001885b4: jal 0x188568
     if (s2 < 0) goto label_0x1886a8;                            // 0x001885c0: bltz $s2, 0x1886a8
     v0 = -1;                                                    // 0x001885c4: addiu $v0, $zero, -1
     v0 = *(int32_t*)(s1);                                       // 0x001885c8: lw $v0, 0($s1)
@@ -32,9 +32,9 @@ void func_001885a0() {
     local_4 = a3;                                               // 0x00188620: sw $a3, 4($sp)
     v0 = local_0;                                               // 0x00188624: lw $v0, 0($sp)
     v0 = v0 | 1;                                                // 0x00188628: ori $v0, $v0, 1
-    func_00107d30();  // 0x107c70                                // 0x0018862c: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x0018862c: jal 0x107c70
     local_0 = v0;                                               // 0x00188630: sw $v0, 0($sp)
-    func_00188bf8();  // 0x188b20                                // 0x0018863c: jal 0x188b20
+    func_00188b20();  // 188b20                                // 0x0018863c: jal 0x188b20
     a2 = a1 + 0x80;                                             // 0x00188640: addiu $a2, $a1, 0x80
     v1 = 0x24;                                                  // 0x00188644: addiu $v1, $zero, 0x24
     a0 = 0x28 << 16;                                            // 0x00188648: lui $a0, 0x28

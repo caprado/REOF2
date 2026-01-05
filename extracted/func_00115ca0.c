@@ -9,7 +9,7 @@ void func_00115ca0() {
     sp = sp + -0x10;                                            // 0x00115ca0: addiu $sp, $sp, -0x10
     v0 = 0xa;                                                   // 0x00115ca4: addiu $v0, $zero, 0xa
     if (a0 != v0) goto label_0x115cc8;                          // 0x00115ca8: bne $a0, $v0, 0x115cc8
-    func_00115bf0();  // 0x115bb0                                // 0x00115cb0: jal 0x115bb0
+    func_00115bb0();  // 115bb0                                // 0x00115cb0: jal 0x115bb0
     a0 = 0xd;                                                   // 0x00115cb4: addiu $a0, $zero, 0xd
     a0 = 0xa;                                                   // 0x00115cbc: addiu $a0, $zero, 0xa
     return func_00115bf0();  // Tail call                        // 0x00115cc0: j 0x115bb0

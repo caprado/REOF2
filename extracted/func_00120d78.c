@@ -108,11 +108,11 @@ label_0x120ee0:
     a0 = a0 + 4;                                                // 0x00120f18: addiu $a0, $a0, 4
 label_0x120f1c:
     /* FPU: mov.s $f12, $f20 */                                 // 0x00120f1c: mov.s $f12, $f20
-    func_0010a450();  // 0x10a388                                // 0x00120f20: jal 0x10a388
+    func_0010a388();  // 10a388                                // 0x00120f20: jal 0x10a388
     at = 0x3e00 << 16;                                          // 0x00120f28: lui $at, 0x3e00
     /* move to FPU: $at, $f12 */                                // 0x00120f2c: mtc1 $at, $f12
     /* FPU: mov.s $f20, $f0 */                                  // 0x00120f30: mov.s $f20, $f0
-    func_00122268();  // 0x122190                                // 0x00120f38: jal 0x122190
+    func_00122190();  // 122190                                // 0x00120f38: jal 0x122190
     /* FPU: mul.s $f12, $f20, $f12 */                           // 0x00120f3c: mul.s $f12, $f20, $f12
     at = 0x4100 << 16;                                          // 0x00120f40: lui $at, 0x4100
     /* move to FPU: $at, $f1 */                                 // 0x00120f44: mtc1 $at, $f1
@@ -206,7 +206,7 @@ label_0x121074:
     /* move to FPU: $at, $f12 */                                // 0x00121080: mtc1 $at, $f12
     if (a3 == 0) goto label_0x121098;                           // 0x00121084: beqz $a3, 0x121098
     /* FPU: sub.s $f20, $f12, $f20 */                           // 0x00121088: sub.s $f20, $f12, $f20
-    func_0010a450();  // 0x10a388                                // 0x0012108c: jal 0x10a388
+    func_0010a388();  // 10a388                                // 0x0012108c: jal 0x10a388
     /* FPU: sub.s $f20, $f20, $f0 */                            // 0x00121094: sub.s $f20, $f20, $f0
 label_0x121098:
     /* move to FPU: $zero, $f0 */                               // 0x00121098: mtc1 $zero, $f0
@@ -316,7 +316,7 @@ label_0x121210:
     goto label_0x1212b0;                                        // 0x0012122c: b 0x1212b0
     /* nop */                                                   // 0x00121230: nop 
     /* nop */                                                   // 0x00121234: nop 
-    func_0010a450();  // 0x10a388                                // 0x00121238: jal 0x10a388
+    func_0010a388();  // 10a388                                // 0x00121238: jal 0x10a388
     a0 = -s1;                                                   // 0x0012123c: negu $a0, $s1
     at = 0x4380 << 16;                                          // 0x00121240: lui $at, 0x4380
     /* move to FPU: $at, $f1 */                                 // 0x00121244: mtc1 $at, $f1
@@ -349,7 +349,7 @@ label_0x121210:
 label_0x1212b0:
     at = 0x3f80 << 16;                                          // 0x001212b0: lui $at, 0x3f80
     /* move to FPU: $at, $f12 */                                // 0x001212b4: mtc1 $at, $f12
-    func_0010a450();  // 0x10a388                                // 0x001212b8: jal 0x10a388
+    func_0010a388();  // 10a388                                // 0x001212b8: jal 0x10a388
     if (a2 < 0) goto label_0x12130c;                            // 0x001212c4: bltz $a2, 0x12130c
     /* FPU: mov.s $f2, $f0 */                                   // 0x001212c8: mov.s $f2, $f0
     v0 = sp + 0xf0;                                             // 0x001212cc: addiu $v0, $sp, 0xf0

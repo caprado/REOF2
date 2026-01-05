@@ -12,7 +12,7 @@ void func_001ceef0() {
     a0 = 0x33 << 16;                                            // 0x001cef00: lui $a0, 0x33
     a1 = 0xff;                                                  // 0x001cef04: addiu $a1, $zero, 0xff
     a0 = a0 + -0x2b50;                                          // 0x001cef08: addiu $a0, $a0, -0x2b50
-    func_00107d30();  // 0x107c70                                // 0x001cef0c: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001cef0c: jal 0x107c70
     a2 = 0x20;                                                  // 0x001cef10: addiu $a2, $zero, 0x20
     v1 = -1;                                                    // 0x001cef14: addiu $v1, $zero, -1
     *(uint32_t*)((gp) + -0x6264) = v1;                          // 0x001cef18: sw $v1, -0x6264($gp)

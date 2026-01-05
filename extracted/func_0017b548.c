@@ -18,7 +18,7 @@ void func_0017b548() {
     local_14 = a1;                                              // 0x0017b580: sw $a1, 0x14($sp)
     local_0 = v1;                                               // 0x0017b584: sw $v1, 0($sp)
     local_4 = a1;                                               // 0x0017b588: sw $a1, 4($sp)
-    func_0017ab20();  // 0x17aa68                                // 0x0017b58c: jal 0x17aa68
+    func_0017aa68();  // 17aa68                                // 0x0017b58c: jal 0x17aa68
     local_8 = v0;                                               // 0x0017b590: sw $v0, 8($sp)
     v1 = 1;                                                     // 0x0017b594: addiu $v1, $zero, 1
     a1 = sp + 0x10;                                             // 0x0017b59c: addiu $a1, $sp, 0x10
@@ -42,12 +42,12 @@ label_0x17b5c4:
 label_0x17b5dc:
     if (s3 != a2) goto label_0x17b5f8;                          // 0x0017b5dc: bne $s3, $a2, 0x17b5f8
     local_1c = v0;                                              // 0x0017b5e0: sw $v0, 0x1c($sp)
-    func_0014f488();  // 0x14f390                                // 0x0017b5e4: jal 0x14f390
+    func_0014f390();  // 14f390                                // 0x0017b5e4: jal 0x14f390
     a2 = *(int32_t*)((s2) + 0x3c);                              // 0x0017b5e8: lw $a2, 0x3c($s2)
     goto label_0x17b608;                                        // 0x0017b5ec: b 0x17b608
     /* nop */                                                   // 0x0017b5f4: nop 
 label_0x17b5f8:
-    func_0014f390();  // 0x14f370                                // 0x0017b5fc: jal 0x14f370
+    func_0014f370();  // 14f370                                // 0x0017b5fc: jal 0x14f370
     a1 = sp + 0x10;                                             // 0x0017b600: addiu $a1, $sp, 0x10
 label_0x17b608:
     return;                                                     // 0x0017b618: jr $ra

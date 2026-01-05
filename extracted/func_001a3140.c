@@ -7,12 +7,12 @@ void func_001a3140() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x001a3140: addiu $sp, $sp, -0x20
-    func_001a2ef0();  // 0x1a2e50                                // 0x001a314c: jal 0x1a2e50
+    func_001a2e50();  // 1a2e50                                // 0x001a314c: jal 0x1a2e50
     if (v0 != 0) goto label_0x1a3164;                           // 0x001a3154: bnez $v0, 0x1a3164
     goto label_0x1a31b4;                                        // 0x001a315c: b 0x1a31b4
 label_0x1a3164:
     a1 = 5 << 16;                                               // 0x001a3164: lui $a1, 5
-    func_001a32e0();  // 0x1a3230                                // 0x001a3168: jal 0x1a3230
+    func_001a3230();  // 1a3230                                // 0x001a3168: jal 0x1a3230
     if (v0 != 0) goto label_0x1a3180;                           // 0x001a3170: bnez $v0, 0x1a3180
     /* nop */                                                   // 0x001a3174: nop 
     goto label_0x1a31b4;                                        // 0x001a3178: b 0x1a31b4

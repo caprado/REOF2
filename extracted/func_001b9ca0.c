@@ -17,12 +17,12 @@ void func_001b9ca0() {
 label_0x1b9cc8:
     a1 = a2 & 0x3f;                                             // 0x001b9cc8: andi $a1, $a2, 0x3f
     v0 = a2 & 0x80;                                             // 0x001b9ccc: andi $v0, $a2, 0x80
-    func_001b8a80();  // 0x1b8950                                // 0x001b9cd0: jal 0x1b8950
+    func_001b8950();  // 1b8950                                // 0x001b9cd0: jal 0x1b8950
     a2 = ((unsigned)0 < (unsigned)v0) ? 1 : 0;                  // 0x001b9cd4: sltu $a2, $zero, $v0
     goto label_0x1b9ce8;                                        // 0x001b9cd8: b 0x1b9ce8
     /* nop */                                                   // 0x001b9cdc: nop 
 label_0x1b9ce0:
-    func_001b8430();  // 0x1b83f0                                // 0x001b9ce0: jal 0x1b83f0
+    func_001b83f0();  // 1b83f0                                // 0x001b9ce0: jal 0x1b83f0
     a1 = a2 & 0x3f;                                             // 0x001b9ce4: andi $a1, $a2, 0x3f
 label_0x1b9ce8:
 label_0x1b9cec:

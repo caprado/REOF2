@@ -10,7 +10,7 @@ void func_0017a438() {
     v0 = s0 + 8;                                                // 0x0017a44c: addiu $v0, $s0, 8
     a2 = *(int32_t*)((v0) + 8);                                 // 0x0017a450: lw $a2, 8($v0)
     a0 = *(int32_t*)(v0);                                       // 0x0017a454: lw $a0, 0($v0)
-    func_0014f898();  // 0x14f5c8                                // 0x0017a458: jal 0x14f5c8
+    func_0014f5c8();  // 14f5c8                                // 0x0017a458: jal 0x14f5c8
     a1 = *(int32_t*)((v0) + 4);                                 // 0x0017a45c: lw $a1, 4($v0)
     *(uint32_t*)((s0) + 4) = 0;                                 // 0x0017a460: sw $zero, 4($s0)
     return;                                                     // 0x0017a46c: jr $ra

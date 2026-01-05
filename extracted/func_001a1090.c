@@ -32,7 +32,7 @@ label_0x1a10c4:
     if (s2 == a1) goto label_0x1a1164;                          // 0x001a10f8: beq $s2, $a1, 0x1a1164
     /* nop */                                                   // 0x001a10fc: nop 
     a2 = *(int32_t*)((s0) + 4);                                 // 0x001a1100: lw $a2, 4($s0)
-    func_001a57e0();  // 0x1a5750                                // 0x001a1104: jal 0x1a5750
+    func_001a5750();  // 1a5750                                // 0x001a1104: jal 0x1a5750
     goto label_0x1a1164;                                        // 0x001a110c: b 0x1a1164
     *(uint32_t*)(s0) = s2;                                      // 0x001a1110: sw $s2, 0($s0)
 label_0x1a1114:
@@ -53,7 +53,7 @@ label_0x1a1114:
     if (s2 == a1) goto label_0x1a1164;                          // 0x001a114c: beq $s2, $a1, 0x1a1164
     /* nop */                                                   // 0x001a1150: nop 
     a2 = *(int32_t*)((s0) + 4);                                 // 0x001a1154: lw $a2, 4($s0)
-    func_001a57e0();  // 0x1a5750                                // 0x001a1158: jal 0x1a5750
+    func_001a5750();  // 1a5750                                // 0x001a1158: jal 0x1a5750
     *(uint32_t*)(s0) = s2;                                      // 0x001a1160: sw $s2, 0($s0)
 label_0x1a1164:
     v1 = *(uint16_t*)((s0) + 0xe);                              // 0x001a1164: lhu $v1, 0xe($s0)
@@ -81,7 +81,7 @@ label_0x1a11a0:
     v0 = v0 - a2;                                               // 0x001a11b8: subu $v0, $v0, $a2
     s2 = v1 & v0;                                               // 0x001a11bc: and $s2, $v1, $v0
     if (s2 == a1) goto label_0x1a121c;                          // 0x001a11c0: beq $s2, $a1, 0x1a121c
-    func_001a57e0();  // 0x1a5750                                // 0x001a11c8: jal 0x1a5750
+    func_001a5750();  // 1a5750                                // 0x001a11c8: jal 0x1a5750
     /* nop */                                                   // 0x001a11cc: nop 
     goto label_0x1a121c;                                        // 0x001a11d0: b 0x1a121c
     *(uint32_t*)(s0) = s2;                                      // 0x001a11d4: sw $s2, 0($s0)
@@ -99,7 +99,7 @@ label_0x1a11d8:
     v0 = v0 - a2;                                               // 0x001a1200: subu $v0, $v0, $a2
     s2 = v1 & v0;                                               // 0x001a1204: and $s2, $v1, $v0
     if (s2 == a1) goto label_0x1a121c;                          // 0x001a1208: beq $s2, $a1, 0x1a121c
-    func_001a57e0();  // 0x1a5750                                // 0x001a1210: jal 0x1a5750
+    func_001a5750();  // 1a5750                                // 0x001a1210: jal 0x1a5750
     /* nop */                                                   // 0x001a1214: nop 
     *(uint32_t*)(s0) = s2;                                      // 0x001a1218: sw $s2, 0($s0)
 label_0x1a121c:

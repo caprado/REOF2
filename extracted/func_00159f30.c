@@ -373,7 +373,7 @@ label_0x15a4a0:
     a1 = a1 >> 3;                                               // 0x0015a4b8: sra $a1, $a1, 3
     a1 = t0 + a1;                                               // 0x0015a4c0: addu $a1, $t0, $a1
     a1 = a1 + -8;                                               // 0x0015a4c4: addiu $a1, $a1, -8
-    func_00140598();  // 0x1404a0                                // 0x0015a4c8: jal 0x1404a0
+    func_001404a0();  // 1404a0                                // 0x0015a4c8: jal 0x1404a0
     a1 = a1 - t1;                                               // 0x0015a4cc: subu $a1, $a1, $t1
     v1 = *(int32_t*)(s1);                                       // 0x0015a4d0: lw $v1, 0($s1)
     v0 = *(int32_t*)((v1) + 0x20);                              // 0x0015a4dc: lw $v0, 0x20($v1)

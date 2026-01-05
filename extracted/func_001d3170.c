@@ -18,20 +18,20 @@ void func_001d3170() {
     s1 = g_003137fc;  // Global at 0x003137fc                   // 0x001d31a4: lw $s1, 0x37fc($at)
     *(uint32_t*)((gp) + -0x6238) = s1;                          // 0x001d31a8: sw $s1, -0x6238($gp)
     a0 = *(int32_t*)((gp) + -0x6238);                           // 0x001d31ac: lw $a0, -0x6238($gp)
-    func_00107d30();  // 0x107c70                                // 0x001d31b0: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001d31b0: jal 0x107c70
     a2 = 0x64;                                                  // 0x001d31b4: addiu $a2, $zero, 0x64
     a1 = 0x24 << 16;                                            // 0x001d31b8: lui $a1, 0x24
     v1 = s1 + 0xa3;                                             // 0x001d31bc: addiu $v1, $s1, 0xa3
     v0 = -0x40;                                                 // 0x001d31c4: addiu $v0, $zero, -0x40
     a0 = sp + 0x30;                                             // 0x001d31c8: addiu $a0, $sp, 0x30
     s0 = v1 & v0;                                               // 0x001d31cc: and $s0, $v1, $v0
-    func_0010a570();  // 0x10a4d8                                // 0x001d31d0: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001d31d0: jal 0x10a4d8
     a1 = &str_00243b60;  // "DATA\\ROM\\TEX\\EM\\E00\\E00_00.TEX" // 0x001d31d4: addiu $a1, $a1, 0x3b60
-    func_0018d9e0();  // 0x18d910                                // 0x001d31d8: jal 0x18d910
+    func_0018d910();  // 18d910                                // 0x001d31d8: jal 0x18d910
     a0 = sp + 0x30;                                             // 0x001d31dc: addiu $a0, $sp, 0x30
     a0 = sp + 0x30;                                             // 0x001d31e4: addiu $a0, $sp, 0x30
     a2 = 1;                                                     // 0x001d31ec: addiu $a2, $zero, 1
-    func_001d33e0();  // 0x1d3390                                // 0x001d31f0: jal 0x1d3390
+    func_001d3390();  // 1d3390                                // 0x001d31f0: jal 0x1d3390
     a1 = *(int32_t*)((gp) + -0x6238);                           // 0x001d31f8: lw $a1, -0x6238($gp)
     v1 = s0 + s1;                                               // 0x001d31fc: addu $v1, $s0, $s1
     v1 = v1 + 0x3f;                                             // 0x001d3200: addiu $v1, $v1, 0x3f

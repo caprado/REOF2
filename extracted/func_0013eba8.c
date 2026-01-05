@@ -8,7 +8,7 @@ void func_0013eba8() {
     
     sp = sp + -0x20;                                            // 0x0013eba8: addiu $sp, $sp, -0x20
     s1 = 0xf;                                                   // 0x0013ebb4: addiu $s1, $zero, 0xf
-    func_0013eef0();  // 0x13eed8                                // 0x0013ebc0: jal 0x13eed8
+    func_0013eed8();  // 13eed8                                // 0x0013ebc0: jal 0x13eed8
     s2 = 1;                                                     // 0x0013ebc4: addiu $s2, $zero, 1
     v0 = 0x21 << 16;                                            // 0x0013ebc8: lui $v0, 0x21
     s0 = v0 + -0x6180;                                          // 0x0013ebcc: addiu $s0, $v0, -0x6180
@@ -16,14 +16,14 @@ label_0x13ebd0:
     v0 = g_00209e80;  // Global at 0x00209e80                   // 0x0013ebd0: lb $v0, 0($s0)
     if (v0 != s2) goto label_0x13ebe8;                          // 0x0013ebd4: bnel $v0, $s2, 0x13ebe8
     s1 = s1 + -1;                                               // 0x0013ebd8: addiu $s1, $s1, -1
-    func_0013eba8();  // 0x13e9e8                                // 0x0013ebdc: jal 0x13e9e8
+    func_0013e9e8();  // 13e9e8                                // 0x0013ebdc: jal 0x13e9e8
     s1 = s1 + -1;                                               // 0x0013ebe4: addiu $s1, $s1, -1
 label_0x13ebe8:
     if (s1 >= 0) goto label_0x13ebd0;                           // 0x0013ebe8: bgez $s1, 0x13ebd0
     s0 = s0 + 0x60;                                             // 0x0013ebec: addiu $s0, $s0, 0x60
-    func_0013ef18();  // 0x13eef0                                // 0x0013ebf0: jal 0x13eef0
+    func_0013eef0();  // 13eef0                                // 0x0013ebf0: jal 0x13eef0
     /* nop */                                                   // 0x0013ebf4: nop 
-    func_001386f8();  // 0x138698                                // 0x0013ebf8: jal 0x138698
+    func_00138698();  // 138698                                // 0x0013ebf8: jal 0x138698
     /* nop */                                                   // 0x0013ebfc: nop 
     return func_00140f40();  // Tail call                        // 0x0013ec10: j 0x140f28
     sp = sp + 0x20;                                             // 0x0013ec14: addiu $sp, $sp, 0x20

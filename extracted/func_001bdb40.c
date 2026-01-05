@@ -14,18 +14,18 @@ void func_001bdb40() {
     a0 = *(int32_t*)((s0) + 0x28);                              // 0x001bdb5c: lw $a0, 0x28($s0)
     if (a0 == 0) goto label_0x1bdb70;                           // 0x001bdb60: beqz $a0, 0x1bdb70
     /* nop */                                                   // 0x001bdb64: nop 
-    func_00118b38();  // 0x1189b8                                // 0x001bdb68: jal 0x1189b8
+    func_001189b8();  // 1189b8                                // 0x001bdb68: jal 0x1189b8
     /* nop */                                                   // 0x001bdb6c: nop 
 label_0x1bdb70:
     a0 = *(int32_t*)((s0) + 0x2c);                              // 0x001bdb70: lw $a0, 0x2c($s0)
     if (a0 == 0) goto label_0x1bdb84;                           // 0x001bdb74: beqz $a0, 0x1bdb84
     /* nop */                                                   // 0x001bdb78: nop 
-    func_00118b38();  // 0x1189b8                                // 0x001bdb7c: jal 0x1189b8
+    func_001189b8();  // 1189b8                                // 0x001bdb7c: jal 0x1189b8
     /* nop */                                                   // 0x001bdb80: nop 
 label_0x1bdb84:
-    func_001bdd90();  // 0x1bdd80                                // 0x001bdb84: jal 0x1bdd80
+    func_001bdd80();  // 1bdd80                                // 0x001bdb84: jal 0x1bdd80
     /* nop */                                                   // 0x001bdb88: nop 
-    func_001bdc10();  // 0x1bdbb0                                // 0x001bdb8c: jal 0x1bdbb0
+    func_001bdbb0();  // 1bdbb0                                // 0x001bdb8c: jal 0x1bdbb0
     /* nop */                                                   // 0x001bdb90: nop 
 label_0x1bdb94:
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001bdb98: xori.b $w0, $w0, 0xb0

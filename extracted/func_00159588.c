@@ -436,7 +436,7 @@ label_0x159bbc:
     a0 = a0 + -1;                                               // 0x00159c04: addiu $a0, $a0, -1
     *(uint32_t*)((s0) + 0x350) = t0;                            // 0x00159c08: sw $t0, 0x350($s0)
     *(uint32_t*)((s0) + 0x310) = a0;                            // 0x00159c0c: sw $a0, 0x310($s0)
-    func_00140598();  // 0x1404a0                                // 0x00159c14: jal 0x1404a0
+    func_001404a0();  // 1404a0                                // 0x00159c14: jal 0x1404a0
     v1 = *(int32_t*)(s2);                                       // 0x00159c1c: lw $v1, 0($s2)
     v0 = *(int32_t*)((v1) + 0x20);                              // 0x00159c28: lw $v0, 0x20($v1)
     /* call function at address in v0 */                        // 0x00159c2c: jalr $v0

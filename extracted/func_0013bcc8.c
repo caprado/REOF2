@@ -7,8 +7,8 @@ void func_0013bcc8() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x30;                                            // 0x0013bcc8: addiu $sp, $sp, -0x30
-    func_0010af38();  // 0x10ae00                                // 0x0013bce4: jal 0x10ae00
-    func_0010af38();  // 0x10ae00                                // 0x0013bcf0: jal 0x10ae00
+    func_0010ae00();  // 10ae00                                // 0x0013bce4: jal 0x10ae00
+    func_0010ae00();  // 10ae00                                // 0x0013bcf0: jal 0x10ae00
     if (s1 == v0) goto label_0x13bd08;                          // 0x0013bcf8: beq $s1, $v0, 0x13bd08
     /* nop */                                                   // 0x0013bcfc: nop 
 label_0x13bd00:
@@ -22,7 +22,7 @@ label_0x13bd18:
     v0 = s3 + s0;                                               // 0x0013bd18: addu $v0, $s3, $s0
     a1 = *(int8_t*)(v1);                                        // 0x0013bd1c: lb $a1, 0($v1)
     s0 = s0 + 1;                                                // 0x0013bd20: addiu $s0, $s0, 1
-    func_0013bcc8();  // 0x13bc70                                // 0x0013bd24: jal 0x13bc70
+    func_0013bc70();  // 13bc70                                // 0x0013bd24: jal 0x13bc70
     a0 = *(int8_t*)(v0);                                        // 0x0013bd28: lb $a0, 0($v0)
     if (v0 != 0) goto label_0x13bd00;                           // 0x0013bd2c: bnez $v0, 0x13bd00
     v1 = (s0 < s1) ? 1 : 0;                                     // 0x0013bd30: slt $v1, $s0, $s1

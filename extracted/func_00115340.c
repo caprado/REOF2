@@ -29,10 +29,10 @@ void func_00115340() {
     goto label_0x1153f4;                                        // 0x001153a0: b 0x1153f4
     v0 = v0 | 0x8003;                                           // 0x001153a4: ori $v0, $v0, 0x8003
 label_0x1153a8:
-    func_0011ee58();  // 0x11ede8                                // 0x001153a8: jal 0x11ede8
+    func_0011ede8();  // 11ede8                                // 0x001153a8: jal 0x11ede8
     a1 = 0x11 << 16;                                            // 0x001153b0: lui $a1, 0x11
     a1 = a1 + 0x5408;                                           // 0x001153b8: addiu $a1, $a1, 0x5408
-    func_0011f0c8();  // 0x11ef98                                // 0x001153bc: jal 0x11ef98
+    func_0011ef98();  // 11ef98                                // 0x001153bc: jal 0x11ef98
     if (s1 >= 0) goto label_0x1153e0;                           // 0x001153c8: bgez $s1, 0x1153e0
     /* nop */                                                   // 0x001153cc: nop 
     SignalSema();  // 0x1142f0                                  // 0x001153d0: jal 0x1142f0

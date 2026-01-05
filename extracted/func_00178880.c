@@ -11,10 +11,10 @@ void func_00178880() {
     *(uint32_t*)(a1) = 0;                                       // 0x001788a8: sw $zero, 0($a1)
     /* nop */                                                   // 0x001788ac: nop 
 label_0x1788b0:
-    func_00178920();  // 0x1788f8                                // 0x001788b0: jal 0x1788f8
+    func_001788f8();  // 1788f8                                // 0x001788b0: jal 0x1788f8
     s1 = s1 + 1;                                                // 0x001788c0: addiu $s1, $s1, 1
     s0 = s0 + 0x10;                                             // 0x001788c8: addiu $s0, $s0, 0x10
-    func_00166c20();  // 0x166bd8                                // 0x001788cc: jal 0x166bd8
+    func_00166bd8();  // 166bd8                                // 0x001788cc: jal 0x166bd8
     v0 = (s1 < 3) ? 1 : 0;                                      // 0x001788d4: slti $v0, $s1, 3
     if (v0 != 0) goto label_0x1788b0;                           // 0x001788d8: bnez $v0, 0x1788b0
     return;                                                     // 0x001788f0: jr $ra

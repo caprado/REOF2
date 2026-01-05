@@ -15,9 +15,9 @@ void func_001d3540() {
     v1 = *(int16_t*)((s0) + 0xe);                               // 0x001d3564: lh $v1, 0xe($s0)
     if (v1 > 0) goto label_0x1d3588;                            // 0x001d3568: bgtz $v1, 0x1d3588
     /* nop */                                                   // 0x001d356c: nop 
-    func_001d34f0();  // 0x1d34a0                                // 0x001d3570: jal 0x1d34a0
+    func_001d34a0();  // 1d34a0                                // 0x001d3570: jal 0x1d34a0
     a0 = *(int32_t*)(s0);                                       // 0x001d3574: lw $a0, 0($s0)
-    func_00107d30();  // 0x107c70                                // 0x001d3580: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001d3580: jal 0x107c70
     a2 = 0x10;                                                  // 0x001d3584: addiu $a2, $zero, 0x10
 label_0x1d3588:
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001d358c: xori.b $w0, $w0, 0xb0

@@ -13,7 +13,7 @@ void func_00171540() {
     a2 = sp + 4;                                                // 0x00171554: addiu $a2, $sp, 4
     a3 = sp + 8;                                                // 0x00171558: addiu $a3, $sp, 8
     t0 = sp + 0xc;                                              // 0x00171560: addiu $t0, $sp, 0xc
-    func_00170a50();  // 0x170960                                // 0x0017156c: jal 0x170960
+    func_00170960();  // 170960                                // 0x0017156c: jal 0x170960
     a0 = local_0;                                               // 0x00171574: lw $a0, 0($sp)
     v0 = 0xfff << 16;                                           // 0x00171578: lui $v0, 0xfff
     a2 = local_8;                                               // 0x0017157c: lw $a2, 8($sp)
@@ -25,8 +25,8 @@ void func_00171540() {
     a2 = a2 & v0;                                               // 0x00171594: and $a2, $a2, $v0
     a0 = a0 | v1;                                               // 0x001715a0: or $a0, $a0, $v1
     a2 = a2 | v1;                                               // 0x001715a4: or $a2, $a2, $v1
-    func_001719d0();  // 0x1718a0                                // 0x001715ac: jal 0x1718a0
-    func_00170aa0();  // 0x170a50                                // 0x001715bc: jal 0x170a50
+    func_001718a0();  // 1718a0                                // 0x001715ac: jal 0x1718a0
+    func_00170a50();  // 170a50                                // 0x001715bc: jal 0x170a50
     return;                                                     // 0x001715d8: jr $ra
     sp = sp + 0x30;                                             // 0x001715dc: addiu $sp, $sp, 0x30
 }

@@ -21,7 +21,7 @@ void func_001232a8() {
     a3 = s0 + 0xc;                                              // 0x001232f4: addiu $a3, $s0, 0xc
     t3 = s0 + 0x14;                                             // 0x00123304: addiu $t3, $s0, 0x14
     local_0 = v0;                                               // 0x00123308: sw $v0, 0($sp)
-    func_001232a8();  // 0x123198                                // 0x0012330c: jal 0x123198
+    func_00123198();  // 123198                                // 0x0012330c: jal 0x123198
     local_8 = s3;                                               // 0x00123310: sw $s3, 8($sp)
     if (v0 >= 0) goto label_0x123328;                           // 0x00123314: bgez $v0, 0x123328
     a3 = 8;                                                     // 0x00123318: addiu $a3, $zero, 8

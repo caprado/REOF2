@@ -13,7 +13,7 @@ void func_001ab180() {
     v1 = *(int32_t*)((gp) + -0x63e0);                           // 0x001ab194: lw $v1, -0x63e0($gp)
     if (v1 != 0) goto label_0x1ab1b8;                           // 0x001ab198: bnez $v1, 0x1ab1b8
     /* nop */                                                   // 0x001ab19c: nop 
-    func_0012ba50();  // 0x12ba38                                // 0x001ab1a0: jal 0x12ba38
+    func_0012ba38();  // 12ba38                                // 0x001ab1a0: jal 0x12ba38
     /* nop */                                                   // 0x001ab1a4: nop 
     v1 = *(int32_t*)((gp) + -0x63e0);                           // 0x001ab1a8: lw $v1, -0x63e0($gp)
     v1 = v1 + 1;                                                // 0x001ab1ac: addiu $v1, $v1, 1

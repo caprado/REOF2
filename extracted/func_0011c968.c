@@ -29,12 +29,12 @@ label_0x11c9bc:
     v0 = ((unsigned)v0 < (unsigned)0x51) ? 1 : 0;               // 0x0011c9bc: sltiu $v0, $v0, 0x51
     if (v0 != 0) goto label_0x11c9dc;                           // 0x0011c9c0: bnez $v0, 0x11c9dc
     a0 = 0x22 << 16;                                            // 0x0011c9c4: lui $a0, 0x22
-    func_00116598();  // 0x116508                                // 0x0011c9cc: jal 0x116508
+    func_00116508();  // 116508                                // 0x0011c9cc: jal 0x116508
     a0 = &str_00221430;  // "# TLB spad=0 kernel=1:%d default=%d:%d extended=%d:%d\n" // 0x0011c9d0: addiu $a0, $a0, 0x1430
     goto label_0x11ca64;                                        // 0x0011c9d4: b 0x11ca64
 label_0x11c9dc:
-    func_00116ee0();  // 0x116d40                                // 0x0011c9dc: jal 0x116d40
-    func_00116f08();  // 0x116ee0                                // 0x0011c9e4: jal 0x116ee0
+    func_00116d40();  // 116d40                                // 0x0011c9dc: jal 0x116d40
+    func_00116ee0();  // 116ee0                                // 0x0011c9e4: jal 0x116ee0
     /* nop */                                                   // 0x0011c9e8: nop 
     v0 = g_00221420;  // Global at 0x00221420                   // 0x0011c9ec: lb $v0, 0($s1)
     if (v0 == 0) goto label_0x11ca24;                           // 0x0011c9f4: beqz $v0, 0x11ca24
@@ -63,7 +63,7 @@ label_0x11ca38:
     if (v0 != 0) goto label_0x11ca38;                           // 0x0011ca4c: bnez $v0, 0x11ca38
     /* nop */                                                   // 0x0011ca50: nop 
     *(uint8_t*)(v1) = 0;                                        // 0x0011ca54: sb $zero, 0($v1)
-    func_0011c8f0();  // 0x11c798                                // 0x0011ca5c: jal 0x11c798
+    func_0011c798();  // 11c798                                // 0x0011ca5c: jal 0x11c798
 label_0x11ca64:
     return;                                                     // 0x0011ca70: jr $ra
     sp = sp + 0x80;                                             // 0x0011ca74: addiu $sp, $sp, 0x80

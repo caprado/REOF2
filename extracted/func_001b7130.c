@@ -22,21 +22,21 @@ label_0x1b7174:
     v1 = g_002ac540;  // Global at 0x002ac540                   // 0x001b7174: lw $v1, 0($s0)
     if (v1 == 0) goto label_0x1b71d0;                           // 0x001b7178: beqz $v1, 0x1b71d0
     a0 = 0x5f;                                                  // 0x001b717c: addiu $a0, $zero, 0x5f
-    func_001aefe0();  // 0x1aefd0                                // 0x001b7180: jal 0x1aefd0
+    func_001aefd0();  // 1aefd0                                // 0x001b7180: jal 0x1aefd0
     a1 = 5;                                                     // 0x001b7184: addiu $a1, $zero, 5
     a0 = 0x60;                                                  // 0x001b7188: addiu $a0, $zero, 0x60
-    func_001aefe0();  // 0x1aefd0                                // 0x001b718c: jal 0x1aefd0
+    func_001aefd0();  // 1aefd0                                // 0x001b718c: jal 0x1aefd0
     v0 = g_002ac5e0;  // Global at 0x002ac5e0                   // 0x001b7194: lw $v0, 0xa0($s0)
     if (v0 == 0) goto label_0x1b71b4;                           // 0x001b7198: beqz $v0, 0x1b71b4
     a0 = 0x6c;                                                  // 0x001b719c: addiu $a0, $zero, 0x6c
     a0 = 0x6c;                                                  // 0x001b71a0: addiu $a0, $zero, 0x6c
-    func_001aefe0();  // 0x1aefd0                                // 0x001b71a4: jal 0x1aefd0
+    func_001aefd0();  // 1aefd0                                // 0x001b71a4: jal 0x1aefd0
     a1 = 1;                                                     // 0x001b71a8: addiu $a1, $zero, 1
     goto label_0x1b71c0;                                        // 0x001b71ac: b 0x1b71c0
 label_0x1b71b4:
-    func_001aefe0();  // 0x1aefd0                                // 0x001b71b4: jal 0x1aefd0
+    func_001aefd0();  // 1aefd0                                // 0x001b71b4: jal 0x1aefd0
 label_0x1b71c0:
-    func_001b5630();  // 0x1b5470                                // 0x001b71c0: jal 0x1b5470
+    func_001b5470();  // 1b5470                                // 0x001b71c0: jal 0x1b5470
     /* nop */                                                   // 0x001b71c4: nop 
     goto label_0x1b72d8;                                        // 0x001b71c8: b 0x1b72d8
 label_0x1b71d0:
@@ -75,12 +75,12 @@ label_0x1b722c:
     v0 = v0 | v1;                                               // 0x001b7244: or $v0, $v0, $v1
 label_0x1b7248:
     a1 = g_002ac548;  // Global at 0x002ac548                   // 0x001b7248: lw $a1, 8($s0)
-    func_001b5e90();  // 0x1b5e60                                // 0x001b724c: jal 0x1b5e60
+    func_001b5e60();  // 1b5e60                                // 0x001b724c: jal 0x1b5e60
     a0 = a0 & 0xff;                                             // 0x001b7250: andi $a0, $a0, 0xff
     s1 = 1;                                                     // 0x001b7254: addiu $s1, $zero, 1
 label_0x1b7258:
     a1 = g_002ac548;  // Global at 0x002ac548                   // 0x001b7258: lw $a1, 8($s0)
-    func_001b5e60();  // 0x1b5dd0                                // 0x001b725c: jal 0x1b5dd0
+    func_001b5dd0();  // 1b5dd0                                // 0x001b725c: jal 0x1b5dd0
     v1 = g_002ac55c;  // Global at 0x002ac55c                   // 0x001b7264: lw $v1, 0x1c($s0)
     at = ((unsigned)a1 < (unsigned)v1) ? 1 : 0;                 // 0x001b726c: sltu $at, $a1, $v1
     if (at == 0) goto label_0x1b72b8;                           // 0x001b7270: beqz $at, 0x1b72b8
@@ -89,9 +89,9 @@ label_0x1b7258:
     v1 = g_002ac5a0;  // Global at 0x002ac5a0                   // 0x001b727c: lw $v1, 0x60($s0)
     at = ((unsigned)a0 < (unsigned)v1) ? 1 : 0;                 // 0x001b7280: sltu $at, $a0, $v1
     if (at == 0) goto label_0x1b72d0;                           // 0x001b7284: beqz $at, 0x1b72d0
-    func_001b5730();  // 0x1b5630                                // 0x001b728c: jal 0x1b5630
+    func_001b5630();  // 1b5630                                // 0x001b728c: jal 0x1b5630
     /* nop */                                                   // 0x001b7290: nop 
-    func_001b6d60();  // 0x1b6a60                                // 0x001b72a0: jal 0x1b6a60
+    func_001b6a60();  // 1b6a60                                // 0x001b72a0: jal 0x1b6a60
     v1 = g_002ac5a4;  // Global at 0x002ac5a4                   // 0x001b72a8: lw $v1, 0x64($s0)
     v1 = v1 + 1;                                                // 0x001b72b0: addiu $v1, $v1, 1
     g_002ac5a4 = v1;  // Global at 0x002ac5a4                   // 0x001b72b4: sw $v1, 0x64($s0)

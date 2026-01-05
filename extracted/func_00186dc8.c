@@ -16,7 +16,7 @@ void func_00186dc8() {
     /* multiply: a3 *  -> hi:lo */                              // 0x00186de8: mult $t0, $a3
     /* mflo $a3 */                                              // 0x00186dec
     /* multiply: t0 *  -> hi:lo */                              // 0x00186df0: mult $a2, $t0
-    func_00188138();  // 0x188118                                // 0x00186df4: jal 0x188118
+    func_00188118();  // 188118                                // 0x00186df4: jal 0x188118
     /* mflo $a2 */                                              // 0x00186df8
     return;                                                     // 0x00186e00: jr $ra
     sp = sp + 0x10;                                             // 0x00186e04: addiu $sp, $sp, 0x10

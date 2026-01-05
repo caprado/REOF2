@@ -19,7 +19,7 @@ label_0x1b02a8:
     goto label_0x1b02d4;                                        // 0x001b02c0: b 0x1b02d4
     t0 = v1 + 0x13a8;                                           // 0x001b02c4: addiu $t0, $v1, 0x13a8
 label_0x1b02c8:
-    func_001aff00();  // 0x1afed0                                // 0x001b02c8: jal 0x1afed0
+    func_001afed0();  // 1afed0                                // 0x001b02c8: jal 0x1afed0
     t1 = t1 + 1;                                                // 0x001b02d0: addiu $t1, $t1, 1
 label_0x1b02d4:
     v1 = *(uint8_t*)(a3);                                       // 0x001b02d4: lbu $v1, 0($a3)

@@ -31,7 +31,7 @@ label_0x193d74:
     s2 = *(uint8_t*)((s0) + 1);                                 // 0x00193d74: lbu $s2, 1($s0)
     /* FPU: mov.s $f12, $f20 */                                 // 0x00193d78: mov.s $f12, $f20
     v0 = s2 << 1;                                               // 0x00193d80: sll $v0, $s2, 1
-    func_0018e2e0();  // 0x18e220                                // 0x00193d84: jal 0x18e220
+    func_0018e220();  // 18e220                                // 0x00193d84: jal 0x18e220
     a1 = s6 + v0;                                               // 0x00193d88: addu $a1, $s6, $v0
     v0 = s2 << 2;                                               // 0x00193d8c: sll $v0, $s2, 2
     s1 = s1 + 1;                                                // 0x00193d90: addiu $s1, $s1, 1
@@ -56,7 +56,7 @@ label_0x193dcc:
     v1 = s3 << 2;                                               // 0x00193dd8: sll $v1, $s3, 2
     v0 = s3 << 1;                                               // 0x00193ddc: sll $v0, $s3, 1
     s2 = s4 + v1;                                               // 0x00193de0: addu $s2, $s4, $v1
-    func_0018e2e0();  // 0x18e220                                // 0x00193de4: jal 0x18e220
+    func_0018e220();  // 18e220                                // 0x00193de4: jal 0x18e220
     a1 = s6 + v0;                                               // 0x00193de8: addu $a1, $s6, $v0
     v1 = s3 & 0xffff;                                           // 0x00193dec: andi $v1, $s3, 0xffff
     v0 = 5;                                                     // 0x00193df0: addiu $v0, $zero, 5

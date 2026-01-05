@@ -23,7 +23,7 @@ void func_001d08a0() {
     /* nop */                                                   // 0x001d08e8: nop 
 label_0x1d08ec:
     a0 = 0x33 << 16;                                            // 0x001d08ec: lui $a0, 0x33
-    func_001c9d10();  // 0x1c9b00                                // 0x001d08f0: jal 0x1c9b00
+    func_001c9b00();  // 1c9b00                                // 0x001d08f0: jal 0x1c9b00
     a0 = a0 + -0x41d0;                                          // 0x001d08f4: addiu $a0, $a0, -0x41d0
 label_0x1d08f8:
     at = 0x33 << 16;                                            // 0x001d08f8: lui $at, 0x33

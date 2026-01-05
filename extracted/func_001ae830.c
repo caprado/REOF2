@@ -1,3 +1,4 @@
+/** @category: game/init @status: complete @author: caprado */
 void func_001ae830() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
@@ -9,7 +10,7 @@ void func_001ae830() {
     sp = sp + -0x10;                                            // 0x001ae830: addiu $sp, $sp, -0x10
     a0 = 0x31 << 16;                                            // 0x001ae834: lui $a0, 0x31
     a0 = a0 + 0x1d30;                                           // 0x001ae83c: addiu $a0, $a0, 0x1d30
-    func_00107d30();  // 0x107c70                                // 0x001ae844: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001ae844: jal 0x107c70
     a2 = 0x1474;                                                // 0x001ae848: addiu $a2, $zero, 0x1474
     v0 = 0x1f;                                                  // 0x001ae84c: addiu $v0, $zero, 0x1f
     at = 0x31 << 16;                                            // 0x001ae850: lui $at, 0x31
@@ -24,7 +25,7 @@ void func_001ae830() {
     v0 = g_00311d55;  // Global at 0x00311d55                   // 0x001ae874: lbu $v0, 0x1d55($at)
     v0 = v0 | 3;                                                // 0x001ae878: ori $v0, $v0, 3
     at = 0x31 << 16;                                            // 0x001ae87c: lui $at, 0x31
-    func_001aff60();  // 0x1aff00                                // 0x001ae880: jal 0x1aff00
+    func_001aff00();  // 1aff00                                // 0x001ae880: jal 0x1aff00
     g_00311d55 = v0;  // Global at 0x00311d55                   // 0x001ae884: sb $v0, 0x1d55($at)
     a1 = 0x22 << 16;                                            // 0x001ae888: lui $a1, 0x22
     a1 = a1 + -0x4100;                                          // 0x001ae890: addiu $a1, $a1, -0x4100

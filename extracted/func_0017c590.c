@@ -30,7 +30,7 @@ void func_0017c590() {
     return func_0014fb48();  // Tail call                       // 0x0017c5f8: j 0x14fb48
     sp = sp + 0x10;                                             // 0x0017c5fc: addiu $sp, $sp, 0x10
     sp = sp + -0x20;                                            // 0x0017c600: addiu $sp, $sp, -0x20
-    func_0017e068();  // 0x17e028                                // 0x0017c618: jal 0x17e028
+    func_0017e028();  // 17e028                                // 0x0017c618: jal 0x17e028
     a0 = *(int32_t*)((s0) + 0x24);                              // 0x0017c61c: lw $a0, 0x24($s0)
     a2 = 0x23 << 16;                                            // 0x0017c620: lui $a2, 0x23
     v1 = 1;                                                     // 0x0017c624: addiu $v1, $zero, 1
@@ -43,7 +43,7 @@ label_0x17c650:
     return func_0017c4a0();  // Tail call                        // 0x0017c660: j 0x17c480
     sp = sp + 0x20;                                             // 0x0017c664: addiu $sp, $sp, 0x20
     sp = sp + -0x20;                                            // 0x0017c668: addiu $sp, $sp, -0x20
-    func_0017e068();  // 0x17e028                                // 0x0017c680: jal 0x17e028
+    func_0017e028();  // 17e028                                // 0x0017c680: jal 0x17e028
     a0 = *(int32_t*)((s0) + 0x24);                              // 0x0017c684: lw $a0, 0x24($s0)
     a2 = 0x23 << 16;                                            // 0x0017c688: lui $a2, 0x23
     v1 = 1;                                                     // 0x0017c68c: addiu $v1, $zero, 1
@@ -66,7 +66,7 @@ label_0x17c6b8:
     a1 = local_0;                                               // 0x0017c720: lw $a1, 0($sp)
     s1 = (unsigned)s2 >> 0x1f;                                  // 0x0017c72c: srl $s1, $s2, 0x1f
     a1 = a1 << 1;                                               // 0x0017c730: sll $a1, $a1, 1
-    func_0017cf48();  // 0x17cf18                                // 0x0017c734: jal 0x17cf18
+    func_0017cf18();  // 17cf18                                // 0x0017c734: jal 0x17cf18
     s1 = s2 + s1;                                               // 0x0017c738: addu $s1, $s2, $s1
     v0 = *(int32_t*)((s0) + 0x48);                              // 0x0017c73c: lw $v0, 0x48($s0)
     s1 = s1 >> 1;                                               // 0x0017c740: sra $s1, $s1, 1
@@ -75,14 +75,14 @@ label_0x17c6b8:
     v0 = v0 >> 1;                                               // 0x0017c754: sra $v0, $v0, 1
     func_0017d1d8();  // 0x17d1d8                               // 0x0017c758: jal 0x17d1d8
     *(uint32_t*)((s0) + 0x48) = v0;                             // 0x0017c75c: sw $v0, 0x48($s0)
-    func_0017c888();  // 0x17c7d0                                // 0x0017c768: jal 0x17c7d0
+    func_0017c7d0();  // 17c7d0                                // 0x0017c768: jal 0x17c7d0
     a1 = local_0;                                               // 0x0017c774: lw $a1, 0($sp)
-    func_0017cf48();  // 0x17cf18                                // 0x0017c77c: jal 0x17cf18
+    func_0017cf18();  // 17cf18                                // 0x0017c77c: jal 0x17cf18
     a1 = a1 << 1;                                               // 0x0017c780: sll $a1, $a1, 1
     func_0017d1d8();  // 0x17d1d8                               // 0x0017c788: jal 0x17d1d8
     func_0017d150();  // 0x17d150                               // 0x0017c794: jal 0x17d150
     a2 = local_0;                                               // 0x0017c7a0: lw $a2, 0($sp)
-    func_0017c888();  // 0x17c7d0                                // 0x0017c7a8: jal 0x17c7d0
+    func_0017c7d0();  // 17c7d0                                // 0x0017c7a8: jal 0x17c7d0
     a2 = s4 + a2;                                               // 0x0017c7ac: addu $a2, $s4, $a2
     return;                                                     // 0x0017c7c8: jr $ra
     sp = sp + 0x40;                                             // 0x0017c7cc: addiu $sp, $sp, 0x40

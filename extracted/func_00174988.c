@@ -12,7 +12,7 @@ void func_00174988() {
     return func_001749d8();  // Tail call                       // 0x001749b0: j 0x1749d8
     sp = sp + 0x10;                                             // 0x001749b4: addiu $sp, $sp, 0x10
 label_0x1749b8:
-    func_0015b7b0();  // 0x15b740                                // 0x001749b8: jal 0x15b740
+    func_0015b740();  // 15b740                                // 0x001749b8: jal 0x15b740
     a0 = *(int32_t*)((v1) + 0xd94);                             // 0x001749bc: lw $a0, 0xd94($v1)
     *(uint32_t*)(s0) = v0;                                      // 0x001749c0: sw $v0, 0($s0)
     return;                                                     // 0x001749cc: jr $ra

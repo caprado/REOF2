@@ -12,7 +12,7 @@ void func_001dbe10() {
     sp = sp + -0x30;                                            // 0x001dbe10: addiu $sp, $sp, -0x30
     v0 = *(int8_t*)((gp) + -0x6220);                            // 0x001dbe1c: lb $v0, -0x6220($gp)
     if (v0 != 0) goto label_0x1dbe74;                           // 0x001dbe20: bnez $v0, 0x1dbe74
-    func_001dc428();  // 0x1dc230                                // 0x001dbe28: jal 0x1dc230
+    func_001dc230();  // 1dc230                                // 0x001dbe28: jal 0x1dc230
     a0 = sp + 0x2c;                                             // 0x001dbe2c: addiu $a0, $sp, 0x2c
     if (v0 == 0) goto label_0x1dbe44;                           // 0x001dbe30: beqz $v0, 0x1dbe44
     /* nop */                                                   // 0x001dbe34: nop 

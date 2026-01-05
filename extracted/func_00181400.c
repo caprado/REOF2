@@ -14,14 +14,14 @@ void func_00181400() {
     goto label_0x1814d0;                                        // 0x0018142c: b 0x1814d0
     v0 = v0 | 0x8001;                                           // 0x00181430: ori $v0, $v0, 0x8001
 label_0x181434:
-    func_001887a0();  // 0x188758                                // 0x00181434: jal 0x188758
+    func_00188758();  // 188758                                // 0x00181434: jal 0x188758
     if (s0 >= 0) goto label_0x181454;                           // 0x00181440: bgez $s0, 0x181454
     /* nop */                                                   // 0x00181444: nop 
     v0 = 0x8101 << 16;                                          // 0x00181448: lui $v0, 0x8101
     goto label_0x1814d0;                                        // 0x0018144c: b 0x1814d0
     v0 = v0 | 0x8002;                                           // 0x00181450: ori $v0, $v0, 0x8002
 label_0x181454:
-    func_0010af38();  // 0x10ae00                                // 0x00181454: jal 0x10ae00
+    func_0010ae00();  // 10ae00                                // 0x00181454: jal 0x10ae00
     v0 = ((unsigned)v0 < (unsigned)0x80) ? 1 : 0;               // 0x0018145c: sltiu $v0, $v0, 0x80
     if (v0 != 0) goto label_0x181474;                           // 0x00181460: bnez $v0, 0x181474
     s1 = 0x27 << 16;                                            // 0x00181464: lui $s1, 0x27
@@ -43,7 +43,7 @@ label_0x181474:
     v0 = v0 | 0x10;                                             // 0x001814a0: ori $v0, $v0, 0x10
     g_0026ac80 = s0;  // Global at 0x0026ac80                   // 0x001814a4: sw $s0, -0x5380($v1)
     g_0026ac84 = v0;  // Global at 0x0026ac84                   // 0x001814a8: sw $v0, 4($a0)
-    func_0010ae00();  // 0x10ac68                                // 0x001814b0: jal 0x10ac68
+    func_0010ac68();  // 10ac68                                // 0x001814b0: jal 0x10ac68
     a0 = a0 + 0x41c;                                            // 0x001814b4: addiu $a0, $a0, 0x41c
     v1 = 0x27 << 16;                                            // 0x001814b8: lui $v1, 0x27
     iSignalSema();  // 0x114300                                 // 0x001814bc: jal 0x114300

@@ -11,7 +11,7 @@ void func_001b6a60() {
     /* FPU: addu.qb $zero, $sp, $s0 */                          // 0x001b6a78: addu.qb $zero, $sp, $s0
     t3 = g_4180000c;  // Global at 0x4180000c                   // 0x001b6a80: lw $t3, 0xc($a0)
     a2 = *(int32_t*)((s1) + 0x54);                              // 0x001b6a94: lw $a2, 0x54($s1)
-    func_001b69e0();  // 0x1b6860                                // 0x001b6a98: jal 0x1b6860
+    func_001b6860();  // 1b6860                                // 0x001b6a98: jal 0x1b6860
     a3 = 1;                                                     // 0x001b6a9c: addiu $a3, $zero, 1
     at = 0x29 << 16;                                            // 0x001b6aa0: lui $at, 0x29
     a2 = g_0028ff7c;  // Global at 0x0028ff7c                   // 0x001b6aa8: lw $a2, -0x84($at)

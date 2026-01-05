@@ -10,17 +10,17 @@ void func_001ce550() {
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001ce558: addu.qb $zero, $sp, $s1
     a0 = 0x32 << 16;                                            // 0x001ce568: lui $a0, 0x32
     a0 = a0 + 0x3710;                                           // 0x001ce56c: addiu $a0, $a0, 0x3710
-    thunk_func_001cfe80();  // 0x1ce7d0                          // 0x001ce570: jal 0x1ce7d0
+    thunk_func_001ce7d0();  // 1ce7d0                          // 0x001ce570: jal 0x1ce7d0
     a1 = 0 | 0xf003;                                            // 0x001ce574: ori $a1, $zero, 0xf003
     a0 = 0x32 << 16;                                            // 0x001ce578: lui $a0, 0x32
     a1 = 1;                                                     // 0x001ce57c: addiu $a1, $zero, 1
-    thunk_func_001cff70();  // 0x1ce7e0                          // 0x001ce580: jal 0x1ce7e0
+    thunk_func_001ce7e0();  // 1ce7e0                          // 0x001ce580: jal 0x1ce7e0
     a0 = a0 + 0x3710;                                           // 0x001ce584: addiu $a0, $a0, 0x3710
     a0 = 0x32 << 16;                                            // 0x001ce588: lui $a0, 0x32
-    thunk_func_001cff70();  // 0x1ce7e0                          // 0x001ce590: jal 0x1ce7e0
+    thunk_func_001ce7e0();  // 1ce7e0                          // 0x001ce590: jal 0x1ce7e0
     a0 = a0 + 0x3710;                                           // 0x001ce594: addiu $a0, $a0, 0x3710
     a0 = 0x32 << 16;                                            // 0x001ce598: lui $a0, 0x32
-    thunk_func_001cff70();  // 0x1ce7e0                          // 0x001ce5a0: jal 0x1ce7e0
+    thunk_func_001ce7e0();  // 1ce7e0                          // 0x001ce5a0: jal 0x1ce7e0
     a0 = a0 + 0x3710;                                           // 0x001ce5a4: addiu $a0, $a0, 0x3710
     /* FPU: aver_u.h $w0, $w0, $w17 */                          // 0x001ce5ac: aver_u.h $w0, $w0, $w17
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001ce5b0: xori.b $w0, $w0, 0xb0

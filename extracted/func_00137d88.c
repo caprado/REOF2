@@ -11,7 +11,7 @@ void func_00137d88() {
     a0 = g_00202189;  // Global at 0x00202189                   // 0x00137d90: lb $a0, 0x2189($v0)
     v1 = 1;                                                     // 0x00137d94: addiu $v1, $zero, 1
     if (a0 != v1) goto label_0x137db0;                          // 0x00137d98: bne $a0, $v1, 0x137db0
-    func_00137ce8();  // 0x137ca8                                // 0x00137da0: jal 0x137ca8
+    func_00137ca8();  // 137ca8                                // 0x00137da0: jal 0x137ca8
     /* nop */                                                   // 0x00137da4: nop 
     goto label_0x137dc8;                                        // 0x00137da8: b 0x137dc8
     v0 = v0 << 1;                                               // 0x00137dac: sll $v0, $v0, 1

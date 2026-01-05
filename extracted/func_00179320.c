@@ -8,11 +8,11 @@ void func_00179320() {
     
     sp = sp + -0x20;                                            // 0x00179320: addiu $sp, $sp, -0x20
     v0 = *(int32_t*)((a0) + 4);                                 // 0x00179334: lw $v0, 4($a0)
-    func_00178fc8();  // 0x178fa0                                // 0x00179338: jal 0x178fa0
+    func_00178fa0();  // 178fa0                                // 0x00179338: jal 0x178fa0
     s1 = v0 + 0x60;                                             // 0x0017933c: addiu $s1, $v0, 0x60
     if (v0 == 0) goto label_0x17939c;                           // 0x00179348: beqz $v0, 0x17939c
     a2 = 0x21;                                                  // 0x0017934c: addiu $a2, $zero, 0x21
-    func_00107d30();  // 0x107c70                                // 0x00179350: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x00179350: jal 0x107c70
     /* nop */                                                   // 0x00179354: nop 
     v0 = 1;                                                     // 0x00179358: addiu $v0, $zero, 1
 label_0x17939c:

@@ -17,7 +17,7 @@ void func_0011d7f0() {
     v0 = s3 + 0x40;                                             // 0x0011d810: addiu $v0, $s3, 0x40
     a0 = g_001f1238;  // Global at 0x001f1238                   // 0x0011d834: lw $a0, 0x1238($v1)
     a1 = g_001f123c;  // Global at 0x001f123c                   // 0x0011d838: lw $a1, 4($a3)
-    func_0011d7f0();  // 0x11d7e0                                // 0x0011d83c: jal 0x11d7e0
+    func_0011d7e0();  // 11d7e0                                // 0x0011d83c: jal 0x11d7e0
     local_0 = v0;                                               // 0x0011d840: sw $v0, 0($sp)
     v1 = (s2 < 0x10) ? 1 : 0;                                   // 0x0011d844: slti $v1, $s2, 0x10
     v0 = 0xf;                                                   // 0x0011d848: addiu $v0, $zero, 0xf
@@ -25,7 +25,7 @@ void func_0011d7f0() {
     SetSyscall();  // 0x11d7a0                                  // 0x0011d858: jal 0x11d7a0
     a2 = 4;                                                     // 0x0011d85c: addiu $a2, $zero, 4
     s3 = s3 + 4;                                                // 0x0011d860: addiu $s3, $s3, 4
-    func_0010af38();  // 0x10ae00                                // 0x0011d864: jal 0x10ae00
+    func_0010ae00();  // 10ae00                                // 0x0011d864: jal 0x10ae00
     s1 = v0 + 1;                                                // 0x0011d86c: addiu $s1, $v0, 1
     a0 = local_0;                                               // 0x0011d870: lw $a0, 0($sp)
     SetSyscall();  // 0x11d7a0                                  // 0x0011d878: jal 0x11d7a0
@@ -39,7 +39,7 @@ label_0x11d898:
     SetSyscall();  // 0x11d7a0                                  // 0x0011d8a4: jal 0x11d7a0
     s3 = s3 + 4;                                                // 0x0011d8a8: addiu $s3, $s3, 4
     s2 = s2 + -1;                                               // 0x0011d8ac: addiu $s2, $s2, -1
-    func_0010af38();  // 0x10ae00                                // 0x0011d8b0: jal 0x10ae00
+    func_0010ae00();  // 10ae00                                // 0x0011d8b0: jal 0x10ae00
     a0 = *(int32_t*)(s0);                                       // 0x0011d8b4: lw $a0, 0($s0)
     s1 = v0 + 1;                                                // 0x0011d8b8: addiu $s1, $v0, 1
     a1 = *(int32_t*)(s0);                                       // 0x0011d8bc: lw $a1, 0($s0)

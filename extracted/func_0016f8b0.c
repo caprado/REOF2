@@ -23,7 +23,7 @@ void func_0016f8b0() {
     *(uint32_t*)((s0) + 0x1c) = 0;                              // 0x0016f908: sw $zero, 0x1c($s0)
     *(uint32_t*)((s0) + 0x20) = 0;                              // 0x0016f90c: sw $zero, 0x20($s0)
     *(uint32_t*)((s0) + 0x24) = 0;                              // 0x0016f910: sw $zero, 0x24($s0)
-    func_0016f960();  // 0x16f940                                // 0x0016f914: jal 0x16f940
+    func_0016f940();  // 16f940                                // 0x0016f914: jal 0x16f940
     s0 = s0 + 0x80;                                             // 0x0016f918: addiu $s0, $s0, 0x80
     /* bnezl $s1, 0x16f8e0 */                                   // 0x0016f91c: bnezl $s1, 0x16f8e0
     v0 = *(int32_t*)(s2);                                       // 0x0016f920: lw $v0, 0($s2)

@@ -10,7 +10,7 @@ void func_001a90b0() {
     a0 = *(int32_t*)((gp) + -0x63e4);                           // 0x001a90b8: lw $a0, -0x63e4($gp)
     if (a0 == 0) goto label_0x1a90cc;                           // 0x001a90bc: beqz $a0, 0x1a90cc
     /* nop */                                                   // 0x001a90c0: nop 
-    func_00129590();  // 0x1294a0                                // 0x001a90c4: jal 0x1294a0
+    func_001294a0();  // 1294a0                                // 0x001a90c4: jal 0x1294a0
     /* nop */                                                   // 0x001a90c8: nop 
 label_0x1a90cc:
     return;                                                     // 0x001a90d0: jr $ra

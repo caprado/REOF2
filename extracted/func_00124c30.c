@@ -12,7 +12,7 @@ void func_00124c30() {
     sp = sp + -0x10;                                            // 0x00124c30: addiu $sp, $sp, -0x10
     a1 = s0 + 0xa8;                                             // 0x00124c40: addiu $a1, $s0, 0xa8
     a2 = s0 + 0xac;                                             // 0x00124c44: addiu $a2, $s0, 0xac
-    func_00134be8();  // 0x134bc0                                // 0x00124c48: jal 0x134bc0
+    func_00134bc0();  // 134bc0                                // 0x00124c48: jal 0x134bc0
     a0 = *(int32_t*)((s0) + 8);                                 // 0x00124c4c: lw $a0, 8($s0)
     a0 = *(int32_t*)((s0) + 8);                                 // 0x00124c50: lw $a0, 8($s0)
     a3 = s0 + 0xa6;                                             // 0x00124c54: addiu $a3, $s0, 0xa6
@@ -23,7 +23,7 @@ void func_00124c30() {
     sp = sp + -0x10;                                            // 0x00124c70: addiu $sp, $sp, -0x10
     a1 = s0 + 0xa8;                                             // 0x00124c80: addiu $a1, $s0, 0xa8
     a2 = s0 + 0xac;                                             // 0x00124c84: addiu $a2, $s0, 0xac
-    func_00134bc0();  // 0x134b98                                // 0x00124c88: jal 0x134b98
+    func_00134b98();  // 134b98                                // 0x00124c88: jal 0x134b98
     a0 = *(int32_t*)((s0) + 8);                                 // 0x00124c8c: lw $a0, 8($s0)
     a0 = *(int32_t*)((s0) + 8);                                 // 0x00124c90: lw $a0, 8($s0)
     a3 = *(int16_t*)((s0) + 0xa6);                              // 0x00124c94: lh $a3, 0xa6($s0)
@@ -32,9 +32,9 @@ void func_00124c30() {
     return func_00134c18();  // Tail call                        // 0x00124ca8: j 0x134be8
     sp = sp + 0x10;                                             // 0x00124cac: addiu $sp, $sp, 0x10
     sp = sp + -0x30;                                            // 0x00124cb0: addiu $sp, $sp, -0x30
-    func_0010af38();  // 0x10ae00                                // 0x00124cc8: jal 0x10ae00
+    func_0010ae00();  // 10ae00                                // 0x00124cc8: jal 0x10ae00
     a3 = sp + 2;                                                // 0x00124cdc: addiu $a3, $sp, 2
-    func_001243d0();  // 0x124218                                // 0x00124ce0: jal 0x124218
+    func_00124218();  // 124218                                // 0x00124ce0: jal 0x124218
     t0 = sp + 4;                                                // 0x00124ce4: addiu $t0, $sp, 4
     v1 = local_0;                                               // 0x00124ce8: lhu $v1, 0($sp)
     a0 = local_2;                                               // 0x00124cec: lhu $a0, 2($sp)

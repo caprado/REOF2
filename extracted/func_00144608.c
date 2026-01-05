@@ -40,7 +40,7 @@ label_0x144680:
     if (v1 != v0) goto label_0x1446a4;                          // 0x00144688: bnel $v1, $v0, 0x1446a4
     v1 = *(int32_t*)(s0);                                       // 0x0014468c: lw $v1, 0($s0)
     a1 = 0x22 << 16;                                            // 0x00144690: lui $a1, 0x22
-    func_00148588();  // 0x148530                                // 0x00144694: jal 0x148530
+    func_00148530();  // 148530                                // 0x00144694: jal 0x148530
     a1 = &str_00226728;  // "Invalid macroblock_type code: 0"   // 0x00144698: addiu $a1, $a1, 0x6728
     v1 = *(int32_t*)(s0);                                       // 0x001446a0: lw $v1, 0($s0)
 label_0x1446a4:

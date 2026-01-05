@@ -38,7 +38,7 @@ label_0x1874d8:
     /* mflo $v1 */                                              // 0x00187504
     /* multiply: a2 *  -> hi:lo */                              // 0x00187508: mult $s2, $a2
     /* mflo $a2 */                                              // 0x00187510
-    func_00188118();  // 0x187f80                                // 0x00187514: jal 0x187f80
+    func_00187f80();  // 187f80                                // 0x00187514: jal 0x187f80
     a2 = *(int32_t*)(s4);                                       // 0x0018751c: lw $a2, 0($s4)
     /* multiply: a2 * s0 -> hi:lo */                            // 0x00187524: mult $ac2, $a2, $s0
     v0 = (unsigned)v0 >> 2;                                     // 0x00187528: srl $v0, $v0, 2

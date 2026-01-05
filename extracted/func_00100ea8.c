@@ -1,3 +1,4 @@
+/** @category system/ps2 @status complete @author caprado */
 void func_00100ea8() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
@@ -8,7 +9,7 @@ void func_00100ea8() {
     
     sp = sp + -0x40;                                            // 0x00100ea8: addiu $sp, $sp, -0x40
     s0 = 0x1f << 16;                                            // 0x00100ebc: lui $s0, 0x1f
-    func_00100668();  // 0x1005b0                                // 0x00100ec0: jal 0x1005b0
+    func_001005b0();  // 1005b0                                // 0x00100ec0: jal 0x1005b0
     a0 = g_001edf2c;  // Global at 0x001edf2c                   // 0x00100ec8: lw $a0, -0x20d4($s0)
     SetOsdConfigParam();  // 0x114330                           // 0x00100ecc: jal 0x114330
     /* nop */                                                   // 0x00100ed0: nop 
@@ -21,7 +22,7 @@ void func_00100ea8() {
     a0 = 0x22 << 16;                                            // 0x00100eec: lui $a0, 0x22
     a2 = g_001edf18;  // Global at 0x001edf18                   // 0x00100ef0: lw $a2, -0x20e8($v0)
     a0 = &str_0021fdf8;  // "Libcdvd bind err S cmd\n"          // 0x00100ef4: addiu $a0, $a0, -0x208
-    func_00116598();  // 0x116508                                // 0x00100ef8: jal 0x116508
+    func_00116508();  // 116508                                // 0x00100ef8: jal 0x116508
     goto label_0x101000;                                        // 0x00100f00: b 0x101000
 label_0x100f08:
     v0 = 0x25 << 16;                                            // 0x00100f08: lui $v0, 0x25
@@ -31,7 +32,7 @@ label_0x100f08:
     g_001edf18 = s1;  // Global at 0x001edf18                   // 0x00100f18: sw $s1, -0x20e8($v1)
     iReferThreadStatus();  // 0x1141e0                          // 0x00100f1c: jal 0x1141e0
     a1 = a1 + -0x48e0;                                          // 0x00100f20: addiu $a1, $a1, -0x48e0
-    func_00100ea8();  // 0x100e38                                // 0x00100f24: jal 0x100e38
+    func_00100e38();  // 100e38                                // 0x00100f24: jal 0x100e38
     a0 = 1;                                                     // 0x00100f28: addiu $a0, $zero, 1
     if (v0 == 0) goto label_0x100f48;                           // 0x00100f2c: beqz $v0, 0x100f48
     a0 = g_001edf2c;  // Global at 0x001edf2c                   // 0x00100f34: lw $a0, -0x20d4($s0)
@@ -40,7 +41,7 @@ label_0x100f08:
 label_0x100f40:
     goto label_0x101000;                                        // 0x00100f40: b 0x101000
 label_0x100f48:
-    func_00116ee0();  // 0x116d40                                // 0x00100f48: jal 0x116d40
+    func_00116d40();  // 116d40                                // 0x00100f48: jal 0x116d40
     s2 = 0x1f << 16;                                            // 0x00100f4c: lui $s2, 0x1f
     v0 = g_001edf4c;  // Global at 0x001edf4c                   // 0x00100f50: lw $v0, -0x20b4($s2)
     if (v0 >= 0) goto label_0x101000;                           // 0x00100f54: bgez $v0, 0x101000
@@ -64,7 +65,7 @@ label_0x100f8c:
 label_0x100f90:
     a1 = 0x8000 << 16;                                          // 0x00100f90: lui $a1, 0x8000
     a1 = a1 | 0x593;                                            // 0x00100f98: ori $a1, $a1, 0x593
-    func_001176a8();  // 0x1174d8                                // 0x00100f9c: jal 0x1174d8
+    func_001174d8();  // 1174d8                                // 0x00100f9c: jal 0x1174d8
     if (v0 >= 0) goto label_0x100ff4;                           // 0x00100fa4: bgezl $v0, 0x100ff4
     v0 = g_001efaa4;  // Global at 0x001efaa4                   // 0x00100fa8: lw $v0, 0x24($s0)
     v0 = 0x1f << 16;                                            // 0x00100fac: lui $v0, 0x1f
@@ -72,7 +73,7 @@ label_0x100f90:
     if (v1 <= 0) goto label_0x100fcc;                           // 0x00100fb4: blez $v1, 0x100fcc
     v0 = 0x10 << 16;                                            // 0x00100fb8: lui $v0, 0x10
     a0 = 0x22 << 16;                                            // 0x00100fbc: lui $a0, 0x22
-    func_00116598();  // 0x116508                                // 0x00100fc0: jal 0x116508
+    func_00116508();  // 116508                                // 0x00100fc0: jal 0x116508
     a0 = &str_0021fe20;  // "Libcdvd bind err %d CD_Init %d\n"  // 0x00100fc4: addiu $a0, $a0, -0x1e0
     v0 = 0x10 << 16;                                            // 0x00100fc8: lui $v0, 0x10
 label_0x100fcc:

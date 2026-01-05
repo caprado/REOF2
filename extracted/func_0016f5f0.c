@@ -7,7 +7,7 @@ void func_0016f5f0() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x0016f5f0: addiu $sp, $sp, -0x20
-    func_0016f8b0();  // 0x16f7e8                                // 0x0016f604: jal 0x16f7e8
+    func_0016f7e8();  // 16f7e8                                // 0x0016f604: jal 0x16f7e8
     if (v0 == 0) goto label_0x16f630;                           // 0x0016f60c: beqz $v0, 0x16f630
     a1 = 0xff00 << 16;                                          // 0x0016f618: lui $a1, 0xff00
     a1 = a1 | 0xf15;                                            // 0x0016f624: ori $a1, $a1, 0xf15
@@ -38,11 +38,11 @@ label_0x16f630:
     *(uint32_t*)((s0) + 0x80) = 0;                              // 0x0016f758: sw $zero, 0x80($s0)
     *(uint32_t*)((s0) + 0x12c) = 0;                             // 0x0016f75c: sw $zero, 0x12c($s0)
     *(uint32_t*)((s0) + 0x130) = 0;                             // 0x0016f760: sw $zero, 0x130($s0)
-    func_0016f940();  // 0x16f8b0                                // 0x0016f764: jal 0x16f8b0
+    func_0016f8b0();  // 16f8b0                                // 0x0016f764: jal 0x16f8b0
     *(uint32_t*)((s0) + 0x134) = 0;                             // 0x0016f768: sw $zero, 0x134($s0)
     *(uint32_t*)((s0) + 0x84) = 0;                              // 0x0016f76c: sw $zero, 0x84($s0)
     *(uint32_t*)((s0) + 0x88) = 0;                              // 0x0016f770: sw $zero, 0x88($s0)
-    func_0016f960();  // 0x16f940                                // 0x0016f774: jal 0x16f940
+    func_0016f940();  // 16f940                                // 0x0016f774: jal 0x16f940
     a0 = s0 + 0x8c;                                             // 0x0016f778: addiu $a0, $s0, 0x8c
     v1 = -1;                                                    // 0x0016f77c: addiu $v1, $zero, -1
     v0 = 0x7fff << 16;                                          // 0x0016f780: lui $v0, 0x7fff
@@ -50,9 +50,9 @@ label_0x16f630:
     v0 = v0 | 0xffff;                                           // 0x0016f788: ori $v0, $v0, 0xffff
     *(uint32_t*)((s0) + 0xe4) = 0;                              // 0x0016f78c: sw $zero, 0xe4($s0)
     *(uint32_t*)((s0) + 0xe8) = v0;                             // 0x0016f790: sw $v0, 0xe8($s0)
-    func_0016d648();  // 0x16d620                                // 0x0016f794: jal 0x16d620
+    func_0016d620();  // 16d620                                // 0x0016f794: jal 0x16d620
     a0 = s0 + 0xec;                                             // 0x0016f798: addiu $a0, $s0, 0xec
-    func_0016f9b8();  // 0x16f960                                // 0x0016f79c: jal 0x16f960
+    func_0016f960();  // 16f960                                // 0x0016f79c: jal 0x16f960
     a0 = s0 + 0x93c;                                            // 0x0016f7a0: addiu $a0, $s0, 0x93c
     a0 = 0xf;                                                   // 0x0016f7a4: addiu $a0, $zero, 0xf
     v0 = s0 + 0x9d0;                                            // 0x0016f7a8: addiu $v0, $s0, 0x9d0

@@ -25,7 +25,7 @@ label_0x106ba0:
     if (a1 < 0) goto label_0x106bc8;                            // 0x00106ba4: bltz $a1, 0x106bc8
     v0 = v1 | 0x800;                                            // 0x00106ba8: ori $v0, $v1, 0x800
     a0 = *(int32_t*)((s0) + 0x54);                              // 0x00106bac: lw $a0, 0x54($s0)
-    func_00106258();  // 0x1061f8                                // 0x00106bb0: jal 0x1061f8
+    func_001061f8();  // 1061f8                                // 0x00106bb0: jal 0x1061f8
     if (v0 >= 0) goto label_0x106bd8;                           // 0x00106bb8: bgez $v0, 0x106bd8
     v0 = local_4;                                               // 0x00106bbc: lw $v0, 4($sp)
     v1 = *(uint16_t*)((s0) + 0xc);                              // 0x00106bc0: lhu $v1, 0xc($s0)
@@ -57,7 +57,7 @@ label_0x106c18:
     *(uint16_t*)((s0) + 0xc) = v0;                              // 0x00106c18: sh $v0, 0xc($s0)
 label_0x106c1c:
     a0 = *(int32_t*)((s0) + 0x54);                              // 0x00106c1c: lw $a0, 0x54($s0)
-    func_00107908();  // 0x1071e0                                // 0x00106c20: jal 0x1071e0
+    func_001071e0();  // 1071e0                                // 0x00106c20: jal 0x1071e0
     a1 = 0x400;                                                 // 0x00106c24: addiu $a1, $zero, 0x400
     if (a1 != 0) goto label_0x106c58;                           // 0x00106c2c: bnez $a1, 0x106c58
     v0 = *(uint16_t*)((s0) + 0xc);                              // 0x00106c30: lhu $v0, 0xc($s0)
@@ -81,7 +81,7 @@ label_0x106c58:
     *(uint32_t*)((s0) + 0x14) = s1;                             // 0x00106c74: sw $s1, 0x14($s0)
     if (s2 == 0) goto label_0x106c9c;                           // 0x00106c78: beqz $s2, 0x106c9c
     *(uint32_t*)(s0) = a1;                                      // 0x00106c7c: sw $a1, 0($s0)
-    func_00114a98();  // 0x114a90                                // 0x00106c80: jal 0x114a90
+    func_00114a90();  // 114a90                                // 0x00106c80: jal 0x114a90
     a0 = *(int16_t*)((s0) + 0xe);                               // 0x00106c84: lh $a0, 0xe($s0)
     /* beqzl $v0, 0x106ca0 */                                   // 0x00106c88: beqzl $v0, 0x106ca0
     v0 = *(uint16_t*)((s0) + 0xc);                              // 0x00106c90: lhu $v0, 0xc($s0)

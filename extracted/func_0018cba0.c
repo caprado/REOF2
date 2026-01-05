@@ -8,9 +8,9 @@ void func_0018cba0() {
     
     sp = sp + -0x20;                                            // 0x0018cba0: addiu $sp, $sp, -0x20
     a1 = 3;                                                     // 0x0018cbac: addiu $a1, $zero, 3
-    func_0018c690();  // 0x18c660                                // 0x0018cbb8: jal 0x18c660
+    func_0018c660();  // 18c660                                // 0x0018cbb8: jal 0x18c660
     a0 = s0 + 0x10;                                             // 0x0018cbc0: addiu $a0, $s0, 0x10
-    func_0018c710();  // 0x18c6f0                                // 0x0018cbc4: jal 0x18c6f0
+    func_0018c6f0();  // 18c6f0                                // 0x0018cbc4: jal 0x18c6f0
     a1 = 2;                                                     // 0x0018cbc8: addiu $a1, $zero, 2
     a0 = 0x1000 << 16;                                          // 0x0018cbcc: lui $a0, 0x1000
     v1 = 0 | 0x8001;                                            // 0x0018cbd0: ori $v1, $zero, 0x8001

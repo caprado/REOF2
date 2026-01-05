@@ -31,15 +31,15 @@ void func_0012b200() {
     sp = sp + 0x10;                                             // 0x0012b288: addiu $sp, $sp, 0x10
     /* nop */                                                   // 0x0012b28c: nop 
     sp = sp + -0x10;                                            // 0x0012b290: addiu $sp, $sp, -0x10
-    func_00141c80();  // 0x141c68                                // 0x0012b298: jal 0x141c68
+    func_00141c68();  // 141c68                                // 0x0012b298: jal 0x141c68
     /* nop */                                                   // 0x0012b29c: nop 
-    func_00141c98();  // 0x141c80                                // 0x0012b2a0: jal 0x141c80
+    func_00141c80();  // 141c80                                // 0x0012b2a0: jal 0x141c80
     /* nop */                                                   // 0x0012b2a4: nop 
     func_00141cc8();  // 0x141cc8                               // 0x0012b2a8: jal 0x141cc8
     /* nop */                                                   // 0x0012b2ac: nop 
-    func_00141cf8();  // 0x141ce0                                // 0x0012b2b0: jal 0x141ce0
+    func_00141ce0();  // 141ce0                                // 0x0012b2b0: jal 0x141ce0
     /* nop */                                                   // 0x0012b2b4: nop 
-    func_00141d38();  // 0x141cf8                                // 0x0012b2b8: jal 0x141cf8
+    func_00141cf8();  // 141cf8                                // 0x0012b2b8: jal 0x141cf8
     /* nop */                                                   // 0x0012b2bc: nop 
     return;                                                     // 0x0012b2c8: jr $ra
     sp = sp + 0x10;                                             // 0x0012b2cc: addiu $sp, $sp, 0x10

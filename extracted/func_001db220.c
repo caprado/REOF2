@@ -28,21 +28,21 @@ label_0x1db254:
     a0 = sp + 0x20;                                             // 0x001db26c: addiu $a0, $sp, 0x20
     a2 = &str_00247ae8;  // "dm%03d.bin"                        // 0x001db270: addiu $a2, $a2, 0x7ae8
     a1 = 0x24 << 16;                                            // 0x001db274: lui $a1, 0x24
-    func_0010a570();  // 0x10a4d8                                // 0x001db278: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001db278: jal 0x10a4d8
     a1 = &str_00247ad8;  // "data/edit/eve"                     // 0x001db27c: addiu $a1, $a1, 0x7ad8
     a0 = sp + 0x20;                                             // 0x001db280: addiu $a0, $sp, 0x20
     a2 = 1;                                                     // 0x001db288: addiu $a2, $zero, 1
-    func_001d33e0();  // 0x1d3390                                // 0x001db28c: jal 0x1d3390
+    func_001d3390();  // 1d3390                                // 0x001db28c: jal 0x1d3390
     goto label_0x1db2bc;                                        // 0x001db294: b 0x1db2bc
     /* nop */                                                   // 0x001db298: nop 
 label_0x1db29c:
     a2 = g_00247af2;  // Global at 0x00247af2                   // 0x001db29c: lhu $a2, 0x1a($a1)
     a0 = sp + 0x20;                                             // 0x001db2a0: addiu $a0, $sp, 0x20
     a1 = 0x24 << 16;                                            // 0x001db2a4: lui $a1, 0x24
-    func_0010a570();  // 0x10a4d8                                // 0x001db2a8: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001db2a8: jal 0x10a4d8
     a1 = &str_00247af8;  // "data/rom/scene/spk/r%03d/sp%02d%02d%02d.bin" // 0x001db2ac: addiu $a1, $a1, 0x7af8
     a0 = sp + 0x20;                                             // 0x001db2b0: addiu $a0, $sp, 0x20
-    func_001a9b80();  // 0x1a9b30                                // 0x001db2b4: jal 0x1a9b30
+    func_001a9b30();  // 1a9b30                                // 0x001db2b4: jal 0x1a9b30
 label_0x1db2bc:
     if (v0 > 0) goto label_0x1db2c8;                            // 0x001db2bc: bgtz $v0, 0x1db2c8
     /* nop */                                                   // 0x001db2c0: nop 

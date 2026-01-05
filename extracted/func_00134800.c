@@ -9,7 +9,7 @@ void func_00134800() {
     sp = sp + -0x10;                                            // 0x00134800: addiu $sp, $sp, -0x10
     v0 = *(int32_t*)((s0) + 8);                                 // 0x00134810: lw $v0, 8($s0)
     if (v0 == 0) goto label_0x134840;                           // 0x00134814: beqz $v0, 0x134840
-    func_00130280();  // 0x130278                                // 0x0013481c: jal 0x130278
+    func_00130278();  // 130278                                // 0x0013481c: jal 0x130278
     /* nop */                                                   // 0x00134820: nop 
     v1 = 4;                                                     // 0x00134824: addiu $v1, $zero, 4
     if (v0 != v1) goto label_0x134844;                          // 0x00134828: bnel $v0, $v1, 0x134844
@@ -22,7 +22,7 @@ label_0x134840:
     a0 = *(int32_t*)((s0) + 0x94);                              // 0x00134840: lw $a0, 0x94($s0)
 label_0x134844:
     /* beqzl $a0, 0x134874 */                                   // 0x00134844: beqzl $a0, 0x134874
-    func_0013cd90();  // 0x13cd60                                // 0x0013484c: jal 0x13cd60
+    func_0013cd60();  // 13cd60                                // 0x0013484c: jal 0x13cd60
     /* nop */                                                   // 0x00134850: nop 
     v1 = 3;                                                     // 0x00134854: addiu $v1, $zero, 3
     if (v0 != v1) goto label_0x134874;                          // 0x00134858: bnel $v0, $v1, 0x134874

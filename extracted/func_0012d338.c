@@ -16,7 +16,7 @@ label_0x12d360:
     v0 = g_001fe388;  // Global at 0x001fe388                   // 0x0012d360: lb $v0, 0($s0)
     if (v0 != s2) goto label_0x12d378;                          // 0x0012d364: bnel $v0, $s2, 0x12d378
     s1 = s1 + -1;                                               // 0x0012d368: addiu $s1, $s1, -1
-    func_0012d338();  // 0x12d2f8                                // 0x0012d36c: jal 0x12d2f8
+    func_0012d2f8();  // 12d2f8                                // 0x0012d36c: jal 0x12d2f8
     s1 = s1 + -1;                                               // 0x0012d374: addiu $s1, $s1, -1
 label_0x12d378:
     if (s1 >= 0) goto label_0x12d360;                           // 0x0012d378: bgez $s1, 0x12d360

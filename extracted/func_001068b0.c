@@ -8,7 +8,7 @@ void func_001068b0() {
     
     sp = sp + -0x50;                                            // 0x001068b0: addiu $sp, $sp, -0x50
     s5 = 0x1f << 16;                                            // 0x001068b8: lui $s5, 0x1f
-    func_00104ef0();  // 0x104ee8                                // 0x001068e4: jal 0x104ee8
+    func_00104ee8();  // 104ee8                                // 0x001068e4: jal 0x104ee8
     v0 = g_001efaf8;  // Global at 0x001efaf8                   // 0x001068ec: lw $v0, -0x508($s5)
     v1 = *(int32_t*)(v0);                                       // 0x001068f0: lw $v1, 0($v0)
     if (v1 != 0) goto label_0x106928;                           // 0x001068f4: bnez $v1, 0x106928
@@ -18,7 +18,7 @@ label_0x106908:
     v0 = *(int32_t*)(v1);                                       // 0x0010690c: lw $v0, 0($v1)
     v0 = s1 - v0;                                               // 0x00106910: subu $v0, $s1, $v0
     v0 = v0 >> 2;                                               // 0x00106914: sra $v0, $v0, 2
-    func_00104ef8();  // 0x104ef0                                // 0x00106918: jal 0x104ef0
+    func_00104ef0();  // 104ef0                                // 0x00106918: jal 0x104ef0
     *(uint32_t*)(s7) = v0;                                      // 0x0010691c: sw $v0, 0($s7)
     goto label_0x1069cc;                                        // 0x00106920: b 0x1069cc
     v0 = s0 + 1;                                                // 0x00106924: addiu $v0, $s0, 1
@@ -50,7 +50,7 @@ label_0x106970:
     s4 = 0x3d;                                                  // 0x00106980: addiu $s4, $zero, 0x3d
     /* nop */                                                   // 0x00106984: nop 
 label_0x106988:
-    func_0010b2a0();  // 0x10b0e8                                // 0x0010698c: jal 0x10b0e8
+    func_0010b0e8();  // 10b0e8                                // 0x0010698c: jal 0x10b0e8
     /* bnezl $v0, 0x1069b4 */                                   // 0x00106994: bnezl $v0, 0x1069b4
     s1 = s1 + 4;                                                // 0x00106998: addiu $s1, $s1, 4
     v0 = *(int32_t*)(s1);                                       // 0x0010699c: lw $v0, 0($s1)
@@ -62,7 +62,7 @@ label_0x106988:
     v0 = *(int32_t*)(s1);                                       // 0x001069b4: lw $v0, 0($s1)
     if (v0 != 0) goto label_0x106988;                           // 0x001069b8: bnez $v0, 0x106988
 label_0x1069c0:
-    func_00104ef8();  // 0x104ef0                                // 0x001069c0: jal 0x104ef0
+    func_00104ef0();  // 104ef0                                // 0x001069c0: jal 0x104ef0
 label_0x1069cc:
     return;                                                     // 0x001069f0: jr $ra
     sp = sp + 0x50;                                             // 0x001069f4: addiu $sp, $sp, 0x50

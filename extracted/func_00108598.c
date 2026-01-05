@@ -25,7 +25,7 @@ label_0x1085e8:
     if (v0 != 0) goto label_0x1085e8;                           // 0x001085fc: bnez $v0, 0x1085e8
     a1 = a1 + 1;                                                // 0x00108600: addiu $a1, $a1, 1
 label_0x108604:
-    func_00107ea8();  // 0x107e00                                // 0x00108604: jal 0x107e00
+    func_00107e00();  // 107e00                                // 0x00108604: jal 0x107e00
     if (s1 <= 0) goto label_0x10863c;                           // 0x00108610: blez $s1, 0x10863c
     a3 = s4 + 0x14;                                             // 0x00108614: addiu $a3, $s4, 0x14
     /* nop */                                                   // 0x0010861c: nop 
@@ -72,7 +72,7 @@ label_0x108698:
 label_0x1086b4:
     v0 = s2 + -1;                                               // 0x001086b4: addiu $v0, $s2, -1
     *(uint32_t*)((s4) + 0x10) = v0;                             // 0x001086bc: sw $v0, 0x10($s4)
-    func_00107ed8();  // 0x107ea8                                // 0x001086c0: jal 0x107ea8
+    func_00107ea8();  // 107ea8                                // 0x001086c0: jal 0x107ea8
     return;                                                     // 0x001086e8: jr $ra
     sp = sp + 0x40;                                             // 0x001086ec: addiu $sp, $sp, 0x40
 }

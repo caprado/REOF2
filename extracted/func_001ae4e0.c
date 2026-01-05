@@ -7,7 +7,7 @@ void func_001ae4e0() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x001ae4e0: addiu $sp, $sp, -0x20
-    func_001b7a80();  // 0x1b7a70                                // 0x001ae4f0: jal 0x1b7a70
+    func_001b7a70();  // 1b7a70                                // 0x001ae4f0: jal 0x1b7a70
     a0 = 0xe;                                                   // 0x001ae4f4: addiu $a0, $zero, 0xe
     if (v0 != 0) goto label_0x1ae528;                           // 0x001ae4f8: bnez $v0, 0x1ae528
     v1 = 0x2b << 16;                                            // 0x001ae4fc: lui $v1, 0x2b
@@ -17,9 +17,9 @@ void func_001ae4e0() {
     a0 = *(int32_t*)(s0);                                       // 0x001ae50c: lw $a0, 0($s0)
     if (a0 == 0) goto label_0x1ae528;                           // 0x001ae510: beqz $a0, 0x1ae528
     /* nop */                                                   // 0x001ae514: nop 
-    func_0012a5b0();  // 0x12a5a8                                // 0x001ae518: jal 0x12a5a8
+    func_0012a5a8();  // 12a5a8                                // 0x001ae518: jal 0x12a5a8
     /* nop */                                                   // 0x001ae51c: nop 
-    func_00131bb8();  // 0x131af8                                // 0x001ae520: jal 0x131af8
+    func_00131af8();  // 131af8                                // 0x001ae520: jal 0x131af8
     a0 = *(int32_t*)(s0);                                       // 0x001ae524: lw $a0, 0($s0)
 label_0x1ae528:
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001ae52c: xori.b $w0, $w0, 0xb0

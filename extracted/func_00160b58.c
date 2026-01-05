@@ -25,7 +25,7 @@ label_0x160ba0:
     goto label_0x160bb0;                                        // 0x00160ba0: b 0x160bb0
     s0 = 2;                                                     // 0x00160ba4: addiu $s0, $zero, 2
 label_0x160ba8:
-    func_001634a8();  // 0x163410                                // 0x00160ba8: jal 0x163410
+    func_00163410();  // 163410                                // 0x00160ba8: jal 0x163410
     a0 = &str_00228178;  // "E301274 : chromapos is invalid."   // 0x00160bac: addiu $a0, $a0, -0x7e88
 label_0x160bb0:
 label_0x160bb4:

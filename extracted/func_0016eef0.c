@@ -16,18 +16,18 @@ void func_0016eef0() {
     s2 = s0 + 0xcdc;                                            // 0x0016ef14: addiu $s2, $s0, 0xcdc
     a3 = *(int32_t*)((s0) + 0xd70);                             // 0x0016ef30: lw $a3, 0xd70($s0)
     local_18 = a3;                                              // 0x0016ef4c: sw $a3, 0x18($sp)
-    func_0016e488();  // 0x16e428                                // 0x0016ef50: jal 0x16e428
+    func_0016e428();  // 16e428                                // 0x0016ef50: jal 0x16e428
     a1 = 3;                                                     // 0x0016ef54: addiu $a1, $zero, 3
     if (v0 != 0) goto label_0x16ef78;                           // 0x0016ef5c: bnez $v0, 0x16ef78
     a1 = 3;                                                     // 0x0016ef60: addiu $a1, $zero, 3
-    func_0016e5f0();  // 0x16e5a0                                // 0x0016ef64: jal 0x16e5a0
+    func_0016e5a0();  // 16e5a0                                // 0x0016ef64: jal 0x16e5a0
     /* nop */                                                   // 0x0016ef68: nop 
     v1 = local_18;                                              // 0x0016ef6c: lw $v1, 0x18($sp)
     if (v0 == 0) v1 = 0;                                        // 0x0016ef70: movz $v1, $zero, $v0
     local_18 = v1;                                              // 0x0016ef74: sw $v1, 0x18($sp)
 label_0x16ef78:
     a1 = sp + 0x20;                                             // 0x0016ef7c: addiu $a1, $sp, 0x20
-    func_00176720();  // 0x176680                                // 0x0016ef80: jal 0x176680
+    func_00176680();  // 176680                                // 0x0016ef80: jal 0x176680
     a2 = sp + 0x24;                                             // 0x0016ef84: addiu $a2, $sp, 0x24
     a1 = 1;                                                     // 0x0016ef88: addiu $a1, $zero, 1
     a2 = local_18;                                              // 0x0016efa4: lw $a2, 0x18($sp)

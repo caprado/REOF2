@@ -24,7 +24,7 @@ void func_00140950() {
     g_00255d84 = a1;  // Global at 0x00255d84                   // 0x001409a8: sw $a1, 4($v0)
     g_00255d88 = a2;  // Global at 0x00255d88                   // 0x001409b0: sw $a2, 8($v0)
     a2 = 3;                                                     // 0x001409b4: addiu $a2, $zero, 3
-    func_00139228();  // 0x139120                                // 0x001409c0: jal 0x139120
+    func_00139120();  // 139120                                // 0x001409c0: jal 0x139120
     t0 = 2;                                                     // 0x001409c4: addiu $t0, $zero, 2
     v1 = g_00255e80;  // Global at 0x00255e80                   // 0x001409c8: lw $v1, 0($s0)
     v0 = g_00255e84;  // Global at 0x00255e84                   // 0x001409cc: lw $v0, 4($s0)

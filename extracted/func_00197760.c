@@ -108,13 +108,13 @@ label_0x1978a8:
     if (s1 == v0) goto label_0x1978f8;                          // 0x001978dc: beq $s1, $v0, 0x1978f8
     s0 = v1 | a0;                                               // 0x001978e0: or $s0, $v1, $a0
     a0 = 0x30;                                                  // 0x001978e4: addiu $a0, $zero, 0x30
-    func_0018dca0();  // 0x18dc30                                // 0x001978e8: jal 0x18dc30
+    func_0018dc30();  // 18dc30                                // 0x001978e8: jal 0x18dc30
     a1 = 0x10;                                                  // 0x001978ec: addiu $a1, $zero, 0x10
     goto label_0x197908;                                        // 0x001978f0: b 0x197908
     a3 = 2;                                                     // 0x001978f4: addiu $a3, $zero, 2
 label_0x1978f8:
     a0 = 0x40;                                                  // 0x001978f8: addiu $a0, $zero, 0x40
-    func_0018dca0();  // 0x18dc30                                // 0x001978fc: jal 0x18dc30
+    func_0018dc30();  // 18dc30                                // 0x001978fc: jal 0x18dc30
     a1 = 0x10;                                                  // 0x00197900: addiu $a1, $zero, 0x10
     a3 = 3;                                                     // 0x00197904: addiu $a3, $zero, 3
 label_0x197908:
@@ -155,7 +155,7 @@ label_0x1979b0:
 label_0x1979d8:
 label_0x1979dc:
     a3 = 0x29 << 16;                                            // 0x001979dc: lui $a3, 0x29
-    func_0018cff0();  // 0x18ce40                                // 0x001979ec: jal 0x18ce40
+    func_0018ce40();  // 18ce40                                // 0x001979ec: jal 0x18ce40
     a3 = a3 + -0x350;                                           // 0x001979f0: addiu $a3, $a3, -0x350
     v0 = 1;                                                     // 0x001979f8: addiu $v0, $zero, 1
     /* FPU: aver_u.h $w0, $w0, $w17 */                          // 0x001979fc: aver_u.h $w0, $w0, $w17

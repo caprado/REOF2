@@ -22,7 +22,7 @@ void func_00183180() {
     /* break (trap) */                                          // 0x001831b8: break 0, 7
     local_c = t1;                                               // 0x001831bc: sw $t1, 0xc($sp)
     /* mflo $v0 */                                              // 0x001831c0
-    func_001878a0();  // 0x187860                                // 0x001831c4: jal 0x187860
+    func_00187860();  // 187860                                // 0x001831c4: jal 0x187860
     local_8 = v0;                                               // 0x001831c8: sw $v0, 8($sp)
     return;                                                     // 0x001831d0: jr $ra
     sp = sp + 0x20;                                             // 0x001831d4: addiu $sp, $sp, 0x20

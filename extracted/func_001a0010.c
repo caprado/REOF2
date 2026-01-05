@@ -1,3 +1,4 @@
+/** @category: graphics/gs @status: complete @author: caprado */
 void func_001a0010() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
@@ -62,16 +63,16 @@ label_0x1a011c:
     iFlushCache();  // 0x114560                                 // 0x001a011c: jal 0x114560
     /* nop */                                                   // 0x001a0120: nop 
 label_0x1a0124:
-    func_0018d530();  // 0x18d4c0                                // 0x001a0124: jal 0x18d4c0
+    func_0018d4c0();  // 18d4c0                                // 0x001a0124: jal 0x18d4c0
     /* nop */                                                   // 0x001a0128: nop 
     at = 0x29 << 16;                                            // 0x001a012c: lui $at, 0x29
     a0 = g_0029033c;  // Global at 0x0029033c                   // 0x001a0130: lw $a0, 0x33c($at)
-    func_00103418();  // 0x1033b0                                // 0x001a0134: jal 0x1033b0
+    func_001033b0();  // 1033b0                                // 0x001a0134: jal 0x1033b0
 label_0x1a013c:
     at = 0x29 << 16;                                            // 0x001a013c: lui $at, 0x29
     a1 = 1;                                                     // 0x001a0140: addiu $a1, $zero, 1
     a0 = g_0029033c;  // Global at 0x0029033c                   // 0x001a0144: lw $a0, 0x33c($at)
-    func_00103688();  // 0x103650                                // 0x001a0148: jal 0x103650
+    func_00103650();  // 103650                                // 0x001a0148: jal 0x103650
     if (v0 != 0) goto label_0x1a013c;                           // 0x001a0150: bnez $v0, 0x1a013c
     /* nop */                                                   // 0x001a0154: nop 
     at = 0x29 << 16;                                            // 0x001a0158: lui $at, 0x29

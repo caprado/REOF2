@@ -19,7 +19,7 @@ void func_001a2550() {
     a0 = a0 + 0x500;                                            // 0x001a2588: addiu $a0, $a0, 0x500
     v0 = v1 << 1;                                               // 0x001a258c: sll $v0, $v1, 1
     v0 = v0 + v1;                                               // 0x001a2590: addu $v0, $v0, $v1
-    func_001899f8();  // 0x1898e0                                // 0x001a2594: jal 0x1898e0
+    func_001898e0();  // 1898e0                                // 0x001a2594: jal 0x1898e0
     a1 = v0 << 2;                                               // 0x001a2598: sll $a1, $v0, 2
     goto label_0x1a25e0;                                        // 0x001a25a4: b 0x1a25e0
     *(uint32_t*)((s1) + 4) = a1;                                // 0x001a25a8: sw $a1, 4($s1)

@@ -14,13 +14,13 @@ void func_001769c8() {
     if (v0 != 0) goto label_0x176a18;                           // 0x001769d8: bnez $v0, 0x176a18
     v0 = 2;                                                     // 0x001769e0: addiu $v0, $zero, 2
     if (a1 != v0) goto label_0x176a1c;                          // 0x001769e4: bnel $a1, $v0, 0x176a1c
-    func_00176ae8();  // 0x176aa8                                // 0x001769f0: jal 0x176aa8
+    func_00176aa8();  // 176aa8                                // 0x001769f0: jal 0x176aa8
     a2 = sp + 4;                                                // 0x001769f4: addiu $a2, $sp, 4
     a1 = local_0;                                               // 0x001769fc: lw $a1, 0($sp)
-    func_00176a70();  // 0x176a28                                // 0x00176a00: jal 0x176a28
+    func_00176a28();  // 176a28                                // 0x00176a00: jal 0x176a28
     a2 = local_4;                                               // 0x00176a04: lw $a2, 4($sp)
     a1 = local_0;                                               // 0x00176a0c: lw $a1, 0($sp)
-    func_00176aa8();  // 0x176a70                                // 0x00176a10: jal 0x176a70
+    func_00176a70();  // 176a70                                // 0x00176a10: jal 0x176a70
     a2 = local_4;                                               // 0x00176a14: lw $a2, 4($sp)
 label_0x176a18:
 label_0x176a1c:

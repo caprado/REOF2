@@ -12,14 +12,14 @@ void func_0011acd0() {
     sp = sp + -0xc0;                                            // 0x0011acd0: addiu $sp, $sp, -0xc0
     s5 = 0x25 << 16;                                            // 0x0011acec: lui $s5, 0x25
     s1 = s5 + -0x1e40;                                          // 0x0011acf4: addiu $s1, $s5, -0x1e40
-    func_00117f28();  // 0x117eb8                                // 0x0011ad00: jal 0x117eb8
-    func_00118360();  // 0x118330                                // 0x0011ad0c: jal 0x118330
+    func_00117eb8();  // 117eb8                                // 0x0011ad00: jal 0x117eb8
+    func_00118330();  // 118330                                // 0x0011ad0c: jal 0x118330
     a0 = 0x16;                                                  // 0x0011ad10: addiu $a0, $zero, 0x16
     v1 = 0x1f << 16;                                            // 0x0011ad14: lui $v1, 0x1f
     v0 = g_001f03dc;  // Global at 0x001f03dc                   // 0x0011ad18: lw $v0, 0x3dc($v1)
     if (v0 != 0) goto label_0x11ad34;                           // 0x0011ad1c: bnez $v0, 0x11ad34
     /* nop */                                                   // 0x0011ad20: nop 
-    func_00118418();  // 0x118360                                // 0x0011ad24: jal 0x118360
+    func_00118360();  // 118360                                // 0x0011ad24: jal 0x118360
     /* nop */                                                   // 0x0011ad28: nop 
     goto label_0x11aee0;                                        // 0x0011ad2c: b 0x11aee0
     v0 = -1;                                                    // 0x0011ad30: addiu $v0, $zero, -1
@@ -30,7 +30,7 @@ label_0x11ad34:
     if (s3 != 0) goto label_0x11ad58;                           // 0x0011ad40: bnez $s3, 0x11ad58
     v0 = 0x25 << 16;                                            // 0x0011ad44: lui $v0, 0x25
 label_0x11ad48:
-    func_00118418();  // 0x118360                                // 0x0011ad48: jal 0x118360
+    func_00118360();  // 118360                                // 0x0011ad48: jal 0x118360
     /* nop */                                                   // 0x0011ad4c: nop 
     goto label_0x11aee0;                                        // 0x0011ad50: b 0x11aee0
     v0 = -9;                                                    // 0x0011ad54: addiu $v0, $zero, -9
@@ -103,17 +103,17 @@ label_0x11ae48:
     a1 = 0x16;                                                  // 0x0011ae54: addiu $a1, $zero, 0x16
     t0 = 0x20;                                                  // 0x0011ae5c: addiu $t0, $zero, 0x20
     t2 = 4;                                                     // 0x0011ae64: addiu $t2, $zero, 4
-    func_001178a0();  // 0x1176a8                                // 0x0011ae68: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x0011ae68: jal 0x1176a8
     if (v0 >= 0) goto label_0x11ae90;                           // 0x0011ae70: bgez $v0, 0x11ae90
     v0 = 0x2000 << 16;                                          // 0x0011ae74: lui $v0, 0x2000
     SignalSema();  // 0x1142f0                                  // 0x0011ae78: jal 0x1142f0
-    func_00118418();  // 0x118360                                // 0x0011ae80: jal 0x118360
+    func_00118360();  // 118360                                // 0x0011ae80: jal 0x118360
     /* nop */                                                   // 0x0011ae84: nop 
     goto label_0x11aee0;                                        // 0x0011ae88: b 0x11aee0
     v0 = -0xb;                                                  // 0x0011ae8c: addiu $v0, $zero, -0xb
 label_0x11ae90:
     v0 = s0 | v0;                                               // 0x0011ae90: or $v0, $s0, $v0
-    func_00118418();  // 0x118360                                // 0x0011ae94: jal 0x118360
+    func_00118360();  // 118360                                // 0x0011ae94: jal 0x118360
     s0 = g_20000000;  // Global at 0x20000000                   // 0x0011ae98: lw $s0, 0($v0)
     if (s0 != 0) goto label_0x11aeb4;                           // 0x0011ae9c: bnez $s0, 0x11aeb4
     v0 = s3 & 0x8000;                                           // 0x0011aea0: andi $v0, $s3, 0x8000

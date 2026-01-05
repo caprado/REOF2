@@ -15,7 +15,7 @@ void func_001aaef0() {
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001aaf04: addu.qb $zero, $sp, $s1
     s0 = *(int32_t*)((v0) + 8);                                 // 0x001aaf14: lw $s0, 8($v0)
 label_0x1aaf18:
-    func_0011c210();  // 0x11c1f0                                // 0x001aaf24: jal 0x11c1f0
+    func_0011c1f0();  // 11c1f0                                // 0x001aaf24: jal 0x11c1f0
     a3 = sp + 0x4c;                                             // 0x001aaf28: addiu $a3, $sp, 0x4c
     if (v0 < 0) goto label_0x1aaf18;                            // 0x001aaf2c: bltz $v0, 0x1aaf18
     /* nop */                                                   // 0x001aaf30: nop 

@@ -29,14 +29,14 @@ label_0x1c5e40:
     v0 = v1 & 0x20;                                             // 0x001c5e44: andi $v0, $v1, 0x20
     if (v0 == 0) goto label_0x1c5e88;                           // 0x001c5e48: beqz $v0, 0x1c5e88
     /* nop */                                                   // 0x001c5e4c: nop 
-    func_001c7470();  // 0x1c7460                                // 0x001c5e50: jal 0x1c7460
+    func_001c7460();  // 1c7460                                // 0x001c5e50: jal 0x1c7460
     /* nop */                                                   // 0x001c5e54: nop 
     *(uint32_t*)((s0) + 0x30) = 0;                              // 0x001c5e58: sw $zero, 0x30($s0)
     v0 = 1;                                                     // 0x001c5e5c: addiu $v0, $zero, 1
     v1 = *(int32_t*)((s0) + 0x38);                              // 0x001c5e60: lw $v1, 0x38($s0)
     if (v1 != v0) goto label_0x1c5e80;                          // 0x001c5e64: bne $v1, $v0, 0x1c5e80
     a0 = *(int32_t*)((s0) + 0x20);                              // 0x001c5e6c: lw $a0, 0x20($s0)
-    func_001c2e20();  // 0x1c2a50                                // 0x001c5e70: jal 0x1c2a50
+    func_001c2a50();  // 1c2a50                                // 0x001c5e70: jal 0x1c2a50
     a1 = 2;                                                     // 0x001c5e74: addiu $a1, $zero, 2
     goto label_0x1c5ef4;                                        // 0x001c5e78: b 0x1c5ef4
     v0 = 1;                                                     // 0x001c5e7c: addiu $v0, $zero, 1
@@ -65,7 +65,7 @@ label_0x1c5ebc:
     if (v1 != v0) goto label_0x1c5ef0;                          // 0x001c5ecc: bne $v1, $v0, 0x1c5ef0
     /* nop */                                                   // 0x001c5ed0: nop 
 label_0x1c5ed4:
-    func_001c7480();  // 0x1c7470                                // 0x001c5ed4: jal 0x1c7470
+    func_001c7470();  // 1c7470                                // 0x001c5ed4: jal 0x1c7470
     /* nop */                                                   // 0x001c5ed8: nop 
     v1 = *(int32_t*)((s0) + 0x38);                              // 0x001c5edc: lw $v1, 0x38($s0)
     v0 = 5;                                                     // 0x001c5ee0: addiu $v0, $zero, 5

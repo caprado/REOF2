@@ -9,7 +9,7 @@ void func_001ce240() {
     sp = sp + -0x20;                                            // 0x001ce240: addiu $sp, $sp, -0x20
     a1 = 3;                                                     // 0x001ce244: addiu $a1, $zero, 3
     a0 = 0x32 << 16;                                            // 0x001ce254: lui $a0, 0x32
-    thunk_func_001cff70();  // 0x1ce7e0                          // 0x001ce258: jal 0x1ce7e0
+    thunk_func_001ce7e0();  // 1ce7e0                          // 0x001ce258: jal 0x1ce7e0
     a0 = a0 + 0x4f90;                                           // 0x001ce25c: addiu $a0, $a0, 0x4f90
     at = 0x32 << 16;                                            // 0x001ce260: lui $at, 0x32
     a0 = 0x32 << 16;                                            // 0x001ce264: lui $a0, 0x32
@@ -17,10 +17,10 @@ void func_001ce240() {
     a0 = a0 + 0x4f90;                                           // 0x001ce26c: addiu $a0, $a0, 0x4f90
     v0 = v0 & 0xf;                                              // 0x001ce270: andi $v0, $v0, 0xf
     v0 = v0 | 0x90;                                             // 0x001ce274: ori $v0, $v0, 0x90
-    thunk_func_001cff70();  // 0x1ce7e0                          // 0x001ce278: jal 0x1ce7e0
+    thunk_func_001ce7e0();  // 1ce7e0                          // 0x001ce278: jal 0x1ce7e0
     a1 = v0 & 0xff;                                             // 0x001ce27c: andi $a1, $v0, 0xff
     a0 = 0x32 << 16;                                            // 0x001ce280: lui $a0, 0x32
-    thunk_func_001cff70();  // 0x1ce7e0                          // 0x001ce288: jal 0x1ce7e0
+    thunk_func_001ce7e0();  // 1ce7e0                          // 0x001ce288: jal 0x1ce7e0
     a0 = a0 + 0x4f90;                                           // 0x001ce28c: addiu $a0, $a0, 0x4f90
     at = 0x32 << 16;                                            // 0x001ce290: lui $at, 0x32
     a1 = 0x32 << 16;                                            // 0x001ce294: lui $a1, 0x32

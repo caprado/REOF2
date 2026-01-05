@@ -19,12 +19,12 @@ void func_001da850() {
     t1 = g_003137be;  // Global at 0x003137be                   // 0x001da880: lhu $t1, 0x1e($s0)
     a0 = sp + 0x20;                                             // 0x001da884: addiu $a0, $sp, 0x20
     a1 = &str_00247900;  // "data/rdt"                          // 0x001da888: addiu $a1, $a1, 0x7900
-    func_0010a570();  // 0x10a4d8                                // 0x001da88c: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001da88c: jal 0x10a4d8
     a2 = &str_00247918;  // "r%03d%02d%02d.rdt"                 // 0x001da890: addiu $a2, $a2, 0x7918
     a1 = g_00313810;  // Global at 0x00313810                   // 0x001da894: lw $a1, 0x70($s0)
     a0 = sp + 0x20;                                             // 0x001da898: addiu $a0, $sp, 0x20
     a2 = 1;                                                     // 0x001da89c: addiu $a2, $zero, 1
-    func_001d33e0();  // 0x1d3390                                // 0x001da8a0: jal 0x1d3390
+    func_001d3390();  // 1d3390                                // 0x001da8a0: jal 0x1d3390
     goto label_0x1da8dc;                                        // 0x001da8a8: b 0x1da8dc
     g_0031380c = v0;  // Global at 0x0031380c                   // 0x001da8ac: sw $v0, 0x6c($s0)
 label_0x1da8b0:
@@ -33,10 +33,10 @@ label_0x1da8b0:
     a3 = g_003137bc;  // Global at 0x003137bc                   // 0x001da8b8: lhu $a3, 0x1c($s0)
     a0 = sp + 0x20;                                             // 0x001da8bc: addiu $a0, $sp, 0x20
     t0 = g_003137be;  // Global at 0x003137be                   // 0x001da8c0: lhu $t0, 0x1e($s0)
-    func_0010a570();  // 0x10a4d8                                // 0x001da8c4: jal 0x10a4d8
+    func_0010a4d8();  // 10a4d8                                // 0x001da8c4: jal 0x10a4d8
     a1 = &str_00247930;  // "weapon%02d"                        // 0x001da8c8: addiu $a1, $a1, 0x7930
     a1 = g_00313810;  // Global at 0x00313810                   // 0x001da8cc: lw $a1, 0x70($s0)
-    func_001a9b80();  // 0x1a9b30                                // 0x001da8d0: jal 0x1a9b30
+    func_001a9b30();  // 1a9b30                                // 0x001da8d0: jal 0x1a9b30
     a0 = sp + 0x20;                                             // 0x001da8d4: addiu $a0, $sp, 0x20
     g_0031380c = v0;  // Global at 0x0031380c                   // 0x001da8d8: sw $v0, 0x6c($s0)
 label_0x1da8dc:

@@ -20,11 +20,11 @@ void func_00188fa0() {
     a1 = a1 | 0x1317;                                           // 0x00188fc8: ori $a1, $a1, 0x1317
     t0 = 0x280;                                                 // 0x00188fd4: addiu $t0, $zero, 0x280
     t2 = 0x280;                                                 // 0x00188fdc: addiu $t2, $zero, 0x280
-    func_001178a0();  // 0x1176a8                                // 0x00188fe0: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x00188fe0: jal 0x1176a8
     if (v0 >= 0) goto label_0x189000;                           // 0x00188fe8: bgezl $v0, 0x189000
     v0 = g_002812c4;  // Global at 0x002812c4                   // 0x00188fec: lw $v0, 4($s0)
     a0 = 0x23 << 16;                                            // 0x00188ff0: lui $a0, 0x23
-    func_001896f0();  // 0x1896c8                                // 0x00188ff4: jal 0x1896c8
+    func_001896c8();  // 1896c8                                // 0x00188ff4: jal 0x1896c8
     a0 = &str_0022a188;  // "sceDbcSRData: rpc error\n"         // 0x00188ff8: addiu $a0, $a0, -0x5e78
 label_0x189000:
     return;                                                     // 0x00189008: jr $ra

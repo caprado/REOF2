@@ -10,7 +10,7 @@ void func_001c23d0() {
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001c23dc: addu.qb $zero, $sp, $s1
     goto label_0x1c2444;                                        // 0x001c23e8: b 0x1c2444
 label_0x1c23f0:
-    func_001b6720();  // 0x1b65d0                                // 0x001c23f0: jal 0x1b65d0
+    func_001b65d0();  // 1b65d0                                // 0x001c23f0: jal 0x1b65d0
     a0 = v0 & 3;                                                // 0x001c23f8: andi $a0, $v0, 3
     v0 = 1;                                                     // 0x001c23fc: addiu $v0, $zero, 1
     if (a0 != v0) goto label_0x1c241c;                          // 0x001c2400: bne $a0, $v0, 0x1c241c

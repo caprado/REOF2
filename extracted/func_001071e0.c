@@ -16,7 +16,7 @@ void func_001071e0() {
 label_0x107218:
     s1 = 0x10;                                                  // 0x00107218: addiu $s1, $zero, 0x10
 label_0x10721c:
-    func_00107db0();  // 0x107d30                                // 0x0010721c: jal 0x107d30
+    func_00107d30();  // 107d30                                // 0x0010721c: jal 0x107d30
     v0 = ((unsigned)s1 < (unsigned)0x1f8) ? 1 : 0;              // 0x00107224: sltiu $v0, $s1, 0x1f8
     if (v0 == 0) goto label_0x107288;                           // 0x00107228: beqz $v0, 0x107288
     v1 = (unsigned)s1 >> 9;                                     // 0x0010722c: srl $v1, $s1, 9
@@ -352,7 +352,7 @@ label_0x107760:
     if (v0 == 0) goto label_0x1078b0;                           // 0x00107784: beqz $v0, 0x1078b0
     a2 = s4 + -0x200;                                           // 0x00107788: addiu $a2, $s4, -0x200
 label_0x107790:
-    func_001071e0();  // 0x106f88                                // 0x00107790: jal 0x106f88
+    func_00106f88();  // 106f88                                // 0x00107790: jal 0x106f88
     v0 = g_001efe08;  // Global at 0x001efe08                   // 0x00107798: lw $v0, 8($s0)
     v1 = g_001f0004;  // Global at 0x001f0004                   // 0x0010779c: lw $v1, 4($v0)
     v1 = v1 & s2;                                               // 0x001077a0: and $v1, $v1, $s2
@@ -375,7 +375,7 @@ label_0x1077d0:
     if (v0 == 0) goto label_0x1078b0;                           // 0x001077f0: beqz $v0, 0x1078b0
     a2 = s4 + -0x200;                                           // 0x001077f4: addiu $a2, $s4, -0x200
 label_0x1077f8:
-    func_00107e00();  // 0x107db0                                // 0x001077f8: jal 0x107db0
+    func_00107db0();  // 107db0                                // 0x001077f8: jal 0x107db0
     goto label_0x1078e8;                                        // 0x00107800: b 0x1078e8
 label_0x107808:
     t3 = g_001efe0c;  // Global at 0x001efe0c                   // 0x00107808: lw $t3, 0xc($s0)
@@ -424,7 +424,7 @@ label_0x1078b0:
     g_001efe08 = a1;  // Global at 0x001efe08                   // 0x001078d0: sw $a1, 8($a2)
     g_001efe0c = v0;  // Global at 0x001efe0c                   // 0x001078d8: sw $v0, 4($a1)
 label_0x1078dc:
-    func_00107e00();  // 0x107db0                                // 0x001078dc: jal 0x107db0
+    func_00107db0();  // 107db0                                // 0x001078dc: jal 0x107db0
     /* nop */                                                   // 0x001078e0: nop 
     v0 = s0 + 8;                                                // 0x001078e4: addiu $v0, $s0, 8
 label_0x1078e8:

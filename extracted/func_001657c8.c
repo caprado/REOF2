@@ -13,7 +13,7 @@ void func_001657c8() {
     sp = sp + -0x10;                                            // 0x001657cc: addiu $sp, $sp, -0x10
     a2 = 2;                                                     // 0x001657d0: addiu $a2, $zero, 2
     a1 = a1 + 0x5808;                                           // 0x001657d4: addiu $a1, $a1, 0x5808
-    func_00176680();  // 0x176670                                // 0x001657e0: jal 0x176670
+    func_00176670();  // 176670                                // 0x001657e0: jal 0x176670
     a1 = 0xf;                                                   // 0x001657f4: addiu $a1, $zero, 0xf
     a2 = 2;                                                     // 0x001657f8: addiu $a2, $zero, 2
     return func_00175170();  // Tail call                        // 0x001657fc: j 0x175120
@@ -22,14 +22,14 @@ void func_001657c8() {
     sp = sp + -0x50;                                            // 0x00165808: addiu $sp, $sp, -0x50
     s3 = s0 + 0xf60;                                            // 0x00165818: addiu $s3, $s0, 0xf60
     s1 = *(int32_t*)((s0) + 0x1b74);                            // 0x00165838: lw $s1, 0x1b74($s0)
-    func_00176380();  // 0x176330                                // 0x0016583c: jal 0x176330
+    func_00176330();  // 176330                                // 0x0016583c: jal 0x176330
     s2 = *(int32_t*)(s1);                                       // 0x00165840: lw $s2, 0($s1)
     if (v0 == 0) goto label_0x1658a0;                           // 0x00165844: beqz $v0, 0x1658a0
     v1 = 4;                                                     // 0x00165848: addiu $v1, $zero, 4
     v0 = *(int32_t*)((s0) + 0x48);                              // 0x0016584c: lw $v0, 0x48($s0)
     if (v0 != v1) goto label_0x165890;                          // 0x00165850: bnel $v0, $v1, 0x165890
     a0 = *(int32_t*)((s1) + 0x24);                              // 0x00165854: lw $a0, 0x24($s1)
-    func_00165970();  // 0x1658c8                                // 0x00165864: jal 0x1658c8
+    func_001658c8();  // 1658c8                                // 0x00165864: jal 0x1658c8
     a3 = sp + 4;                                                // 0x00165868: addiu $a3, $sp, 4
     a0 = *(int32_t*)((s1) + 0x24);                              // 0x0016586c: lw $a0, 0x24($s1)
     v1 = local_0;                                               // 0x00165870: lw $v1, 0($sp)

@@ -1,3 +1,4 @@
+/** @category game/init @status complete @author caprado */
 void func_001acfe0() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
@@ -9,7 +10,7 @@ void func_001acfe0() {
     sp = sp + -0x10;                                            // 0x001acfe0: addiu $sp, $sp, -0x10
     a0 = 0x2a << 16;                                            // 0x001acfe4: lui $a0, 0x2a
     a0 = a0 + 0x5240;                                           // 0x001acfec: addiu $a0, $a0, 0x5240
-    func_00107d30();  // 0x107c70                                // 0x001acff4: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001acff4: jal 0x107c70
     a2 = 0x1c8;                                                 // 0x001acff8: addiu $a2, $zero, 0x1c8
     at = 0x31 << 16;                                            // 0x001acffc: lui $at, 0x31
     a0 = g_003137fc;  // Global at 0x003137fc                   // 0x001ad000: lw $a0, 0x37fc($at)

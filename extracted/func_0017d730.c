@@ -25,7 +25,7 @@ label_0x17d76c:
     /* nop */                                                   // 0x0017d774: nop 
     a3 = sp + 0x10;                                             // 0x0017d77c: addiu $a3, $sp, 0x10
     local_0 = v1;                                               // 0x0017d780: sw $v1, 0($sp)
-    func_001407b0();  // 0x1406e0                                // 0x0017d784: jal 0x1406e0
+    func_001406e0();  // 1406e0                                // 0x0017d784: jal 0x1406e0
     local_4 = v0;                                               // 0x0017d788: sw $v0, 4($sp)
     v1 = local_10;                                              // 0x0017d78c: lw $v1, 0x10($sp)
     v0 = local_14;                                              // 0x0017d790: lw $v0, 0x14($sp)

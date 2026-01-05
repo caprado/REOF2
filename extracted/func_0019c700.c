@@ -26,9 +26,9 @@ label_0x19c73c:
 label_0x19c74c:
     if (a1 == v1) goto label_0x19c784;                          // 0x0019c74c: beq $a1, $v1, 0x19c784
     /* nop */                                                   // 0x0019c750: nop 
-    func_0019ebd0();  // 0x19eb90                                // 0x0019c754: jal 0x19eb90
+    func_0019eb90();  // 19eb90                                // 0x0019c754: jal 0x19eb90
     /* nop */                                                   // 0x0019c758: nop 
-    func_0018da10();  // 0x18d9e0                                // 0x0019c764: jal 0x18d9e0
+    func_0018d9e0();  // 18d9e0                                // 0x0019c764: jal 0x18d9e0
     a2 = 8;                                                     // 0x0019c768: addiu $a2, $zero, 8
     a0 = *(int32_t*)((gp) + -0x6488);                           // 0x0019c76c: lw $a0, -0x6488($gp)
     v1 = s0 & 0xffff;                                           // 0x0019c770: andi $v1, $s0, 0xffff

@@ -8,7 +8,7 @@ void func_001ce600() {
     
     sp = sp + -0x20;                                            // 0x001ce600: addiu $sp, $sp, -0x20
     a0 = 6;                                                     // 0x001ce614: addiu $a0, $zero, 6
-    func_001cdfc0();  // 0x1cdf70                                // 0x001ce618: jal 0x1cdf70
+    func_001cdf70();  // 1cdf70                                // 0x001ce618: jal 0x1cdf70
     at = 0x32 << 16;                                            // 0x001ce620: lui $at, 0x32
     g_00325934 = s0;  // Global at 0x00325934                   // 0x001ce624: sw $s0, 0x5934($at)
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001ce62c: xori.b $w0, $w0, 0xb0

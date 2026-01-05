@@ -39,7 +39,7 @@ void func_0017ab20() {
 label_0x17aba0:
     local_2c = t0;                                              // 0x0017aba0: sw $t0, 0x2c($sp)
 label_0x17aba4:
-    func_00148f70();  // 0x148f60                                // 0x0017aba4: jal 0x148f60
+    func_00148f60();  // 148f60                                // 0x0017aba4: jal 0x148f60
     a3 = *(int32_t*)((t5) + 8);                                 // 0x0017aba8: lw $a3, 8($t5)
     return;                                                     // 0x0017abb0: jr $ra
     sp = sp + 0x50;                                             // 0x0017abb4: addiu $sp, $sp, 0x50

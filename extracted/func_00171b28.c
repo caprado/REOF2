@@ -90,7 +90,7 @@ label_0x171c48:
     a3 = (s1 < 4) ? 1 : 0;                                      // 0x00171c80: slti $a3, $s1, 4
 label_0x171c84:
     /* bnezl $a3, 0x171cac */                                   // 0x00171c84: bnezl $a3, 0x171cac
-    func_00158518();  // 0x158410                                // 0x00171c94: jal 0x158410
+    func_00158410();  // 158410                                // 0x00171c94: jal 0x158410
     a2 = 4;                                                     // 0x00171c98: addiu $a2, $zero, 4
     /* bnezl $a0, 0x171c68 */                                   // 0x00171ca0: bnezl $a0, 0x171c68
     v0 = *(int32_t*)((s0) + 8);                                 // 0x00171ca4: lw $v0, 8($s0)

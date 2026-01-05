@@ -26,7 +26,7 @@ label_0x1c2518:
     /* nop */                                                   // 0x001c254c: nop 
     /* mflo $v1 */                                              // 0x001c2550
     v1 = v1 << 1;                                               // 0x001c2554: sll $v1, $v1, 1
-    func_0010b460();  // 0x10b2a0                                // 0x001c2558: jal 0x10b2a0
+    func_0010b2a0();  // 10b2a0                                // 0x001c2558: jal 0x10b2a0
     a1 = v0 + v1;                                               // 0x001c255c: addu $a1, $v0, $v1
     s1 = s1 + 1;                                                // 0x001c2560: addiu $s1, $s1, 1
     v1 = (s1 < 3) ? 1 : 0;                                      // 0x001c2564: slti $v1, $s1, 3

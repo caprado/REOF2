@@ -4,24 +4,23 @@
 #include <stdint.h>
 
 /**
- * @file menu_controller.h
- * @brief Main menu controller system
- * @description Dispatches to menu subsystems and manages menu state
+ * Menu controller context structure
+ * Passed as parameter to processMenuController
  */
+typedef struct MenuControllerContext {
+    uint8_t padding[8];      // Offset 0x0-0x7: Unknown/reserved
+    uint8_t menuState;       // Offset 0x8: Menu state (0=init, 1=running)
+} MenuControllerContext;
 
 /**
- * Menu controller context
+ * @category game/menu
+ * @status complete
+ * @original func_001b9e60
+ * @address 0x001b9e60
+ * @description Main menu controller state machine. Called every frame from main loop.
+ * @windows_compatibility high
+ * @author caprado
  */
-typedef struct MenuContext {
-    uint8_t menuState;       // Menu state (0=init, 1=running)
-} MenuContext;
-
-/**
- * @brief Process main menu controller
- * @param context Menu context structure
- * @original func_001b9e60 at 0x001b9e60
- * @description Main dispatcher that calls menu subsystems based on state
- */
-void processMenuController(MenuContext* context);
+void processMenuController(MenuControllerContext* context);
 
 #endif // MENU_CONTROLLER_H

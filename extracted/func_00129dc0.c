@@ -21,7 +21,7 @@ void func_00129dc0() {
     return func_00132998();  // Tail call                        // 0x00129e10: j 0x1328c8
     sp = sp + 0x10;                                             // 0x00129e14: addiu $sp, $sp, 0x10
     sp = sp + -0x10;                                            // 0x00129e18: addiu $sp, $sp, -0x10
-    func_0013cd60();  // 0x13cd00                                // 0x00129e20: jal 0x13cd00
+    func_0013cd00();  // 13cd00                                // 0x00129e20: jal 0x13cd00
     /* nop */                                                   // 0x00129e24: nop 
     return;                                                     // 0x00129e30: jr $ra
     sp = sp + 0x10;                                             // 0x00129e34: addiu $sp, $sp, 0x10

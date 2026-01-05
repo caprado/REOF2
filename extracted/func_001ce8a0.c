@@ -13,7 +13,7 @@ void func_001ce8a0() {
     at = (a2 < v1) ? 1 : 0;                                     // 0x001ce8b4: slt $at, $a2, $v1
     if (at == 0) goto label_0x1ce8d0;                           // 0x001ce8b8: beqz $at, 0x1ce8d0
     /* nop */                                                   // 0x001ce8bc: nop 
-    func_001ce640();  // 0x1ce600                                // 0x001ce8c0: jal 0x1ce600
+    func_001ce600();  // 1ce600                                // 0x001ce8c0: jal 0x1ce600
     a0 = 1;                                                     // 0x001ce8c4: addiu $a0, $zero, 1
     goto label_0x1ce8d8;                                        // 0x001ce8c8: b 0x1ce8d8
 label_0x1ce8d0:

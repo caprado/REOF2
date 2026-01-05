@@ -15,7 +15,7 @@ void func_0017a5d8() {
     if (v0 != 0) goto label_0x17a61c;                           // 0x0017a600: bnez $v0, 0x17a61c
     s0 = *(int32_t*)(s2);                                       // 0x0017a604: lw $s0, 0($s2)
     a1 = 0x23 << 16;                                            // 0x0017a608: lui $a1, 0x23
-    func_0017cae0();  // 0x17cad8                                // 0x0017a610: jal 0x17cad8
+    func_0017cad8();  // 17cad8                                // 0x0017a610: jal 0x17cad8
     a1 = &str_002296b0;  // "E201181: SFX_CnvFrmArgb8888 : frmfmt is not support." // 0x0017a614: addiu $a1, $a1, -0x6950
     *(uint32_t*)((s1) + 4) = v0;                                // 0x0017a618: sw $v0, 4($s1)
 label_0x17a61c:
@@ -81,14 +81,14 @@ label_0x17a788:
     /* nop */                                                   // 0x0017a78c: nop 
     goto label_0x17a900;                                        // 0x0017a790: b 0x17a900
 label_0x17a798:
-    func_0017d200();  // 0x17d128                                // 0x0017a798: jal 0x17d128
+    func_0017d128();  // 17d128                                // 0x0017a798: jal 0x17d128
     /* nop */                                                   // 0x0017a79c: nop 
     v1 = 1;                                                     // 0x0017a7a0: addiu $v1, $zero, 1
     if (v0 == v1) goto label_0x17a7d0;                          // 0x0017a7a4: beq $v0, $v1, 0x17a7d0
     goto label_0x17a928;                                        // 0x0017a7c8: j 0x17a928
     sp = sp + 0x20;                                             // 0x0017a7cc: addiu $sp, $sp, 0x20
 label_0x17a7d0:
-    func_0017c3c8();  // 0x17c250                                // 0x0017a7d4: jal 0x17c250
+    func_0017c250();  // 17c250                                // 0x0017a7d4: jal 0x17c250
     a2 = 0x15;                                                  // 0x0017a7d8: addiu $a2, $zero, 0x15
     a3 = 1;                                                     // 0x0017a7f4: addiu $a3, $zero, 1
     goto label_0x17a928;                                        // 0x0017a7fc: j 0x17a928
@@ -103,25 +103,25 @@ label_0x17a828:
     sp = sp + 0x20;                                             // 0x0017a838: addiu $sp, $sp, 0x20
     /* nop */                                                   // 0x0017a83c: nop 
 label_0x17a840:
-    func_0017c3c8();  // 0x17c250                                // 0x0017a840: jal 0x17c250
+    func_0017c250();  // 17c250                                // 0x0017a840: jal 0x17c250
     a2 = 1;                                                     // 0x0017a844: addiu $a2, $zero, 1
     return func_0017acd0();  // Tail call                        // 0x0017a864: j 0x17abb8
     sp = sp + 0x20;                                             // 0x0017a868: addiu $sp, $sp, 0x20
     /* nop */                                                   // 0x0017a86c: nop 
 label_0x17a870:
-    func_0017c3c8();  // 0x17c250                                // 0x0017a870: jal 0x17c250
+    func_0017c250();  // 17c250                                // 0x0017a870: jal 0x17c250
     a2 = 2;                                                     // 0x0017a874: addiu $a2, $zero, 2
     a3 = 1;                                                     // 0x0017a890: addiu $a3, $zero, 1
     goto label_0x17a928;                                        // 0x0017a898: j 0x17a928
     sp = sp + 0x20;                                             // 0x0017a89c: addiu $sp, $sp, 0x20
 label_0x17a8a0:
-    func_0017c3c8();  // 0x17c250                                // 0x0017a8a0: jal 0x17c250
+    func_0017c250();  // 17c250                                // 0x0017a8a0: jal 0x17c250
     a2 = 3;                                                     // 0x0017a8a4: addiu $a2, $zero, 3
     a3 = 1;                                                     // 0x0017a8c0: addiu $a3, $zero, 1
     goto label_0x17a928;                                        // 0x0017a8c8: j 0x17a928
     sp = sp + 0x20;                                             // 0x0017a8cc: addiu $sp, $sp, 0x20
 label_0x17a8d0:
-    func_0017c3c8();  // 0x17c250                                // 0x0017a8d0: jal 0x17c250
+    func_0017c250();  // 17c250                                // 0x0017a8d0: jal 0x17c250
     a2 = 0x15;                                                  // 0x0017a8d4: addiu $a2, $zero, 0x15
     a3 = 1;                                                     // 0x0017a8f0: addiu $a3, $zero, 1
     goto label_0x17a928;                                        // 0x0017a8f8: j 0x17a928
@@ -151,7 +151,7 @@ label_0x17a928:
     local_14 = t1;                                              // 0x0017a984: sw $t1, 0x14($sp)
     local_24 = v1;                                              // 0x0017a988: sw $v1, 0x24($sp)
     local_c = v0;                                               // 0x0017a98c: sw $v0, 0xc($sp)
-    func_0017ab20();  // 0x17aa68                                // 0x0017a990: jal 0x17aa68
+    func_0017aa68();  // 17aa68                                // 0x0017a990: jal 0x17aa68
     local_10 = t0;                                              // 0x0017a994: sw $t0, 0x10($sp)
     v1 = 1;                                                     // 0x0017a998: addiu $v1, $zero, 1
     a3 = sp + 0x20;                                             // 0x0017a9a8: addiu $a3, $sp, 0x20
@@ -175,7 +175,7 @@ label_0x17a9cc:
     if (s3 != t1) goto label_0x17a9f4;                          // 0x0017a9e8: bne $s3, $t1, 0x17a9f4
     t0 = *(int32_t*)((s1) + 0x3c);                              // 0x0017a9f0: lw $t0, 0x3c($s1)
 label_0x17a9f4:
-    func_0017aa68();  // 0x17aa18                                // 0x0017a9f4: jal 0x17aa18
+    func_0017aa18();  // 17aa18                                // 0x0017a9f4: jal 0x17aa18
     /* nop */                                                   // 0x0017a9f8: nop 
     return;                                                     // 0x0017aa10: jr $ra
     sp = sp + 0x70;                                             // 0x0017aa14: addiu $sp, $sp, 0x70

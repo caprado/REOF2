@@ -12,13 +12,13 @@ void func_00168660() {
     a1 = 0x800;                                                 // 0x00168674: addiu $a1, $zero, 0x800
     if (v1 == 0) s0 = a1;                                       // 0x00168678: movz $s0, $a1, $v1
     v0 = v0 + 0x1ef0;                                           // 0x00168680: addiu $v0, $v0, 0x1ef0
-    func_00107b68();  // 0x107ab8                                // 0x001686a0: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x001686a0: jal 0x107ab8
     if (s0 <= 0) goto label_0x16871c;                           // 0x001686a8: blez $s0, 0x16871c
     v0 = 0x23 << 16;                                            // 0x001686b0: lui $v0, 0x23
     s3 = v0 + -0x71d8;                                          // 0x001686b4: addiu $s3, $v0, -0x71d8
 label_0x1686b8:
     s0 = s0 + -4;                                               // 0x001686bc: addiu $s0, $s0, -4
-    func_001644a0();  // 0x164400                                // 0x001686c4: jal 0x164400
+    func_00164400();  // 164400                                // 0x001686c4: jal 0x164400
     if (v0 == 0) goto label_0x168710;                           // 0x001686cc: beqz $v0, 0x168710
     v0 = 1;                                                     // 0x001686d0: addiu $v0, $zero, 1
     *(uint32_t*)((s2) + 0xc) = s3;                              // 0x001686d4: sw $s3, 0xc($s2)

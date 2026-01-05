@@ -25,9 +25,9 @@ label_0x12a548:
     a0 = &str_00222c78;  // "E02080854 ADXT_GetNumFiles: parameter error" // 0x0012a554: addiu $a0, $a0, 0x2c78
     return func_00127de8();  // Tail call                        // 0x0012a560: j 0x127d90
     sp = sp + 0x20;                                             // 0x0012a564: addiu $sp, $sp, 0x20
-    func_0013ccc0();  // 0x13cc38                                // 0x0012a568: jal 0x13cc38
-    func_0012a378();  // 0x12a318                                // 0x0012a574: jal 0x12a318
-    func_0013d158();  // 0x13d128                                // 0x0012a580: jal 0x13d128
+    func_0013cc38();  // 13cc38                                // 0x0012a568: jal 0x13cc38
+    func_0012a318();  // 12a318                                // 0x0012a574: jal 0x12a318
+    func_0013d128();  // 13d128                                // 0x0012a580: jal 0x13d128
     a1 = 1;                                                     // 0x0012a584: addiu $a1, $zero, 1
     return func_0012a4f0();  // Tail call                        // 0x0012a59c: j 0x12a440
     sp = sp + 0x20;                                             // 0x0012a5a0: addiu $sp, $sp, 0x20

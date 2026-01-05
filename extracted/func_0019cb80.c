@@ -10,7 +10,7 @@ void func_0019cb80() {
     /* FPU: dps.w.ph $ac0, $sp, $s5 */                          // 0x0019cb8c: dps.w.ph $ac0, $sp, $s5
     /* FPU: subu.qb $zero, $sp, $s3 */                          // 0x0019cb98: subu.qb $zero, $sp, $s3
     /* FPU: dpa.w.ph $ac0, $sp, $s1 */                          // 0x0019cba0: dpa.w.ph $ac0, $sp, $s1
-    func_0018db10();  // 0x18db00                                // 0x0019cba8: jal 0x18db00
+    func_0018db00();  // 18db00                                // 0x0019cba8: jal 0x18db00
     a0 = *(int32_t*)((a0) + 0x24);                              // 0x0019cbac: lw $a0, 0x24($a0)
     s2 = *(int16_t*)((s5) + 0x1a);                              // 0x0019cbb0: lh $s2, 0x1a($s5)
     s1 = *(int16_t*)((s5) + 0x1c);                              // 0x0019cbb8: lh $s1, 0x1c($s5)
@@ -47,11 +47,11 @@ label_0x19cc28:
     s0 = v0 << 2;                                               // 0x0019cc28: sll $s0, $v0, 2
 label_0x19cc2c:
 label_0x19cc30:
-    func_0018c750();  // 0x18c710                                // 0x0019cc30: jal 0x18c710
+    func_0018c710();  // 18c710                                // 0x0019cc30: jal 0x18c710
     /* nop */                                                   // 0x0019cc34: nop 
-    func_0018dca0();  // 0x18dc30                                // 0x0019cc3c: jal 0x18dc30
+    func_0018dc30();  // 18dc30                                // 0x0019cc3c: jal 0x18dc30
     a1 = 0x10;                                                  // 0x0019cc40: addiu $a1, $zero, 0x10
-    func_0019ce60();  // 0x19cd80                                // 0x0019cc4c: jal 0x19cd80
+    func_0019cd80();  // 19cd80                                // 0x0019cc4c: jal 0x19cd80
     v1 = *(int8_t*)((s5) + 0x36);                               // 0x0019cc54: lb $v1, 0x36($s5)
     if (v1 != 0) goto label_0x19ccbc;                           // 0x0019cc58: bnez $v1, 0x19ccbc
     v0 = s2 >> 6;                                               // 0x0019cc7c: sra $v0, $s2, 6
@@ -61,7 +61,7 @@ label_0x19cc30:
 label_0x19cc90:
     t2 = *(int16_t*)((s5) + 0x20);                              // 0x0019cc90: lh $t2, 0x20($s5)
     a1 = 1;                                                     // 0x0019cca0: addiu $a1, $zero, 1
-    func_0018cba0();  // 0x18c760                                // 0x0019ccac: jal 0x18c760
+    func_0018c760();  // 18c760                                // 0x0019ccac: jal 0x18c760
     goto label_0x19cd10;                                        // 0x0019ccb4: b 0x19cd10
 label_0x19ccbc:
     a0 = *(int16_t*)((s5) + 0x28);                              // 0x0019ccbc: lh $a0, 0x28($s5)
@@ -72,12 +72,12 @@ label_0x19ccbc:
     v0 = v0 >> 6;                                               // 0x0019cce4: sra $v0, $v0, 6
 label_0x19cce8:
     a1 = 1;                                                     // 0x0019ccf4: addiu $a1, $zero, 1
-    func_0018cba0();  // 0x18c760                                // 0x0019cd04: jal 0x18c760
+    func_0018c760();  // 18c760                                // 0x0019cd04: jal 0x18c760
 label_0x19cd10:
     a3 = 0x29 << 16;                                            // 0x0019cd10: lui $a3, 0x29
     v1 = 0x1000 << 16;                                          // 0x0019cd18: lui $v1, 0x1000
     a1 = a0 | v1;                                               // 0x0019cd1c: or $a1, $a0, $v1
-    func_0018cff0();  // 0x18ce40                                // 0x0019cd28: jal 0x18ce40
+    func_0018ce40();  // 18ce40                                // 0x0019cd28: jal 0x18ce40
     a3 = a3 + -0x350;                                           // 0x0019cd2c: addiu $a3, $a3, -0x350
     s2 = s2 >> 1;                                               // 0x0019cd30: sra $s2, $s2, 1
     s1 = s1 >> 1;                                               // 0x0019cd34: sra $s1, $s1, 1

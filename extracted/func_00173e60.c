@@ -11,7 +11,7 @@ void func_00173e60() {
     s0 = (unsigned)s0 >> 2;                                     // 0x00173e6c: srl $s0, $s0, 2
     s0 = s0 << 2;                                               // 0x00173e74: sll $s0, $s0, 2
     s2 = a2 + -4;                                               // 0x00173e78: addiu $s2, $a2, -4
-    func_00107d30();  // 0x107c70                                // 0x00173e90: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x00173e90: jal 0x107c70
     *(uint32_t*)(s1) = s0;                                      // 0x00173e98: sw $s0, 0($s1)
     v0 = 0xc;                                                   // 0x00173e9c: addiu $v0, $zero, 0xc
     /* divide: s2 / v0 -> hi:lo */                              // 0x00173ea0: div $zero, $s2, $v0

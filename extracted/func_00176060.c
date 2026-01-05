@@ -7,7 +7,7 @@ void func_00176060() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x00176060: addiu $sp, $sp, -0x20
-    func_00169b10();  // 0x169af0                                // 0x0017607c: jal 0x169af0
+    func_00169af0();  // 169af0                                // 0x0017607c: jal 0x169af0
     a1 = 0xff00 << 16;                                          // 0x00176084: lui $a1, 0xff00
     if (v0 == 0) goto label_0x1760b8;                           // 0x00176090: beqz $v0, 0x1760b8
     a1 = a1 | 0x128;                                            // 0x00176094: ori $a1, $a1, 0x128
@@ -20,8 +20,8 @@ label_0x1760b8:
     /* nop */                                                   // 0x001760d4: nop 
 label_0x1760d8:
     sp = sp + -0x40;                                            // 0x001760d8: addiu $sp, $sp, -0x40
-    func_00169ba0();  // 0x169b88                                // 0x001760fc: jal 0x169b88
-    func_001752f8();  // 0x1752e8                                // 0x00176108: jal 0x1752e8
+    func_00169b88();  // 169b88                                // 0x001760fc: jal 0x169b88
+    func_001752e8();  // 1752e8                                // 0x00176108: jal 0x1752e8
     a1 = 0xf;                                                   // 0x0017610c: addiu $a1, $zero, 0xf
     v0 = v0 << 2;                                               // 0x00176114: sll $v0, $v0, 2
     s0 = s1 + 0xcc0;                                            // 0x00176118: addiu $s0, $s1, 0xcc0
@@ -33,7 +33,7 @@ label_0x1760d8:
 label_0x176138:
     /* call function at address in v0 */                        // 0x00176138: jalr $v0
     /* nop */                                                   // 0x0017613c: nop 
-    func_00169bc8();  // 0x169ba0                                // 0x00176144: jal 0x169ba0
+    func_00169ba0();  // 169ba0                                // 0x00176144: jal 0x169ba0
     return;                                                     // 0x00176164: jr $ra
     sp = sp + 0x40;                                             // 0x00176168: addiu $sp, $sp, 0x40
 }

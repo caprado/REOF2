@@ -29,7 +29,7 @@ label_0x115a68:
     v1 = g_00250008;  // Global at 0x00250008                   // 0x00115a8c: lw $v1, 8($v0)
     a0 = *(uint8_t*)(v1);                                       // 0x00115a90: lbu $a0, 0($v1)
     *(uint8_t*)(s0) = a0;                                       // 0x00115a94: sb $a0, 0($s0)
-    func_00115710();  // 0x1156d0                                // 0x00115a98: jal 0x1156d0
+    func_001156d0();  // 1156d0                                // 0x00115a98: jal 0x1156d0
     a0 = g_0024c328;  // Global at 0x0024c328                   // 0x00115a9c: lw $a0, 0x18($a1)
     v1 = *(int8_t*)(s0);                                        // 0x00115aa0: lb $v1, 0($s0)
     v0 = 0xa;                                                   // 0x00115aa4: addiu $v0, $zero, 0xa

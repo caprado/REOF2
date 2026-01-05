@@ -11,7 +11,7 @@ void func_00176238() {
     
     sp = sp + -0x40;                                            // 0x00176238: addiu $sp, $sp, -0x40
     s0 = s1 + 0xcc0;                                            // 0x00176248: addiu $s0, $s1, 0xcc0
-    func_00176380();  // 0x176330                                // 0x00176260: jal 0x176330
+    func_00176330();  // 176330                                // 0x00176260: jal 0x176330
     /* beqzl $v0, 0x176310 */                                   // 0x00176268: beqzl $v0, 0x176310
     v0 = *(int32_t*)((s0) + 0x290);                             // 0x00176270: lw $v0, 0x290($s0)
     if (v0 != 0) goto label_0x176298;                           // 0x00176274: bnez $v0, 0x176298
@@ -24,7 +24,7 @@ void func_00176238() {
 label_0x176298:
     /* call function at address in v0 */                        // 0x0017629c: jalr $v0
     a2 = sp + 4;                                                // 0x001762a0: addiu $a2, $sp, 4
-    func_00175bb8();  // 0x175b80                                // 0x001762a8: jal 0x175b80
+    func_00175b80();  // 175b80                                // 0x001762a8: jal 0x175b80
     if (v0 == 0) goto label_0x1762e8;                           // 0x001762b0: beqz $v0, 0x1762e8
     v1 = -5;                                                    // 0x001762b4: addiu $v1, $zero, -5
     v0 = *(int32_t*)((s0) + 0x294);                             // 0x001762b8: lw $v0, 0x294($s0)

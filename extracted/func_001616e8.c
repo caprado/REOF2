@@ -13,7 +13,7 @@ void func_001616e8() {
     v1 = *(int32_t*)(v1);                                       // 0x00161704: lw $v1, 0($v1)
     v0 = 1;                                                     // 0x00161708: addiu $v0, $zero, 1
     if (v1 == v0) goto label_0x161734;                          // 0x0016170c: beql $v1, $v0, 0x161734
-    func_001618d8();  // 0x161788                                // 0x00161714: jal 0x161788
+    func_00161788();  // 161788                                // 0x00161714: jal 0x161788
     /* nop */                                                   // 0x00161718: nop 
     return func_001619e0();  // Tail call                        // 0x00161728: j 0x161938
     sp = sp + 0x10;                                             // 0x0016172c: addiu $sp, $sp, 0x10

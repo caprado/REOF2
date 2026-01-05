@@ -14,7 +14,7 @@ void func_00182c38() {
     s3 = v1 >> 8;                                               // 0x00182c50: sra $s3, $v1, 8
     v0 = s3 << 8;                                               // 0x00182c5c: sll $v0, $s3, 8
     s3 = a1 - v0;                                               // 0x00182c74: subu $s3, $a1, $v0
-    func_001829e0();  // 0x1828c0                                // 0x00182c8c: jal 0x1828c0
+    func_001828c0();  // 1828c0                                // 0x00182c8c: jal 0x1828c0
     v0 = *(int32_t*)(s4);                                       // 0x00182c98: lw $v0, 0($s4)
     if (v0 != 0) goto label_0x182d38;                           // 0x00182c9c: bnez $v0, 0x182d38
     v0 = 0x898;                                                 // 0x00182ca4: addiu $v0, $zero, 0x898
@@ -25,11 +25,11 @@ void func_00182c38() {
     v1 = *(int32_t*)(s5);                                       // 0x00182cbc: lw $v1, 0($s5)
     if (v1 == s1) goto label_0x182d0c;                          // 0x00182cc0: beq $v1, $s1, 0x182d0c
     a0 = 0x898;                                                 // 0x00182cc4: addiu $a0, $zero, 0x898
-    func_00182a70();  // 0x1829e0                                // 0x00182cc8: jal 0x1829e0
+    func_001829e0();  // 1829e0                                // 0x00182cc8: jal 0x1829e0
     if (v0 == 0) goto label_0x182cf4;                           // 0x00182cd0: beqz $v0, 0x182cf4
     a1 = s6 + 0x400;                                            // 0x00182cd4: addiu $a1, $s6, 0x400
     a1 = s2 + a1;                                               // 0x00182cdc: addu $a1, $s2, $a1
-    func_00186e08();  // 0x186dc8                                // 0x00182ce4: jal 0x186dc8
+    func_00186dc8();  // 186dc8                                // 0x00182ce4: jal 0x186dc8
     a3 = 1;                                                     // 0x00182ce8: addiu $a3, $zero, 1
     /* bnezl $v0, 0x182d08 */                                   // 0x00182cec: bnezl $v0, 0x182d08
     *(uint32_t*)(s5) = s1;                                      // 0x00182cf0: sw $s1, 0($s5)

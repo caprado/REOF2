@@ -11,9 +11,9 @@ void func_001010c8() {
     
     sp = sp + -0xb0;                                            // 0x001010c8: addiu $sp, $sp, -0xb0
     a0 = 1;                                                     // 0x001010dc: addiu $a0, $zero, 1
-    func_00100ea8();  // 0x100e38                                // 0x001010f8: jal 0x100e38
+    func_00100e38();  // 100e38                                // 0x001010f8: jal 0x100e38
     if (v0 != 0) goto label_0x101378;                           // 0x00101100: bnez $v0, 0x101378
-    func_00116ee0();  // 0x116d40                                // 0x0010110c: jal 0x116d40
+    func_00116d40();  // 116d40                                // 0x0010110c: jal 0x116d40
     s5 = 0x1f << 16;                                            // 0x00101110: lui $s5, 0x1f
     ReferThreadStatus();  // 0x1141d0                           // 0x00101114: jal 0x1141d0
     s4 = 0x1f << 16;                                            // 0x00101118: lui $s4, 0x1f
@@ -49,13 +49,13 @@ void func_001010c8() {
 label_0x101190:
     a1 = 0x8000 << 16;                                          // 0x00101190: lui $a1, 0x8000
     a1 = a1 | 0x592;                                            // 0x00101198: ori $a1, $a1, 0x592
-    func_001176a8();  // 0x1174d8                                // 0x0010119c: jal 0x1174d8
+    func_001174d8();  // 1174d8                                // 0x0010119c: jal 0x1174d8
     if (a1 >= 0) goto label_0x1011f4;                           // 0x001011a8: bgezl $a1, 0x1011f4
     v0 = g_0024b94c;  // Global at 0x0024b94c                   // 0x001011ac: lw $v0, 0x24($s1)
     v0 = g_001edf10;  // Global at 0x001edf10                   // 0x001011b0: lw $v0, -0x20f0($s7)
     if (v0 <= 0) goto label_0x1011c4;                           // 0x001011b4: blez $v0, 0x1011c4
     a2 = g_001edf54;  // Global at 0x001edf54                   // 0x001011b8: lw $a2, -0x20ac($s5)
-    func_00116598();  // 0x116508                                // 0x001011bc: jal 0x116508
+    func_00116508();  // 116508                                // 0x001011bc: jal 0x116508
     a0 = &str_0021fe38;  // "Libcdvd Exit\n"                    // 0x001011c0: addiu $a0, $s6, -0x1c8
 label_0x1011c4:
     v0 = 0x10 << 16;                                            // 0x001011c4: lui $v0, 0x10
@@ -75,13 +75,13 @@ label_0x1011f4:
     if (v0 == 0) goto label_0x10124c;                           // 0x001011f4: beqz $v0, 0x10124c
     g_0024b980 = s3;  // Global at 0x0024b980                   // 0x001011fc: sw $s3, -0x4680($s0)
     g_001edf50 = 0;  // Global at 0x001edf50                    // 0x00101200: sw $zero, -0x20b0($s4)
-    func_00116d40();  // 0x116c90                                // 0x00101204: jal 0x116c90
+    func_00116c90();  // 116c90                                // 0x00101204: jal 0x116c90
     a1 = 4;                                                     // 0x00101208: addiu $a1, $zero, 4
     s0 = fp + -0xf00;                                           // 0x0010120c: addiu $s0, $fp, -0xf00
     local_0 = 0;                                                // 0x00101218: sw $zero, 0($sp)
     t0 = 4;                                                     // 0x00101224: addiu $t0, $zero, 4
     t2 = 0x10;                                                  // 0x0010122c: addiu $t2, $zero, 0x10
-    func_001178a0();  // 0x1176a8                                // 0x00101230: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x00101230: jal 0x1176a8
     if (v0 >= 0) goto label_0x10127c;                           // 0x00101238: bgez $v0, 0x10127c
     v0 = 0x1f << 16;                                            // 0x0010123c: lui $v0, 0x1f
     g_001edf24 = 0;  // Global at 0x001edf24                    // 0x00101240: sw $zero, -0x20dc($v0)
@@ -149,10 +149,10 @@ label_0x101308:
     v1 = g_001edf10;  // Global at 0x001edf10                   // 0x00101324: lw $v1, -0x20f0($v0)
     if (v1 <= 0) goto label_0x101338;                           // 0x00101328: blez $v1, 0x101338
     a0 = 0x22 << 16;                                            // 0x0010132c: lui $a0, 0x22
-    func_00116598();  // 0x116508                                // 0x00101330: jal 0x116508
+    func_00116508();  // 116508                                // 0x00101330: jal 0x116508
     a0 = &str_0021fe58;  // "OLD DiskReady Call\n"              // 0x00101334: addiu $a0, $a0, -0x1a8
 label_0x101338:
-    func_00100708();  // 0x100668                                // 0x00101338: jal 0x100668
+    func_00100668();  // 100668                                // 0x00101338: jal 0x100668
     /* nop */                                                   // 0x0010133c: nop 
     a0 = -1;                                                    // 0x00101340: addiu $a0, $zero, -1
     v0 = 0x1f << 16;                                            // 0x00101344: lui $v0, 0x1f
@@ -163,9 +163,9 @@ label_0x101338:
     g_001edf20 = a0;  // Global at 0x001edf20                   // 0x00101358: sw $a0, -0x20e0($v0)
     goto label_0x101378;                                        // 0x0010135c: b 0x101378
 label_0x101364:
-    func_00100668();  // 0x1005b0                                // 0x00101364: jal 0x1005b0
+    func_001005b0();  // 1005b0                                // 0x00101364: jal 0x1005b0
     /* nop */                                                   // 0x00101368: nop 
-    func_00100858();  // 0x1007e0                                // 0x0010136c: jal 0x1007e0
+    func_001007e0();  // 1007e0                                // 0x0010136c: jal 0x1007e0
     /* nop */                                                   // 0x00101370: nop 
 label_0x101378:
     return;                                                     // 0x001013a0: jr $ra

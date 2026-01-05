@@ -15,12 +15,12 @@ void func_00132d00() {
     if (v1 == 0) goto label_0x132de0;                           // 0x00132d38: beqz $v1, 0x132de0
     a0 = *(int32_t*)((s3) + 0xc);                               // 0x00132d40: lw $a0, 0xc($s3)
     s0 = 0x20 << 16;                                            // 0x00132d44: lui $s0, 0x20
-    func_0012c598();  // 0x12c570                                // 0x00132d48: jal 0x12c570
+    func_0012c570();  // 12c570                                // 0x00132d48: jal 0x12c570
     s0 = s0 + 0x1d50;                                           // 0x00132d4c: addiu $s0, $s0, 0x1d50
-    func_00132998();  // 0x1328c8                                // 0x00132d50: jal 0x1328c8
+    func_001328c8();  // 1328c8                                // 0x00132d50: jal 0x1328c8
     s1 = g_00201d50;  // Global at 0x00201d50                   // 0x00132d58: lw $s1, 0($s0)
     g_00201d50 = 0;  // Global at 0x00201d50                    // 0x00132d60: sw $zero, 0($s0)
-    func_00132118();  // 0x131e20                                // 0x00132d68: jal 0x131e20
+    func_00131e20();  // 131e20                                // 0x00132d68: jal 0x131e20
     a2 = sp + 4;                                                // 0x00132d6c: addiu $a2, $sp, 4
     v0 = 0x20 << 16;                                            // 0x00132d70: lui $v0, 0x20
     FPU_F0 = *(float*)(sp);  // Load float                      // 0x00132d74: lwc1 $f0, 0($sp)

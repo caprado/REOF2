@@ -21,12 +21,12 @@ label_0x1bd35c:
     /* nop */                                                   // 0x001bd368: nop 
     /* nop */                                                   // 0x001bd36c: nop 
     sp = sp + -0x20;                                            // 0x001bd370: addiu $sp, $sp, -0x20
-    func_001bdd30();  // 0x1bdd00                                // 0x001bd37c: jal 0x1bdd00
+    func_001bdd00();  // 1bdd00                                // 0x001bd37c: jal 0x1bdd00
     v1 = -2;                                                    // 0x001bd384: addiu $v1, $zero, -2
     if (v0 == v1) goto label_0x1bd3a8;                          // 0x001bd388: beq $v0, $v1, 0x1bd3a8
     if (v0 == 0) goto label_0x1bd3a8;                           // 0x001bd390: beqz $v0, 0x1bd3a8
     /* nop */                                                   // 0x001bd394: nop 
-    func_001bd3d0();  // 0x1bd340                                // 0x001bd398: jal 0x1bd340
+    func_001bd340();  // 1bd340                                // 0x001bd398: jal 0x1bd340
     goto label_0x1bd3b8;                                        // 0x001bd3a0: b 0x1bd3b8
 label_0x1bd3a8:
     v1 = *(int32_t*)(s0);                                       // 0x001bd3a8: lw $v1, 0($s0)

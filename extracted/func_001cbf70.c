@@ -8,12 +8,12 @@ void func_001cbf70() {
     
     sp = sp + -0x30;                                            // 0x001cbf70: addiu $sp, $sp, -0x30
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001cbf78: addu.qb $zero, $sp, $s1
-    func_001cfd80();  // 0x1cfd70                                // 0x001cbf80: jal 0x1cfd70
+    func_001cfd70();  // 1cfd70                                // 0x001cbf80: jal 0x1cfd70
     a0 = *(int32_t*)((s1) + 8);                                 // 0x001cbf8c: lw $a0, 8($s1)
     v0 = *(int32_t*)((s1) + 4);                                 // 0x001cbf90: lw $v0, 4($s1)
-    func_00107c70();  // 0x107b68                                // 0x001cbf98: jal 0x107b68
+    func_00107b68();  // 107b68                                // 0x001cbf98: jal 0x107b68
     a1 = a0 + v0;                                               // 0x001cbf9c: addu $a1, $a0, $v0
-    func_001cfe80();  // 0x1cfe70                                // 0x001cbfa0: jal 0x1cfe70
+    func_001cfe70();  // 1cfe70                                // 0x001cbfa0: jal 0x1cfe70
     *(uint32_t*)((s1) + 0xc) = s0;                              // 0x001cbfa8: sw $s0, 0xc($s1)
     /* FPU: aver_u.h $w0, $w0, $w17 */                          // 0x001cbfb0: aver_u.h $w0, $w0, $w17
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001cbfb4: xori.b $w0, $w0, 0xb0

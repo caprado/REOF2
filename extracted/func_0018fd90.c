@@ -7,9 +7,9 @@ void func_0018fd90() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x60;                                            // 0x0018fd90: addiu $sp, $sp, -0x60
-    func_0018fd90();  // 0x18fc60                                // 0x0018fda0: jal 0x18fc60
+    func_0018fc60();  // 18fc60                                // 0x0018fda0: jal 0x18fc60
     a0 = sp + 0x20;                                             // 0x0018fda4: addiu $a0, $sp, 0x20
-    func_001911e0();  // 0x191190                                // 0x0018fdac: jal 0x191190
+    func_00191190();  // 191190                                // 0x0018fdac: jal 0x191190
     a1 = sp + 0x20;                                             // 0x0018fdb0: addiu $a1, $sp, 0x20
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x0018fdb8: xori.b $w0, $w0, 0xb0
     return;                                                     // 0x0018fdbc: jr $ra

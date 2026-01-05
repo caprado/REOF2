@@ -27,7 +27,7 @@ label_0x1b566c:
     v1 = *(int32_t*)((a3) + 0x2c);                              // 0x001b5684: lw $v1, 0x2c($a3)
     if (t0 != 0) goto label_0x1b56a4;                           // 0x001b5688: bnez $t0, 0x1b56a4
     s0 = v1 + a1;                                               // 0x001b568c: addu $s0, $v1, $a1
-    func_00107b68();  // 0x107ab8                                // 0x001b5694: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x001b5694: jal 0x107ab8
     goto label_0x1b5714;                                        // 0x001b569c: b 0x1b5714
 label_0x1b56a4:
     a1 = *(int32_t*)((a0) + 0xc);                               // 0x001b56a4: lw $a1, 0xc($a0)

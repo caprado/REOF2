@@ -11,17 +11,17 @@ void func_001ba310() {
     v1 = *(int32_t*)((gp) + -0x6384);                           // 0x001ba318: lw $v1, -0x6384($gp)
     if (v1 == 0) goto label_0x1ba354;                           // 0x001ba31c: beqz $v1, 0x1ba354
     /* nop */                                                   // 0x001ba320: nop 
-    func_001ae0b0();  // 0x1ade90                                // 0x001ba324: jal 0x1ade90
+    func_001ade90();  // 1ade90                                // 0x001ba324: jal 0x1ade90
     /* nop */                                                   // 0x001ba328: nop 
-    func_001b3440();  // 0x1b3430                                // 0x001ba32c: jal 0x1b3430
+    func_001b3430();  // 1b3430                                // 0x001ba32c: jal 0x1b3430
     /* nop */                                                   // 0x001ba330: nop 
-    func_001a18c0();  // 0x1a17e0                                // 0x001ba334: jal 0x1a17e0
+    func_001a17e0();  // 1a17e0                                // 0x001ba334: jal 0x1a17e0
     /* nop */                                                   // 0x001ba338: nop 
-    func_001ba950();  // 0x1ba8f0                                // 0x001ba33c: jal 0x1ba8f0
+    func_001ba8f0();  // 1ba8f0                                // 0x001ba33c: jal 0x1ba8f0
     /* nop */                                                   // 0x001ba340: nop 
-    func_001ac9d0();  // 0x1ac9c0                                // 0x001ba344: jal 0x1ac9c0
+    func_001ac9c0();  // 1ac9c0                                // 0x001ba344: jal 0x1ac9c0
     /* nop */                                                   // 0x001ba348: nop 
-    func_001d3110();  // 0x1d30b0                                // 0x001ba34c: jal 0x1d30b0
+    func_001d30b0();  // 1d30b0                                // 0x001ba34c: jal 0x1d30b0
     /* nop */                                                   // 0x001ba350: nop 
 label_0x1ba354:
     return;                                                     // 0x001ba358: jr $ra

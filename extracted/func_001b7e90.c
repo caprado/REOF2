@@ -1,3 +1,4 @@
+/** @category audio/settings @status complete @author caprado */
 void func_001b7e90() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
@@ -22,7 +23,7 @@ label_0x1b7ea8:
     /* FPU: mul.s $f0, $f0, $f1 */                              // 0x001b7ecc: mul.s $f0, $f0, $f1
     /* FPU: cvt.w.s $f0, $f0 */                                 // 0x001b7ed0: cvt.w.s $f0, $f0
     /* move from FPU: $a1, $f0 */                               // 0x001b7ed4: mfc1 $a1, $f0
-    func_001adbe0();  // 0x1adab0                                // 0x001b7ed8: jal 0x1adab0
+    func_001adab0();  // 1adab0                                // 0x001b7ed8: jal 0x1adab0
     s0 = s0 + 1;                                                // 0x001b7ee0: addiu $s0, $s0, 1
     v1 = (s0 < 3) ? 1 : 0;                                      // 0x001b7ee4: slti $v1, $s0, 3
     if (v1 != 0) goto label_0x1b7ea8;                           // 0x001b7ee8: bnez $v1, 0x1b7ea8

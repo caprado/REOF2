@@ -9,19 +9,19 @@ void func_00135548() {
     sp = sp + -0x30;                                            // 0x00135548: addiu $sp, $sp, -0x30
     v0 = *(int8_t*)(s1);                                        // 0x00135568: lb $v0, 0($s1)
     if (v0 != 0) goto label_0x135588;                           // 0x0013556c: bnez $v0, 0x135588
-    func_00135940();  // 0x1358d8                                // 0x00135574: jal 0x1358d8
+    func_001358d8();  // 1358d8                                // 0x00135574: jal 0x1358d8
     /* nop */                                                   // 0x00135578: nop 
     v1 = *(int8_t*)(s1);                                        // 0x0013557c: lb $v1, 0($s1)
     if (v1 == 0) goto label_0x1355d4;                           // 0x00135580: beqz $v1, 0x1355d4
 label_0x135588:
-    func_00136d40();  // 0x136ca8                                // 0x0013558c: jal 0x136ca8
-    func_001352b8();  // 0x135220                                // 0x00135594: jal 0x135220
+    func_00136ca8();  // 136ca8                                // 0x0013558c: jal 0x136ca8
+    func_00135220();  // 135220                                // 0x00135594: jal 0x135220
     if (s0 != 0) goto label_0x1355d0;                           // 0x001355a0: bnez $s0, 0x1355d0
-    func_00135940();  // 0x1358d8                                // 0x001355a8: jal 0x1358d8
+    func_001358d8();  // 1358d8                                // 0x001355a8: jal 0x1358d8
     /* nop */                                                   // 0x001355ac: nop 
-    func_001352b8();  // 0x135220                                // 0x001355b0: jal 0x135220
+    func_00135220();  // 135220                                // 0x001355b0: jal 0x135220
     if (s0 == 0) goto label_0x1355d4;                           // 0x001355c0: beqz $s0, 0x1355d4
-    func_0010ae00();  // 0x10ac68                                // 0x001355c8: jal 0x10ac68
+    func_0010ac68();  // 10ac68                                // 0x001355c8: jal 0x10ac68
     /* nop */                                                   // 0x001355cc: nop 
 label_0x1355d0:
 label_0x1355d4:

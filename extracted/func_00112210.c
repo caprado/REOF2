@@ -25,7 +25,7 @@ void func_00112210() {
     if (a0 == v0) goto label_0x112328;                          // 0x0011226c: beq $a0, $v0, 0x112328
     goto label_0x11238c;                                        // 0x00112274: b 0x11238c
 label_0x11227c:
-    func_001123b0();  // 0x1123a0                                // 0x0011227c: jal 0x1123a0
+    func_001123a0();  // 1123a0                                // 0x0011227c: jal 0x1123a0
     /* nop */                                                   // 0x00112280: nop 
     v1 = 0x1200 << 16;                                          // 0x00112284: lui $v1, 0x1200
     a0 = 0x200;                                                 // 0x00112288: addiu $a0, $zero, 0x200
@@ -41,7 +41,7 @@ label_0x11227c:
     v0 = *(int32_t*)((s0) + 8);                                 // 0x001122c0: lw $v0, 8($s0)
     if (v0 == 0) goto label_0x1122e8;                           // 0x001122c4: beqz $v0, 0x1122e8
     *(uint16_t*)((s0) + 4) = v1;                                // 0x001122c8: sh $v1, 4($s0)
-    func_00114e28();  // 0x114dc0                                // 0x001122cc: jal 0x114dc0
+    func_00114dc0();  // 114dc0                                // 0x001122cc: jal 0x114dc0
     a0 = 2;                                                     // 0x001122d0: addiu $a0, $zero, 2
     a1 = *(int32_t*)((s0) + 0xc);                               // 0x001122d4: lw $a1, 0xc($s0)
     AddDmacHandler();  // 0x113fe0                              // 0x001122d8: jal 0x113fe0
@@ -60,7 +60,7 @@ label_0x112310:
     v0 = v0 | 0x1000;                                           // 0x00112318: ori $v0, $v0, 0x1000
     goto label_0x112388;                                        // 0x00112320: b 0x112388
 label_0x112328:
-    func_001123b0();  // 0x1123a0                                // 0x00112328: jal 0x1123a0
+    func_001123a0();  // 1123a0                                // 0x00112328: jal 0x1123a0
     /* nop */                                                   // 0x0011232c: nop 
     v1 = 0x1200 << 16;                                          // 0x00112330: lui $v1, 0x1200
     v1 = v1 | 0x1000;                                           // 0x00112338: ori $v1, $v1, 0x1000

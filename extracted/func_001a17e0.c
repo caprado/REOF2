@@ -1,3 +1,4 @@
+/** @category game/camera @status complete @author caprado */
 void func_001a17e0() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
@@ -7,7 +8,7 @@ void func_001a17e0() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x10;                                            // 0x001a17e0: addiu $sp, $sp, -0x10
-    func_001a5be0();  // 0x1a5b10                                // 0x001a17e8: jal 0x1a5b10
+    func_001a5b10();  // 1a5b10                                // 0x001a17e8: jal 0x1a5b10
     /* nop */                                                   // 0x001a17ec: nop 
     a0 = 0x2a << 16;                                            // 0x001a17f0: lui $a0, 0x2a
     *(uint8_t*)((gp) + -0x643c) = 0;                            // 0x001a17f4: sb $zero, -0x643c($gp)
@@ -49,9 +50,9 @@ label_0x1a1854:
     *(float*)((a0) + 0x28) = FPU_F2;  // Store float            // 0x001a1880: swc1 $f2, 0x28($a0)
     *(float*)((a0) + 0x2c) = FPU_F1;  // Store float            // 0x001a1884: swc1 $f1, 0x2c($a0)
     *(float*)((a0) + 0x30) = FPU_F0;  // Store float            // 0x001a1888: swc1 $f0, 0x30($a0)
-    func_001a1910();  // 0x1a18c0                                // 0x001a188c: jal 0x1a18c0
+    func_001a18c0();  // 1a18c0                                // 0x001a188c: jal 0x1a18c0
     a1 = g_002a0f48;  // Global at 0x002a0f48                   // 0x001a1890: lw $a1, 8($v0)
-    func_001a1990();  // 0x1a1910                                // 0x001a1894: jal 0x1a1910
+    func_001a1910();  // 1a1910                                // 0x001a1894: jal 0x1a1910
     a0 = *(int32_t*)((gp) + -0x6430);                           // 0x001a1898: lw $a0, -0x6430($gp)
     a0 = *(int32_t*)((gp) + -0x6430);                           // 0x001a189c: lw $a0, -0x6430($gp)
     v1 = g_002a0f50;  // Global at 0x002a0f50                   // 0x001a18a0: lw $v1, 0x10($a0)

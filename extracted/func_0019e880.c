@@ -1,3 +1,4 @@
+/** @category system/ps2 @status complete @author caprado */
 void func_0019e880() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
@@ -31,7 +32,7 @@ label_0x19e8bc:
     v0 = *(int32_t*)((a0) + 8);                                 // 0x0019e8d0: lw $v0, 8($a0)
     *(uint32_t*)(v0) = v1;                                      // 0x0019e8d4: sw $v1, 0($v0)
 label_0x19e8d8:
-    func_0018da10();  // 0x18d9e0                                // 0x0019e8d8: jal 0x18d9e0
+    func_0018d9e0();  // 18d9e0                                // 0x0019e8d8: jal 0x18d9e0
     a2 = 0x1c;                                                  // 0x0019e8dc: addiu $a2, $zero, 0x1c
     v1 = *(int32_t*)((gp) + -0x6480);                           // 0x0019e8e0: lw $v1, -0x6480($gp)
     v1 = v1 + -1;                                               // 0x0019e8e4: addiu $v1, $v1, -1

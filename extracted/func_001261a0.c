@@ -26,7 +26,7 @@ void func_001261a0() {
     /* FPU: c.eq.s $f20, $f20 */                                // 0x0012621c: c.eq.s $f20, $f20
     /* bc1t 0x126234 */                                         // 0x00126220: bc1t 0x126234
     /* FPU: mov.s $f21, $f20 */                                 // 0x00126224: mov.s $f21, $f20
-    func_00122430();  // 0x1223c8                                // 0x00126228: jal 0x1223c8
+    func_001223c8();  // 1223c8                                // 0x00126228: jal 0x1223c8
     /* nop */                                                   // 0x0012622c: nop 
     /* FPU: mov.s $f21, $f0 */                                  // 0x00126230: mov.s $f21, $f0
     /* move to FPU: $s0, $f12 */                                // 0x00126234: mtc1 $s0, $f12
@@ -40,14 +40,14 @@ void func_001261a0() {
     /* nop */                                                   // 0x00126254: nop 
     /* nop */                                                   // 0x00126258: nop 
     /* FPU: div.s $f12, $f12, $f1 */                            // 0x0012625c: div.s $f12, $f12, $f1
-    func_00122168();  // 0x122090                                // 0x00126260: jal 0x122090
+    func_00122090();  // 122090                                // 0x00126260: jal 0x122090
     /* nop */                                                   // 0x00126264: nop 
     /* FPU: mov.s $f12, $f22 */                                 // 0x00126268: mov.s $f12, $f22
     /* FPU: mov.s $f1, $f20 */                                  // 0x0012626c: mov.s $f1, $f20
     /* FPU: c.eq.s $f1, $f1 */                                  // 0x00126270: c.eq.s $f1, $f1
     /* bc1t 0x126288 */                                         // 0x00126274: bc1t 0x126288
     /* FPU: sub.s $f21, $f21, $f0 */                            // 0x00126278: sub.s $f21, $f21, $f0
-    func_00122430();  // 0x1223c8                                // 0x0012627c: jal 0x1223c8
+    func_001223c8();  // 1223c8                                // 0x0012627c: jal 0x1223c8
     /* nop */                                                   // 0x00126280: nop 
     /* FPU: mov.s $f1, $f0 */                                   // 0x00126284: mov.s $f1, $f0
     at = 0x3f80 << 16;                                          // 0x00126288: lui $at, 0x3f80
@@ -61,7 +61,7 @@ void func_001261a0() {
     /* FPU: c.eq.s $f0, $f0 */                                  // 0x001262ac: c.eq.s $f0, $f0
     /* bc1tl 0x1262c4 */                                        // 0x001262b0: bc1tl 0x1262c4
     /* FPU: sub.s $f0, $f21, $f0 */                             // 0x001262b4: sub.s $f0, $f21, $f0
-    func_00122430();  // 0x1223c8                                // 0x001262b8: jal 0x1223c8
+    func_001223c8();  // 1223c8                                // 0x001262b8: jal 0x1223c8
     /* nop */                                                   // 0x001262bc: nop 
     /* FPU: sub.s $f0, $f21, $f0 */                             // 0x001262c0: sub.s $f0, $f21, $f0
     FPU_F21 = *(float*)((sp) + 0x30);  // Load float            // 0x001262c4: lwc1 $f21, 0x30($sp)

@@ -14,7 +14,7 @@ void func_001750b0() {
 label_0x1750e0:
     s1 = s1 + 4;                                                // 0x001750e0: addiu $s1, $s1, 4
     if (v0 == 0) goto label_0x1750f8;                           // 0x001750e4: beqz $v0, 0x1750f8
-    func_00175170();  // 0x175120                                // 0x001750f0: jal 0x175120
+    func_00175120();  // 175120                                // 0x001750f0: jal 0x175120
 label_0x1750f8:
     s0 = s0 + -1;                                               // 0x001750f8: addiu $s0, $s0, -1
     if (s0 >= 0) goto label_0x1750e0;                           // 0x001750fc: bgezl $s0, 0x1750e0

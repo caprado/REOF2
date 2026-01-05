@@ -1,3 +1,4 @@
+/** @category: graphics/init @status: complete @author: caprado */
 void func_001a5890() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
@@ -7,12 +8,12 @@ void func_001a5890() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x50;                                            // 0x001a5890: addiu $sp, $sp, -0x50
-    func_001a6250();  // 0x1a6210                                // 0x001a5898: jal 0x1a6210
+    func_001a6210();  // 1a6210                                // 0x001a5898: jal 0x1a6210
     if (v0 != 0) goto label_0x1a58b0;                           // 0x001a58a0: bnez $v0, 0x1a58b0
     /* nop */                                                   // 0x001a58a4: nop 
     goto label_0x1a5a50;                                        // 0x001a58a8: b 0x1a5a50
 label_0x1a58b0:
-    func_001a5c40();  // 0x1a5be0                                // 0x001a58b0: jal 0x1a5be0
+    func_001a5be0();  // 1a5be0                                // 0x001a58b0: jal 0x1a5be0
     /* nop */                                                   // 0x001a58b4: nop 
     v0 = 0xff;                                                  // 0x001a58b8: addiu $v0, $zero, 0xff
     at = 0x2a << 16;                                            // 0x001a58bc: lui $at, 0x2a
@@ -44,7 +45,7 @@ label_0x1a58b0:
     g_002a0f28 = v1;  // Global at 0x002a0f28                   // 0x001a592c: sw $v1, 8($a2)
     v1 = *(int32_t*)((gp) + -0x7d68);                           // 0x001a5930: lw $v1, -0x7d68($gp)
     if (v1 != v0) goto label_0x1a594c;                          // 0x001a5934: bne $v1, $v0, 0x1a594c
-    func_001a62d0();  // 0x1a6250                                // 0x001a593c: jal 0x1a6250
+    func_001a6250();  // 1a6250                                // 0x001a593c: jal 0x1a6250
     goto label_0x1a5a14;                                        // 0x001a5944: b 0x1a5a14
 label_0x1a594c:
     if (v1 != 0) goto label_0x1a59c4;                           // 0x001a594c: bnez $v1, 0x1a59c4
@@ -56,7 +57,7 @@ label_0x1a595c:
     v1 = v1 + s0;                                               // 0x001a5968: addu $v1, $v1, $s0
     v0 = v0 + 0xf20;                                            // 0x001a596c: addiu $v0, $v0, 0xf20
     v1 = v1 << 3;                                               // 0x001a5970: sll $v1, $v1, 3
-    func_001a62d0();  // 0x1a6250                                // 0x001a5978: jal 0x1a6250
+    func_001a6250();  // 1a6250                                // 0x001a5978: jal 0x1a6250
     a2 = v0 + v1;                                               // 0x001a597c: addu $a2, $v0, $v1
     s0 = s0 + 1;                                                // 0x001a5980: addiu $s0, $s0, 1
 label_0x1a5984:
@@ -71,12 +72,12 @@ label_0x1a5984:
     v0 = v0 + 0xf20;                                            // 0x001a59a4: addiu $v0, $v0, 0xf20
     v1 = v1 << 3;                                               // 0x001a59a8: sll $v1, $v1, 3
     a0 = 1;                                                     // 0x001a59ac: addiu $a0, $zero, 1
-    func_001a62d0();  // 0x1a6250                                // 0x001a59b4: jal 0x1a6250
+    func_001a6250();  // 1a6250                                // 0x001a59b4: jal 0x1a6250
     a2 = v0 + v1;                                               // 0x001a59b8: addu $a2, $v0, $v1
     goto label_0x1a5a10;                                        // 0x001a59bc: b 0x1a5a10
     /* nop */                                                   // 0x001a59c0: nop 
 label_0x1a59c4:
-    func_001a62d0();  // 0x1a6250                                // 0x001a59c4: jal 0x1a6250
+    func_001a6250();  // 1a6250                                // 0x001a59c4: jal 0x1a6250
     goto label_0x1a5a00;                                        // 0x001a59cc: b 0x1a5a00
 label_0x1a59d4:
     a0 = *(int32_t*)((gp) + -0x7d68);                           // 0x001a59d4: lw $a0, -0x7d68($gp)
@@ -86,7 +87,7 @@ label_0x1a59d4:
     v1 = v1 + a1;                                               // 0x001a59e4: addu $v1, $v1, $a1
     v0 = v0 + 0xf20;                                            // 0x001a59e8: addiu $v0, $v0, 0xf20
     v1 = v1 << 3;                                               // 0x001a59ec: sll $v1, $v1, 3
-    func_001a62d0();  // 0x1a6250                                // 0x001a59f4: jal 0x1a6250
+    func_001a6250();  // 1a6250                                // 0x001a59f4: jal 0x1a6250
     a2 = v0 + v1;                                               // 0x001a59f8: addu $a2, $v0, $v1
     s0 = s0 + 1;                                                // 0x001a59fc: addiu $s0, $s0, 1
 label_0x1a5a00:

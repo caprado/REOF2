@@ -8,14 +8,14 @@ void func_001a54d0() {
     
     sp = sp + -0x10;                                            // 0x001a54d0: addiu $sp, $sp, -0x10
     a1 = 0x10;                                                  // 0x001a54e0: addiu $a1, $zero, 0x10
-    func_001a54d0();  // 0x1a5460                                // 0x001a54e4: jal 0x1a5460
+    func_001a5460();  // 1a5460                                // 0x001a54e4: jal 0x1a5460
     t2 = t2 + v0;                                               // 0x001a54ec: addu $t2, $t2, $v0
     goto label_0x1a5528;                                        // 0x001a54f4: b 0x1a5528
 label_0x1a54fc:
     v0 = *(uint16_t*)((a3) + 6);                                // 0x001a54fc: lhu $v0, 6($a3)
     at = (t0 < v0) ? 1 : 0;                                     // 0x001a5500: slt $at, $t0, $v0
     if (at == 0) goto label_0x1a5534;                           // 0x001a5504: beqz $at, 0x1a5534
-    func_001a54d0();  // 0x1a5460                                // 0x001a550c: jal 0x1a5460
+    func_001a5460();  // 1a5460                                // 0x001a550c: jal 0x1a5460
     a1 = 0x30;                                                  // 0x001a5510: addiu $a1, $zero, 0x30
     t2 = t2 + v0;                                               // 0x001a5514: addu $t2, $t2, $v0
     t0 = t0 + 1;                                                // 0x001a5518: addiu $t0, $t0, 1

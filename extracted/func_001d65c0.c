@@ -8,13 +8,13 @@ void func_001d65c0() {
     
     sp = sp + -0x30;                                            // 0x001d65c0: addiu $sp, $sp, -0x30
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001d65c8: addu.qb $zero, $sp, $s1
-    func_001d65c0();  // 0x1d6560                                // 0x001d65dc: jal 0x1d6560
+    func_001d6560();  // 1d6560                                // 0x001d65dc: jal 0x1d6560
     if (s0 != 0) goto label_0x1d65f8;                           // 0x001d65e8: bnez $s0, 0x1d65f8
     /* nop */                                                   // 0x001d65ec: nop 
     goto label_0x1d6610;                                        // 0x001d65f0: b 0x1d6610
 label_0x1d65f8:
     a1 = *(int32_t*)((s0) + 4);                                 // 0x001d65f8: lw $a1, 4($s0)
-    func_00107b68();  // 0x107ab8                                // 0x001d6600: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x001d6600: jal 0x107ab8
     a2 = 0xc84;                                                 // 0x001d6604: addiu $a2, $zero, 0xc84
     *(uint16_t*)((s0) + 0xa) = s1;                              // 0x001d6608: sh $s1, 0xa($s0)
     v0 = 1;                                                     // 0x001d660c: addiu $v0, $zero, 1

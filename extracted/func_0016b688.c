@@ -31,14 +31,14 @@ void func_0016b688() {
     sp = sp + 0x10;                                             // 0x0016b700: addiu $sp, $sp, 0x10
     /* nop */                                                   // 0x0016b704: nop 
     sp = sp + -0x30;                                            // 0x0016b708: addiu $sp, $sp, -0x30
-    func_0016b8a8();  // 0x16b858                                // 0x0016b720: jal 0x16b858
+    func_0016b858();  // 16b858                                // 0x0016b720: jal 0x16b858
     /* beqzl $s0, 0x16b794 */                                   // 0x0016b72c: beqzl $s0, 0x16b794
     v1 = *(int32_t*)(s0);                                       // 0x0016b734: lw $v1, 0($s0)
     if (v1 == 0) goto label_0x16b790;                           // 0x0016b738: beqz $v1, 0x16b790
     s2 = *(int32_t*)((s1) + 0x1aec);                            // 0x0016b740: lw $s2, 0x1aec($s1)
-    func_00168fa0();  // 0x168f38                                // 0x0016b744: jal 0x168f38
-    func_0016b7b8();  // 0x16b7b0                                // 0x0016b74c: jal 0x16b7b0
-    func_0016b858();  // 0x16b7b8                                // 0x0016b760: jal 0x16b7b8
+    func_00168f38();  // 168f38                                // 0x0016b744: jal 0x168f38
+    func_0016b7b0();  // 16b7b0                                // 0x0016b74c: jal 0x16b7b0
+    func_0016b7b8();  // 16b7b8                                // 0x0016b760: jal 0x16b7b8
     s3 = s1 + 0xcc0;                                            // 0x0016b764: addiu $s3, $s1, 0xcc0
     /* bnezl $v0, 0x16b794 */                                   // 0x0016b768: bnezl $v0, 0x16b794
     v1 = *(int32_t*)((s0) + 0x1c);                              // 0x0016b770: lw $v1, 0x1c($s0)

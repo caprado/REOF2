@@ -16,11 +16,11 @@ void func_001d9170() {
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001d919c: addu.qb $zero, $sp, $s1
     a0 = sp + 0x80;                                             // 0x001d91a8: addiu $a0, $sp, 0x80
     s1 = g_003137fc;  // Global at 0x003137fc                   // 0x001d91ac: lw $s1, 0x37fc($at)
-    func_0010ae00();  // 0x10ac68                                // 0x001d91b0: jal 0x10ac68
+    func_0010ac68();  // 10ac68                                // 0x001d91b0: jal 0x10ac68
     s0 = s1 + v0;                                               // 0x001d91b4: addu $s0, $s1, $v0
     a0 = sp + 0x80;                                             // 0x001d91b8: addiu $a0, $sp, 0x80
     a2 = 1;                                                     // 0x001d91c0: addiu $a2, $zero, 1
-    func_001d33e0();  // 0x1d3390                                // 0x001d91c4: jal 0x1d3390
+    func_001d3390();  // 1d3390                                // 0x001d91c4: jal 0x1d3390
     if (v0 == 0) goto label_0x1d9230;                           // 0x001d91cc: beqz $v0, 0x1d9230
     /* nop */                                                   // 0x001d91d0: nop 
     s6 = *(int32_t*)((s1) + 4);                                 // 0x001d91d4: lw $s6, 4($s1)
@@ -30,10 +30,10 @@ void func_001d9170() {
 label_0x1d91e8:
     v0 = *(int32_t*)(s5);                                       // 0x001d91e8: lw $v0, 0($s5)
     a0 = s1 + v0;                                               // 0x001d91f0: addu $a0, $s1, $v0
-    func_001aeef0();  // 0x1aee20                                // 0x001d91f4: jal 0x1aee20
+    func_001aee20();  // 1aee20                                // 0x001d91f4: jal 0x1aee20
     s5 = s5 + 8;                                                // 0x001d91f8: addiu $s5, $s5, 8
-    func_001d36b0();  // 0x1d3600                                // 0x001d9200: jal 0x1d3600
-    func_001d3d20();  // 0x1d3cb0                                // 0x001d9208: jal 0x1d3cb0
+    func_001d3600();  // 1d3600                                // 0x001d9200: jal 0x1d3600
+    func_001d3cb0();  // 1d3cb0                                // 0x001d9208: jal 0x1d3cb0
     *(uint32_t*)(s2) = v0;                                      // 0x001d9210: sw $v0, 0($s2)
     s4 = s4 + 1;                                                // 0x001d9214: addiu $s4, $s4, 1
     s2 = s2 + 4;                                                // 0x001d9218: addiu $s2, $s2, 4

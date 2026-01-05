@@ -11,7 +11,7 @@ void func_001dbe90() {
     
     sp = sp + -0x30;                                            // 0x001dbe90: addiu $sp, $sp, -0x30
     a0 = 0x33 << 16;                                            // 0x001dbea0: lui $a0, 0x33
-    func_001dc598();  // 0x1dc4f0                                // 0x001dbea4: jal 0x1dc4f0
+    func_001dc4f0();  // 1dc4f0                                // 0x001dbea4: jal 0x1dc4f0
     a0 = a0 + -0x290;                                           // 0x001dbea8: addiu $a0, $a0, -0x290
     local_2c = v0;                                              // 0x001dbeac: sw $v0, 0x2c($sp)
     v0 = local_2c;                                              // 0x001dbeb0: lw $v0, 0x2c($sp)
@@ -19,7 +19,7 @@ void func_001dbe90() {
     *(uint8_t*)(s0) = 0;                                        // 0x001dbebc: sb $zero, 0($s0)
     goto label_0x1dbf18;                                        // 0x001dbec0: b 0x1dbf18
 label_0x1dbec8:
-    func_001dcac8();  // 0x1dca18                                // 0x001dbec8: jal 0x1dca18
+    func_001dca18();  // 1dca18                                // 0x001dbec8: jal 0x1dca18
     a1 = sp + 0x2c;                                             // 0x001dbecc: addiu $a1, $sp, 0x2c
     *(uint32_t*)((gp) + -0x6214) = v0;                          // 0x001dbed0: sw $v0, -0x6214($gp)
     v0 = *(int32_t*)((gp) + -0x6214);                           // 0x001dbed4: lw $v0, -0x6214($gp)

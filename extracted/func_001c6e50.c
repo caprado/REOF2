@@ -11,12 +11,12 @@ void func_001c6e50() {
     a1 = v0 | 0x50;                                             // 0x001c6e5c: ori $a1, $v0, 0x50
     a2 = *(int32_t*)((a0) + 0x20);                              // 0x001c6e64: lw $a2, 0x20($a0)
     s0 = *(int32_t*)((a0) + 0xec);                              // 0x001c6e68: lw $s0, 0xec($a0)
-    func_001c7310();  // 0x1c7230                                // 0x001c6e6c: jal 0x1c7230
+    func_001c7230();  // 1c7230                                // 0x001c6e6c: jal 0x1c7230
     if (v0 >= 0) goto label_0x1c6e84;                           // 0x001c6e74: bgez $v0, 0x1c6e84
     goto label_0x1c6e90;                                        // 0x001c6e7c: b 0x1c6e90
     v0 = -1;                                                    // 0x001c6e80: addiu $v0, $zero, -1
 label_0x1c6e84:
-    func_001c6dc0();  // 0x1c6d20                                // 0x001c6e84: jal 0x1c6d20
+    func_001c6d20();  // 1c6d20                                // 0x001c6e84: jal 0x1c6d20
     /* nop */                                                   // 0x001c6e88: nop 
 label_0x1c6e90:
     /* FPU: xori.b $w0, $w0, 0xb0 */                            // 0x001c6e94: xori.b $w0, $w0, 0xb0

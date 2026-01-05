@@ -1,3 +1,4 @@
+/** @category game/init @status complete @author caprado */
 void func_001d3110() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
@@ -14,10 +15,10 @@ void func_001d3110() {
     v0 = v0 + -0x1f10;                                          // 0x001d311c: addiu $v0, $v0, -0x1f10
     *(uint32_t*)((gp) + -0x6240) = v0;                          // 0x001d3120: sw $v0, -0x6240($gp)
     a0 = *(int32_t*)((gp) + -0x6240);                           // 0x001d3128: lw $a0, -0x6240($gp)
-    func_00107d30();  // 0x107c70                                // 0x001d312c: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001d312c: jal 0x107c70
     a2 = 0x98;                                                  // 0x001d3130: addiu $a2, $zero, 0x98
     a0 = sp + 0x10;                                             // 0x001d3134: addiu $a0, $sp, 0x10
-    func_00107d30();  // 0x107c70                                // 0x001d313c: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001d313c: jal 0x107c70
     a2 = 0x20;                                                  // 0x001d3140: addiu $a2, $zero, 0x20
     FPU_F0 = *(float*)((gp) + -0x7fe0);  // Load float          // 0x001d3144: lwc1 $f0, -0x7fe0($gp)
     v0 = 1;                                                     // 0x001d3148: addiu $v0, $zero, 1
@@ -25,7 +26,7 @@ void func_001d3110() {
     a0 = sp + 0x10;                                             // 0x001d3150: addiu $a0, $sp, 0x10
     local_18 = v0;                                              // 0x001d3154: sw $v0, 0x18($sp)
     local_1c = 0;                                               // 0x001d3158: sb $zero, 0x1c($sp)
-    func_0015e4d8();  // 0x15e360                                // 0x001d315c: jal 0x15e360
+    func_0015e360();  // 15e360                                // 0x001d315c: jal 0x15e360
     *(float*)((sp) + 0x10) = FPU_F0;  // Store float            // 0x001d3160: swc1 $f0, 0x10($sp)
     return;                                                     // 0x001d3168: jr $ra
     sp = sp + 0x30;                                             // 0x001d316c: addiu $sp, $sp, 0x30

@@ -8,19 +8,19 @@ void func_001775b0() {
     
     sp = sp + -0x20;                                            // 0x001775b0: addiu $sp, $sp, -0x20
     a2 = 2;                                                     // 0x001775b4: addiu $a2, $zero, 2
-    func_00177808();  // 0x1777d0                                // 0x001775cc: jal 0x1777d0
+    func_001777d0();  // 1777d0                                // 0x001775cc: jal 0x1777d0
     a1 = 1;                                                     // 0x001775d0: addiu $a1, $zero, 1
     a1 = 2;                                                     // 0x001775d8: addiu $a1, $zero, 2
-    func_00177730();  // 0x177710                                // 0x001775dc: jal 0x177710
+    func_00177710();  // 177710                                // 0x001775dc: jal 0x177710
     a2 = 3;                                                     // 0x001775e0: addiu $a2, $zero, 3
     v0 = *(int32_t*)((s0) + 0x10);                              // 0x001775e8: lw $v0, 0x10($s0)
     a1 = 3;                                                     // 0x001775ec: addiu $a1, $zero, 3
     if (v0 == 0) goto label_0x177630;                           // 0x001775f0: beqz $v0, 0x177630
     a2 = 4;                                                     // 0x001775f4: addiu $a2, $zero, 4
-    func_00177808();  // 0x1777d0                                // 0x001775f8: jal 0x1777d0
+    func_001777d0();  // 1777d0                                // 0x001775f8: jal 0x1777d0
     /* nop */                                                   // 0x001775fc: nop 
     a1 = 4;                                                     // 0x00177604: addiu $a1, $zero, 4
-    func_00177730();  // 0x177710                                // 0x00177608: jal 0x177710
+    func_00177710();  // 177710                                // 0x00177608: jal 0x177710
     a2 = 5;                                                     // 0x0017760c: addiu $a2, $zero, 5
     a1 = 5;                                                     // 0x00177618: addiu $a1, $zero, 5
     a2 = 6;                                                     // 0x00177620: addiu $a2, $zero, 6
@@ -34,19 +34,19 @@ label_0x177630:
     /* nop */                                                   // 0x0017764c: nop 
     sp = sp + -0x20;                                            // 0x00177650: addiu $sp, $sp, -0x20
     a2 = 3;                                                     // 0x00177654: addiu $a2, $zero, 3
-    func_00177808();  // 0x1777d0                                // 0x0017766c: jal 0x1777d0
+    func_001777d0();  // 1777d0                                // 0x0017766c: jal 0x1777d0
     a1 = 2;                                                     // 0x00177670: addiu $a1, $zero, 2
     a1 = 3;                                                     // 0x00177678: addiu $a1, $zero, 3
-    func_00177730();  // 0x177710                                // 0x0017767c: jal 0x177710
+    func_00177710();  // 177710                                // 0x0017767c: jal 0x177710
     a2 = 4;                                                     // 0x00177680: addiu $a2, $zero, 4
     v0 = *(int32_t*)((s0) + 0x14);                              // 0x00177688: lw $v0, 0x14($s0)
     a1 = 4;                                                     // 0x0017768c: addiu $a1, $zero, 4
     if (v0 == 0) goto label_0x1776d0;                           // 0x00177690: beqz $v0, 0x1776d0
     a2 = 5;                                                     // 0x00177694: addiu $a2, $zero, 5
-    func_00177808();  // 0x1777d0                                // 0x00177698: jal 0x1777d0
+    func_001777d0();  // 1777d0                                // 0x00177698: jal 0x1777d0
     /* nop */                                                   // 0x0017769c: nop 
     a1 = 5;                                                     // 0x001776a4: addiu $a1, $zero, 5
-    func_00177730();  // 0x177710                                // 0x001776a8: jal 0x177710
+    func_00177710();  // 177710                                // 0x001776a8: jal 0x177710
     a2 = 6;                                                     // 0x001776ac: addiu $a2, $zero, 6
     a1 = 6;                                                     // 0x001776b8: addiu $a1, $zero, 6
     a2 = 7;                                                     // 0x001776c0: addiu $a2, $zero, 7

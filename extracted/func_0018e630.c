@@ -17,7 +17,7 @@ void func_0018e630() {
     /* FPU: mov.s $f20, $f12 */                                 // 0x0018e64c: mov.s $f20, $f12
     local_38 = 0;                                               // 0x0018e650: sw $zero, 0x38($sp)
     a3 = *(int16_t*)(s0);                                       // 0x0018e654: lh $a3, 0($s0)
-    func_0018f030();  // 0x18ee90                                // 0x0018e658: jal 0x18ee90
+    func_0018ee90();  // 18ee90                                // 0x0018e658: jal 0x18ee90
     a1 = sp + 0x3c;                                             // 0x0018e65c: addiu $a1, $sp, 0x3c
     *(uint16_t*)(s0) = v0;                                      // 0x0018e660: sh $v0, 0($s0)
     t0 = local_38;                                              // 0x0018e664: lw $t0, 0x38($sp)
@@ -54,7 +54,7 @@ label_0x18e6a8:
     /* move to FPU: $v0, $f0 */                                 // 0x0018e6d8: mtc1 $v0, $f0
     /* nop */                                                   // 0x0018e6dc: nop 
     /* FPU: cvt.s.w $f15, $f1 */                                // 0x0018e6e0: cvt.s.w $f15, $f1
-    func_0018f0b0();  // 0x18f030                                // 0x0018e6e4: jal 0x18f030
+    func_0018f030();  // 18f030                                // 0x0018e6e4: jal 0x18f030
     /* FPU: cvt.s.w $f16, $f0 */                                // 0x0018e6e8: cvt.s.w $f16, $f0
     goto label_0x18e760;                                        // 0x0018e6ec: b 0x18e760
 label_0x18e6f4:
@@ -79,7 +79,7 @@ label_0x18e6f4:
     /* move to FPU: $v0, $f0 */                                 // 0x0018e73c: mtc1 $v0, $f0
     /* nop */                                                   // 0x0018e740: nop 
     /* FPU: cvt.s.w $f17, $f1 */                                // 0x0018e744: cvt.s.w $f17, $f1
-    func_0018f3a0();  // 0x18f0b0                                // 0x0018e748: jal 0x18f0b0
+    func_0018f0b0();  // 18f0b0                                // 0x0018e748: jal 0x18f0b0
     /* FPU: cvt.s.w $f18, $f0 */                                // 0x0018e74c: cvt.s.w $f18, $f0
     goto label_0x18e75c;                                        // 0x0018e750: b 0x18e75c
     /* nop */                                                   // 0x0018e754: nop 

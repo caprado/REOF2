@@ -8,13 +8,13 @@ void func_0011ee58() {
     
     sp = sp + -0x10;                                            // 0x0011ee58: addiu $sp, $sp, -0x10
     if (a0 < 0) goto label_0x11ee74;                            // 0x0011ee5c: bltz $a0, 0x11ee74
-    func_00111160();  // 0x111078                                // 0x0011ee64: jal 0x111078
+    func_00111078();  // 111078                                // 0x0011ee64: jal 0x111078
     /* nop */                                                   // 0x0011ee68: nop 
     goto label_0x11ee88;                                        // 0x0011ee6c: b 0x11ee88
     /* FPU: mov.s $f1, $f0 */                                   // 0x0011ee70: mov.s $f1, $f0
 label_0x11ee74:
     a0 = a0 & 1;                                                // 0x0011ee78: andi $a0, $a0, 1
-    func_00111160();  // 0x111078                                // 0x0011ee7c: jal 0x111078
+    func_00111078();  // 111078                                // 0x0011ee7c: jal 0x111078
     a0 = a0 | v0;                                               // 0x0011ee80: or $a0, $a0, $v0
     /* FPU: add.s $f1, $f0, $f0 */                              // 0x0011ee84: add.s $f1, $f0, $f0
 label_0x11ee88:

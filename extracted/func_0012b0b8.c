@@ -36,7 +36,7 @@ void func_0012b0b8() {
     iChangeThreadPriority();  // 0x114170                       // 0x0012b128: jal 0x114170
     a1 = g_001f6a78;  // Global at 0x001f6a78                   // 0x0012b12c: lw $a1, 0x6a78($v0)
     a0 = g_001f6aec;  // Global at 0x001f6aec                   // 0x0012b130: lw $a0, 0($s0)
-    func_0012ae78();  // 0x12ae18                                // 0x0012b134: jal 0x12ae18
+    func_0012ae18();  // 12ae18                                // 0x0012b134: jal 0x12ae18
     /* nop */                                                   // 0x0012b138: nop 
     v1 = g_001f6aec;  // Global at 0x001f6aec                   // 0x0012b13c: lw $v1, 0($s0)
     return;                                                     // 0x0012b148: jr $ra

@@ -12,7 +12,7 @@ void func_001876a8() {
     s0 = 0x28 << 16;                                            // 0x001876b8: lui $s0, 0x28
     PollSema();  // 0x114320                                    // 0x001876c4: jal 0x114320
     s1 = s0 + -0xec0;                                           // 0x001876c8: addiu $s1, $s0, -0xec0
-    func_00114c70();  // 0x114bd8                                // 0x001876d0: jal 0x114bd8
+    func_00114bd8();  // 114bd8                                // 0x001876d0: jal 0x114bd8
     a1 = s1 + 0x7f;                                             // 0x001876d4: addiu $a1, $s1, 0x7f
     v0 = g_0027f140;  // Global at 0x0027f140                   // 0x001876d8: lw $v0, -0xec0($s0)
     if (v0 <= 0) goto label_0x1876e4;                           // 0x001876dc: blezl $v0, 0x1876e4

@@ -26,7 +26,7 @@ void func_001b8380() {
     v1 = v1 << 2;                                               // 0x001b83cc: sll $v1, $v1, 2
     v0 = v0 + v1;                                               // 0x001b83d0: addu $v0, $v0, $v1
     t2 = g_00724131;  // Global at 0x00724131                   // 0x001b83d4: lbu $t2, 0($v0)
-    func_001b8c20();  // 0x1b8b40                                // 0x001b83d8: jal 0x1b8b40
+    func_001b8b40();  // 1b8b40                                // 0x001b83d8: jal 0x1b8b40
     a0 = 0xd;                                                   // 0x001b83dc: addiu $a0, $zero, 0xd
 label_0x1b83e0:
     return;                                                     // 0x001b83e4: jr $ra

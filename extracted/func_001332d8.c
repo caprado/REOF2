@@ -24,20 +24,20 @@ label_0x133324:
     sp = sp + 0x20;                                             // 0x00133340: addiu $sp, $sp, 0x20
     /* nop */                                                   // 0x00133344: nop 
 label_0x133348:
-    func_00131bb8();  // 0x131af8                                // 0x00133348: jal 0x131af8
+    func_00131af8();  // 131af8                                // 0x00133348: jal 0x131af8
     /* nop */                                                   // 0x0013334c: nop 
-    func_001261b8();  // 0x1261a0                                // 0x00133350: jal 0x1261a0
+    func_001261a0();  // 1261a0                                // 0x00133350: jal 0x1261a0
     /* nop */                                                   // 0x00133354: nop 
-    func_0013f0e8();  // 0x13f020                                // 0x0013335c: jal 0x13f020
+    func_0013f020();  // 13f020                                // 0x0013335c: jal 0x13f020
     if (v0 != 0) goto label_0x133398;                           // 0x00133368: bnez $v0, 0x133398
-    func_001261d0();  // 0x1261b8                                // 0x00133370: jal 0x1261b8
+    func_001261b8();  // 1261b8                                // 0x00133370: jal 0x1261b8
     /* nop */                                                   // 0x00133374: nop 
     a0 = 0x22 << 16;                                            // 0x00133378: lui $a0, 0x22
     a0 = &str_00223eb0;  // "E02080810 ADXT_StartMemIdx: parameter error" // 0x00133380: addiu $a0, $a0, 0x3eb0
     return func_00127de8();  // Tail call                        // 0x00133390: j 0x127d90
     sp = sp + 0x20;                                             // 0x00133394: addiu $sp, $sp, 0x20
 label_0x133398:
-    func_00131910();  // 0x131820                                // 0x00133398: jal 0x131820
+    func_00131820();  // 131820                                // 0x00133398: jal 0x131820
     /* nop */                                                   // 0x0013339c: nop 
     v0 = 2;                                                     // 0x001333a0: addiu $v0, $zero, 2
     *(uint8_t*)((s0) + 2) = v0;                                 // 0x001333a4: sb $v0, 2($s0)
@@ -58,7 +58,7 @@ label_0x133400:
     sp = sp + 0x30;                                             // 0x00133420: addiu $sp, $sp, 0x30
     /* nop */                                                   // 0x00133424: nop 
 label_0x133428:
-    func_00131bb8();  // 0x131af8                                // 0x00133428: jal 0x131af8
+    func_00131af8();  // 131af8                                // 0x00133428: jal 0x131af8
     s3 = 0xff << 16;                                            // 0x0013342c: lui $s3, 0xff
     v1 = *(int32_t*)((s1) + 4);                                 // 0x00133430: lw $v1, 4($s1)
     a1 = v1 >> 8;                                               // 0x00133434: sra $a1, $v1, 8
@@ -73,7 +73,7 @@ label_0x133428:
     v0 = (s0 < v0) ? 1 : 0;                                     // 0x00133458: slt $v0, $s0, $v0
     /* beqzl $v0, 0x133518 */                                   // 0x0013345c: beqzl $v0, 0x133518
     if (s0 < 0) goto label_0x133518;                            // 0x00133464: bltzl $s0, 0x133518
-    func_001261b8();  // 0x1261a0                                // 0x0013346c: jal 0x1261a0
+    func_001261a0();  // 1261a0                                // 0x0013346c: jal 0x1261a0
     /* nop */                                                   // 0x00133470: nop 
     a1 = 0x4000 << 16;                                          // 0x00133474: lui $a1, 0x4000
     v0 = s0 << 3;                                               // 0x00133478: sll $v0, $s0, 3
@@ -88,17 +88,17 @@ label_0x133428:
     a0 = a0 | v1;                                               // 0x0013349c: or $a0, $a0, $v1
     v0 = v0 | a2;                                               // 0x001334a0: or $v0, $v0, $a2
     a0 = a0 | v0;                                               // 0x001334a4: or $a0, $a0, $v0
-    func_0013f0e8();  // 0x13f020                                // 0x001334a8: jal 0x13f020
+    func_0013f020();  // 13f020                                // 0x001334a8: jal 0x13f020
     a0 = s1 + a0;                                               // 0x001334ac: addu $a0, $s1, $a0
     if (v0 != 0) goto label_0x1334e8;                           // 0x001334b4: bnez $v0, 0x1334e8
-    func_001261d0();  // 0x1261b8                                // 0x001334bc: jal 0x1261b8
+    func_001261b8();  // 1261b8                                // 0x001334bc: jal 0x1261b8
     /* nop */                                                   // 0x001334c0: nop 
     a0 = 0x22 << 16;                                            // 0x001334c4: lui $a0, 0x22
     a0 = &str_00223f10;  // "E8101201 adxt_trap_entry: not enough data" // 0x001334cc: addiu $a0, $a0, 0x3f10
     return func_00127de8();  // Tail call                        // 0x001334e0: j 0x127d90
     sp = sp + 0x30;                                             // 0x001334e4: addiu $sp, $sp, 0x30
 label_0x1334e8:
-    func_00131910();  // 0x131820                                // 0x001334e8: jal 0x131820
+    func_00131820();  // 131820                                // 0x001334e8: jal 0x131820
     /* nop */                                                   // 0x001334ec: nop 
     v0 = 2;                                                     // 0x001334f0: addiu $v0, $zero, 2
     *(uint8_t*)((s2) + 2) = v0;                                 // 0x001334f4: sb $v0, 2($s2)

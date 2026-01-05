@@ -24,7 +24,7 @@ void func_00166580() {
 label_0x1665e0:
     a1 = *(int32_t*)(a1);                                       // 0x001665e0: lw $a1, 0($a1)
     s3 = 1;                                                     // 0x001665e4: addiu $s3, $zero, 1
-    func_001666a0();  // 0x166648                                // 0x001665e8: jal 0x166648
+    func_00166648();  // 166648                                // 0x001665e8: jal 0x166648
     s2 = 5;                                                     // 0x001665ec: addiu $s2, $zero, 5
     if (v0 != 0) goto label_0x166610;                           // 0x001665fc: bnez $v0, 0x166610
     a3 = 1;                                                     // 0x00166600: addiu $a3, $zero, 1
@@ -32,10 +32,10 @@ label_0x1665e0:
     v0 = -1;                                                    // 0x00166608: addiu $v0, $zero, -1
     /* nop */                                                   // 0x0016660c: nop 
 label_0x166610:
-    func_00166bc8();  // 0x166b28                                // 0x00166610: jal 0x166b28
+    func_00166b28();  // 166b28                                // 0x00166610: jal 0x166b28
     /* nop */                                                   // 0x00166614: nop 
 label_0x166618:
-    func_001669c8();  // 0x166978                                // 0x00166620: jal 0x166978
+    func_00166978();  // 166978                                // 0x00166620: jal 0x166978
 label_0x16662c:
     return;                                                     // 0x00166640: jr $ra
     sp = sp + 0x50;                                             // 0x00166644: addiu $sp, $sp, 0x50

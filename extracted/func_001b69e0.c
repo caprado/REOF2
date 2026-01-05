@@ -16,7 +16,7 @@ label_0x1b69fc:
     v0 = *(int32_t*)((s1) + 0x58);                              // 0x001b6a10: lw $v0, 0x58($s1)
     t3 = 8;                                                     // 0x001b6a20: addiu $t3, $zero, 8
     a1 = v1 + a2;                                               // 0x001b6a24: addu $a1, $v1, $a2
-    func_001b69e0();  // 0x1b6860                                // 0x001b6a28: jal 0x1b6860
+    func_001b6860();  // 1b6860                                // 0x001b6a28: jal 0x1b6860
     a2 = v0 + s0;                                               // 0x001b6a2c: addu $a2, $v0, $s0
     s0 = s0 + 1;                                                // 0x001b6a34: addiu $s0, $s0, 1
 label_0x1b6a38:

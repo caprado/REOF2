@@ -56,7 +56,7 @@ label_0x1da240:
 label_0x1da2bc:
     v0 = local_a0;                                              // 0x001da2bc: lw $v0, 0xa0($sp)
     s7 = s2 << 2;                                               // 0x001da2c0: sll $s7, $s2, 2
-    func_001b10e0();  // 0x1b1090                                // 0x001da2c4: jal 0x1b1090
+    func_001b1090();  // 1b1090                                // 0x001da2c4: jal 0x1b1090
     fp = v0 + s7;                                               // 0x001da2c8: addu $fp, $v0, $s7
     a0 = v0 & 0xffff;                                           // 0x001da2cc: andi $a0, $v0, 0xffff
     v1 = 0x4c << 16;                                            // 0x001da2d0: lui $v1, 0x4c

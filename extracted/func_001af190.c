@@ -1,3 +1,4 @@
+/** @category: memory/allocation @status: complete @author: caprado */
 void func_001af190() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
@@ -11,7 +12,7 @@ void func_001af190() {
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001af19c: addu.qb $zero, $sp, $s1
     a0 = 0x2b << 16;                                            // 0x001af1ac: lui $a0, 0x2b
     a0 = a0 + -0x5750;                                          // 0x001af1b0: addiu $a0, $a0, -0x5750
-    func_00107d30();  // 0x107c70                                // 0x001af1b4: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001af1b4: jal 0x107c70
     at = 0x2b << 16;                                            // 0x001af1bc: lui $at, 0x2b
     g_002aa8b0 = s1;  // Global at 0x002aa8b0                   // 0x001af1c0: sw $s1, -0x5750($at)
     at = 0x2b << 16;                                            // 0x001af1c4: lui $at, 0x2b

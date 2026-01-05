@@ -10,7 +10,7 @@ void func_00175d80() {
     v0 = -1;                                                    // 0x00175d84: addiu $v0, $zero, -1
     v1 = *(int32_t*)((s0) + 0x118);                             // 0x00175d94: lw $v1, 0x118($s0)
     if (v1 < 0) goto label_0x175dbc;                            // 0x00175d98: bltz $v1, 0x175dbc
-    func_0015b7b0();  // 0x15b740                                // 0x00175da0: jal 0x15b740
+    func_0015b740();  // 15b740                                // 0x00175da0: jal 0x15b740
     a2 = 0x57e4;                                                // 0x00175da4: addiu $a2, $zero, 0x57e4
     a1 = 0x21 << 16;                                            // 0x00175da8: lui $a1, 0x21
     a0 = *(int32_t*)((s0) + 0x118);                             // 0x00175dac: lw $a0, 0x118($s0)

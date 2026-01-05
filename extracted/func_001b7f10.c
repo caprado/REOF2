@@ -1,3 +1,4 @@
+/** @category audio/settings @status complete @author caprado */
 void func_001b7f10() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
@@ -19,7 +20,7 @@ void func_001b7f10() {
     /* FPU: mul.s $f0, $f0, $f20 */                             // 0x001b7f3c: mul.s $f0, $f0, $f20
     /* FPU: cvt.w.s $f0, $f0 */                                 // 0x001b7f40: cvt.w.s $f0, $f0
     /* move from FPU: $a1, $f0 */                               // 0x001b7f44: mfc1 $a1, $f0
-    func_001ac980();  // 0x1ac8e0                                // 0x001b7f48: jal 0x1ac8e0
+    func_001ac8e0();  // 1ac8e0                                // 0x001b7f48: jal 0x1ac8e0
     a0 = -1;                                                    // 0x001b7f4c: addiu $a0, $zero, -1
     v0 = 0x42fe << 16;                                          // 0x001b7f50: lui $v0, 0x42fe
     /* move to FPU: $v0, $f0 */                                 // 0x001b7f54: mtc1 $v0, $f0
@@ -27,7 +28,7 @@ void func_001b7f10() {
     /* FPU: mul.s $f0, $f0, $f20 */                             // 0x001b7f5c: mul.s $f0, $f0, $f20
     /* FPU: cvt.w.s $f0, $f0 */                                 // 0x001b7f60: cvt.w.s $f0, $f0
     /* move from FPU: $a1, $f0 */                               // 0x001b7f64: mfc1 $a1, $f0
-    func_001adbe0();  // 0x1adab0                                // 0x001b7f68: jal 0x1adab0
+    func_001adab0();  // 1adab0                                // 0x001b7f68: jal 0x1adab0
     FPU_F20 = *(float*)(sp);  // Load float                     // 0x001b7f74: lwc1 $f20, 0($sp)
     return;                                                     // 0x001b7f78: jr $ra
     sp = sp + 0x20;                                             // 0x001b7f7c: addiu $sp, $sp, 0x20

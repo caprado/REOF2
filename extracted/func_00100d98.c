@@ -12,20 +12,20 @@ void func_00100d98() {
     v1 = g_001edf10;  // Global at 0x001edf10                   // 0x00100db0: lw $v1, -0x20f0($v0)
     if (v1 <= 0) goto label_0x100dc4;                           // 0x00100db4: blez $v1, 0x100dc4
     a0 = 0x22 << 16;                                            // 0x00100db8: lui $a0, 0x22
-    func_00116598();  // 0x116508                                // 0x00100dbc: jal 0x116508
+    func_00116508();  // 116508                                // 0x00100dbc: jal 0x116508
     a0 = &str_0021fdd8;  // "S cmd wait\n"                      // 0x00100dc0: addiu $a0, $a0, -0x228
 label_0x100dc4:
     s1 = 0x1f << 16;                                            // 0x00100dc4: lui $s1, 0x1f
     goto label_0x100dd8;                                        // 0x00100dc8: b 0x100dd8
     s0 = 0x1f << 16;                                            // 0x00100dcc: lui $s0, 0x1f
 label_0x100dd0:
-    func_00115408();  // 0x115340                                // 0x00100dd0: jal 0x115340
+    func_00115340();  // 115340                                // 0x00100dd0: jal 0x115340
     a0 = 0xfa0;                                                 // 0x00100dd4: addiu $a0, $zero, 0xfa0
 label_0x100dd8:
     v0 = g_001edf34;  // Global at 0x001edf34                   // 0x00100dd8: lw $v0, -0x20cc($s1)
     if (v0 != 0) goto label_0x100dd0;                           // 0x00100ddc: bnez $v0, 0x100dd0
     /* nop */                                                   // 0x00100de0: nop 
-    func_001178e0();  // 0x1178a0                                // 0x00100de4: jal 0x1178a0
+    func_001178a0();  // 1178a0                                // 0x00100de4: jal 0x1178a0
     a0 = s0 + -0xf30;                                           // 0x00100de8: addiu $a0, $s0, -0xf30
     if (v0 != 0) goto label_0x100dd0;                           // 0x00100dec: bnez $v0, 0x100dd0
     goto label_0x100e28;                                        // 0x00100df4: b 0x100e28
@@ -35,7 +35,7 @@ label_0x100dfc:
     if (v1 != 0) goto label_0x100e24;                           // 0x00100e04: bnez $v1, 0x100e24
     v0 = 1;                                                     // 0x00100e08: addiu $v0, $zero, 1
     a0 = 0x1f << 16;                                            // 0x00100e0c: lui $a0, 0x1f
-    func_001178e0();  // 0x1178a0                                // 0x00100e10: jal 0x1178a0
+    func_001178a0();  // 1178a0                                // 0x00100e10: jal 0x1178a0
     a0 = a0 + -0xf30;                                           // 0x00100e14: addiu $a0, $a0, -0xf30
     if (v0 != 0) goto label_0x100e24;                           // 0x00100e18: bnez $v0, 0x100e24
     v0 = 1;                                                     // 0x00100e1c: addiu $v0, $zero, 1

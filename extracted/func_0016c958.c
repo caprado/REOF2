@@ -9,7 +9,7 @@ void func_0016c958() {
     sp = sp + -0x50;                                            // 0x0016c958: addiu $sp, $sp, -0x50
     *(uint32_t*)(s6) = 0;                                       // 0x0016c98c: sw $zero, 0($s6)
     a1 = *(int32_t*)((s2) + 4);                                 // 0x0016c990: lw $a1, 4($s2)
-    func_00158518();  // 0x158410                                // 0x0016c994: jal 0x158410
+    func_00158410();  // 158410                                // 0x0016c994: jal 0x158410
     a0 = *(int32_t*)(s2);                                       // 0x0016c998: lw $a0, 0($s2)
     /* beqzl $s1, 0x16c9c8 */                                   // 0x0016c9a0: beqzl $s1, 0x16c9c8
     a3 = *(int32_t*)((s2) + 0xc);                               // 0x0016c9a4: lw $a3, 0xc($s2)
@@ -31,18 +31,18 @@ void func_0016c958() {
     a1 = a1 + a2;                                               // 0x0016c9ec: addu $a1, $a1, $a2
     if (v0 != 0) s0 = a3;                                       // 0x0016c9f4: movn $s0, $a3, $v0
     a1 = a1 - s3;                                               // 0x0016c9fc: subu $a1, $a1, $s3
-    func_00107b68();  // 0x107ab8                                // 0x0016ca00: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x0016ca00: jal 0x107ab8
     a1 = *(int32_t*)((s2) + 8);                                 // 0x0016ca08: lw $a1, 8($s2)
     s0 = s3 + s0;                                               // 0x0016ca10: addu $s0, $s3, $s0
     a0 = sp + s3;                                               // 0x0016ca14: addu $a0, $sp, $s3
-    func_00107b68();  // 0x107ab8                                // 0x0016ca18: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x0016ca18: jal 0x107ab8
     s0 = s0 + -3;                                               // 0x0016ca1c: addiu $s0, $s0, -3
     v0 = (s1 < s0) ? 1 : 0;                                     // 0x0016ca20: slt $v0, $s1, $s0
     /* beqzl $v0, 0x16ca5c */                                   // 0x0016ca24: beqzl $v0, 0x16ca5c
     a1 = *(int32_t*)((s2) + 0xc);                               // 0x0016ca28: lw $a1, 0xc($s2)
     /* nop */                                                   // 0x0016ca2c: nop 
 label_0x16ca30:
-    func_00158310();  // 0x158278                                // 0x0016ca30: jal 0x158278
+    func_00158278();  // 158278                                // 0x0016ca30: jal 0x158278
     a0 = sp + s4;                                               // 0x0016ca34: addu $a0, $sp, $s4
     v0 = a2 & s5;                                               // 0x0016ca3c: and $v0, $a2, $s5
     /* bnezl $v0, 0x16c9b0 */                                   // 0x0016ca40: bnezl $v0, 0x16c9b0
@@ -52,11 +52,11 @@ label_0x16ca30:
     if (v0 != 0) goto label_0x16ca30;                           // 0x0016ca50: bnez $v0, 0x16ca30
     /* nop */                                                   // 0x0016ca54: nop 
     a1 = *(int32_t*)((s2) + 0xc);                               // 0x0016ca58: lw $a1, 0xc($s2)
-    func_00158518();  // 0x158410                                // 0x0016ca60: jal 0x158410
+    func_00158410();  // 158410                                // 0x0016ca60: jal 0x158410
     a0 = *(int32_t*)((s2) + 8);                                 // 0x0016ca64: lw $a0, 8($s2)
     /* beqzl $s1, 0x16ca88 */                                   // 0x0016ca6c: beqzl $s1, 0x16ca88
 label_0x16ca74:
-    func_00158310();  // 0x158278                                // 0x0016ca74: jal 0x158278
+    func_00158278();  // 158278                                // 0x0016ca74: jal 0x158278
     *(uint32_t*)(s6) = v0;                                      // 0x0016ca7c: sw $v0, 0($s6)
 label_0x16ca84:
     return;                                                     // 0x0016caa4: jr $ra

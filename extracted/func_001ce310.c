@@ -9,7 +9,7 @@ void func_001ce310() {
     sp = sp + -0x20;                                            // 0x001ce310: addiu $sp, $sp, -0x20
     a1 = 7;                                                     // 0x001ce314: addiu $a1, $zero, 7
     a0 = 0x32 << 16;                                            // 0x001ce324: lui $a0, 0x32
-    thunk_func_001cff70();  // 0x1ce7e0                          // 0x001ce328: jal 0x1ce7e0
+    thunk_func_001ce7e0();  // 1ce7e0                          // 0x001ce328: jal 0x1ce7e0
     a0 = a0 + 0x4f90;                                           // 0x001ce32c: addiu $a0, $a0, 0x4f90
     at = 0x32 << 16;                                            // 0x001ce330: lui $at, 0x32
     a0 = 0x32 << 16;                                            // 0x001ce334: lui $a0, 0x32
@@ -17,15 +17,15 @@ void func_001ce310() {
     a0 = a0 + 0x4f90;                                           // 0x001ce33c: addiu $a0, $a0, 0x4f90
     v0 = v0 & 0xf;                                              // 0x001ce340: andi $v0, $v0, 0xf
     v0 = v0 | 0x20;                                             // 0x001ce344: ori $v0, $v0, 0x20
-    thunk_func_001cff70();  // 0x1ce7e0                          // 0x001ce348: jal 0x1ce7e0
+    thunk_func_001ce7e0();  // 1ce7e0                          // 0x001ce348: jal 0x1ce7e0
     a1 = v0 & 0xff;                                             // 0x001ce34c: andi $a1, $v0, 0xff
     a0 = 0x32 << 16;                                            // 0x001ce350: lui $a0, 0x32
-    thunk_func_001cff70();  // 0x1ce7e0                          // 0x001ce358: jal 0x1ce7e0
+    thunk_func_001ce7e0();  // 1ce7e0                          // 0x001ce358: jal 0x1ce7e0
     a0 = a0 + 0x4f90;                                           // 0x001ce35c: addiu $a0, $a0, 0x4f90
     at = 0x32 << 16;                                            // 0x001ce360: lui $at, 0x32
     a0 = 0x32 << 16;                                            // 0x001ce364: lui $a0, 0x32
     FPU_F12 = *(float*)((at) + 0x57ec);  // Load float          // 0x001ce368: lwc1 $f12, 0x57ec($at)
-    thunk_func_001cff40();  // 0x1ce7f0                          // 0x001ce36c: jal 0x1ce7f0
+    thunk_func_001ce7f0();  // 1ce7f0                          // 0x001ce36c: jal 0x1ce7f0
     a0 = a0 + 0x4f90;                                           // 0x001ce370: addiu $a0, $a0, 0x4f90
     at = 0x32 << 16;                                            // 0x001ce374: lui $at, 0x32
     v1 = 0x32 << 16;                                            // 0x001ce378: lui $v1, 0x32

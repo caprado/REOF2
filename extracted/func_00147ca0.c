@@ -11,7 +11,7 @@ void func_00147ca0() {
     
     sp = sp + -0x30;                                            // 0x00147ca0: addiu $sp, $sp, -0x30
     v0 = 1;                                                     // 0x00147ca4: addiu $v0, $zero, 1
-    func_00147ca0();  // 0x147c28                                // 0x00147cb0: jal 0x147c28
+    func_00147c28();  // 147c28                                // 0x00147cb0: jal 0x147c28
     local_0 = v0;                                               // 0x00147cb4: sw $v0, 0($sp)
     v0 = 1;                                                     // 0x00147cbc: addiu $v0, $zero, 1
     return;                                                     // 0x00147cc0: jr $ra

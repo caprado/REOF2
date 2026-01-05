@@ -27,10 +27,10 @@ void func_00178bd8() {
     *(uint32_t*)(s1) = 0;                                       // 0x00178c48: sw $zero, 0($s1)
     /* nop */                                                   // 0x00178c4c: nop 
 label_0x178c50:
-    func_00167960();  // 0x167898                                // 0x00178c50: jal 0x167898
+    func_00167898();  // 167898                                // 0x00178c50: jal 0x167898
     a1 = *(int32_t*)((s0) + 0x1c48);                            // 0x00178c54: lw $a1, 0x1c48($s0)
     if (v0 != 0) goto label_0x178c7c;                           // 0x00178c58: bnez $v0, 0x178c7c
-    func_00176c28();  // 0x176bf0                                // 0x00178c60: jal 0x176bf0
+    func_00176bf0();  // 176bf0                                // 0x00178c60: jal 0x176bf0
     a1 = *(int32_t*)(s1);                                       // 0x00178c64: lw $a1, 0($s1)
     /* bnezl $v0, 0x178c7c */                                   // 0x00178c68: bnezl $v0, 0x178c7c
     goto label_0x178c7c;                                        // 0x00178c70: b 0x178c7c

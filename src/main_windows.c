@@ -1,7 +1,7 @@
 /**
  * @file main_windows.c
  * @category platform/windows
- * @status complete
+ * @status in_progress
  * @author caprado
  * @description Clean Windows entry point for REOF2 port
  *
@@ -10,35 +10,40 @@
  *   → OpenGL Initialization (window, context, textures)
  *     → Engine Initialization (engine_startup.c)
  *       → GameData Structure Init (g_game global)
- *         → Text System Allocation
- *           → Demo Mode State Machine
- *             → Main Loop
- *               → Menu Controller → processMenuController()
- *                 → Game State Manager → processGameStateManager()
+ *         → Main Loop (each frame):
+ *           1. updateGameStateManager() - State management & init (func_001ba1d0)
+ *           2. updateGameSubsystems() - Update all subsystems (func_001ba310)
+ *           3. func_001ba360() - Render all subsystems
+ *           4. processMenuController() - Menu state machine (func_001b9e60)
  *
  * KEY CHANGES FROM PS2:
  * - Removed all PS2-specific initialization (hardware registers, VSync, DMA, etc.)
  * - Replaced hardcoded memory addresses with g_game global struct
  * - Unified initialization via engine_startup.c
  * - Uses pure OpenGL + Windows APIs
- * - No malloc/free for GameData (static global)
  */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
 #include <stdint.h>
+#include <string.h>
 #include <windows.h>
 #include "platform/windows/opengl_renderer.h"
 #include "game/texture_manager.h"
 #include "graphics/texture_slot.h"
 #include "game/game_data.h"
 #include "game/engine_startup.h"
-#include "game/demo_state.h"
-#include "game/demo_loop.h"
+#include "game/menu_controller.h"
+#include "game/game_state_manager.h"
+#include "game/frame_update.h"
 
-// Global demo state context
-static DemoStateContext g_demoContext = {0};
+// Forward declarations for unrefactored functions
+extern void func_001ba360(void);  // Render game frame (updateRenderState already in frame_update)
+
+// Menu controller context - passed to processMenuController each frame
+static MenuControllerContext g_menuContext;
+
 static bool g_isRunning = false;
 
 /**
@@ -108,37 +113,39 @@ bool initializeGameEngine(void) {
     }
     printf("[INIT]   ✓ Game engine initialized (g_game struct ready)\n");
 
-    // Initialize demo state context
-    g_demoContext.currentState = DEMO_STATE_INIT;  // Start in DEMO_STATE_INIT
-    g_demoContext.timerCounter = 0;
-    printf("[INIT]   ✓ Demo state machine initialized (state=DEMO_STATE_INIT)\n");
-
     printf("[INIT] Game engine ready\n");
+    printf("[INIT] Entry point: processMenuController (menu_controller.c)\n");
     return true;
 }
 
 /**
- * @brief Main menu loop - processes one frame
- * @description Handles main menu UI and idle demo playback
+ * @brief Main game loop - processes one frame
  * @return true to continue, false to exit
  */
-bool mainMenuLoop(void) {
+bool mainGameLoop(void) {
     // Process window events (ESC to quit)
     if (!opengl_process_events()) {
         return false;
     }
 
-    // TODO classify these and implement properly:
-    // func_001b9e60() - Main entry point - True main entry to the ELF
-    // Uncomment when stubs are properly implemented
-    // updateDemoLoop();
-    // processDemoStateMachine(&g_demoContext);
+    // === GAME LOOP - Call all four core functions each frame ===
+
+    // 1. Game state management (func_001ba1d0 -> updateGameStateManager)
+    updateGameStateManager();
+
+    // 2. Update all game subsystems (func_001ba310 -> updateGameSubsystems)
+    updateGameSubsystems();
+
+    // 3. Render game frame (func_001ba360)
+    func_001ba360();
+
+    // 4. Menu controller state machine (func_001b9e60)
+    processMenuController(&g_menuContext);
+
+    // === END GAME LOOP ===
 
     // Clear screen to dark blue (to show window is working)
     opengl_clear(0.1f, 0.1f, 0.3f, 1.0f);
-
-    // TODO: Render demo content here
-    // Currently just shows a blue screen
 
     // Swap buffers
     opengl_swap_buffers();
@@ -224,7 +231,11 @@ int main(int argc, char* argv[]) {
     printf("[DEBUG] Game engine initialized successfully\n");
     fflush(stdout);
 
-    // Step 3: Main menu loop
+    // Step 3: Initialize menu controller context
+    memset(&g_menuContext, 0, sizeof(g_menuContext));
+    printf("[INIT] Menu context initialized (state=0)\n");
+
+    // Step 4: Main menu loop
     printf("\n================================================\n");
     printf("ENTERING MAIN MENU\n");
     printf("Press ESC to exit\n");
@@ -234,7 +245,7 @@ int main(int argc, char* argv[]) {
     int frameCount = 0;
 
     while (g_isRunning) {
-        if (!mainMenuLoop()) {
+        if (!mainGameLoop()) {
             g_isRunning = false;
         }
 
@@ -242,19 +253,17 @@ int main(int argc, char* argv[]) {
 
         // Print status every 60 frames (~1 second)
         if (frameCount % 60 == 0) {
-            printf("[MENU] Frame %d | State: %d | Timer: %d\n",
-                   frameCount, g_demoContext.currentState, g_demoContext.timerCounter);
+            printf("[MENU] Frame %d\n", frameCount);
         }
 
         // Frame timing: ~60fps
         Sleep(16);
     }
 
-    // Step 4: Cleanup
+    // Step 5: Cleanup
     printf("\n================================================\n");
     printf("MAIN MENU ENDED\n");
     printf("Total frames: %d\n", frameCount);
-    printf("Final state: %d\n", g_demoContext.currentState);
     printf("================================================\n\n");
 
     shutdownSystems();

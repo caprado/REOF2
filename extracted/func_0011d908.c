@@ -11,8 +11,8 @@ void func_0011d908() {
     sp = sp + -0x40;                                            // 0x0011d910: addiu $sp, $sp, -0x40
     a0 = 0x22 << 16;                                            // 0x0011d92c: lui $a0, 0x22
     a0 = a0 + 0x14d0;                                           // 0x0011d938: addiu $a0, $a0, 0x14d0
-    thunk_func_0011cd50();  // 0x11d7f0                          // 0x0011d93c: jal 0x11d7f0
-    func_0011d980();  // 0x11d908                                // 0x0011d944: jal 0x11d908
+    thunk_func_0011d7f0();  // 11d7f0                          // 0x0011d93c: jal 0x11d7f0
+    func_0011d908();  // 11d908                                // 0x0011d944: jal 0x11d908
     /* nop */                                                   // 0x0011d948: nop 
     v0 = 0x1f << 16;                                            // 0x0011d94c: lui $v0, 0x1f
     a3 = g_001f0780;  // Global at 0x001f0780                   // 0x0011d954: lw $a3, 0x780($v0)

@@ -31,7 +31,7 @@ label_0x17bb90:
     if (v0 != 0) goto label_0x17bbe4;                           // 0x0017bbcc: bnez $v0, 0x17bbe4
     s0 = *(int32_t*)(s2);                                       // 0x0017bbd0: lw $s0, 0($s2)
     a1 = 0x23 << 16;                                            // 0x0017bbd4: lui $a1, 0x23
-    func_0017cae0();  // 0x17cad8                                // 0x0017bbd8: jal 0x17cad8
+    func_0017cad8();  // 17cad8                                // 0x0017bbd8: jal 0x17cad8
     a1 = &str_002296b0;  // "E201181: SFX_CnvFrmArgb8888 : frmfmt is not support." // 0x0017bbdc: addiu $a1, $a1, -0x6950
     *(uint32_t*)((s1) + 4) = v0;                                // 0x0017bbe0: sw $v0, 4($s1)
 label_0x17bbe4:
@@ -105,7 +105,7 @@ label_0x17bcf0:
     local_c = t2;                                               // 0x0017bd64: sw $t2, 0xc($sp)
     s0 = g_002296bc;  // Global at 0x002296bc                   // 0x0017bd68: lw $s0, 8($t5)
 label_0x17bd6c:
-    func_0017ab20();  // 0x17aa68                                // 0x0017bd6c: jal 0x17aa68
+    func_0017aa68();  // 17aa68                                // 0x0017bd6c: jal 0x17aa68
     /* nop */                                                   // 0x0017bd70: nop 
     v1 = 1;                                                     // 0x0017bd74: addiu $v1, $zero, 1
     if (v0 != v1) goto label_0x17bd8c;                          // 0x0017bd78: bne $v0, $v1, 0x17bd8c
@@ -113,7 +113,7 @@ label_0x17bd6c:
     v0 = s0 + v0;                                               // 0x0017bd84: addu $v0, $s0, $v0
     s0 = v0 >> 1;                                               // 0x0017bd88: sra $s0, $v0, 1
 label_0x17bd8c:
-    func_00148f60();  // 0x148f48                                // 0x0017bd98: jal 0x148f48
+    func_00148f48();  // 148f48                                // 0x0017bd98: jal 0x148f48
     return;                                                     // 0x0017bdb4: jr $ra
     sp = sp + 0x50;                                             // 0x0017bdb8: addiu $sp, $sp, 0x50
 }

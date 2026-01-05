@@ -12,10 +12,10 @@ void func_00106f40() {
     sp = sp + -0x20;                                            // 0x00106f40: addiu $sp, $sp, -0x20
     s0 = 0x1f << 16;                                            // 0x00106f48: lui $s0, 0x1f
     s0 = s0 + -0x210;                                           // 0x00106f58: addiu $s0, $s0, -0x210
-    func_00107db0();  // 0x107d30                                // 0x00106f5c: jal 0x107d30
+    func_00107d30();  // 107d30                                // 0x00106f5c: jal 0x107d30
     a0 = g_001efdf0;  // Global at 0x001efdf0                   // 0x00106f60: lw $a0, 0($s0)
     a0 = g_001efdf0;  // Global at 0x001efdf0                   // 0x00106f64: lw $a0, 0($s0)
-    func_00105bd8();  // 0x1058e0                                // 0x00106f68: jal 0x1058e0
+    func_001058e0();  // 1058e0                                // 0x00106f68: jal 0x1058e0
     a0 = g_001efdf0;  // Global at 0x001efdf0                   // 0x00106f70: lw $a0, 0($s0)
     return func_00107e00();  // Tail call                        // 0x00106f80: j 0x107db0
     sp = sp + 0x20;                                             // 0x00106f84: addiu $sp, $sp, 0x20
@@ -37,7 +37,7 @@ void func_00106f40() {
     v1 = -0x1000;                                               // 0x0010700c: addiu $v1, $zero, -0x1000
     v0 = v0 & v1;                                               // 0x00107018: and $v0, $v0, $v1
 label_0x107024:
-    func_0010a2b8();  // 0x10a260                                // 0x00107024: jal 0x10a260
+    func_0010a260();  // 10a260                                // 0x00107024: jal 0x10a260
     if (s1 == s5) goto label_0x1071b0;                          // 0x00107030: beq $s1, $s5, 0x1071b0
     v0 = ((unsigned)s1 < (unsigned)s0) ? 1 : 0;                 // 0x00107034: sltu $v0, $s1, $s0
     if (v0 == 0) goto label_0x10704c;                           // 0x00107038: beqz $v0, 0x10704c
@@ -82,7 +82,7 @@ label_0x1070bc:
     v0 = v0 & 0xfff;                                            // 0x001070c4: andi $v0, $v0, 0xfff
     a0 = local_0;                                               // 0x001070c8: lw $a0, 0($sp)
     s0 = s0 + v1;                                               // 0x001070d8: addu $s0, $s0, $v1
-    func_0010a2b8();  // 0x10a260                                // 0x001070dc: jal 0x10a260
+    func_0010a260();  // 10a260                                // 0x001070dc: jal 0x10a260
     v0 = -1;                                                    // 0x001070e8: addiu $v0, $zero, -1
     if (a0 == v0) goto label_0x1071b0;                          // 0x001070ec: beq $a0, $v0, 0x1071b0
     a0 = a0 - s1;                                               // 0x001070f0: subu $a0, $a0, $s1
@@ -117,7 +117,7 @@ label_0x1070bc:
     if (a0 != 0) goto label_0x10717c;                           // 0x00107168: bnez $a0, 0x10717c
     g_001efe04 = a1;  // Global at 0x001efe04                   // 0x0010716c: sw $a1, 4($v1)
     a0 = local_0;                                               // 0x00107170: lw $a0, 0($sp)
-    func_00105bd8();  // 0x1058e0                                // 0x00107174: jal 0x1058e0
+    func_001058e0();  // 1058e0                                // 0x00107174: jal 0x1058e0
     a1 = s4 + 8;                                                // 0x00107178: addiu $a1, $s4, 8
 label_0x10717c:
     v1 = 0x1f << 16;                                            // 0x0010717c: lui $v1, 0x1f

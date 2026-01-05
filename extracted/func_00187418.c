@@ -17,7 +17,7 @@ void func_00187418() {
     /* beqzl $v0, 0x187448 */                                   // 0x00187440: beqzl $v0, 0x187448
     /* break (trap) */                                          // 0x00187444: break 0, 7
     /* divide: a1 / v0 -> hi:lo */                              // 0x00187448: div $zero, $a1, $v0
-    func_00187418();  // 0x1873d0                                // 0x0018744c: jal 0x1873d0
+    func_001873d0();  // 1873d0                                // 0x0018744c: jal 0x1873d0
     /* mflo $a1 */                                              // 0x00187450
     return;                                                     // 0x00187458: jr $ra
     sp = sp + 0x10;                                             // 0x0018745c: addiu $sp, $sp, 0x10

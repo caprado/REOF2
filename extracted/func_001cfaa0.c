@@ -22,7 +22,7 @@ label_0x1cfae8:
     goto label_0x1cfc14;                                        // 0x001cfae8: b 0x1cfc14
 label_0x1cfaf0:
     a0 = sp + 0x6c;                                             // 0x001cfaf0: addiu $a0, $sp, 0x6c
-    func_001cd5e0();  // 0x1cd550                                // 0x001cfaf4: jal 0x1cd550
+    func_001cd550();  // 1cd550                                // 0x001cfaf4: jal 0x1cd550
     a1 = sp + 0x68;                                             // 0x001cfaf8: addiu $a1, $sp, 0x68
     if (v0 == 0) goto label_0x1cfc0c;                           // 0x001cfafc: beqz $v0, 0x1cfc0c
     v1 = local_68;                                              // 0x001cfb04: lw $v1, 0x68($sp)
@@ -86,16 +86,16 @@ label_0x1cfbcc:
     v0 = *(int32_t*)((s2) + 4);                                 // 0x001cfbd0: lw $v0, 4($s2)
     v0 = v1 - v0;                                               // 0x001cfbd4: subu $v0, $v1, $v0
     if (v0 != 0) goto label_0x1cfbe8;                           // 0x001cfbd8: bnez $v0, 0x1cfbe8
-    func_001cfd70();  // 0x1cfd60                                // 0x001cfbe0: jal 0x1cfd60
+    func_001cfd60();  // 1cfd60                                // 0x001cfbe0: jal 0x1cfd60
     /* nop */                                                   // 0x001cfbe4: nop 
 label_0x1cfbe8:
     v0 = local_68;                                              // 0x001cfbe8: lw $v0, 0x68($sp)
     *(uint8_t*)(s3) = v0;                                       // 0x001cfbf0: sb $v0, 0($s3)
     a1 = local_6c;                                              // 0x001cfbf4: lw $a1, 0x6c($sp)
-    func_001cfdf0();  // 0x1cfd80                                // 0x001cfbf8: jal 0x1cfd80
+    func_001cfd80();  // 1cfd80                                // 0x001cfbf8: jal 0x1cfd80
     s1 = 1;                                                     // 0x001cfc00: addiu $s1, $zero, 1
 label_0x1cfc04:
-    func_001cd5f0();  // 0x1cd5e0                                // 0x001cfc04: jal 0x1cd5e0
+    func_001cd5e0();  // 1cd5e0                                // 0x001cfc04: jal 0x1cd5e0
     /* nop */                                                   // 0x001cfc08: nop 
 label_0x1cfc0c:
 label_0x1cfc14:

@@ -11,7 +11,8 @@ from typing import Dict
 from collections import defaultdict
 
 # Tag format: /** @category: core/entry @status: complete @author: username */
-TAG_PATTERN = r'/\*\*\s*@category:\s*(\S+)(?:\s+@status:\s*(\S+))?(?:\s+@author:\s*(\S+))?\s*\*/'
+# Also supports format without colons: /** @category core/entry @status complete @author username */
+TAG_PATTERN = r'/\*\*\s*@category:?\s*(\S+)(?:\s+@status:?\s*(\S+))?(?:\s+@author:?\s*(\S+))?\s*\*/'
 
 class ProgressTracker:
     def __init__(self, root_dir: str):

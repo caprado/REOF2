@@ -7,7 +7,7 @@ void func_0015d488() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x0015d488: addiu $sp, $sp, -0x20
-    func_0015fcb0();  // 0x15fc80                                // 0x0015d49c: jal 0x15fc80
+    func_0015fc80();  // 15fc80                                // 0x0015d49c: jal 0x15fc80
     a0 = 0x22 << 16;                                            // 0x0015d4a4: lui $a0, 0x22
     if (v0 != 0) goto label_0x15d4c8;                           // 0x0015d4a8: bnez $v0, 0x15d4c8
     a0 = &str_00227470;  // "E2010801: mwPlyGetFrmSync: handle is invalid." // 0x0015d4ac: addiu $a0, $a0, 0x7470

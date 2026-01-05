@@ -19,7 +19,7 @@ label_0x182fb0:
     v0 = (s0 < 2) ? 1 : 0;                                      // 0x00182fb0: slti $v0, $s0, 2
     if (v0 == 0) goto label_0x18309c;                           // 0x00182fb4: beqz $v0, 0x18309c
     s1 = s4 + -0x7c00;                                          // 0x00182fbc: addiu $s1, $s4, -0x7c00
-    func_001873b0();  // 0x187390                                // 0x00182fc8: jal 0x187390
+    func_00187390();  // 187390                                // 0x00182fc8: jal 0x187390
     a3 = 1;                                                     // 0x00182fcc: addiu $a3, $zero, 1
     if (v0 != 0) goto label_0x182fe4;                           // 0x00182fd0: bnez $v0, 0x182fe4
     v1 = s0 << 9;                                               // 0x00182fd4: sll $v1, $s0, 9
@@ -52,7 +52,7 @@ label_0x18305c:
 label_0x183094:
     goto label_0x1830d0;                                        // 0x00183094: b 0x1830d0
 label_0x18309c:
-    func_00182c38();  // 0x182bd0                                // 0x001830a0: jal 0x182bd0
+    func_00182bd0();  // 182bd0                                // 0x001830a0: jal 0x182bd0
     v1 = local_0;                                               // 0x001830a8: lw $v1, 0($sp)
     if (v1 != s1) goto label_0x1830c0;                          // 0x001830ac: bne $v1, $s1, 0x1830c0
     v0 = 0x8101 << 16;                                          // 0x001830b4: lui $v0, 0x8101

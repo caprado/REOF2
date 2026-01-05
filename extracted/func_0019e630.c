@@ -33,7 +33,7 @@ label_0x19e678:
     /* multiply: s4 * v1 -> hi:lo */                            // 0x0019e6b4: mult $ac3, $s4, $v1
     v0 = v0 << 5;                                               // 0x0019e6b8: sll $v0, $v0, 5
     v1 = s5 + v1;                                               // 0x0019e6bc: addu $v1, $s5, $v1
-    func_0019e780();  // 0x19e710                                // 0x0019e6c0: jal 0x19e710
+    func_0019e710();  // 19e710                                // 0x0019e6c0: jal 0x19e710
     a1 = v1 + v0;                                               // 0x0019e6c4: addu $a1, $v1, $v0
     s2 = s2 + 1;                                                // 0x0019e6c8: addiu $s2, $s2, 1
     v1 = (s2 < 8) ? 1 : 0;                                      // 0x0019e6cc: slti $v1, $s2, 8

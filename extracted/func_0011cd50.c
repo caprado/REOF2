@@ -12,11 +12,11 @@ void func_0011cd50() {
     v1 = 0x200 << 16;                                           // 0x0011cd60: lui $v1, 0x200
     if (v0 != v1) goto label_0x11cd7c;                          // 0x0011cd64: bne $v0, $v1, 0x11cd7c
     /* nop */                                                   // 0x0011cd68: nop 
-    func_0011d320();  // 0x11cd90                                // 0x0011cd6c: jal 0x11cd90
+    func_0011cd90();  // 11cd90                                // 0x0011cd6c: jal 0x11cd90
     /* nop */                                                   // 0x0011cd70: nop 
     goto label_0x11cd88;                                        // 0x0011cd74: b 0x11cd88
 label_0x11cd7c:
-    func_00114760();  // 0x114750                                // 0x0011cd7c: jal 0x114750
+    func_00114750();  // 114750                                // 0x0011cd7c: jal 0x114750
     /* nop */                                                   // 0x0011cd80: nop 
 label_0x11cd88:
     return;                                                     // 0x0011cd88: jr $ra

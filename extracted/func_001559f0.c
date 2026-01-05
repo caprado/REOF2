@@ -15,13 +15,13 @@ void func_001559f0() {
 label_0x155a28:
     if (s0 != 0) goto label_0x155a48;                           // 0x00155a28: bnez $s0, 0x155a48
     /* nop */                                                   // 0x00155a2c: nop 
-    func_00155af8();  // 0x155aa0                                // 0x00155a30: jal 0x155aa0
+    func_00155aa0();  // 155aa0                                // 0x00155a30: jal 0x155aa0
     v0 = 0x25 << 16;                                            // 0x00155a38: lui $v0, 0x25
     goto label_0x155a7c;                                        // 0x00155a3c: b 0x155a7c
     a0 = v0 + 0x6390;                                           // 0x00155a40: addiu $a0, $v0, 0x6390
     /* nop */                                                   // 0x00155a44: nop 
 label_0x155a48:
-    func_00155b20();  // 0x155af8                                // 0x00155a48: jal 0x155af8
+    func_00155af8();  // 155af8                                // 0x00155a48: jal 0x155af8
     a1 = 0xff03 << 16;                                          // 0x00155a50: lui $a1, 0xff03
     if (v0 == 0) goto label_0x155a78;                           // 0x00155a54: beqz $v0, 0x155a78
     a1 = a1 | 0x202;                                            // 0x00155a60: ori $a1, $a1, 0x202

@@ -30,11 +30,11 @@ label_0x17be20:
     v0 = *(int32_t*)((s0) + 4);                                 // 0x0017be48: lw $v0, 4($s0)
     if (v0 != 0) goto label_0x17be64;                           // 0x0017be4c: bnez $v0, 0x17be64
     a1 = 0x23 << 16;                                            // 0x0017be54: lui $a1, 0x23
-    func_0017cae0();  // 0x17cad8                                // 0x0017be58: jal 0x17cad8
+    func_0017cad8();  // 17cad8                                // 0x0017be58: jal 0x17cad8
     a1 = &str_002296b0;  // "E201181: SFX_CnvFrmArgb8888 : frmfmt is not support." // 0x0017be5c: addiu $a1, $a1, -0x6950
     *(uint32_t*)((s0) + 4) = v0;                                // 0x0017be60: sw $v0, 4($s0)
 label_0x17be64:
-    func_0017e068();  // 0x17e028                                // 0x0017be64: jal 0x17e028
+    func_0017e028();  // 17e028                                // 0x0017be64: jal 0x17e028
     a0 = *(int32_t*)((s0) + 0x24);                              // 0x0017be68: lw $a0, 0x24($s0)
     a3 = 2;                                                     // 0x0017be6c: addiu $a3, $zero, 2
     a2 = 0x23 << 16;                                            // 0x0017be70: lui $a2, 0x23
@@ -101,7 +101,7 @@ label_0x17bf50:
     if (t3 == 0) goto label_0x17c018;                           // 0x0017c00c: beqz $t3, 0x17c018
     local_c = t4;                                               // 0x0017c010: sw $t4, 0xc($sp)
 label_0x17c018:
-    func_0017c250();  // 0x17c1f0                                // 0x0017c018: jal 0x17c1f0
+    func_0017c1f0();  // 17c1f0                                // 0x0017c018: jal 0x17c1f0
     /* nop */                                                   // 0x0017c01c: nop 
     t2 = 0x20;                                                  // 0x0017c020: addiu $t2, $zero, 0x20
     v1 = *(int32_t*)((s0) + 8);                                 // 0x0017c024: lw $v1, 8($s0)
@@ -122,17 +122,17 @@ label_0x17c018:
     goto label_0x17c0bc;                                        // 0x0017c06c: b 0x17c0bc
     /* nop */                                                   // 0x0017c074: nop 
 label_0x17c078:
-    func_0017c3c8();  // 0x17c250                                // 0x0017c078: jal 0x17c250
+    func_0017c250();  // 17c250                                // 0x0017c078: jal 0x17c250
     /* nop */                                                   // 0x0017c07c: nop 
     a2 = *(int32_t*)((s1) + 0x3c);                              // 0x0017c080: lw $a2, 0x3c($s1)
-    func_00148f88();  // 0x148f80                                // 0x0017c088: jal 0x148f80
+    func_00148f80();  // 148f80                                // 0x0017c088: jal 0x148f80
     a1 = sp + 0x20;                                             // 0x0017c08c: addiu $a1, $sp, 0x20
     goto label_0x17c0b8;                                        // 0x0017c090: b 0x17c0b8
 label_0x17c098:
     a2 = 0xd;                                                   // 0x0017c098: addiu $a2, $zero, 0xd
-    func_0017c3c8();  // 0x17c250                                // 0x0017c09c: jal 0x17c250
+    func_0017c250();  // 17c250                                // 0x0017c09c: jal 0x17c250
     a2 = *(int32_t*)((s1) + 0x3c);                              // 0x0017c0a4: lw $a2, 0x3c($s1)
-    func_00148f98();  // 0x148f88                                // 0x0017c0ac: jal 0x148f88
+    func_00148f88();  // 148f88                                // 0x0017c0ac: jal 0x148f88
     a1 = sp + 0x20;                                             // 0x0017c0b0: addiu $a1, $sp, 0x20
 label_0x17c0b8:
 label_0x17c0bc:

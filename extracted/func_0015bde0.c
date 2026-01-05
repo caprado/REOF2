@@ -10,7 +10,7 @@ void func_0015bde0() {
     s1 = *(int32_t*)((a1) + 8);                                 // 0x0015be10: lw $s1, 8($a1)
     s0 = *(int32_t*)((a1) + 0xc);                               // 0x0015be14: lw $s0, 0xc($a1)
     a0 = *(int32_t*)((a1) + 0x24);                              // 0x0015be18: lw $a0, 0x24($a1)
-    func_0015bad0();  // 0x15ba80                                // 0x0015be1c: jal 0x15ba80
+    func_0015ba80();  // 15ba80                                // 0x0015be1c: jal 0x15ba80
     s4 = *(int32_t*)((a1) + 0x10);                              // 0x0015be20: lw $s4, 0x10($a1)
     a2 = s1 + 0xf;                                              // 0x0015be24: addiu $a2, $s1, 0xf
     a0 = (s1 < 0) ? 1 : 0;                                      // 0x0015be28: slti $a0, $s1, 0
@@ -36,7 +36,7 @@ label_0x15be68:
     s4 = -1;                                                    // 0x0015be74: addiu $s4, $zero, -1
     /* nop */                                                   // 0x0015be7c: nop 
 label_0x15be80:
-    func_0015d300();  // 0x15d260                                // 0x0015be84: jal 0x15d260
+    func_0015d260();  // 15d260                                // 0x0015be84: jal 0x15d260
     s0 = s0 + -1;                                               // 0x0015be8c: addiu $s0, $s0, -1
     *(uint32_t*)(s1) = v0;                                      // 0x0015be90: sw $v0, 0($s1)
     s1 = s1 + 4;                                                // 0x0015be94: addiu $s1, $s1, 4

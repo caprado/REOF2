@@ -11,7 +11,7 @@ void func_00126650() {
     
     sp = sp + -0x40;                                            // 0x00126650: addiu $sp, $sp, -0x40
     a3 = sp + 1;                                                // 0x00126668: addiu $a3, $sp, 1
-    func_00126650();  // 0x1265d8                                // 0x0012667c: jal 0x1265d8
+    func_001265d8();  // 1265d8                                // 0x0012667c: jal 0x1265d8
     if (v0 != 0) goto label_0x126768;                           // 0x00126684: bnez $v0, 0x126768
     v0 = -1;                                                    // 0x00126688: addiu $v0, $zero, -1
     v0 = local_0;                                               // 0x0012668c: lbu $v0, 0($sp)

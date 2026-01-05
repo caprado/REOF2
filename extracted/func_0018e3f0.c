@@ -17,7 +17,7 @@ void func_0018e3f0() {
     /* FPU: mov.s $f20, $f12 */                                 // 0x0018e40c: mov.s $f20, $f12
     local_38 = 0;                                               // 0x0018e410: sw $zero, 0x38($sp)
     a3 = *(int16_t*)(s0);                                       // 0x0018e414: lh $a3, 0($s0)
-    func_0018eb70();  // 0x18ea10                                // 0x0018e418: jal 0x18ea10
+    func_0018ea10();  // 18ea10                                // 0x0018e418: jal 0x18ea10
     a1 = sp + 0x3c;                                             // 0x0018e41c: addiu $a1, $sp, 0x3c
     *(uint16_t*)(s0) = v0;                                      // 0x0018e420: sh $v0, 0($s0)
     a1 = local_38;                                              // 0x0018e424: lw $a1, 0x38($sp)
@@ -41,7 +41,7 @@ label_0x18e460:
     FPU_F14 = *(float*)((a0) + 8);  // Load float               // 0x0018e464: lwc1 $f14, 8($a0)
     FPU_F15 = *(float*)((a1) + 4);  // Load float               // 0x0018e468: lwc1 $f15, 4($a1)
     FPU_F16 = *(float*)((a1) + 8);  // Load float               // 0x0018e46c: lwc1 $f16, 8($a1)
-    func_0018f0b0();  // 0x18f030                                // 0x0018e470: jal 0x18f030
+    func_0018f030();  // 18f030                                // 0x0018e470: jal 0x18f030
     /* FPU: mov.s $f12, $f20 */                                 // 0x0018e474: mov.s $f12, $f20
     goto label_0x18e4b0;                                        // 0x0018e478: b 0x18e4b0
 label_0x18e480:
@@ -51,7 +51,7 @@ label_0x18e480:
     FPU_F16 = *(float*)((a1) + 4);  // Load float               // 0x0018e48c: lwc1 $f16, 4($a1)
     FPU_F17 = *(float*)((a1) + 8);  // Load float               // 0x0018e490: lwc1 $f17, 8($a1)
     FPU_F18 = *(float*)((a1) + 0xc);  // Load float             // 0x0018e494: lwc1 $f18, 0xc($a1)
-    func_0018f3a0();  // 0x18f0b0                                // 0x0018e498: jal 0x18f0b0
+    func_0018f0b0();  // 18f0b0                                // 0x0018e498: jal 0x18f0b0
     /* FPU: mov.s $f12, $f20 */                                 // 0x0018e49c: mov.s $f12, $f20
     goto label_0x18e4ac;                                        // 0x0018e4a0: b 0x18e4ac
     /* nop */                                                   // 0x0018e4a4: nop 

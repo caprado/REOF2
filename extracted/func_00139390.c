@@ -9,9 +9,9 @@ void func_00139390() {
     sp = sp + -0x10;                                            // 0x00139390: addiu $sp, $sp, -0x10
     v0 = *(int32_t*)((s0) + 0x1c);                              // 0x001393a0: lw $v0, 0x1c($s0)
     /* beqzl $v0, 0x139448 */                                   // 0x001393a4: beqzl $v0, 0x139448
-    func_001413d8();  // 0x1413c0                                // 0x001393ac: jal 0x1413c0
+    func_001413c0();  // 1413c0                                // 0x001393ac: jal 0x1413c0
     /* nop */                                                   // 0x001393b0: nop 
-    func_001372d0();  // 0x1372c8                                // 0x001393b4: jal 0x1372c8
+    func_001372c8();  // 1372c8                                // 0x001393b4: jal 0x1372c8
     a0 = *(int32_t*)((s0) + 0x1c);                              // 0x001393b8: lw $a0, 0x1c($s0)
     v0 = ((unsigned)v1 < (unsigned)0xa) ? 1 : 0;                // 0x001393c0: sltiu $v0, $v1, 0xa
     /* beqzl $v0, 0x139438 */                                   // 0x001393c4: beqzl $v0, 0x139438
@@ -39,7 +39,7 @@ void func_00139390() {
     *(uint8_t*)((s0) + 2) = 0;                                  // 0x00139420: sb $zero, 2($s0)
     a0 = *(int32_t*)((s0) + 0x1c);                              // 0x00139424: lw $a0, 0x1c($s0)
 label_0x139428:
-    func_00137128();  // 0x137088                                // 0x00139428: jal 0x137088
+    func_00137088();  // 137088                                // 0x00139428: jal 0x137088
     /* nop */                                                   // 0x0013942c: nop 
     *(uint32_t*)((s0) + 0x1c) = 0;                              // 0x00139430: sw $zero, 0x1c($s0)
     return func_00141450();  // Tail call                        // 0x0013943c: j 0x141438

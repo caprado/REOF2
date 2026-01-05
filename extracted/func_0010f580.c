@@ -18,7 +18,7 @@ void func_0010f580() {
     local_8 = v1;                                               // 0x0010f5ac: sw $v1, 8($sp)
     local_c = v0;                                               // 0x0010f5b0: sh $v0, 0xc($sp)
     local_10 = t0;                                              // 0x0010f5b4: sw $t0, 0x10($sp)
-    func_0010ce88();  // 0x10ce10                                // 0x0010f5b8: jal 0x10ce10
+    func_0010ce10();  // 10ce10                                // 0x0010f5b8: jal 0x10ce10
     local_0 = t0;                                               // 0x0010f5bc: sw $t0, 0($sp)
     v1 = local_0;                                               // 0x0010f5c0: lw $v1, 0($sp)
     g_7fff0000 = 0;  // Global at 0x7fff0000                    // 0x0010f5c8: sb $zero, 0($v1)

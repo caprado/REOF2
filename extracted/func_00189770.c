@@ -33,14 +33,14 @@ void func_00189770() {
     s4 = s4 | v0;                                               // 0x001897f0: or $s4, $s4, $v0
     local_4 = s0;                                               // 0x001897f4: sw $s0, 4($sp)
     local_30 = v1;                                              // 0x00189800: sw $v1, 0x30($sp)
-    func_00107b68();  // 0x107ab8                                // 0x00189808: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x00189808: jal 0x107ab8
     a0 = sp | 8;                                                // 0x0018980c: ori $a0, $sp, 8
     s0 = s0 + sp;                                               // 0x00189810: addu $s0, $s0, $sp
     a0 = s0 + 8;                                                // 0x00189818: addiu $a0, $s0, 8
-    func_00107b68();  // 0x107ab8                                // 0x00189820: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x00189820: jal 0x107ab8
     local_0 = s1;                                               // 0x00189824: sw $s1, 0($sp)
     a2 = sp + 0x30;                                             // 0x00189830: addiu $a2, $sp, 0x30
-    func_00189470();  // 0x189310                                // 0x00189834: jal 0x189310
+    func_00189310();  // 189310                                // 0x00189834: jal 0x189310
     return;                                                     // 0x00189854: jr $ra
     sp = sp + 0xa0;                                             // 0x00189858: addiu $sp, $sp, 0xa0
 }

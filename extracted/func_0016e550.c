@@ -16,7 +16,7 @@ void func_0016e550() {
     /* bnezl $v1, 0x16e598 */                                   // 0x0016e574: bnezl $v1, 0x16e598
     a2 = *(int32_t*)((t0) + 0x20);                              // 0x0016e580: lw $a2, 0x20($t0)
     a1 = *(int32_t*)((a1) + 8);                                 // 0x0016e584: lw $a1, 8($a1)
-    func_0014fef0();  // 0x14fea8                                // 0x0016e588: jal 0x14fea8
+    func_0014fea8();  // 14fea8                                // 0x0016e588: jal 0x14fea8
     a3 = *(int32_t*)((t0) + 0x24);                              // 0x0016e58c: lw $a3, 0x24($t0)
     v0 = ((unsigned)v0 < (unsigned)1) ? 1 : 0;                  // 0x0016e590: sltiu $v0, $v0, 1
 label_0x16e594:

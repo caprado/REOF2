@@ -14,14 +14,14 @@ void func_00181618() {
     goto label_0x1816f4;                                        // 0x00181648: b 0x1816f4
     v0 = v0 | 0x8001;                                           // 0x0018164c: ori $v0, $v0, 0x8001
 label_0x181650:
-    func_001887a0();  // 0x188758                                // 0x00181650: jal 0x188758
+    func_00188758();  // 188758                                // 0x00181650: jal 0x188758
     if (s0 >= 0) goto label_0x181670;                           // 0x0018165c: bgez $s0, 0x181670
     /* nop */                                                   // 0x00181660: nop 
     v0 = 0x8101 << 16;                                          // 0x00181664: lui $v0, 0x8101
     goto label_0x1816f4;                                        // 0x00181668: b 0x1816f4
     v0 = v0 | 0x8002;                                           // 0x0018166c: ori $v0, $v0, 0x8002
 label_0x181670:
-    func_0010af38();  // 0x10ae00                                // 0x00181670: jal 0x10ae00
+    func_0010ae00();  // 10ae00                                // 0x00181670: jal 0x10ae00
     v0 = ((unsigned)v0 < (unsigned)0x80) ? 1 : 0;               // 0x00181678: sltiu $v0, $v0, 0x80
     if (v0 != 0) goto label_0x181690;                           // 0x0018167c: bnez $v0, 0x181690
     s2 = 0x27 << 16;                                            // 0x00181680: lui $s2, 0x27
@@ -43,7 +43,7 @@ label_0x181690:
     v0 = v0 | 0x10;                                             // 0x001816bc: ori $v0, $v0, 0x10
     g_0026ac80 = s0;  // Global at 0x0026ac80                   // 0x001816c0: sw $s0, -0x5380($v1)
     g_0026ac84 = v0;  // Global at 0x0026ac84                   // 0x001816c4: sw $v0, 4($s1)
-    func_0010ae00();  // 0x10ac68                                // 0x001816cc: jal 0x10ac68
+    func_0010ac68();  // 10ac68                                // 0x001816cc: jal 0x10ac68
     a0 = s1 + 0x41c;                                            // 0x001816d0: addiu $a0, $s1, 0x41c
     v1 = 0x27 << 16;                                            // 0x001816d4: lui $v1, 0x27
     v0 = 0 | 0x8427;                                            // 0x001816d8: ori $v0, $zero, 0x8427

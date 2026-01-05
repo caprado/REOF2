@@ -12,7 +12,7 @@ void func_00193e90() {
     v0 = *(int32_t*)(a0);                                       // 0x00193eac: lw $v0, 0($a0)
     v0 = v0 & 0x7fff;                                           // 0x00193eb0: andi $v0, $v0, 0x7fff
     s2 = v0 + 1;                                                // 0x00193eb4: addiu $s2, $v0, 1
-    func_0018dca0();  // 0x18dc30                                // 0x00193eb8: jal 0x18dc30
+    func_0018dc30();  // 18dc30                                // 0x00193eb8: jal 0x18dc30
     a0 = s2 << 4;                                               // 0x00193ebc: sll $a0, $s2, 4
     t1 = *(int32_t*)(s1);                                       // 0x00193ec0: lw $t1, 0($s1)
     v1 = s2 + -1;                                               // 0x00193ec8: addiu $v1, $s2, -1
@@ -23,12 +23,12 @@ void func_00193e90() {
     v1 = t1 | t0;                                               // 0x00193ee8: or $v1, $t1, $t0
     *(uint32_t*)(s1) = v1;                                      // 0x00193eec: sw $v1, 0($s1)
     *(uint32_t*)((s1) + 8) = a3;                                // 0x00193ef0: sw $a3, 8($s1)
-    func_00189ad0();  // 0x1899f8                                // 0x00193ef4: jal 0x1899f8
+    func_001899f8();  // 1899f8                                // 0x00193ef4: jal 0x1899f8
     *(uint32_t*)((s1) + 0xc) = v0;                              // 0x00193ef8: sw $v0, 0xc($s1)
     a3 = 0x29 << 16;                                            // 0x00193f00: lui $a3, 0x29
     v0 = 0x4000 << 16;                                          // 0x00193f08: lui $v0, 0x4000
     a1 = v1 | v0;                                               // 0x00193f14: or $a1, $v1, $v0
-    func_0018cff0();  // 0x18ce40                                // 0x00193f18: jal 0x18ce40
+    func_0018ce40();  // 18ce40                                // 0x00193f18: jal 0x18ce40
     a3 = a3 + -0x350;                                           // 0x00193f1c: addiu $a3, $a3, -0x350
     v0 = 1;                                                     // 0x00193f24: addiu $v0, $zero, 1
     /* FPU: ld.b $w0, -0x4e($zero) */                           // 0x00193f28: ld.b $w0, -0x4e($zero)

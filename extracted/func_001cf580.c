@@ -12,7 +12,7 @@ void func_001cf580() {
     sp = sp + -0x40;                                            // 0x001cf580: addiu $sp, $sp, -0x40
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x001cf588: addu.qb $zero, $sp, $s1
 label_0x1cf598:
-    func_001176a8();  // 0x1174d8                                // 0x001cf5a0: jal 0x1174d8
+    func_001174d8();  // 1174d8                                // 0x001cf5a0: jal 0x1174d8
     if (v0 < 0) goto label_0x1cf5bc;                            // 0x001cf5a8: bltz $v0, 0x1cf5bc
     /* nop */                                                   // 0x001cf5ac: nop 
     v1 = *(int32_t*)((s1) + 0x24);                              // 0x001cf5b0: lw $v1, 0x24($s1)

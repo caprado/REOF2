@@ -20,7 +20,7 @@ void func_00123a70() {
     goto label_0x123b58;                                        // 0x00123ad0: b 0x123b58
     v0 = -1;                                                    // 0x00123ad4: addiu $v0, $zero, -1
 label_0x123ad8:
-    func_00123a18();  // 0x123700                                // 0x00123ad8: jal 0x123700
+    func_00123700();  // 123700                                // 0x00123ad8: jal 0x123700
     /* nop */                                                   // 0x00123adc: nop 
     v0 = -1;                                                    // 0x00123ae4: addiu $v0, $zero, -1
     if (v1 == 0) goto label_0x123b58;                           // 0x00123ae8: beqz $v1, 0x123b58

@@ -18,7 +18,7 @@ void func_001479f0() {
     *(uint32_t*)((a3) + 0xf0) = a1;                             // 0x00147a18: sw $a1, 0xf0($a3)
     *(uint32_t*)((a3) + 0xfc) = a2;                             // 0x00147a1c: sw $a2, 0xfc($a3)
     *(uint32_t*)((a3) + 0xf4) = 0;                              // 0x00147a20: sw $zero, 0xf4($a3)
-    func_00147fe8();  // 0x147e30                                // 0x00147a24: jal 0x147e30
+    func_00147e30();  // 147e30                                // 0x00147a24: jal 0x147e30
     *(uint32_t*)((a3) + 0xf8) = 0;                              // 0x00147a28: sw $zero, 0xf8($a3)
     return;                                                     // 0x00147a30: jr $ra
     sp = sp + 0x10;                                             // 0x00147a34: addiu $sp, $sp, 0x10

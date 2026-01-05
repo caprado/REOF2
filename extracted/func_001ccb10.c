@@ -13,7 +13,7 @@ void func_001ccb10() {
     /* FPU: c.olt.s $f1, $f0 */                                 // 0x001ccb24: c.olt.s $f1, $f0
     /* bc1t 0x1ccb44 */                                         // 0x001ccb28: bc1t 0x1ccb44
     /* nop */                                                   // 0x001ccb2c: nop 
-    func_001ccff0();  // 0x1ccd50                                // 0x001ccb30: jal 0x1ccd50
+    func_001ccd50();  // 1ccd50                                // 0x001ccb30: jal 0x1ccd50
     /* nop */                                                   // 0x001ccb34: nop 
     if (v0 == 0) goto label_0x1ccb44;                           // 0x001ccb38: beqz $v0, 0x1ccb44
     at = 0x32 << 16;                                            // 0x001ccb3c: lui $at, 0x32

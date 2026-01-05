@@ -1,3 +1,4 @@
+/** @category game/init @status complete @author caprado */
 void func_001ba3c0() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
@@ -63,7 +64,7 @@ void func_001ba3c0() {
     at = 0x31 << 16;                                            // 0x001ba49c: lui $at, 0x31
     g_003137ce = v1;  // Global at 0x003137ce                   // 0x001ba4a0: sb $v1, 0x37ce($at)
     at = 0x31 << 16;                                            // 0x001ba4a4: lui $at, 0x31
-    func_001ae830();  // 0x1ae770                                // 0x001ba4a8: jal 0x1ae770
+    func_001ae770();  // 1ae770                                // 0x001ba4a8: jal 0x1ae770
     g_003137d0 = v0;  // Global at 0x003137d0                   // 0x001ba4ac: sb $v0, 0x37d0($at)
     at = 0x31 << 16;                                            // 0x001ba4b0: lui $at, 0x31
     v0 = 0 | 0xffff;                                            // 0x001ba4b4: ori $v0, $zero, 0xffff
@@ -96,27 +97,27 @@ void func_001ba3c0() {
     at = 0x31 << 16;                                            // 0x001ba520: lui $at, 0x31
     g_003137da = 0;  // Global at 0x003137da                    // 0x001ba524: sb $zero, 0x37da($at)
     at = 0x31 << 16;                                            // 0x001ba528: lui $at, 0x31
-    func_001b7aa0();  // 0x1b7a80                                // 0x001ba52c: jal 0x1b7a80
+    func_001b7a80();  // 1b7a80                                // 0x001ba52c: jal 0x1b7a80
     g_003137db = 0;  // Global at 0x003137db                    // 0x001ba530: sb $zero, 0x37db($at)
-    func_001b7aa0();  // 0x1b7a80                                // 0x001ba534: jal 0x1b7a80
+    func_001b7a80();  // 1b7a80                                // 0x001ba534: jal 0x1b7a80
     a0 = 0x50;                                                  // 0x001ba538: addiu $a0, $zero, 0x50
-    func_001b7aa0();  // 0x1b7a80                                // 0x001ba53c: jal 0x1b7a80
+    func_001b7a80();  // 1b7a80                                // 0x001ba53c: jal 0x1b7a80
     a0 = 0x51;                                                  // 0x001ba540: addiu $a0, $zero, 0x51
-    func_001b7aa0();  // 0x1b7a80                                // 0x001ba544: jal 0x1b7a80
+    func_001b7a80();  // 1b7a80                                // 0x001ba544: jal 0x1b7a80
     a0 = 0x54;                                                  // 0x001ba548: addiu $a0, $zero, 0x54
     at = 0x31 << 16;                                            // 0x001ba54c: lui $at, 0x31
     a0 = g_003137cd;  // Global at 0x003137cd                   // 0x001ba550: lb $a0, 0x37cd($at)
     at = 0x31 << 16;                                            // 0x001ba554: lui $at, 0x31
-    func_001af020();  // 0x1af010                                // 0x001ba558: jal 0x1af010
+    func_001af010();  // 1af010                                // 0x001ba558: jal 0x1af010
     a1 = g_003137ce;  // Global at 0x003137ce                   // 0x001ba55c: lb $a1, 0x37ce($at)
     at = 0x31 << 16;                                            // 0x001ba560: lui $at, 0x31
-    func_001b7e90();  // 0x1b7e60                                // 0x001ba564: jal 0x1b7e60
+    func_001b7e60();  // 1b7e60                                // 0x001ba564: jal 0x1b7e60
     a0 = g_003137a5;  // Global at 0x003137a5                   // 0x001ba568: lbu $a0, 0x37a5($at)
     at = 0x31 << 16;                                            // 0x001ba56c: lui $at, 0x31
-    func_001b7f10();  // 0x1b7e90                                // 0x001ba570: jal 0x1b7e90
+    func_001b7e90();  // 1b7e90                                // 0x001ba570: jal 0x1b7e90
     a0 = g_003137aa;  // Global at 0x003137aa                   // 0x001ba574: lbu $a0, 0x37aa($at)
     at = 0x31 << 16;                                            // 0x001ba578: lui $at, 0x31
-    func_001b7f80();  // 0x1b7f10                                // 0x001ba57c: jal 0x1b7f10
+    func_001b7f10();  // 1b7f10                                // 0x001ba57c: jal 0x1b7f10
     a0 = g_003137a9;  // Global at 0x003137a9                   // 0x001ba580: lbu $a0, 0x37a9($at)
     return;                                                     // 0x001ba588: jr $ra
     sp = sp + 0x10;                                             // 0x001ba58c: addiu $sp, $sp, 0x10

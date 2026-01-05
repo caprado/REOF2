@@ -16,7 +16,7 @@ label_0x1a12b8:
     v0 = *(int32_t*)((v1) + 4);                                 // 0x001a12c4: lw $v0, 4($v1)
     if (v0 != 0) goto label_0x1a12e8;                           // 0x001a12c8: bnez $v0, 0x1a12e8
     /* nop */                                                   // 0x001a12cc: nop 
-    func_001a5750();  // 0x1a5720                                // 0x001a12d8: jal 0x1a5720
+    func_001a5720();  // 1a5720                                // 0x001a12d8: jal 0x1a5720
     a2 = 0x10;                                                  // 0x001a12dc: addiu $a2, $zero, 0x10
     goto label_0x1a12f8;                                        // 0x001a12e0: b 0x1a12f8
 label_0x1a12e8:

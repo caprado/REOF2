@@ -14,7 +14,7 @@ void func_0011ede8() {
     /* mflo $a2 */                                              // 0x0011ee14
     /* mfhi $a0 */                                              // 0x0011ee20
     a0 = a0 | a2;                                               // 0x0011ee2c: or $a0, $a0, $a2
-    func_00110a68();  // 0x1104e8                                // 0x0011ee3c: jal 0x1104e8
+    func_001104e8();  // 1104e8                                // 0x0011ee3c: jal 0x1104e8
     s0 = s0 | a2;                                               // 0x0011ee40: or $s0, $s0, $a2
     return;                                                     // 0x0011ee50: jr $ra
     sp = sp + 0x20;                                             // 0x0011ee54: addiu $sp, $sp, 0x20

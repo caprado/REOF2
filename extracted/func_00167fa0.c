@@ -7,15 +7,15 @@ void func_00167fa0() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x20;                                            // 0x00167fa0: addiu $sp, $sp, -0x20
-    func_00168098();  // 0x168038                                // 0x00167fc0: jal 0x168038
-    func_00168150();  // 0x168098                                // 0x00167fd0: jal 0x168098
+    func_00168038();  // 168038                                // 0x00167fc0: jal 0x168038
+    func_00168098();  // 168098                                // 0x00167fd0: jal 0x168098
     if (v0 != 0) goto label_0x168020;                           // 0x00167fe0: bnez $v0, 0x168020
-    func_00168c08();  // 0x168a80                                // 0x00167fe8: jal 0x168a80
+    func_00168a80();  // 168a80                                // 0x00167fe8: jal 0x168a80
     /* nop */                                                   // 0x00167fec: nop 
     /* bnezl $v0, 0x168024 */                                   // 0x00167ff0: bnezl $v0, 0x168024
-    func_00168660();  // 0x1685c8                                // 0x00168000: jal 0x1685c8
+    func_001685c8();  // 1685c8                                // 0x00168000: jal 0x1685c8
     if (v0 != 0) goto label_0x168020;                           // 0x00168010: bnez $v0, 0x168020
-    func_00168930();  // 0x168868                                // 0x00168018: jal 0x168868
+    func_00168868();  // 168868                                // 0x00168018: jal 0x168868
     /* nop */                                                   // 0x0016801c: nop 
 label_0x168020:
     return;                                                     // 0x00168030: jr $ra

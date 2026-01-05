@@ -26,7 +26,7 @@ label_0x1b0760:
     v0 = a2 & 0xff;                                             // 0x001b0760: andi $v0, $a2, 0xff
     if (v0 <= 0) goto label_0x1b0738;                           // 0x001b0764: blez $v0, 0x1b0738
     a0 = a2 & 0xff;                                             // 0x001b0768: andi $a0, $a2, 0xff
-    func_001a1a00();  // 0x1a19f0                                // 0x001b076c: jal 0x1a19f0
+    func_001a19f0();  // 1a19f0                                // 0x001b076c: jal 0x1a19f0
     a0 = 1;                                                     // 0x001b0770: addiu $a0, $zero, 1
     a0 = *(int32_t*)((gp) + -0x6430);                           // 0x001b0774: lw $a0, -0x6430($gp)
     v1 = *(uint16_t*)((a0) + 2);                                // 0x001b0778: lhu $v1, 2($a0)
@@ -45,7 +45,7 @@ label_0x1b07a4:
     goto label_0x1b07bc;                                        // 0x001b07a4: b 0x1b07bc
     v0 = -2;                                                    // 0x001b07a8: addiu $v0, $zero, -2
 label_0x1b07ac:
-    func_001a19a0();  // 0x1a1990                                // 0x001b07ac: jal 0x1a1990
+    func_001a1990();  // 1a1990                                // 0x001b07ac: jal 0x1a1990
     /* nop */                                                   // 0x001b07b0: nop 
 label_0x1b07bc:
     return;                                                     // 0x001b07c0: jr $ra

@@ -46,11 +46,11 @@ label_0x188b80:
     a1 = a1 | 0x1301;                                           // 0x00188bb4: ori $a1, $a1, 0x1301
     t0 = 0x280;                                                 // 0x00188bbc: addiu $t0, $zero, 0x280
     t2 = 0x280;                                                 // 0x00188bc4: addiu $t2, $zero, 0x280
-    func_001178a0();  // 0x1176a8                                // 0x00188bc8: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x00188bc8: jal 0x1176a8
     if (v0 >= 0) goto label_0x188be8;                           // 0x00188bd0: bgezl $v0, 0x188be8
     v0 = g_002812e4;  // Global at 0x002812e4                   // 0x00188bd4: lw $v0, 0x24($s0)
     a0 = 0x23 << 16;                                            // 0x00188bd8: lui $a0, 0x23
-    func_001896f0();  // 0x1896c8                                // 0x00188bdc: jal 0x1896c8
+    func_001896c8();  // 1896c8                                // 0x00188bdc: jal 0x1896c8
     a0 = &str_0022a0e8;  // "sceDbcDeleteSocket: rpc error\n"   // 0x00188be0: addiu $a0, $a0, -0x5f18
 label_0x188be8:
     return;                                                     // 0x00188bf0: jr $ra

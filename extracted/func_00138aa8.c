@@ -23,7 +23,7 @@ void func_00138aa8() {
     g_00253b4c = a3;  // Global at 0x00253b4c                   // 0x00138ae0: sw $a3, 0xc($v0)
     t0 = 0x10;                                                  // 0x00138aec: addiu $t0, $zero, 0x10
     t2 = 4;                                                     // 0x00138af0: addiu $t2, $zero, 4
-    func_001178a0();  // 0x1176a8                                // 0x00138af8: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x00138af8: jal 0x1176a8
     local_0 = 0;                                                // 0x00138afc: sw $zero, 0($sp)
     v0 = g_00253c40;  // Global at 0x00253c40                   // 0x00138b04: lw $v0, 0($s0)
     return;                                                     // 0x00138b0c: jr $ra

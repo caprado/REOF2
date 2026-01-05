@@ -15,7 +15,7 @@ void func_00169a28() {
     goto label_0x169adc;                                        // 0x00169a74: b 0x169adc
     /* nop */                                                   // 0x00169a7c: nop 
 label_0x169a80:
-    func_00169b10();  // 0x169af0                                // 0x00169a80: jal 0x169af0
+    func_00169af0();  // 169af0                                // 0x00169a80: jal 0x169af0
     /* nop */                                                   // 0x00169a84: nop 
     a1 = 0xff00 << 16;                                          // 0x00169a88: lui $a1, 0xff00
     if (v0 == 0) goto label_0x169ab0;                           // 0x00169a8c: beqz $v0, 0x169ab0

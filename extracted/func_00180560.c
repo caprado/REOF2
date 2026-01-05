@@ -24,7 +24,7 @@ label_0x180590:
     s1 = s1 + -1;                                               // 0x001805a8: addiu $s1, $s1, -1
     *(uint8_t*)((s0) + 2) = 0;                                  // 0x001805ac: sb $zero, 2($s0)
     *(uint32_t*)((s0) + 4) = 0;                                 // 0x001805b0: sw $zero, 4($s0)
-    func_00107d30();  // 0x107c70                                // 0x001805b4: jal 0x107c70
+    func_00107c70();  // 107c70                                // 0x001805b4: jal 0x107c70
     s0 = s0 + 0x80;                                             // 0x001805b8: addiu $s0, $s0, 0x80
     if (s1 >= 0) goto label_0x180590;                           // 0x001805bc: bgezl $s1, 0x180590
     *(uint8_t*)(s0) = 0;                                        // 0x001805c0: sb $zero, 0($s0)

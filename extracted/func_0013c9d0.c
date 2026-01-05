@@ -16,7 +16,7 @@ label_0x13c9f8:
     sp = sp + -0x40;                                            // 0x0013c9f8: addiu $sp, $sp, -0x40
     if (s1 != 0) goto label_0x13ca48;                           // 0x0013ca2c: bnez $s1, 0x13ca48
     a0 = 0x22 << 16;                                            // 0x0013ca34: lui $a0, 0x22
-    func_0013d248();  // 0x13d1b8                                // 0x0013ca38: jal 0x13d1b8
+    func_0013d1b8();  // 13d1b8                                // 0x0013ca38: jal 0x13d1b8
     a0 = &str_00225be8;  // "E0011: Illigal parameter fname=%s\n" // 0x0013ca3c: addiu $a0, $a0, 0x5be8
     goto label_0x13cb68;                                        // 0x0013ca40: b 0x13cb68
     v0 = -1;                                                    // 0x0013ca44: addiu $v0, $zero, -1
@@ -28,7 +28,7 @@ label_0x13ca48:
     /* bnezl $s2, 0x13ca78 */                                   // 0x0013ca58: bnezl $s2, 0x13ca78
     v1 = *(int32_t*)((s1) + 0x1c);                              // 0x0013ca5c: lw $v1, 0x1c($s1)
     a0 = 0x22 << 16;                                            // 0x0013ca60: lui $a0, 0x22
-    func_0013d248();  // 0x13d1b8                                // 0x0013ca64: jal 0x13d1b8
+    func_0013d1b8();  // 13d1b8                                // 0x0013ca64: jal 0x13d1b8
     a0 = &str_00225c10;  // "E0009: Illigal parameter no=%d\n"  // 0x0013ca68: addiu $a0, $a0, 0x5c10
     goto label_0x13cb68;                                        // 0x0013ca6c: b 0x13cb68
     v0 = -1;                                                    // 0x0013ca70: addiu $v0, $zero, -1
@@ -52,7 +52,7 @@ label_0x13ca48:
     t0 = v1 ^ t0;                                               // 0x0013cac4: xor $t0, $v1, $t0
     v1 = v1 + 1;                                                // 0x0013cac8: addiu $v1, $v1, 1
     if (t0 != 0) s3 = v1;                                       // 0x0013cacc: movn $s3, $v1, $t0
-    func_0010af38();  // 0x10ae00                                // 0x0013cad0: jal 0x10ae00
+    func_0010ae00();  // 10ae00                                // 0x0013cad0: jal 0x10ae00
     *(uint32_t*)(s0) = s3;                                      // 0x0013cad4: sw $s3, 0($s0)
     *(uint32_t*)((s0) + 8) = 0;                                 // 0x0013cad8: sw $zero, 8($s0)
     if (a2 == 0) goto label_0x13cb08;                           // 0x0013cae0: beqz $a2, 0x13cb08

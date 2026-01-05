@@ -9,7 +9,7 @@ void func_00135e08() {
     sp = sp + -0x10;                                            // 0x00135e08: addiu $sp, $sp, -0x10
     if (a0 != 0) goto label_0x135e28;                           // 0x00135e0c: bnez $a0, 0x135e28
     a0 = 0x22 << 16;                                            // 0x00135e14: lui $a0, 0x22
-    func_00134fb0();  // 0x134ec0                                // 0x00135e18: jal 0x134ec0
+    func_00134ec0();  // 134ec0                                // 0x00135e18: jal 0x134ec0
     a0 = &str_002244a8;  // "cvFsGetFreeSize #5:device not found" // 0x00135e1c: addiu $a0, $a0, 0x44a8
     goto label_0x135e58;                                        // 0x00135e20: b 0x135e58
     v0 = -1;                                                    // 0x00135e24: addiu $v0, $zero, -1

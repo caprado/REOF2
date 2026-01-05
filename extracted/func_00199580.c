@@ -10,7 +10,7 @@ void func_00199580() {
     /* FPU: dpa.w.ph $ac0, $sp, $s3 */                          // 0x00199588: dpa.w.ph $ac0, $sp, $s3
     /* FPU: addu.qb $zero, $sp, $s1 */                          // 0x00199594: addu.qb $zero, $sp, $s1
     a0 = sp + 0x50;                                             // 0x001995a8: addiu $a0, $sp, 0x50
-    func_001912b0();  // 0x1911e0                                // 0x001995ac: jal 0x1911e0
+    func_001911e0();  // 1911e0                                // 0x001995ac: jal 0x1911e0
     v1 = sp + 0x50;                                             // 0x001995b4: addiu $v1, $sp, 0x50
     VPU_VF10 = *(vec128_t*)((s1) + 0);  // Load 128-bit vector  // 0x001995b8: ldc2 $10, 0($s1)
     VPU_VF11 = *(vec128_t*)((s1) + 0x10);  // Load 128-bit vector // 0x001995bc: ldc2 $11, 0x10($s1)

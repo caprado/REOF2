@@ -14,8 +14,8 @@ void func_00157d80() {
     a2 = a2 << 4;                                               // 0x00157da8: sll $a2, $a2, 4
     g_00213e70 = v0;  // Global at 0x00213e70                   // 0x00157dac: sw $v0, 0($s0)
     a2 = a2 + 4;                                                // 0x00157db4: addiu $a2, $a2, 4
-    func_00156058();  // 0x155f90                                // 0x00157db8: jal 0x155f90
-    func_00157ea8();  // 0x157e90                                // 0x00157dc0: jal 0x157e90
+    func_00155f90();  // 155f90                                // 0x00157db8: jal 0x155f90
+    func_00157e90();  // 157e90                                // 0x00157dc0: jal 0x157e90
     a0 = g_00213e70;  // Global at 0x00213e70                   // 0x00157dc4: lw $a0, 0($s0)
     v0 = g_00213e70;  // Global at 0x00213e70                   // 0x00157dc8: lw $v0, 0($s0)
     *(uint32_t*)((v0) + 0xc) = s1;                              // 0x00157dcc: sw $s1, 0xc($v0)

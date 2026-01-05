@@ -12,16 +12,16 @@ void func_0016d8b8() {
     sp = sp + -0x40;                                            // 0x0016d8b8: addiu $sp, $sp, -0x40
     v1 = *(int32_t*)((s0) + 0xd04);                             // 0x0016d8d0: lw $v1, 0xd04($s0)
     if (v1 == 0) goto label_0x16d938;                           // 0x0016d8d4: beqz $v1, 0x16d938
-    func_0016def0();  // 0x16deb0                                // 0x0016d8dc: jal 0x16deb0
+    func_0016deb0();  // 16deb0                                // 0x0016d8dc: jal 0x16deb0
     /* nop */                                                   // 0x0016d8e0: nop 
     a1 = sp + 0x20;                                             // 0x0016d8e8: addiu $a1, $sp, 0x20
-    func_00176720();  // 0x176680                                // 0x0016d8ec: jal 0x176680
+    func_00176680();  // 176680                                // 0x0016d8ec: jal 0x176680
     a2 = sp + 0x24;                                             // 0x0016d8f0: addiu $a2, $sp, 0x24
     a0 = s0 + 0xd08;                                            // 0x0016d8f4: addiu $a0, $s0, 0xd08
     a1 = sp + 0x28;                                             // 0x0016d8f8: addiu $a1, $sp, 0x28
-    func_00176720();  // 0x176680                                // 0x0016d8fc: jal 0x176680
+    func_00176680();  // 176680                                // 0x0016d8fc: jal 0x176680
     a2 = sp + 0x24;                                             // 0x0016d900: addiu $a2, $sp, 0x24
-    func_001752f8();  // 0x1752e8                                // 0x0016d908: jal 0x1752e8
+    func_001752e8();  // 1752e8                                // 0x0016d908: jal 0x1752e8
     a1 = 0x35;                                                  // 0x0016d90c: addiu $a1, $zero, 0x35
     a2 = local_20;                                              // 0x0016d910: lw $a2, 0x20($sp)
     a1 = local_28;                                              // 0x0016d914: lw $a1, 0x28($sp)

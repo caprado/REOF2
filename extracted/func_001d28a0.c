@@ -33,7 +33,7 @@ label_0x1d2924:
     goto label_0x1d2974;                                        // 0x001d2934: b 0x1d2974
     *(uint16_t*)(s3) = 0;                                       // 0x001d2938: sh $zero, 0($s3)
 label_0x1d293c:
-    func_001d2fa0();  // 0x1d29a0                                // 0x001d293c: jal 0x1d29a0
+    func_001d29a0();  // 1d29a0                                // 0x001d293c: jal 0x1d29a0
     if (v0 == 0) goto label_0x1d2970;                           // 0x001d2944: beqz $v0, 0x1d2970
     /* nop */                                                   // 0x001d2948: nop 
     *(uint8_t*)(s6) = 0;                                        // 0x001d294c: sb $zero, 0($s6)

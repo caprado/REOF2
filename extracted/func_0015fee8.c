@@ -10,17 +10,17 @@ void func_0015fee8() {
     uint32_t local_0;
     
     sp = sp + -0x20;                                            // 0x0015fee8: addiu $sp, $sp, -0x20
-    func_0015fcb0();  // 0x15fc80                                // 0x0015fef4: jal 0x15fc80
+    func_0015fc80();  // 15fc80                                // 0x0015fef4: jal 0x15fc80
     if (v0 != 0) goto label_0x15ff20;                           // 0x0015ff00: bnez $v0, 0x15ff20
     a1 = 0xf;                                                   // 0x0015ff04: addiu $a1, $zero, 0xf
     a0 = 0x22 << 16;                                            // 0x0015ff08: lui $a0, 0x22
-    func_001634a8();  // 0x163410                                // 0x0015ff0c: jal 0x163410
+    func_00163410();  // 163410                                // 0x0015ff0c: jal 0x163410
     a0 = &str_00227df0;  // "E2010803: mwPlyGetSyncMode: mode is invalid." // 0x0015ff10: addiu $a0, $a0, 0x7df0
     goto label_0x15ff74;                                        // 0x0015ff14: b 0x15ff74
     v0 = -1;                                                    // 0x0015ff18: addiu $v0, $zero, -1
     /* nop */                                                   // 0x0015ff1c: nop 
 label_0x15ff20:
-    func_001752e8();  // 0x175248                                // 0x0015ff20: jal 0x175248
+    func_00175248();  // 175248                                // 0x0015ff20: jal 0x175248
     a0 = *(int32_t*)((s0) + 0x40);                              // 0x0015ff24: lw $a0, 0x40($s0)
     v1 = 1;                                                     // 0x0015ff28: addiu $v1, $zero, 1
     a0 = local_0;                                               // 0x0015ff2c: lw $a0, 0($sp)
@@ -37,7 +37,7 @@ label_0x15ff20:
     a1 = 2;                                                     // 0x0015ff5c: addiu $a1, $zero, 2
     a0 = 0x22 << 16;                                            // 0x0015ff60: lui $a0, 0x22
 label_0x15ff64:
-    func_001634a8();  // 0x163410                                // 0x0015ff64: jal 0x163410
+    func_00163410();  // 163410                                // 0x0015ff64: jal 0x163410
     a0 = &str_00227e20;  // "E1122621: mwPlyGetNumDecPool: handle is invalid." // 0x0015ff68: addiu $a0, $a0, 0x7e20
     a1 = -1;                                                    // 0x0015ff6c: addiu $a1, $zero, -1
 label_0x15ff70:

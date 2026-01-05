@@ -24,12 +24,12 @@ void func_00189010() {
     t0 = 0x280;                                                 // 0x00189054: addiu $t0, $zero, 0x280
     v0 = *(int32_t*)((t2) + 0xc);                               // 0x00189058: lw $v0, 0xc($t2)
     t2 = 0x280;                                                 // 0x00189060: addiu $t2, $zero, 0x280
-    func_001178a0();  // 0x1176a8                                // 0x00189068: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x00189068: jal 0x1176a8
     g_002812d4 = v0;  // Global at 0x002812d4                   // 0x0018906c: sw $v0, 0x14($s0)
     if (v0 >= 0) goto label_0x189088;                           // 0x00189070: bgezl $v0, 0x189088
     v0 = g_002812c4;  // Global at 0x002812c4                   // 0x00189074: lw $v0, 4($s0)
     a0 = 0x23 << 16;                                            // 0x00189078: lui $a0, 0x23
-    func_001896f0();  // 0x1896c8                                // 0x0018907c: jal 0x1896c8
+    func_001896c8();  // 1896c8                                // 0x0018907c: jal 0x1896c8
     a0 = &str_0022a188;  // "sceDbcSRData: rpc error\n"         // 0x00189080: addiu $a0, $a0, -0x5e78
     v0 = -1;                                                    // 0x00189084: addiu $v0, $zero, -1
 label_0x189088:

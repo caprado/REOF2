@@ -1,3 +1,4 @@
+/** @category ps2-kernel-not-needed @status complete @author caprado */
 void func_0011cbc8() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
@@ -12,7 +13,7 @@ void func_0011cbc8() {
     s0 = v0 + 0x788;                                            // 0x0011cbe4: addiu $s0, $v0, 0x788
     a0 = g_001f0788;  // Global at 0x001f0788                   // 0x0011cbe8: lw $a0, 0x788($v0)
     s1 = s0 + 0x18;                                             // 0x0011cbec: addiu $s1, $s0, 0x18
-    func_0011cbc8();  // 0x11cbb8                                // 0x0011cbf0: jal 0x11cbb8
+    func_0011cbb8();  // 11cbb8                                // 0x0011cbf0: jal 0x11cbb8
     a1 = g_001f078c;  // Global at 0x001f078c                   // 0x0011cbf4: lw $a1, 4($s0)
     a1 = 0x1f << 16;                                            // 0x0011cbf8: lui $a1, 0x1f
     a0 = 0x8007 << 16;                                          // 0x0011cbfc: lui $a0, 0x8007
@@ -24,17 +25,17 @@ void func_0011cbc8() {
     iFlushCache();  // 0x114560                                 // 0x0011cc18: jal 0x114560
     a0 = 2;                                                     // 0x0011cc1c: addiu $a0, $zero, 2
     a0 = g_001f0790;  // Global at 0x001f0790                   // 0x0011cc20: lw $a0, 8($s0)
-    func_0011cbc8();  // 0x11cbb8                                // 0x0011cc24: jal 0x11cbb8
+    func_0011cbb8();  // 11cbb8                                // 0x0011cc24: jal 0x11cbb8
     a1 = g_001f0794;  // Global at 0x001f0794                   // 0x0011cc28: lw $a1, 0xc($s0)
     a0 = g_001f0798;  // Global at 0x001f0798                   // 0x0011cc2c: lw $a0, 0x10($s0)
-    func_0011cbc8();  // 0x11cbb8                                // 0x0011cc30: jal 0x11cbb8
+    func_0011cbb8();  // 11cbb8                                // 0x0011cc30: jal 0x11cbb8
     a1 = g_001f079c;  // Global at 0x001f079c                   // 0x0011cc34: lw $a1, 0x14($s0)
     a0 = g_001f07a0;  // Global at 0x001f07a0                   // 0x0011cc38: lw $a0, 0($s1)
     /* nop */                                                   // 0x0011cc3c: nop 
     SetSyscall();  // 0x11cba8                                  // 0x0011cc40: jal 0x11cba8
     s2 = s2 + 1;                                                // 0x0011cc44: addiu $s2, $s2, 1
     a0 = g_001f07a0;  // Global at 0x001f07a0                   // 0x0011cc48: lw $a0, 0($s1)
-    func_0011cbc8();  // 0x11cbb8                                // 0x0011cc50: jal 0x11cbb8
+    func_0011cbb8();  // 11cbb8                                // 0x0011cc50: jal 0x11cbb8
     s1 = s1 + 8;                                                // 0x0011cc54: addiu $s1, $s1, 8
     v0 = ((unsigned)s2 < (unsigned)8) ? 1 : 0;                  // 0x0011cc58: sltiu $v0, $s2, 8
     /* bnezl $v0, 0x11cc40 */                                   // 0x0011cc5c: bnezl $v0, 0x11cc40

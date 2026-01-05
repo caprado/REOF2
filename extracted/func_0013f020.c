@@ -43,7 +43,7 @@ label_0x13f074:
     *(uint32_t*)((s0) + 0x18) = a3;                             // 0x0013f0c0: sw $a3, 0x18($s0)
     *(uint32_t*)((s0) + 8) = a2;                                // 0x0013f0c4: sw $a2, 8($s0)
     *(uint32_t*)((s0) + 0x1c) = a1;                             // 0x0013f0c8: sw $a1, 0x1c($s0)
-    func_0013f148();  // 0x13f138                                // 0x0013f0cc: jal 0x13f138
+    func_0013f138();  // 13f138                                // 0x0013f0cc: jal 0x13f138
     *(uint32_t*)((s0) + 0x20) = s0;                             // 0x0013f0d0: sw $s0, 0x20($s0)
 label_0x13f0d8:
     return;                                                     // 0x0013f0e0: jr $ra

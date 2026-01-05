@@ -19,10 +19,10 @@ void func_00148530() {
     if (v0 == 0) goto label_0x148570;                           // 0x00148550: beqz $v0, 0x148570
     local_4 = a1;                                               // 0x00148558: sw $a1, 4($sp)
     local_0 = 0;                                                // 0x0014855c: sw $zero, 0($sp)
-    func_00147ca0();  // 0x147c28                                // 0x00148560: jal 0x147c28
+    func_00147c28();  // 147c28                                // 0x00148560: jal 0x147c28
     goto label_0x14857c;                                        // 0x00148568: b 0x14857c
 label_0x148570:
-    func_001484f8();  // 0x1484e8                                // 0x00148570: jal 0x1484e8
+    func_001484e8();  // 1484e8                                // 0x00148570: jal 0x1484e8
 label_0x14857c:
     return;                                                     // 0x0014857c: jr $ra
     sp = sp + 0x20;                                             // 0x00148580: addiu $sp, $sp, 0x20

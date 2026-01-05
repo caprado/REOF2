@@ -14,11 +14,11 @@ void func_0019e160() {
     goto label_0x19e19c;                                        // 0x0019e178: b 0x19e19c
     v0 = -1;                                                    // 0x0019e17c: addiu $v0, $zero, -1
 label_0x19e180:
-    func_0019e2f0();  // 0x19e1b0                                // 0x0019e180: jal 0x19e1b0
+    func_0019e1b0();  // 19e1b0                                // 0x0019e180: jal 0x19e1b0
     /* nop */                                                   // 0x0019e184: nop 
     goto label_0x19e19c;                                        // 0x0019e188: b 0x19e19c
 label_0x19e190:
-    func_0019e630();  // 0x19e4f0                                // 0x0019e190: jal 0x19e4f0
+    func_0019e4f0();  // 19e4f0                                // 0x0019e190: jal 0x19e4f0
     /* nop */                                                   // 0x0019e194: nop 
 label_0x19e19c:
     return;                                                     // 0x0019e1a0: jr $ra

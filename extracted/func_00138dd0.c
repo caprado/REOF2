@@ -13,13 +13,13 @@ void func_00138dd0() {
     if (v0 != v1) goto label_0x138e0c;                          // 0x00138df0: bne $v0, $v1, 0x138e0c
     s1 = 1;                                                     // 0x00138df4: addiu $s1, $zero, 1
 label_0x138df8:
-    func_00139288();  // 0x139228                                // 0x00138df8: jal 0x139228
+    func_00139228();  // 139228                                // 0x00138df8: jal 0x139228
     /* nop */                                                   // 0x00138dfc: nop 
     v0 = *(int8_t*)((s0) + 1);                                  // 0x00138e00: lb $v0, 1($s0)
     if (v0 == s1) goto label_0x138df8;                          // 0x00138e04: beq $v0, $s1, 0x138df8
     /* nop */                                                   // 0x00138e08: nop 
 label_0x138e0c:
-    func_00138b80();  // 0x138b18                                // 0x00138e0c: jal 0x138b18
+    func_00138b18();  // 138b18                                // 0x00138e0c: jal 0x138b18
     a0 = *(int32_t*)((s0) + 4);                                 // 0x00138e10: lw $a0, 4($s0)
     a2 = 0x44;                                                  // 0x00138e24: addiu $a2, $zero, 0x44
     return func_00107d30();  // Tail call                        // 0x00138e2c: j 0x107c70

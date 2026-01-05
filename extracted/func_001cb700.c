@@ -45,7 +45,7 @@ label_0x1cb78c:
     at = (s2 < s1) ? 1 : 0;                                     // 0x001cb7a0: slt $at, $s2, $s1
     if (at == 0) goto label_0x1cb7c0;                           // 0x001cb7a4: beqz $at, 0x1cb7c0
     a2 = s2 + -1;                                               // 0x001cb7a8: addiu $a2, $s2, -1
-    func_001cb840();  // 0x1cb820                                // 0x001cb7ac: jal 0x1cb820
+    func_001cb820();  // 1cb820                                // 0x001cb7ac: jal 0x1cb820
     /* nop */                                                   // 0x001cb7b0: nop 
     s2 = s2 + 1;                                                // 0x001cb7b4: addiu $s2, $s2, 1
     goto label_0x1cb760;                                        // 0x001cb7b8: b 0x1cb760
@@ -54,12 +54,12 @@ label_0x1cb7c0:
     at = (s4 < a2) ? 1 : 0;                                     // 0x001cb7c0: slt $at, $s4, $a2
     if (at == 0) goto label_0x1cb7dc;                           // 0x001cb7c4: beqz $at, 0x1cb7dc
     a1 = s1 + 1;                                                // 0x001cb7c8: addiu $a1, $s1, 1
-    func_001cb820();  // 0x1cb700                                // 0x001cb7d0: jal 0x1cb700
+    func_001cb700();  // 1cb700                                // 0x001cb7d0: jal 0x1cb700
     a1 = s1 + 1;                                                // 0x001cb7d8: addiu $a1, $s1, 1
 label_0x1cb7dc:
     at = (a1 < s3) ? 1 : 0;                                     // 0x001cb7dc: slt $at, $a1, $s3
     if (at == 0) goto label_0x1cb7f0;                           // 0x001cb7e0: beqz $at, 0x1cb7f0
-    func_001cb820();  // 0x1cb700                                // 0x001cb7e8: jal 0x1cb700
+    func_001cb700();  // 1cb700                                // 0x001cb7e8: jal 0x1cb700
 label_0x1cb7f0:
     /* FPU: aver_u.h $w1, $w0, $w21 */                          // 0x001cb7f4: aver_u.h $w1, $w0, $w21
     /* FPU: xori.b $w1, $w0, 0xb4 */                            // 0x001cb7f8: xori.b $w1, $w0, 0xb4

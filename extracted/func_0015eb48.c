@@ -7,14 +7,14 @@ void func_0015eb48() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x10;                                            // 0x0015eb48: addiu $sp, $sp, -0x10
-    func_001737b0();  // 0x173730                                // 0x0015eb50: jal 0x173730
+    func_00173730();  // 173730                                // 0x0015eb50: jal 0x173730
     a0 = g_002278d0;  // Global at 0x002278d0                   // 0x0015eb54: lw $a0, 0x40($a0)
     if (v0 == 0) goto label_0x15eb78;                           // 0x0015eb58: beqz $v0, 0x15eb78
     a0 = -0x133;                                                // 0x0015eb5c: addiu $a0, $zero, -0x133
-    func_0015e7e0();  // 0x15e7b0                                // 0x0015eb60: jal 0x15e7b0
+    func_0015e7b0();  // 15e7b0                                // 0x0015eb60: jal 0x15e7b0
     /* nop */                                                   // 0x0015eb64: nop 
     a0 = 0x22 << 16;                                            // 0x0015eb68: lui $a0, 0x22
-    func_001634a8();  // 0x163410                                // 0x0015eb6c: jal 0x163410
+    func_00163410();  // 163410                                // 0x0015eb6c: jal 0x163410
     a0 = &str_00227890;  // "E10821A : Invalid value of SFD_GetPaStat : %d" // 0x0015eb70: addiu $a0, $a0, 0x7890
     v0 = -0x133;                                                // 0x0015eb74: addiu $v0, $zero, -0x133
 label_0x15eb78:

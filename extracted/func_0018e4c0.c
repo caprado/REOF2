@@ -17,7 +17,7 @@ void func_0018e4c0() {
     /* FPU: mov.s $f20, $f12 */                                 // 0x0018e4dc: mov.s $f20, $f12
     local_38 = 0;                                               // 0x0018e4e0: sw $zero, 0x38($sp)
     a3 = *(int16_t*)(s0);                                       // 0x0018e4e4: lh $a3, 0($s0)
-    func_0018ed00();  // 0x18eb70                                // 0x0018e4e8: jal 0x18eb70
+    func_0018eb70();  // 18eb70                                // 0x0018e4e8: jal 0x18eb70
     a1 = sp + 0x3c;                                             // 0x0018e4ec: addiu $a1, $sp, 0x3c
     *(uint16_t*)(s0) = v0;                                      // 0x0018e4f0: sh $v0, 0($s0)
     v0 = local_38;                                              // 0x0018e4f4: lw $v0, 0x38($sp)
@@ -42,7 +42,7 @@ label_0x18e514:
     /* FPU: cvt.s.w $f16, $f0 */                                // 0x0018e53c: cvt.s.w $f16, $f0
     /* move to FPU: $a0, $f1 */                                 // 0x0018e540: mtc1 $a0, $f1
     /* FPU: cvt.s.w $f13, $f2 */                                // 0x0018e544: cvt.s.w $f13, $f2
-    func_0018f0b0();  // 0x18f030                                // 0x0018e548: jal 0x18f030
+    func_0018f030();  // 18f030                                // 0x0018e548: jal 0x18f030
     /* FPU: cvt.s.w $f14, $f1 */                                // 0x0018e54c: cvt.s.w $f14, $f1
 label_0x18e550:
     FPU_F20 = *(float*)(sp);  // Load float                     // 0x0018e554: lwc1 $f20, 0($sp)

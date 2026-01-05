@@ -57,7 +57,7 @@ label_0x11b79c:
     a1 = 3;                                                     // 0x0011b7b4: addiu $a1, $zero, 3
     t1 = s0 + -0x600;                                           // 0x0011b7bc: addiu $t1, $s0, -0x600
     t2 = 4;                                                     // 0x0011b7c0: addiu $t2, $zero, 4
-    func_001178a0();  // 0x1176a8                                // 0x0011b7c4: jal 0x1176a8
+    func_001176a8();  // 1176a8                                // 0x0011b7c4: jal 0x1176a8
     if (v0 >= 0) goto label_0x11b7d8;                           // 0x0011b7cc: bgez $v0, 0x11b7d8
     v0 = g_0024fa00;  // Global at 0x0024fa00                   // 0x0011b7d0: lw $v0, -0x600($s0)
     v0 = -1;                                                    // 0x0011b7d4: addiu $v0, $zero, -1

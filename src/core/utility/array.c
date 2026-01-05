@@ -1,3 +1,4 @@
+#include "array.h"
 #include <stdint.h>
 #include <stdbool.h>
 
@@ -5,6 +6,26 @@
 #define MAX_ARRAY_ENTRIES 256
 static uintptr_t g_pointerArray[MAX_ARRAY_ENTRIES];  // Original: g_002aa890 at 0x2aa890
 static int32_t g_arrayCount = 0;                      // Original: gp-0x63b4
+static int32_t g_arrayUnused = 0;                     // Original: gp-0x63b8 (written but never read)
+
+/**
+ * @category utility/array
+ * @status complete
+ * @original func_001af240
+ * @address 0x001af240
+ * @description Clears the pointer array and resets count to zero.
+ *              Zeroes entries 0-7 and resets both count variables.
+ * @windows_compatibility high
+ * @author caprado
+ */
+void clearPointerArray(void) {
+    g_arrayCount = 0;
+    g_arrayUnused = 0;
+
+    for (int32_t i = 7; i >= 0; i--) {
+        g_pointerArray[i] = 0;
+    }
+}
 
 /**
  * @category utility/array
@@ -77,16 +98,6 @@ void callAllFunctionPointers(void) {
     }
 }
 
-/**
- * @category utility/array
- * @status complete
- * @author caprado
- * @original helper
- * @address N/A
- * @description Adds an entry to the global pointer array.
- *              This is a helper for registering function pointers.
- * @windows_compatibility high
- */
 void addToPointerArray(uintptr_t addressToAdd) {
     // Check if we have space
     if (g_arrayCount < MAX_ARRAY_ENTRIES) {
@@ -95,28 +106,10 @@ void addToPointerArray(uintptr_t addressToAdd) {
     }
 }
 
-/**
- * @category utility/array
- * @status complete
- * @author caprado
- * @original helper
- * @address N/A
- * @description Gets current count of entries in pointer array.
- * @windows_compatibility high
- */
 int32_t getPointerArrayCount(void) {
     return g_arrayCount;
 }
 
-/**
- * @category utility/array
- * @status complete
- * @author caprado
- * @original helper
- * @address N/A
- * @description Gets pointer at specified index in array.
- * @windows_compatibility high
- */
 uintptr_t getPointerArrayEntry(int32_t index) {
     if (index >= 0 && index < g_arrayCount) {
         return g_pointerArray[index];

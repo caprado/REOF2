@@ -11,10 +11,10 @@ void func_0016dda0() {
     
     sp = sp + -0x50;                                            // 0x0016dda0: addiu $sp, $sp, -0x50
     s1 = s0 + 0xcdc;                                            // 0x0016ddb8: addiu $s1, $s0, 0xcdc
-    func_0016def0();  // 0x16deb0                                // 0x0016ddc4: jal 0x16deb0
+    func_0016deb0();  // 16deb0                                // 0x0016ddc4: jal 0x16deb0
     s2 = s0 + 0xd54;                                            // 0x0016ddc8: addiu $s2, $s0, 0xd54
     a1 = sp + 0x20;                                             // 0x0016ddd0: addiu $a1, $sp, 0x20
-    func_00176720();  // 0x176680                                // 0x0016ddd4: jal 0x176680
+    func_00176680();  // 176680                                // 0x0016ddd4: jal 0x176680
     a2 = sp + 0x24;                                             // 0x0016ddd8: addiu $a2, $sp, 0x24
     a1 = 1;                                                     // 0x0016dddc: addiu $a1, $zero, 1
     a2 = local_18;                                              // 0x0016ddf8: lw $a2, 0x18($sp)

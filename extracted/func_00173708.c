@@ -14,24 +14,24 @@ void func_00173708() {
     sp = sp + 0x10;                                             // 0x00173728: addiu $sp, $sp, 0x10
     /* nop */                                                   // 0x0017372c: nop 
     sp = sp + -0x10;                                            // 0x00173730: addiu $sp, $sp, -0x10
-    func_00169b10();  // 0x169af0                                // 0x0017373c: jal 0x169af0
+    func_00169af0();  // 169af0                                // 0x0017373c: jal 0x169af0
     a1 = 0xff00 << 16;                                          // 0x00173744: lui $a1, 0xff00
     if (v0 == 0) goto label_0x173768;                           // 0x0017374c: beqz $v0, 0x173768
     a1 = a1 | 0x132;                                            // 0x00173750: ori $a1, $a1, 0x132
     return func_00169940();  // Tail call                        // 0x00173760: j 0x1698d0
     sp = sp + 0x10;                                             // 0x00173764: addiu $sp, $sp, 0x10
 label_0x173768:
-    func_001752f8();  // 0x1752e8                                // 0x00173768: jal 0x1752e8
+    func_001752e8();  // 1752e8                                // 0x00173768: jal 0x1752e8
     a1 = 0x2f;                                                  // 0x0017376c: addiu $a1, $zero, 0x2f
     v1 = 1;                                                     // 0x00173770: addiu $v1, $zero, 1
     if (v0 != v1) goto label_0x173790;                          // 0x00173774: bne $v0, $v1, 0x173790
-    func_00171f90();  // 0x171f80                                // 0x0017377c: jal 0x171f80
+    func_00171f80();  // 171f80                                // 0x0017377c: jal 0x171f80
     /* nop */                                                   // 0x00173780: nop 
     goto label_0x17379c;                                        // 0x00173784: b 0x17379c
     v1 = 1;                                                     // 0x00173788: addiu $v1, $zero, 1
     /* nop */                                                   // 0x0017378c: nop 
 label_0x173790:
-    func_001737c0();  // 0x1737b0                                // 0x00173790: jal 0x1737b0
+    func_001737b0();  // 1737b0                                // 0x00173790: jal 0x1737b0
     /* nop */                                                   // 0x00173794: nop 
     v1 = 1;                                                     // 0x00173798: addiu $v1, $zero, 1
 label_0x17379c:

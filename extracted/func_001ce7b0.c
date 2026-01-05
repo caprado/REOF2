@@ -46,12 +46,12 @@ label_0x1ce84c:
     v0 = *(int32_t*)((s1) + 0xc);                               // 0x001ce84c: lw $v0, 0xc($s1)
     s0 = v0 - a1;                                               // 0x001ce850: subu $s0, $v0, $a1
     if (s0 > 0) goto label_0x1ce86c;                            // 0x001ce854: bgtz $s0, 0x1ce86c
-    thunk_func_001cfd80();  // 0x1ce780                          // 0x001ce85c: jal 0x1ce780
+    thunk_func_001ce780();  // 1ce780                          // 0x001ce85c: jal 0x1ce780
     /* nop */                                                   // 0x001ce860: nop 
     goto label_0x1ce888;                                        // 0x001ce864: b 0x1ce888
 label_0x1ce86c:
     a0 = *(int32_t*)((s1) + 8);                                 // 0x001ce86c: lw $a0, 8($s1)
-    func_00107c70();  // 0x107b68                                // 0x001ce874: jal 0x107b68
+    func_00107b68();  // 107b68                                // 0x001ce874: jal 0x107b68
     a1 = a0 + a1;                                               // 0x001ce878: addu $a1, $a0, $a1
     *(uint32_t*)((s1) + 0xc) = s0;                              // 0x001ce87c: sw $s0, 0xc($s1)
     *(uint32_t*)((s1) + 4) = 0;                                 // 0x001ce880: sw $zero, 4($s1)

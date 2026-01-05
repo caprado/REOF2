@@ -15,7 +15,7 @@ void func_00164860() {
     goto label_0x1648d8;                                        // 0x0016488c: b 0x1648d8
     /* nop */                                                   // 0x00164894: nop 
 label_0x164898:
-    func_00140598();  // 0x1404a0                                // 0x0016489c: jal 0x1404a0
+    func_001404a0();  // 1404a0                                // 0x0016489c: jal 0x1404a0
     v1 = *(int32_t*)(s0);                                       // 0x001648a4: lw $v1, 0($s0)
     v0 = *(int32_t*)((v1) + 0x20);                              // 0x001648b0: lw $v0, 0x20($v1)
     /* call function at address in v0 */                        // 0x001648b4: jalr $v0

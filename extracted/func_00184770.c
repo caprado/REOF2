@@ -22,7 +22,7 @@ label_0x1847c0:
     if (v0 == 0) goto label_0x1848b4;                           // 0x001847c4: beqz $v0, 0x1848b4
     s3 = 0x28 << 16;                                            // 0x001847cc: lui $s3, 0x28
     s2 = s3 + -0x7c00;                                          // 0x001847d0: addiu $s2, $s3, -0x7c00
-    func_001873b0();  // 0x187390                                // 0x001847dc: jal 0x187390
+    func_00187390();  // 187390                                // 0x001847dc: jal 0x187390
     a3 = 1;                                                     // 0x001847e0: addiu $a3, $zero, 1
     if (v0 == 0) goto label_0x1848e4;                           // 0x001847e4: beqz $v0, 0x1848e4
     v1 = s1 << 9;                                               // 0x001847e8: sll $v1, $s1, 9
@@ -46,12 +46,12 @@ label_0x184860:
     /* nop */                                                   // 0x00184890: nop 
 label_0x184898:
     a1 = s3 + -0x7c00;                                          // 0x00184898: addiu $a1, $s3, -0x7c00
-    func_001873d0();  // 0x1873b0                                // 0x001848a0: jal 0x1873b0
+    func_001873b0();  // 1873b0                                // 0x001848a0: jal 0x1873b0
     a3 = 1;                                                     // 0x001848a4: addiu $a3, $zero, 1
     if (v0 != 0) s5 = 0;                                        // 0x001848a8: movn $s5, $zero, $v0
     goto label_0x1848ec;                                        // 0x001848ac: b 0x1848ec
 label_0x1848b4:
-    func_00182bd0();  // 0x182b88                                // 0x001848b8: jal 0x182b88
+    func_00182b88();  // 182b88                                // 0x001848b8: jal 0x182b88
     v1 = local_0;                                               // 0x001848c0: lw $v1, 0($sp)
     if (v1 == 0) goto label_0x1848d4;                           // 0x001848c4: beqz $v1, 0x1848d4
     goto label_0x1848ec;                                        // 0x001848cc: b 0x1848ec

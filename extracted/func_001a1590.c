@@ -1,3 +1,4 @@
+/** @category: graphics/init @status: complete @author: caprado */
 void func_001a1590() {
     // MIPS register variables
     int32_t v0, v1, a0, a1, a2, a3, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
@@ -52,7 +53,7 @@ void func_001a1590() {
     *(float*)(a2) = FPU_F2;  // Store float                     // 0x001a1644: swc1 $f2, 0($a2)
     *(float*)((a2) + 4) = FPU_F1;  // Store float               // 0x001a1648: swc1 $f1, 4($a2)
     *(float*)((a2) + 8) = FPU_F0;  // Store float               // 0x001a164c: swc1 $f0, 8($a2)
-    func_001a5b10();  // 0x1a5ad0                                // 0x001a1650: jal 0x1a5ad0
+    func_001a5ad0();  // 1a5ad0                                // 0x001a1650: jal 0x1a5ad0
     a2 = sp + 0x4c;                                             // 0x001a1654: addiu $a2, $sp, 0x4c
     if (s1 == 0) goto label_0x1a1668;                           // 0x001a1658: beqz $s1, 0x1a1668
     /* nop */                                                   // 0x001a165c: nop 
@@ -97,12 +98,12 @@ label_0x1a1668:
 label_0x1a16fc:
     a0 = *(int16_t*)(s0);                                       // 0x001a16fc: lh $a0, 0($s0)
     a1 = local_4c;                                              // 0x001a1700: lh $a1, 0x4c($sp)
-    func_001a17e0();  // 0x1a1740                                // 0x001a1704: jal 0x1a1740
+    func_001a1740();  // 1a1740                                // 0x001a1704: jal 0x1a1740
     /* FPU: mov.s $f12, $f20 */                                 // 0x001a1708: mov.s $f12, $f20
     *(uint16_t*)(s0) = v0;                                      // 0x001a170c: sh $v0, 0($s0)
     a0 = *(int16_t*)((s0) + 2);                                 // 0x001a1710: lh $a0, 2($s0)
     a1 = local_4c;                                              // 0x001a1714: lh $a1, 0x4c($sp)
-    func_001a17e0();  // 0x1a1740                                // 0x001a1718: jal 0x1a1740
+    func_001a1740();  // 1a1740                                // 0x001a1718: jal 0x1a1740
     /* FPU: mov.s $f12, $f20 */                                 // 0x001a171c: mov.s $f12, $f20
     *(uint16_t*)((s0) + 2) = v0;                                // 0x001a1720: sh $v0, 2($s0)
     FPU_F20 = *(float*)(sp);  // Load float                     // 0x001a1728: lwc1 $f20, 0($sp)

@@ -43,7 +43,7 @@ label_0x19e580:
     s0 = sp + 0xd0;                                             // 0x0019e588: addiu $s0, $sp, 0xd0
     s1 = v0 + v1;                                               // 0x0019e590: addu $s1, $v0, $v1
 label_0x19e594:
-    func_00107b68();  // 0x107ab8                                // 0x0019e59c: jal 0x107ab8
+    func_00107ab8();  // 107ab8                                // 0x0019e59c: jal 0x107ab8
     a2 = 0x80;                                                  // 0x0019e5a0: addiu $a2, $zero, 0x80
     v0 = local_c0;                                              // 0x0019e5a4: lw $v0, 0xc0($sp)
     s3 = s3 + 1;                                                // 0x0019e5a8: addiu $s3, $s3, 1
@@ -54,7 +54,7 @@ label_0x19e594:
     v0 = local_a0;                                              // 0x0019e5bc: lw $v0, 0xa0($sp)
     v1 = s4 << 8;                                               // 0x0019e5c0: sll $v1, $s4, 8
     a0 = sp + 0xd0;                                             // 0x0019e5c4: addiu $a0, $sp, 0xd0
-    func_0019e710();  // 0x19e630                                // 0x0019e5cc: jal 0x19e630
+    func_0019e630();  // 19e630                                // 0x0019e5cc: jal 0x19e630
     a1 = v0 + v1;                                               // 0x0019e5d0: addu $a1, $v0, $v1
     s4 = s4 + 1;                                                // 0x0019e5d4: addiu $s4, $s4, 1
 label_0x19e5d8:

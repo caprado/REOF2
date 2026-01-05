@@ -20,16 +20,16 @@ void func_0017cfb8() {
     s0 = *(int32_t*)((t0) + 0x24);                              // 0x0017cff4: lw $s0, 0x24($t0)
     a3 = sp + 0x10;                                             // 0x0017cff8: addiu $a3, $sp, 0x10
     local_0 = v0;                                               // 0x0017cffc: sw $v0, 0($sp)
-    func_001407b0();  // 0x1406e0                                // 0x0017d000: jal 0x1406e0
+    func_001406e0();  // 1406e0                                // 0x0017d000: jal 0x1406e0
     local_4 = v1;                                               // 0x0017d004: sw $v1, 4($sp)
     if (v0 != 0) goto label_0x17d028;                           // 0x0017d010: bnez $v0, 0x17d028
-    func_0017d510();  // 0x17d4e8                                // 0x0017d018: jal 0x17d4e8
+    func_0017d4e8();  // 17d4e8                                // 0x0017d018: jal 0x17d4e8
     /* nop */                                                   // 0x0017d01c: nop 
     goto label_0x17d038;                                        // 0x0017d020: b 0x17d038
     v0 = 1;                                                     // 0x0017d024: addiu $v0, $zero, 1
 label_0x17d028:
     a1 = local_10;                                              // 0x0017d028: lw $a1, 0x10($sp)
-    func_0017d510();  // 0x17d4e8                                // 0x0017d02c: jal 0x17d4e8
+    func_0017d4e8();  // 17d4e8                                // 0x0017d02c: jal 0x17d4e8
     a2 = local_14;                                              // 0x0017d030: lw $a2, 0x14($sp)
     v0 = 1;                                                     // 0x0017d034: addiu $v0, $zero, 1
 label_0x17d038:

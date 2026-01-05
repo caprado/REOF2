@@ -23,7 +23,7 @@ label_0x1350e8:
     return func_00134fb0();  // Tail call                        // 0x001350f8: j 0x134ec0
     sp = sp + 0x10;                                             // 0x001350fc: addiu $sp, $sp, 0x10
 label_0x135100:
-    func_00135220();  // 0x135148                                // 0x00135100: jal 0x135148
+    func_00135148();  // 135148                                // 0x00135100: jal 0x135148
     /* nop */                                                   // 0x00135104: nop 
     /* bnezl $v0, 0x135128 */                                   // 0x00135108: bnezl $v0, 0x135128
     v0 = g_0020217c;  // Global at 0x0020217c                   // 0x0013510c: lw $v0, 4($v0)

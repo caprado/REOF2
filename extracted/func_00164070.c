@@ -7,13 +7,13 @@ void func_00164070() {
     int32_t hi, lo;                                             // Multiply/divide result registers
     
     sp = sp + -0x10;                                            // 0x00164070: addiu $sp, $sp, -0x10
-    func_0015f750();  // 0x15f738                                // 0x0016407c: jal 0x15f738
-    func_00164028();  // 0x163fe8                                // 0x00164088: jal 0x163fe8
+    func_0015f738();  // 15f738                                // 0x0016407c: jal 0x15f738
+    func_00163fe8();  // 163fe8                                // 0x00164088: jal 0x163fe8
     a1 = 1;                                                     // 0x0016408c: addiu $a1, $zero, 1
-    func_001634c0();  // 0x1634a8                                // 0x00164090: jal 0x1634a8
+    func_001634a8();  // 1634a8                                // 0x00164090: jal 0x1634a8
     /* nop */                                                   // 0x00164094: nop 
-    func_00164028();  // 0x163fe8                                // 0x0016409c: jal 0x163fe8
-    func_0015f768();  // 0x15f750                                // 0x001640a4: jal 0x15f750
+    func_00163fe8();  // 163fe8                                // 0x0016409c: jal 0x163fe8
+    func_0015f750();  // 15f750                                // 0x001640a4: jal 0x15f750
     /* nop */                                                   // 0x001640a8: nop 
     return func_00163540();  // Tail call                        // 0x001640b8: j 0x163518
     sp = sp + 0x10;                                             // 0x001640bc: addiu $sp, $sp, 0x10

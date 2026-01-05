@@ -16,13 +16,13 @@ void func_00136fd0() {
     return func_00107d30();  // Tail call                        // 0x00136ff8: j 0x107c70
     sp = sp + 0x10;                                             // 0x00136ffc: addiu $sp, $sp, 0x10
     sp = sp + -0x20;                                            // 0x00137000: addiu $sp, $sp, -0x20
-    func_001413d8();  // 0x1413c0                                // 0x00137010: jal 0x1413c0
+    func_001413c0();  // 1413c0                                // 0x00137010: jal 0x1413c0
     v0 = 0x20 << 16;                                            // 0x00137018: lui $v0, 0x20
     s0 = v0 + 0x2188;                                           // 0x0013701c: addiu $s0, $v0, 0x2188
     v0 = g_00202188;  // Global at 0x00202188                   // 0x00137020: lb $v0, 0($s0)
     if (v0 != 0) goto label_0x137064;                           // 0x00137024: bnez $v0, 0x137064
     /* nop */                                                   // 0x00137028: nop 
-    func_00137000();  // 0x136fd0                                // 0x0013702c: jal 0x136fd0
+    func_00136fd0();  // 136fd0                                // 0x0013702c: jal 0x136fd0
     /* nop */                                                   // 0x00137030: nop 
     a0 = 1;                                                     // 0x00137034: addiu $a0, $zero, 1
     g_00202188 = a0;  // Global at 0x00202188                   // 0x00137038: sb $a0, 0($s0)
@@ -36,7 +36,7 @@ void func_00136fd0() {
     g_002021e8 = v0;  // Global at 0x002021e8                   // 0x0013705c: sw $v0, 0($v1)
     g_0020218c = 0;  // Global at 0x0020218c                    // 0x00137060: sw $zero, 4($s0)
 label_0x137064:
-    func_00141450();  // 0x141438                                // 0x00137064: jal 0x141438
+    func_00141438();  // 141438                                // 0x00137064: jal 0x141438
     /* nop */                                                   // 0x00137068: nop 
     return;                                                     // 0x0013707c: jr $ra
     sp = sp + 0x20;                                             // 0x00137080: addiu $sp, $sp, 0x20
