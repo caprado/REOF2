@@ -14,12 +14,9 @@ static uint8_t s_frameEntryTable[32 * 32];  // Original: 0x00307d90 - supports u
 static uint8_t s_frameProcessingFlag = 0;   // Original: 0x003137a0 - controls clearing of gp-0x64d4
 static uint32_t s_frameTimingValue = 0;     // Original: 0x003137d4 - result from func_001ac000
 static uint32_t s_frameSyncValue = 0;       // Original: gp-0x64d4 - cleared when flag is set
+static int32_t s_frameTimingSyncValue = 0;  // Original: gp-0x64d8 - returned by func_001ac000
 
 // Forward declarations for unrefactored functions
-extern int32_t func_001ac000(void);  // Returns timing/sync value
-extern void func_001a8a50(void);  // Update function
-extern int32_t func_00112118(void);  // Update function, returns status
-extern float func_001aee10(void);  // Returns float value
 extern void func_001aed20(void);  // Conditional update
 extern void func_001b74b0(void);  // Frame finalization
 
@@ -100,8 +97,9 @@ void processFrameUpdates(int32_t count) {
         executeFrameUpdate();
     }
 
-    // Call timing function and store result
-    s_frameTimingValue = func_001ac000();  // Original: sw $v0, 0x37d4($at)
+    // Original: func_001ac000 - returns gp-0x64d8 (delay slot load)
+    // ASM: jr $ra / lw $v0, -0x64d8($gp)
+    s_frameTimingValue = s_frameTimingSyncValue;
 }
 
 /**
@@ -118,7 +116,6 @@ void processFrameUpdates(int32_t count) {
 void updateGameStateManager(void) {
     int32_t initResult;
     int32_t updateResult;
-    float floatResult;
 
     // Check current state
     if (g_game.gameStateManagerState == 1) {
@@ -164,17 +161,18 @@ state_running:
     // counter1 increments each frame
     g_game.counter1 = g_game.counter1 + 1;
 
-    // Call update functions
-    func_001a8a50();
+    // Original: func_001a8a50 - empty stub (just jr $ra), verified in ASM
 
-    // Call func_00112118 and store result
-    updateResult = func_00112118();
+    // Original: func_00112118 - PS2 softfloat IEEE 754 normalization
+    // Calls func_00111678 (float unpack) and func_00111530 (float repack)
+    // On Windows: native x86 FPU handles float normalization, always returns 0
+    updateResult = 0;
 
-    // Call func_001aee10 which returns a float, store to gameFloatValue
-    floatResult = func_001aee10();
-    g_game.gameFloatValue = floatResult;
+    // Original: func_001aee10 - empty stub (just jr $ra), returns 0.0f
+    g_game.gameFloatValue = 0.0f;
 
     // If func_00112118 returned non-zero, call func_001aed20
+    // On Windows: updateResult is always 0, so this never executes
     if (updateResult != 0) {
         func_001aed20();
     }

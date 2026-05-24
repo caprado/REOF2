@@ -1,5 +1,6 @@
 #include "frame_update.h"
 #include "game_data.h"
+#include "camera_update.h"
 #include "../audio/audio_channel_fade.h"
 
 // Frame counter - incremented each frame update
@@ -19,7 +20,6 @@ static uint32_t s_renderFrameCounter = 0;
 static uint32_t s_renderFrameState = 0;
 
 // Forward declarations for subsystem functions that need further investigation/porting
-extern void func_001a17e0(void);  // Camera/view update - copies camera data, updates matrices
 extern void func_001ba8f0(void);  // System update - updates 4 systems at 0x3136e0/3710/3740/3770
 extern void func_001d30b0(void);  // Conditional update - calls 0x34d600 if flag 0x3137b5 == 1
 
@@ -425,7 +425,7 @@ void updateGameSubsystems(void) {
     // 3. Camera/view update
     // Original: func_001a17e0
     // Copies camera data from 0x2a0f40 to gp-0x6430 pointer, updates view matrices
-    func_001a17e0();
+    updateCameraState();
 
     // 4. System state updates
     // Original: func_001ba8f0
