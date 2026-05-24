@@ -49,7 +49,7 @@ state_init:
 
 state_update:
     // Update menu sequence state every frame
-    updateMenuSequence();  // Refactored from func_001b9f10
+    updateMenuSequence(0);  // Refactored from func_001b9f10, a0=0 from delay slot
 
     // Check if game state manager should run
     // Original: lbu $a0, 0x7f91($at) where $at = 0x30 << 16 = 0x300000

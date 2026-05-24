@@ -2,6 +2,14 @@
 #include "game_data.h"
 #include "camera_update.h"
 #include "../audio/audio_channel_fade.h"
+#include "../graphics/render_state_manager.h"
+
+#ifdef _WIN32
+#include <windows.h>
+#include <GL/gl.h>
+#else
+#include <GL/gl.h>
+#endif
 
 // Frame counter - incremented each frame update
 static uint32_t s_frameCounter = 0;  // Original: gp-0x6450
@@ -148,18 +156,99 @@ void updateRenderState(void) {
     beginRenderFrame();
 
     // Original: func_001ba950 - empty stub (just jr $ra)
-
-    // Original: func_001b5920 - PS2 DMA buffer management
-    // Waits for DMA completion (polls 0x1000a000), calls iFlushCache,
-    // kicks DMA transfer via func_001033b0, toggles double buffer index.
-    // On Windows: OpenGL handles buffer management via SwapBuffers in main loop.
-
+    // Original: func_001b5920 - PS2 DMA buffer management (SwapBuffers in main loop)
     // Original: func_001b3450 - empty stub (just jr $ra)
 
     // Original: func_001bb890 - PS2 scene compositor
-    // Sets gp-0x6378 flag, calls memory/state functions, handles fade overlay,
-    // calls func_001ab530 for screen rendering which submits GS packets.
-    // On Windows: OpenGL rendering is handled separately. Fade overlay needs porting.
+    // On Windows: Set up render states and draw fade overlay if active.
+    // Scene/3D rendering will be added as more systems are ported.
+
+    // Initialize render state (depth test, blending defaults)
+    applyRenderState(RENDER_STATE_INIT);
+
+    // Draw fade overlay if fadeBuffer2 is active
+    {
+        uint8_t* fadeBuf = g_game.fadeBuffer2;
+        uint8_t fadeState = fadeBuf[0];
+
+        if (fadeState != 0) {
+            uint32_t color = *(uint32_t*)(fadeBuf + 0x0c);
+            float r = (float)((color >> 0) & 0xFF) / 255.0f;
+            float g = (float)((color >> 8) & 0xFF) / 255.0f;
+            float b = (float)((color >> 16) & 0xFF) / 255.0f;
+            float a = (float)((color >> 24) & 0xFF) / 255.0f;
+
+            // Set up 2D orthographic projection for overlay
+            glMatrixMode(GL_PROJECTION);
+            glPushMatrix();
+            glLoadIdentity();
+            glOrtho(0, 640, 448, 0, -1, 1);
+            glMatrixMode(GL_MODELVIEW);
+            glPushMatrix();
+            glLoadIdentity();
+
+            // Enable blending for fade
+            glEnable(GL_BLEND);
+            glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+            glDisable(GL_DEPTH_TEST);
+            glDisable(GL_TEXTURE_2D);
+
+            // Draw fullscreen quad with fade color
+            glColor4f(r, g, b, a);
+            glBegin(GL_QUADS);
+            glVertex2f(0.0f, 0.0f);
+            glVertex2f(640.0f, 0.0f);
+            glVertex2f(640.0f, 448.0f);
+            glVertex2f(0.0f, 448.0f);
+            glEnd();
+
+            // Restore state
+            glPopMatrix();
+            glMatrixMode(GL_PROJECTION);
+            glPopMatrix();
+            glMatrixMode(GL_MODELVIEW);
+            glEnable(GL_DEPTH_TEST);
+        }
+    }
+
+    // Draw fade overlay from fadeBuffer1 if active
+    {
+        uint8_t* fadeBuf = g_game.fadeBuffer1;
+        uint8_t fadeState = fadeBuf[0];
+
+        if (fadeState != 0) {
+            uint8_t alpha = fadeBuf[0x10];
+
+            if (alpha > 0) {
+                glMatrixMode(GL_PROJECTION);
+                glPushMatrix();
+                glLoadIdentity();
+                glOrtho(0, 640, 448, 0, -1, 1);
+                glMatrixMode(GL_MODELVIEW);
+                glPushMatrix();
+                glLoadIdentity();
+
+                glEnable(GL_BLEND);
+                glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+                glDisable(GL_DEPTH_TEST);
+                glDisable(GL_TEXTURE_2D);
+
+                glColor4f(0.0f, 0.0f, 0.0f, (float)alpha / 255.0f);
+                glBegin(GL_QUADS);
+                glVertex2f(0.0f, 0.0f);
+                glVertex2f(640.0f, 0.0f);
+                glVertex2f(640.0f, 448.0f);
+                glVertex2f(0.0f, 448.0f);
+                glEnd();
+
+                glPopMatrix();
+                glMatrixMode(GL_PROJECTION);
+                glPopMatrix();
+                glMatrixMode(GL_MODELVIEW);
+                glEnable(GL_DEPTH_TEST);
+            }
+        }
+    }
 
     endRenderFrame();
 

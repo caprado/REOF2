@@ -261,6 +261,11 @@ typedef struct GameData {
     // --- Callback array system (from func_001af3a0) ---
     int32_t callbackCount;           // Original: gp-0x63b4 - Number of registered callbacks
     void (*callbackArray[64])(void); // Original: 0x002aa890 - Function pointer array (max 64 entries)
+
+    // --- Entity/camera data (from camera_update / func_001b0720) ---
+    void* entityDataPtr;             // Original: gp-0x6430 - Pointer to entity data array (120 bytes per entity)
+    int8_t entityCount;              // Original: gp-0x6350 - Number of active entities
+    uint8_t cameraUpdateFlag;        // Original: gp-0x643c - Camera update pending flag
 } GameData;
 
 /**

@@ -143,7 +143,11 @@ bool mainGameLoop(void) {
     // not directly from the main loop. Calling it here for now until
     // the menu state entry point is fully traced.
 
+    // Clear screen at start of frame (before any rendering)
+    opengl_clear(0.0f, 0.0f, 0.0f, 1.0f);
+
     // Core game state update - drives all subsystems internally
+    // This calls updateRenderState() which draws the fade overlay
     updateGameStateManager();
 
     // Menu controller (called here temporarily until call site is verified)
@@ -151,8 +155,7 @@ bool mainGameLoop(void) {
 
     // === END GAME LOOP ===
 
-    // OpenGL frame management
-    opengl_clear(0.0f, 0.0f, 0.0f, 1.0f);
+    // Present frame
     opengl_swap_buffers();
 
     return true;
@@ -189,7 +192,7 @@ void shutdownSystems(void) {
  * Clean flow:
  * 1. Initialize OpenGL (window, context, textures)
  * 2. Initialize game engine (unified g_game struct via engine_startup.c)
- * 3. Run demo mode state machine loop
+ * 3. Run main menu loop
  * 4. Shutdown and cleanup (unified shutdown via engine_startup.c)
  *
  * Architecture:
@@ -207,7 +210,6 @@ int main(int argc, char* argv[]) {
     printf("  REOF2 - Windows Port\n");
     printf("  Resident Evil Outbreak File #2\n");
     printf("  PS2 to Windows OpenGL Port\n");
-    printf("  (Demo/Attract Mode)\n");
     printf("================================================\n\n");
 
     printf("[DEBUG] Starting initialization...\n");

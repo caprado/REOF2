@@ -3,6 +3,7 @@
 #include "game_init.h"
 #include "game_secondary_init.h"
 #include "frame_update.h"
+#include "game_frame_callback.h"
 #include "../graphics/graphics_init.h"
 #include <string.h>
 
@@ -52,8 +53,8 @@ void initializeFrameEntry(uintptr_t callback, int32_t index) {
     // Set type ID at offset 0 (halfword) = 0xc (12)
     *(uint16_t*)(entry + 0) = 0xc;
 
-    // Store callback/data pointer at offset 4 (word)
-    *(uint32_t*)(entry + 4) = (uint32_t)callback;
+    // Store callback/data pointer at offset 4
+    *(uintptr_t*)(entry + 8) = callback;
 }
 
 /**
@@ -130,19 +131,14 @@ void updateGameStateManager(void) {
     }
 
 state_init:
-    // Original: func_0019f080() - graphics system init (no params, 0x280/0x1c0 were unused)
-    // Loop until initialization succeeds
     do {
         initResult = initializeGraphicsSystem();
     } while (initResult == 0);
-
-    // Call initialization functions
-    initializeGameSubsystems();       // Original: func_001ba660
-    initializeSecondarySubsystems();  // Original: func_001ba960
-
-    // Original: a0 = (0x1c << 16) + (-0x4180) = 0x1c0000 - 0x4180 = 0x1bBE80
-    // Original: a1 = 0 (from delay slot, $a1 was set from $zero before call)
-    initializeFrameEntry(0x1bBE80, 0);
+    initializeGameSubsystems();
+    initializeSecondarySubsystems();
+    // Original: a0 = 0x1bBE80 (PS2 function address for frame callback)
+    // On Windows: register the ported gameFrameCallback
+    initializeFrameEntry((uintptr_t)gameFrameCallback, 0);
 
     // Advance to running state
     g_game.gameStateManagerState = g_game.gameStateManagerState + 1;
@@ -527,7 +523,7 @@ void finalizeFrame(void) {
     int32_t s1, s2, s3;
     int16_t entryType;
     uint8_t* entry;
-    uint32_t savedField;
+    uintptr_t savedField;
 
     // --- Slot 1: pending resource load at gp-0x7cd4 ---
     if (g_game.pendingResourceSlot1 != -1) {
@@ -540,9 +536,9 @@ void finalizeFrame(void) {
         // Clear frame entry at index 4 (0x307e10 = 0x307d90 + 4*0x20)
         // Preserve the callback pointer at offset +4 across the clear
         entry = s_frameEntryTable + (4 * 32);
-        savedField = *(uint32_t*)(entry + 4);
+        savedField = *(uintptr_t*)(entry + 8);
         memset(entry, 0, 0x20);
-        *(uint32_t*)(entry + 4) = savedField;
+        *(uintptr_t*)(entry + 8) = savedField;
         *(uint16_t*)(entry + 0) = 4;
     }
 
@@ -619,7 +615,7 @@ void finalizeFrame(void) {
                     // Execute: call function pointer at entry+4
                     // ASM delay slot passes a0 = s0 (entry pointer) to callback
                     typedef void (*EntryCallback)(void*);
-                    EntryCallback cb = (EntryCallback)(uintptr_t)(*(uint32_t*)(entry + 4));
+                    EntryCallback cb = (EntryCallback)(*(uintptr_t*)(entry + 8));
                     if (cb != NULL) {
                         cb(entry);
                     }

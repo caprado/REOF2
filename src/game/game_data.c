@@ -48,6 +48,11 @@ void initializeGameData(void) {
     g_game.callbackCount = 0;
     memset(g_game.callbackArray, 0, sizeof(g_game.callbackArray));
 
+    // --- Entity/camera data ---
+    g_game.entityDataPtr = NULL;
+    g_game.entityCount = 0;
+    g_game.cameraUpdateFlag = 0;
+
     // --- System state (legacy fields) ---
     g_game.systemState = 0;
     g_game.controllerState = 0;

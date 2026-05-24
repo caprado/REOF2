@@ -61,7 +61,9 @@ void initializeGameSubsystems(void) {
     reserveRegionMemory(0x5c0000);
 
     // Allocate main game buffer (0x5c0000 = 6,029,312 bytes)
-    g_game.mainBuffer = allocateMemory(0x5c0000);
+    // On PS2: allocated from system allocator at 0x2903e0 before bump allocator exists
+    // On Windows: use heap allocation since bump allocator isn't initialized yet
+    g_game.mainBuffer = malloc(0x5c0000);
 
     // Clear the main buffer
     memset(g_game.mainBuffer, 0, 0x5c0000);  // Original: func_00107c70
