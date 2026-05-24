@@ -38,9 +38,6 @@
 #include "game/game_state_manager.h"
 #include "game/frame_update.h"
 
-// Forward declarations for unrefactored functions
-extern void func_001ba360(void);  // Render game frame (updateRenderState already in frame_update)
-
 // Menu controller context - passed to processMenuController each frame
 static MenuControllerContext g_menuContext;
 
@@ -128,26 +125,34 @@ bool mainGameLoop(void) {
         return false;
     }
 
-    // === GAME LOOP - Call all four core functions each frame ===
+    // === GAME LOOP ===
+    // Original PS2 main loop at 0x001a8cf4:
+    //   loop:
+    //     jal 0x1ba1d0   ; updateGameStateManager
+    //     jal 0x1c8cd0   ; check if scene state == 3 (exit condition)
+    //     if result == 0, loop
+    //
+    // updateGameStateManager internally calls:
+    //   processFrameUpdates(1) → executeFrameUpdate() which calls:
+    //     updateRenderState()     (func_001ba360)
+    //     processFrameSync()
+    //     updateGameSubsystems()  (func_001ba310)
+    //   finalizeFrame()           (func_001b74b0)
+    //
+    // processMenuController is called from within the game state system,
+    // not directly from the main loop. Calling it here for now until
+    // the menu state entry point is fully traced.
 
-    // 1. Game state management (func_001ba1d0 -> updateGameStateManager)
+    // Core game state update - drives all subsystems internally
     updateGameStateManager();
 
-    // 2. Update all game subsystems (func_001ba310 -> updateGameSubsystems)
-    updateGameSubsystems();
-
-    // 3. Render game frame (func_001ba360)
-    func_001ba360();
-
-    // 4. Menu controller state machine (func_001b9e60)
+    // Menu controller (called here temporarily until call site is verified)
     processMenuController(&g_menuContext);
 
     // === END GAME LOOP ===
 
-    // Clear screen to dark blue (to show window is working)
-    opengl_clear(0.1f, 0.1f, 0.3f, 1.0f);
-
-    // Swap buffers
+    // OpenGL frame management
+    opengl_clear(0.0f, 0.0f, 0.0f, 1.0f);
     opengl_swap_buffers();
 
     return true;
