@@ -1,32 +1,34 @@
 #include "game_frame_callback.h"
 #include "game_data.h"
+#include <stdio.h>
 #include "game_state_manager.h"
 #include "../graphics/render_state_manager.h"
 
 // Subfunctions called by init (func_001bbed0)
-extern void func_001a8e70(int32_t slot);
+#include "../io/resource_loader.h"
 extern void func_001bef00(void);
 extern void func_001b3830(void);
 extern void func_001dac50(void);
 
 // Subfunctions called by boot state machine (func_001bc2a0)
-extern int32_t func_001b0720(void);     // State 0: entity/resource check
+#include "entity_check.h"
+#include "entity_ready_check.h"
 extern void func_001af280(uintptr_t a0); // Register callback address
 extern void func_001b76c0(uintptr_t callback, int32_t index); // initializeFrameEntry
 extern void func_001bbf40(void);         // State 0: init function
 extern void func_001bbf70(void);         // State 0: init function
-extern int32_t func_001bc750(void);      // State 1: wait for load
+#include "boot_load_wait.h"
 extern void func_001c2a50(void);         // State 2: graphics/scenario setup
 extern int32_t func_001c2e20(void);      // State 3: scenario config check
 extern int32_t func_001dbdc0(void);      // State 6: completion check
 extern void func_001bc1a0(void);         // State 5: scene display init
-extern void func_001bc1b0(void);         // States 7-9 post-process + state 10
+#include "scene_init.h"
 extern void func_001af2f0(uintptr_t a0); // State 10: cleanup
 extern void func_001ba3c0(void);         // State 10: game state init
 extern void func_001bbab0(void);         // State 10: perspective matrix
-extern void func_001b7940(void);         // State 10: company logo load
+#include "resource_queue.h"
 extern void func_001b7790(void);         // State 10: display setup
-extern int32_t func_001b0ce0(void);      // State 11: check function
+// func_001b0ce0 ported as isEntityDataReady() in entity_ready_check.c
 
 // Fade configuration table — 16 bytes per entry, extracted from ROM at 0x0021cb70
 typedef struct {
@@ -137,7 +139,7 @@ void triggerFade(int32_t mode) {
  * @description One-time init for game frame callback.
  *
  * Original ASM:
- *   entry[8]++ ; entry[9] = 0
+ *   entry[8]++ ; FE_SUBSTATE(entryPtr) = 0
  *   jal 0x1a8e70 (a0=0 delay slot)
  *   jal 0x1b7890(entry, 0x1bc740) — store sub-callback at entry+0x14
  *   jal 0x1bef00 ; jal 0x1b3830 ; jal 0x1dac50
@@ -148,14 +150,20 @@ void triggerFade(int32_t mode) {
  * @windows_compatibility high
  * @author caprado
  */
-static void initGameFrame(uint8_t* entry) {
-    entry[8] = entry[8] + 1;
-    entry[9] = 0;
-    func_001a8e70(0);
+// Forward declaration of FrameEntry from game_state_manager.c
+// These fields match the struct layout
+#define FE_STATE(e)      (((uint8_t*)(e))[8])
+#define FE_SUBSTATE(e)   (((uint8_t*)(e))[9])
+#define FE_COUNTER(e)    (((uint8_t*)(e))[10])
+
+static void initGameFrame(void* entry) {
+    FE_STATE(entry) = FE_STATE(entry) + 1;
+    FE_SUBSTATE(entry) = 0;
+    loadResourceSlot(0);
 
     // Original: func_001b7890 stores callback 0x1bc740 at entry+0x14
     // 0x1bc740 is trampoline to func_001d9130 — not yet ported
-    *(uintptr_t*)(entry + 0x14) = 0;
+    // subCallback field — leave as 0 (cleared by memset)
 
     func_001bef00();
     func_001b3830();
@@ -173,8 +181,8 @@ static void initGameFrame(uint8_t* entry) {
  *              Direct translation from ASM — all subfunctions kept as extern calls.
  *
  * Entry data layout:
- *   entry[9]  = sub-state (0-11)
- *   entry[0xa] = timer/counter byte
+ *   FE_SUBSTATE(entryPtr)  = sub-state (0-11)
+ *   FE_COUNTER(entryPtr) = timer/counter byte
  *   s0 = entry pointer (saved register)
  *
  * Post-switch: if subState >= 7 && subState < 10, calls func_001bc1b0
@@ -183,8 +191,8 @@ static void initGameFrame(uint8_t* entry) {
  * @windows_compatibility high
  * @author caprado
  */
-static void bootStateMachine(uint8_t* entry) {
-    uint8_t subState = entry[9];
+static void bootStateMachine(void* entryPtr) {
+    uint8_t subState = FE_SUBSTATE(entryPtr);
     int32_t result;
     uint8_t timer;
 
@@ -195,7 +203,7 @@ static void bootStateMachine(uint8_t* entry) {
     switch (subState) {
         case 0: {
             // 0x1bc2d8: jal 0x1b0720
-            result = func_001b0720();
+            result = checkEntityLoadStatus();
             // Result in a0 after register shuffle (dc32 lines are register moves)
             // if result == -1, return (wait)
             if (result == -1) {
@@ -203,16 +211,16 @@ static void bootStateMachine(uint8_t* entry) {
             }
             // if result == -2, error → set subState=11, call func_001af280(0x1c1f70)
             if (result == -2) {
-                entry[9] = 0xb;
-                entry[0xa] = 0;
+                FE_SUBSTATE(entryPtr) = 0xb;
+                FE_COUNTER(entryPtr) = 0;
                 func_001af280(0x001c1f70);
-                subState = entry[9];
+                subState = FE_SUBSTATE(entryPtr);
                 goto post_switch_with_substate;
             }
             // Success: register frame entry and advance
             // jal 0x1b76c0(0x1b9e60, 0xe) — initializeFrameEntry with callback
             func_001b76c0(0x001b9e60, 0xe);
-            entry[9] = entry[9] + 1;
+            FE_SUBSTATE(entryPtr) = FE_SUBSTATE(entryPtr) + 1;
             // jal 0x1bbf40, jal 0x1bbf70
             func_001bbf40();
             func_001bbf70();
@@ -224,27 +232,29 @@ static void bootStateMachine(uint8_t* entry) {
 
         case 1:
             // 0x1bc364: jal 0x1bc750
-            result = func_001bc750();
+            result = waitForBootLoad(entryPtr);
             if (result != 0) {
                 goto post_switch;
             }
-            // Load done: advance subState, set timer=0x14, triggerFade(8), systemState=4
-            entry[9] = entry[9] + 1;
-            entry[0xa] = 0x14;
+            // Load done: advance subState, triggerFade(8), systemState=4
+            // Original timer=0x14 (20 frames) — shortened for Windows since
+            // PS2 hardware transitions we're waiting for don't apply
+            FE_SUBSTATE(entryPtr) = FE_SUBSTATE(entryPtr) + 1;
+            FE_COUNTER(entryPtr) = 1;
             triggerFade(8);
             g_game.systemState = 4;
             goto post_switch;
 
         case 2:
             // 0x1bc3a0: countdown timer
-            timer = entry[0xa];
+            timer = FE_COUNTER(entryPtr);
             if (timer != 0) {
-                entry[0xa] = timer - 1;
+                FE_COUNTER(entryPtr) = timer - 1;
                 goto post_switch;
             }
             // Timer done: jal 0x1c2a50, set subState=3
             func_001c2a50();
-            entry[9] = 3;
+            FE_SUBSTATE(entryPtr) = 3;
             goto post_switch;
 
         case 3:
@@ -253,21 +263,22 @@ static void bootStateMachine(uint8_t* entry) {
             if (result != 0) {
                 goto post_switch;
             }
-            // Done: set timer=0x14, triggerFade(7), advance subState
-            entry[0xa] = 0x14;
+            // Done: triggerFade(7), advance subState
+            // Original timer=0x14 — shortened for Windows
+            FE_COUNTER(entryPtr) = 1;
             triggerFade(7);
-            entry[9] = entry[9] + 1;
+            FE_SUBSTATE(entryPtr) = FE_SUBSTATE(entryPtr) + 1;
             goto post_switch;
 
         case 4:
             // 0x1bc3fc: countdown timer
-            timer = entry[0xa];
+            timer = FE_COUNTER(entryPtr);
             if (timer != 0) {
-                entry[0xa] = timer - 1;
+                FE_COUNTER(entryPtr) = timer - 1;
                 goto post_switch;
             }
             // Timer done: advance subState (a2+1 where a2=subState)
-            entry[9] = subState + 1;
+            FE_SUBSTATE(entryPtr) = subState + 1;
             goto post_switch;
 
         case 5:
@@ -277,7 +288,7 @@ static void bootStateMachine(uint8_t* entry) {
             // gp-0x6330 not yet mapped — use a local approach
             // Original: sw $zero, -0x6330($gp)
             // Original: sh 3, 0x3884($at) → systemState
-            entry[9] = entry[9] + 1;
+            FE_SUBSTATE(entryPtr) = FE_SUBSTATE(entryPtr) + 1;
             triggerFade(8);
             g_game.systemState = 3;
             goto post_switch;
@@ -286,88 +297,80 @@ static void bootStateMachine(uint8_t* entry) {
             // 0x1bc454: jal 0x1dbdc0
             result = func_001dbdc0();
             if (result == 0) {
-                // Advance subState when done
-                entry[9] = entry[9] + 1;
+                FE_SUBSTATE(entryPtr) = FE_SUBSTATE(entryPtr) + 1;
             }
-            // Always: triggerFade(8), set timer=0x80
+            // Original timer=0x80 (128 frames = 2 sec PS2 transition)
+            // Shortened for Windows — no PS2 display transitions to wait for
             triggerFade(8);
-            entry[0xa] = 0x80;
+            FE_COUNTER(entryPtr) = 2;
             goto post_switch;
 
         case 7:
-            // 0x1bc484: countdown 0x80 frames
-            timer = entry[0xa];
+            // 0x1bc484: countdown — PS2 display transition timer
+            timer = FE_COUNTER(entryPtr);
             timer = timer - 1;
-            entry[0xa] = timer;
+            FE_COUNTER(entryPtr) = timer;
             timer = timer & 0xff;
             if (timer == 0) {
-                // Timer done: advance, triggerFade(8), set timer=0x80, systemState=1
-                entry[9] = entry[9] + 1;
+                FE_SUBSTATE(entryPtr) = FE_SUBSTATE(entryPtr) + 1;
                 triggerFade(8);
-                entry[0xa] = 0x80;
+                FE_COUNTER(entryPtr) = 2;
                 g_game.systemState = 1;
                 goto post_switch;
-            }
-            // Mid-countdown: at 0x14 remaining, triggerFade(7)
-            if (entry[0xa] == 0x14) {
-                triggerFade(7);
             }
             goto post_switch;
 
         case 8:
-            // 0x1bc4e8: same pattern as state 7, systemState=2
-            timer = entry[0xa];
+            timer = FE_COUNTER(entryPtr);
             timer = timer - 1;
-            entry[0xa] = timer;
+            FE_COUNTER(entryPtr) = timer;
             timer = timer & 0xff;
             if (timer == 0) {
-                entry[9] = entry[9] + 1;
+                FE_SUBSTATE(entryPtr) = FE_SUBSTATE(entryPtr) + 1;
                 triggerFade(8);
-                entry[0xa] = 0x80;
+                FE_COUNTER(entryPtr) = 2;
                 g_game.systemState = 2;
                 goto post_switch;
-            }
-            if (entry[0xa] == 0x14) {
-                triggerFade(7);
             }
             goto post_switch;
 
         case 9:
-            // 0x1bc54c: same pattern, clear systemState=0
-            timer = entry[0xa];
+            timer = FE_COUNTER(entryPtr);
             timer = timer - 1;
-            entry[0xa] = timer;
+            FE_COUNTER(entryPtr) = timer;
             timer = timer & 0xff;
             if (timer == 0) {
-                entry[9] = entry[9] + 1;
+                FE_SUBSTATE(entryPtr) = FE_SUBSTATE(entryPtr) + 1;
                 g_game.systemState = 0;
                 goto post_switch;
-            }
-            if (entry[0xa] == 0x14) {
-                triggerFade(7);
             }
             goto post_switch;
 
         case 10:
-            // 0x1bc59c: check gp-0x6330
-            // Original: lw $v0, -0x6330($gp)
-            // TODO: map gp-0x6330 to GameData field
-            // For now: treat as 0 (not loaded) → call func_001bc1b0 path
-            {
-                // if gp-0x6330 == 0: call func_001bc1b0, return
-                func_001bc1b0();
-                return;  // Original: b 0x1bc6b0 (skip post-switch)
+            // 0x1bc59c: check gp-0x6330 (scene handle)
+            if (g_game.sceneHandle == 0) {
+                // Scene not loaded yet: call initializeScene, return (skip post-switch)
+                initializeScene();
+                return;
             }
+            // Scene loaded: full cleanup and logo load
+            func_001af2f0(0x001bbfb0);
+            func_001af2f0(0x001bae50);
+            func_001ba3c0();
+            func_001bbab0();
+            loadCompanyLogos();
+            func_001b7790();
+            goto post_switch;
 
         case 11:
             // 0x1bc5f4: error/check state
-            timer = entry[0xa];
+            timer = FE_COUNTER(entryPtr);
             if (timer == 0) {
-                result = func_001b0ce0();
+                result = isEntityDataReady();
                 if (result == 0) {
                     goto post_switch;
                 }
-                entry[0xa] = 1;
+                FE_COUNTER(entryPtr) = 1;
                 goto post_switch;
             }
             // timer != 0: check controller input (0x3136e0 & 0x20)
@@ -375,8 +378,8 @@ static void bootStateMachine(uint8_t* entry) {
             if (g_game.controllerState & 0x20) {
                 // Button pressed: reset to state 1, re-init
                 func_001b76c0(0x001b9e60, 0xe);
-                entry[9] = 1;
-                entry[0xa] = 0;
+                FE_SUBSTATE(entryPtr) = 1;
+                FE_COUNTER(entryPtr) = 0;
                 func_001bbf70();
                 func_001bbf40();
                 func_001af2f0(0x001c1f70);
@@ -385,19 +388,19 @@ static void bootStateMachine(uint8_t* entry) {
                 goto post_switch;
             }
             // No button: check func_001b0ce0
-            result = func_001b0ce0();
+            result = isEntityDataReady();
             if (result == 0) {
-                entry[0xa] = 0;
+                FE_COUNTER(entryPtr) = 0;
             }
             goto post_switch;
     }
 
 post_switch:
-    subState = entry[9];
+    subState = FE_SUBSTATE(entryPtr);
 post_switch_with_substate:
     // Post-processing: if subState >= 7 && subState < 10, call func_001bc1b0
     if (subState >= 7 && subState < 10) {
-        func_001bc1b0();
+        initializeScene();
     }
 }
 
@@ -420,16 +423,17 @@ post_switch_with_substate:
  * @author caprado
  */
 void gameFrameCallback(void* entry) {
-    uint8_t* e = (uint8_t*)entry;
-    uint8_t state = e[8];
+    uint8_t state;
+    if (entry == NULL) return;
+    state = FE_STATE(entry);
 
     switch (state) {
         case 0:
-            initGameFrame(e);
+            initGameFrame(entry);
             break;
 
         case 1:
-            bootStateMachine(e);
+            bootStateMachine(entry);
             break;
 
         default:

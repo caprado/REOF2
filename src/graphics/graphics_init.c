@@ -29,6 +29,8 @@
 #include "graphics_init.h"
 #include "display_settings.h"
 #include "../game/game_data.h"
+#include <stdlib.h>
+#include <string.h>
 
 /**
  * @brief Initialize the graphics system
@@ -54,9 +56,16 @@ int32_t initializeGraphicsSystem(void) {
     // For Windows/OpenGL, we only need the global values that game logic reads.
     initializeDisplaySettings();
 
-    // On Windows, OpenGL is already initialized in main_windows.c
-    // before the game loop starts, so we always succeed here.
-    // The g_game.graphicsReady flag is set by initializeDisplaySettings()
+    // Original: func_001a1530 sets gp-0x6430 = 0x002a0480 (PS2 entity data array)
+    // On Windows: allocate entity data array on heap
+    // Original: func_001a1530 sets gp-0x6430 = 0x002a0480 (entity data, 120 bytes per entity)
+    // Entity count set to 1 by func_001bbed0, but allocate room for growth
+    if (g_game.entityDataPtr == NULL) {
+        g_game.entityDataPtr = malloc(120 * 4);
+        if (g_game.entityDataPtr != NULL) {
+            memset(g_game.entityDataPtr, 0, 120 * 4);
+        }
+    }
 
-    return 1;  // Success
+    return 1;
 }

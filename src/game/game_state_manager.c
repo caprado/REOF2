@@ -9,7 +9,20 @@
 
 // Frame entry table at 0x00307d90 - 32-byte entries, indexed by slot number
 // Used to track active frame callbacks/handlers
-static uint8_t s_frameEntryTable[32 * 32];  // Original: 0x00307d90 - supports up to 32 entries
+// Frame entry structure — extended from PS2's 32-byte layout to fit 64-bit pointers
+typedef struct {
+    int16_t type;           // +0x00: entry type/state
+    int16_t timer;          // +0x02: countdown timer
+    uint8_t pad04[4];       // +0x04: PS2 callback was here (32-bit), now unused
+    uint8_t state;          // +0x08: main state byte
+    uint8_t subState;       // +0x09: sub-state byte
+    uint8_t counterByte;    // +0x0A: timer/counter byte
+    uint8_t pad0B[5];       // +0x0B-0x0F: padding
+    uintptr_t subCallback;  // +0x10: sub-callback pointer (was at +0x14 on PS2, 4 bytes)
+    uintptr_t callback;     // +0x18: main callback pointer (was at +0x04 on PS2, 4 bytes)
+} FrameEntry;
+
+static FrameEntry s_frameEntryTable[32];  // Original: 0x00307d90 - supports up to 32 entries
 
 // Per-frame processing state
 static uint8_t s_frameProcessingFlag = 0;   // Original: 0x003137a0 - controls clearing of gp-0x64d4
@@ -19,7 +32,7 @@ static int32_t s_frameTimingSyncValue = 0;  // Original: gp-0x64d8 - returned by
 
 // Forward declarations for unrefactored functions
 extern void func_001aed20(void);  // Conditional update
-extern void func_001a8e70(int32_t slot);  // Resource loader - loads from AFS archive by slot index
+#include "../io/resource_loader.h"
 
 /**
  * @category game/frame
@@ -44,17 +57,11 @@ extern void func_001a8e70(int32_t slot);  // Resource loader - loads from AFS ar
  * @author caprado
  */
 void initializeFrameEntry(uintptr_t callback, int32_t index) {
-    // Calculate entry address: base + (index * 32)
-    uint8_t* entry = s_frameEntryTable + (index * 32);
+    if (index < 0 || index >= 32) return;
 
-    // Clear the entry (32 bytes)
-    memset(entry, 0, 0x20);
-
-    // Set type ID at offset 0 (halfword) = 0xc (12)
-    *(uint16_t*)(entry + 0) = 0xc;
-
-    // Store callback/data pointer at offset 4
-    *(uintptr_t*)(entry + 8) = callback;
+    memset(&s_frameEntryTable[index], 0, sizeof(FrameEntry));
+    s_frameEntryTable[index].type = 0xc;
+    s_frameEntryTable[index].callback = callback;
 }
 
 /**
@@ -521,62 +528,44 @@ static void dispatchCallbackArray(void) {
 void finalizeFrame(void) {
     int32_t i;
     int32_t s1, s2, s3;
-    int16_t entryType;
-    uint8_t* entry;
-    uintptr_t savedField;
+    FrameEntry* fe;
+    uintptr_t savedCb;
 
     // --- Slot 1: pending resource load at gp-0x7cd4 ---
     if (g_game.pendingResourceSlot1 != -1) {
-        func_001a8e70(g_game.pendingResourceSlot1);
-
-        // Save slot value to state, reset pending to -1
+        loadResourceSlot(g_game.pendingResourceSlot1);
         g_game.state37d8 = (uint8_t)g_game.pendingResourceSlot1;
         g_game.pendingResourceSlot1 = -1;
 
-        // Clear frame entry at index 4 (0x307e10 = 0x307d90 + 4*0x20)
-        // Preserve the callback pointer at offset +4 across the clear
-        entry = s_frameEntryTable + (4 * 32);
-        savedField = *(uintptr_t*)(entry + 8);
-        memset(entry, 0, 0x20);
-        *(uintptr_t*)(entry + 8) = savedField;
-        *(uint16_t*)(entry + 0) = 4;
+        // Clear frame entry 4, preserve callback
+        savedCb = s_frameEntryTable[4].callback;
+        memset(&s_frameEntryTable[4], 0, sizeof(FrameEntry));
+        s_frameEntryTable[4].callback = savedCb;
+        s_frameEntryTable[4].type = 4;
     }
 
     // --- Slot 2: pending resource load at gp-0x7cd0 ---
     if (g_game.pendingResourceSlot2 != -1) {
-        func_001a8e70(g_game.pendingResourceSlot2);
-
-        // Save slot value to state, reset pending to -1
+        loadResourceSlot(g_game.pendingResourceSlot2);
         g_game.state37d9 = (uint8_t)g_game.pendingResourceSlot2;
         g_game.pendingResourceSlot2 = -1;
     }
 
     // --- Determine frame entry processing range ---
-    // s2 = lower bound, s1 = upper bound
-    // Entries where (index < s2) OR (s1 < index) are processed
-    // ASM: delay slot sets s2=4 before counter3 branch
     s2 = 4;
     if (g_game.counter3 != 0) {
-        // counter3 non-zero: s2=4, s1=0xc
         s1 = 0xc;
     } else {
-        // counter3 == 0
-        // ASM: delay slot sets s2=0x10 before systemState branch
         s2 = 0x10;
         if (g_game.systemStateBuffer[0] == 0) {
-            // systemState == 0: s2=0x10, s1=-1
             s1 = -1;
         } else if (g_game.entityActiveFlag != 0) {
-            // systemState != 0, entity active: s2=4, s1=0xc
             s2 = 4;
             s1 = 0xc;
         } else {
-            // systemState != 0, entity not active: s2=0x10, s1=-1
             s1 = -1;
         }
     }
-    // Check scene loaded flag (func_001b7a50 returns 0x003135b0 byte)
-    // ASM: if flag != 0, sets s2=0 and s1=0xc (only entries 13-15 processed)
     if (g_game.sceneLoadedFlag != 0) {
         s2 = 0;
         s1 = 0xc;
@@ -584,73 +573,55 @@ void finalizeFrame(void) {
 
     // --- Frame entry table loop: 16 entries ---
     s3 = 0;
-    entry = s_frameEntryTable;
 
     for (i = 0; i < 16; i++) {
-        // Range filter: only process entries where s3 < s2 OR s1 < s3
+        fe = &s_frameEntryTable[i];
+
         if (s3 < s2 || s1 < s3) {
-            entryType = *(int16_t*)(entry + 0);
-
-            switch (entryType) {
+            switch (fe->type) {
                 case 0:
-                    // Empty entry - skip
-                    break;
-
                 case 1:
-                    // Active/idle - skip
                     break;
 
                 case 2:
-                    // Reset: clear timer, set state to 4
-                    *(int16_t*)(entry + 2) = 0;
-                    *(int16_t*)(entry + 0) = 4;
+                    fe->timer = 0;
+                    fe->type = 4;
                     break;
 
                 case 4:
-                    // Transition: set state to 8
-                    *(int16_t*)(entry + 0) = 8;
+                    fe->type = 8;
                     break;
 
                 case 8: {
-                    // Execute: call function pointer at entry+4
-                    // ASM delay slot passes a0 = s0 (entry pointer) to callback
                     typedef void (*EntryCallback)(void*);
-                    EntryCallback cb = (EntryCallback)(*(uintptr_t*)(entry + 8));
+                    EntryCallback cb = (EntryCallback)fe->callback;
                     if (cb != NULL) {
-                        cb(entry);
+                        cb(fe);
                     }
                     break;
                 }
 
                 case 0xc:
-                    // Transition: set state to 8
-                    *(int16_t*)(entry + 0) = 8;
+                    fe->type = 8;
                     break;
 
-                case 0x10:
-                    // Timer: decrement, clamp to 0, when 0 set state to 4
-                    {
-                        int16_t timer = *(int16_t*)(entry + 2);
-                        timer = timer - 1;
-                        *(int16_t*)(entry + 2) = timer;
-                        if (timer < 0) {
-                            *(int16_t*)(entry + 2) = 0;
-                        } else if (timer == 0) {
-                            *(int16_t*)(entry + 0) = 4;
-                        }
+                case 0x10: {
+                    fe->timer = fe->timer - 1;
+                    if (fe->timer < 0) {
+                        fe->timer = 0;
+                    } else if (fe->timer == 0) {
+                        fe->type = 4;
                     }
                     break;
+                }
 
                 default:
-                    // Unknown type: increment s3 and skip to next iteration
                     s3++;
-                    entry += 0x20;
                     continue;
             }
         }
 
         s3++;
-        entry += 0x20;
     }
 
     // --- Post-loop: callback dispatch and fade update ---

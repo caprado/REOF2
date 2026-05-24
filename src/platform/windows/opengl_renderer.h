@@ -26,4 +26,8 @@ void opengl_bind_texture(int textureIndex);
 bool opengl_init_gl(void);
 void opengl_shutdown_gl(void);
 
+// Register game loop function for continuous updates during window drag/resize
+typedef bool (*OpenGLGameLoopFunc)(void);
+void opengl_set_game_loop(OpenGLGameLoopFunc func);
+
 #endif // OPENGL_RENDERER_H

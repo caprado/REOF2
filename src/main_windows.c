@@ -28,6 +28,7 @@
 #include <stdbool.h>
 #include <stdint.h>
 #include <string.h>
+#include <stddef.h>
 #include <windows.h>
 #include "platform/windows/opengl_renderer.h"
 #include "game/texture_manager.h"
@@ -37,6 +38,12 @@
 #include "game/menu_controller.h"
 #include "game/game_state_manager.h"
 #include "game/frame_update.h"
+#include "graphics/font.h"
+#include "graphics/game_font.h"
+#include "media/video_player.h"
+#include "game/demo_overlay.h"
+#include "audio/sound_bank.h"
+#include "platform/windows/input.h"
 
 // Menu controller context - passed to processMenuController each frame
 static MenuControllerContext g_menuContext;
@@ -110,8 +117,26 @@ bool initializeGameEngine(void) {
     }
     printf("[INIT]   ✓ Game engine initialized (g_game struct ready)\n");
 
+    // Initialize font systems from disc assets
+    if (!initFont()) {
+        fprintf(stderr, "[WARN] Small font (FONT8_8) loading failed\n");
+    }
+    if (!initGameFont()) {
+        fprintf(stderr, "[WARN] Game font (d20le04) loading failed\n");
+    }
+
+    // Initialize input system
+    initInput();
+
+    // Initialize video player (playback triggered by boot state machine)
+    initVideoPlayer();
+
+    // Initialize sound bank system and load title/menu SFX bank
+    if (initSoundBankSystem()) {
+        loadSoundBank(1334, 12);  // Bank "start" → category 12 (ASM: func_001daca0(0))
+    }
+
     printf("[INIT] Game engine ready\n");
-    printf("[INIT] Entry point: processMenuController (menu_controller.c)\n");
     return true;
 }
 
@@ -143,6 +168,9 @@ bool mainGameLoop(void) {
     // not directly from the main loop. Calling it here for now until
     // the menu state entry point is fully traced.
 
+    // Update input from keyboard/controller before game logic
+    updateInput();
+
     // Clear screen at start of frame (before any rendering)
     opengl_clear(0.0f, 0.0f, 0.0f, 1.0f);
 
@@ -155,6 +183,43 @@ bool mainGameLoop(void) {
 
     // === END GAME LOOP ===
 
+    // Video playback — driven by demo overlay callback via boot state machine
+    if (isVideoPlaying()) {
+        if (updateVideo()) {
+            renderVideoFrame();
+        } else {
+            stopVideo();
+        }
+    }
+
+    // ASM-verified from overlay (BIN/1.DAT) 0x549e00-0x549ed0:
+    //   func_001b5050(0x80000080) — text color
+    //   func_001b5090 shadow: color & 0xFF000000 = alpha-only black, offset +2,+2
+    if (shouldDrawPressStart()) {
+        drawGameTextShadowEx("PRESS START BUTTON", 194, 320, 1.0f, 1.0f, 1.0f, 0.1f, 0.1f, 0.5f);
+    }
+
+    // Menu rendering — ASM-verified from func_0x543900:
+    //   14px advance per char, Y=286 start, 24px spacing
+    //   Selected: PS2 0x80008080 = yellow, Unselected: 0x80808080 = gray
+    if (shouldDrawMenu()) {
+        int sel = getMenuSelection();
+        static const char* menuItems[] = {
+            "SINGLE PLAY", "NETWORK PLAY", "COLLECTION",
+            "CHARALOG", "OPTION", "HDD INSTALL"
+        };
+        for (int i = 0; i < 6; i++) {
+            int charCount = (int)strlen(menuItems[i]);
+            int x = (640 - charCount * 14) / 2;
+            int y = 286 + i * 24;
+            if (i == sel) {
+                drawGameTextShadow(menuItems[i], x, y, 0.5f, 0.5f, 0.0f);
+            } else {
+                drawGameTextShadow(menuItems[i], x, y, 0.5f, 0.5f, 0.5f);
+            }
+        }
+    }
+
     // Present frame
     opengl_swap_buffers();
 
@@ -166,6 +231,12 @@ bool mainGameLoop(void) {
  */
 void shutdownSystems(void) {
     printf("[SHUTDOWN] Cleaning up systems...\n");
+
+    // Shutdown sound, video, and font
+    shutdownSoundBankSystem();
+    shutdownVideoPlayer();
+    shutdownGameFont();
+    shutdownFont();
 
     // Shutdown game engine (uses unified system)
     shutdownEngine();
@@ -241,6 +312,7 @@ int main(int argc, char* argv[]) {
     // Step 3: Initialize menu controller context
     memset(&g_menuContext, 0, sizeof(g_menuContext));
     printf("[INIT] Menu context initialized (state=0)\n");
+    fflush(stdout);
 
     // Step 4: Main menu loop
     printf("\n================================================\n");
@@ -250,6 +322,9 @@ int main(int argc, char* argv[]) {
 
     g_isRunning = true;
     int frameCount = 0;
+
+    // Register game loop for continuous updates during window drag/resize
+    opengl_set_game_loop(mainGameLoop);
 
     while (g_isRunning) {
         if (!mainGameLoop()) {
