@@ -44,4 +44,9 @@ int shouldDrawMenu(void);
  */
 int getMenuSelection(void);
 
+/**
+ * @description Check if attract/demo mode is active (for DEMONSTRATION text overlay).
+ */
+int isAttractMode(void);
+
 #endif // DEMO_OVERLAY_H

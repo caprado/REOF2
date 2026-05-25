@@ -327,75 +327,8 @@ int32_t updateVideo(void) {
         return 0;
     }
 
-    // Decode audio from separate ADX stream
-    // Continuously recycle processed buffers and fill with new audio data
-    if (s_audioInitialized && s_audioFmtCtx) {
-        ALint processed;
-        int buffersToFill;
-
-        // Recycle all processed buffers back to available pool
-        alGetSourcei(s_alSource, AL_BUFFERS_PROCESSED, &processed);
-        if (processed > 0) {
-            ALuint recycled[AUDIO_BUFFER_COUNT];
-            alSourceUnqueueBuffers(s_alSource, processed, recycled);
-        }
-
-        // Determine how many buffers we can fill
-        ALint queued;
-        alGetSourcei(s_alSource, AL_BUFFERS_QUEUED, &queued);
-        buffersToFill = AUDIO_BUFFER_COUNT - queued;
-
-        // Decode and queue audio to fill all available buffer slots
-        while (buffersToFill > 0) {
-            AVPacket* audioPkt = av_packet_alloc();
-            ret = av_read_frame(s_audioFmtCtx, audioPkt);
-            if (ret < 0) {
-                av_packet_free(&audioPkt);
-                break;
-            }
-
-            ret = avcodec_send_packet(s_audioCodecCtx, audioPkt);
-            if (ret >= 0) {
-                AVFrame* audioFrame = av_frame_alloc();
-                if (avcodec_receive_frame(s_audioCodecCtx, audioFrame) >= 0) {
-                    int outSamples = audioFrame->nb_samples;
-                    int bufBytes = outSamples * s_audioChannels * sizeof(int16_t);
-                    int16_t* outBuf = (int16_t*)malloc(bufBytes);
-                    uint8_t* outPtr = (uint8_t*)outBuf;
-
-                    swr_convert(s_swrCtx, &outPtr, outSamples,
-                                (const uint8_t**)audioFrame->data, audioFrame->nb_samples);
-
-                    ALenum format = (s_audioChannels == 2) ? AL_FORMAT_STEREO16 : AL_FORMAT_MONO16;
-
-                    // Generate a fresh buffer for this chunk
-                    ALuint bufId;
-                    alGenBuffers(1, &bufId);
-                    alBufferData(bufId, format, outBuf, bufBytes, s_audioSampleRate);
-                    alSourceQueueBuffers(s_alSource, 1, &bufId);
-
-                    buffersToFill--;
-
-                    free(outBuf);
-                }
-                av_frame_free(&audioFrame);
-            }
-            av_packet_free(&audioPkt);
-        }
-
-        // Restart playback if source stopped (underrun recovery)
-        ALint state;
-        alGetSourcei(s_alSource, AL_SOURCE_STATE, &state);
-        if (state != AL_PLAYING) {
-            ALint q;
-            alGetSourcei(s_alSource, AL_BUFFERS_QUEUED, &q);
-            if (q > 0) {
-                alSourcePlay(s_alSource);
-            }
-        }
-    }
-
-    // Decode video frames until we get one
+    // Decode video frame FIRST (then audio catches up)
+    // This prevents audio from racing ahead of video
     while (!gotFrame) {
         ret = av_read_frame(s_fmtCtx, s_packet);
         if (ret < 0) {
@@ -430,6 +363,61 @@ int32_t updateVideo(void) {
         }
 
         av_packet_unref(s_packet);
+    }
+
+    // Decode audio AFTER video to stay in sync
+    // Only queue 1 buffer per frame to prevent audio racing ahead
+    if (s_audioInitialized && s_audioFmtCtx) {
+        ALint processed;
+        alGetSourcei(s_alSource, AL_BUFFERS_PROCESSED, &processed);
+        if (processed > 0) {
+            ALuint recycled[AUDIO_BUFFER_COUNT];
+            alSourceUnqueueBuffers(s_alSource, processed, recycled);
+        }
+
+        ALint queued;
+        alGetSourcei(s_alSource, AL_BUFFERS_QUEUED, &queued);
+
+        // Keep max 2 buffers queued — just enough to prevent underrun
+        while (queued < 2) {
+            AVPacket* audioPkt = av_packet_alloc();
+            ret = av_read_frame(s_audioFmtCtx, audioPkt);
+            if (ret < 0) {
+                av_packet_free(&audioPkt);
+                break;
+            }
+
+            ret = avcodec_send_packet(s_audioCodecCtx, audioPkt);
+            if (ret >= 0) {
+                AVFrame* audioFrame = av_frame_alloc();
+                if (avcodec_receive_frame(s_audioCodecCtx, audioFrame) >= 0) {
+                    int outSamples = audioFrame->nb_samples;
+                    int bufBytes = outSamples * s_audioChannels * sizeof(int16_t);
+                    int16_t* outBuf = (int16_t*)malloc(bufBytes);
+                    uint8_t* outPtr = (uint8_t*)outBuf;
+
+                    swr_convert(s_swrCtx, &outPtr, outSamples,
+                                (const uint8_t**)audioFrame->data, audioFrame->nb_samples);
+
+                    ALenum format = (s_audioChannels == 2) ? AL_FORMAT_STEREO16 : AL_FORMAT_MONO16;
+                    ALuint bufId;
+                    alGenBuffers(1, &bufId);
+                    alBufferData(bufId, format, outBuf, bufBytes, s_audioSampleRate);
+                    alSourceQueueBuffers(s_alSource, 1, &bufId);
+                    queued++;
+
+                    free(outBuf);
+                }
+                av_frame_free(&audioFrame);
+            }
+            av_packet_free(&audioPkt);
+        }
+
+        ALint state;
+        alGetSourcei(s_alSource, AL_SOURCE_STATE, &state);
+        if (state != AL_PLAYING && queued > 0) {
+            alSourcePlay(s_alSource);
+        }
     }
 
     return 1;

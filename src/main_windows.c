@@ -192,6 +192,13 @@ bool mainGameLoop(void) {
         }
     }
 
+    // "DEMONSTRATION" text overlay during attract mode
+    // Same font style as "PRESS START BUTTON" (gothic with blue shadow)
+    // PS2: rendered at bottom-left during demo video playback
+    if (isAttractMode()) {
+        drawGameTextShadowEx("DEMONSTRATION", 20, 410, 1.0f, 1.0f, 1.0f, 0.1f, 0.1f, 0.5f);
+    }
+
     // ASM-verified from overlay (BIN/1.DAT) 0x549e00-0x549ed0:
     //   func_001b5050(0x80000080) — text color
     //   func_001b5090 shadow: color & 0xFF000000 = alpha-only black, offset +2,+2

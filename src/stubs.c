@@ -63,10 +63,10 @@ void func_001bbab0(void) {}  // Perspective matrix setup
 // func_001b7940 — ported as loadCompanyLogos() in resource_queue.c
 // func_001b78b0 — ported as queueResourceLoad() in resource_queue.c
 
-// Demo overlay audio functions
-void func_001addd0(void) {}  // Audio transition
-void func_001adb80(void) {}  // Audio stop/transition
-void func_001adbe0(void) {}  // Audio cleanup
-void func_001b8000(void) {}  // Scene transition
+// Demo overlay audio — ported in demo_overlay.c (audioFadeTransition, audioCleanupAllChannels)
+// func_001addd0 — ported as audioFadeTransition() in demo_overlay.c
+// func_001adbe0 — ported as audioCleanupAllChannels() in demo_overlay.c
+// func_001b8000 — ported via playSoundEffect(12, N) in demo_overlay.c + sound_bank.c
+void func_001adb80(void) {}  // Audio stop/transition (not called in boot flow)
 void func_001b7790(void) {}  // Display setup
 // func_001b0ce0 — ported as isEntityDataReady() in entity_ready_check.c
