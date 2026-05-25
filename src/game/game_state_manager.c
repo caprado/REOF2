@@ -382,22 +382,6 @@ static void updateFadeBuffer1(void) {
     g_game.sequenceIndex = g_game.sequenceIndex + 1;
 }
 
-/**
- * @category game/state
- * @status complete
- * @original func_001ba010
- * @address 0x001ba010
- * @description Resets game state manager. Clears timer, index, and sequence pointer.
- * @windows_compatibility high
- * @author caprado
- */
-void resetGameStateManager(void) {
-    // Clear all game state manager variables
-    g_game.currentTimer = 0;      // Original: sh $zero, 0x7f9c($at)
-    g_game.sequenceIndex = 0;     // Original: sh $zero, 0x7f9e($at)
-    g_game.sequenceArray = NULL;  // Original: sw $zero, 0x7fa0($at) - clearing pointer
-    g_game.gameStateFlag = 0;     // Original: sb $zero, 0x7f91($at)
-}
 
 /**
  * @category graphics/fade

@@ -1,7 +1,7 @@
 #include "entity_ready_check.h"
 #include "game_data.h"
 
-/** @category game/entity @status complete @original func_001b0ce0 @address 0x001b0ce0 @windows_compatibility high @author caprado */
+/** @category game/entity @status complete @original func_001b0ce0 @address 0x001b0ce0 @description Check if entity data is loaded and ready for use @windows_compatibility high @author caprado */
 int32_t isEntityDataReady(void) {
     uint8_t* entityBase = (uint8_t*)g_game.entityDataPtr;
 

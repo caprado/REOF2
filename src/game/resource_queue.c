@@ -4,7 +4,7 @@
 #include "demo_overlay.h"
 #include <stdio.h>
 
-/** @category io/filesystem @status complete @original func_001b78b0 @address 0x001b78b0
+/** @category io/filesystem @status complete @original func_001b78b0 @address 0x001b78b0 @description Queue resource slot for disc loading from NETBIO00.DAT
  *
  * Original ASM:
  *   lbu $v1, 0x37d8($at)        ; v1 = state37d8 (last loaded slot 1)
@@ -38,7 +38,7 @@ void queueResourceLoad(int32_t slot, int32_t target, int32_t source) {
     }
 }
 
-/** @category game/state @status complete @original func_001b7940 @address 0x001b7940
+/** @category game/state @status complete @original func_001b7940 @address 0x001b7940 @description Register demo overlay callback and queue resource slot 1 for loading
  *
  * Original ASM:
  *   lui $a0, 0x54

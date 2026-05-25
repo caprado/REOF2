@@ -13,7 +13,7 @@ static int32_t s_sceneConfig0 = 0;  // 0x313890
 static int32_t s_sceneConfig1 = 0;  // 0x313894
 static int32_t s_sceneConfig2 = 0;  // 0x313898
 
-/** @category game/state @status complete @original func_001bc1b0 @address 0x001bc1b0
+/** @category game/state @status complete @original func_001bc1b0 @address 0x001bc1b0 @description Initialize scene by loading scene data from config values
  *
  * Original ASM:
  *   lw $v1, -0x6330($gp)         ; check scene handle

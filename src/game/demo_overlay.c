@@ -17,6 +17,8 @@
 #define AUDIO_DEMO1       1604   // file2demo01.adx (28.6s)
 #define VIDEO_DEMO2       1834   // PS2demo02.sfd (9.2MB)
 #define AUDIO_DEMO2       1605   // file2demo02.adx (23.5s)
+#define VIDEO_TITLE2      1848   // PS2title2_jpn.sfd (4.9MB, menu background, loops)
+#define AUDIO_MENU        1821   // file2_010.adx (34.4s, menu BGM)
 
 // Title screen idle timeout before attract mode (~45 seconds observed on PS2)
 #define TITLE_IDLE_FRAMES 2700   // 45 seconds at 60fps
@@ -375,11 +377,18 @@ void demoOverlayCallback(void* entry) {
                 printf("[DemoOverlay] Boot sequence complete\n");
                 fflush(stdout);
                 func_001bbab0();
+                playVideo(VIDEO_TITLE2, AUDIO_MENU);
+                setVideoLoop(0.0);
                 OV_SUBSTATE(entry) = 32;
             }
             break;
 
         case 32: {
+            // Loop menu background video
+            if (!isVideoPlaying()) {
+                playVideo(VIDEO_TITLE2, AUDIO_MENU);
+                setVideoLoop(0.0);
+            }
             uint32_t pressed = 0;
             s_drawMenu = 1;
 
@@ -401,7 +410,9 @@ void demoOverlayCallback(void* entry) {
             }
 
             if (pressed & (BTN_START | 0x8000)) {
-                playSoundEffect(12, 22);  // "OUTBREAK" voice — ASM: menu select triggers this
+                if (s_menuSelection <= 1) {
+                    playSoundEffect(12, 22);  // "OUTBREAK" — only SINGLE PLAY / NETWORK PLAY
+                }
                 printf("[Menu] Selected: %s (index %d)\n",
                        s_menuItems[s_menuSelection], s_menuSelection);
                 fflush(stdout);
