@@ -343,6 +343,60 @@ static void updateFadeBuffer1(void) {
         default:
             break;
     }
+
+    // Check if sequence array pointer is valid
+    if (g_game.sequenceArray == NULL) {
+        resetGameStateManager();
+        return;
+    }
+
+    // Decrement timer by (1 << timerShift)
+    int16_t decrement = 1 << g_game.timerShift;
+    g_game.currentTimer = g_game.currentTimer - decrement;
+
+    // If timer still positive, keep waiting
+    if (g_game.currentTimer > 0) {
+        return;
+    }
+
+    // Timer expired - load next sequence entry
+    int16_t index = g_game.sequenceIndex;
+    int16_t nextDuration = g_game.sequenceArray[index].duration;
+
+    // Store as new timer value
+    g_game.currentTimer = nextDuration;
+
+    // If duration is 0, sequence has ended
+    if (nextDuration == 0) {
+        resetGameStateManager();
+        return;
+    }
+
+    // Call the callback function for this sequence entry
+    MenuCallback callback = g_game.sequenceArray[index].callback;
+    if (callback != NULL) {
+        callback();
+    }
+
+    // Advance to next sequence entry
+    g_game.sequenceIndex = g_game.sequenceIndex + 1;
+}
+
+/**
+ * @category game/state
+ * @status complete
+ * @original func_001ba010
+ * @address 0x001ba010
+ * @description Resets game state manager. Clears timer, index, and sequence pointer.
+ * @windows_compatibility high
+ * @author caprado
+ */
+void resetGameStateManager(void) {
+    // Clear all game state manager variables
+    g_game.currentTimer = 0;      // Original: sh $zero, 0x7f9c($at)
+    g_game.sequenceIndex = 0;     // Original: sh $zero, 0x7f9e($at)
+    g_game.sequenceArray = NULL;  // Original: sw $zero, 0x7fa0($at) - clearing pointer
+    g_game.gameStateFlag = 0;     // Original: sb $zero, 0x7f91($at)
 }
 
 /**

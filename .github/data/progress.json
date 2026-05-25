@@ -1,34 +1,57 @@
 {
-  "total_files": 4073,
-  "categorized": 44,
+  "total_files": 4079,
+  "categorized": 185,
   "by_category": {
     "core/entry": 1,
     "core/init": 4,
-    "uncategorized": 4029,
+    "uncategorized": 3894,
+    "system/ps2": 16,
+    "graphics/dma": 15,
+    "memory/allocation": 10,
+    "utility/memory": 1,
     "system/thread": 2,
     "system/timing": 1,
+    "graphics/sync": 6,
+    "ps2-kernel-not-needed": 18,
     "utility/lookup": 1,
-    "system/sync": 3,
-    "game/rendering": 5,
-    "graphics/memory": 1,
-    "memory/allocation": 1,
+    "system/sync": 4,
+    "graphics/memory": 6,
+    "game/rendering": 4,
+    "game/frame": 7,
+    "graphics/state": 2,
+    "graphics/texture": 2,
+    "graphics/init": 6,
+    "graphics/gs": 1,
+    "graphics/display": 4,
+    "game/init": 26,
+    "game/camera": 1,
+    "game/data": 1,
+    "audio/settings": 6,
     "game/utility": 1,
-    "game/stub": 1,
+    "system/irq": 1,
+    "graphics/render": 4,
+    "audio/init": 1,
+    "audio/fade": 1,
+    "game/stub": 2,
     "compression/lz77": 1,
-    "utility/array": 2,
-    "game/init": 3,
+    "utility/array": 3,
     "memory/pool": 1,
-    "game/frame": 1,
+    "graphics/buffer_select": 1,
     "game/resource": 5,
-    "game/menu": 5,
-    "game/state": 2,
+    "utility/stub": 2,
+    "game/menu": 6,
+    "game/state": 3,
     "game/update": 1,
+    "game/system": 1,
+    "network/init": 1,
+    "graphics/compositor": 2,
     "game/buffer": 1,
-    "game/loop": 1
+    "game/loop": 1,
+    "game/conditional": 1
   },
   "by_status": {
-    "complete": 44,
-    "uncategorized": 4029
+    "complete": 185,
+    "uncategorized": 3894
   },
   "files": [
     {
@@ -57,9 +80,9 @@
     },
     {
       "filename": "func_001005b0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "system/ps2",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00100668.c",
@@ -123,9 +146,9 @@
     },
     {
       "filename": "func_00100ea8.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "system/ps2",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001010c8.c",
@@ -183,9 +206,9 @@
     },
     {
       "filename": "func_00101d28.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "system/ps2",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00101e20.c",
@@ -393,15 +416,15 @@
     },
     {
       "filename": "func_00103080.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/dma",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001030a8.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/dma",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00103188.c",
@@ -411,9 +434,9 @@
     },
     {
       "filename": "func_001033b0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/dma",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00103418.c",
@@ -447,9 +470,9 @@
     },
     {
       "filename": "func_00103650.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/dma",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00103688.c",
@@ -687,9 +710,9 @@
     },
     {
       "filename": "func_00106ee8.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "memory/allocation",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00106f40.c",
@@ -735,9 +758,9 @@
     },
     {
       "filename": "func_00107c70.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "utility/memory",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00107d30.c",
@@ -1341,15 +1364,15 @@
     },
     {
       "filename": "func_001123a0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/sync",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001123b0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/dma",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00112418.c",
@@ -1413,27 +1436,27 @@
     },
     {
       "filename": "func_00113098.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/sync",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00113130.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/sync",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00113448.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/dma",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00113630.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/dma",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001137b0.c",
@@ -1629,9 +1652,9 @@
     },
     {
       "filename": "func_00114190.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "ps2-kernel-not-needed",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001141d0.c",
@@ -1713,9 +1736,9 @@
     },
     {
       "filename": "func_00114300.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "system/ps2",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00114310.c",
@@ -1737,9 +1760,9 @@
     },
     {
       "filename": "func_00114380.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "ps2-kernel-not-needed",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00114390.c",
@@ -1851,15 +1874,15 @@
     },
     {
       "filename": "func_00114770.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/sync",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00114800.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/sync",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001148a8.c",
@@ -2001,9 +2024,9 @@
     },
     {
       "filename": "func_00114fe0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "ps2-kernel-not-needed",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00115190.c",
@@ -2181,9 +2204,9 @@
     },
     {
       "filename": "func_00116508.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "system/ps2",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00116598.c",
@@ -2217,9 +2240,9 @@
     },
     {
       "filename": "func_00116ac8.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "system/ps2",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00116b08.c",
@@ -2235,15 +2258,15 @@
     },
     {
       "filename": "func_00116c90.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "system/ps2",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00116d40.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "system/ps2",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00116ee0.c",
@@ -2253,15 +2276,15 @@
     },
     {
       "filename": "func_00116f08.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "system/ps2",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00116fb0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "system/ps2",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00116fd0.c",
@@ -2319,15 +2342,15 @@
     },
     {
       "filename": "func_001174d8.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "system/ps2",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001176a8.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "system/ps2",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001178a0.c",
@@ -2805,27 +2828,27 @@
     },
     {
       "filename": "func_0011cb60.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "ps2-kernel-not-needed",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0011cba8.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "ps2-kernel-not-needed",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0011cbb8.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "ps2-kernel-not-needed",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0011cbc8.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "ps2-kernel-not-needed",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0011ccb0.c",
@@ -2865,7 +2888,7 @@
     },
     {
       "filename": "func_0011d390.c",
-      "category": "system/sync",
+      "category": "ps2-kernel-not-needed",
       "status": "complete",
       "author": "caprado"
     },
@@ -2877,9 +2900,9 @@
     },
     {
       "filename": "func_0011d470.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "ps2-kernel-not-needed",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0011d484.c",
@@ -2889,45 +2912,45 @@
     },
     {
       "filename": "func_0011d4b8.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "ps2-kernel-not-needed",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0011d5b8.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "ps2-kernel-not-needed",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0011d5c8.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "ps2-kernel-not-needed",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0011d630.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "ps2-kernel-not-needed",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0011d678.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "ps2-kernel-not-needed",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0011d688.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "ps2-kernel-not-needed",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0011d6f0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "ps2-kernel-not-needed",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0011d7a0.c",
@@ -2991,9 +3014,9 @@
     },
     {
       "filename": "func_0011de60.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "ps2-kernel-not-needed",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0011def0.c",
@@ -3195,9 +3218,9 @@
     },
     {
       "filename": "func_0011f260.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "ps2-kernel-not-needed",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0011f300.c",
@@ -14943,9 +14966,9 @@
     },
     {
       "filename": "func_0017fe30.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/dma",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0017feb0.c",
@@ -16107,15 +16130,15 @@
     },
     {
       "filename": "func_0018ccc0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/dma",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0018cd80.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/dma",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0018ce40.c",
@@ -16131,15 +16154,15 @@
     },
     {
       "filename": "func_0018d2f0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/dma",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0018d4c0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/sync",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0018d530.c",
@@ -16185,9 +16208,9 @@
     },
     {
       "filename": "func_0018d9e0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "system/ps2",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0018da10.c",
@@ -16197,27 +16220,27 @@
     },
     {
       "filename": "func_0018da60.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "memory/allocation",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0018daf0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/memory",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0018db40.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/memory",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0018dba0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/memory",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0018dc30.c",
@@ -17007,15 +17030,15 @@
     },
     {
       "filename": "func_00195e90.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/frame",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00195ea0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/frame",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00195ec0.c",
@@ -17025,9 +17048,9 @@
     },
     {
       "filename": "func_00196050.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/state",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_00196dd4.c",
@@ -17349,9 +17372,9 @@
     },
     {
       "filename": "func_0019c640.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "memory/allocation",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0019c700.c",
@@ -17439,9 +17462,9 @@
     },
     {
       "filename": "func_0019d440.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/texture",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0019d630.c",
@@ -17541,9 +17564,9 @@
     },
     {
       "filename": "func_0019e880.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "system/ps2",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0019e900.c",
@@ -17571,9 +17594,9 @@
     },
     {
       "filename": "func_0019eb90.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "system/ps2",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0019ebd0.c",
@@ -17595,9 +17618,9 @@
     },
     {
       "filename": "func_0019ee10.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/texture",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0019f080.c",
@@ -17607,51 +17630,51 @@
     },
     {
       "filename": "func_0019f130.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/memory",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0019f230.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0019f2e0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/memory",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0019f390.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/frame",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0019f420.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/dma",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_0019f4e0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001a0010.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/gs",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001a05c0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/display",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001a0760.c",
@@ -17661,9 +17684,9 @@
     },
     {
       "filename": "func_001a0850.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/display",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001a0960.c",
@@ -17679,21 +17702,21 @@
     },
     {
       "filename": "func_001a0980.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001a0990.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001a09a0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "memory/allocation",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001a0c10.c",
@@ -17751,15 +17774,15 @@
     },
     {
       "filename": "func_001a1530.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001a1590.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001a1740.c",
@@ -17769,9 +17792,9 @@
     },
     {
       "filename": "func_001a17e0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/camera",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001a18c0.c",
@@ -17817,9 +17840,9 @@
     },
     {
       "filename": "func_001a1aa0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/data",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001a1b30.c",
@@ -18321,9 +18344,9 @@
     },
     {
       "filename": "func_001a5890.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001a5a60.c",
@@ -18482,6 +18505,12 @@
       "author": null
     },
     {
+      "filename": "func_001a7690.c",
+      "category": "audio/settings",
+      "status": "complete",
+      "author": "caprado"
+    },
+    {
       "filename": "func_001a77d0.c",
       "category": null,
       "status": null,
@@ -18603,15 +18632,15 @@
     },
     {
       "filename": "func_001a8960.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "system/sync",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001a8990.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "system/sync",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001a8a50.c",
@@ -18627,9 +18656,9 @@
     },
     {
       "filename": "func_001a8a90.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001a8aa0.c",
@@ -18849,9 +18878,9 @@
     },
     {
       "filename": "func_001aaf50.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "system/irq",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001ab180.c",
@@ -18873,9 +18902,9 @@
     },
     {
       "filename": "func_001ab530.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/render",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001ab7c0.c",
@@ -18897,15 +18926,15 @@
     },
     {
       "filename": "func_001ac020.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001ac0c0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001ac0e0.c",
@@ -18915,9 +18944,9 @@
     },
     {
       "filename": "func_001ac100.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001ac140.c",
@@ -18945,9 +18974,9 @@
     },
     {
       "filename": "func_001ac980.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "audio/settings",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001acb70.c",
@@ -18981,9 +19010,9 @@
     },
     {
       "filename": "func_001acfe0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001ad030.c",
@@ -19023,9 +19052,9 @@
     },
     {
       "filename": "func_001ad600.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "audio/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001ad904.c",
@@ -19077,9 +19106,9 @@
     },
     {
       "filename": "func_001addb0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "audio/settings",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001addd0.c",
@@ -19095,9 +19124,9 @@
     },
     {
       "filename": "func_001ade90.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "audio/fade",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001ae0b0.c",
@@ -19149,21 +19178,21 @@
     },
     {
       "filename": "func_001ae540.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001ae570.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001ae5a0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001ae5c0.c",
@@ -19173,31 +19202,31 @@
     },
     {
       "filename": "func_001ae690.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001ae770.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001ae830.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001ae8d0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/frame",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001ae910.c",
-      "category": "game/rendering",
+      "category": "game/frame",
       "status": "complete",
       "author": "caprado"
     },
@@ -19209,9 +19238,9 @@
     },
     {
       "filename": "func_001aea70.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/display",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001aeb00.c",
@@ -19263,21 +19292,33 @@
     },
     {
       "filename": "func_001aeef0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "memory/allocation",
+      "status": "complete",
+      "author": "caprado"
+    },
+    {
+      "filename": "func_001aef60.c",
+      "category": "memory/allocation",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001aefd0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/render",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001af010.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/display",
+      "status": "complete",
+      "author": "caprado"
+    },
+    {
+      "filename": "func_001af020.c",
+      "category": "memory/allocation",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001af0d0.c",
@@ -19287,27 +19328,27 @@
     },
     {
       "filename": "func_001af180.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001af190.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "memory/allocation",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001af1f0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "memory/allocation",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001af240.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "utility/array",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001af280.c",
@@ -19461,9 +19502,9 @@
     },
     {
       "filename": "func_001afe50.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001afea0.c",
@@ -19479,9 +19520,9 @@
     },
     {
       "filename": "func_001aff00.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001aff60.c",
@@ -19917,9 +19958,9 @@
     },
     {
       "filename": "func_001b3430.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/stub",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001b3440.c",
@@ -20163,9 +20204,9 @@
     },
     {
       "filename": "func_001b5060.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/buffer_select",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001b5090.c",
@@ -20181,9 +20222,9 @@
     },
     {
       "filename": "func_001b5400.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/dma",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001b5470.c",
@@ -20205,9 +20246,9 @@
     },
     {
       "filename": "func_001b5920.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/dma",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001b5c60.c",
@@ -20343,12 +20384,18 @@
     },
     {
       "filename": "func_001b7390.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/dma",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001b7490.c",
+      "category": "game/init",
+      "status": "complete",
+      "author": "caprado"
+    },
+    {
+      "filename": "func_001b74b0.c",
       "category": null,
       "status": null,
       "author": null
@@ -20427,21 +20474,21 @@
     },
     {
       "filename": "func_001b7a60.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "utility/stub",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001b7a70.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/state",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001b7a80.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "utility/stub",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001b7aa0.c",
@@ -20451,9 +20498,9 @@
     },
     {
       "filename": "func_001b7ab0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001b7b30.c",
@@ -20463,27 +20510,27 @@
     },
     {
       "filename": "func_001b7e60.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "audio/settings",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001b7e90.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "audio/settings",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001b7f10.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "audio/settings",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001b7f80.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001b8000.c",
@@ -20690,6 +20737,12 @@
       "author": "caprado"
     },
     {
+      "filename": "func_001b9f10.c",
+      "category": "game/menu",
+      "status": "complete",
+      "author": "caprado"
+    },
+    {
       "filename": "func_001ba010.c",
       "category": "game/menu",
       "status": "complete",
@@ -20715,9 +20768,9 @@
     },
     {
       "filename": "func_001ba2a0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/state",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001ba310.c",
@@ -20727,15 +20780,15 @@
     },
     {
       "filename": "func_001ba360.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/frame",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001ba3c0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001ba590.c",
@@ -20745,21 +20798,21 @@
     },
     {
       "filename": "func_001ba660.c",
-      "category": null,
-      "status": null,
-      "author": null
-    },
-    {
-      "filename": "func_001ba8b0.c",
       "category": "game/init",
       "status": "complete",
       "author": "caprado"
     },
     {
+      "filename": "func_001ba8b0.c",
+      "category": "system/ps2",
+      "status": "complete",
+      "author": "caprado"
+    },
+    {
       "filename": "func_001ba8f0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/system",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001ba950.c",
@@ -20775,15 +20828,15 @@
     },
     {
       "filename": "func_001ba9c0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001baa30.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "network/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001babf0.c",
@@ -20829,9 +20882,9 @@
     },
     {
       "filename": "func_001bb710.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/render",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001bb740.c",
@@ -20841,9 +20894,9 @@
     },
     {
       "filename": "func_001bb890.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/compositor",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001bb9e0.c",
@@ -20859,15 +20912,21 @@
     },
     {
       "filename": "func_001bbb80.c",
+      "category": "graphics/render",
+      "status": "complete",
+      "author": "caprado"
+    },
+    {
+      "filename": "func_001bbba0.c",
       "category": null,
       "status": null,
       "author": null
     },
     {
       "filename": "func_001bbcf0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "graphics/compositor",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001bbda0.c",
@@ -23379,15 +23438,15 @@
     },
     {
       "filename": "func_001d30b0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/conditional",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001d3110.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001d3170.c",
@@ -23409,9 +23468,9 @@
     },
     {
       "filename": "func_001d33e0.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001d3430.c",
@@ -24399,9 +24458,9 @@
     },
     {
       "filename": "func_001dd790.c",
-      "category": null,
-      "status": null,
-      "author": null
+      "category": "game/init",
+      "status": "complete",
+      "author": "caprado"
     },
     {
       "filename": "func_001dd810.c",

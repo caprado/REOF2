@@ -137,6 +137,7 @@ bool initializeGameEngine(void) {
     }
 
     printf("[INIT] Game engine ready\n");
+    printf("[INIT] Entry point: processMenuController (menu_controller.c)\n");
     return true;
 }
 

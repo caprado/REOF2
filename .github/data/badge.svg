@@ -1,21 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="152" height="20" role="img" aria-label="Progress: 44/4073 (1.1%)">
-    <title>Progress: 44/4073 (1.1%)</title>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="158" height="20" role="img" aria-label="Progress: 185/4079 (4.5%)">
+    <title>Progress: 185/4079 (4.5%)</title>
     <linearGradient id="s" x2="0" y2="100%">
         <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
         <stop offset="1" stop-opacity=".1"/>
     </linearGradient>
     <clipPath id="r">
-        <rect width="152" height="20" rx="3" fill="#fff"/>
+        <rect width="158" height="20" rx="3" fill="#fff"/>
     </clipPath>
     <g clip-path="url(#r)">
         <rect width="58" height="20" fill="#555"/>
-        <rect x="58" width="94" height="20" fill="#e05d44"/>
-        <rect width="152" height="20" fill="url(#s)"/>
+        <rect x="58" width="100" height="20" fill="#e05d44"/>
+        <rect width="158" height="20" fill="url(#s)"/>
     </g>
     <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110">
         <text aria-hidden="true" x="290.0" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="480">Progress</text>
         <text x="290.0" y="140" transform="scale(.1)" fill="#fff" textLength="480">Progress</text>
-        <text aria-hidden="true" x="1050.0" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="840">44/4073 (1.1%)</text>
-        <text x="1050.0" y="140" transform="scale(.1)" fill="#fff" textLength="840">44/4073 (1.1%)</text>
+        <text aria-hidden="true" x="1080.0" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="900">185/4079 (4.5%)</text>
+        <text x="1080.0" y="140" transform="scale(.1)" fill="#fff" textLength="900">185/4079 (4.5%)</text>
     </g>
 </svg>
