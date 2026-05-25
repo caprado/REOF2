@@ -77,11 +77,11 @@ void updateInput(void) {
     // Also update entity data if it exists (for func_001b0720 etc.)
     if (g_game.entityDataPtr != NULL) {
         uint8_t* entity = (uint8_t*)g_game.entityDataPtr;
-        uint32_t prev = *(uint32_t*)(entity + 0x0C);
-        *(uint32_t*)(entity + 0x0C) = *(uint32_t*)(entity + 0x08);
+        uint32_t prev = *(uint32_t*)(entity + 0x08);  // previous = last frame's raw buttons
+        *(uint32_t*)(entity + 0x0C) = prev;
         *(uint32_t*)(entity + 0x08) = buttons;
-        *(uint32_t*)(entity + 0x10) = buttons & ~prev;
-        *(uint32_t*)(entity + 0x14) = ~buttons & prev;
+        *(uint32_t*)(entity + 0x10) = buttons & ~prev;  // rising edge
+        *(uint32_t*)(entity + 0x14) = ~buttons & prev;  // falling edge
     }
 }
 

@@ -52,16 +52,14 @@ static int s_menuSelection = 0;
 static int s_attractMode = 0;
 static int s_attractDemoIndex = 0;  // cycles 0/1/2: demo1, demo2, opening
 
-#define MENU_ITEM_COUNT 6
+#define MENU_ITEM_COUNT 5
 
-// Menu item strings — verified from ELF data at 0x0021d240
 static const char* s_menuItems[MENU_ITEM_COUNT] = {
     "SINGLE PLAY",
     "NETWORK PLAY",
     "COLLECTION",
-    "CHARALOG",
-    "OPTION",
-    "HDD INSTALL"
+    "CHARACTER LOG",
+    "OPTIONS"
 };
 
 /**
@@ -104,16 +102,6 @@ int isAttractMode(void) {
 }
 
 void demoOverlayCallback(void* entry) {
-    static int s_executedThisFrame = 0;
-
-    // Guard: prevent double execution per frame
-    // updateGameStateManager and processMenuController both process frame entries
-    if (s_executedThisFrame) {
-        s_executedThisFrame = 0;  // reset for next frame
-        return;
-    }
-    s_executedThisFrame = 1;
-
     uint8_t subState = OV_SUBSTATE(entry);
     int16_t timer;
     uint16_t buttons = (uint16_t)(g_game.controllerState & 0xFFFF);
@@ -377,7 +365,7 @@ void demoOverlayCallback(void* entry) {
                 printf("[DemoOverlay] Boot sequence complete\n");
                 fflush(stdout);
                 func_001bbab0();
-                playVideo(VIDEO_TITLE2, AUDIO_MENU);
+                playVideo(VIDEO_TITLE2, 0);
                 setVideoLoop(0.0);
                 OV_SUBSTATE(entry) = 32;
             }
@@ -386,7 +374,7 @@ void demoOverlayCallback(void* entry) {
         case 32: {
             // Loop menu background video
             if (!isVideoPlaying()) {
-                playVideo(VIDEO_TITLE2, AUDIO_MENU);
+                playVideo(VIDEO_TITLE2, 0);
                 setVideoLoop(0.0);
             }
             uint32_t pressed = 0;
@@ -399,13 +387,13 @@ void demoOverlayCallback(void* entry) {
             if (pressed & 0x0010) {
                 if (s_menuSelection > 0) {
                     s_menuSelection--;
-                    playSoundEffect(12, 4);  // ASM: func_001b8000(4) at 0x5440d4
+                    playSoundEffect(12, 4);
                 }
             }
             if (pressed & 0x0040) {
                 if (s_menuSelection < MENU_ITEM_COUNT - 1) {
                     s_menuSelection++;
-                    playSoundEffect(12, 4);  // ASM: func_001b8000(4) at 0x5440d4
+                    playSoundEffect(12, 4);
                 }
             }
 
