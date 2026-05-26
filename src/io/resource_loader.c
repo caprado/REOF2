@@ -14,10 +14,7 @@ static int8_t s_slotState2 = -1;  // gp-0x7d38: slots 4-6
 static LoadedFile s_loadedFiles[10];
 static uint8_t s_fileLoaded[10];
 
-// Post-load processing (func_001dd810) — overlay patcher
-// On PS2: copies MWo3 sections to load addresses, patches relocations
-// On Windows: overlay code already compiled, skip for slot 0
-extern void func_001dd810(int32_t fileId);
+// func_001dd810 — PS2 overlay patcher (MIPS relocation). Not needed on Windows.
 
 /**
  * @category io/filesystem

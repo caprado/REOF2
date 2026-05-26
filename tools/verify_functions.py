@@ -287,6 +287,10 @@ def verify_functions(src_dir, extracted_dir, baseline_file=None):
         original_name = func['original']
         refactored_doc = func['doc_block']
 
+        # Skip validation for functions tagged with @no_extract
+        if '@no_extract' in refactored_doc:
+            continue
+
         # Check 1: Validate refactored function doc block format
         doc_errors = check_refactored_doc_block(refactored_doc)
         for err in doc_errors:

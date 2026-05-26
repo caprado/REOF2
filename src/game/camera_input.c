@@ -3,7 +3,7 @@
 #include <math.h>
 
 // Forward declarations for deeper sub-functions (to be refactored later)
-extern int32_t func_001a5cf0(void);  // Controller state polling
+// func_001a5cf0 — PS2 controller polling via SIF/IOP. Windows: input.c handles it.
 extern void func_001a6310(void);     // Controller initialization
 
 // Controller state buffer at gp-0x6400 (analog stick data)
@@ -165,11 +165,9 @@ static void calculateAnalogVector(int16_t* output, int16_t inputY) {
  * @author caprado
  */
 void processCameraInput(void) {
-    // Poll controller state
-    // Original: jal 0x1a5cf0
-    int32_t controllerValid = func_001a5cf0();
-
-    if (controllerValid != 0) {
+    // PS2: func_001a5cf0 polled SIF/IOP controller. Windows: input.c handles it.
+    // Always valid on Windows since input is handled by GetAsyncKeyState.
+    {
         // Get camera input data pointer (0x002a0f40)
         if (s_cameraInputData == NULL) {
             return;
