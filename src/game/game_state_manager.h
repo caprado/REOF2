@@ -67,4 +67,17 @@ void processGameStateManager(void);
  */
 void resetGameStateManager(void);
 
+/**
+ * @category game/frame
+ * @status complete
+ * @original func_001b74b0
+ * @address 0x001b74b0
+ * @description Frame finalization. Processes pending resource loads, iterates
+ *              frame entry table (16 slots with state machine), and dispatches
+ *              callbacks and fade updates.
+ * @windows_compatibility high
+ * @author caprado
+ */
+void finalizeFrame(void);
+
 #endif // GAME_STATE_MANAGER_H

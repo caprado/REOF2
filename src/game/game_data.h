@@ -92,6 +92,7 @@ typedef struct GameData {
     uint8_t timerShift;              // Original: 0x003137ac
     uint8_t state37af;               // Original: 0x003137af
     uint16_t state37ba;              // Original: 0x003137ba
+    uint8_t state37b5;               // Original: 0x003137b5 - Conditional subsystem update flag
     uint8_t state37b8;               // Original: 0x003137b8
     uint8_t state37b9;               // Original: 0x003137b9
     uint16_t state37bc;              // Original: 0x003137bc
@@ -247,7 +248,28 @@ typedef struct GameData {
 
     // --- Fade control buffers (from func_001bb710 / clearFadeBuffers) ---
     uint8_t fadeBuffer1[0x20];       // Original: 0x00307fc0 - Fade state buffer 1 (32 bytes)
-    uint8_t fadeBuffer2[0x18];       // Original: 0x00307fe0 - Fade state buffer 2 (24 bytes)
+    uint8_t fadeBuffer2[0x20];       // Original: 0x00307fe0 - Fade state buffer 2 (extended from 24 to 32 for 64-bit pointer at +0x14)
+
+    // --- Frame finalization state (from func_001b74b0) ---
+    int8_t pendingResourceSlot1;     // Original: gp-0x7cd4 - Pending resource load slot 1 (-1 = none)
+    int8_t pendingResourceSlot2;     // Original: gp-0x7cd0 - Pending resource load slot 2 (-1 = none)
+    uint8_t state37d8;               // Original: 0x003137d8 - Stored resource slot 1 value
+    uint8_t state37d9;               // Original: 0x003137d9 - Stored resource slot 2 value
+    uint8_t sceneLoadedFlag;         // Original: 0x003135b0 - Scene loaded / processing flag
+    uint8_t entityActiveFlag;        // Original: 0x004912bc - Entity system active flag
+
+    // --- Callback array system (from func_001af3a0) ---
+    int32_t callbackCount;           // Original: gp-0x63b4 - Number of registered callbacks
+    void (*callbackArray[64])(void); // Original: 0x002aa890 - Function pointer array (max 64 entries)
+
+    // --- Scenario data (from func_001c2a50) ---
+    void* scenarioDataPtr;           // Original: gp-0x62dc - Pointer to scenario config structure (0xfc bytes)
+    int32_t sceneHandle;             // Original: gp-0x6330 - Scene handle (0=not loaded, nonzero=loaded)
+
+    // --- Entity/camera data (from camera_update / func_001b0720) ---
+    void* entityDataPtr;             // Original: gp-0x6430 - Pointer to entity data array (120 bytes per entity)
+    int8_t entityCount;              // Original: gp-0x6350 - Number of active entities
+    uint8_t cameraUpdateFlag;        // Original: gp-0x643c - Camera update pending flag
 } GameData;
 
 /**

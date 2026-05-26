@@ -45,3 +45,13 @@ badge.svg
 Thumbs.db
 assets/
 .local_docs/
+.claude/settings.local.json
+docs/ARCHITECTURE.md
+docs/FONT_FORMAT.md
+tools/build_call_graph.py
+tools/check_function_refs.py
+tools/extract_iecs_vag.py
+tools/fix_function_names.py
+tools/fix_src_refs.py
+asm.asm
+CLAUDE.md

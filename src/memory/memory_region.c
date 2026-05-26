@@ -1,6 +1,7 @@
 #include "memory_region.h"
 #include "../game/game_data.h"
 #include <stddef.h>
+#include <string.h>
 
 // Memory region tracking table
 // Original: 0x002aa8c0 - 8 slots of 8 bytes each

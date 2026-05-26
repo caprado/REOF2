@@ -142,7 +142,10 @@ static void initializeResourceSubsystems(void) {
 static void initializePointerTable(void) {
     // Original: v1 = 0x220000 + -0x36b0 = 0x21c950
     // Stores pointer to gp-0x6398
-    g_game.resourceEntryBase = (void*)s_pointerTableAddr;
+    // On PS2: points to a static pointer table in ROM data
+    // On Windows: no ROM data loaded yet, set to NULL
+    // TODO: Load pointer table from game data files when resource system is ported
+    g_game.resourceEntryBase = NULL;
 }
 
 /**

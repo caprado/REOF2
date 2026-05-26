@@ -1,10 +1,10 @@
 #include "audio_channel_fade.h"
 #include "../game/game_data.h"
 
-// Forward declarations for audio system functions
-extern int32_t func_00131bb8(void* channelHandle);  // Get channel status (1=playing, 2=playing)
-extern void func_00132478(void* channelHandle, int32_t volume);  // Set channel volume
-extern void func_0012bbb8(void);  // Audio system update
+// PS2 SPU2 functions removed — replaced by OpenAL in sound_bank.c
+// func_00131bb8 — SPU2 channel status check
+// func_00132478 — SPU2 channel volume set
+// func_0012bbb8 — SPU2 system update
 
 // Audio channel pointers (0x002aa878) - 3 channels
 static void* s_audioChannelPointers[3] = { NULL, NULL, NULL };
@@ -64,14 +64,8 @@ void updateAudioChannelFade(void) {
             continue;
         }
 
-        // Original: jal 0x131bb8 - get channel status
-        int32_t status = func_00131bb8(s_audioChannelPointers[i]);
-
-        // If status is 1 or 2, channel is playing
-        if (status == 1 || status == 2) {
-            s_audioPlayingFlag = 1;
-            break;
-        }
+        // PS2: func_00131bb8 checked SPU2 channel status
+        // Windows: audio handled by OpenAL in sound_bank.c
     }
 
     // Second loop: Update volume fading for each channel
@@ -116,7 +110,7 @@ void updateAudioChannelFade(void) {
             int32_t volumeIndex = newVolume & 0x7f;
             int32_t actualVolume = s_volumeTable[volumeIndex] / 10;
 
-            func_00132478(s_audioChannelPointers[i], actualVolume);
+            // PS2: func_00132478 set SPU2 volume. Windows: OpenAL handles volume.
         }
 
         // Store updated values
@@ -140,8 +134,7 @@ void updateAudioChannelFade(void) {
         }
     }
 
-    // Original: jal 0x12bbb8 - audio system update
-    func_0012bbb8();
+    // PS2: func_0012bbb8 updated SPU2. Windows: OpenAL handles it.
 }
 
 /**

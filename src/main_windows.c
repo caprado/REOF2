@@ -28,6 +28,7 @@
 #include <stdbool.h>
 #include <stdint.h>
 #include <string.h>
+#include <stddef.h>
 #include <windows.h>
 #include "platform/windows/opengl_renderer.h"
 #include "game/texture_manager.h"
@@ -37,9 +38,13 @@
 #include "game/menu_controller.h"
 #include "game/game_state_manager.h"
 #include "game/frame_update.h"
-
-// Forward declarations for unrefactored functions
-extern void func_001ba360(void);  // Render game frame (updateRenderState already in frame_update)
+#include "graphics/font.h"
+#include "graphics/game_font.h"
+#include "media/video_player.h"
+#include "game/demo_overlay.h"
+#include "game/options_screen.h"
+#include "audio/sound_bank.h"
+#include "platform/windows/input.h"
 
 // Menu controller context - passed to processMenuController each frame
 static MenuControllerContext g_menuContext;
@@ -113,6 +118,25 @@ bool initializeGameEngine(void) {
     }
     printf("[INIT]   ✓ Game engine initialized (g_game struct ready)\n");
 
+    // Initialize font systems from disc assets
+    if (!initFont()) {
+        fprintf(stderr, "[WARN] Small font (FONT8_8) loading failed\n");
+    }
+    if (!initGameFont()) {
+        fprintf(stderr, "[WARN] Game font (d20le04) loading failed\n");
+    }
+
+    // Initialize input system
+    initInput();
+
+    // Initialize video player (playback triggered by boot state machine)
+    initVideoPlayer();
+
+    // Initialize sound bank system and load title/menu SFX bank
+    if (initSoundBankSystem()) {
+        loadSoundBank(1334, 12);  // Bank "start" → category 12 (ASM: func_001daca0(0))
+    }
+
     printf("[INIT] Game engine ready\n");
     printf("[INIT] Entry point: processMenuController (menu_controller.c)\n");
     return true;
@@ -128,26 +152,89 @@ bool mainGameLoop(void) {
         return false;
     }
 
-    // === GAME LOOP - Call all four core functions each frame ===
+    // === GAME LOOP ===
+    // Original PS2 main loop at 0x001a8cf4:
+    //   loop:
+    //     jal 0x1ba1d0   ; updateGameStateManager
+    //     jal 0x1c8cd0   ; check if scene state == 3 (exit condition)
+    //     if result == 0, loop
+    //
+    // updateGameStateManager internally calls:
+    //   processFrameUpdates(1) → executeFrameUpdate() which calls:
+    //     updateRenderState()     (func_001ba360)
+    //     processFrameSync()
+    //     updateGameSubsystems()  (func_001ba310)
+    //   finalizeFrame()           (func_001b74b0)
+    //
+    // processMenuController is called from within the game state system,
+    // not directly from the main loop. Calling it here for now until
+    // the menu state entry point is fully traced.
 
-    // 1. Game state management (func_001ba1d0 -> updateGameStateManager)
+    // Update input from keyboard/controller before game logic
+    updateInput();
+
+    // Clear screen at start of frame (before any rendering)
+    opengl_clear(0.0f, 0.0f, 0.0f, 1.0f);
+
+    // Core game state update - drives all subsystems internally
+    // This calls updateRenderState() which draws the fade overlay
     updateGameStateManager();
 
-    // 2. Update all game subsystems (func_001ba310 -> updateGameSubsystems)
-    updateGameSubsystems();
-
-    // 3. Render game frame (func_001ba360)
-    func_001ba360();
-
-    // 4. Menu controller state machine (func_001b9e60)
+    // Menu controller (called here temporarily until call site is verified)
     processMenuController(&g_menuContext);
 
     // === END GAME LOOP ===
 
-    // Clear screen to dark blue (to show window is working)
-    opengl_clear(0.1f, 0.1f, 0.3f, 1.0f);
+    // Video playback — driven by demo overlay callback via boot state machine
+    if (isVideoPlaying()) {
+        if (updateVideo()) {
+            renderVideoFrame();
+        } else {
+            stopVideo();
+        }
+    }
 
-    // Swap buffers
+    // "DEMONSTRATION" text overlay during attract mode
+    // Same font style as "PRESS START BUTTON" (gothic with blue shadow)
+    // PS2: rendered at bottom-left during demo video playback
+    if (isAttractMode()) {
+        drawGameTextShadowEx("DEMONSTRATION", 20, 410, 1.0f, 1.0f, 1.0f, 0.1f, 0.1f, 0.5f);
+    }
+
+    // ASM-verified from overlay (BIN/1.DAT) 0x549e00-0x549ed0:
+    //   func_001b5050(0x80000080) — text color
+    //   func_001b5090 shadow: color & 0xFF000000 = alpha-only black, offset +2,+2
+    if (shouldDrawPressStart()) {
+        drawGameTextShadowEx("PRESS START BUTTON", 194, 320, 1.0f, 1.0f, 1.0f, 0.1f, 0.1f, 0.5f);
+    }
+
+    // Menu rendering — ASM-verified from func_0x543900:
+    //   14px advance per char, Y=286 start, 24px spacing
+    //   Selected: PS2 0x80008080 = yellow, Unselected: 0x80808080 = gray
+    if (shouldDrawMenu()) {
+        int sel = getMenuSelection();
+        static const char* menuItems[] = {
+            "SINGLE PLAY", "NETWORK PLAY", "COLLECTION",
+            "CHARACTER LOG", "OPTIONS"
+        };
+        for (int i = 0; i < 5; i++) {
+            int charCount = (int)strlen(menuItems[i]);
+            int x = (640 - charCount * 14) / 2;
+            int y = 286 + i * 24;
+            if (i == sel) {
+                drawGameTextShadowEx(menuItems[i], x, y, 0.5f, 0.5f, 0.0f, 0.1f, 0.1f, 0.5f);
+            } else {
+                drawGameTextShadowEx(menuItems[i], x, y, 0.5f, 0.5f, 0.5f, 0.1f, 0.1f, 0.5f);
+            }
+        }
+    }
+
+    // Options screen overlay
+    if (isOptionsScreenActive()) {
+        drawOptionsScreen();
+    }
+
+    // Present frame
     opengl_swap_buffers();
 
     return true;
@@ -158,6 +245,12 @@ bool mainGameLoop(void) {
  */
 void shutdownSystems(void) {
     printf("[SHUTDOWN] Cleaning up systems...\n");
+
+    // Shutdown sound, video, and font
+    shutdownSoundBankSystem();
+    shutdownVideoPlayer();
+    shutdownGameFont();
+    shutdownFont();
 
     // Shutdown game engine (uses unified system)
     shutdownEngine();
@@ -184,7 +277,7 @@ void shutdownSystems(void) {
  * Clean flow:
  * 1. Initialize OpenGL (window, context, textures)
  * 2. Initialize game engine (unified g_game struct via engine_startup.c)
- * 3. Run demo mode state machine loop
+ * 3. Run main menu loop
  * 4. Shutdown and cleanup (unified shutdown via engine_startup.c)
  *
  * Architecture:
@@ -195,14 +288,13 @@ void shutdownSystems(void) {
  * @return 0 on success, 1 on failure
  */
 int main(int argc, char* argv[]) {
-    (void)argc;  // Unused parameter
-    (void)argv;  // Unused parameter
+    (void)argc;
+    (void)argv;
 
     printf("================================================\n");
     printf("  REOF2 - Windows Port\n");
     printf("  Resident Evil Outbreak File #2\n");
     printf("  PS2 to Windows OpenGL Port\n");
-    printf("  (Demo/Attract Mode)\n");
     printf("================================================\n\n");
 
     printf("[DEBUG] Starting initialization...\n");
@@ -234,6 +326,7 @@ int main(int argc, char* argv[]) {
     // Step 3: Initialize menu controller context
     memset(&g_menuContext, 0, sizeof(g_menuContext));
     printf("[INIT] Menu context initialized (state=0)\n");
+    fflush(stdout);
 
     // Step 4: Main menu loop
     printf("\n================================================\n");
@@ -243,6 +336,9 @@ int main(int argc, char* argv[]) {
 
     g_isRunning = true;
     int frameCount = 0;
+
+    // Register game loop for continuous updates during window drag/resize
+    opengl_set_game_loop(mainGameLoop);
 
     while (g_isRunning) {
         if (!mainGameLoop()) {

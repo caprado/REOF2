@@ -6,16 +6,15 @@
 This project is dedicated to the decompilation and preservation of the PlayStation 2 game "Resident Evil Outbreak File #2". The game binary has been extracted into C code using custom automated decompilation tools. The project is now focused on analyzing, categorizing, and refactoring this raw code into readable, maintainable source code with proper function names, data structures, and documentation. The ultimate goal is to create a documented, buildable version that runs on modern platforms (Windows and Linux) while preserving the original game's behavior.
 
 
-## Current Status
-The game binary has been extracted into raw C code using decompilation tools. Current focus:
-- Analyzing and categorizing 4073 extracted functions by purpose
-- Identifying function roles (entry points, memory management, I/O, game logic, etc.)
-- Refactoring raw decompiler output into readable, maintainable code
-- Replacing generic names (`func_00100230`) with meaningful identifiers
-- Documenting data structures and system architecture
-- Creating a platform abstraction layer for Windows and Linux support
+## Demo
 
-**Progress:** 4073 functions extracted and ready for analysis. String and data sections included.
+![REOF2 Boot to Menu](docs/media/demo.gif)
+
+## Current Status
+
+The Windows port boots to the main menu with full video, audio, and input.
+
+**Progress:** 4073 functions extracted. Boot-to-menu flow fully ported.
 
 ## Project Structure
 

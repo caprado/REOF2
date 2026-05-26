@@ -3,25 +3,36 @@
 #include "game_init.h"
 #include "game_secondary_init.h"
 #include "frame_update.h"
+#include "game_frame_callback.h"
 #include "../graphics/graphics_init.h"
 #include <string.h>
 
 // Frame entry table at 0x00307d90 - 32-byte entries, indexed by slot number
 // Used to track active frame callbacks/handlers
-static uint8_t s_frameEntryTable[32 * 32];  // Original: 0x00307d90 - supports up to 32 entries
+// Frame entry structure — extended from PS2's 32-byte layout to fit 64-bit pointers
+typedef struct {
+    int16_t type;           // +0x00: entry type/state
+    int16_t timer;          // +0x02: countdown timer
+    uint8_t pad04[4];       // +0x04: PS2 callback was here (32-bit), now unused
+    uint8_t state;          // +0x08: main state byte
+    uint8_t subState;       // +0x09: sub-state byte
+    uint8_t counterByte;    // +0x0A: timer/counter byte
+    uint8_t pad0B[5];       // +0x0B-0x0F: padding
+    uintptr_t subCallback;  // +0x10: sub-callback pointer (was at +0x14 on PS2, 4 bytes)
+    uintptr_t callback;     // +0x18: main callback pointer (was at +0x04 on PS2, 4 bytes)
+} FrameEntry;
+
+static FrameEntry s_frameEntryTable[32];  // Original: 0x00307d90 - supports up to 32 entries
 
 // Per-frame processing state
 static uint8_t s_frameProcessingFlag = 0;   // Original: 0x003137a0 - controls clearing of gp-0x64d4
 static uint32_t s_frameTimingValue = 0;     // Original: 0x003137d4 - result from func_001ac000
 static uint32_t s_frameSyncValue = 0;       // Original: gp-0x64d4 - cleared when flag is set
+static int32_t s_frameTimingSyncValue = 0;  // Original: gp-0x64d8 - returned by func_001ac000
 
 // Forward declarations for unrefactored functions
-extern int32_t func_001ac000(void);  // Returns timing/sync value
-extern void func_001a8a50(void);  // Update function
-extern int32_t func_00112118(void);  // Update function, returns status
-extern float func_001aee10(void);  // Returns float value
 extern void func_001aed20(void);  // Conditional update
-extern void func_001b74b0(void);  // Frame finalization
+#include "../io/resource_loader.h"
 
 /**
  * @category game/frame
@@ -46,17 +57,11 @@ extern void func_001b74b0(void);  // Frame finalization
  * @author caprado
  */
 void initializeFrameEntry(uintptr_t callback, int32_t index) {
-    // Calculate entry address: base + (index * 32)
-    uint8_t* entry = s_frameEntryTable + (index * 32);
+    if (index < 0 || index >= 32) return;
 
-    // Clear the entry (32 bytes)
-    memset(entry, 0, 0x20);
-
-    // Set type ID at offset 0 (halfword) = 0xc (12)
-    *(uint16_t*)(entry + 0) = 0xc;
-
-    // Store callback/data pointer at offset 4 (word)
-    *(uint32_t*)(entry + 4) = (uint32_t)callback;
+    memset(&s_frameEntryTable[index], 0, sizeof(FrameEntry));
+    s_frameEntryTable[index].type = 0xc;
+    s_frameEntryTable[index].callback = callback;
 }
 
 /**
@@ -100,8 +105,9 @@ void processFrameUpdates(int32_t count) {
         executeFrameUpdate();
     }
 
-    // Call timing function and store result
-    s_frameTimingValue = func_001ac000();  // Original: sw $v0, 0x37d4($at)
+    // Original: func_001ac000 - returns gp-0x64d8 (delay slot load)
+    // ASM: jr $ra / lw $v0, -0x64d8($gp)
+    s_frameTimingValue = s_frameTimingSyncValue;
 }
 
 /**
@@ -118,7 +124,6 @@ void processFrameUpdates(int32_t count) {
 void updateGameStateManager(void) {
     int32_t initResult;
     int32_t updateResult;
-    float floatResult;
 
     // Check current state
     if (g_game.gameStateManagerState == 1) {
@@ -133,19 +138,14 @@ void updateGameStateManager(void) {
     }
 
 state_init:
-    // Original: func_0019f080() - graphics system init (no params, 0x280/0x1c0 were unused)
-    // Loop until initialization succeeds
     do {
         initResult = initializeGraphicsSystem();
     } while (initResult == 0);
-
-    // Call initialization functions
-    initializeGameSubsystems();       // Original: func_001ba660
-    initializeSecondarySubsystems();  // Original: func_001ba960
-
-    // Original: a0 = (0x1c << 16) + (-0x4180) = 0x1c0000 - 0x4180 = 0x1bBE80
-    // Original: a1 = 0 (from delay slot, $a1 was set from $zero before call)
-    initializeFrameEntry(0x1bBE80, 0);
+    initializeGameSubsystems();
+    initializeSecondarySubsystems();
+    // Original: a0 = 0x1bBE80 (PS2 function address for frame callback)
+    // On Windows: register the ported gameFrameCallback
+    initializeFrameEntry((uintptr_t)gameFrameCallback, 0);
 
     // Advance to running state
     g_game.gameStateManagerState = g_game.gameStateManagerState + 1;
@@ -164,23 +164,24 @@ state_running:
     // counter1 increments each frame
     g_game.counter1 = g_game.counter1 + 1;
 
-    // Call update functions
-    func_001a8a50();
+    // Original: func_001a8a50 - empty stub (just jr $ra), verified in ASM
 
-    // Call func_00112118 and store result
-    updateResult = func_00112118();
+    // Original: func_00112118 - PS2 softfloat IEEE 754 normalization
+    // Calls func_00111678 (float unpack) and func_00111530 (float repack)
+    // On Windows: native x86 FPU handles float normalization, always returns 0
+    updateResult = 0;
 
-    // Call func_001aee10 which returns a float, store to gameFloatValue
-    floatResult = func_001aee10();
-    g_game.gameFloatValue = floatResult;
+    // Original: func_001aee10 - empty stub (just jr $ra), returns 0.0f
+    g_game.gameFloatValue = 0.0f;
 
     // If func_00112118 returned non-zero, call func_001aed20
+    // On Windows: updateResult is always 0, so this never executes
     if (updateResult != 0) {
         func_001aed20();
     }
 
     // Frame finalization
-    func_001b74b0();
+    finalizeFrame();
 }
 
 /**
@@ -252,4 +253,418 @@ void resetGameStateManager(void) {
     g_game.sequenceIndex = 0;     // Original: sh $zero, 0x7f9e($at)
     g_game.sequenceArray = NULL;  // Original: sw $zero, 0x7fa0($at) - clearing pointer
     g_game.gameStateFlag = 0;     // Original: sb $zero, 0x7f91($at)
+}
+
+/**
+ * @category graphics/fade
+ * @status complete
+ * @original func_001bbba0
+ * @address 0x001bbba0
+ * @description Fade tick for fadeBuffer1 (0x307fc0). Processes fade-in/fade-out animation
+ *              using float interpolation. Updates alpha byte at buffer+0x10.
+ *
+ * Buffer layout (0x20 bytes at fadeBuffer1):
+ *   +0x00 (byte):  state (0=idle, 1=active, 2=complete)
+ *   +0x04 (int32): direction (0=fade out/down, nonzero=fade in/up)
+ *   +0x0c (uint32): color (alpha in high byte)
+ *   +0x0d via pointer: target alpha (byte at offset 0xd of struct pointed to by +0x14)
+ *   +0x10 (byte):  computed alpha (0-255)
+ *   +0x14 (float): progress (0.0 to 1.0)
+ *   +0x18 (float): step per frame
+ *
+ * Original ASM:
+ *   Checks state byte at fadeBuffer1[0]:
+ *     0: idle, check if +4 flag is set to start
+ *     1: process fade (direction-dependent)
+ *     2: complete, return
+ *   Direction 0 (fade out): progress -= step, clamp to 0, alpha = progress * 255
+ *   Direction 1 (fade in):  progress += step, clamp to 1.0, alpha = progress * 255
+ *
+ * @windows_compatibility high
+ * @author caprado
+ */
+static void updateFadeBuffer1(void) {
+    uint8_t* buf = g_game.fadeBuffer1;
+    uint8_t state = buf[0];
+    int16_t flag = *(int16_t*)(buf + 4);
+    int16_t direction = *(int16_t*)(buf + 6);
+    float* progress = (float*)(buf + 0x14);
+    float* step = (float*)(buf + 0x18);
+    float alpha;
+
+    if (state == 2) {
+        return;
+    }
+
+    if (state == 0) {
+        if (flag == 0) {
+            return;
+        }
+        buf[0] = 1;
+    }
+
+    // state == 1: process fade
+    if (flag == 0) {
+        buf[0] = 0;
+        *(uint32_t*)(buf + 0x14) = 0;
+        return;
+    }
+
+    switch (direction) {
+        case 0:
+            // Idle - clear flag
+            *(int16_t*)(buf + 4) = 0;
+            break;
+
+        case 1: {
+            // Fade out: progress decreases
+            *progress = *progress - *step;
+            if (*progress <= 0.0f) {
+                buf[0] = 0;
+                *progress = 0.0f;
+            }
+            alpha = 255.0f * (*progress);
+            buf[0x10] = (uint8_t)(alpha > 255.0f ? 255 : (int)alpha);
+            break;
+        }
+
+        case 2: {
+            // Fade in: progress increases toward 1.0
+            *progress = *progress + *step;
+            if (*progress >= 1.0f) {
+                buf[0] = 2;
+                *progress = 1.0f;
+            }
+            alpha = 255.0f * (*progress);
+            buf[0x10] = (uint8_t)(alpha > 255.0f ? 255 : (int)alpha);
+            break;
+        }
+
+        default:
+            break;
+    }
+
+    // Check if sequence array pointer is valid
+    if (g_game.sequenceArray == NULL) {
+        resetGameStateManager();
+        return;
+    }
+
+    // Decrement timer by (1 << timerShift)
+    int16_t decrement = 1 << g_game.timerShift;
+    g_game.currentTimer = g_game.currentTimer - decrement;
+
+    // If timer still positive, keep waiting
+    if (g_game.currentTimer > 0) {
+        return;
+    }
+
+    // Timer expired - load next sequence entry
+    int16_t index = g_game.sequenceIndex;
+    int16_t nextDuration = g_game.sequenceArray[index].duration;
+
+    // Store as new timer value
+    g_game.currentTimer = nextDuration;
+
+    // If duration is 0, sequence has ended
+    if (nextDuration == 0) {
+        resetGameStateManager();
+        return;
+    }
+
+    // Call the callback function for this sequence entry
+    MenuCallback callback = g_game.sequenceArray[index].callback;
+    if (callback != NULL) {
+        callback();
+    }
+
+    // Advance to next sequence entry
+    g_game.sequenceIndex = g_game.sequenceIndex + 1;
+}
+
+
+/**
+ * @category graphics/fade
+ * @status complete
+ * @original func_001bb740
+ * @address 0x001bb740
+ * @description Fade buffer update. Calls fade tick for fadeBuffer1, then processes
+ *              fadeBuffer2 state machine (idle→fading→complete) with alpha interpolation.
+ *
+ * fadeBuffer2 layout (0x18 bytes):
+ *   +0x00 (byte):  state (0=idle, 1=active, 2=complete)
+ *   +0x04 (int16): fade active flag (0=inactive, nonzero=has target)
+ *   +0x06 (int16): direction (0=idle, 1=fade out, 2=fade in)
+ *   +0x0c (uint32): color with alpha in high byte
+ *   +0x10 (int16): alpha step per frame
+ *   +0x14 (ptr):   pointer to target data (target alpha at +0xd)
+ *
+ * Original ASM at 0x001bb740:
+ *   jal 0x1bbba0              ; tick fadeBuffer1
+ *   lbu state from fadeBuffer2[0]
+ *   switch(state):
+ *     0: if flag at +4 != 0, state = 1
+ *     1: check +4 flag, if 0 → reset. else process direction
+ *     2+: return
+ *   direction 1: fade out - add step to alpha, check target
+ *   direction 2: fade in - add step to alpha, check target
+ *
+ * @windows_compatibility high
+ * @author caprado
+ */
+static void updateFadeBuffers(void) {
+    uint8_t* buf = g_game.fadeBuffer2;
+    uint8_t state;
+    int16_t flag;
+    int16_t direction;
+    uint32_t color;
+    uint8_t currentAlpha;
+    uint8_t targetAlpha;
+    int16_t alphaStep;
+    int32_t newAlpha;
+    uint8_t* targetPtr;
+
+    // Tick fadeBuffer1 first
+    updateFadeBuffer1();
+
+    state = buf[0];
+
+    // State 2+: complete or unknown, return
+    if (state >= 2) {
+        return;
+    }
+
+    // State 0: idle
+    if (state == 0) {
+        flag = *(int16_t*)(buf + 4);
+        if (flag == 0) {
+            return;
+        }
+        // Start fading
+        buf[0] = 1;
+    }
+
+    // State 1: active fade
+    flag = *(int16_t*)(buf + 4);
+    if (flag == 0) {
+        // No active fade target, reset
+        buf[0] = 0;
+        *(uint32_t*)(buf + 0x14) = 0;
+        return;
+    }
+
+    direction = *(int16_t*)(buf + 6);
+    color = *(uint32_t*)(buf + 0x0c);
+    currentAlpha = (uint8_t)((color >> 24) & 0xFF);
+    targetPtr = *(uint8_t**)(buf + 0x14);
+    targetAlpha = targetPtr ? targetPtr[0xd] : 0;
+    alphaStep = *(int16_t*)(buf + 0x10);
+
+    switch (direction) {
+        case 0:
+            // Idle direction - clear flag
+            *(int16_t*)(buf + 4) = 0;
+            break;
+
+        case 1: {
+            // Fade out: alpha increases toward target
+            if (currentAlpha == targetAlpha) {
+                *(int16_t*)(buf + 4) = 0;
+                break;
+            }
+            newAlpha = currentAlpha + alphaStep;
+            if (newAlpha >= targetAlpha) {
+                newAlpha = targetAlpha;
+            }
+            color = (color & 0x00FFFFFF) | ((uint32_t)newAlpha << 24);
+            *(uint32_t*)(buf + 0x0c) = color;
+            break;
+        }
+
+        case 2: {
+            // Fade in: alpha increases toward target
+            if (currentAlpha == targetAlpha) {
+                break;
+            }
+            newAlpha = currentAlpha + alphaStep;
+            if (newAlpha >= targetAlpha) {
+                newAlpha = targetAlpha;
+            }
+            color = (color & 0x00FFFFFF) | ((uint32_t)newAlpha << 24);
+            *(uint32_t*)(buf + 0x0c) = color;
+            break;
+        }
+
+        default:
+            break;
+    }
+}
+
+/**
+ * @category utility/callback
+ * @status complete
+ * @original func_001af3a0
+ * @address 0x001af3a0
+ * @description Callback array dispatcher. Calls func_001b2010 (sort table init),
+ *              then iterates the registered callback array, calling each function pointer.
+ *
+ * Original ASM:
+ *   jal 0x1b2010              ; init sort/priority table
+ *   lw $s0, -0x63b4($gp)      ; s0 = callback count
+ *   lui $s1, 0x2b
+ *   addiu $s1, -0x5770         ; s1 = 0x002aa890 (callback array base)
+ *   loop:
+ *     lw $v0, 0($s1)           ; load function pointer
+ *     jalr $v0                 ; call it
+ *     s0--; s1 += 4
+ *     bnez $s0, loop
+ *
+ * @windows_compatibility high
+ * @author caprado
+ */
+static void dispatchCallbackArray(void) {
+    int32_t i;
+
+    // Original: jal 0x1b2010 - sort table init
+    // Initializes a 256-entry priority sort table used by rendering
+    // On Windows: rendering uses OpenGL state, sort table not needed yet
+    // TODO: Port func_001b2010 when rendering pipeline is active
+
+    // Iterate and call all registered callbacks
+    for (i = 0; i < g_game.callbackCount; i++) {
+        if (g_game.callbackArray[i] != NULL) {
+            g_game.callbackArray[i]();
+        }
+    }
+}
+
+/**
+ * @category game/frame
+ * @status complete
+ * @original func_001b74b0
+ * @address 0x001b74b0
+ * @description Frame finalization. Processes pending resource loads for two slots,
+ *              then iterates the frame entry table (16 entries, 32 bytes each at 0x307d90).
+ *              Each entry has a state machine controlling its lifecycle:
+ *                0: empty, 1: idle, 2: reset timer->4, 4: transition->8,
+ *                8: execute callback, 0xc: transition->8, 0x10: decrement timer
+ *              After the table loop, if sceneLoadedFlag is 0, dispatches callback array
+ *              and updates fade buffers.
+ *
+ * Original ASM flow:
+ *   1. Check gp-0x7cd4, if != -1: call func_001a8e70(slot), save to 0x3137d8,
+ *      clear 32 bytes at 0x307e10 (entry 4), preserve +4 field, set type=4, reset to -1
+ *   2. Same for gp-0x7cd0 -> 0x3137d9
+ *   3. Determine entry range (s2=start, s1=end) based on counter3, systemStateBuffer[0], entityActiveFlag
+ *   4. Check func_001b7a50 (returns sceneLoadedFlag), override s1 if set
+ *   5. Loop 16 entries, process entries where index < s2 OR index > s1
+ *   6. Post-loop: if sceneLoadedFlag==0, call func_001af3a0 and func_001bb740
+ *
+ * @windows_compatibility high
+ * @author caprado
+ */
+void finalizeFrame(void) {
+    int32_t i;
+    int32_t s1, s2, s3;
+    FrameEntry* fe;
+    uintptr_t savedCb;
+
+    // --- Slot 1: pending resource load at gp-0x7cd4 ---
+    if (g_game.pendingResourceSlot1 != -1) {
+        loadResourceSlot(g_game.pendingResourceSlot1);
+        g_game.state37d8 = (uint8_t)g_game.pendingResourceSlot1;
+        g_game.pendingResourceSlot1 = -1;
+
+        // Clear frame entry 4, preserve callback
+        savedCb = s_frameEntryTable[4].callback;
+        memset(&s_frameEntryTable[4], 0, sizeof(FrameEntry));
+        s_frameEntryTable[4].callback = savedCb;
+        s_frameEntryTable[4].type = 4;
+    }
+
+    // --- Slot 2: pending resource load at gp-0x7cd0 ---
+    if (g_game.pendingResourceSlot2 != -1) {
+        loadResourceSlot(g_game.pendingResourceSlot2);
+        g_game.state37d9 = (uint8_t)g_game.pendingResourceSlot2;
+        g_game.pendingResourceSlot2 = -1;
+    }
+
+    // --- Determine frame entry processing range ---
+    s2 = 4;
+    if (g_game.counter3 != 0) {
+        s1 = 0xc;
+    } else {
+        s2 = 0x10;
+        if (g_game.systemStateBuffer[0] == 0) {
+            s1 = -1;
+        } else if (g_game.entityActiveFlag != 0) {
+            s2 = 4;
+            s1 = 0xc;
+        } else {
+            s1 = -1;
+        }
+    }
+    if (g_game.sceneLoadedFlag != 0) {
+        s2 = 0;
+        s1 = 0xc;
+    }
+
+    // --- Frame entry table loop: 16 entries ---
+    s3 = 0;
+
+    for (i = 0; i < 16; i++) {
+        fe = &s_frameEntryTable[i];
+
+        if (s3 < s2 || s1 < s3) {
+            switch (fe->type) {
+                case 0:
+                case 1:
+                    break;
+
+                case 2:
+                    fe->timer = 0;
+                    fe->type = 4;
+                    break;
+
+                case 4:
+                    fe->type = 8;
+                    break;
+
+                case 8: {
+                    typedef void (*EntryCallback)(void*);
+                    EntryCallback cb = (EntryCallback)fe->callback;
+                    if (cb != NULL) {
+                        cb(fe);
+                    }
+                    break;
+                }
+
+                case 0xc:
+                    fe->type = 8;
+                    break;
+
+                case 0x10: {
+                    fe->timer = fe->timer - 1;
+                    if (fe->timer < 0) {
+                        fe->timer = 0;
+                    } else if (fe->timer == 0) {
+                        fe->type = 4;
+                    }
+                    break;
+                }
+
+                default:
+                    s3++;
+                    continue;
+            }
+        }
+
+        s3++;
+    }
+
+    // --- Post-loop: callback dispatch and fade update ---
+    if (g_game.sceneLoadedFlag == 0) {
+        dispatchCallbackArray();
+        updateFadeBuffers();
+    }
 }
