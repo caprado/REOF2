@@ -109,19 +109,42 @@ bool opengl_create_window(const char* title, int width, int height) {
         return false;
     }
 
-    // Create window
-    DWORD style = WS_OVERLAPPEDWINDOW;
-    RECT rect = {0, 0, width, height};
-    AdjustWindowRect(&rect, style, FALSE);
+    // Create window — check for --fullscreen argument
+    DWORD style;
+    int screenW, screenH, winX, winY, winW, winH;
+    int fullscreen = 0;
+
+    // Check command line for --fullscreen
+    {
+        LPSTR cmdLine = GetCommandLineA();
+        if (strstr(cmdLine, "--fullscreen")) fullscreen = 1;
+    }
+
+    if (fullscreen) {
+        // Borderless windowed fullscreen (not exclusive — allows GDI screen capture)
+        style = WS_POPUP | WS_VISIBLE;
+        screenW = GetSystemMetrics(SM_CXSCREEN);
+        screenH = GetSystemMetrics(SM_CYSCREEN);
+        winX = 0;
+        winY = 0;
+        winW = screenW;
+        winH = screenH;
+    } else {
+        style = WS_OVERLAPPEDWINDOW;
+        RECT rect = {0, 0, width, height};
+        AdjustWindowRect(&rect, style, FALSE);
+        winX = CW_USEDEFAULT;
+        winY = CW_USEDEFAULT;
+        winW = rect.right - rect.left;
+        winH = rect.bottom - rect.top;
+    }
 
     g_hwnd = CreateWindowEx(
         0,
         "REOF2Window",
         title,
         style,
-        CW_USEDEFAULT, CW_USEDEFAULT,
-        rect.right - rect.left,
-        rect.bottom - rect.top,
+        winX, winY, winW, winH,
         NULL, NULL,
         GetModuleHandle(NULL),
         NULL
@@ -196,8 +219,28 @@ bool opengl_init_gl(void) {
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-    // Set initial viewport to window size
-    glViewport(0, 0, 640, 480);
+    // Set viewport to actual window size with 4:3 aspect ratio
+    {
+        RECT clientRect;
+        GetClientRect(g_hwnd, &clientRect);
+        int w = clientRect.right - clientRect.left;
+        int h = clientRect.bottom - clientRect.top;
+        float targetAspect = 640.0f / 480.0f;
+        float windowAspect = (float)w / (float)h;
+        int vpX, vpY, vpW, vpH;
+        if (windowAspect > targetAspect) {
+            vpH = h;
+            vpW = (int)(h * targetAspect);
+            vpX = (w - vpW) / 2;
+            vpY = 0;
+        } else {
+            vpW = w;
+            vpH = (int)(w / targetAspect);
+            vpX = 0;
+            vpY = (h - vpH) / 2;
+        }
+        glViewport(vpX, vpY, vpW, vpH);
+    }
 
     // Set up orthographic projection for 2D rendering
     glMatrixMode(GL_PROJECTION);

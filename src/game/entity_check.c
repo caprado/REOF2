@@ -1,8 +1,7 @@
 #include "entity_check.h"
 #include "game_data.h"
 
-// Trampoline to input processing (0x1a19f0 → j 0x1a5a90)
-extern void func_001a19f0(int32_t a0);
+// func_001a19f0 — PS2 input processing trampoline. Not needed on Windows (input.c handles it).
 
 /**
  * @category game/entity
@@ -65,9 +64,7 @@ int32_t checkEntityLoadStatus(void) {
         a2 = (a2 + 1) & 0xff;
     }
 
-    // Call input processing with a0=1
-    // Original: jal 0x1a19f0 with a0=1 in delay slot
-    func_001a19f0(1);
+    // Original: jal 0x1a19f0(1) — PS2 input processing, not needed on Windows
 
     // Read status field at entityDataPtr + 2
     // Original: lw $a0, -0x6430($gp); lhu $v1, 2($a0)

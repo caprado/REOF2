@@ -5,6 +5,7 @@
 #include "../graphics/font.h"
 #include "../graphics/game_font.h"
 #include "../audio/sound_bank.h"
+#include "options_screen.h"
 #include <stdio.h>
 
 // AFS indices in NETBIO01.DAT -> entry [0] -> inner AFS
@@ -23,8 +24,6 @@
 // Title screen idle timeout before attract mode (~45 seconds observed on PS2)
 #define TITLE_IDLE_FRAMES 2700   // 45 seconds at 60fps
 
-extern void func_001bbab0(void);
-extern void func_001af2f0(uintptr_t a0);
 
 #define OV_SUBSTATE(e)   (((uint8_t*)(e))[2])
 #define OV_TIMER(e)      (*(int16_t*)(((uint8_t*)(e)) + 8))
@@ -131,11 +130,13 @@ void demoOverlayCallback(void* entry) {
             }
 
             if ((buttons & BTN_ANY) && timer < 120) {
+                triggerFade(8);
                 OV_SUBSTATE(entry) = 10;
                 break;
             }
 
             if (timer <= 0) {
+                triggerFade(8);
                 OV_SUBSTATE(entry) = 10;
             }
             break;
@@ -164,9 +165,9 @@ void demoOverlayCallback(void* entry) {
                 printf("[DemoOverlay] FMV skipped\n");
                 fflush(stdout);
                 stopVideo();
-                OV_TIMER(entry) = 20;
-                OV_SUBSTATE(entry) = 20;
                 triggerFade(8);
+                OV_TIMER(entry) = 40;
+                OV_SUBSTATE(entry) = 20;
                 break;
             }
 
@@ -175,11 +176,10 @@ void demoOverlayCallback(void* entry) {
                 printf("[DemoOverlay] FMV finished\n");
                 fflush(stdout);
                 stopVideo();
-                OV_TIMER(entry) = 20;
+                triggerFade(8);
+                OV_TIMER(entry) = 40;
                 OV_SUBSTATE(entry) = 20;
             }
-
-            triggerFade(8);
             break;
         }
 
@@ -239,7 +239,8 @@ void demoOverlayCallback(void* entry) {
                 fflush(stdout);
                 stopVideo();
                 s_drawPressStart = 0;
-                OV_TIMER(entry) = 10;
+                triggerFade(8);
+                OV_TIMER(entry) = 40;
                 OV_SUBSTATE(entry) = 22;
             }
             break;
@@ -300,7 +301,8 @@ void demoOverlayCallback(void* entry) {
                 fflush(stdout);
                 stopVideo();
                 s_attractMode = 0;
-                OV_TIMER(entry) = 10;
+                triggerFade(8);
+                OV_TIMER(entry) = 40;
                 OV_SUBSTATE(entry) = 24;
                 break;
             }
@@ -324,7 +326,8 @@ void demoOverlayCallback(void* entry) {
                 fflush(stdout);
                 stopVideo();
                 s_attractMode = 0;
-                OV_TIMER(entry) = 10;
+                triggerFade(8);
+                OV_TIMER(entry) = 40;
                 OV_SUBSTATE(entry) = 24;
             }
             break;
@@ -352,7 +355,7 @@ void demoOverlayCallback(void* entry) {
             OV_TIMER(entry) = timer;
             if (timer <= 0) {
                 audioCleanupAllChannels();
-                OV_TIMER(entry) = 10;
+                OV_TIMER(entry) = 40;
                 OV_SUBSTATE(entry) = 31;
             }
             break;
@@ -364,7 +367,6 @@ void demoOverlayCallback(void* entry) {
             if (timer <= 0) {
                 printf("[DemoOverlay] Boot sequence complete\n");
                 fflush(stdout);
-                func_001bbab0();
                 playVideo(VIDEO_TITLE2, 0);
                 setVideoLoop(0.0);
                 OV_SUBSTATE(entry) = 32;
@@ -377,6 +379,14 @@ void demoOverlayCallback(void* entry) {
                 playVideo(VIDEO_TITLE2, 0);
                 setVideoLoop(0.0);
             }
+
+            // Options screen takes priority when active
+            if (isOptionsScreenActive()) {
+                updateOptionsScreen();
+                s_drawMenu = 0;
+                break;
+            }
+
             uint32_t pressed = 0;
             s_drawMenu = 1;
 
@@ -399,7 +409,10 @@ void demoOverlayCallback(void* entry) {
 
             if (pressed & (BTN_START | 0x8000)) {
                 if (s_menuSelection <= 1) {
-                    playSoundEffect(12, 22);  // "OUTBREAK" — only SINGLE PLAY / NETWORK PLAY
+                    playSoundEffect(12, 22);
+                }
+                if (s_menuSelection == 4) {
+                    initOptionsScreen();
                 }
                 printf("[Menu] Selected: %s (index %d)\n",
                        s_menuItems[s_menuSelection], s_menuSelection);

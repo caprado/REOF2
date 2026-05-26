@@ -42,6 +42,7 @@
 #include "graphics/game_font.h"
 #include "media/video_player.h"
 #include "game/demo_overlay.h"
+#include "game/options_screen.h"
 #include "audio/sound_bank.h"
 #include "platform/windows/input.h"
 
@@ -214,18 +215,23 @@ bool mainGameLoop(void) {
         int sel = getMenuSelection();
         static const char* menuItems[] = {
             "SINGLE PLAY", "NETWORK PLAY", "COLLECTION",
-            "CHARALOG", "OPTION", "HDD INSTALL"
+            "CHARACTER LOG", "OPTIONS"
         };
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 5; i++) {
             int charCount = (int)strlen(menuItems[i]);
             int x = (640 - charCount * 14) / 2;
             int y = 286 + i * 24;
             if (i == sel) {
-                drawGameTextShadow(menuItems[i], x, y, 0.5f, 0.5f, 0.0f);
+                drawGameTextShadowEx(menuItems[i], x, y, 0.5f, 0.5f, 0.0f, 0.1f, 0.1f, 0.5f);
             } else {
-                drawGameTextShadow(menuItems[i], x, y, 0.5f, 0.5f, 0.5f);
+                drawGameTextShadowEx(menuItems[i], x, y, 0.5f, 0.5f, 0.5f, 0.1f, 0.1f, 0.5f);
             }
         }
+    }
+
+    // Options screen overlay
+    if (isOptionsScreenActive()) {
+        drawOptionsScreen();
     }
 
     // Present frame
@@ -282,8 +288,8 @@ void shutdownSystems(void) {
  * @return 0 on success, 1 on failure
  */
 int main(int argc, char* argv[]) {
-    (void)argc;  // Unused parameter
-    (void)argv;  // Unused parameter
+    (void)argc;
+    (void)argv;
 
     printf("================================================\n");
     printf("  REOF2 - Windows Port\n");

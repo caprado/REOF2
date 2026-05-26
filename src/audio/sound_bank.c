@@ -21,9 +21,11 @@
 #ifdef _WIN32
 #include <AL/al.h>
 #include <AL/alc.h>
+#include <AL/efx.h>
 #else
 #include <AL/al.h>
 #include <AL/alc.h>
+#include <AL/efx.h>
 #endif
 
 /* VAG ADPCM coefficients (fixed-point, /64) */
@@ -47,6 +49,9 @@ static ALCdevice* s_device = NULL;
 static ALCcontext* s_context = NULL;
 static ALuint s_sources[SOUND_MAX_SOURCES];
 static SoundCategory s_categories[SOUND_MAX_CATEGORIES];
+static ALuint s_effectSlot = 0;
+static ALuint s_effect = 0;
+static int32_t s_hasEfx = 0;
 static int32_t s_initialized = 0;
 
 /* ---- VAG ADPCM Decoder ---- */
@@ -195,6 +200,36 @@ int32_t initSoundBankSystem(void) {
     alcMakeContextCurrent(s_context);
     alGenSources(SOUND_MAX_SOURCES, s_sources);
 
+    /* Set up reverb effect to mimic PS2 SPU2 echo */
+    s_hasEfx = alcIsExtensionPresent(s_device, "ALC_EXT_EFX");
+    if (s_hasEfx) {
+        LPALGENEFFECTS alGenEffects = (LPALGENEFFECTS)alGetProcAddress("alGenEffects");
+        LPALEFFECTI alEffecti = (LPALEFFECTI)alGetProcAddress("alEffecti");
+        LPALEFFECTF alEffectf = (LPALEFFECTF)alGetProcAddress("alEffectf");
+        LPALGENAUXILIARYEFFECTSLOTS alGenAuxiliaryEffectSlots = (LPALGENAUXILIARYEFFECTSLOTS)alGetProcAddress("alGenAuxiliaryEffectSlots");
+        LPALAUXILIARYEFFECTSLOTI alAuxiliaryEffectSloti = (LPALAUXILIARYEFFECTSLOTI)alGetProcAddress("alAuxiliaryEffectSloti");
+
+        if (alGenEffects && alEffecti && alEffectf && alGenAuxiliaryEffectSlots && alAuxiliaryEffectSloti) {
+            alGenEffects(1, &s_effect);
+            alEffecti(s_effect, AL_EFFECT_TYPE, AL_EFFECT_REVERB);
+            alEffectf(s_effect, AL_REVERB_DECAY_TIME, 1.2f);
+            alEffectf(s_effect, AL_REVERB_REFLECTIONS_GAIN, 0.7f);
+            alEffectf(s_effect, AL_REVERB_LATE_REVERB_GAIN, 0.5f);
+            alEffectf(s_effect, AL_REVERB_LATE_REVERB_DELAY, 0.02f);
+            alEffectf(s_effect, AL_REVERB_DIFFUSION, 1.0f);
+            alEffectf(s_effect, AL_REVERB_GAIN, 0.8f);
+
+            alGenAuxiliaryEffectSlots(1, &s_effectSlot);
+            alAuxiliaryEffectSloti(s_effectSlot, AL_EFFECTSLOT_EFFECT, s_effect);
+
+            /* Attach all sources to the reverb slot */
+            for (int32_t i = 0; i < SOUND_MAX_SOURCES; i++) {
+                alSource3i(s_sources[i], AL_AUXILIARY_SEND_FILTER, s_effectSlot, 0, AL_FILTER_NULL);
+            }
+            printf("[SoundBank] EFX reverb enabled (PS2 SPU2 echo)\n");
+        }
+    }
+
     memset(s_categories, 0, sizeof(s_categories));
     s_initialized = 1;
 
@@ -271,6 +306,7 @@ int32_t playSoundEffect(int32_t category, int32_t index) {
                 alGetSourcei(s_sources[s], AL_SOURCE_STATE, &state);
                 if (state != AL_PLAYING) {
                     alSourcei(s_sources[s], AL_BUFFER, buf);
+                    alSourcef(s_sources[s], AL_GAIN, 0.6f);
                     alSourcePlay(s_sources[s]);
                     return 1;
                 }
@@ -297,6 +333,15 @@ void shutdownSoundBankSystem(void) {
     stopAllSoundEffects();
 
     alDeleteSources(SOUND_MAX_SOURCES, s_sources);
+
+    if (s_hasEfx) {
+        LPALDELETEAUXILIARYEFFECTSLOTS alDeleteAuxiliaryEffectSlots = (LPALDELETEAUXILIARYEFFECTSLOTS)alGetProcAddress("alDeleteAuxiliaryEffectSlots");
+        LPALDELETEEFFECTS alDeleteEffects = (LPALDELETEEFFECTS)alGetProcAddress("alDeleteEffects");
+        if (alDeleteAuxiliaryEffectSlots && s_effectSlot) alDeleteAuxiliaryEffectSlots(1, &s_effectSlot);
+        if (alDeleteEffects && s_effect) alDeleteEffects(1, &s_effect);
+        s_effectSlot = 0;
+        s_effect = 0;
+    }
 
     for (int32_t i = 0; i < SOUND_MAX_CATEGORIES; i++) {
         if (s_categories[i].loaded) {
